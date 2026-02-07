@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { useLocation, Link, useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { FormattedMessage, useIntl } from "react-intl";
+import { useIntl } from "react-intl";
 import { Helmet } from "react-helmet-async";
 
 import { Expandable } from "../../components/expandable";
@@ -15,7 +15,6 @@ import "./Builder.css";
 import gameSystems from "../../assets/factions.json";
 import { fetcher } from "../../utils/fetcher";
 import { setFactions } from "../../state/factions";
-import { setList } from "../../state/lists";
 import { setUnits } from "../../state/units";
 
 import "./Builder.css";
@@ -28,7 +27,7 @@ export const Builder = () => {
   const game = gameSystems.find((game) => game.id === ruleset);
   const factions = useSelector((state) => state.factions);
   const units = useSelector((state) => state.units);
-  {/*const army = game.armies.find((army) => army.id === list.army);*/}
+  // const army = game.armies.find((army) => army.id === list.army);
 
   useEffect(() => {
     window.scrollTo(0, 0);

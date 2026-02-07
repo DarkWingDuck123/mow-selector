@@ -1,9 +1,6 @@
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { setLists } from "../../state/lists";
+import { useSelector } from "react-redux";
 import { Button } from "../../components/button";
 import { Expandable } from "../../components/expandable";
-import { deleteList, moveUnit } from "../../state/lists";
 import { Tooltip } from 'react-tooltip';
 
 import "./ShowLists.css";
@@ -13,14 +10,7 @@ import "./ShowLists.css";
 export const ShowLists = ({
   className
 }) => {
-  const dispatch = useDispatch();
   const lists = useSelector((state) => state.lists);
-   
-  const handleDeleteList = (listId) => (event) => {
-    event.preventDefault();
-    console.log("Remove list clicked for list:", listId);
-    deleteList(listId);
-  };
 
   return (
     <>

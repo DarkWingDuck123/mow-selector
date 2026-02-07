@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { setLists } from "../../state/lists";
+import { useSelector } from "react-redux";
 import { Button } from "../../components/button";
 import { Expandable } from "../../components/expandable";
 
@@ -14,11 +12,7 @@ export const FactionEntry = ({
   factionId,
   primaryFaction
 }) => {
-  const dispatch = useDispatch();
   const factions = useSelector((state) => state.factions);
-  const lists = useSelector((state) => state.lists);
-  const list = useSelector((state) =>
-    state.lists?.find(({ id }) => listId === id));
   const faction = useSelector((state) =>
     state.factions?.find(({ id }) => factionId === id));
 

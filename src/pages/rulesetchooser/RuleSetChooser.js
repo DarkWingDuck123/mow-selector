@@ -1,6 +1,6 @@
 import { useEffect, useId } from "react";
-import { useLocation, Link, useParams } from "react-router-dom";
-import { FormattedMessage, useIntl } from "react-intl";
+import { useLocation } from "react-router-dom";
+import { useIntl } from "react-intl";
 import { Helmet } from "react-helmet-async";
 import { Header, Main } from "../../components/page";
 import { Button } from "../../components/button";

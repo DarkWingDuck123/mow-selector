@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { setLists } from "../../state/lists";
+import { useSelector } from "react-redux";
 import { Button } from "../../components/button";
 import { Expandable } from "../../components/expandable";
 
@@ -13,7 +11,6 @@ export const ListEntry = ({
   listId,
   index
 }) => {
-  const dispatch = useDispatch();
   const list = useSelector((state) =>
     state.lists?.find(({ id }) => listId === id));
 

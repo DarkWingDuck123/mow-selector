@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import { useLocation, Link } from "react-router-dom";
-import { FormattedMessage, useIntl } from "react-intl";
+import { useLocation } from "react-router-dom";
+import { useIntl } from "react-intl";
 import { Helmet } from "react-helmet-async";
 
 import { Expandable } from "../../components/expandable";
-import { Header, Main } from "../../components/page";
+import { Main } from "../../components/page";
 import { Button } from "../../components/button";
 
 import "./RuleSetAndFleetChooser.css";

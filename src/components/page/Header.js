@@ -5,7 +5,6 @@ import { useLocation, Link } from "react-router-dom";
 import { useIntl } from "react-intl";
 
 import { Button } from "../../components/button";
-import { Icon } from "../../components/icon";
 
 import "./Header.css";
 

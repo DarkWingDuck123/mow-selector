@@ -1,8 +1,5 @@
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { setLists } from "../../state/lists";
+import { useSelector } from "react-redux";
 import { FactionEntry } from "../factionentry";
-import { Expandable } from "../../components/expandable";
 
 import "./FactionRoster.css";
 
@@ -31,9 +28,7 @@ export const FactionRoster = ({
   className,
   listId
 }) => {
-  const dispatch = useDispatch();
   const factions = useSelector((state) => state.factions);
-  const lists = useSelector((state) => state.lists);
   const list = useSelector((state) =>
     state.lists?.find(({ id }) => listId === id));
   const primaryFaction = useSelector((state) =>
