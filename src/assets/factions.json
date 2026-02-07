@@ -1,0 +1,96 @@
+[
+  {
+    "id": "the-original-series",
+    "name": "Man O'War",
+    "name_en": "Man O'War",
+    "nations": [
+      {
+        "id": "empire",
+        "name_de": "The Empire",
+        "name_en": "The Empire", 
+        "name_es": "The Empire",
+        "name_fr": "The Empire",
+        "allies": [
+          "brettonia"
+        ]
+      },
+      {
+        "id": "brettonia",
+        "name_de": "Brettonia",
+        "name_en": "Brettonia", 
+        "name_es": "Brettonia",
+        "name_fr": "Brettonia",
+        "allies": [
+          "empire"
+        ]
+      },
+      {
+        "id": "khorne",
+        "name_de": "Khorne",
+        "name_en": "Khorne", 
+        "name_es": "Khorne",
+        "name_fr": "Khorne",
+        "allies": [ ]
+      }
+    ]
+  },
+  {
+    "id": "mow-revolution-the-old-world",
+    "name": "Man O'War Revolution: The Old World",
+    "name_en": "Man O'War Revolution: The Old World",
+    "nations": [
+      {
+        "id": "empire",
+        "name_de": "The Empire",
+        "name_en": "The Empire", 
+        "name_es": "The Empire",
+        "name_fr": "The Empire",
+        "allies": [
+          "brettonia"
+        ]
+      },
+      {
+        "id": "brettonia",
+        "name_de": "Brettonia",
+        "name_en": "Brettonia", 
+        "name_es": "Brettonia",
+        "name_fr": "Brettonia",
+        "allies": [
+          "empire"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mow-revolution-age-of-sigmar",
+    "name": "Man O'War Revolution: Age of Sigmar",
+    "name_en": "Man O'War Revolution: Age of Sigmar",
+    "nations": [
+      {
+        "id": "free-cities-ghyran",
+        "name_de": "Free Cities: Ghyran",
+        "name_en": "Free Cities: Ghyran", 
+        "name_es": "Free Cities: Ghyran", 
+        "name_fr": "Free Cities: Ghyran", 
+        "allies": [
+        ]
+      },
+      {
+        "id": "free-cities-chamon",
+        "name_de": "Free Cities: Chamon",
+        "name_en": "Free Cities: Chamon", 
+        "name_es": "Free Cities: Chamon", 
+        "name_fr": "Free Cities: Chamon", 
+        "allies": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mow-revolution-utopian-wars",
+    "name": "Man O'War Revolution: Utopian Wars",
+    "name_en": "Man O'War Revolution: Utopian Wars",
+    "nations": [
+    ]
+  } 
+]

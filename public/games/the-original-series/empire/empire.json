@@ -1,0 +1,100 @@
+{
+  "id" : "empire",
+
+  "name_de": "The Empire",
+  "name_en": "The Empire", 
+  "name_es": "The Empire",
+  "name_fr": "The Empire",
+
+  "allies" : [
+    "brettonia"
+  ],
+
+  "addons" : [
+    {
+      "id" : "manowarcard",
+      "name_en" : "Man O'War Card",
+      "type" : "card",
+      "cost" : "25",
+      "min" : "0"
+    },
+    {
+      "id" : "admiralmanowarcard",
+      "name_en" : "Admiral's Man O'War Card",
+      "type" : "card",
+      "cost" : "0",
+      "max" : "1"
+    },
+    {
+      "id" : "turnsummary",
+      "name_en" : "Turn Summary",
+      "type" : "card",
+      "cost" : "0"
+    },
+    {
+      "id" : "empireblank",
+      "name_en" : "Empire Symbol",
+      "type" : "card",
+      "cost" : "0"
+    },
+    {
+      "id" : "empirespecialrules",
+      "name_en" : "Special Rules - Empire",
+      "type" : "card",
+      "cost" : "0"
+    },
+    {
+      "id" : "blank",
+      "name_en" : "Empty",
+      "type" : "card",
+      "cost" : "0"
+    }
+  ],
+
+  "units" : [
+    {
+      "id" : "greatship",
+      "type" : "manowar",
+      "name_de" : "Greatship",
+      "name_en" : "Greatship",
+      "name_es" : "Greatship",
+      "name_fr" : "Greatship",
+      "description_en" : "A Greatship",
+      "squadron-size" : 1, 
+      "cost" : 150
+    },
+    {
+      "id" : "wolfship",
+      "type" : "shipoftheline",
+      "name_en" : "Wolfship",
+      "description_en" : "A Squadron of 3 Wolfship",
+      "squadron-size" : 3,
+      "cost" : 300
+    },
+    {
+      "id" : "wargalley",
+      "type" : "shipoftheline",
+      "name_en" : "Wargalley",
+      "description_en" : "A Squadron of 3 Wargalley",
+      "squadron-size" : 3,
+      "cost" : 75
+    },
+    {
+      "id" : "griffonrider",
+      "type" : "flyer",
+      "name_en" : "Griffon Rider",
+      "description_en" : "A Flight of 3 Griffon Riders",
+      "squadron-size" : 3,
+      "cost" : 75
+    },
+    {
+      "id" : "hellhammer",
+      "type" : "shipoftheline",
+      "name_en" : "Hellhammer",
+      "description_en" : "A Squadron of 3 Hellhammer",
+      "squadron-size" : 3,
+      "cost" : 150
+    }
+  ]
+}
+ 

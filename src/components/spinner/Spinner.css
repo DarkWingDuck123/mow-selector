@@ -1,0 +1,21 @@
+.spinner {
+  animation: 1s linear infinite rotate;
+  display: block;
+  margin: 4rem auto;
+}
+
+@media (min-width: 1280px) {
+  .spinner {
+    margin: 1rem auto;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

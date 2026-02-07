@@ -1,3 +1,24 @@
+:root {
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-size: 16px;
+  --color-font: #1c242f;
+  --color-font-medium: #ccc;
+  --color-font-light: #f6fffd;
+  --color-headline: #384043;
+  --color-background: rgb(243, 222, 191);
+  --color-list: rgb(221, 196, 165);
+  --color-white: #f6fffd;
+  --color-button: #4f7f6b;
+  --color-header: #303d4d;
+  --color-header: #808080;
+  --color-button-secondary: #303d4d;
+  --color-header-menu: #2b3745;
+  --color-header-menu: #808080;
+  --color-error: #d14500;
+  --color-success: #92b06a;
+}
+
 .App {
   text-align: center;
 }
@@ -21,11 +42,23 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #FFFFF0;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.column1 {
+  width: 25%;
+}
+
+.column2 {
+  width: 50%;
+}
+
+ul {
+  list-style: none;
 }
 
 @keyframes App-logo-spin {

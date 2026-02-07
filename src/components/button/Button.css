@@ -1,0 +1,151 @@
+.button,
+.input[type="file"]::file-selector-button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  transition: background-color 0.2s linear, color 0.2s linear,
+    box-shadow 0.2s linear;
+  cursor: pointer;
+  height: calc(1.2rem + 18px);
+  white-space: nowrap;
+  border: 0 none;
+}
+
+.button--primary,
+.button--primary:visited {
+  background-color: var(--color-button);
+  color: var(--color-font-light);
+}
+
+@media (hover: hover) {
+  .button--primary:hover {
+    color: var(--color-font);
+  }
+}
+
+.button--primary:focus,
+.button--primary:active {
+  color: var(--color-font);
+}
+
+.button--secondary,
+.button--secondary:visited,
+.input[type="file"]::file-selector-button {
+  background-color: var(--color-button-secondary);
+  color: var(--color-font-light);
+}
+
+@media (hover: hover) {
+  .button--secondary:hover,
+  .input[type="file"]::file-selector-button:hover {
+    color: var(--color-font-medium);
+  }
+}
+
+.button--secondary:focus,
+.button--secondary:active,
+.input[type="file"]::file-selector-button:active {
+  color: var(--color-font-medium);
+}
+
+.button--tertiary,
+.button--tertiary:visited,
+.input[type="file"]::file-selector-button {
+  background-color: transparent;
+  border: 1px solid var(--color-button-secondary);
+  color: var(--color-font);
+  font-weight: normal;
+}
+
+@media (hover: hover) {
+  .button--tertiary:hover,
+  .input[type="file"]::file-selector-button:hover {
+    background-color: var(--color-button-secondary);
+    color: var(--color-font-light);
+  }
+}
+
+.button--tertiary:focus,
+.button--tertiary:active,
+.input[type="file"]::file-selector-button:active {
+  background-color: var(--color-button-secondary);
+  color: var(--color-font-light);
+}
+
+.button--text,
+.button--text:visited {
+  background-color: transparent;
+  color: var(--color-font-light);
+}
+
+@media (hover: hover) {
+  .button--text:hover {
+    color: var(--color-button);
+  }
+}
+
+.button--text:focus,
+.button--text:active {
+  color: var(--color-button);
+}
+
+.button--spaceBottom {
+  margin-bottom: 2rem;
+}
+
+.button--spaceTop {
+  margin-top: 1rem;
+}
+
+.button--fullWidth {
+  width: 100%;
+}
+
+.button--centered {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.button--disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.button--small {
+  height: auto;
+  padding: 2px;
+}
+
+.button--large {
+  width: 100%;
+  height: 48px;
+}
+
+.button--large {
+  max-width: 25rem;
+}
+
+.button__icon {
+  margin-right: 0.5rem;
+}
+
+.button--text.button--dark {
+  color: var(--color-font);
+}
+
+@media (hover: hover) {
+  .button--text.button--dark:hover {
+    color: var(--color-button);
+  }
+}
+
+.button--text.button--dark:focus,
+.button--text.button--dark:active {
+  color: var(--color-button);
+}

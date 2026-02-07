@@ -1,0 +1,64 @@
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setLists } from "../../state/lists";
+
+import "./FactionRoster.css";
+
+// This is the Roster for a Faction. It assumes another component is loading the
+// factions slice into the redux. It also is passed in the primary faction (from
+// which allies are then determined) and list id. If no primary faction is given,
+// it will create a global faction list where everything is flat, otherwise:
+// Primary Faction is always expanded (not within an expandable).
+//   - Units
+//   - Expandable Addons
+// Expandable Allies
+// For each ally
+//   - Units
+//   - Expandable Addons
+// Expandable Other
+// For everyone not an ally an expandable for that Faction
+//   - Units
+//   - Expandable Addons
+//
+// For now, expandable add will repeat if they belong to both Factions 
+// (i.e. Man O'War Cards, Turn Summary Card, etc.)
+//
+// Selecting an addon or a unit will cause that item to move to the end of
+// the current List. That list will be editable in other React Components.
+export const FactionRoster = ({
+  className,
+  listId,
+  factionId,
+}) => {
+  const dispatch = useDispatch();
+  const factions = useSelector((state) => state.factions);
+  const lists = useSelector((state) => state.lists);
+  const list = useSelector((state) =>
+    state.lists.find(({ id }) => listId === id));
+{/*
+  const primaryFaction = useSelector((state) =>
+    state.factions.find(({ id }) => list?.factionId === id));
+  const allyFactions = useSelector((state) =>
+    state.factions.map(({ id }) => primaryFaction?.allies?.includes(id)));
+  const otherFactions = useSelector((state) =>
+    state.factions.map(({ id }) => primaryFaction?.id !== id 
+      && primaryFaction?.allies?.includes(id)));
+*/}
+  useEffect(() => setLists({ "factionid" : "empire" }));
+
+  return (
+    <>
+      {!factions && (<p>loading...</p>)}
+{/*      <h3> Primary Faction </h3>
+      {<pre>{JSON.stringify(primaryFaction, null, 2)}</pre>}
+      <h3> Ally Factions </h3>
+      {<pre>{JSON.stringify(allyFactions, null, 2)}</pre>}
+      <h3> Other Factions </h3>
+      {<pre>{JSON.stringify(otherFactions, null, 2)}</pre>}
+*/}      <ul>
+        <li>{listId}</li>
+        <li>{factionId}</li>
+      </ul>
+    </>
+  );
+};

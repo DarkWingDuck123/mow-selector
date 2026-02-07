@@ -1,0 +1,50 @@
+{
+  "id" : "brettonia",
+  "name_en" : "Brettonia",
+  "units" : [
+    {
+      "id" : "galleon",
+      "type" : "manowar",
+      "name_en" : "Galleon",
+      "squadron-size" : 1, 
+      "cost" : 150,
+      "cards" : [
+        {
+          "type": "manowar",
+          "cost": 25,
+          "min": 0,
+          "max": 1,
+          "freeForAdmiral": true
+        }
+      ]
+    },
+    {
+      "id" : "corsair",
+      "type" : "shipoftheline",
+      "name_en" : "Corsair",
+      "squadron-size" : 3,
+      "cost" : 300,
+      "cards" : [
+      ]
+    },
+    {
+      "id" : "buccaneer",
+      "type" : "shipoftheline",
+      "name_en" : "Buccaneer",
+      "squadron-size" : 3,
+      "cost" : 150,
+      "cards" : [
+      ]
+    },
+    {
+      "id" : "pegasusrider",
+      "type" : "flyer",
+      "name_en" : "Pegasus Rider",
+      "squadron-size" : 3,
+      "cost" : 75,
+      "cards" : [
+      ]
+    }
+  ]
+}
+ 
