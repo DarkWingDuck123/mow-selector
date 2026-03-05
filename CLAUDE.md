@@ -16,7 +16,7 @@ Man O'War Fleet Builder — a React SPA for building and managing fleet lists fo
 
 **Stack:** React 18 (CRA), Redux Toolkit, React Router v6, react-intl for i18n. Plain JavaScript (no TypeScript).
 
-**Routing** (`src/App.js`): Key routes are `/` (home/ruleset chooser), `/Builder/:ruleset/:listId` (fleet builder), `/RuleSetChooser`.
+**Routing** (`src/App.js`): Key routes are `/` (home/ruleset chooser), `/Builder/:ruleset/:factionId/:listId` (fleet builder), `/RuleSetChooser`.
 
 **State Management** (`src/store.js` + `src/state/`): Redux Toolkit with slices for:
 - `lists` — Fleet lists with units, persisted to localStorage under `mowb.lists`
