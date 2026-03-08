@@ -36,8 +36,8 @@
   },
   {
     "id": "mow-revolution-the-old-world",
-    "name": "Man O'War Revolution: The Old World",
-    "name_en": "Man O'War Revolution: The Old World",
+    "name": "Man O'War: The Old World",
+    "name_en": "Man O'War: The Old World",
     "nations": [
       {
         "id": "empire",
@@ -63,8 +63,8 @@
   },
   {
     "id": "mow-revolution-age-of-sigmar",
-    "name": "Man O'War Revolution: Age of Sigmar",
-    "name_en": "Man O'War Revolution: Age of Sigmar",
+    "name": "Man O'War: Age of Sigmar",
+    "name_en": "Man O'War: Age of Sigmar",
     "nations": [
       {
         "id": "free-cities-ghyran",
@@ -88,8 +88,8 @@
   },
   {
     "id": "mow-revolution-utopian-wars",
-    "name": "Man O'War Revolution: Utopian Wars",
-    "name_en": "Man O'War Revolution: Utopian Wars",
+    "name": "Man O'War: Utopian Wars",
+    "name_en": "Man O'War: Utopian Wars",
     "nations": [
     ]
   } 

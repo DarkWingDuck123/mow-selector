@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useIntl } from "react-intl";
@@ -6,10 +6,14 @@ import { Helmet } from "react-helmet-async";
 
 import { Expandable } from "../../components/expandable";
 import { Header, Main } from "../../components/page";
+import { RulesetBar } from "../../components/rulesetbar";
 import { Button } from "../../components/button";
 import { FactionRoster } from "../../components/factionroster";
 import { ShowLists } from "../../components/showlists";
 import { ListEditor } from "../../components/listeditor";
+import { FleetValidator } from "../../components/fleetvalidator";
+import { TabBar } from "../../components/tabbar";
+import { FleetDetails } from "../../components/fleetdetails";
 
 import "./Builder.css";
 import gameSystems from "../../assets/factions.json";
@@ -22,11 +26,12 @@ import "./Builder.css";
 export const Builder = () => {
   const location = useLocation();
   const intl = useIntl();
-  const { ruleset, listId } = useParams();
+  const { ruleset, factionId, listId } = useParams();
   const dispatch = useDispatch();
   const game = gameSystems.find((game) => game.id === ruleset);
   const factions = useSelector((state) => state.factions);
   const units = useSelector((state) => state.units);
+  const [selectedListId, setSelectedListId] = useState(null);
   // const army = game.armies.find((army) => army.id === list.army);
 
   useEffect(() => {
@@ -78,39 +83,36 @@ export const Builder = () => {
       </Helmet>
 
       <Header headline="Man O'War Fleet Builder" hasMainNavigation hasHomeButton />
+      <RulesetBar />
 
       <Main isDesktop>
         <section className="column">
-          <ShowLists />
+          <ShowLists selectedListId={selectedListId} onSelectList={setSelectedListId} />
         </section>
         <section className="double__column">
-        <ul>
-          <ListEditor listId={listId} /> 
-          <h3>Woot</h3>
-          <li>ruleset: {ruleset}</li>
-          <li>listId: {listId}</li>
-          {<pre>{JSON.stringify(factions, null, 2)}</pre>}
-          {<pre>{JSON.stringify(game, null, 2)}</pre>}
-          
-          {gameSystems.map((sys, index) => (
-           <Expandable headline={sys.name}
-                       noMargin
-                       className="datasets__unit-type datasets__unit"
-                       key={index}>
-           {sys.nations.map((nation, index) => (
-             <Button
-                  type="text"
-                  label={nation.id}
-                  color="dark"
-                  to={"/Builder/"+sys.id+"/lid"}>{nation.name_en}</Button>
-           ))}              
-           </Expandable>
-          ))}
-        </ul> 
+          <TabBar
+            tabs={[
+              {
+                id: "editor",
+                label: "Fleet Editor",
+                content: (
+                  <>
+                    <FleetValidator listId={selectedListId} />
+                    <ListEditor listId={selectedListId} />
+                  </>
+                ),
+              },
+              {
+                id: "details",
+                label: "Cards",
+                content: <FleetDetails listId={selectedListId} />,
+              },
+            ]}
+          />
         </section>
         <section className="column">
           <>
-          <FactionRoster className="foo" listId={listId}></FactionRoster>
+          <FactionRoster listId={selectedListId} />
           </>
         </section>
       </Main>

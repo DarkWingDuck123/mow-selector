@@ -2,6 +2,64 @@
   height: 30px;
 }
 
+.list-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.list-editor__ruleset-name {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+  color: var(--color-headline);
+}
+
+.list-editor__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.list-editor__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-font);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.list-editor__input,
+.list-editor__textarea,
+.list-editor__select {
+  font-family: var(--font-family);
+  font-size: 0.9rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-list);
+  border-radius: 4px;
+  padding: 0.35rem 0.5rem;
+  color: var(--color-font);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.list-editor__textarea {
+  resize: vertical;
+}
+
+.list-editor__points {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-font);
+}
+
+.list-editor__cards {
+  margin-top: 0.5rem;
+}
+
+.list-editor__cards h3 {
+  margin: 0 0 0.5rem 0;
+}
+
 h3 {
   font-size: 1rem;
   font-weight: 700;

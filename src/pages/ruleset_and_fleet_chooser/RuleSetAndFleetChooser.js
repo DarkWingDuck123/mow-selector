@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useIntl } from "react-intl";
+import { useSelector } from "react-redux";
 import { Helmet } from "react-helmet-async";
 
-import { Expandable } from "../../components/expandable";
 import { Main } from "../../components/page";
 import { Button } from "../../components/button";
 
@@ -13,10 +13,13 @@ import gameSystems from "../../assets/factions.json";
 export const RuleSetAndFleetChooser = () => {
   const location = useLocation();
   const intl = useIntl();
+  const selectedRuleset = useSelector((state) => state.selectedRuleset);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
+
+  const activeSystem = gameSystems.find((sys) => sys.id === selectedRuleset);
 
   return (
     <>
@@ -26,27 +29,26 @@ export const RuleSetAndFleetChooser = () => {
         </title>
       </Helmet>
 
-      {/*<Header headline="Man O'War Fleet Builder" hasMainNavigation hasHomeButton />*/}
-
       <Main compact>
-        <ul>
-          {gameSystems.map((sys, index) => (
-           <Expandable headline={sys.name}
-                       noMargin
-                       className="datasets__unit-type datasets__unit"
-                       key={index}>
-           {/*<pre>{JSON.stringify(sys, null, 2)}</pre>*/}
-           {sys.nations.map((nation, index) => (
-             <Button
+        {activeSystem && (
+          <ul className="fleet-chooser__nations">
+            {activeSystem.nations.map((nation) => (
+              <li key={nation.id}>
+                <Button
                   type="text"
                   label={nation.id}
                   color="dark"
-                  to={"/Builder/"+sys.id+"/"+nation.id+"/new"}>{nation.name_en}</Button>
-           ))}              
-           {/*<li key={sys.id}>{sys.name}</li>*/}
-           </Expandable>
-          ))}
-        </ul> 
+                  to={"/Builder/" + activeSystem.id + "/" + nation.id + "/new"}
+                >
+                  {nation.name_en}
+                </Button>
+              </li>
+            ))}
+            {activeSystem.nations.length === 0 && (
+              <li className="fleet-chooser__empty">Coming soon</li>
+            )}
+          </ul>
+        )}
       </Main>
     </>
   );

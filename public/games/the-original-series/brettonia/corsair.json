@@ -1,4 +1,5 @@
 {
+  "weight":"heavy",
   "name":{"value":"WOLFSHIP","scale":1.0},
   "type":{"value":"IMPERIAL SHIP OF THE LINE","scale":1.0},
   "honors":{"value":"Honors: 4", "scale":0.8},

@@ -2,6 +2,29 @@
   height: 30px;
 }
 
+.show-lists__toolbar {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.show-lists__item {
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.25rem;
+}
+
+.show-lists__item:hover {
+  background-color: var(--color-list);
+}
+
+.show-lists__item--selected {
+  background-color: var(--color-list);
+  outline: 2px solid var(--color-button);
+}
+
 h3 {
   font-size: 1rem;
   font-weight: 700;

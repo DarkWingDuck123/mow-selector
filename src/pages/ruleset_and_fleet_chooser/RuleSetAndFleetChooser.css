@@ -1,3 +1,17 @@
 .about__donation {
   height: 30px;
 }
+
+.fleet-chooser__nations {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0;
+  margin: 0;
+}
+
+.fleet-chooser__empty {
+  color: var(--color-font-medium);
+  font-style: italic;
+  padding: 1rem 0;
+}

@@ -1,4 +1,5 @@
 {
+  "weight":"heavy",
   "name":{"value":"GREATSHIP","scale":1.0},
   "type":{"value":"IMPERIAL MAN O'WAR","scale":1.0},
   "honors":{"value":"Honors: 6", "scale":0.8},

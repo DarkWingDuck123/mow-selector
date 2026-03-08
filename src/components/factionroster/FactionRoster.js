@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { FactionEntry } from "../factionentry";
+import gameSystems from "../../assets/factions.json";
 
 import "./FactionRoster.css";
 
@@ -31,38 +32,37 @@ export const FactionRoster = ({
   const factions = useSelector((state) => state.factions);
   const list = useSelector((state) =>
     state.lists?.find(({ id }) => listId === id));
-  const primaryFaction = useSelector((state) =>
-    state.factions?.find(({ id }) => list?.factionId === id));
-  const allyFactions = useSelector((state) =>
-    state.factions?.filter(({ id }) => primaryFaction?.allies?.includes(id)));
-  const otherFactions = useSelector((state) =>
-    state.factions?.filter(({ id }) => !primaryFaction?.allies?.includes(id) && primaryFaction?.id !== id));
+
+  const rulesetNationIds = gameSystems
+    .find((sys) => sys.id === list?.rulesetId)
+    ?.nations.map((n) => n.id) || [];
+  const rulesetFactions = factions?.filter(({ id }) => rulesetNationIds.includes(id));
+
+  const primaryFaction = rulesetFactions?.find(({ id }) => list?.factionId === id);
+  const allyFactions = rulesetFactions?.filter(({ id }) => primaryFaction?.allies?.includes(id));
+  const otherFactions = rulesetFactions?.filter(({ id }) => !primaryFaction?.allies?.includes(id) && primaryFaction?.id !== id);
    
   return (
     <>
       {!factions && (<p>loading...</p>)}
       {factions && primaryFaction && (
         <>
-          <FactionEntry factionId={primaryFaction?.id} primaryFaction></FactionEntry>
+          <FactionEntry factionId={primaryFaction?.id} listId={listId} primaryFaction />
           <h3> Allies </h3>
-          {
-            allyFactions?.map((fac) => (
-              <FactionEntry factionId={fac.id}></FactionEntry>
-            ))
-          }
+          {allyFactions?.map((fac) => (
+            <FactionEntry key={fac.id} factionId={fac.id} listId={listId} />
+          ))}
           <h3> Other </h3>
-          {
-            otherFactions?.map((fac) => (
-              <FactionEntry factionId={fac.id}></FactionEntry>
+          {otherFactions?.map((fac) => (
+            <FactionEntry key={fac.id} factionId={fac.id} listId={listId} />
           ))}
       </>
       )}
       {factions && !primaryFaction && (
         <>
           <h2> All Factions </h2>
-          {
-            otherFactions?.map((fac) => (
-              <FactionEntry factionId={fac.id}></FactionEntry>
+          {rulesetFactions?.map((fac) => (
+            <FactionEntry key={fac.id} factionId={fac.id} listId={listId} />
           ))}
         </>
       )}

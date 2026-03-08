@@ -8,6 +8,7 @@ import { About } from "./pages/about";
 import { RuleSetAndFleetChooser } from "./pages/ruleset_and_fleet_chooser";
 import { Builder } from "./pages/builder";
 import { Header, Main } from "./components/page";
+import { RulesetBar } from "./components/rulesetbar";
 import { RuleSetChooser } from "./pages/rulesetchooser/RuleSetChooser";
 
 import "./App.css";
@@ -22,13 +23,13 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         {/*<Route path="/" element={<><Header /><Layout /></>} />*/}
-        <Route index element={<><Header /><Home /><Main><RuleSetAndFleetChooser />{<h1>Ipsum Lorem</h1>}</Main></>} />
+        <Route index element={<><Header /><RulesetBar /><Home /><Main><RuleSetAndFleetChooser />{<h1>Ipsum Lorem</h1>}</Main></>} />
         <Route path="blogs" element={<><Header /><Blogs /></>}>
           <Route path="blogs2" element={<Blogs2 />} />
         </Route>
         <Route path="contact" element={<><Header /><Contact /></>} />
         <Route path="about" element={<><About /></>} />
-        <Route path="Builder/:ruleset/:listId" element={<><Builder /></>} />
+        <Route path="Builder/:ruleset/:factionId/:listId" element={<><Builder /></>} />
         <Route path="RuleSetChooser" element={<><RuleSetChooser /></>} />
         <Route path="*" element={<><Header /><NoPage /></>} />
       </Routes>

@@ -1,6 +1,5 @@
-import { useSelector } from "react-redux";
-import { Button } from "../../components/button";
-import { Expandable } from "../../components/expandable";
+import { useSelector, useDispatch } from "react-redux";
+import { removeCard } from "../../state/lists";
 
 import "./ListEntry.css";
 
@@ -11,35 +10,24 @@ export const ListEntry = ({
   listId,
   index
 }) => {
+  const dispatch = useDispatch();
   const list = useSelector((state) =>
     state.lists?.find(({ id }) => listId === id));
-
-  const handleUnsetFaction = (event) => {
-    event.preventDefault();
-    console.log("Unset Faction clicked!");
-  };
-
-  const buildCard = (card) => { return (
-    <>
-      <p>{card.name}<span style={{float:"right"}}>{card.cost} pts</span></p>
-    </>
-  )}
 
   return (
     <>
       {!list && (<p>loading...</p>)}
       {list && (
-        <>
-        {buildCard(list.cards[index])}
-        <Button
-          type="text"
-          size="small"
-          onClick={handleUnsetFaction}
-          color="dark"><i>unset</i></Button>
-        <Expandable headline="Data" noMargin>
-          {<pre>{JSON.stringify(list.cards[index], null, 2)}</pre>}
-        </Expandable>
-        </>
+        <div className="list-entry">
+          <span className="list-entry__name">{list.cards[index].name}</span>
+          <span className="list-entry__cost">{list.cards[index].cost} pts</span>
+          <button
+            className="list-entry__remove"
+            onClick={() => dispatch(removeCard({ listId, index }))}
+            aria-label="Remove card">
+            −
+          </button>
+        </div>
       )}
     </>
   );

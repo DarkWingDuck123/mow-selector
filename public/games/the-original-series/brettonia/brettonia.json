@@ -5,6 +5,7 @@
     {
       "id" : "galleon",
       "type" : "manowar",
+      "weight" : "heavy",
       "name_en" : "Galleon",
       "squadron-size" : 1, 
       "cost" : 150,
@@ -21,6 +22,7 @@
     {
       "id" : "corsair",
       "type" : "shipoftheline",
+      "weight" : "heavy",
       "name_en" : "Corsair",
       "squadron-size" : 3,
       "cost" : 300,
@@ -30,6 +32,7 @@
     {
       "id" : "buccaneer",
       "type" : "shipoftheline",
+      "weight" : "heavy",
       "name_en" : "Buccaneer",
       "squadron-size" : 3,
       "cost" : 150,
@@ -39,6 +42,7 @@
     {
       "id" : "pegasusrider",
       "type" : "flyer",
+      "weight" : "light",
       "name_en" : "Pegasus Rider",
       "squadron-size" : 3,
       "cost" : 75,

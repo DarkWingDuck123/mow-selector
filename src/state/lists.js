@@ -8,13 +8,30 @@ export const listsSlice = createSlice({
   name: "lists",
   initialState: [ example ],
   reducers: {
+    newList: (state, { payload }) => {
+      const { rulesetId = "", rulesetName = "" } = payload || {};
+      return [
+        ...state,
+        {
+          id: getRandomId(),
+          rulesetId,
+          rulesetName,
+          name: "New Fleet",
+          description: "",
+          pointsSpent: "0",
+          factionId: "",
+          factionName: "",
+          cards: [],
+        },
+      ];
+    },
     setLists: (state, { payload }) => {
       console.log("Log it: " + JSON.stringify(payload, null, 2));
       return payload || [];
     },
     updateList: (state, { payload }) => {
-      const { listId, name, points, description } = payload;
-      const newValues = { name, points, description };
+      const { listId, name, points, description, factionId, factionName } = payload;
+      const newValues = { name, points, description, factionId, factionName };
 
       Object.keys(newValues).forEach((key) =>
         newValues[key] === undefined ? delete newValues[key] : {}
@@ -33,8 +50,50 @@ export const listsSlice = createSlice({
         return list;
       });
     },
+    moveList: (state, { payload }) => {
+      const { sourceId, destinationId } = payload;
+      const sourceIndex = state.findIndex(({ id }) => id === sourceId);
+      const destinationIndex = state.findIndex(({ id }) => id === destinationId);
+      return swap([...state], sourceIndex, destinationIndex);
+    },
     deleteList: (state, { payload }) => {
       return state.filter(({ id }) => id !== payload);
+    },
+    addCard: (state, { payload }) => {
+      const { listId, unit } = payload;
+      const card = {
+        uid: getRandomId(),
+        id: unit.id,
+        name: unit.name_en,
+        description: unit.description_en || "",
+        number: unit["squadron-size"] || 1,
+        cost: String(unit.cost || 0),
+        shipNames: [],
+      };
+      return state.map((list) => {
+        if (listId === list.id) {
+          return { ...list, cards: [...list.cards, card] };
+        }
+        return list;
+      });
+    },
+    moveCard: (state, { payload }) => {
+      const { listId, sourceIndex, destinationIndex } = payload;
+      return state.map((list) => {
+        if (listId === list.id) {
+          return { ...list, cards: swap([...list.cards], sourceIndex, destinationIndex) };
+        }
+        return list;
+      });
+    },
+    removeCard: (state, { payload }) => {
+      const { listId, index } = payload;
+      return state.map((list) => {
+        if (listId === list.id) {
+          return { ...list, cards: list.cards.filter((_, i) => i !== index) };
+        }
+        return list;
+      });
     },
     addUnit: (state, { payload }) => {
       const { listId, type, unit } = payload;
@@ -155,6 +214,11 @@ export const listsSlice = createSlice({
         return list;
       });
     },
+    duplicateList: (state, { payload }) => {
+      const list = state.find(({ id }) => id === payload);
+      if (!list) return state;
+      return [...state, { ...list, id: getRandomId(), name: `${list.name} (copy)` }];
+    },
     removeUnit: (state, { payload }) => {
       const { listId, type, unitId } = payload;
 
@@ -180,6 +244,11 @@ export const listsSlice = createSlice({
 });
 
 export const {
+  newList,
+  moveList,
+  addCard,
+  moveCard,
+  removeCard,
   setLists,
   addUnit,
   moveUnit,

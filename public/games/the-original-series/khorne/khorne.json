@@ -47,6 +47,7 @@
     {
       "id" : "deathgalley",
       "type" : "shipoftheline",
+      "weight" : "heavy",
       "name_en" : "Death Galley",
       "description_en" : "A Squadron of 3 Death Galley",
       "squadron-size" : 3,

@@ -32,3 +32,5 @@ Man O'War Fleet Builder — a React SPA for building and managing fleet lists fo
 **i18n:** react-intl with translations in `src/i18n/` (en.json, pi.json). Language detected from localStorage (`lang` key), then `navigator.language`, defaulting to "en". Supported: en, pi, de, fr, es, it, pl.
 
 **Styling:** CSS variables defined in `src/App.css` root scope (colors, fonts). Component styles colocated. Uses `classnames` library for conditional classes.
+
+**Based On:** This code was inspired by https://old-world-builder.com/
