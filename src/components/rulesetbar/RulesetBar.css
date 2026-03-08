@@ -1,0 +1,33 @@
+.ruleset-bar {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-header-menu);
+  padding: 0;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.ruleset-bar__item {
+  flex: 1;
+  text-align: center;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: var(--color-font-medium);
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: 0.875rem;
+  padding: 0.6rem 1.1rem;
+  white-space: nowrap;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.ruleset-bar__item:hover {
+  color: var(--color-font-light);
+}
+
+.ruleset-bar__item--active {
+  border-bottom-color: var(--color-button);
+  color: var(--color-font-light);
+  font-weight: 600;
+}
