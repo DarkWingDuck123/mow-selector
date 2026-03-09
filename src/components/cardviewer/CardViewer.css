@@ -1,0 +1,35 @@
+.card-viewer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  padding: 0.5rem;
+}
+
+.card-viewer__card {
+  aspect-ratio: 5 / 7;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-viewer__card-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 700px;
+  transform-origin: top left;
+}
+
+.card-viewer__placeholder {
+  position: absolute;
+  inset: 0;
+  border: 2px dashed var(--color-list);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: var(--color-font);
+  text-align: center;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}

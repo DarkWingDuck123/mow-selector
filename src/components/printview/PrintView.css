@@ -1,0 +1,16 @@
+.print-view {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.print-view__bw-label {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  color: var(--color-font);
+  cursor: pointer;
+  user-select: none;
+}

@@ -1,0 +1,42 @@
+.dataset__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.dataset__action {
+  padding: 1.25rem;
+  background: var(--color-list);
+  border-radius: 4px;
+}
+
+.dataset__action h3 {
+  margin: 0 0 0.4rem;
+}
+
+.dataset__action p {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+}
+
+.dataset__file-input {
+  display: none;
+}
+
+.dataset__status {
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.dataset__status--success {
+  background: var(--color-success);
+  color: var(--color-font-light);
+}
+
+.dataset__status--error {
+  background: var(--color-error);
+  color: var(--color-font-light);
+}
