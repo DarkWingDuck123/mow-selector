@@ -65,6 +65,7 @@
       "name_en" : "Admiral",
       "type_name" : "Admiral",
       "type_name_en" : "Admiral",
+      "description" : "(A) +1 CC",
       "description_en" : "(A) +1 CC",
       "type" : "crew",
       "cost" : "-"
@@ -75,6 +76,7 @@
       "name_en" : "Wizard Champion",
       "type_name" : "Wizard",
       "type_name_en" : "Wizard",
+      "description" : "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew",
       "description_en" : "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew",
       "type" : "crew",
       "cost" : "50"
@@ -85,6 +87,7 @@
       "name_en" : "Master Wizard",
       "type_name" : "Wizard",
       "type_name_en" : "Wizard",
+      "description" : "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew",
       "description_en" : "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew",
       "type" : "crew",
       "cost" : "100"
@@ -95,6 +98,7 @@
       "name_en" : "Wizard Lord",
       "type_name" : "Wizard",
       "type_name_en" : "Wizard",
+      "description" : "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew",
       "description_en" : "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew",
       "type" : "crew",
       "cost" : "150"
@@ -108,12 +112,16 @@
   "addons" : [
     {
       "id" : "manowarcard",
+      "weight" : "negligible",
+      "name" : "Man O'War Card",
       "name_en" : "Man O'War Card",
       "type" : "card",
+      "type_name" : "Man O'War Card",
       "cost" : "25"
     },
     {
       "id" : "hellblaster",
+      "weight" : "negligible",
       "name" : "Hellblaster",
       "name_en" : "Hellblaster",
       "type" : "card",
@@ -122,40 +130,33 @@
     },
     {
       "id" : "crewcard",
+      "weight" : "negligible",
       "name" : "Crew Card",
       "name_en" : "Crew Card",
       "type" : "crew_card",
-      "type_name" : "Crew",
-      "type_name_en" : "Crew",
-      "cost" : "0"
-    },
-    {
-      "id" : "admiralmanowarcard",
-      "name" : "Admiral's Man O'War Card",
-      "name_en" : "Admiral's Man O'War Card",
-      "type" : "card",
+      "type_name" : "",
+      "type_name_en" : "",
       "cost" : "0"
     },
     {
       "id" : "turnsummary",
+      "weight" : "negligible",
+      "name" : "Turn Summary",
       "name_en" : "Turn Summary",
       "type" : "card",
       "cost" : "0"
     },
     {
-      "id" : "empireblank",
-      "name_en" : "Empire Symbol",
-      "type" : "card",
-      "cost" : "0"
-    },
-    {
       "id" : "empirespecialrules",
+      "weight" : "negligible",
+      "name" : "Special Rules - Empire",
       "name_en" : "Special Rules - Empire",
       "type" : "card",
       "cost" : "0"
     },
     {
       "id" : "blank",
+      "name" : "Empty",
       "name_en" : "Empty",
       "type" : "card",
       "cost" : "0"
