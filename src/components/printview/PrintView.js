@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
+import { useReactToPrint } from "react-to-print";
 
 import { Button } from "../button";
+import { PrintGrid } from "./PrintGrid";
 import { heavyCard } from "../../utils/card/heavy";
 import { lightCard } from "../../utils/card/light";
 import { mediumCard } from "../../utils/card/medium";
@@ -59,7 +61,7 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
       .catch(() => setMeta({ ...DEFAULT_META }));
   }, [rulesetId, factionId, bwOverride]);
 
-  const uniqueCardIds = [...new Set(list?.cards?.map((c) => c.id) ?? [])].sort().join(",");
+  const uniqueCardIds = [...new Set(list?.cards?.map((c) => c.id).filter((id) => id !== "blank") ?? [])].sort().join(",");
 
   useEffect(() => {
     if (!rulesetId || !factionId || !uniqueCardIds) {
@@ -85,86 +87,103 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
     });
   }, [rulesetId, factionId, uniqueCardIds]);
 
-  const handlePrint = () => {
-    const cards = list?.cards ?? [];
-    const cardHtmls = cards.flatMap((card) => {
-      const obj = cardObjs[card.id];
-      if (!obj || !meta) return [];
-      const html = renderCard(meta, obj);
-      if (!html) return [];
-      const count = card.number || 1;
-      return Array.from({ length: count }, () => html);
-    });
+  const cardItems = (list?.cards ?? []).flatMap((card, i) => {
+    const count = card.number || 1;
+    if (card.id === "blank") {
+      return Array.from({ length: count }, (_, j) => ({
+        key: `blank-${i}-${j}`,
+        html: null,
+      }));
+    }
+    const obj = cardObjs[card.id];
+    if (!obj || !meta) return [];
+    const html = renderCard(meta, obj);
+    if (!html) return [];
+    return Array.from({ length: count }, (_, j) => ({
+      key: `${card.uid || card.id}-${i}-${j}`,
+      html,
+    }));
+  });
 
-    const printWindow = window.open("", "", "width=900,height=1100");
-    if (!printWindow) return;
+  const printRef = useRef(null);
+  const handlePrint = useReactToPrint({
+    contentRef: printRef,
+    pageStyle: `@page { size: letter portrait; margin: 0.5in; }`,
+  });
 
-    printWindow.document.write(`<!DOCTYPE html>
+  const handlePreview = () => {
+    const previewWindow = window.open("", "_blank", "width=760,height=1050");
+    if (!previewWindow) return;
+    previewWindow.document.write(`<!DOCTYPE html>
 <html>
 <head>
-  <title>Fleet Cards</title>
+  <title>Print Preview</title>
   <style>
-    @page { size: letter portrait; margin: 0.5cm; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { margin: 0; }
-    .print-grid {
+    body { background: #888; padding: 20px; }
+    .page {
+      background: white;
+      width: 720px;
+      min-height: 669px;
+      margin: 0 auto;
+      padding: 0;
       display: grid;
-      grid-template-columns: repeat(3, 240px);
+      grid-template-columns: repeat(3, 238px);
       gap: 3px;
+      justify-content: center;
+      align-content: start;
     }
     .print-card {
-      width: 240px;
-      height: 336px;
+      width: 238px;
+      height: 333px;
       overflow: hidden;
       position: relative;
     }
-    .print-card:nth-child(9n) {
-      break-after: page;
-    }
     .print-card-inner {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 0; left: 0;
       width: 500px;
       height: 700px;
       transform-origin: top left;
-      transform: scale(0.48);
+      transform: scale(0.476);
     }
   </style>
 </head>
 <body>
-  <div class="print-grid">
-    ${cardHtmls
-      .map((html) => `<div class="print-card"><div class="print-card-inner">${html}</div></div>`)
-      .join("")}
+  <div class="page">
+    ${cardItems.map(({ html }) =>
+      html
+        ? `<div class="print-card"><div class="print-card-inner">${html}</div></div>`
+        : `<div class="print-card"></div>`
+    ).join("")}
   </div>
-  <script>
-    window.addEventListener('load', function() {
-      window.print();
-      window.addEventListener('afterprint', function() { window.close(); });
-    });
-  </script>
 </body>
 </html>`);
-    printWindow.document.close();
+    previewWindow.document.close();
   };
 
   const hasCards = !!listId && !!list?.cards?.length;
-  const allLoaded = hasCards && !!meta && list.cards.every((card) => cardObjs[card.id] !== undefined);
+  const allLoaded = hasCards && !!meta && list.cards.every((card) => card.id === "blank" || cardObjs[card.id] !== undefined);
 
   return (
-    <div className="print-view">
-      <Button onClick={handlePrint} disabled={!allLoaded}>
-        Print
-      </Button>
-      <label className="print-view__bw-label">
-        <input
-          type="checkbox"
-          checked={!!bwOverride}
-          onChange={(e) => onBwOverride(e.target.checked)}
-        />
-        B&amp;W
-      </label>
-    </div>
+    <>
+      <PrintGrid ref={printRef} cardItems={cardItems} />
+      <div className="print-view">
+        <Button onClick={handlePrint} disabled={!allLoaded}>
+          Print
+        </Button>
+        <Button onClick={handlePreview} disabled={!allLoaded}>
+          Preview
+        </Button>
+        <label className="print-view__bw-label">
+          <input
+            type="checkbox"
+            checked={!!bwOverride}
+            onChange={(e) => onBwOverride(e.target.checked)}
+          />
+          B&amp;W
+        </label>
+      </div>
+    </>
   );
 };

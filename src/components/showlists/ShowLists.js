@@ -1,3 +1,4 @@
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Button } from "../../components/button";
 import { Expandable } from "../../components/expandable";
@@ -7,6 +8,28 @@ import { OrderableList } from "../../components/orderablelist";
 import gameSystems from "../../assets/factions.json";
 
 import "./ShowLists.css";
+
+const ListItem = React.forwardRef(({ listId, selectedListId, onSelectList, ...rest }, ref) => {
+  const list = useSelector((state) => state.lists?.find((l) => l.id === listId));
+  const points = (
+    (list?.cards?.reduce((sum, card) => sum + (Number(card.cost) || 0), 0) ?? 0) +
+    (list?.crew?.reduce((sum, c) => sum + (Number(c.cost) || 0), 0) ?? 0)
+  );
+  return (
+    <li
+      ref={ref}
+      {...rest}
+      className={`show-lists__item${selectedListId === listId ? " show-lists__item--selected" : ""}${rest.className ? ` ${rest.className}` : ""}`}
+      onClick={() => onSelectList(listId === selectedListId ? null : listId)}
+    >
+      <b data-tooltip-id="fac-tooltip" data-tooltip-content={list?.rulesetName}>{list?.factionName}</b>
+      <span style={{float:"right"}}>{points} points</span><br/>
+      <small><i data-tooltip-id="desc-tooltip" data-tooltip-content={list?.description}>{list?.name}</i></small><br/>
+      <Tooltip id="fac-tooltip" />
+      <Tooltip id="desc-tooltip" />
+    </li>
+  );
+});
 
 // This shows a list of "game lists". Clicking on a list will open the Builder for
 // that list.
@@ -28,10 +51,6 @@ export const ShowLists = ({
 
   const handleDuplicate = () => {
     dispatch(duplicateList(selectedListId));
-  };
-
-  const handlePrint = () => {
-    window.print();
   };
 
   const handleMoved = ({ sourceIndex, destinationIndex }) => {
@@ -60,22 +79,16 @@ export const ShowLists = ({
             >
               Duplicate
             </Button>
-            <Button onClick={handlePrint}>Print</Button>
           </div>
           <h2>Your Lists:</h2>
           <OrderableList id="fleet-lists" onMoved={handleMoved}>
             {lists.map((list) => (
-              <li
+              <ListItem
                 key={list.id}
-                className={`show-lists__item${selectedListId === list.id ? " show-lists__item--selected" : ""}`}
-                onClick={() => onSelectList(list.id === selectedListId ? null : list.id)}
-              >
-                <b data-tooltip-id="fac-tooltip" data-tooltip-content={list.rulesetName}>{list.factionName}</b>
-                <span style={{float:"right"}}>{list.cards?.reduce((sum, card) => sum + Number(card.cost || 0), 0) ?? 0} points</span><br/>
-                <small><i data-tooltip-id="desc-tooltip" data-tooltip-content={list.description}>{list.name}</i></small><br/>
-                <Tooltip id="fac-tooltip" />
-                <Tooltip id="desc-tooltip" />
-              </li>
+                listId={list.id}
+                selectedListId={selectedListId}
+                onSelectList={onSelectList}
+              />
             ))}
           </OrderableList>
           <Expandable headline="Data" noMargin>

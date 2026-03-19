@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { Button } from "../../components/button";
 import { Expandable } from "../../components/expandable";
-import { addCard } from "../../state/lists";
+import { addCard, addCrew } from "../../state/lists";
 
 import "./FactionEntry.css";
 
@@ -24,19 +24,21 @@ export const FactionEntry = ({
     dispatch(addCard({ listId, unit }));
   };
 
+  const handleAddCrew = (unit) => (event) => {
+    event.preventDefault();
+    if (!listId) return;
+    dispatch(addCrew({ listId, unit }));
+  };
+
   const buildFaction = (faction) => (
     <>
       <h4>Units</h4>
       {faction?.units?.map((unit) => (
         <div key={unit.id}>
-          <Button
-            type="text"
-            size="small"
-            label={unit.id}
-            color="dark"
-            onClick={handleAddUnit(unit)}>
-            {unit.name_en}
-          </Button>
+          {unit.cost === "-"
+            ? <span>{unit.name_en}</span>
+            : <Button type="text" size="small" label={unit.id} color="dark" onClick={handleAddUnit(unit)}>{unit.name_en}</Button>
+          }
           <span style={{float:"right"}}>{unit.cost} pts</span>
           <br/>
         </div>
@@ -44,18 +46,29 @@ export const FactionEntry = ({
       <h5>Add Ons</h5>
       {faction?.addons?.map((addon) => (
         <div key={addon.id}>
-          <Button
-            type="text"
-            size="small"
-            label={addon.id}
-            color="dark"
-            onClick={handleAddUnit(addon)}>
-            {addon.name_en}
-          </Button>
+          {addon.cost === "-"
+            ? <span>{addon.name_en}</span>
+            : <Button type="text" size="small" label={addon.id} color="dark" onClick={handleAddUnit(addon)}>{addon.name_en}</Button>
+          }
           <span style={{float:"right"}}>{addon.cost} pts</span>
           <br/>
         </div>
       ))}
+      {faction?.crew && (
+        <>
+          <h5>Crew</h5>
+          {faction.crew.map((crew) => (
+            <div key={crew.id}>
+              {crew.cost === "-"
+                ? <span>{crew.name_en}</span>
+                : <Button type="text" size="small" label={crew.id} color="dark" onClick={handleAddCrew(crew)}>{crew.name_en}</Button>
+              }
+              <span style={{float:"right"}}>{crew.cost} pts</span>
+              <br/>
+            </div>
+          ))}
+        </>
+      )}
     </>
   );
 

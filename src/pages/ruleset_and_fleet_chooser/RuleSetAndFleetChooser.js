@@ -38,7 +38,7 @@ export const RuleSetAndFleetChooser = () => {
                   type="text"
                   label={nation.id}
                   color="dark"
-                  to={"/Builder/" + activeSystem.id + "/" + nation.id + "/new"}
+                  to="/Builder"
                 >
                   {nation.name_en}
                 </Button>

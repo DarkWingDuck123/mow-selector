@@ -10,7 +10,6 @@ import "./TabBar.css";
  */
 export const TabBar = ({ tabs, defaultTab }) => {
   const [activeTab, setActiveTab] = useState(defaultTab || tabs[0]?.id);
-  const activeContent = tabs.find((t) => t.id === activeTab)?.content;
 
   return (
     <div className="tab-bar">
@@ -25,9 +24,14 @@ export const TabBar = ({ tabs, defaultTab }) => {
           </button>
         ))}
       </nav>
-      <div className="tab-bar__content">
-        {activeContent}
-      </div>
+      {tabs.map((tab) => (
+        <div
+          key={tab.id}
+          className={`tab-bar__content${tab.id !== activeTab ? " tab-bar__content--hidden" : ""}`}
+        >
+          {tab.content}
+        </div>
+      ))}
     </div>
   );
 };

@@ -7,7 +7,7 @@ import rulesIndexReducer from "./state/rules-index";
 import unitsReducer from "./state/units";
 import selectedRulesetReducer from "./state/selectedRuleset";
 
-export default configureStore({
+const store = configureStore({
   reducer: {
     lists: listsReducer,
     factions: factionsReducer,
@@ -17,3 +17,14 @@ export default configureStore({
     selectedRuleset: selectedRulesetReducer,
   },
 });
+
+let previousLists = store.getState().lists;
+store.subscribe(() => {
+  const currentLists = store.getState().lists;
+  if (currentLists !== previousLists) {
+    previousLists = currentLists;
+    localStorage.setItem("mowb.lists", JSON.stringify(currentLists));
+  }
+});
+
+export default store;

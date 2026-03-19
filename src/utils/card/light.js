@@ -1,3 +1,5 @@
+import { box, boxline, scaleStyle, exists, polarToCartesian, describeArc, drawBroadside, drawForeCannon, drawAftCannon, drawForeSpread, drawUnderTurrets, drawOverTurrets, drawShip, beastname, textRow, rowFive } from './cardUtility.js';
+
 // A javascript that builds a man o war flyer and sea beast cards.
 // These type of ships are characterized by their ability to turn on a dime,
 // having no wounds in their to-hit locations.
@@ -35,36 +37,6 @@ function () {
 //   point I need to identify the common building blocks and do so.
 // + Currently it's not driven from json, need to define the json needed and drive the card creation off that.
 
-function box(x, y, size) {
-  return ""
-    + "<div "
-      + "style='"
-        + "border:1px solid black;"
-        + "position:absolute;"
-        + "width:" + size + "px;"
-        + "height:" + size + "px;"
-        + "left:" + x + "px;"
-        + "bottom:" + y + "px;"
-        + "background-color:white"
-      + "'>"
-      + "<br>"
-    + "</div>";
-}
-
-function boxline(x, y, size, num, rows, margin) {
-  var i = 0;
-  var boxes = "";
-  console.log("Drawing boxline (rows: " + rows + "):")
-  while (i < num) {
-    var j = Math.floor(i / rows);
-    var k = (i % rows);
-    console.log("i: " + i + " j: " + j + " k: " + k);
-    boxes += box(x + size * j + margin * j, y - size * k - margin * k, size);
-    i++;
-  }
-  return boxes;
-}
-
 // Row One is the beast type, title, honors, pt value and movement box
 // It has a fixed height & width.
 function rowOne(w, h, x, y, meta, obj, inst) {
@@ -85,8 +57,8 @@ function rowOne(w, h, x, y, meta, obj, inst) {
           + "font-size:18px;"
           + "color:" + meta.fgColor + ";"
           + scaleStyle(obj.cost) + "'>"
-      + cost 
-    + "</div>" 
+      + cost
+    + "</div>"
     + "<div id='honors' "
         + "style='"
           + "position:absolute;"
@@ -94,10 +66,10 @@ function rowOne(w, h, x, y, meta, obj, inst) {
           + "font-size:18px;"
           + "color:" + meta.fgColor + ";"
           + scaleStyle(obj.honors) + "'>"
-      + honors 
+      + honors
     + "</div>"
-  + "</div>" 
-  + "<div id='rowOneContents' " 
+  + "</div>"
+  + "<div id='rowOneContents' "
       + "style='"
         + "position:absolute;"
         + "width:" + w + "px;"
@@ -107,18 +79,6 @@ function rowOne(w, h, x, y, meta, obj, inst) {
     + rowOneColOne(295, h, 0, 0, meta, obj)
     + rowOneColTwo(w-300, h, 300, 0, meta, obj)
   + "</div>";
-}
-
-// Scaling "centers" the scaling (so the center of the div doesn't move).
-// This provides the style changes needed so the div doesn't change size
-// or move position while the content of the div is scaled. Note: we don't
-// really care about movement if the text is centered, so this function
-// doesn't need to be used everywhere we use scale.
-function scaleStyle(scaleObj) {
-  var width = 100 / scaleObj.scale;
-  var left = -(width - 100) / 2;
-
-  return 'position:absolute;width:' + width + '%;left:' + left + '%;transform:scale(' + scaleObj.scale + ',1);-webkit-transform:scale(' + scaleObj.scale + ',1);';
 }
 
 // Column one has a fixed height/width and fixed position
@@ -135,47 +95,8 @@ function rowOneColOne(w, h, x, y, meta, obj) {
 }
 
 // CS rules for scaling horizontally and vertically
-// transform:scale(4,1); 
+// transform:scale(4,1);
 // -webkit-transform:scale(4,1);
-
-function beastname(w, h, x, y, name, meta) {
-  return "<div "
-    + "style='"
-      + "position:absolute;"
-      + "width:" + w + "px;"
-      + "height:" + h + "px;"
-      + "left:" + x + "px;"
-      + "bottom:" + y + "px;"
-      + "font-size:45px;"
-      + "text-align:center;"
-      + "color:" + meta.fgColor + ";"
-      + "font-family: \"IM Fell English\", serif;"
-      + "transform:scale(" + name.scale + ",1);"
-      + "-webkit-transform:scale(" + name.scale + ",1);'>"
-    + name.value
-  + "</div>";
-}
-
-function textRow(w, h, x, y, text) {
-  return "<div "
-      + "style='"
-        + "position:absolute;"
-        + "border:1px solid black;"
-        + "width:" + w + "px;"
-        + "height:" + h + "px;"
-        + "left:" + x + "px;"
-        + "bottom:" + y + "px;"
-        + "font-size:18px;"
-        + "vertical-align:middle;"
-        + "text-align:center;"
-        + "color:white;"
-        + "background-color:black;"
-        + "font-family: \"IM Fell English\", serif;'>"
-      + "<div style='" + scaleStyle(text) + "'>"
-        + text.value 
-      + "</div>"
-    + "</div>";
-}
 
 // Column one has a fixed height/width and fixed position
 function rowOneColTwo(w, h, x, y, meta, obj) {
@@ -189,7 +110,7 @@ function rowOneColTwo(w, h, x, y, meta, obj) {
         + "width:" + w + "px;"
         + "height:" + h + "px;"
         + "left:" + x + "px;"
-        + "bottom:" + y + "px;'>" 
+        + "bottom:" + y + "px;'>"
       + textRow(w, 25, 0, h-25, obj.moveTitle)
       + "<div "
           + "style='"
@@ -208,7 +129,7 @@ function rowOneColTwo(w, h, x, y, meta, obj) {
             + "style='"
               + "font-family:\"IM Fell English\", serif;"
               + "width:100%;'>"
-          + contents 
+          + contents
         + "</div>"
       + "</div>"
     + "</div>";
@@ -267,7 +188,7 @@ function rowThreeLeft(w, h, x, y, obj, meta) {
   var bottom = h - 55;
   while (i < obj.numberOf) {
     console.log("i: " + i);
-    s = s 
+    s = s
       + "<div "
         + "style='"
           + "position:absolute;"
@@ -284,14 +205,14 @@ function rowThreeLeft(w, h, x, y, obj, meta) {
     console.log("numberOf: " + obj.numberOf);
     console.log("i: " + i);
   }
-  s = s 
+  s = s
     + "</div>";
- 
-  return s; 
+
+  return s;
 }
 
 function damageTitle(zone, text, save, meta) {
-  var saveColor = meta.accentColor; 
+  var saveColor = meta.accentColor;
   return  ""
     + "<div "
       + "style='"
@@ -348,7 +269,7 @@ function damageVerticalBoxes(w, h, dbox) {
   var dmgH = boxH - 20;
   var boxW = (w * dbox.width) / 100;
   var internal = "" + "<div style='position:absolute; width:" + boxW + "px; height:"+ dmgH + "px; top:20px; left:0px;'><div style='position:absolute;text-align:right;color:grey;font-size:60px;width:"+boxW+"px;'>"+dbox.zone+"</div>";
-  var next = 5; 
+  var next = 5;
   dmgRow.forEach((row) => {
     internal = internal + "<div style='position:absolute; width:100%; height:20px; top:" + next + "px; left:0px;'>";
     internal = internal + box(5, 0, 20);
@@ -361,7 +282,7 @@ function damageVerticalBoxes(w, h, dbox) {
   if (typeof dmgText !== 'undefined') {
     internal = internal + "<div style='" + scaleStyle(dmgText) + "font-family: \"IM Fell English\", serif;display:flex; height:"+ (dmgH - next) + "px; top:" + next + "px;justify-content:center;align-items:flex-end'>" + dmgText.value + "</div>";
   }
-  internal = internal + "</div>" 
+  internal = internal + "</div>"
   return internal;
 }
 
@@ -375,7 +296,7 @@ function damageBox(w, h, dbox) {
   var boxW = (w * dbox.width) / 100;
 
   // The big zone indicator
-  var internal = "" 
+  var internal = ""
     + "<div "
       + "style='"
         + "position:absolute;"
@@ -392,11 +313,11 @@ function damageBox(w, h, dbox) {
           + "font-size:60px;"
           + "width:" + boxW + "px;"
         + "'>"
-        + dbox.zone 
+        + dbox.zone
       + "</div>";
 
   // The text
-  internal = internal 
+  internal = internal
     + "<div "
       + "style='"
         + "font-family: \"IM Fell English\", serif;"
@@ -411,7 +332,7 @@ function damageBox(w, h, dbox) {
       + dmgText.value
     + "</div>";
   internal = internal
-    + "</div>" 
+    + "</div>"
   return internal;
 }
 
@@ -442,7 +363,7 @@ function damageBoxes(w, h, boxes, meta) {
   return s;
 }
 /*
-// A damage box that has 
+// A damage box that has
 // values here are percents of the parent div anchored off the lower left
 function horizDamageBox(wper, hper, xper, yper, obj) {
   // Title & Save (anchored off the top of the div)
@@ -452,7 +373,7 @@ function horizDamageBox(wper, hper, xper, yper, obj) {
   });
   var template = "<div style='border: 1px solid black;position:absolute;width:{0}%; height:{1}%;left:{2}%;bottom:{3}%;background-color:lightblue'><span style='justify-contents:right;color:cyan'>2,3</span>{4}</div>";
   var template_title = "<div style='position:absolute;width:100%; height:{1}px;left:{2}px;top:{3}px;background-color:black;color:white'><div style:'text-align:left'>{4}</div><div style='position:absolute;width:100%;top:0%;text-align:right'>{5}</div></div>";
-  return template.formatUnicorn(wper, hper, xper, yper, 
+  return template.formatUnicorn(wper, hper, xper, yper,
      template_title.formatUnicorn(wper, 25, 0, 0, "CANNON DECK", "4+"));
 }
 */
@@ -478,7 +399,7 @@ function rowFour(w, h, x, y, meta, obj) {
     // calculate size of the box and then the new top (which will be the
     // bottom of the current note).
     var boxHeight = (realSpace * note.height) / 100;
-    var top = top - boxHeight;
+    top = top - boxHeight;
 
     s = s + "<div "
         + "style='"
@@ -487,7 +408,7 @@ function rowFour(w, h, x, y, meta, obj) {
           + "width:" + w + "px;"
           + "height:" + boxHeight + "px;"
           + "left:" + x + "px;"
-          + "bottom:" + top + "px;'>" 
+          + "bottom:" + top + "px;'>"
         + textRow(w, 25, 0, boxHeight-25, title)
         + "<div "
             + "style='"
@@ -517,35 +438,6 @@ function rowFour(w, h, x, y, meta, obj) {
   return s;
 }
 
-function rowFive(w, h, x, y, meta, obj, inst) {
-  var name = {"name":"Melvin", "scale":"1.0"};
-  if (typeof inst.name !== "undefined") {
-    name = inst.name;
-  }
-
-  var s = 
-    "<div "
-      + "style='"
-        + "border:1px solid black;"
-        + "position:absolute;"
-        + "height:" + h + "px;"
-        + "width:" + w + "px;"
-        + "background-color:" + meta.parchmentColor + ";"
-        + "bottom:" + y + "px;"
-        + "left:" + x + "px;"
-        + "text-align:center;"
-        + "font-size:15px;"
-        + "font-family: \"Shadows Into Light\", cursive;"
-      + "'>"
-      + "<div "
-        + "style:'" + scaleStyle(name) + "'"
-      + ">" 
-        + name 
-      + "</div>"
-    + "</div>";
-  return s;
-}
-
 /*
 function rowFourColOne(gw, gh, w, h, x, y, meta, obj, inst) {
   var name = "";
@@ -560,205 +452,6 @@ function rowFourColOne(gw, gh, w, h, x, y, meta, obj, inst) {
   + "<div style='border:1px solid black;position:absolute;height:20px;width:345px;background-color:" + meta.parchmentColor + "; bottom:0px; left:0px; text-align:center; font-size:15px; font-family: \"Shadows Into Light\", cursive;'><div style:'" + scaleStyle(name) + "'>" + name.value + "</div></div>";
 }
 */
-
-// Draws a broadside out either side of the ship
-function drawBroadside(w, h, s, num, meta) {
-  var cx = w / 2; // center x
-  var cy = h / 2; // center y
-  var t = cy - s + 10; // top (slightly less than the size of the ship)
-  var b = cy + s - 10; // bottom
-  var l = 15;
-  var r = w - 15;
-  var internal = '<rect x=' + l + ' y=' + t + ' width=' + (r - l) + ' height=' + (b - t) + ' style="fill:white;stroke:black;stroke-width:2"/>'
-  internal = internal + '<text x=' + ((cx + l - (s/3)) / 2) + ' y=' + cy + ' fill="' + meta.accentColor + '" font-size="30px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + num + '</text>';
-  internal = internal + '<text x=' + ((cx + r + (s/3)) / 2) + ' y=' + cy + ' fill="' + meta.accentColor + '" font-size="30px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + num + '</text>';
-  return internal;
-}
-
-function drawForeCannon(w, h, s, num, meta) {
-  var cx = w / 2; // center x
-  var cy = h / 2; // center y
-  var t = 20;
-  var b = cy;
-  var l = cx - (s / 3);
-  var r = cx + (s / 3);
-
-  var internal = '<rect x=' + l + ' y=' + t + ' width=' + (r - l) + ' height=' + (b - t) + ' style="fill:white;stroke:black;stroke-width:2"/>'
-  internal = internal + '<text x=' + cx + ' y=' + ((t + b - s) / 2) + ' fill="' + meta.accentColor + '" font-size="30px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + num + '</text>';
-  return internal;
-}
-
-function drawAftCannon(w, h, s, num, meta) {
-  var cx = w / 2; // center x
-  var cy = h / 2; // center y
-  var t = cy;
-  var b = h-20;
-  var l = cx - (s / 3);
-  var r = cx + (s / 3);
-
-  var internal = '<rect x=' + l + ' y=' + t + ' width=' + (r - l) + ' height=' + (b - t) + ' style="fill:white;stroke:black;stroke-width:2"/>'
-  internal = internal + '<text x=' + cx + ' y=' + ((t + b + s) / 2) + ' fill="' + meta.accentColor + '" font-size="30px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + num + '</text>';
-  return internal;
-}
-
-function describeArc(x, y, radius, spread, startAngle, endAngle) {
-    var innerStart = polarToCartesian(x, y, radius, endAngle);
-  	var innerEnd = polarToCartesian(x, y, radius, startAngle);
-    var outerStart = polarToCartesian(x, y, radius + spread, endAngle);
-    var outerEnd = polarToCartesian(x, y, radius + spread, startAngle);
-
-    var largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
-
-    var d = [
-        "M", outerStart.x, outerStart.y,
-        "A", radius + spread, radius + spread, 0, largeArcFlag, 0, outerEnd.x, outerEnd.y,
-        "L", innerEnd.x, innerEnd.y, 
-        "A", radius, radius, 0, largeArcFlag, 1, innerStart.x, innerStart.y, 
-        "L", outerStart.x, outerStart.y, "Z"
-    ].join(" ");
-
-    return d;
-}
-
-function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
-  var angleInRadians = (angleInDegrees-90) * Math.PI / 180.0;
-
-  return {
-    x: centerX + (radius * Math.cos(angleInRadians)),
-    y: centerY + (radius * Math.sin(angleInRadians))
-  };
-}
-
-//var path = describeArc(150, 150, 50, 0, 0, 50)
-function drawForeSpread(w, h, s, num, meta) {
-  var cx = w / 2; // center x
-  var cy = (h / 2) - (s / 2); // center y
-  var internal = '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx, cy, 0, 70, -45, 45) + '"/>';
-  internal = internal + '<text x=' + cx + ' y=' + ((2 * cy - 70) / 2) + ' fill="' + meta.accentColor + '" font-size="30px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + num + '</text>';
-  return internal;
-}
-
-function drawUnderTurrets(w, h, s, meta, obj) {
-  var cx = w / 2; // center x
-  var cy = h / 2; // center y
-  var internal = "";
-
-  // middle center (radius should be slightly more than s, this one needs to be a circle)
-  if (typeof obj.fullTurret !== 'undefined') {
-    internal = internal + '<circle cx="' + cx + '" cy="' + cy + '" r="' + (5 * s / 4) + '" fill="white" stroke="black" stroke-width="2" /></circle>';
-  }
-
-  // fore center
-  if (typeof obj.foreTurret !== 'undefined') {
-    internal = internal + '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx, cy - s/2, 0, 60, -90, 90) + '"/>';
-    internal = internal + '<text x=' + cx + ' y=' + (cy - s - 15) + ' fill="' + meta.accentColor + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.foreTurret + '</text>';
-  }
-
-  // aft center
-  if (typeof obj.aftTurret !== 'undefined') {
-    internal = internal + '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx, cy + 3*s/4, 0, 60, 90, 270) + '"/>';
-    internal = internal + '<text x=' + cx + ' y=' + (cy + s + 25) + ' fill="' + meta.accentColor + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.aftTurret + '</text>';
-  }
-
-  // middle port
-  if (typeof obj.portTurret !== 'undefined') {
-    internal = internal + '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx - s/3 + 5, cy + 5, 0, 55, 180, 360) + '"/>';
-    internal = internal + '<text x=' + (cx - s/3 - 25) + ' y=' + (cy + 5) + ' fill="'+ meta.accentColor +'" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.portTurret + '</text>';
-  }
-
-  // middle starboard
-  if (typeof obj.starboardTurret !== 'undefined') {
-    internal = internal + '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx + s/3 - 5, cy + 5, 0, 55, 0, 180) + '"/>';
-    internal = internal + '<text x=' + (cx + s/3 + 25) + ' y=' + (cy + 5) + ' fill="' + meta.accentColor + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.starboardTurret  + '</text>';
-  }
-
-  // fore port
-  if (typeof obj.forePortTurret !== 'undefined') {
-    internal = internal + '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx - s / 3, (cy - ((2*s)/3)), 0, 40, 270, 360) + '"/>';
-    internal = internal + '<text x=' + (cx - s/3 - 15) + ' y=' + (cy - ((2*s)/3) - 15) + ' fill="' + meta.accentColor + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.forePortTurret + '</text>';
-  }
-
-  // aft port
-  if (typeof obj.aftPortTurret !== 'undefined') {
-    internal = internal + '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx - s/3, (cy + s), 0, 40, 180, 270) + '"/>';
-    internal = internal + '<text x=' + (cx - s/3 - 15) + ' y=' + (cy + s + 15) + ' fill="' + meta.accentColor + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.aftPortTurret + '</text>';
-  }
-
-  // fore starboard
-  if (typeof obj.foreStarboardTurret !== 'undefined') {
-    internal = internal + '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx + s / 3, (cy - ((2*s)/3)), 0, 40, 0, 90) + '"/>';
-    internal = internal + '<text x=' + (cx + s/3 + 15) + ' y=' + (cy - ((2*s)/3) - 15) + ' fill="' + meta.accentColor + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.foreStarboardTurret + '</text>';
-  }
-
-  // aft starboard
-  if (typeof obj.aftStarboardTurret !== 'undefined') {
-    internal = internal + '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx + s/3, (cy + s), 0, 40, 90, 180) + '"/>';
-    internal = internal + '<text x=' + (cx + s/3 + 15) + ' y=' + (cy + s + 15) + ' fill="' + meta.accentColor + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.aftStarboardTurret + '</text>';
-  }
-
-  // Ammo Boxes
-  if (typeof obj.ammo !== 'undefined') {
-    internal = internal + "";
-  }
-  return internal;
-}
-
-function exists(obj) {
-  return typeof obj !== 'undefined';
-}
-
-function drawOverTurrets(w, h, s, meta, obj) {
-  var cx = w / 2;
-  var cy = h / 2;
-  var internal = "";
-  // middle center
-  if (exists(obj.fullTurret)) {
-    internal = internal + '<circle cx="' + cx + '" cy="' + cy + '" r="5" fill="lightgrey" stroke="black" stroke-width="2" /></circle>';
-    // middle center turret is the only weapons that gets to draw it's number on the ship itself
-    internal = internal + '<text x=' + cx + ' y=' + (cy + 16) + ' fill="' + meta.accentColor + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.fullTurret + '</text>';
-  }
-
-  // fore center
-  if (exists(obj.foreTurret)) {
-    internal = internal + '<circle cx="' + cx + '" cy="' + (cy - s / 2 ) + '" r="5" fill="lightgrey" stroke="black" stroke-width="2" /></circle>';
-  }
-
-  // aft center
-  if (exists(obj.aftTurret)) {
-    internal = internal + '<circle cx="' + cx + '" cy="' + (cy + 3 * s / 4 ) + '" r="5" fill="lightgrey" stroke="black" stroke-width="2" /></circle>';
-  }
-
-  // middle port
-  if (exists(obj.portTurret)) {
-    internal = internal + '<circle cx="' + (cx - s/3 + 5) + '" cy="' + (cy + 5) + '" r="5" fill="lightgrey" stroke="black" stroke-width="2" /></circle>';
-  }
-
-  // middle starboard
-  if (exists(obj.starboardTurret)) {
-    internal = internal + '<circle cx="' + (cx + s/3 - 5) + '" cy="' + (cy + 5) + '" r="5" fill="lightgrey" stroke="black" stroke-width="2" /></circle>';
-  }
-
-  // fore port
-  if (exists(obj.forePortTurret)) {
-    internal = internal + '<circle cx="' + (cx - s / 3) + '" cy="' + (cy - ((2 * s) / 3))+ '" r="5" fill="lightgrey" stroke="black" stroke-width="2" /></circle>';
-  }
-
-  // aft port
-  if (exists(obj.aftPortTurret)) {
-    internal = internal + '<circle cx="' + (cx - s / 3) + '" cy="' + (cy + s) + '" r="5" fill="lightgrey" stroke="black" stroke-width="2" /></circle>';
-  }
-
-  // fore starboard
-  if (exists(obj.foreStarboardTurret)) {
-    internal = internal + '<circle cx="' + (cx + s / 3) + '" cy="' + (cy - ((2 * s) / 3))+ '" r="5" fill="lightgrey" stroke="black" stroke-width="2" /></circle>';
-  }
-
-  // aft starboard
-  if (exists(obj.aftStarboardTurret)) {
-    internal = internal + '<circle cx="' + (cx + s / 3) + '" cy="' + (cy + s) + '" r="5" fill="lightgrey" stroke="black" stroke-width="2" /></circle>';
-  }
-  return internal;
-}
 
 /*
 // Draws a ship in the center of svg object
@@ -782,7 +475,7 @@ function rowFourColTwo(gw, gh, w, h, x, y, meta, obj)
   aftBattery = "";
   foreSpread = "";
   foreBattery = "";
-  
+
   if (typeof obj.broadside !== 'undefined') {
     broadside = drawBroadside(w, h, 40, obj.broadside, meta);
   }
@@ -810,7 +503,7 @@ function rowFourColTwo(gw, gh, w, h, x, y, meta, obj)
     numRows = 1;
     if (typeof obj.ammoNumRows !== 'undefined') {
       numRows = obj.ammoNumRows;
-    } 
+    }
     ammoWidth = Math.ceil(obj.ammo / numRows) * 20 + (Math.ceil(obj.ammo / numRows) - 1) * 5
     internal = internal + boxline((w / 2) - (ammoWidth / 2), 5 + (numRows - 1) * 25, 20, obj.ammo, numRows, 5);
   }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useIntl } from "react-intl";
 import { Helmet } from "react-helmet-async";
@@ -13,7 +13,8 @@ import { ShowLists } from "../../components/showlists";
 import { ListEditor } from "../../components/listeditor";
 import { FleetValidator } from "../../components/fleetvalidator";
 import { TabBar } from "../../components/tabbar";
-import { FleetDetails } from "../../components/fleetdetails";
+import { CardViewer } from "../../components/cardviewer";
+import { PrintView } from "../../components/printview";
 
 import "./Builder.css";
 import gameSystems from "../../assets/factions.json";
@@ -26,12 +27,13 @@ import "./Builder.css";
 export const Builder = () => {
   const location = useLocation();
   const intl = useIntl();
-  const { ruleset, factionId, listId } = useParams();
   const dispatch = useDispatch();
-  const game = gameSystems.find((game) => game.id === ruleset);
+  const selectedRuleset = useSelector((state) => state.selectedRuleset);
+  const game = gameSystems.find((g) => g.id === selectedRuleset);
   const factions = useSelector((state) => state.factions);
   const units = useSelector((state) => state.units);
   const [selectedListId, setSelectedListId] = useState(null);
+  const [bwOverride, setBwOverride] = useState(false);
   // const army = game.armies.find((army) => army.id === list.army);
 
   useEffect(() => {
@@ -105,7 +107,12 @@ export const Builder = () => {
               {
                 id: "details",
                 label: "Cards",
-                content: <FleetDetails listId={selectedListId} />,
+                content: (
+                  <>
+                    <PrintView listId={selectedListId} bwOverride={bwOverride} onBwOverride={setBwOverride} />
+                    <CardViewer listId={selectedListId} bwOverride={bwOverride} />
+                  </>
+                ),
               },
             ]}
           />

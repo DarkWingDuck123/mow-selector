@@ -1,4 +1,4 @@
-import { useEffect, useId } from "react";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useIntl } from "react-intl";
 import { Helmet } from "react-helmet-async";
@@ -13,8 +13,6 @@ import "./RuleSetChooser.css";
 export const RuleSetChooser = () => {
   const location = useLocation();
   const intl = useIntl();
-  const newId = useId();
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
@@ -43,7 +41,7 @@ export const RuleSetChooser = () => {
                 label={sys.id}
                 color="dark"
                 onClick={() => { console.log("clicked", sys.id) }}
-                to={"/Builder/"+sys.id+"/"+newId}>
+                to="/Builder">
                 {sys.name_en}
               </Button>
               <br/>

@@ -20,6 +20,10 @@
   transform-origin: top left;
 }
 
+.card-viewer__message {
+  grid-column: 1 / -1;
+}
+
 .card-viewer__placeholder {
   position: absolute;
   inset: 0;

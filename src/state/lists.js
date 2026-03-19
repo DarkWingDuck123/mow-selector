@@ -22,6 +22,7 @@ export const listsSlice = createSlice({
           factionId: "",
           factionName: "",
           cards: [],
+          crew: [],
         },
       ];
     },
@@ -89,10 +90,99 @@ export const listsSlice = createSlice({
     removeCard: (state, { payload }) => {
       const { listId, index } = payload;
       return state.map((list) => {
+        if (listId !== list.id) return list;
+        const entry = list.cards[index];
+        if (entry?.freebieKey) {
+          return {
+            ...list,
+            cards: list.cards.filter((e) => e.freebieKey !== entry.freebieKey),
+            freebieState: { ...(list.freebieState || {}), [entry.freebieKey]: "dismissed" },
+          };
+        }
+        return { ...list, cards: list.cards.filter((_, i) => i !== index) };
+      });
+    },
+    addCrew: (state, { payload }) => {
+      const { listId, unit } = payload;
+      const entry = {
+        uid: getRandomId(),
+        id: unit.id,
+        name: unit.name_en,
+        description: unit.description_en || "",
+        cost: String(unit.cost || 0),
+      };
+      return state.map((list) => {
         if (listId === list.id) {
-          return { ...list, cards: list.cards.filter((_, i) => i !== index) };
+          return { ...list, crew: [...(list.crew || []), entry] };
         }
         return list;
+      });
+    },
+    moveCrew: (state, { payload }) => {
+      const { listId, sourceIndex, destinationIndex } = payload;
+      return state.map((list) => {
+        if (listId === list.id) {
+          return { ...list, crew: swap([...(list.crew || [])], sourceIndex, destinationIndex) };
+        }
+        return list;
+      });
+    },
+    removeCrewGroup: (state, { payload }) => {
+      // Removes all non-freebie crew with a given id, or all freebie crew with a given freebieKey.
+      const { listId, id, freebieKey } = payload;
+      return state.map((list) => {
+        if (list.id !== listId) return list;
+        if (freebieKey) {
+          return {
+            ...list,
+            crew: list.crew.filter((e) => e.freebieKey !== freebieKey),
+            freebieState: { ...(list.freebieState || {}), [freebieKey]: "dismissed" },
+          };
+        }
+        return {
+          ...list,
+          crew: list.crew.filter((e) => e.id !== id || e.freebieKey),
+        };
+      });
+    },
+    removeCrew: (state, { payload }) => {
+      const { listId, index } = payload;
+      return state.map((list) => {
+        if (listId !== list.id) return list;
+        const entry = (list.crew || [])[index];
+        if (entry?.freebieKey) {
+          return {
+            ...list,
+            crew: list.crew.filter((e) => e.freebieKey !== entry.freebieKey),
+            freebieState: { ...(list.freebieState || {}), [entry.freebieKey]: "dismissed" },
+          };
+        }
+        return { ...list, crew: list.crew.filter((_, i) => i !== index) };
+      });
+    },
+    syncFreebies: (state, { payload }) => {
+      const { listId, grants, revocations, clearDismissed } = payload;
+      return state.map((list) => {
+        if (list.id !== listId) return list;
+        let crew = [...(list.crew || [])];
+        let cards = [...(list.cards || [])];
+        let freebieState = { ...(list.freebieState || {}) };
+
+        revocations.forEach(({ freebieKey }) => {
+          crew = crew.filter((e) => e.freebieKey !== freebieKey);
+          cards = cards.filter((e) => e.freebieKey !== freebieKey);
+          delete freebieState[freebieKey];
+        });
+
+        clearDismissed.forEach((key) => delete freebieState[key]);
+
+        grants.forEach(({ freebieKey, crewEntries = [], cardEntries = [] }) => {
+          crew = [...crew, ...crewEntries];
+          cards = [...cards, ...cardEntries];
+          freebieState[freebieKey] = "given";
+        });
+
+        return { ...list, crew, cards, freebieState };
       });
     },
     addUnit: (state, { payload }) => {
@@ -249,6 +339,11 @@ export const {
   addCard,
   moveCard,
   removeCard,
+  addCrew,
+  moveCrew,
+  removeCrew,
+  removeCrewGroup,
+  syncFreebies,
   setLists,
   addUnit,
   moveUnit,

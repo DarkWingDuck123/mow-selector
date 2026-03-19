@@ -32,6 +32,11 @@ export const Header = ({
 
   const navigationLinks = [
     {
+      name: "Fleet Builder",
+      to: "/Builder",
+      icon: "builder",
+    },
+    {
       name: intl.formatMessage({
         id: "footer.about",
       }),

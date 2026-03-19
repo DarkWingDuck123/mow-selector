@@ -31,7 +31,7 @@ function renderCard(meta, obj, inst) {
   }
 }
 
-export const CardViewer = ({ listId }) => {
+export const CardViewer = ({ listId, bwOverride }) => {
   const lists = useSelector((state) => state.lists);
   const list = lists?.find((l) => l.id === listId);
 
@@ -48,11 +48,17 @@ export const CardViewer = ({ listId }) => {
     }
     fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${factionId}/${factionId}.json`)
       .then((r) => r.json())
-      .then((data) => setMeta({ ...DEFAULT_META, ...data }))
+      .then((factionData) => {
+        const styleUrl = bwOverride || !factionData.style
+          ? `${process.env.PUBLIC_URL}/games/bw.json`
+          : `${process.env.PUBLIC_URL}/games/${rulesetId}/${factionId}/${factionData.style}.json`;
+        return fetch(styleUrl).then((r) => r.json()).catch(() => ({}));
+      })
+      .then((styleData) => setMeta({ ...DEFAULT_META, ...styleData }))
       .catch(() => setMeta({ ...DEFAULT_META }));
-  }, [rulesetId, factionId]);
+  }, [rulesetId, factionId, bwOverride]);
 
-  const uniqueCardIds = [...new Set(list?.cards?.map((c) => c.id) ?? [])].sort().join(",");
+  const uniqueCardIds = [...new Set(list?.cards?.map((c) => c.id).filter((id) => id !== "blank") ?? [])].sort().join(",");
 
   useEffect(() => {
     if (!rulesetId || !factionId || !uniqueCardIds) {
@@ -93,15 +99,19 @@ export const CardViewer = ({ listId }) => {
     return () => observer.disconnect();
   }, []);
 
-  if (!listId) return <p>No list selected.</p>;
-  if (!list?.cards?.length) return <p>No cards in this fleet.</p>;
-
   return (
     <div className="card-viewer" ref={gridRef}>
-      {list.cards.flatMap((card, i) => {
+      {!listId && <p className="card-viewer__message">No list selected.</p>}
+      {listId && !list?.cards?.length && <p className="card-viewer__message">No cards in this fleet.</p>}
+      {listId && list?.cards?.flatMap((card, i) => {
+        const count = card.number || 1;
+        if (card.id === "blank") {
+          return Array.from({ length: count }, (_, j) => (
+            <div key={`blank-${i}-${j}`} className="card-viewer__card" />
+          ));
+        }
         const obj = cardObjs[card.id];
         const html = obj && meta ? renderCard(meta, obj, {}) : null;
-        const count = card.number || 1;
         return Array.from({ length: count }, (_, j) => (
           <div key={`${card.uid || `${card.id}-${i}`}-${j}`} className="card-viewer__card">
             {html ? (
@@ -120,4 +130,5 @@ export const CardViewer = ({ listId }) => {
       })}
     </div>
   );
+
 };

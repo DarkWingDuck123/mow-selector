@@ -1,5 +1,6 @@
 {
   "id" : "brettonia",
+  "style" : "brett",
   "name_en" : "Brettonia",
   "units" : [
     {
