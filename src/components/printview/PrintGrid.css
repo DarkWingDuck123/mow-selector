@@ -1,0 +1,50 @@
+/* Hidden on screen — only shown inside the print iframe */
+.print-grid {
+  display: none;
+}
+
+@media print {
+  .print-grid {
+    display: grid;
+    /* Letter portrait, 0.5in margins → 7.5in × 10in = 720px × 960px at 96dpi.
+       Width-constrained: scale = (720-6)/1500 = 0.476
+       card = 238px × 333px, 3 cols = 720px (fills width exactly), 2 rows = 669px */
+    /* What I've noticed is that I can increase this by 1.39 and it still prints fine.
+       I'm still seeing an odd error where there is truncation if I go beyond that */
+    /*grid-template-columns: repeat(3, 238px);*/
+    grid-template-columns: repeat(3, 330px);
+    gap: 3px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .print-card {
+/*
+    width: 238px;
+    height: 333px;
+*/
+    width: 330px;
+    height: 463px;
+    overflow: hidden;
+    position: relative;
+  }
+/*
+  .print-card:nth-child(6n) {
+*/
+  .print-card:nth-child(9n) {
+    break-after: page;
+  }
+
+  .print-card-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 700px;
+    transform-origin: top left;
+/*
+    transform: scale(0.476);
+*/
+    transform: scale(0.661);
+  }
+}

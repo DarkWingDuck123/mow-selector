@@ -1,0 +1,11 @@
+{
+  "weight":"negligible",
+  "name":{"value":"HELLBLASTER","scale":1.0},
+  "type":{"value":"IMPERIAL ANTI-FLYER WEAPON","scale":0.75},
+  "honors":{"value":"Honors: 1", "scale":0.8},
+  "cost":{"value":"25 pts", "scale":1.0},
+  "moveTitle":{"value":"MOVE","scale":1.0},
+  "move":{"value":"<div style=\"font-size:24px\">SAIL 6\"</div><b>Wind Behind 9\"</b><div style=\"font-size:24px\">OARS 4\"</div><b>No Turns 6\"</b>","scale":0.75},
+  "notesTitle":{"value":"EFFECT","scale":1.0},
+  "notes":{"value":"<b>Fore Cannon:</b> May repel boarders<br><b>Ram:</b> 3\" straight under oars. Below waterline save, if failed:<br>1-3: 1pt, 4-5: 2pts, 6: 3pts","scale":0.85},
+}

@@ -1,0 +1,35 @@
+{
+  "weight":"light",
+  "name":{"value":"ECHIDNA","scale":0.5},
+  "type":{"value":"MOTHER OF MONSTERS","scale":0.75},
+  "honors":{"value":"Honors: 1", "scale":1.0},
+  "cost":{"value":"75 pts", "scale":1.0},
+  "moveTitle":{"value":"MOVE","scale":0.75},
+  "move":{"value":"<div style=\"font-size:40px\">24\" fly</div>","scale":1.0},
+  "upperNotes":[
+    {"value":"Labels: Sea Monster, Beast","scale":1.0},
+    {"value":"Notes: Line 2","scale":1.0},
+    {"value":"Notes: Line 3","scale":1.0}
+  ],
+  "dmgBoxes":[
+    {"width":100, "height":50, "left":0, "bottom":50,
+     "name":{"value":"HEAD", "scale":1.0},
+     "zone":"6",
+     "save":"6+",
+     "notes":{"value":"Head Shot<br>Remove Model", "scale":1.0}},
+    {"width":100, "height":50, "left":0, "bottom":0,
+     "name":{"value":"BODY", "scale":1.0},
+     "zone":"4,5",
+     "save":"4+",
+     "notes":{"value":"Do one Wound", "scale":1.0}}],
+  "numberOf":5,
+  "criticalTitle":{"value":"Wounds","scale":1.5},
+  "criticalBoxes":6,
+  "lowerNotes":[
+    {"height":50,
+     "title":{"value":"SPECIAL ATTACK", "scale":1.0},
+     "note":{"value":"Water Breadth: Roll one die per Crew Counter, remove on a 5+","scale":1.0}},
+    {"height":50,
+     "title":{"value":"CLOSE COMBAT", "scale":1.0},
+     "note":{"value":"+7 CC","scale":1.0}}]
+}

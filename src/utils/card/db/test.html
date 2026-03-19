@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title id="title">Man O'War Fleet</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <style>
+    .break {page-break-after:always;}
+  </style>
+</head>
+<body>
+<div style="position:relative;float:none" id="sheet"></div>
+<script type="module">
+  import { testNegligibleCard, testLightCard, testMediumCard, testHeavyCard } from './test.js';
+
+  const txt = `<table style="position:relative;border:1px solid black;margin-left:auto;margin-right:auto;"><tbody><tr><td>${testNegligibleCard()}</td><td>${testLightCard()}</td><td>${testMediumCard()}</td><td>${testHeavyCard()}</td></tr></tbody></table>`;
+  document.getElementById("title").innerHTML = "Man O'War Card Test";
+  document.getElementById("sheet").innerHTML = txt;
+</script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+{
+  "id" : "skaven",
+  "style" : "ska",
+
+  "name_en": "Skaven Clanfleet", 
+  "name_de": "Skaven Clanfleet",
+  "name_es": "Skaven Clanfleet",
+  "name_fr": "Skaven Clanfleet",
+
+  "validation_rules" : [
+    {
+      "rule" : "Max 1 Man O'War per 1 Ship of the Line; First One Free"
+    },
+    {
+      "rule" : "Max 2 Warp-Raider per 1 Doombringer, or 1 Deathburner"
+    },
+    {
+      "rule" : "Max 1 Hellhammer per 2 Ship of the Line"
+    },
+    {
+      "rule" : "Max 1 Ironfist per 2 Ship of the Line"
+    },
+    {
+      "rule" : "Max 1 Griffon Rider per 1 Ship of the Line"
+    },
+    {
+      "rule" : "Min 1 Doombringer"
+    },
+    {
+      "rule" : "Min 1 Deathburner"
+    },
+    {
+      "rule" : "Min 1 Warp-Raider"
+    },
+    {
+      "rule" : "Max 1 Admiral's Man O'War Card"
+    },
+    {
+      "rule" : "Max 34% Allies per 1000 pts"
+    },
+    {
+      "rule" : "Max 1 Sea Monster per 1 Ship of the Line"
+    },
+    {
+      "rule" : "Max 1 Anti-Flyer per 1 Man O'War"
+    }
+  ],
+
+  "allies" : [
+    "khorne"
+  ],
+
+  "crew" : [
+    {
+      "id" : "admiral"
+      "name" : "Admiral",
+      "name_en" : "Admiral",
+      "description_en" : "(A) +1 CC",
+      "type" : "crew"
+    },
+    {
+      "id" : "admiral"
+      "name" : "Admiral",
+      "name_en" : "Admiral",
+      "description_en" : "(A) +1 CC",
+      "type" : "crew"
+    },
+    {
+      "id" : "slave"
+      "name" : "Slave",
+      "name_en" : "Slave",
+      "description_en" : "(S) -1 CC",
+      "type" : "crew"
+    },
+    {
+      "id" : "clanrat"
+      "name" : "Clanrat",
+      "name_en" : "Clanrat",
+      "description_en" : "Regular Crew",
+      "type" : "crew"
+    },
+    {
+      "id" : "stormvermin"
+      "name" : "Storm Vermin",
+      "name_en" : "Storm Vermin",
+      "description_en" : "(C) +1 CC",
+      "type" : "crew"
+    },
+    {
+      "id" : "ratogre"
+      "name" : "Rat Ogre",
+      "name_en" : "Rat Ogre",
+      "description_en" : "(O) +1 CC when leading",
+      "type" : "crew",
+      "cost" : "25"
+    },
+    {
+      "id" : "eshin"
+      "name" : "Eshin Assassin",
+      "name_en" : "Eshin Assassin",
+      "description_en" : "(E) Precombat roll 1 die, 5-6 remove 1 enemy crew then remove assassin",
+      "type" : "crew",
+      "cost" : "50"
+    }
+  ],
+
+  "freebies" : [
+    {
+      "free" : "2 Slave per 100 pts"
+    },
+    {
+      "free" : "2 Clanrat per 100 pts"
+    },
+    {
+      "free" : "1 Storm Vermin per 200 pts"
+    }
+  ],
+
+  "addons" : [
+    {
+      "id" : "manowarcard",
+      "name_en" : "Man O'War Card",
+      "type" : "card",
+      "cost" : "25",
+    },
+    {
+      "id" : "admiralmanowarcard",
+      "name" : "Admiral's Man O'War Card",
+      "name_en" : "Admiral's Man O'War Card",
+      "type" : "card",
+      "cost" : "0",
+    },
+    {
+      "id" : "turnsummary",
+      "name_en" : "Turn Summary",
+      "type" : "card",
+      "cost" : "0"
+    },
+    {
+      "id" : "skavenblank",
+      "name_en" : "Empire Symbol",
+      "type" : "card",
+      "cost" : "0"
+    },
+    {
+      "id" : "skavenspecialrules",
+      "name_en" : "Special Rules - Skaven",
+      "type" : "card",
+      "cost" : "0"
+    },
+    {
+      "id" : "blank",
+      "name_en" : "Empty",
+      "type" : "card",
+      "cost" : "0"
+    }
+  ],
+
+  "units" : [
+    {
+      "id" : "doombringer",
+      "type" : "manowar",
+      "type_name" : "Man O'War",
+      "weight" : "heavy",
+      "name" : "Doombringer",
+      "name_de" : "Doombringer",
+      "name_en" : "Doombringer",
+      "name_es" : "Doombringer",
+      "name_fr" : "Doombringer",
+      "description_en" : "A Doombringer",
+      "squadron-size" : 1, 
+      "cost" : 150
+    },
+    {
+      "id" : "deathburner",
+      "type" : "shipoftheline",
+      "type_name" : "Ship of the Line",
+      "type_name_en" : "Ship of the Line",
+      "weight" : "heavy",
+      "name" : "Deathburner",
+      "name_en" : "Deathburner",
+      "description_en" : "A Squadron of 3 Deathburner",
+      "squadron-size" : 3,
+      "cost" : 300
+    },
+    {
+      "id" : "warpraider",
+      "type" : "shipoftheline",
+      "type_name" : "Ship of the Line",
+      "type_name_en" : "Ship of the Line",
+      "weight" : "heavy",
+      "name" : "Warp-Raider",
+      "name_en" : "Warp-Raider",
+      "description_en" : "A Squadron of 3 Warp-Raider",
+      "squadron-size" : 3,
+      "cost" : 75
+    },
+  ]
+}
+ 
