@@ -21,7 +21,7 @@ export const FactionEntry = ({
   const handleAddUnit = (unit) => (event) => {
     event.preventDefault();
     if (!listId) return;
-    dispatch(addCard({ listId, unit }));
+    dispatch(addCard({ listId, unit, factionId }));
   };
 
   const handleAddCrew = (unit) => (event) => {

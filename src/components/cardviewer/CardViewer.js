@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
+import DOMPurify from "dompurify";
 
 import { heavyCard } from "../../utils/card/heavy";
 import { lightCard } from "../../utils/card/light";
@@ -86,65 +87,88 @@ export const CardViewer = ({ listId, bwOverride }) => {
   const rulesetId = list?.rulesetId;
   const factionId = list?.factionId;
 
-  const [meta, setMeta] = useState(null);
+  // Primary faction data — needed for crew_card detection
   const [factionData, setFactionData] = useState(null);
-  const [cardObjs, setCardObjs] = useState({});
 
   useEffect(() => {
     if (!rulesetId || !factionId) {
-      setMeta(null);
       setFactionData(null);
       return;
     }
     fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${factionId}/${factionId}.json`)
       .then((r) => r.json())
-      .then((fd) => {
-        setFactionData(fd);
-        const styleUrl = bwOverride || !fd.style
-          ? `${process.env.PUBLIC_URL}/games/bw.json`
-          : `${process.env.PUBLIC_URL}/games/${rulesetId}/${factionId}/${fd.style}.json`;
-        return fetch(styleUrl).then((r) => r.json()).catch(() => ({}));
-      })
-      .then((styleData) => setMeta({ ...DEFAULT_META, ...styleData }))
-      .catch(() => setMeta({ ...DEFAULT_META }));
-  }, [rulesetId, factionId, bwOverride]);
+      .then(setFactionData)
+      .catch(() => setFactionData(null));
+  }, [rulesetId, factionId]);
 
-  // Exclude crew_card type from JSON fetches — they're built dynamically
-  const crewCardIds = new Set(
-    (factionData?.addons || []).filter((a) => a.type === "crew_card").map((a) => a.id)
-  );
+  // metaByFaction: factionId -> meta object
+  const [metaByFaction, setMetaByFaction] = useState({});
+  // cardObjs: "factionId/cardId" -> card obj
+  const [cardObjs, setCardObjs] = useState({});
 
-  const uniqueCardIds = [
+  // Build unique "factionId/cardId" pairs for all non-blank cards.
+  // Fall back to list.factionId for cards that predate per-card factionId tracking.
+  const uniquePairsStr = [
     ...new Set(
-      list?.cards
-        ?.map((c) => c.id)
-        .filter((id) => id !== "blank" && !crewCardIds.has(id)) ?? []
+      (list?.cards || [])
+        .filter((c) => c.id !== "blank")
+        .map((c) => `${c.factionId || factionId}/${c.id}`)
+        .filter((key) => !key.startsWith("/"))
     ),
   ].sort().join(",");
 
   useEffect(() => {
-    if (!rulesetId || !factionId || !uniqueCardIds) {
+    if (!rulesetId || !uniquePairsStr) {
       setCardObjs({});
+      setMetaByFaction({});
       return;
     }
-    const ids = uniqueCardIds.split(",");
+
+    const pairs = uniquePairsStr.split(",").map((key) => {
+      const slashIdx = key.indexOf("/");
+      return { factionId: key.slice(0, slashIdx), id: key.slice(slashIdx + 1) };
+    });
+
+    const uniqueFactionIds = [...new Set(pairs.map((p) => p.factionId))];
+
+    // For each faction, fetch its JSON to get the style field, then fetch the style JSON
     Promise.all(
-      ids.map((id) =>
-        fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${factionId}/${id}.json`)
-          .then((r) => {
-            if (!r.ok) return { id, obj: null };
-            return r.json().then((obj) => ({ id, obj }));
+      uniqueFactionIds.map((fId) =>
+        fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${fId}/${fId}.json`)
+          .then((r) => r.json())
+          .catch(() => ({ id: fId }))
+          .then((fJson) => {
+            const styleUrl = bwOverride || !fJson.style
+              ? `${process.env.PUBLIC_URL}/games/bw.json`
+              : `${process.env.PUBLIC_URL}/games/${rulesetId}/${fId}/${fJson.style}.json`;
+            return fetch(styleUrl)
+              .then((r) => r.json())
+              .catch(() => ({}))
+              .then((styleData) => ({ factionId: fId, meta: { ...DEFAULT_META, ...styleData } }));
           })
-          .catch(() => ({ id, obj: null }))
       )
     ).then((results) => {
       const map = {};
-      results.forEach(({ id, obj }) => {
-        map[id] = obj;
-      });
+      results.forEach(({ factionId: fId, meta }) => { map[fId] = meta; });
+      setMetaByFaction(map);
+    });
+
+    // Fetch card JSONs from each card's own faction directory
+    Promise.all(
+      pairs.map(({ factionId: fId, id }) =>
+        fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${fId}/${id}.json`)
+          .then((r) => {
+            if (!r.ok) return { key: `${fId}/${id}`, obj: null };
+            return r.json().then((obj) => ({ key: `${fId}/${id}`, obj }));
+          })
+          .catch(() => ({ key: `${fId}/${id}`, obj: null }))
+      )
+    ).then((results) => {
+      const map = {};
+      results.forEach(({ key, obj }) => { map[key] = obj; });
       setCardObjs(map);
     });
-  }, [rulesetId, factionId, uniqueCardIds]);
+  }, [rulesetId, uniquePairsStr, bwOverride]);
 
   const gridRef = useRef(null);
   const [cardScale, setCardScale] = useState(0.5);
@@ -174,11 +198,14 @@ export const CardViewer = ({ listId, bwOverride }) => {
           ));
         }
 
+        const cardFactionId = card.factionId || factionId;
+        const meta = metaByFaction[cardFactionId];
+
         // Dynamic crew card — build obj from list.crew
         const addonDef = factionData?.addons?.find((a) => a.id === card.id);
         if (addonDef?.type === "crew_card") {
           const obj = buildCrewCardObj(addonDef, list);
-          const html = meta ? negligibleCard(meta, obj, {}) : null;
+          const html = meta ? DOMPurify.sanitize(negligibleCard(meta, obj, {})) : null;
           return Array.from({ length: count }, (_, j) => (
             <div key={`${card.uid || `${card.id}-${i}`}-${j}`} className="card-viewer__card">
               {html ? (
@@ -194,8 +221,8 @@ export const CardViewer = ({ listId, bwOverride }) => {
           ));
         }
 
-        const obj = cardObjs[card.id];
-        const html = obj && meta ? renderCard(meta, obj, {}) : null;
+        const obj = cardObjs[`${cardFactionId}/${card.id}`];
+        const html = obj && meta ? DOMPurify.sanitize(renderCard(meta, obj, {})) : null;
         return Array.from({ length: count }, (_, j) => (
           <div key={`${card.uid || `${card.id}-${i}`}-${j}`} className="card-viewer__card">
             {html ? (

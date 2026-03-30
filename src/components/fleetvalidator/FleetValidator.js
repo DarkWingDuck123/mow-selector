@@ -49,9 +49,27 @@ const parseRule = (ruleStr) => {
   };
 };
 
+const parsePercentRule = (ruleStr) => {
+  const match = ruleStr.match(/^Max (\d+)%\s+(.+)$/i);
+  if (!match) return null;
+  return { limit: parseInt(match[1]), subject: match[2].trim() };
+};
+
 const validateRules = (list, faction) => {
   const validationRules = faction.validation_rules;
   if (!validationRules || validationRules.length === 0) return [];
+
+  const allies = new Set(faction.allies || []);
+  const primaryFactionId = list.factionId;
+
+  const totalPoints =
+    (list.cards || []).reduce((sum, c) => sum + (Number(c.cost) || 0), 0) +
+    (list.crew || []).reduce((sum, c) => sum + (Number(c.cost) || 0), 0);
+
+  const pointsFromFactions = (predicate) =>
+    (list.cards || [])
+      .filter((c) => c.factionId && predicate(c.factionId))
+      .reduce((sum, c) => sum + (Number(c.cost) || 0), 0);
 
   const allEntries = [
     ...(faction.units || []),
@@ -90,6 +108,22 @@ const validateRules = (list, faction) => {
   const errors = [];
 
   for (const { rule: ruleStr } of validationRules) {
+    // Percentage rules: "Max N% Allies" or "Max N% Non-Allies"
+    const pct = parsePercentRule(ruleStr);
+    if (pct) {
+      const subject = pct.subject.toLowerCase();
+      let subjectPoints = 0;
+      if (subject === "allies") {
+        subjectPoints = pointsFromFactions((fId) => allies.has(fId));
+      } else if (subject === "non-allies") {
+        subjectPoints = pointsFromFactions((fId) => fId !== primaryFactionId && !allies.has(fId));
+      }
+      if (totalPoints > 0 && (subjectPoints / totalPoints) * 100 > pct.limit) {
+        errors.push(ruleStr);
+      }
+      continue;
+    }
+
     const parsed = parseRule(ruleStr);
     if (!parsed) continue;
 

@@ -61,10 +61,11 @@ export const listsSlice = createSlice({
       return state.filter(({ id }) => id !== payload);
     },
     addCard: (state, { payload }) => {
-      const { listId, unit } = payload;
+      const { listId, unit, factionId } = payload;
       const card = {
         uid: getRandomId(),
         id: unit.id,
+        factionId: factionId || "",
         name: unit.name_en,
         description: unit.description_en || "",
         number: unit["squadron-size"] || 1,

@@ -9,7 +9,7 @@
 
   "validation_rules" : [
     {
-      "rule" : "Max 1 Man O'War per 1 Ship of the Line; First One Free"
+      "rule" : "Max 1 Greatship per 1 Ship of the Line; First One Free"
     },
     {
       "rule" : "Max 2 Wargalley per 1 Greatship, or 1 Wolfship"
@@ -36,10 +36,10 @@
       "rule" : "Max 1 Wizard"
     },
     {
-      "rule" : "Max 1 Admiral's Man O'War Card"
+      "rule" : "Max 33% Allies"
     },
     {
-      "rule" : "Max 34% Allies per 1000 pts"
+      "rule" : "Max 0% Non-Allies"
     },
     {
       "rule" : "Max 1 Sea Monster per 1 Ship of the Line"

@@ -132,7 +132,7 @@ export const ListEditor = ({
   }, [list?.rulesetId, list?.factionId]);
 
   useEffect(() => {
-    if (!factionData?.freebies?.length || !list) return;
+    if (!factionData?.freebies?.length || !list || !list.factionId || factionData.id !== list.factionId) return;
 
     const freebieState = list.freebieState || {};
     const grants = [];
@@ -171,6 +171,7 @@ export const ListEditor = ({
               const entry = {
                 uid: getRandomId(),
                 id: found.unit.id,
+                factionId: list.factionId || "",
                 name: found.unit.name_en || found.unit.name,
                 description: found.unit.description_en || "",
                 cost: "-",
