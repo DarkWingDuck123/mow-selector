@@ -338,7 +338,7 @@ function CardBrowser({ onLoad, onClose }) {
     setError(null);
     setLoading(true);
     try {
-      const res = await fetch(`/games/${rid}/${fid}/${fid}.json`);
+      const res = await fetch(`${process.env.PUBLIC_URL}/games/${rid}/${fid}/${fid}.json`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       setFactionIndex(await res.json());
     } catch (e) {
@@ -352,7 +352,7 @@ function CardBrowser({ onLoad, onClose }) {
     setError(null);
     setLoading(true);
     try {
-      const res = await fetch(`/games/${rulesetId}/${factionId}/${cardId}.json`);
+      const res = await fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${factionId}/${cardId}.json`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       onLoad(await res.json());
     } catch (e) {
