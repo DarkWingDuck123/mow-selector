@@ -223,6 +223,13 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
     }).filter(Boolean);
   });
 
+  const CARDS_PER_PAGE = 9;
+  const totalPages = Math.max(1, Math.ceil(cardItems.length / CARDS_PER_PAGE));
+  const [page, setPage] = useState(1);
+  const [allPages, setAllPages] = useState(false);
+  const clampedPage = Math.min(Math.max(1, page), totalPages);
+  const pageItems = allPages ? cardItems : cardItems.slice((clampedPage - 1) * CARDS_PER_PAGE, clampedPage * CARDS_PER_PAGE);
+
   const printRef = useRef(null);
   const handlePrint = useReactToPrint({
     contentRef: printRef,
@@ -235,7 +242,7 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
     previewWindow.document.write(`<!DOCTYPE html>
 <html>
 <head>
-  <title>Print Preview</title>
+  <title>Print Preview — ${allPages ? `All ${totalPages} pages` : `Page ${clampedPage} of ${totalPages}`}</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: #888; padding: 20px; }
@@ -269,7 +276,7 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
 </head>
 <body>
   <div class="page">
-    ${cardItems.map(({ html }) =>
+    ${pageItems.map(({ html }) =>
       html
         ? `<div class="print-card"><div class="print-card-inner">${DOMPurify.sanitize(html)}</div></div>`
         : `<div class="print-card"></div>`
@@ -291,7 +298,7 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
 
   return (
     <>
-      <PrintGrid ref={printRef} cardItems={cardItems} />
+      <PrintGrid ref={printRef} cardItems={pageItems} />
       <div className="print-view">
         <Button onClick={handlePrint} disabled={!allLoaded}>
           Print
@@ -299,6 +306,27 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
         <Button onClick={handlePreview} disabled={!allLoaded}>
           Preview
         </Button>
+        <div className="print-view__page-control">
+          <span>Page</span>
+          <input
+            type="number"
+            className="print-view__page-input"
+            min={1}
+            max={totalPages}
+            value={page}
+            disabled={allPages}
+            onChange={(e) => setPage(Number(e.target.value))}
+          />
+          <span>of {totalPages}</span>
+        </div>
+        <label className="print-view__bw-label">
+          <input
+            type="checkbox"
+            checked={allPages}
+            onChange={(e) => setAllPages(e.target.checked)}
+          />
+          All pages
+        </label>
         <label className="print-view__bw-label">
           <input
             type="checkbox"

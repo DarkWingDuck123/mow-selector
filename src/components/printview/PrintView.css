@@ -5,6 +5,24 @@
   margin-bottom: 0.75rem;
 }
 
+.print-view__page-control {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  color: var(--color-font);
+}
+
+.print-view__page-input {
+  width: 3rem;
+  padding: 0.2rem 0.35rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 0.875rem;
+  font-family: var(--font-family);
+  text-align: center;
+}
+
 .print-view__bw-label {
   display: flex;
   align-items: center;
