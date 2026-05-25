@@ -1,0 +1,14 @@
+# Auto-managed by the Credible extension
+/malloy-config.json
+.cursor/rules/malloy-always.mdc
+.cursor/rules/malloy-files.mdc
+.cursor/skills/credible-document/SKILL.md
+.cursor/skills/credible-publish/SKILL.md
+.cursor/skills/malloy-debug/SKILL.md
+.cursor/skills/malloy-discover/SKILL.md
+.cursor/skills/malloy-model/SKILL.md
+.cursor/skills/malloy-notebooks/SKILL.md
+.cursor/skills/malloy-patterns/SKILL.md
+.cursor/skills/malloy/SKILL.md
+/CLAUDE.md
+.cursor/mcp.json

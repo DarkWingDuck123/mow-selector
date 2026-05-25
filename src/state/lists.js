@@ -66,6 +66,7 @@ export const listsSlice = createSlice({
         uid: getRandomId(),
         id: unit.id,
         factionId: factionId || "",
+        weight: unit.weight || "negligible",
         name: unit.name_en,
         description: unit.description_en || "",
         number: unit["squadron-size"] || 1,
@@ -77,6 +78,19 @@ export const listsSlice = createSlice({
           return { ...list, cards: [...list.cards, card] };
         }
         return list;
+      });
+    },
+    updateShipName: (state, { payload }) => {
+      const { listId, cardIndex, nameIndex, name } = payload;
+      return state.map((list) => {
+        if (list.id !== listId) return list;
+        const cards = list.cards.map((card, i) => {
+          if (i !== cardIndex) return card;
+          const shipNames = [...(card.shipNames || [])];
+          shipNames[nameIndex] = name;
+          return { ...card, shipNames };
+        });
+        return { ...list, cards };
       });
     },
     moveCard: (state, { payload }) => {
@@ -338,6 +352,7 @@ export const {
   newList,
   moveList,
   addCard,
+  updateShipName,
   moveCard,
   removeCard,
   addCrew,

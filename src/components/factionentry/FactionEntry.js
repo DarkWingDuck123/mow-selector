@@ -16,7 +16,9 @@ export const FactionEntry = ({
   const dispatch = useDispatch();
   const factions = useSelector((state) => state.factions);
   const faction = useSelector((state) =>
-    state.factions?.find(({ id }) => factionId === id));
+    state.factions?.find(({ id }) => factionId === id) ||
+    state.customFactions?.find(({ id }) => factionId === id)
+  );
 
   const handleAddUnit = (unit) => (event) => {
     event.preventDefault();
@@ -74,14 +76,14 @@ export const FactionEntry = ({
 
   return (
     <>
-      {!factions && (<p>loading...</p>)}
-      {factions && primaryFaction && (
+      {!factions && !faction && (<p>loading...</p>)}
+      {faction && primaryFaction && (
         <>
           <h2>{faction?.name_en}</h2>
           {buildFaction(faction)}
         </>
       )}
-      {factions && !primaryFaction && (
+      {faction && !primaryFaction && (
         <Expandable headline={faction.name_en} noMargin className="datasets__unit-type datasets__unit">
           {buildFaction(faction)}
         </Expandable>

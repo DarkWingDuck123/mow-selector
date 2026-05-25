@@ -37,6 +37,16 @@ export const Header = ({
       icon: "builder",
     },
     {
+      name: "Card Builder",
+      to: "/CardBuilder",
+      icon: "builder",
+    },
+    {
+      name: "Faction Builder",
+      to: "/FactionBuilder",
+      icon: "builder",
+    },
+    {
       name: intl.formatMessage({
         id: "footer.about",
       }),

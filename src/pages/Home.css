@@ -1,0 +1,77 @@
+.home__title {
+  margin-bottom: 0.5rem;
+}
+
+.home__description {
+  margin-bottom: 2rem;
+}
+
+.home__section-title {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-border, #ccc);
+  padding-bottom: 0.25rem;
+}
+
+.home__rulesets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.home__ruleset-name {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.home__ruleset-description {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.home__tools {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.home__tool-link {
+  font-weight: 600;
+  color: var(--color-button);
+}
+
+.home__tool-link:hover {
+  text-decoration: underline;
+}
+
+.home__news {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.home__news-date {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.home__bugs {
+  padding-left: 1.25rem;
+}
+
+.home__bugs li {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}

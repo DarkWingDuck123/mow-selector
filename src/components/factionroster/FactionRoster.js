@@ -30,22 +30,25 @@ export const FactionRoster = ({
   listId
 }) => {
   const factions = useSelector((state) => state.factions);
+  const customFactions = useSelector((state) => state.customFactions);
   const list = useSelector((state) =>
     state.lists?.find(({ id }) => listId === id));
 
   const rulesetNationIds = gameSystems
     .find((sys) => sys.id === list?.rulesetId)
     ?.nations.map((n) => n.id) || [];
-  const rulesetFactions = factions?.filter(({ id }) => rulesetNationIds.includes(id));
+  const builtInFactions = factions?.filter(({ id }) => rulesetNationIds.includes(id)) || [];
+  const customRulesetFactions = customFactions.filter((f) => f.rulesetId === list?.rulesetId);
+  const rulesetFactions = [...builtInFactions, ...customRulesetFactions];
 
-  const primaryFaction = rulesetFactions?.find(({ id }) => list?.factionId === id);
-  const allyFactions = rulesetFactions?.filter(({ id }) => primaryFaction?.allies?.includes(id));
-  const otherFactions = rulesetFactions?.filter(({ id }) => !primaryFaction?.allies?.includes(id) && primaryFaction?.id !== id);
+  const primaryFaction = rulesetFactions.find(({ id }) => list?.factionId === id);
+  const allyFactions = rulesetFactions.filter(({ id }) => primaryFaction?.allies?.includes(id));
+  const otherFactions = rulesetFactions.filter(({ id }) => !primaryFaction?.allies?.includes(id) && primaryFaction?.id !== id);
    
   return (
     <>
-      {!factions && (<p>loading...</p>)}
-      {factions && primaryFaction && (
+      {!factions && customRulesetFactions.length === 0 && (<p>loading...</p>)}
+      {primaryFaction && (
         <>
           <FactionEntry factionId={primaryFaction?.id} listId={listId} primaryFaction />
           <h3> Allies </h3>
@@ -58,10 +61,10 @@ export const FactionRoster = ({
           ))}
       </>
       )}
-      {factions && !primaryFaction && (
+      {!primaryFaction && rulesetFactions.length > 0 && (
         <>
           <h2> All Factions </h2>
-          {rulesetFactions?.map((fac) => (
+          {rulesetFactions.map((fac) => (
             <FactionEntry key={fac.id} factionId={fac.id} listId={listId} />
           ))}
         </>

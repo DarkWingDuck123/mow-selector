@@ -70,6 +70,6 @@
   "lowerNotesTitle":{"value":"WEAPONS","scale":1.0},
   "lowerNotes":{"value":"<b>All Cannons:</b> May repel boarders","scale":1.0},
   "foreBattery":"2",
-  "broadside":"3",
+  "broadsideBattery":"3",
   "aftBattery":"2" 
 }

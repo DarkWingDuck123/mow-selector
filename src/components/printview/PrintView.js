@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import { useReactToPrint } from "react-to-print";
+import DOMPurify from "dompurify";
 
 import { Button } from "../button";
 import { PrintGrid } from "./PrintGrid";
@@ -36,6 +37,8 @@ function renderCard(meta, obj) {
 
 export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
   const lists = useSelector((state) => state.lists);
+  const customFactions = useSelector((state) => state.customFactions);
+  const customCards = useSelector((state) => state.customCards);
   const list = lists?.find((l) => l.id === listId);
 
   const rulesetId = list?.rulesetId;
@@ -49,17 +52,27 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
       setMeta(null);
       return;
     }
-    fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${factionId}/${factionId}.json`)
-      .then((r) => r.json())
-      .then((factionData) => {
-        const styleUrl = bwOverride || !factionData.style
-          ? `${process.env.PUBLIC_URL}/games/bw.json`
-          : `${process.env.PUBLIC_URL}/games/${rulesetId}/${factionId}/${factionData.style}.json`;
-        return fetch(styleUrl).then((r) => r.json()).catch(() => ({}));
-      })
-      .then((styleData) => setMeta({ ...DEFAULT_META, ...styleData }))
-      .catch(() => setMeta({ ...DEFAULT_META }));
-  }, [rulesetId, factionId, bwOverride]);
+    const customFaction = customFactions.find(
+      (f) => f.id === factionId && f.rulesetId === rulesetId
+    );
+    if (bwOverride) {
+      fetch(`${process.env.PUBLIC_URL}/games/bw.json`)
+        .then((r) => r.json())
+        .then((styleData) => setMeta({ ...DEFAULT_META, ...styleData }))
+        .catch(() => setMeta({ ...DEFAULT_META }));
+    } else if (customFaction) {
+      const styleData = customFaction.style && typeof customFaction.style === 'object' ? customFaction.style : {};
+      setMeta({ ...DEFAULT_META, ...styleData });
+    } else {
+      fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${factionId}/${factionId}.json`)
+        .then((r) => r.json())
+        .then((factionData) => {
+          const styleData = factionData.style && typeof factionData.style === 'object' ? factionData.style : {};
+          setMeta({ ...DEFAULT_META, ...styleData });
+        })
+        .catch(() => setMeta({ ...DEFAULT_META }));
+    }
+  }, [rulesetId, factionId, bwOverride, customFactions]);
 
   const uniqueCardIds = [...new Set(list?.cards?.map((c) => c.id).filter((id) => id !== "blank") ?? [])].sort().join(",");
 
@@ -70,14 +83,18 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
     }
     const ids = uniqueCardIds.split(",");
     Promise.all(
-      ids.map((id) =>
-        fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${factionId}/${id}.json`)
+      ids.map((id) => {
+        const customCard = customCards.find(
+          (c) => c.factionId === factionId && c.id === id && c.rulesetId === rulesetId
+        );
+        if (customCard) return Promise.resolve({ id, obj: customCard });
+        return fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${factionId}/${id}.json`)
           .then((r) => {
             if (!r.ok) return { id, obj: null };
             return r.json().then((obj) => ({ id, obj }));
           })
-          .catch(() => ({ id, obj: null }))
-      )
+          .catch(() => ({ id, obj: null }));
+      })
     ).then((results) => {
       const map = {};
       results.forEach(({ id, obj }) => {
@@ -85,7 +102,7 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
       });
       setCardObjs(map);
     });
-  }, [rulesetId, factionId, uniqueCardIds]);
+  }, [rulesetId, factionId, uniqueCardIds, customCards]);
 
   const cardItems = (list?.cards ?? []).flatMap((card, i) => {
     const count = card.number || 1;
@@ -97,7 +114,7 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
     }
     const obj = cardObjs[card.id];
     if (!obj || !meta) return [];
-    const html = renderCard(meta, obj);
+    const html = DOMPurify.sanitize(renderCard(meta, obj));
     if (!html) return [];
     return Array.from({ length: count }, (_, j) => ({
       key: `${card.uid || card.id}-${i}-${j}`,
@@ -153,7 +170,7 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
   <div class="page">
     ${cardItems.map(({ html }) =>
       html
-        ? `<div class="print-card"><div class="print-card-inner">${html}</div></div>`
+        ? `<div class="print-card"><div class="print-card-inner">${DOMPurify.sanitize(html)}</div></div>`
         : `<div class="print-card"></div>`
     ).join("")}
   </div>

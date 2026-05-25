@@ -1,8 +1,14 @@
 {
   "id" : "skaven",
-  "style" : "ska",
+  "style" : {
+    "bgColor": "#1c2a08",
+    "fgColor": "#d4cc20",
+    "parchmentColor": "#8a7840",
+    "waterColor": "#2a5c14",
+    "accentColor": "#7ab818"
+  },
 
-  "name_en": "Skaven Clanfleet", 
+  "name_en": "Skaven Clanfleet",
   "name_de": "Skaven Clanfleet",
   "name_es": "Skaven Clanfleet",
   "name_fr": "Skaven Clanfleet",
@@ -52,42 +58,35 @@
 
   "crew" : [
     {
-      "id" : "admiral"
+      "id" : "admiral",
       "name" : "Admiral",
       "name_en" : "Admiral",
       "description_en" : "(A) +1 CC",
       "type" : "crew"
     },
     {
-      "id" : "admiral"
-      "name" : "Admiral",
-      "name_en" : "Admiral",
-      "description_en" : "(A) +1 CC",
-      "type" : "crew"
-    },
-    {
-      "id" : "slave"
+      "id" : "slave",
       "name" : "Slave",
       "name_en" : "Slave",
       "description_en" : "(S) -1 CC",
       "type" : "crew"
     },
     {
-      "id" : "clanrat"
+      "id" : "clanrat",
       "name" : "Clanrat",
       "name_en" : "Clanrat",
       "description_en" : "Regular Crew",
       "type" : "crew"
     },
     {
-      "id" : "stormvermin"
+      "id" : "stormvermin",
       "name" : "Storm Vermin",
       "name_en" : "Storm Vermin",
       "description_en" : "(C) +1 CC",
       "type" : "crew"
     },
     {
-      "id" : "ratogre"
+      "id" : "ratogre",
       "name" : "Rat Ogre",
       "name_en" : "Rat Ogre",
       "description_en" : "(O) +1 CC when leading",
@@ -95,7 +94,7 @@
       "cost" : "25"
     },
     {
-      "id" : "eshin"
+      "id" : "eshin",
       "name" : "Eshin Assassin",
       "name_en" : "Eshin Assassin",
       "description_en" : "(E) Precombat roll 1 die, 5-6 remove 1 enemy crew then remove assassin",
@@ -121,14 +120,14 @@
       "id" : "manowarcard",
       "name_en" : "Man O'War Card",
       "type" : "card",
-      "cost" : "25",
+      "cost" : "25"
     },
     {
       "id" : "admiralmanowarcard",
       "name" : "Admiral's Man O'War Card",
       "name_en" : "Admiral's Man O'War Card",
       "type" : "card",
-      "cost" : "0",
+      "cost" : "0"
     },
     {
       "id" : "turnsummary",
@@ -168,7 +167,7 @@
       "name_es" : "Doombringer",
       "name_fr" : "Doombringer",
       "description_en" : "A Doombringer",
-      "squadron-size" : 1, 
+      "squadron-size" : 1,
       "cost" : 150
     },
     {
@@ -194,7 +193,6 @@
       "description_en" : "A Squadron of 3 Warp-Raider",
       "squadron-size" : 3,
       "cost" : 75
-    },
+    }
   ]
 }
- 

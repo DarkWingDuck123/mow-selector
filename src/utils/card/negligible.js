@@ -1,3 +1,4 @@
+import DOMPurify from 'dompurify';
 import { box, boxline, scaleStyle, exists, polarToCartesian, describeArc, drawBroadside, drawForeCannon, drawAftCannon, drawForeSpread, drawUnderTurrets, drawOverTurrets, drawShip, beastname, textRow, rowFive } from './cardUtility.js';
 
 // A javascript that builds a negligible man o war card. In the original game
@@ -19,11 +20,11 @@ import { box, boxline, scaleStyle, exists, polarToCartesian, describeArc, drawBr
 // Row One is the type, title, honors, pt value and (optional) movement box
 // It has a fixed height & width.
 function rowOne(w, h, x, y, meta, obj, inst) {
-  var cost = obj.cost.value;
-  var honors = obj.honors.value;
+  var cost = DOMPurify.sanitize(obj.cost.value);
+  var honors = DOMPurify.sanitize(obj.honors.value);
 
   var colOneWidth = w;
-  if (exists(obj.move)) {
+  if (exists(obj.move) && exists(obj.moveTitle)) {
     colOneWidth = 295;
   }
 
@@ -61,7 +62,7 @@ function rowOne(w, h, x, y, meta, obj, inst) {
         + "height:" + h + "px;"
         + "left:" + x + "px;"
         + "bottom:" + y + "px;'>"
-  if (exists(obj.move)) {
+  if (exists(obj.move) && exists(obj.moveTitle)) {
     console.log("It exists");
     s = s
       + rowOneColOne(colOneWidth, h, 0, 0, meta, obj)
@@ -97,7 +98,7 @@ function rowOneColOne(w, h, x, y, meta, obj) {
 
 // Column one has a fixed height/width and fixed position
 function rowOneColTwo(w, h, x, y, meta, obj) {
-  var contents = obj.move.value;
+  var contents = DOMPurify.sanitize(obj.move.value);
   var contentsScale = obj.move.scale;
 
   return "<div "
@@ -173,7 +174,7 @@ function rowTwo(w, h, x, y, meta, obj) {
               + "style='"
                  + "font-family:\"IM Fell English\", serif;"
                 + "width:100%;'>"
-            + contents.value
+            + DOMPurify.sanitize(contents.value)
           + "</div>"
         + "</div>"
       + "</div>";

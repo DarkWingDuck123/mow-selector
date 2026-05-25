@@ -1,3 +1,5 @@
+import DOMPurify from 'dompurify';
+
 export function box(x, y, size) {
   return ""
     + "<div "
@@ -272,7 +274,7 @@ export function beastname(w, h, x, y, name, meta) {
       + "font-family: \"IM Fell English\", serif;"
       + "transform:scale(" + name.scale + ",1);"
       + "-webkit-transform:scale(" + name.scale + ",1);'>"
-    + name.value
+    + DOMPurify.sanitize(name.value)
   + "</div>";
 }
 
@@ -292,7 +294,7 @@ export function textRow(w, h, x, y, text) {
         + "background-color:black;"
         + "font-family: \"IM Fell English\", serif;'>"
       + "<div style='" + scaleStyle(text) + "'>"
-        + text.value
+        + DOMPurify.sanitize(text.value)
       + "</div>"
     + "</div>";
 }

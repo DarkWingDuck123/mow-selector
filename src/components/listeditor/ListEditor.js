@@ -91,12 +91,17 @@ export const ListEditor = ({
 }) => {
   const list = useSelector((state) =>
     state.lists?.find(({ id }) => listId === id));
+  const customFactions = useSelector((state) => state.customFactions);
   const dispatch = useDispatch();
 
   const rulesetSystems = list
     ? gameSystems.find((sys) => sys.id === list.rulesetId)
     : null;
-  const nations = rulesetSystems?.nations || [];
+  const builtInNations = rulesetSystems?.nations || [];
+  const customNations = customFactions
+    .filter((f) => f.rulesetId === list?.rulesetId)
+    .map((f) => ({ id: f.id, name_en: f.name_en || f.name || f.id, isCustom: true }));
+  const nations = [...builtInNations, ...customNations];
 
   const pointsSpent = (
     (list?.cards?.reduce((sum, card) => sum + (Number(card.cost) || 0), 0) ?? 0) +
@@ -125,11 +130,18 @@ export const ListEditor = ({
       setFactionData(null);
       return;
     }
+    const custom = customFactions.find(
+      (f) => f.rulesetId === list.rulesetId && f.id === list.factionId
+    );
+    if (custom) {
+      setFactionData(custom);
+      return;
+    }
     fetch(`${process.env.PUBLIC_URL}/games/${list.rulesetId}/${list.factionId}/${list.factionId}.json`)
       .then((r) => r.json())
       .then(setFactionData)
       .catch(() => setFactionData(null));
-  }, [list?.rulesetId, list?.factionId]);
+  }, [list?.rulesetId, list?.factionId, customFactions]);
 
   useEffect(() => {
     if (!factionData?.freebies?.length || !list || !list.factionId || factionData.id !== list.factionId) return;
@@ -172,6 +184,7 @@ export const ListEditor = ({
                 uid: getRandomId(),
                 id: found.unit.id,
                 factionId: list.factionId || "",
+                weight: found.unit.weight || "negligible",
                 name: found.unit.name_en || found.unit.name,
                 description: found.unit.description_en || "",
                 cost: "-",
@@ -239,11 +252,16 @@ export const ListEditor = ({
               onChange={handleFactionChange}
             >
               <option value="">— select faction —</option>
-              {nations.map((nation) => (
-                <option key={nation.id} value={nation.id}>
-                  {nation.name_en}
-                </option>
+              {builtInNations.map((nation) => (
+                <option key={nation.id} value={nation.id}>{nation.name_en}</option>
               ))}
+              {customNations.length > 0 && (
+                <optgroup label="Custom Factions">
+                  {customNations.map((nation) => (
+                    <option key={nation.id} value={nation.id}>{nation.name_en}</option>
+                  ))}
+                </optgroup>
+              )}
             </select>
           </div>
 
@@ -262,7 +280,7 @@ export const ListEditor = ({
             >
               {list.cards?.map((card, i) => (
                 <li key={card.uid || `${card.id}-${i}`}>
-                  <ListEntry listId={listId} index={i} />
+                  <ListEntry listId={listId} index={i} factionData={factionData} />
                 </li>
               ))}
             </OrderableList>

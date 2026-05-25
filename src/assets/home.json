@@ -1,0 +1,22 @@
+{
+  "description_title_en" : "Welcome!",
+
+  "description_en" : "<p>Welcome to the Fleet Builder for the Man O'War tabletop game! Man O'War is the game of 'Raging Sea Battles in the World of Warhammer'. Unfortunately, it was discontinued in the 90's. With that said, if you can find the components and miniatures, it's still surprisingly fun! This web app is an attempt to make this game accessible to the masses once more.<p>A brief guide to using this app: the Fleet Builder (and other pages) can be found under the 3 bars on the right pull down menu. From there, you can select the ruleset and create a list. The lists are stored in your browser's cache so they won't disappear between browser refreshes. There is a dataset page that allows you to import/export (or clear) these lists so you can share them between browsers (or save them someplace more permanent).",
+
+  "rulesets_title_en" : "Supported Rulesets:",
+
+  "new_title_en" : "News:",
+  "news" : [
+    {
+      "date_en" : "April 3rd, 2026",
+      "announcement_en" : "<p><b>We've launched!</b><p>I'm always looking for input (i.e. bug reports, suggestions, critiques, etc), but at this moment I'm still not sure the best way to take it. Please don't hesitate to reach out using whatever channel you found this on. At some point I'll set up something more formal (probably using the github repository I plan to create for this). <p>- Drake"
+    }
+  ],
+
+  "known_bugs_title_en" : "Known Bugs/TODOs:",
+  "bugs" : [
+    {
+      "description" : "The about page is seriously out of date and needs to be rewritten. It should note the 'inspiration' derived from the old world army builder pages."
+    }
+  ]
+}

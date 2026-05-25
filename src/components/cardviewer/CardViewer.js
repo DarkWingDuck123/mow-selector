@@ -82,6 +82,8 @@ function buildCrewCardObj(addonDef, list) {
 
 export const CardViewer = ({ listId, bwOverride }) => {
   const lists = useSelector((state) => state.lists);
+  const customFactions = useSelector((state) => state.customFactions);
+  const customCards = useSelector((state) => state.customCards);
   const list = lists?.find((l) => l.id === listId);
 
   const rulesetId = list?.rulesetId;
@@ -131,44 +133,53 @@ export const CardViewer = ({ listId, bwOverride }) => {
 
     const uniqueFactionIds = [...new Set(pairs.map((p) => p.factionId))];
 
-    // For each faction, fetch its JSON to get the style field, then fetch the style JSON
+    const bwStylePromise = bwOverride
+      ? fetch(`${process.env.PUBLIC_URL}/games/bw.json`).then((r) => r.json()).catch(() => ({}))
+      : Promise.resolve(null);
+
     Promise.all(
-      uniqueFactionIds.map((fId) =>
-        fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${fId}/${fId}.json`)
-          .then((r) => r.json())
-          .catch(() => ({ id: fId }))
-          .then((fJson) => {
-            const styleUrl = bwOverride || !fJson.style
-              ? `${process.env.PUBLIC_URL}/games/bw.json`
-              : `${process.env.PUBLIC_URL}/games/${rulesetId}/${fId}/${fJson.style}.json`;
-            return fetch(styleUrl)
-              .then((r) => r.json())
-              .catch(() => ({}))
-              .then((styleData) => ({ factionId: fId, meta: { ...DEFAULT_META, ...styleData } }));
-          })
-      )
+      uniqueFactionIds.map(async (fId) => {
+        const customFaction = customFactions.find((f) => f.id === fId && f.rulesetId === rulesetId);
+        let styleData;
+        if (bwOverride) {
+          styleData = await bwStylePromise;
+        } else if (customFaction) {
+          styleData = customFaction.style && typeof customFaction.style === 'object' ? customFaction.style : {};
+        } else {
+          const fJson = await fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${fId}/${fId}.json`)
+            .then((r) => r.json())
+            .catch(() => ({}));
+          styleData = fJson.style && typeof fJson.style === 'object' ? fJson.style : {};
+        }
+        return { factionId: fId, meta: { ...DEFAULT_META, ...styleData } };
+      })
     ).then((results) => {
       const map = {};
       results.forEach(({ factionId: fId, meta }) => { map[fId] = meta; });
       setMetaByFaction(map);
     });
 
-    // Fetch card JSONs from each card's own faction directory
+    // Fetch card JSONs; serve custom cards from state without fetching
     Promise.all(
-      pairs.map(({ factionId: fId, id }) =>
-        fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${fId}/${id}.json`)
+      pairs.map(({ factionId: fId, id }) => {
+        const key = `${fId}/${id}`;
+        const customCard = customCards.find(
+          (c) => c.factionId === fId && c.id === id && c.rulesetId === rulesetId
+        );
+        if (customCard) return Promise.resolve({ key, obj: customCard });
+        return fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${fId}/${id}.json`)
           .then((r) => {
-            if (!r.ok) return { key: `${fId}/${id}`, obj: null };
-            return r.json().then((obj) => ({ key: `${fId}/${id}`, obj }));
+            if (!r.ok) return { key, obj: null };
+            return r.json().then((obj) => ({ key, obj }));
           })
-          .catch(() => ({ key: `${fId}/${id}`, obj: null }))
-      )
+          .catch(() => ({ key, obj: null }));
+      })
     ).then((results) => {
       const map = {};
       results.forEach(({ key, obj }) => { map[key] = obj; });
       setCardObjs(map);
     });
-  }, [rulesetId, uniquePairsStr, bwOverride]);
+  }, [rulesetId, uniquePairsStr, bwOverride, customFactions, customCards]);
 
   const gridRef = useRef(null);
   const [cardScale, setCardScale] = useState(0.5);
@@ -222,22 +233,26 @@ export const CardViewer = ({ listId, bwOverride }) => {
         }
 
         const obj = cardObjs[`${cardFactionId}/${card.id}`];
-        const html = obj && meta ? DOMPurify.sanitize(renderCard(meta, obj, {})) : null;
-        return Array.from({ length: count }, (_, j) => (
-          <div key={`${card.uid || `${card.id}-${i}`}-${j}`} className="card-viewer__card">
-            {html ? (
-              <div
-                className="card-viewer__card-inner"
-                style={{ transform: `scale(${cardScale})` }}
-                dangerouslySetInnerHTML={{ __html: html }}
-              />
-            ) : (
-              <div className="card-viewer__placeholder">
-                {obj === undefined ? "Loading..." : (card.name || card.id)}
-              </div>
-            )}
-          </div>
-        ));
+        return Array.from({ length: count }, (_, j) => {
+          const shipName = (card.shipNames || [])[j];
+          const inst = shipName ? { name: { value: shipName, scale: 1.0 } } : {};
+          const html = obj && meta ? DOMPurify.sanitize(renderCard(meta, obj, inst)) : null;
+          return (
+            <div key={`${card.uid || `${card.id}-${i}`}-${j}`} className="card-viewer__card">
+              {html ? (
+                <div
+                  className="card-viewer__card-inner"
+                  style={{ transform: `scale(${cardScale})` }}
+                  dangerouslySetInnerHTML={{ __html: html }}
+                />
+              ) : (
+                <div className="card-viewer__placeholder">
+                  {obj === undefined ? "Loading..." : (card.name || card.id)}
+                </div>
+              )}
+            </div>
+          );
+        });
       })}
     </div>
   );

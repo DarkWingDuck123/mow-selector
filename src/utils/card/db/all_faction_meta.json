@@ -1,0 +1,149 @@
+{
+  "id_meta": {"name_en": "ID", "type": "STRING"},
+  "id": "empire",
+
+  "style_meta": {"name_en": "Style", "type": "OBJECT"},
+  "style": {
+    "bgColor_meta": {"name_en": "Background Color", "type": "STRING"},
+    "bgColor": "firebrick",
+    "fgColor_meta": {"name_en": "Foreground Color", "type": "STRING"},
+    "fgColor": "gold",
+    "parchmentColor_meta": {"name_en": "Parchment Color", "type": "STRING"},
+    "parchmentColor": "beige",
+    "waterColor_meta": {"name_en": "Water / Damage Area Color", "type": "STRING"},
+    "waterColor": "lightblue",
+    "accentColor_meta": {"name_en": "Accent Color", "type": "STRING"},
+    "accentColor": "red",
+    "rotate_meta": {"name_en": "Rotation (degrees)", "type": "INTEGER", "optional": true},
+    "rotate": 0
+  },
+
+  "name_meta": {"name_en": "Name", "type": "INTERNATIONALIZED_STRING"},
+  "name": "The Empire",
+  "name_en": "The Empire",
+  "name_de": "Das Imperium",
+  "name_es": "El Imperio",
+  "name_fr": "L'Empire",
+
+  "validation_rules_meta": {"name_en": "Validation Rules", "type": "ARRAY", "subtype": "VALIDATION_RULE", "optional": true},
+  "validation_rules": [
+    {
+      "rule_meta": {"name_en": "Rule", "type": "STRING"},
+      "rule": "Max 1 Greatship per 1 Ship of the Line; First One Free"
+    }
+  ],
+
+  "freebies_meta": {"name_en": "Freebies", "type": "ARRAY", "subtype": "FREEBIE", "optional": true},
+  "freebies": [
+    {
+      "free_meta": {"name_en": "Free Item", "type": "STRING"},
+      "free": "1 Admiral"
+    }
+  ],
+
+  "allies_meta": {"name_en": "Allies", "type": "ARRAY", "subtype": "STRING", "optional": true},
+  "allies": ["brettonia"],
+
+  "crew_meta": {"name_en": "Crew", "type": "ARRAY", "subtype": "CREW_ENTRY", "optional": true},
+  "crew": [
+    {
+      "id_meta": {"name_en": "ID", "type": "STRING"},
+      "id": "admiral",
+      "name_meta": {"name_en": "Name", "type": "INTERNATIONALIZED_STRING"},
+      "name": "Admiral",
+      "name_en": "Admiral",
+      "type_name_meta": {"name_en": "Type Name", "type": "INTERNATIONALIZED_STRING", "optional": true},
+      "type_name": "Admiral",
+      "type_name_en": "Admiral",
+      "description_meta": {"name_en": "Description", "type": "INTERNATIONALIZED_STRING", "optional": true},
+      "description": "(A) +1 CC",
+      "description_en": "(A) +1 CC",
+      "type_meta": {"name_en": "Type", "type": "ENUM"},
+      "type": "crew",
+      "cost_meta": {"name_en": "Cost (pts, or '-' if free)", "type": "STRING", "optional": true},
+      "cost": "-"
+    }
+  ],
+
+  "addons_meta": {"name_en": "Add-ons", "type": "ARRAY", "subtype": "ADDON_ENTRY", "optional": true},
+  "addons": [
+    {
+      "id_meta": {"name_en": "ID", "type": "STRING"},
+      "id": "manowarcard",
+      "weight_meta": {"name_en": "Weight", "type": "ENUM", "optional": true},
+      "weight": "negligible",
+      "name_meta": {"name_en": "Name", "type": "INTERNATIONALIZED_STRING"},
+      "name": "Man O'War Card",
+      "name_en": "Man O'War Card",
+      "type_meta": {"name_en": "Type", "type": "ENUM"},
+      "type": "card",
+      "type_name_meta": {"name_en": "Type Name", "type": "INTERNATIONALIZED_STRING", "optional": true},
+      "type_name": "Man O'War Card",
+      "type_name_en": "Man O'War Card",
+      "cost_meta": {"name_en": "Cost (pts)", "type": "STRING"},
+      "cost": "25"
+    }
+  ],
+
+  "units_meta": {"name_en": "Units", "type": "ARRAY", "subtype": "UNIT_ENTRY"},
+  "units": [
+    {
+      "id_meta": {"name_en": "ID", "type": "STRING"},
+      "id": "greatship",
+      "type_meta": {"name_en": "Type", "type": "ENUM"},
+      "type": "manowar",
+      "type_name_meta": {"name_en": "Type Name", "type": "INTERNATIONALIZED_STRING", "optional": true},
+      "type_name": "Man O'War",
+      "type_name_en": "Man O'War",
+      "weight_meta": {"name_en": "Weight", "type": "ENUM"},
+      "weight": "heavy",
+      "name_meta": {"name_en": "Name", "type": "INTERNATIONALIZED_STRING"},
+      "name": "Greatship",
+      "name_en": "Greatship",
+      "name_de": "Großschiff",
+      "name_es": "Gran Barco",
+      "name_fr": "Grand Navire",
+      "description_meta": {"name_en": "Description", "type": "INTERNATIONALIZED_STRING", "optional": true},
+      "description_en": "A Greatship",
+      "squadron-size_meta": {"name_en": "Squadron Size", "type": "INTEGER"},
+      "squadron-size": 1,
+      "cost_meta": {"name_en": "Cost (pts)", "type": "INTEGER"},
+      "cost": 150,
+      "cards_meta": {"name_en": "Cards", "type": "ARRAY", "subtype": "CARD_ENTRY", "optional": true},
+      "cards": [
+        {
+          "type_meta": {"name_en": "Type", "type": "ENUM"},
+          "type": "manowar",
+          "cost_meta": {"name_en": "Cost (pts)", "type": "INTEGER"},
+          "cost": 25,
+          "min_meta": {"name_en": "Minimum", "type": "INTEGER"},
+          "min": 0,
+          "max_meta": {"name_en": "Maximum", "type": "INTEGER", "optional": true},
+          "max": 1,
+          "freeForAdmiral_meta": {"name_en": "Free for Admiral", "type": "BOOLEAN", "optional": true},
+          "freeForAdmiral": true
+        }
+      ]
+    }
+  ],
+
+  "names_meta": {"name_en": "Name Parts", "type": "ARRAY", "subtype": "NAME_PART", "optional": true},
+  "names": [
+    {
+      "id_meta": {"name_en": "ID", "type": "STRING"},
+      "id": "name1",
+      "value_meta": {"name_en": "Values", "type": "ARRAY", "subtype": "STRING"},
+      "value": ["Nuln's", "Altdorf's", "Middenheim's", "Moot's", "Reikland's", "Emperor's"]
+    }
+  ],
+
+  "naming_rules_meta": {"name_en": "Naming Rules", "type": "ARRAY", "subtype": "NAMING_RULE", "optional": true},
+  "naming_rules": [
+    {
+      "id_meta": {"name_en": "Unit ID", "type": "STRING"},
+      "id": "greatship",
+      "rule_meta": {"name_en": "Name Patterns", "type": "ARRAY", "subtype": "STRING"},
+      "rule": ["name1 name2", "name2", "name3"]
+    }
+  ]
+}

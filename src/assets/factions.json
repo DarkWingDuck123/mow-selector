@@ -3,6 +3,7 @@
     "id": "the-original-series",
     "name": "Man O'War",
     "name_en": "Man O'War",
+    "description_en" : "The Original Man O'War. This ruleset is as close to the original rules as possible. This includes the original series of expansions/rules that were released by Games Workshop. This includes any supplemental content found in White Dwarf and Citadel Journal (i.e. as long as it was published by Games Workshop).",
     "nations": [
       {
         "id": "empire",
@@ -38,6 +39,8 @@
     "id": "mow-revolution-the-old-world",
     "name": "Man O'War: The Old World",
     "name_en": "Man O'War: The Old World",
+    "description_en" : "The original Man O'War wasn't without flaws and/or missed opportunities. It's time in the sun, so to speak, was very short, so many of these weren't ever addressed.<p>Over the last 30 odd years there have been a number of house rules, fan expansions, and other content that have been put forth by fans to address these gaps. This ruleset tries to pull all these together and present an expanded Man O'War universe (so to speak) that is even more enjoyable to play.",
+
     "nations": [
       {
         "id": "empire",
@@ -65,6 +68,7 @@
     "id": "mow-revolution-age-of-sigmar",
     "name": "Man O'War: Age of Sigmar",
     "name_en": "Man O'War: Age of Sigmar",
+    "description_en" : "Games Workshop blew up 'The Warhammer Old World' in the mid 2010's. Out of that destruction arose the 8 Mortal Realms, one for each of the 8 winds of magic. The Age of Sigmar is a high fantasy setting with flying sky ships, islands in the sky, and entire kingdoms beneath the waves. This is my attempt to update Man O'War so that it works in a high fantasy setting (even higher than it was originally written for).",
     "nations": [
       {
         "id": "free-cities-ghyran",
@@ -90,6 +94,7 @@
     "id": "mow-revolution-utopian-wars",
     "name": "Man O'War: Utopian Wars",
     "name_en": "Man O'War: Utopian Wars",
+    "description_en" : "It's nearing the end of the 20th century and an alien race hurtles into the Solar System. Crashing in Antarctica, they quickly offer gifts in the form of technological advancements and knowledge in exchange for promises of safety upon the frozen plateaus of the southernmost continent. Two decades have past and the great colonial powers of the early 21st century are now pitted against one another, just as they had once pitted the tribes and kingdoms of Africa and Asia, all as the climate slowly cools across the globe. Thus begins the Utopian Wars.<p>This is a ruleset for using the Dystopian Wars miniatures with the more streamlined MoW rules.",
     "nations": [
     ]
   } 

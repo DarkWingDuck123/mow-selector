@@ -1,3 +1,4 @@
+import DOMPurify from 'dompurify';
 import { box, boxline, scaleStyle, exists, polarToCartesian, describeArc, drawBroadside, drawForeCannon, drawAftCannon, drawForeSpread, drawUnderTurrets, drawOverTurrets, drawShip, beastname, textRow, rowFive } from './cardUtility.js';
 
 // A javascript that builds a medium man o war card. In the original game
@@ -34,8 +35,8 @@ function crewbox(w, h, x, y, num, crewTitle) {
 // Row One is the beast type, title, honors, pt value and movement box
 // It has a fixed height & width.
 function rowOne(w, h, x, y, meta, obj, inst) {
-  var cost = obj.cost.value;
-  var honors = obj.honors.value;
+  var cost = DOMPurify.sanitize(obj.cost.value);
+  var honors = DOMPurify.sanitize(obj.honors.value);
 
   return "<div id='rowOne' "
       + "style='"
@@ -101,7 +102,7 @@ function rowOneColOne(w, h, x, y, meta, obj) {
 
 // Column one has a fixed height/width and fixed position
 function rowOneColTwo(w, h, x, y, meta, obj) {
-  var contents = obj.move.value;
+  var contents = DOMPurify.sanitize(obj.move.value);
   var contentsScale = obj.move.scale;
 
   return "<div "
@@ -203,7 +204,7 @@ function damageTitle(zone, text, save, meta) {
           + "font-family: \"IM Fell English\", serif;"
           + scaleStyle(text)
         + "'>"
-        + text.value
+        + DOMPurify.sanitize(text.value)
       + "</div>"
       + "<div "
         + "style='"
@@ -219,7 +220,7 @@ function damageTitle(zone, text, save, meta) {
           + "background-color:" + meta.accentColor + ";"
           + "border: 2px solid black;"
         + "'>"
-        + save
+        + DOMPurify.sanitize(save)
       + "</div>"
     + "</div>";
 }
@@ -241,13 +242,13 @@ function damageVerticalBoxes(w, h, dbox) {
     internal = internal + "<div style='position:absolute; width:100%; height:20px; top:" + next + "px; left:0px;'>";
     internal = internal + box(5, 0, 20);
     internal = internal + "<div style='position:absolute;width:" + (boxW - 30) + "px; height:100%; left:30px;'>";
-    internal = internal + "<div style='" + scaleStyle(row) + "font-family: \"IM Fell English\", serif;'>" + row.value + "</div>";
+    internal = internal + "<div style='" + scaleStyle(row) + "font-family: \"IM Fell English\", serif;'>" + DOMPurify.sanitize(row.value) + "</div>";
     internal = internal + "</div>";
     internal = internal + "</div>";
     next = next + 25;
   });
   if (typeof dmgText !== 'undefined') {
-    internal = internal + "<div style='" + scaleStyle(dmgText) + "font-family: \"IM Fell English\", serif;display:flex; height:"+ (dmgH - next) + "px; top:" + next + "px;justify-content:center;align-items:flex-end'>" + dmgText.value + "</div>";
+    internal = internal + "<div style='" + scaleStyle(dmgText) + "font-family: \"IM Fell English\", serif;display:flex; height:"+ (dmgH - next) + "px; top:" + next + "px;justify-content:center;align-items:flex-end'>" + DOMPurify.sanitize(dmgText.value) + "</div>";
   }
   internal = internal + "</div>"
   return internal;
@@ -296,7 +297,7 @@ function damageBox(w, h, dbox) {
         + "left:0px;"
         + "text-align:center;"
       + "'>"
-      + dmgText.value
+      + DOMPurify.sanitize(dmgText.value)
     + "</div>";
   internal = internal
     + "</div>"
@@ -355,7 +356,7 @@ function rowFour(w, h, x, y, meta, obj) {
               + "style='"
                  + "font-family:\"IM Fell English\", serif;"
                 + "width:100%;'>"
-            + contents.value
+            + DOMPurify.sanitize(contents.value)
           + "</div>"
         + "</div>"
       + "</div>";
@@ -380,8 +381,8 @@ function rowFourColTwo(w, h, x, y, meta, obj)
 
   console.log("Diagram: " + obj);
 
-  if (typeof obj.broadside !== 'undefined') {
-    broadside = drawBroadside(w, h, 40, obj.broadside, meta);
+  if (typeof obj.broadsideBattery !== 'undefined') {
+    broadside = drawBroadside(w, h, 40, obj.broadsideBattery, meta);
   }
   if (typeof obj.aftBattery !== 'undefined') {
     aftBattery = drawAftCannon(w, h, 40, obj.aftBattery, meta);

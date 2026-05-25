@@ -1,6 +1,12 @@
 {
   "id" : "empire",
-  "style" : "imp",
+  "style" : {
+    "bgColor": "firebrick",
+    "fgColor": "gold",
+    "parchmentColor": "beige",
+    "waterColor": "lightblue",
+    "accentColor": "red"
+  },
 
   "name_de": "The Empire",
   "name_en": "The Empire", 
@@ -237,6 +243,44 @@
       "description_en" : "A Squadron of 3 Ironfist",
       "squadron-size" : 3,
       "cost" : 150
+    }
+  ],
+
+  "names" : [
+    {
+      "id" : "name1",
+      "value" : [ "Nuln's", "Altdorf's", "Middenheim's", "Moot's", "Reikland's", "Emperor's" ]
+    },
+    {
+      "id" : "name2",
+      "value" : [ "Revenge", "Surprise", "Wrath", "Mistake", "Hammer", "Sword", "Spear" ]
+    },
+    {
+      "id" : "name3",
+      "value" : [ "Karl Franz", "Ghal Maraz", "Runefang" ]
+    },
+    {
+      "id" : "name4",
+      "value" : [ "Sea", "Midnight", "Night", "Dawn", "Dusk" ]
+    },
+    {
+      "id" : "name5",
+      "value" : [ "Witch", "Raider", "Pirate", "Wizard", "Dragon", "Sorcerer" ]
+    }
+  ],
+
+  "naming_rules" : [
+    {
+      "id" : "greatship",
+      "rule" : [ "name1 name2", "name2", "name3" ]
+    },
+    {
+      "id" : "wolfship",
+      "rule" : [ "name1 name5", "name5", "name4 name5" ]
+    },
+    {
+      "id" : "wargalley",
+      "rule" : [ "name4 name5" ]
     }
   ]
 }

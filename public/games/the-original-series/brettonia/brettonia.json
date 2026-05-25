@@ -1,6 +1,12 @@
 {
   "id" : "brettonia",
-  "style" : "brett",
+  "style" : {
+    "bgColor": "blue",
+    "fgColor": "gold",
+    "parchmentColor": "beige",
+    "waterColor": "lightblue",
+    "accentColor": "red"
+  },
   "name_en" : "Brettonia",
   "units" : [
     {

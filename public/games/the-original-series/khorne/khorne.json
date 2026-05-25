@@ -1,6 +1,12 @@
 {
   "id" : "khorne",
-  "style" : "kho",
+  "style" : {
+    "bgColor": "darkred",
+    "fgColor": "gold",
+    "parchmentColor": "beige",
+    "waterColor": "lightblue",
+    "accentColor": "red"
+  },
 
   "name_de": "Khorne",
   "name_en": "Khorne", 

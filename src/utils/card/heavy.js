@@ -1,3 +1,4 @@
+import DOMPurify from 'dompurify';
 import { box, boxline, scaleStyle, exists, polarToCartesian, describeArc, drawBroadside, drawForeCannon, drawAftCannon, drawForeSpread, drawUnderTurrets, drawOverTurrets, drawShip } from './cardUtility.js';
 
 // A javascript that builds a man o war card.
@@ -16,8 +17,8 @@ import { box, boxline, scaleStyle, exists, polarToCartesian, describeArc, drawBr
 // corners respectively).
 function rowOne(gw, gh, w, h, x, y, meta, obj, inst) {
   console.log(obj);
-  var cost = obj.cost.value;
-  var honors = obj.honors.value;
+  var cost = DOMPurify.sanitize(obj.cost.value);
+  var honors = DOMPurify.sanitize(obj.honors.value);
 
   var s = ""
     + "<div "
@@ -104,7 +105,7 @@ function shipname(gw, gh, w, h, x, y, name, meta) {
         + "transform:scale(" + name.scale + ",1);"
         + "-webkit-transform:scale(" + name.scale + ",1);"
       + "'>"
-      + name.value
+      + DOMPurify.sanitize(name.value)
     + "</div>";
   return s;
 }
@@ -149,7 +150,7 @@ function textRow(gw, gh, w, h, x, y, text) {
         + "style='"
           + scaleStyle(text)
         + "'>"
-        + text.value
+        + DOMPurify.sanitize(text.value)
       + "</div>"
     + "</div>";
   console.log("textRow->s: " + s);
@@ -158,7 +159,7 @@ function textRow(gw, gh, w, h, x, y, text) {
 
 // Column one has a fixed height/width and fixed position
 function rowOneColTwo(gw, gh, w, h, x, y, meta, obj) {
-  var contents = obj.move.value;
+  var contents = DOMPurify.sanitize(obj.move.value);
   // this scale is not used currently
   var contentsScale = obj.move.scale;
 
@@ -311,7 +312,7 @@ function damageTitle(zone, text, save, meta) {
          + "background-color:black;"
          + "font-family: \"IM Fell English\", serif;"
        + "'>"
-       + text.value
+       + DOMPurify.sanitize(text.value)
      + "</div>"
      + "<div "
        + "style='"
@@ -327,7 +328,7 @@ function damageTitle(zone, text, save, meta) {
          + "background-color:" + saveColor + ";"
          + "border: 2px solid black"
        + "'>"
-       + save
+       + DOMPurify.sanitize(save)
      + "</div>"
    + "</div>";
 
@@ -388,7 +389,7 @@ function damageVerticalBoxes(w, h, dbox) {
               + scaleStyle(row)
               + "font-family: \"IM Fell English\", serif;"
             + "'>"
-            + row.value
+            + DOMPurify.sanitize(row.value)
           + "</div>"
         + "</div>"
       + "</div>";
@@ -406,7 +407,7 @@ function damageVerticalBoxes(w, h, dbox) {
           + "justify-content:center;"
           + "align-items:flex-end;"
         + "'>"
-        + dmgText.value
+        + DOMPurify.sanitize(dmgText.value)
       + "</div>";
   }
   internal += "</div>"
@@ -461,7 +462,7 @@ function damageHorizontalBoxes(w, h, dbox) {
         + "left:0px;"
         + "text-align:center;"
       + "'>"
-      + dmgText.value
+      + DOMPurify.sanitize(dmgText.value)
     + "</div>";
   internal += "</div>";
   return internal;
@@ -529,7 +530,7 @@ function foreAftBox(w, h, x, y, obj) {
           + "bottom:2px;"
           + "height:" + (h-2) + "px;"
         + "'>"
-        + b.title
+        + DOMPurify.sanitize(b.title)
       + "</div>";
    left += width;
    i = i + 1;
@@ -587,7 +588,7 @@ function highLowBox(w, h, x, y, obj) {
               + "style='"
                 + "text-align:center;"
               + "'>"
-              + b.title
+              + DOMPurify.sanitize(b.title)
             + "</div>"
           + "</div>"
         + "</div>";
@@ -648,7 +649,7 @@ function rowFourColOne(gw, gh, w, h, x, y, meta, obj, inst) {
           + "style='"
             + scaleStyle(obj.lowerNotes)
           + "'>"
-          + obj.lowerNotes.value
+          + DOMPurify.sanitize(obj.lowerNotes.value)
         + "</div>"
       + "</div>"
     + "</div>"
@@ -669,7 +670,7 @@ function rowFourColOne(gw, gh, w, h, x, y, meta, obj, inst) {
         + "style:'"
           + scaleStyle(name)
         + "'>"
-        + name.value
+        + DOMPurify.sanitize(name.value)
       + "</div>"
     + "</div>";
 
@@ -684,8 +685,8 @@ function rowFourColTwo(gw, gh, w, h, x, y, meta, obj)
   var foreSpread = "";
   var foreBattery = "";
 
-  if (typeof obj.broadside !== 'undefined') {
-    broadside = drawBroadside(w, h, 40, obj.broadside, meta);
+  if (typeof obj.broadsideBattery !== 'undefined') {
+    broadside = drawBroadside(w, h, 40, obj.broadsideBattery, meta);
   }
   if (typeof obj.aftBattery !== 'undefined') {
     aftBattery = drawAftCannon(w, h, 40, obj.aftBattery, meta);
