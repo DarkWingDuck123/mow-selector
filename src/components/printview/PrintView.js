@@ -62,20 +62,14 @@ const DEFAULT_META = {
   parchmentColor: "#f5e6b8",
 };
 
-function renderCard(meta, obj) {
+function renderCard(meta, obj, inst) {
   switch (obj.weight) {
-    case "heavy":
-      return heavyCard(meta, obj, {});
-    case "light":
-      return lightCard(meta, obj, {});
-    case "medium":
-      return mediumCard(meta, obj, {});
-    case "tremendous":
-      return tremendousCard(meta, obj, {});
-    case "negligible":
-      return negligibleCard(meta, obj, {});
-    default:
-      return null;
+    case "heavy":      return heavyCard(meta, obj, inst);
+    case "light":      return lightCard(meta, obj, inst);
+    case "medium":     return mediumCard(meta, obj, inst);
+    case "tremendous": return tremendousCard(meta, obj, inst);
+    case "negligible": return negligibleCard(meta, obj, inst);
+    default:           return null;
   }
 }
 
@@ -88,9 +82,8 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
   const rulesetId = list?.rulesetId;
   const factionId = list?.factionId;
 
+  // Primary faction data — needed to detect crew_card addons
   const [factionData, setFactionData] = useState(null);
-  const [meta, setMeta] = useState(null);
-  const [cardObjs, setCardObjs] = useState({});
 
   useEffect(() => {
     if (!rulesetId || !factionId) { setFactionData(null); return; }
@@ -100,81 +93,113 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
       .catch(() => setFactionData(null));
   }, [rulesetId, factionId]);
 
-  useEffect(() => {
-    if (!rulesetId || !factionId) {
-      setMeta(null);
-      return;
-    }
-    const customFaction = customFactions.find(
-      (f) => f.id === factionId && f.rulesetId === rulesetId
-    );
-    if (bwOverride) {
-      fetch(`${process.env.PUBLIC_URL}/games/bw.json`)
-        .then((r) => r.json())
-        .then((styleData) => setMeta({ ...DEFAULT_META, ...styleData }))
-        .catch(() => setMeta({ ...DEFAULT_META }));
-    } else if (customFaction) {
-      const styleData = customFaction.style && typeof customFaction.style === 'object' ? customFaction.style : {};
-      setMeta({ ...DEFAULT_META, ...styleData });
-    } else {
-      fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${factionId}/${factionId}.json`)
-        .then((r) => r.json())
-        .then((factionData) => {
-          const styleData = factionData.style && typeof factionData.style === 'object' ? factionData.style : {};
-          setMeta({ ...DEFAULT_META, ...styleData });
-        })
-        .catch(() => setMeta({ ...DEFAULT_META }));
-    }
-  }, [rulesetId, factionId, bwOverride, customFactions]);
+  // metaByFaction: factionId -> meta object
+  const [metaByFaction, setMetaByFaction] = useState({});
+  // cardObjs: "factionId/cardId" -> card obj
+  const [cardObjs, setCardObjs] = useState({});
 
   const crewCardIds = new Set(
     (factionData?.addons ?? []).filter((a) => a.type === "crew_card").map((a) => a.id)
   );
 
-  const uniqueCardIds = [
-    ...new Set(
-      (list?.cards ?? [])
-        .map((c) => c.id)
-        .filter((id) => id !== "blank" && !crewCardIds.has(id))
-    ),
+  // Build unique "factionId/cardId" pairs, excluding blanks and crew cards.
+  // Always include the primary factionId so crew card meta is available.
+  const uniquePairsStr = [
+    ...new Set([
+      // Sentinel so the primary faction is always in the meta fetch
+      `${factionId}/__primary__`,
+      ...(list?.cards ?? [])
+        .filter((c) => c.id !== "blank" && !crewCardIds.has(c.id))
+        .map((c) => `${c.factionId || factionId}/${c.id}`)
+        .filter((key) => !key.startsWith("/")),
+    ]),
   ].sort().join(",");
 
   useEffect(() => {
-    if (!rulesetId || !factionId || !uniqueCardIds) {
-      setCardObjs({});
+    if (!rulesetId || !factionId) {
+      setMetaByFaction({});
       return;
     }
-    const ids = uniqueCardIds.split(",");
+
+    const pairs = uniquePairsStr.split(",").map((key) => {
+      const slashIdx = key.indexOf("/");
+      return { factionId: key.slice(0, slashIdx), id: key.slice(slashIdx + 1) };
+    });
+
+    const uniqueFactionIds = [...new Set(pairs.map((p) => p.factionId))];
+
+    const bwStylePromise = bwOverride
+      ? fetch(`${process.env.PUBLIC_URL}/games/bw.json`).then((r) => r.json()).catch(() => ({}))
+      : Promise.resolve(null);
+
     Promise.all(
-      ids.map((id) => {
-        const customCard = customCards.find(
-          (c) => c.factionId === factionId && c.id === id && c.rulesetId === rulesetId
-        );
-        if (customCard) return Promise.resolve({ id, obj: customCard });
-        return fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${factionId}/${id}.json`)
-          .then((r) => {
-            if (!r.ok) return { id, obj: null };
-            return r.json().then((obj) => ({ id, obj }));
-          })
-          .catch(() => ({ id, obj: null }));
+      uniqueFactionIds.map(async (fId) => {
+        const customFaction = customFactions.find((f) => f.id === fId && f.rulesetId === rulesetId);
+        let styleData;
+        if (bwOverride) {
+          styleData = await bwStylePromise;
+        } else if (customFaction) {
+          styleData = customFaction.style && typeof customFaction.style === "object" ? customFaction.style : {};
+        } else {
+          const fJson = await fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${fId}/${fId}.json`)
+            .then((r) => r.json())
+            .catch(() => ({}));
+          styleData = fJson.style && typeof fJson.style === "object" ? fJson.style : {};
+        }
+        return { factionId: fId, meta: { ...DEFAULT_META, ...styleData } };
       })
     ).then((results) => {
       const map = {};
-      results.forEach(({ id, obj }) => {
-        map[id] = obj;
-      });
+      results.forEach(({ factionId: fId, meta }) => { map[fId] = meta; });
+      setMetaByFaction(map);
+    });
+  }, [rulesetId, factionId, uniquePairsStr, bwOverride, customFactions]);
+
+  useEffect(() => {
+    if (!rulesetId || !factionId) {
+      setCardObjs({});
+      return;
+    }
+
+    const pairs = uniquePairsStr
+      .split(",")
+      .map((key) => {
+        const slashIdx = key.indexOf("/");
+        return { factionId: key.slice(0, slashIdx), id: key.slice(slashIdx + 1) };
+      })
+      .filter((p) => p.id !== "__primary__");
+
+    if (!pairs.length) { setCardObjs({}); return; }
+
+    Promise.all(
+      pairs.map(({ factionId: fId, id }) => {
+        const key = `${fId}/${id}`;
+        const customCard = customCards.find(
+          (c) => c.factionId === fId && c.id === id && c.rulesetId === rulesetId
+        );
+        if (customCard) return Promise.resolve({ key, obj: customCard });
+        return fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${fId}/${id}.json`)
+          .then((r) => {
+            if (!r.ok) return { key, obj: null };
+            return r.json().then((obj) => ({ key, obj }));
+          })
+          .catch(() => ({ key, obj: null }));
+      })
+    ).then((results) => {
+      const map = {};
+      results.forEach(({ key, obj }) => { map[key] = obj; });
       setCardObjs(map);
     });
-  }, [rulesetId, factionId, uniqueCardIds, customCards]);
+  }, [rulesetId, factionId, uniquePairsStr, customCards]);
 
   const cardItems = (list?.cards ?? []).flatMap((card, i) => {
     const count = card.number || 1;
     if (card.id === "blank") {
-      return Array.from({ length: count }, (_, j) => ({
-        key: `blank-${i}-${j}`,
-        html: null,
-      }));
+      return Array.from({ length: count }, (_, j) => ({ key: `blank-${i}-${j}`, html: null }));
     }
+
+    const cardFactionId = card.factionId || factionId;
+    const meta = metaByFaction[cardFactionId];
 
     const addonDef = factionData?.addons?.find((a) => a.id === card.id);
     if (addonDef?.type === "crew_card") {
@@ -187,14 +212,15 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
       }));
     }
 
-    const obj = cardObjs[card.id];
+    const obj = cardObjs[`${cardFactionId}/${card.id}`];
     if (!obj || !meta) return [];
-    const html = DOMPurify.sanitize(renderCard(meta, obj));
-    if (!html) return [];
-    return Array.from({ length: count }, (_, j) => ({
-      key: `${card.uid || card.id}-${i}-${j}`,
-      html,
-    }));
+    return Array.from({ length: count }, (_, j) => {
+      const shipName = (card.shipNames || [])[j];
+      const inst = shipName ? { name: { value: shipName, scale: 1.0 } } : {};
+      const html = DOMPurify.sanitize(renderCard(meta, obj, inst));
+      if (!html) return null;
+      return { key: `${card.uid || card.id}-${i}-${j}`, html };
+    }).filter(Boolean);
   });
 
   const printRef = useRef(null);
@@ -255,9 +281,13 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
   };
 
   const hasCards = !!listId && !!list?.cards?.length;
-  const allLoaded = hasCards && !!meta && list.cards.every(
-    (card) => card.id === "blank" || crewCardIds.has(card.id) || cardObjs[card.id] !== undefined
-  );
+  const allLoaded = hasCards && list.cards.every((card) => {
+    if (card.id === "blank") return true;
+    const cardFactionId = card.factionId || factionId;
+    if (!metaByFaction[cardFactionId]) return false;
+    if (crewCardIds.has(card.id)) return true;
+    return cardObjs[`${cardFactionId}/${card.id}`] !== undefined;
+  });
 
   return (
     <>
