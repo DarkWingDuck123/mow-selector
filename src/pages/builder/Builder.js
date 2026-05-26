@@ -44,9 +44,9 @@ export const Builder = () => {
     game &&
     !factions &&
     fetcher({
-      urls: game.nations.map(n => `games/${game.id}/${n.id}/${n.id}`),
+      urls: game.nations.map(n => `games/${game.id}/${n.id}`),
       onSuccess: (data) => {
-        console.log('loaded urls: ', game.nations.map(n => `games/${game.id}/${n.id}/${n.id}`));
+        console.log('loaded urls: ', game.nations.map(n => `games/${game.id}/${n.id}`));
         console.log('value: ', data);
         dispatch(setFactions(data));
       },
@@ -62,7 +62,7 @@ export const Builder = () => {
     factions &&
     !units &&
     fetcher({
-      urls: factions.map(f => f.units.map(u => `games/${game.id}/${f.id}/${u.id}`)).flat(),
+      urls: factions.map(f => f.units.map(u => `games/${game.id}/${u.id}`)).flat(),
       onSuccess: (data) => {
         console.log('loaded unit urls: ', 'na');
         console.log('unit value: ', data);
