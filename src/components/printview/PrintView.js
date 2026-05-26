@@ -15,7 +15,7 @@ import "./PrintView.css";
 
 function buildCrewCardObj(addonDef, list) {
   const crewGroups = (list.crew || []).reduce((groups, entry) => {
-    const key = entry.freebieKey || entry.id;
+    const key = entry.id;
     const existing = groups.find((g) => g.key === key);
     if (existing) { existing.count++; }
     else { groups.push({ key, entry, count: 1 }); }

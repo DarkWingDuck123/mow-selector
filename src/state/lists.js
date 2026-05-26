@@ -154,20 +154,22 @@ export const listsSlice = createSlice({
       });
     },
     removeCrewGroup: (state, { payload }) => {
-      // Removes all non-freebie crew with a given id, or all freebie crew with a given freebieKey.
-      const { listId, id, freebieKey } = payload;
+      // Removes all crew with the given id: non-freebie entries unconditionally,
+      // freebie entries whose freebieKey is in the freebieKeys array (marked dismissed).
+      const { listId, id, freebieKeys = [] } = payload;
       return state.map((list) => {
         if (list.id !== listId) return list;
-        if (freebieKey) {
-          return {
-            ...list,
-            crew: list.crew.filter((e) => e.freebieKey !== freebieKey),
-            freebieState: { ...(list.freebieState || {}), [freebieKey]: "dismissed" },
-          };
-        }
+        const keySet = new Set(freebieKeys);
+        const newFreebieState = { ...(list.freebieState || {}) };
+        freebieKeys.forEach((k) => { newFreebieState[k] = "dismissed"; });
         return {
           ...list,
-          crew: list.crew.filter((e) => e.id !== id || e.freebieKey),
+          crew: list.crew.filter((e) => {
+            if (e.id !== id) return true;
+            if (e.freebieKey) return !keySet.has(e.freebieKey);
+            return false;
+          }),
+          freebieState: newFreebieState,
         };
       });
     },

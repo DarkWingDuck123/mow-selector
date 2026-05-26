@@ -152,6 +152,16 @@
       "cost" : "0"
     },
     {
+      "id" : "crewcard",
+      "weight" : "negligible",
+      "name" : "Crew Card",
+      "name_en" : "Crew Card",
+      "type" : "crew_card",
+      "type_name" : "",
+      "type_name_en" : "",
+      "cost" : "0"
+    },
+    {
       "id" : "blank",
       "name_en" : "Empty",
       "type" : "card",

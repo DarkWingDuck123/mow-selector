@@ -288,19 +288,23 @@ export const ListEditor = ({
 
           {list.crew?.length > 0 && (() => {
             const crewGroups = list.crew.reduce((groups, entry) => {
-              const key = entry.freebieKey || entry.id;
+              const key = entry.id;
               const existing = groups.find((g) => g.key === key);
               if (existing) {
                 existing.count++;
                 existing.totalCost = existing.totalCost === null || entry.cost === "-"
                   ? null
                   : existing.totalCost + (Number(entry.cost) || 0);
+                if (entry.freebieKey && !existing.freebieKeys.includes(entry.freebieKey)) {
+                  existing.freebieKeys.push(entry.freebieKey);
+                }
               } else {
                 groups.push({
                   key,
                   entry,
                   count: 1,
                   totalCost: entry.cost === "-" ? null : (Number(entry.cost) || 0),
+                  freebieKeys: entry.freebieKey ? [entry.freebieKey] : [],
                 });
               }
               return groups;
@@ -324,7 +328,7 @@ export const ListEditor = ({
                           onClick={() => dispatch(removeCrewGroup({
                             listId,
                             id: group.entry.id,
-                            freebieKey: group.entry.freebieKey,
+                            freebieKeys: group.freebieKeys,
                           }))}
                           aria-label="Remove crew">
                           −

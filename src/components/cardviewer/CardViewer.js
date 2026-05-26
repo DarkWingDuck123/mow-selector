@@ -36,9 +36,8 @@ function renderCard(meta, obj, inst) {
 }
 
 function buildCrewCardObj(addonDef, list) {
-  // Group crew by freebieKey or id, sorted by count then name (same as ListEditor)
   const crewGroups = (list.crew || []).reduce((groups, entry) => {
-    const key = entry.freebieKey || entry.id;
+    const key = entry.id;
     const existing = groups.find((g) => g.key === key);
     if (existing) {
       existing.count++;
