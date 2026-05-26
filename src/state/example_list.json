@@ -23,7 +23,7 @@
       "shipNames" : [ "Ghal Maraz" ]
     },
     {
-      "id" : "mowcard",
+      "id" : "manowarcard",
       "name" : "Empty Man O'War Card",
       "number" : "1",
       "cost" : "0"

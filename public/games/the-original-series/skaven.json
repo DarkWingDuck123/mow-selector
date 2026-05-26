@@ -62,28 +62,32 @@
       "name" : "Admiral",
       "name_en" : "Admiral",
       "description_en" : "(A) +1 CC",
-      "type" : "crew"
+      "type" : "crew",
+      "cost" : "-"
     },
     {
       "id" : "slave",
       "name" : "Slave",
       "name_en" : "Slave",
       "description_en" : "(S) -1 CC",
-      "type" : "crew"
+      "type" : "crew",
+      "cost" : "-"
     },
     {
       "id" : "clanrat",
       "name" : "Clanrat",
       "name_en" : "Clanrat",
       "description_en" : "Regular Crew",
-      "type" : "crew"
+      "type" : "crew",
+      "cost" : "-"
     },
     {
       "id" : "stormvermin",
       "name" : "Storm Vermin",
       "name_en" : "Storm Vermin",
       "description_en" : "(C) +1 CC",
-      "type" : "crew"
+      "type" : "crew",
+      "cost" : "-"
     },
     {
       "id" : "ratogre",

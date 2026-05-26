@@ -15,7 +15,7 @@
 
   "allies" : [ ],
 
-  "add-ons" : [
+  "addons" : [
     {
       "id" : "manowarcard",
       "type" : "card",
