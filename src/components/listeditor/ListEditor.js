@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { ListEntry } from "../../components/listentry";
-import { updateList, moveCard, removeCrew, removeCrewGroup, moveCrew, syncFreebies } from "../../state/lists";
+import { updateList, moveCard, removeCrew, removeCrewGroup, moveCrew, syncFreebies, batchRandomize } from "../../state/lists";
+import { randomName } from "../../utils/naming";
 import { OrderableList } from "../../components/orderablelist";
 import gameSystems from "../../assets/factions.json";
 import { getRandomId } from "../../utils/id";
@@ -121,6 +122,43 @@ export const ListEditor = ({
       factionId: nation?.id || "",
       factionName: nation?.name_en || "",
     }));
+  };
+
+  const handleRandomizeAll = async () => {
+    const shipNameUpdates = [];
+    const cardOverrides = [];
+
+    (list.cards || []).forEach((card, cardIndex) => {
+      if (card.weight === "negligible") return;
+      const count = card.number || 1;
+      const hasNamingRules = !!factionData?.naming_rules?.find((r) => r.id === card.id);
+      if (!hasNamingRules) return;
+      for (let nameIndex = 0; nameIndex < count; nameIndex++) {
+        const name = randomName(card.id, factionData);
+        if (name !== null) shipNameUpdates.push({ cardIndex, nameIndex, name });
+      }
+    });
+
+    const negligible = (list.cards || [])
+      .map((card, cardIndex) => ({ card, cardIndex }))
+      .filter(({ card }) => card.weight === "negligible" && card.id && list.rulesetId);
+
+    await Promise.all(negligible.map(async ({ card, cardIndex }) => {
+      try {
+        const r = await fetch(`${process.env.PUBLIC_URL}/games/${list.rulesetId}/${card.id}.json`);
+        if (!r.ok) return;
+        const data = await r.json();
+        if (!data?.randomizable || !data?.random?.length) return;
+        const pool = data.random.slice(1);
+        if (!pool.length) return;
+        const idx = 1 + Math.floor(Math.random() * pool.length);
+        cardOverrides.push({ cardIndex, override: data.random[idx], overrideIndex: idx });
+      } catch {}
+    }));
+
+    if (shipNameUpdates.length || cardOverrides.length) {
+      dispatch(batchRandomize({ listId, shipNameUpdates, cardOverrides }));
+    }
   };
 
   const [factionData, setFactionData] = useState(null);
@@ -267,7 +305,14 @@ export const ListEditor = ({
 
           <div className="list-editor__field">
             <label className="list-editor__label">Points</label>
-            <span className="list-editor__points">{pointsSpent}</span>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+              <span className="list-editor__points">{pointsSpent}</span>
+              {list.cards?.length > 0 && (
+                <button className="list-entry__randomize" onClick={handleRandomizeAll}>
+                  Randomize All
+                </button>
+              )}
+            </div>
           </div>
 
           <section className="list-editor__cards">

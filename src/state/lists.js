@@ -80,6 +80,22 @@ export const listsSlice = createSlice({
         return list;
       });
     },
+    batchRandomize: (state, { payload }) => {
+      const { listId, shipNameUpdates = [], cardOverrides = [] } = payload;
+      return state.map((list) => {
+        if (list.id !== listId) return list;
+        let cards = [...list.cards];
+        shipNameUpdates.forEach(({ cardIndex, nameIndex, name }) => {
+          const shipNames = [...(cards[cardIndex].shipNames || [])];
+          shipNames[nameIndex] = name;
+          cards[cardIndex] = { ...cards[cardIndex], shipNames };
+        });
+        cardOverrides.forEach(({ cardIndex, override, overrideIndex }) => {
+          cards[cardIndex] = { ...cards[cardIndex], randomOverride: override, randomOverrideIndex: overrideIndex };
+        });
+        return { ...list, cards };
+      });
+    },
     updateShipName: (state, { payload }) => {
       const { listId, cardIndex, nameIndex, name } = payload;
       return state.map((list) => {
@@ -363,6 +379,7 @@ export const listsSlice = createSlice({
 });
 
 export const {
+  batchRandomize,
   newList,
   moveList,
   addCard,
