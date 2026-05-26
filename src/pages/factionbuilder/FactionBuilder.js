@@ -471,7 +471,7 @@ function FactionBrowser({ onLoad, onClose }) {
     setError(null);
     setLoading(true);
     try {
-      const res = await fetch(`${process.env.PUBLIC_URL}/games/${rid}/${fid}/${fid}.json`);
+      const res = await fetch(`${process.env.PUBLIC_URL}/games/${rid}/${fid}.json`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       onLoad(await res.json());
     } catch {

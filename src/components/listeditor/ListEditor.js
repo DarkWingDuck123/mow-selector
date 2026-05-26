@@ -137,7 +137,7 @@ export const ListEditor = ({
       setFactionData(custom);
       return;
     }
-    fetch(`${process.env.PUBLIC_URL}/games/${list.rulesetId}/${list.factionId}/${list.factionId}.json`)
+    fetch(`${process.env.PUBLIC_URL}/games/${list.rulesetId}/${list.factionId}.json`)
       .then((r) => r.json())
       .then(setFactionData)
       .catch(() => setFactionData(null));

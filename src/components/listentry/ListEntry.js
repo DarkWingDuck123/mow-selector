@@ -51,7 +51,7 @@ export const ListEntry = ({
       setCardJsonData(customCard);
       return;
     }
-    fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${card.factionId}/${card.id}.json`)
+    fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${card.id}.json`)
       .then((r) => r.ok ? r.json() : null)
       .then(setCardJsonData)
       .catch(() => setCardJsonData(null));

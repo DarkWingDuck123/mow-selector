@@ -87,7 +87,7 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
 
   useEffect(() => {
     if (!rulesetId || !factionId) { setFactionData(null); return; }
-    fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${factionId}/${factionId}.json`)
+    fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${factionId}.json`)
       .then((r) => r.json())
       .then(setFactionData)
       .catch(() => setFactionData(null));
@@ -141,7 +141,7 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
         } else if (customFaction) {
           styleData = customFaction.style && typeof customFaction.style === "object" ? customFaction.style : {};
         } else {
-          const fJson = await fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${fId}/${fId}.json`)
+          const fJson = await fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${fId}.json`)
             .then((r) => r.json())
             .catch(() => ({}));
           styleData = fJson.style && typeof fJson.style === "object" ? fJson.style : {};
@@ -178,7 +178,7 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
           (c) => c.factionId === fId && c.id === id && c.rulesetId === rulesetId
         );
         if (customCard) return Promise.resolve({ key, obj: customCard });
-        return fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${fId}/${id}.json`)
+        return fetch(`${process.env.PUBLIC_URL}/games/${rulesetId}/${id}.json`)
           .then((r) => {
             if (!r.ok) return { key, obj: null };
             return r.json().then((obj) => ({ key, obj }));
