@@ -95,6 +95,17 @@
   border-color: var(--color-font);
 }
 
+.list-entry__random-select {
+  flex: 1;
+  font-size: 0.85rem;
+  padding: 0.1rem 0.3rem;
+  border: 1px solid var(--color-font-medium);
+  border-radius: 3px;
+  background: var(--color-background);
+  color: var(--color-font);
+  min-width: 0;
+}
+
 h3 {
   font-size: 1rem;
   font-weight: 700;

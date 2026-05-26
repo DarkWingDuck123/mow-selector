@@ -30,23 +30,23 @@ function buildCrewCardObj(addonDef, list) {
         const desc = group.entry.description
           ? `<div style="margin-left:12px;font-size:0.85em;"><i>${group.entry.description}</i></div>`
           : "";
-        return `<div style="display:flex;justify-content:space-between;align-items:baseline;"><b>${prefix}${group.entry.name}</b><span style="font-size:0.85em;white-space:nowrap;">${pts}</span></div>${desc}`;
+        return `<div style="display:flex;justify-content:space-between;align-items:baseline;padding-right:16px;"><b>${prefix}${group.entry.name}</b><span style="font-size:0.85em;white-space:nowrap;">${pts}</span></div>${desc}`;
       }).join("");
 
   const totalCost = (list.crew || []).reduce((sum, c) => sum + (Number(c.cost) || 0), 0);
 
   return {
     weight: "negligible",
-    name: { value: addonDef.name_en || addonDef.name || "Crew Card", scale: 1.0 },
+    name: { value: (addonDef.name_en || addonDef.name || "Crew Card").toUpperCase(), scale: 1.0 },
     type: { value: (addonDef.type_name_en || addonDef.type_name || "Crew").toUpperCase(), scale: 0.75 },
     honors: { value: "", scale: 1.0 },
     cost: { value: `${totalCost} pts`, scale: 1.0 },
     notes: [
       {
         height: 100,
-        title: { value: "Description", scale: 1.0 },
+        title: { value: "DESCRIPTION", scale: 1.0 },
         note: {
-          value: `<div style="position:absolute;top:0;left:0;right:0;bottom:0;overflow:auto;text-align:left;padding:4px 8px;">${crewHtml}</div>`,
+          value: crewHtml,
           scale: 1.0,
         },
       },
@@ -214,10 +214,11 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
 
     const obj = cardObjs[`${cardFactionId}/${card.id}`];
     if (!obj || !meta) return [];
+    const effectiveObj = card.randomOverride ? { ...obj, ...card.randomOverride } : obj;
     return Array.from({ length: count }, (_, j) => {
       const shipName = (card.shipNames || [])[j];
       const inst = shipName ? { name: { value: shipName, scale: 1.0 } } : {};
-      const html = DOMPurify.sanitize(renderCard(meta, obj, inst));
+      const html = DOMPurify.sanitize(renderCard(meta, effectiveObj, inst));
       if (!html) return null;
       return { key: `${card.uid || card.id}-${i}-${j}`, html };
     }).filter(Boolean);

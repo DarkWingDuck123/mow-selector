@@ -93,6 +93,17 @@ export const listsSlice = createSlice({
         return { ...list, cards };
       });
     },
+    setCardRandomOverride: (state, { payload }) => {
+      const { listId, cardIndex, override, overrideIndex } = payload;
+      return state.map((list) => {
+        if (list.id !== listId) return list;
+        const cards = list.cards.map((card, i) => {
+          if (i !== cardIndex) return card;
+          return { ...card, randomOverride: override, randomOverrideIndex: overrideIndex ?? null };
+        });
+        return { ...list, cards };
+      });
+    },
     moveCard: (state, { payload }) => {
       const { listId, sourceIndex, destinationIndex } = payload;
       return state.map((list) => {
@@ -353,6 +364,7 @@ export const {
   moveList,
   addCard,
   updateShipName,
+  setCardRandomOverride,
   moveCard,
   removeCard,
   addCrew,

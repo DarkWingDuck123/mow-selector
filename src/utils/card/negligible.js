@@ -170,10 +170,15 @@ function rowTwo(w, h, x, y, meta, obj) {
               + "bottom:0px;"
               + "background-color:" + meta.parchmentColor + ";"
               + "text-align:center;'>"
+          //+ "<div style="position:absolute;top:0;left:0;right:0;bottom:0;overflow:auto;text-align:left;padding:4px 8px;">
           + "<div "
               + "style='"
-                 + "font-family:\"IM Fell English\", serif;"
-                + "width:100%;'>"
+                + "font-family:\"IM Fell English\", serif;"
+                + "width:100%;"
+                + "text-align:left;"
+                + "position:absolute;"
+                + "top:0;"
+                + "padding:4px 8px'>"
             + DOMPurify.sanitize(contents.value)
           + "</div>"
         + "</div>"

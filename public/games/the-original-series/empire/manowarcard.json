@@ -1,14 +1,56 @@
 {
   "weight": "negligible",
-  "name": {"value": "MAN O'WAR CARD", "scale": 1.0},
-  "type": {"value": "EMPIRE", "scale": 0.75},
+  "name": {"value": "", "scale": 1.0},
+  "type": {"value": "MAN O'WAR CARD", "scale": 0.75},
   "honors": {"value": "", "scale": 1.0},
   "cost": {"value": "25 pts", "scale": 1.0},
   "notes": [
     {
       "height": 100,
-      "title": {"value": "NOTES", "scale": 1.0},
+      "title": {"value": "", "scale": 1.0},
       "note": {"value": "", "scale": 1.0}
+    }
+  ],
+  "randomizable" : true,
+  "random": [
+    {
+      "notes": [
+        {
+          "height": 100,
+          "title": {"value": "", "scale": 1.0},
+          "note": {"value": "", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "REALLY BIG CANNONS", "scale": 0.75},
+      "notes" : [
+        {
+          "height": 100,
+          "title": {"value": "WEAPON CARD", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:24px\"><b>Effect</b>: -1 Saving Throw</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "IRON HULL", "scale": 0.75},
+      "notes" : [
+        {
+          "height": 100,
+          "title": {"value": "HULL CARD", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:24px\"><b>Effect</b>: +1 to all Saving Throws until the first fails</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "MAGIC FIGUREHEAD", "scale": 0.75},
+      "notes" : [
+        {
+          "height": 100,
+          "title": {"value": "MISC CARD", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:24px\"><b>Effect</b>: Adds 1 Cannon attack to the Fore</div>", "scale": 1.0}
+        }
+      ]
     }
   ]
 }
