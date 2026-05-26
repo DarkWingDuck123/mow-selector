@@ -20,7 +20,7 @@ import "./FactionRoster.css";
 //   - Units
 //   - Expandable Addons
 //
-// For now, expandable add will repeat if they belong to both Factions 
+// For now, expandable add will repeat if they belong to both Factions
 // (i.e. Man O'War Cards, Turn Summary Card, etc.)
 //
 // Selecting an addon or a unit will cause that item to move to the end of
@@ -31,11 +31,13 @@ export const FactionRoster = ({
 }) => {
   const factions = useSelector((state) => state.factions);
   const customFactions = useSelector((state) => state.customFactions);
+  const selectedRuleset = useSelector((state) => state.selectedRuleset);
   const list = useSelector((state) =>
     state.lists?.find(({ id }) => listId === id));
 
+  const rulesetId = list?.rulesetId || selectedRuleset;
   const rulesetNationIds = gameSystems
-    .find((sys) => sys.id === list?.rulesetId)
+    .find((sys) => sys.id === rulesetId)
     ?.nations.map((n) => n.id) || [];
   const builtInFactions = factions?.filter(({ id }) => rulesetNationIds.includes(id)) || [];
   const customRulesetFactions = customFactions.filter((f) => f.rulesetId === list?.rulesetId);
