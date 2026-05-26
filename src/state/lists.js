@@ -9,11 +9,11 @@ export const listsSlice = createSlice({
   initialState: [ example ],
   reducers: {
     newList: (state, { payload }) => {
-      const { rulesetId = "", rulesetName = "" } = payload || {};
+      const { rulesetId = "", rulesetName = "", id = getRandomId() } = payload || {};
       return [
         ...state,
         {
-          id: getRandomId(),
+          id,
           rulesetId,
           rulesetName,
           name: "New Fleet",
@@ -333,9 +333,10 @@ export const listsSlice = createSlice({
       });
     },
     duplicateList: (state, { payload }) => {
-      const list = state.find(({ id }) => id === payload);
+      const { sourceId, id = getRandomId() } = typeof payload === "object" ? payload : { sourceId: payload };
+      const list = state.find(({ id: lid }) => lid === sourceId);
       if (!list) return state;
-      return [...state, { ...list, id: getRandomId(), name: `${list.name} (copy)` }];
+      return [...state, { ...list, id, name: `${list.name} (copy)` }];
     },
     removeUnit: (state, { payload }) => {
       const { listId, type, unitId } = payload;

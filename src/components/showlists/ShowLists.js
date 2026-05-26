@@ -4,6 +4,7 @@ import { Button } from "../../components/button";
 import { Expandable } from "../../components/expandable";
 import { Tooltip } from 'react-tooltip';
 import { newList, moveList, deleteList, duplicateList } from "../../state/lists";
+import { getRandomId } from "../../utils/id";
 import { OrderableList } from "../../components/orderablelist";
 import gameSystems from "../../assets/factions.json";
 
@@ -36,7 +37,7 @@ const ListItem = React.forwardRef(({ listId, selectedListId, onSelectList, ...re
 export const ShowLists = ({
   className,
   selectedListId,
-  onSelectList,
+  onSelectList = () => {},
 }) => {
   const allLists = useSelector((state) => state.lists);
   const selectedRulesetId = useSelector((state) => state.selectedRuleset);
@@ -50,7 +51,9 @@ export const ShowLists = ({
   };
 
   const handleDuplicate = () => {
-    dispatch(duplicateList(selectedListId));
+    const id = getRandomId();
+    dispatch(duplicateList({ sourceId: selectedListId, id }));
+    onSelectList(id);
   };
 
   const handleMoved = ({ sourceIndex, destinationIndex }) => {
@@ -66,7 +69,11 @@ export const ShowLists = ({
       {lists && (
         <>
           <div className="show-lists__toolbar">
-            <Button onClick={() => dispatch(newList({ rulesetId: selectedRulesetId, rulesetName: selectedRuleset?.name_en || "" }))}>New</Button>
+            <Button onClick={() => {
+              const id = getRandomId();
+              dispatch(newList({ rulesetId: selectedRulesetId, rulesetName: selectedRuleset?.name_en || "", id }));
+              onSelectList(id);
+            }}>New</Button>
             <Button
               disabled={!selectedListId}
               onClick={handleRemove}
