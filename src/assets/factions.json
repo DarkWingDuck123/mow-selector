@@ -28,10 +28,18 @@
       {
         "id": "khorne",
         "name_de": "Khorne",
-        "name_en": "Khorne", 
+        "name_en": "Khorne",
         "name_es": "Khorne",
         "name_fr": "Khorne",
-        "allies": [ ]
+        "allies": [ "skaven" ]
+      },
+      {
+        "id": "skaven",
+        "name_de": "Skaven Clanfleet",
+        "name_en": "Skaven Clanfleet",
+        "name_es": "Skaven Clanfleet",
+        "name_fr": "Skaven Clanfleet",
+        "allies": [ "khorne" ]
       }
     ]
   },
