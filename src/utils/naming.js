@@ -9,8 +9,11 @@ export function randomName(cardId, factionData) {
   }, {});
 
   return template.split(" ").map((token) => {
-    const values = namesMap[token];
+    const match = token.match(/^(.*[a-zA-Z0-9])([^a-zA-Z0-9]*)$/);
+    if (!match) return token;
+    const [, word, suffix] = match;
+    const values = namesMap[word];
     if (!values?.length) return token;
-    return values[Math.floor(Math.random() * values.length)];
+    return values[Math.floor(Math.random() * values.length)] + suffix;
   }).join(" ");
 }

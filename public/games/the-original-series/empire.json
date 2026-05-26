@@ -217,7 +217,7 @@
       "name" : "Griffon Rider",
       "name_en" : "Griffon Rider",
       "description_en" : "A Flight of 3 Griffon Riders",
-      "squadron-size" : 3,
+      "squadron-size" : 1,
       "cost" : 75
     },
     {
@@ -261,11 +261,27 @@
     },
     {
       "id" : "name4",
-      "value" : [ "Sea", "Midnight", "Night", "Dawn", "Dusk" ]
+      "value" : [ "Sea", "Midnight", "Night", "Dawn", "Dusk", "Twighlight" ]
     },
     {
       "id" : "name5",
       "value" : [ "Witch", "Raider", "Pirate", "Wizard", "Dragon", "Sorcerer" ]
+    },
+    {
+      "id" : "name6",
+      "value" : [ "Hammer of", "Fist of", "Sword of", "Club of" ]
+    },
+    {
+      "id" : "name7",
+      "value" : [ "Sigmar", "Destiny", "Wrath", "Anger", "Annihilation", "Armegedon", "Ulrik" ]
+    },
+    {
+      "id" : "name8",
+      "value" : [ "Sir", "Sir", "Sir", "Baron", "Duke", "Prince-Elector", "Count", "Grand Duke" ]
+    },
+    {
+      "id" : "name9",
+      "value" : [ "Bernert", "Wolff", "Udet", "Menchkhoff", "Berthold", "Richthofen", "Voss" ]
     }
   ],
 
@@ -281,6 +297,18 @@
     {
       "id" : "wargalley",
       "rule" : [ "name4 name5" ]
+    },
+    {
+      "id" : "ironfist",
+      "rule" : [ "name6 name7" ]
+    },
+    {
+      "id" : "hellhammer",
+      "rule" : [ "name7", "name6 name5" ]
+    },
+    {
+      "id" : "griffonrider",
+      "rule" : [ "name8 name9 , name8 name9 , name8 name9" ]
     }
   ]
 }

@@ -300,7 +300,7 @@ export function textRow(w, h, x, y, text) {
 }
 
 export function rowFive(w, h, x, y, meta, obj, inst) {
-  var name = {"name":"Melvin", "scale":"1.0"};
+  var name = { value: "", scale: 1.0 };
   if (typeof inst.name !== "undefined") {
     name = inst.name;
   }
@@ -320,9 +320,9 @@ export function rowFive(w, h, x, y, meta, obj, inst) {
         + "font-family: \"Shadows Into Light\", cursive;"
       + "'>"
       + "<div "
-        + "style:'" + scaleStyle(name) + "'"
+        + "style='" + scaleStyle(name) + "'"
       + ">"
-        + name
+        + (name.value || "")
       + "</div>"
     + "</div>";
   return s;

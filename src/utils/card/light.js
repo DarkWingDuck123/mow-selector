@@ -524,13 +524,6 @@ function rowFourColTwo(gw, gh, w, h, x, y, meta, obj)
 // inst: Instance informat about the card. This is information true about a specific card. In example, the ship name of the card.
 export function lightCard(meta, obj, inst)
 {
-  console.log("META:");
-  console.log(meta);
-  console.log("OBJ:");
-  console.log(obj);
-  console.log("INST:");
-  console.log(inst);
-
   var rotate = 0;
   if (exists(meta.rotate)) {
     rotate = meta.rotate;

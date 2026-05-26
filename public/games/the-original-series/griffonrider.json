@@ -1,35 +1,114 @@
 {
-  "weight":"light",
-  "name":{"value":"ECHIDNA","scale":0.5},
-  "type":{"value":"MOTHER OF MONSTERS","scale":0.75},
-  "honors":{"value":"Honors: 1", "scale":1.0},
-  "cost":{"value":"75 pts", "scale":1.0},
-  "moveTitle":{"value":"MOVE","scale":0.75},
-  "move":{"value":"<div style=\"font-size:40px\">24\" fly</div>","scale":1.0},
-  "upperNotes":[
-    {"value":"Labels: Sea Monster, Beast","scale":1.0},
-    {"value":"Notes: Line 2","scale":1.0},
-    {"value":"Notes: Line 3","scale":1.0}
+  "weight": "light",
+  "name": {
+    "value": "GRIFFON RIDER",
+    "scale": 1.15,
+    "value_en": "GRIFFON RIDER",
+    "scale_en": 1.15
+  },
+  "type": {
+    "value": "IMPERIAL FLYER",
+    "scale": 0.75,
+    "value_en": "IMPERIAL FLYER",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "Honors: 1",
+    "scale": 1,
+    "value_en": "Honors: 1",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "75 pts per 3",
+    "scale": 1,
+    "value_en": "75 pts for 3 flyers",
+    "scale_en": 1
+  },
+  "moveTitle": {
+    "value": "FLIGHT",
+    "scale": 0.75,
+    "value_en": "FLIGHT",
+    "scale_en": 0.75
+  },
+  "move": {
+    "value": "<div style=\"font-size:40px\">18\"</div>",
+    "scale": 1,
+    "value_en": "<div style=\"font-size:40px\">18\"</div>",
+    "scale_en": 1
+  },
+  "upperNotes": [
+    {
+      "value": "Labels: Light, Beast",
+      "scale": 1,
+      "value_en": "Labels: Light, Beast",
+      "scale_en": 1
+    }
   ],
-  "dmgBoxes":[
-    {"width":100, "height":50, "left":0, "bottom":50,
-     "name":{"value":"HEAD", "scale":1.0},
-     "zone":"6",
-     "save":"6+",
-     "notes":{"value":"Head Shot<br>Remove Model", "scale":1.0}},
-    {"width":100, "height":50, "left":0, "bottom":0,
-     "name":{"value":"BODY", "scale":1.0},
-     "zone":"4,5",
-     "save":"4+",
-     "notes":{"value":"Do one Wound", "scale":1.0}}],
-  "numberOf":5,
-  "criticalTitle":{"value":"Wounds","scale":1.5},
-  "criticalBoxes":6,
-  "lowerNotes":[
-    {"height":50,
-     "title":{"value":"SPECIAL ATTACK", "scale":1.0},
-     "note":{"value":"Water Breadth: Roll one die per Crew Counter, remove on a 5+","scale":1.0}},
-    {"height":50,
-     "title":{"value":"CLOSE COMBAT", "scale":1.0},
-     "note":{"value":"+7 CC","scale":1.0}}]
+  "dmgBoxes": [
+    {
+      "width": 100,
+      "height": 50,
+      "left": 0,
+      "bottom": 50,
+      "name": {
+        "value": "RIDER",
+        "scale": 1,
+        "value_en": "RIDER",
+        "scale_en": 1
+      },
+      "zone": "6",
+      "save": "-",
+      "notes": {
+        "value": "<div style=\"font-size:24px\"> Rider is killed<br>Remove model</div>",
+        "scale": 1,
+        "value_en": "<div style=\"font-size:24px\"> Rider is killed<br>Remove model</div>",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 100,
+      "height": 50,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "BODY",
+        "scale": 1,
+        "value_en": "BODY",
+        "scale_en": 1
+      },
+      "zone": "4,5",
+      "save": "-",
+      "notes": {
+        "value": "<div style=\"font-size:18px\">Inflicts one Wound</div>",
+        "scale": 1,
+        "value_en": "<div style=\"font-size:18px\">Inflicts one Wound</div>",
+        "scale_en": 1
+      }
+    }
+  ],
+  "numberOf": 3,
+  "criticalTitle": {
+    "value": "Wounds",
+    "scale": 1.5,
+    "value_en": "Wounds",
+    "scale_en": 1.5
+  },
+  "criticalBoxes": 2,
+  "lowerNotes": [
+    {
+      "height": 100,
+      "title": {
+        "value": "CLOSE COMBAT",
+        "scale": 1,
+        "value_en": "CLOSE COMBAT",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style=\"font-size:24px;text-align:left;padding:4px 8px\">+2 CC<br><br>If attacking, may re-roll own dice or force opponent to re-roll theirs.</div>",
+        "scale": 1,
+        "value_en": "<div style=\"font-size:24px;text-align:left;padding:4px 8px\">+2 CC<br><br>If attacking, may re-roll own dice or force opponent to re-roll theirs.</div>",
+        "scale_en": 1
+      }
+    }
+  ]
 }
