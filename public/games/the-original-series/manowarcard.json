@@ -23,42 +23,12 @@
       ]
     },
     {
-      "name": {"value": "REALLY BIG CANNONS", "scale": 0.75},
-      "notes" : [
-        {
-          "height": 100,
-          "title": {"value": "WEAPON CARD", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:24px\"><b>Effect</b>: -1 Saving Throw</div>", "scale": 1.0}
-        }
-      ]
-    },
-    {
-      "name": {"value": "IRON HULL", "scale": 0.75},
-      "notes" : [
-        {
-          "height": 100,
-          "title": {"value": "HULL CARD", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:24px\"><b>Effect</b>: +1 to all Saving Throws until the first fails</div>", "scale": 1.0}
-        }
-      ]
-    },
-    {
-      "name": {"value": "MAGIC FIGUREHEAD", "scale": 0.75},
-      "notes" : [
-        {
-          "height": 100,
-          "title": {"value": "MISC CARD", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:24px\"><b>Effect</b>: Adds 1 Cannon attack to the Fore</div>", "scale": 1.0}
-        }
-      ]
-    },
-    {
       "name": {"value": "SHIELD WALL", "scale": 0.75},
       "notes": [
         {
           "height": 100,
           "title": {"value": "CREW", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">The side of the ship is protected from attack by a wall of shields raised by the crew. This ship gains a 5+ saving throw against all attacks made against the port or starboard sides.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -68,7 +38,7 @@
         {
           "height": 100,
           "title": {"value": "CREW", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">This ship is crewed by Berserkers who fight with savage fury in close combat. Add +4 to this ship's Close Combat total.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -78,7 +48,7 @@
         {
           "height": 100,
           "title": {"value": "CREW", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">A powerful warrior leader drives this ship's crew to fight harder. Add +2 to this ship's Close Combat total. The ship may re-roll one die in close combat.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -88,7 +58,7 @@
         {
           "height": 100,
           "title": {"value": "CREW", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">This ship is crewed by particularly dangerous and unscrupulous individuals. This ship may re-roll any missed dice when firing broadside batteries this turn.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -98,7 +68,7 @@
         {
           "height": 100,
           "title": {"value": "CREW", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">This ship carries additional expert boarding crew trained for close-quarters fighting. Add +2 to Close Combat whenever this ship initiates a boarding action.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -108,7 +78,7 @@
         {
           "height": 100,
           "title": {"value": "CREW", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">Chain grapples are flung from the bow to snare enemy ships. This ship may attempt to grapple any enemy ship it contacts. A grappled ship may not move away without passing a test.<br><br><b>Location: Bows</b></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -118,7 +88,7 @@
         {
           "height": 100,
           "title": {"value": "CREW", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">The crew fires a coordinated volley at the enemy. This ship may re-roll all missed attack dice when firing broadside batteries this turn.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -128,7 +98,7 @@
         {
           "height": 100,
           "title": {"value": "CREW", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">&bull; This ship gains a 5+ saving throw against all magic and special attacks.<br>&bull; Once per game this ship may re-roll all failed saving throws in a single phase.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -138,7 +108,7 @@
         {
           "height": 100,
           "title": {"value": "MISC", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">This ship's magical figurehead wards off harm and inspires the crew in battle. This ship gains a 5+ saving throw against all attacks and +1 to all Close Combat attacks.<br><br><b>Location: Prow</b></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -148,7 +118,7 @@
         {
           "height": 100,
           "title": {"value": "MISC", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">Choose any enemy ship within 12\". That ship's crew turns against their captain. Roll a die: on a 4+ the ship may not fire this turn; on a 2-3 it loses half its movement; on a 1 there is no effect.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -158,7 +128,7 @@
         {
           "height": 100,
           "title": {"value": "MISC", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">The war banner is raised, inspiring all nearby friendly ships to fight with renewed vigour. All friendly ships within 12\" gain +2 to Close Combat this turn.<br><br><b>Play and Discard</b></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -168,7 +138,7 @@
         {
           "height": 100,
           "title": {"value": "MISC", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">1. This ship may move and fire in any order this turn.<br>2. This ship may fire at two different targets this turn.<br><br><b>Play and Discard</b></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -178,7 +148,7 @@
         {
           "height": 100,
           "title": {"value": "MISC", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">This ship is commanded by a captain of terrible reputation. All enemy ships within 6\" must pass a Leadership test or suffer -2 to their Close Combat total this turn.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -188,7 +158,7 @@
         {
           "height": 100,
           "title": {"value": "MISC", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">The divine icon of wrath empowers this ship's bow attacks with supernatural fury. All attacks from the bow arc gain -1 to enemy saving throws. This ship also gains a 5+ saving throw against attacks from ahead.<br><br><b>Location: Bows</b></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -198,7 +168,7 @@
         {
           "height": 100,
           "title": {"value": "MISC", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">The ship's surgeon tends to the crew's wounds throughout the battle. At the end of each turn, this ship may remove one wound or damage counter.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -208,7 +178,7 @@
         {
           "height": 100,
           "title": {"value": "MISC", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">The magic standard flies from the mainmast, bolstering all nearby friendly forces. This ship and all friendly ships within 12\" gain +1 to all saving throws.<br><br><b>Location: Main Mast</b></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -218,7 +188,7 @@
         {
           "height": 100,
           "title": {"value": "HULL", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">The bulkheads of this ship have been reinforced against enemy fire. This ship gains a 5+ saving throw against all hull hits this turn.<br><br><b>Play and Discard</b></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -228,7 +198,7 @@
         {
           "height": 100,
           "title": {"value": "HULL", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">The crew show inspired seamanship, maneuvering the ship with extraordinary skill. This ship may make one additional turn during its movement this turn.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -238,7 +208,7 @@
         {
           "height": 100,
           "title": {"value": "HULL", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">This ship has a massive, heavily-built hull that shrugs off punishment. This ship gains +2 to all hull saving throws and may re-roll any single failed save per turn.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -248,7 +218,7 @@
         {
           "height": 100,
           "title": {"value": "HULL", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">This ship's hull has been streamlined for maximum speed through the water. This ship gains +2\" to its movement allowance this turn.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -258,7 +228,7 @@
         {
           "height": 100,
           "title": {"value": "HULL", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">The firepumps are activated to deal with fires raging below decks. Remove all fire counters from this ship.<br><br><b>Play and Discard</b></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -268,7 +238,7 @@
         {
           "height": 100,
           "title": {"value": "HULL", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">Heavy armour plating has been bolted to the hull of this ship. This ship gains a 4+ saving throw against all hull hits.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -278,7 +248,7 @@
         {
           "height": 100,
           "title": {"value": "HULL", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">Massive timbers reinforce this ship's structure against impacts and cannon fire. This ship may ignore one hull hit this turn.<br><br><b>Play and Discard</b></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -288,7 +258,7 @@
         {
           "height": 100,
           "title": {"value": "HULL", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">This ship's hull has been streamlined for maximum speed through the water. This ship gains +2\" to its movement allowance this turn.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -298,7 +268,7 @@
         {
           "height": 100,
           "title": {"value": "GUNNERY", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">This ship's guns are rigged for long range fire, able to strike enemies far across the water. This ship may fire at targets up to double the normal maximum range this turn.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -308,7 +278,7 @@
         {
           "height": 100,
           "title": {"value": "GUNNERY", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">The gunners are inspired to load and fire with exceptional speed and accuracy. All of this ship's attacks may re-roll any missed dice this turn.<br><br><b>Play and Discard</b></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -318,7 +288,7 @@
         {
           "height": 100,
           "title": {"value": "GUNNERY", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">The ship launches a devastating fire attack, hurling burning projectiles at the enemy. All hits scored by this ship this turn automatically cause fire damage in addition to normal effects.<br><br><b>Play and Discard</b></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -328,7 +298,7 @@
         {
           "height": 100,
           "title": {"value": "GUNNERY", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">This ship has a master gunner of exceptional skill who directs every shot with precision. This ship may re-roll any missed attack dice once each turn.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -338,7 +308,7 @@
         {
           "height": 100,
           "title": {"value": "GUNNERY", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">Small guns mounted high in the crow's nest can be trained on targets in any direction. This ship may fire at any target regardless of its facing arc this turn.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -348,7 +318,7 @@
         {
           "height": 100,
           "title": {"value": "GUNNERY", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">Guns mounted in the bow allow this ship to fire ahead at pursuing or fleeing enemies. This ship may make one broadside attack from the bow arc this turn.<br><br><b>Location: Bows</b></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -358,7 +328,7 @@
         {
           "height": 100,
           "title": {"value": "GUNNERY", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">A massive cannon mounted on the aftcastle fires devastating long-range shots. This ship may fire one heavy shot from the aft arc, applying -2 to the target's saving throw.<br><br><b>Location: Aftcastle</b></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     },
@@ -368,7 +338,7 @@
         {
           "height": 100,
           "title": {"value": "GUNNERY", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:18px\">Swivel guns mounted along the rails allow rapid fire at multiple targets. This ship may split its broadside attack between two different enemy ships this turn.</div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
         }
       ]
     }
