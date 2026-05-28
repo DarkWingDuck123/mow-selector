@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { ListEntry } from "../../components/listentry";
 import { updateList, moveCard, removeCrew, removeCrewGroup, moveCrew, syncFreebies, batchRandomize } from "../../state/lists";
@@ -93,6 +93,12 @@ export const ListEditor = ({
   const list = useSelector((state) =>
     state.lists?.find(({ id }) => listId === id));
   const customFactions = useSelector((state) => state.customFactions);
+  const factionData = useSelector((state) => {
+    if (!list?.factionId) return null;
+    return (state.customFactions || []).find(
+      (f) => f.rulesetId === list.rulesetId && f.id === list.factionId
+    ) || (state.factions || []).find((f) => f.id === list.factionId) || null;
+  });
   const dispatch = useDispatch();
 
   const rulesetSystems = list
@@ -161,29 +167,6 @@ export const ListEditor = ({
     }
   };
 
-  const [factionData, setFactionData] = useState(null);
-
-  useEffect(() => {
-    if (!list?.rulesetId || !list?.factionId) {
-      setFactionData(null);
-      return;
-    }
-    const custom = customFactions.find(
-      (f) => f.rulesetId === list.rulesetId && f.id === list.factionId
-    );
-    if (custom) {
-      setFactionData(custom);
-      return;
-    }
-    const controller = new AbortController();
-    fetch(`${process.env.PUBLIC_URL}/games/${list.rulesetId}/${list.factionId}.json`, {
-      signal: controller.signal,
-    })
-      .then((r) => r.json())
-      .then(setFactionData)
-      .catch((e) => { if (e.name !== "AbortError") setFactionData(null); });
-    return () => controller.abort();
-  }, [list?.rulesetId, list?.factionId, customFactions]);
 
   useEffect(() => {
     if (!factionData?.freebies?.length || !list || !list.factionId || factionData.id !== list.factionId) return;
