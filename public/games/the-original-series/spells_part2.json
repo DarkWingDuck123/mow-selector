@@ -1,0 +1,210 @@
+[
+  {
+    "color": "skaven",
+    "name": "Death Frenzy",
+    "casting_value": "7+",
+    "cast_on": "Any friendly ship or squadron",
+    "effect": "The affected ship or ships may move or attack twice in each turn. During the End Phase, roll a dice for each affected crew counter: 1=the ship loses a crew counter and stops working; 2=the ship loses a crew counter but continues to work; 3-6=no ill-effects this turn. Place a Death Frenzy counter next to the affected ship.",
+    "flavor": "This spell may be cast on any friendly ship or squadron, driving them into a mindless all-consuming rage."
+  },
+  {
+    "color": "skaven",
+    "name": "Poison Wind",
+    "casting_value": "7+",
+    "cast_on": "Any ship",
+    "effect": "Place the Poison Wind template on the table, centred over any ship. Roll a dice for every ship covered by the template, even if only partially; on a score of 4, 5 or 6 the ship loses one crew counter.",
+    "flavor": "A stinking, foul fog spreads across the seascape. Anything touched by the decaying cloud is withered and perished."
+  },
+  {
+    "color": "skaven",
+    "name": "Skitterleap",
+    "casting_value": "6+",
+    "cast_on": "Any ship",
+    "effect": "The target ship vanishes and re-appears anywhere on the table, at the whim of the Grey Seer. The spell can be used to run a ship aground, but not to place ships inland.",
+    "flavor": "Skitterleap affects a ship of the Grey Seer's choice, causing it to vanish with a thunderous roar and a flash of glowing warp fire. It then re-appears anywhere on the table, at the whim of the Grey Seer."
+  },
+  {
+    "color": "skaven",
+    "name": "Curse of the Horned One",
+    "casting_value": "9+",
+    "cast_on": "Any enemy ship",
+    "effect": "When the enemy player wishes to use this ship, he must roll a dice: 1=the spell dissipates and is removed; 2=the ship may not move or fire this turn; 3=the ship may not fire this turn; 4=the ship may not move this turn; 5-6=the ship may move and fire as normal. Place a Curse of the Horned One counter next to the affected ship.",
+    "flavor": "Screeching with unholy glee, the Grey Seer is enveloped by a swirling black cloud, which moves across the water and engulfs the target ship."
+  },
+  {
+    "color": "skaven",
+    "name": "Vermintide",
+    "casting_value": "8+",
+    "cast_on": "Any enemy ship",
+    "effect": "This spell affects a single ship. Roll a dice and remove that many crew from the target ship.",
+    "flavor": "The Skaven Sorcerer cackles in delight as hordes of giant rats erupt from the hold of the enemy ship and swarm over its decks, burying the crew under a tide of vermin."
+  },
+  {
+    "color": "skaven",
+    "name": "Madness",
+    "casting_value": "8+",
+    "cast_on": "Any enemy ship or squadron",
+    "effect": "The target ship or squadron falls under the control of the Skaven player for this turn. At the end of the turn it returns to its proper side. Note that this spell cannot be used to deliberately scuttle a ship.",
+    "flavor": "Hissing through tightly clenched jaws, the Skaven Sorcerer searches the enemy fleet for an unseen weakness. With a sharp out-take of breath he selects his victim."
+  },
+  {
+    "color": "skaven",
+    "name": "Warp Lightning",
+    "casting_value": "8+",
+    "cast_on": "Any enemy ship",
+    "effect": "The target vessel takes a number of random hits. Any location which fails its saving throw is set ablaze. Roll a dice to see how many hits the attack causes: 1-2=3 hits; 3-4=4 hits; 5-6=6 hits. Re-roll any attacks which miss.",
+    "flavor": "Clutching a rat claw talisman around his neck, the Skaven Grey Seer utters a shrill chittering noise. A bolt of blood red lightning shoots forth from the talisman, striking its target with a hideous crash."
+  },
+  {
+    "color": "skaven",
+    "name": "Pestilent Breath",
+    "casting_value": "5+",
+    "cast_on": "Any ship",
+    "effect": "Roll a dice for each crew counter on the target ship: on a 4, 5 or 6 it is killed and removed.",
+    "flavor": "The Grey Seer opens his jaws and a foul cloud spills forth. The Skaven Sorcerer sends the plume of pestilent breath towards a ship of its choice."
+  },
+  {
+    "color": "chaos",
+    "name": "Abject Terror",
+    "casting_value": "9+",
+    "cast_on": "The enemy fleet",
+    "effect": "This turn the enemy fleet cannot do anything except defend itself against boarding actions. They may not move, fire, or make any special attacks at all.",
+    "flavor": "As the Chaos Fleet advances, icy fingers of terror reach out to grasp the hearts of those who are foolish enough to stand in its path."
+  },
+  {
+    "color": "chaos",
+    "name": "Vortex of Chaos",
+    "casting_value": "7+",
+    "cast_on": "The whole seascape",
+    "effect": "State the direction the Vortex will move initially, then roll a D3 and move the Vortex of Chaos template that many inches from the Chaos Sorcerer's ship. After the initial move, roll a dice at the end of each Magic Phase: 1=the Vortex dissipates; remove it; 2=the Vortex remains still; 3=the Vortex moves north D6\"; 4=the Vortex moves south D6\"; 5=the Vortex moves east D6\". Any ship touched by the template takes 4 dice hits as cannonfire and loses 1 crew counter.",
+    "flavor": "The Chaos Vortex is a spitting ball of energy that devours everything it touches. Once unleashed, the Vortex of Chaos moves at the same speed as the Chaos Fleet and the enemy fleet equally."
+  },
+  {
+    "color": "chaos",
+    "name": "Howling Insanity",
+    "casting_value": "7+",
+    "cast_on": "Any enemy ship",
+    "effect": "Place the Howling Insanity template over the target ship; any ship completely or wholly covered by it immediately opens fire with all its weapons. Resolve damage for any ships hit as usual. Ships inside the template may not do anything but fire their weapons this turn, and may not be attacked (except by other ships within the template's area).",
+    "flavor": "The whirling forces of Chaos stab out towards the enemy fleet. An area of the seascape turns pitch-black as a tangible shadow of congealed darkness descends."
+  },
+  {
+    "color": "chaos",
+    "name": "Plague Sea",
+    "casting_value": "8+",
+    "cast_on": "The whole seascape",
+    "effect": "The only vessels that can move or manoeuvre upon this outlandish ocean are the ships of Chaos, who seem to draw power and sustenance from the sweetly cloying waves. All ships except Chaos vessels are totally becalmed, and are unable to move this turn.",
+    "flavor": "The sea takes on a bilious green hue, coagulating to the texture of cold blood, and the wind is stifled to a sluggish breeze by the fetid vapours which rise and form a gaping maw that closes around the vessel, deadening the air."
+  },
+  {
+    "color": "chaos",
+    "name": "Wind of Chaos",
+    "casting_value": "7+",
+    "cast_on": "The enemy fleet",
+    "effect": "Place the Wind of Chaos template over the enemy fleet, with the centre of the storm over the target ship. Any ship caught under the template, even if only partially, is blown D6\" in a direction of the Chaos Player's choosing; pick the direction and roll the scatter distance individually for each ship.",
+    "flavor": "A screaming wind is summoned up by the Chaos Sorcerer. It circles above the fleet in huge, broiling purple clouds for a few moments, gaining in intensity before screaming down upon the enemy fleet, scattering the enemy ships like feathers in the wind."
+  },
+  {
+    "color": "chaos",
+    "name": "Plagueflies",
+    "casting_value": "7+",
+    "cast_on": "Any enemy ship",
+    "effect": "Roll a dice for each crew counter on the target ship: on a score of 4, 5 or 6 it is removed.",
+    "flavor": "A writhing cloud of millions of noxious plagueflies rally towards the enemy fleet. The thick, treacly layer of flies descends on a single vessel, their weight causing the ship to settle in the water. With a terrible droning noise, the flies crawl into the noses and mouths of the ship's crew, rapidly killing those that cannot escape."
+  },
+  {
+    "color": "chaos",
+    "name": "Crawling Flesh",
+    "casting_value": "5+",
+    "cast_on": "Any enemy ship",
+    "effect": "Place one of the Crawling Flesh counters next to the target. The ship is trapped until the spell is either dispelled or dissipates naturally; at the start of each Magic Phase roll a dice — the spell dissipates on a score of 1, 2 or 3. The spell is also dissipated if the Chaos Sorcerer dies.",
+    "flavor": "The sea around the target ship begins to solidify, taking on the form of heaving, bubbling flesh which grasps its hull in a vice-like embrace. The ship can make no headway through this sea of muscle and skin, and is becalmed."
+  },
+  {
+    "color": "chaos",
+    "name": "Carnage",
+    "casting_value": "7+",
+    "cast_on": "Any Chaos ship making a boarding action",
+    "effect": "Any Chaos ship making a boarding action this turn gains a +2 modifier to its dice rolls.",
+    "flavor": "As the raw energies of the warp ripple and crackle in the air, a great roar goes up from the Plague Fleet. Enraged by the Dark Lords of Battle, the crews of the Chaos ships descend upon their foes."
+  },
+  {
+    "color": "chaos",
+    "name": "Maw of Doom",
+    "casting_value": "8+",
+    "cast_on": "Any enemy ship",
+    "effect": "Roll on the following table: 1-2=Roll 1 dice; the target takes that many hits, save as usual; 3=Lose 1 crew counter, plus roll 1 dice; the target takes that many hits, save as usual; 5-6=The target takes 2 hits and 1 point of below the waterline damage with no save, and loses 1 crew counter.",
+    "flavor": "The sea boils and turns black around the target ship, violently shaking it from side to side. The dark waves rise and form a gaping maw that closes around the vessel, submerging it completely."
+  },
+  {
+    "color": "chaos",
+    "name": "Vision of Despair",
+    "casting_value": "8+",
+    "cast_on": "Any enemy ship",
+    "effect": "Nominate a target and roll a dice. If the score is lower than or equal to the number of crew counters on the target ship, the spell has no discernible effect. If the score is higher, the ship gives up all hope: it may do nothing this turn and may not defend itself against boarding actions. If boarded this turn, the crew simply surrender.",
+    "flavor": "The enemy crew's battle-lust is replaced by an all-pervading feeling of doom."
+  },
+  {
+    "color": "chaos",
+    "name": "Deathsurge",
+    "casting_value": "6+",
+    "cast_on": "The Chaos Fleet",
+    "effect": "All the Chaos Ships on the seascape gain an extra D6\" to movement as they are carried along by the mystical wave; roll a single dice to find the extra distance the whole Fleet may move this turn.",
+    "flavor": "A black wave towers over the Chaos Fleet, inexorably rolling towards them, but the hideous cackling and laughter from the warped fleet belies any sense of impending doom. As the wave strikes, it lifts up the Chaos Fleet and hurls it towards its opponents."
+  },
+  {
+    "color": "chaos",
+    "name": "Death Venom",
+    "casting_value": "5+",
+    "cast_on": "Any target (line of sight not required)",
+    "effect": "Death Venom may be fired from the Chaos Sorcerer's Tower as a 1 dice attack with a range of 2 dice inches, or as a 4 dice attack with a range of 1 dice inches. Roll an attack for each gobbet; areas hit have a -1 save modifier. Any dice which scores a 1 to hit also maims the Sorcerer — remove one crew counter.",
+    "flavor": "Cracking gobbets of fiery acid hurtle towards the enemy, flashing flesh to wood and bones to timber."
+  },
+  {
+    "color": "high",
+    "name": "Drain Magic",
+    "casting_value": "8+",
+    "cast_on": "The whole seascape",
+    "effect": "The Magic Phase ends immediately. All Wizards in the battle except the Mage who casts Drain Magic randomly lose D3 of their spells from their hand. All magical items such as banners, Dwarf Runes and Elven Scrolls of Power have no effect for the remainder of the turn. The Mage immediately gains 1D6 Power points and must test as usual if this takes him over his limit.",
+    "flavor": "The Mage screams into the forbidding dark knowing that his chants have coalesced above his ship. They lower to the deck and pass into his body, taking all of the magical power that currently surrounds the sea battle."
+  },
+  {
+    "color": "high",
+    "name": "Call of the Wild",
+    "casting_value": "9+",
+    "cast_on": "The whole seascape",
+    "effect": "The Elf player may place a Sea Monster swimming template immediately. This costs him no points but follows all the rules for Sea Monsters as if he had paid for it at the start of the game. He may not select Triton, a Sea Elemental or a Black Leviathan, as these beasts are too powerful to be summoned at such short notice.",
+    "flavor": "In a clear, piercing voice the Mage cries out over the seascape. Deep below the waves in the dark depths of the oceans, beasts of the sea stir in blue slumber. Hearing the cry they rise to the surface in answer to the distant call for aid."
+  },
+  {
+    "color": "high",
+    "name": "Fate Walk",
+    "casting_value": "8+",
+    "cast_on": "Own Fleet",
+    "effect": "The Elven player immediately gains the initiative if he does not already have it. Friendly ships within 9\" of the Mage (including the one he is on) gain a +1 modifier to all saving throws for the rest of the turn. This does not affect the below waterline saves.",
+    "flavor": "While murmuring staves of the incantation the Mage turns sedately at the falling skies. The spirit of the Mage briefly departs his body to take a glimpse along the winds of time, into the futures. Already knowing, he can warn nearby Captains of the enemy's plans, allowing them to avoid their fate."
+  },
+  {
+    "color": "high",
+    "name": "Mind Steal",
+    "casting_value": "7+",
+    "cast_on": "The enemy Wizard",
+    "effect": "Each player rolls a D6 and adds the level of his magic user. Wizards that use power points (including the Mage) may add up to three points to their roll, spent before the roll is made. Skaven may add warpstone (+1 per stone consumed). If the Mage has a higher score, the enemy Wizard counts as one level lower for the rest of the game. Chaos sorcerers and Skaven must make an impossible test, deducting the difference of scores from the Mage. The Mage suffers no ill effect if he loses.",
+    "flavor": "The Mage frowns with effort as he sends his spirit body across the void to battle the psyche of the opposing Wizard."
+  },
+  {
+    "color": "high",
+    "name": "Languorous Breeze",
+    "casting_value": "8+",
+    "cast_on": "Any enemy ship",
+    "effect": "The ship may not move or fire for the rest of the game unless it can roll a 5 or 6 at the start of each Magic Phase. The spell remains in play even if the ship changes hands, and resets the test each turn for the rest of the game.",
+    "flavor": "After chanting the incantation the Mage turns towards the target ship and slowly exhales a long, deep breath. The sigh settles towards the ship accompanied by a background of peaceful music. The enemy ship is enveloped by a pacifying mood that completely detaches their minds from the battle raging around them."
+  },
+  {
+    "color": "high",
+    "name": "Wrath of the Sea",
+    "casting_value": "7+",
+    "cast_on": "Any enemy ship",
+    "effect": "Roll a D6 for each crew counter; a 5 or 6 indicates they are washed overboard and killed. Roll also for any characters such as Admirals or Wizards; if they are washed overboard follow the procedure given in the Captain Washed Overboard result on the Captains Chart.",
+    "flavor": "The Mage cries dire words of vengeance to the skies. As his chant echoes the waves dance and swell, increasing in intensity to a frothing maelstrom. With an extravagant gesture the Mage directs the widespread at an opposing ship."
+  }
+]
