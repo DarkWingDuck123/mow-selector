@@ -12,7 +12,19 @@
         "name_es": "The Empire",
         "name_fr": "The Empire",
         "allies": [
+          "dwarf",
           "brettonia"
+        ]
+      },
+      {
+        "id": "dwarf",
+        "name_de": "Dwarfs",
+        "name_en": "Dwarfs", 
+        "name_es": "Dwarfs",
+        "name_fr": "Dwarfs",
+        "allies": [
+          "brettonia",
+          "empire"
         ]
       },
       {

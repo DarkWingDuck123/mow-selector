@@ -1,0 +1,355 @@
+{
+  "id": "dwarf",
+  "style": {
+    "bgColor": "blue",
+    "fgColor": "white",
+    "parchmentColor": "beige",
+    "waterColor": "lightblue",
+    "accentColor": "red"
+  },
+  "name": "Dwarf",
+  "name_en": "Dwarf",
+  "name_de": "Dwarf",
+  "name_es": "Dwarf",
+  "name_fr": "Dwarf",
+  "validation_rules": [
+    {
+      "rule": "Max 2 Monitor per 1 Man O'War"
+    },
+    {
+      "rule": "Max 1 Dreadnought per 1 Ironclad"
+    },
+    {
+      "rule": "Max 1 Nautilus per 1 Man O'War"
+    },
+    {
+      "rule": "Min 1 Ironclad"
+    },
+    {
+      "rule": "Min 1 Dreadnought"
+    },
+    {
+      "rule": "Min 1 Monitor"
+    },
+    {
+      "rule": "Min 1 Nautilus"
+    },
+    {
+      "rule": "Max 33% Allies"
+    },
+    {
+      "rule": "Max 0% Non-Allies"
+    },
+    {
+      "rule": "Max 1 Sea Monster per 1 Ship of the Line"
+    },
+    {
+      "rule": "Max 1 Anti-Flyer per 1 Man O'War"
+    },
+    {
+      "rule": "Max 1 Warballoon per 1 Ship of the Line"
+    },
+    {
+      "rule": "Max 1 Gyrocopter per 1 Ship of the Line"
+    },
+    {
+      "rule": "Max 1 Gatling Cannon per 1 Man O'War"
+    }
+  ],
+  "freebies": [
+    {
+      "free": "1 Admiral"
+    },
+    {
+      "free": "1 Man O'War Card"
+    }
+  ],
+  "allies": [
+    "empire",
+    "brettonia"
+  ],
+  "crew": [
+    {
+      "id": "admiral",
+      "name": "Admiral",
+      "name_en": "Admiral",
+      "type_name": "Admiral",
+      "type_name_en": "Admiral",
+      "description": "(A) +1 CC",
+      "description_en": "(A) +1 CC",
+      "type": "crew",
+      "cost": "-"
+    }
+  ],
+  "addons": [
+    {
+      "id": "manowarcard",
+      "weight": "negligible",
+      "name": "Man O'War Card",
+      "name_en": "Man O'War Card",
+      "type": "card",
+      "type_name": "Man O'War Card",
+      "type_name_en": "Man O'War Card",
+      "cost": "25"
+    },
+    {
+      "id": "gatlingcannon",
+      "weight": "negligible",
+      "name": "Gatling Cannon",
+      "name_en": "Gatling Cannon",
+      "type": "card",
+      "type_name": "Anti-Flyer",
+      "type_name_en": "Anti-Flyer",
+      "cost": "25"
+    },
+    {
+      "id": "crewcard",
+      "weight": "negligible",
+      "name": "Crew Card",
+      "name_en": "Crew Card",
+      "type": "crew_card",
+      "cost": "0"
+    },
+    {
+      "id": "turnsummary",
+      "weight": "negligible",
+      "name": "Turn Summary",
+      "name_en": "Turn Summary",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "dwarfspecialrules",
+      "weight": "negligible",
+      "name": "Special Rules - Dwarf",
+      "name_en": "Special Rules - Dwarf",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "blank",
+      "name": "Empty",
+      "name_en": "Empty",
+      "type": "card",
+      "cost": "0"
+    }
+  ],
+  "units": [
+    {
+      "id": "dreadnought",
+      "type": "manowar",
+      "type_name": "Man O'War",
+      "type_name_en": "Man O'War",
+      "weight": "heavy",
+      "name": "Dreadnought",
+      "name_en": "Dreadnought",
+      "name_de": "Greatship",
+      "name_es": "Greatship",
+      "name_fr": "Greatship",
+      "description": "A Dreadnought",
+      "description_en": "A Dreadnought",
+      "squadron-size": 1,
+      "cost": 225
+    },
+    {
+      "id": "Ironclad",
+      "type": "manowar",
+      "type_name": "Man O'War",
+      "type_name_en": "Man O'War",
+      "weight": "heavy",
+      "name": "Ironclad",
+      "name_en": "Ironclad",
+      "description": "A Ironclad",
+      "description_en": "A Ironclad",
+      "squadron-size": 1,
+      "cost": 150
+    },
+    {
+      "id": "monitor",
+      "type": "shipoftheline",
+      "type_name": "Ship of the Line",
+      "type_name_en": "Ship of the Line",
+      "weight": "heavy",
+      "name": "Monitor",
+      "name_en": "Monitor",
+      "description": "A Squadron of 3 Monitor",
+      "description_en": "A Squadron of 3 Monitor",
+      "squadron-size": 3,
+      "cost": 75
+    },
+    {
+      "id": "nautilus",
+      "type": "independent",
+      "type_name": "Independent",
+      "type_name_en": "Independent",
+      "weight": "heavy",
+      "name": "Nautilus",
+      "name_en": "Nautilus",
+      "description": "A Nautilus",
+      "description_en": "A Nautilus",
+      "squadron-size": 1,
+      "cost": 75
+    },
+    {
+      "id": "warballoon",
+      "type": "flyer",
+      "type_name": "Flyer",
+      "type_name_en": "Flyer",
+      "weight": "light",
+      "name": "Warballoon",
+      "name_en": "Warballoon",
+      "description": "A Flight of 3 Warballoons",
+      "description_en": "A Flight of 3 Warballoons",
+      "squadron-size": 1,
+      "cost": 75
+    },
+    {
+      "id": "gyrocopter",
+      "type": "flyer",
+      "type_name": "Flyer",
+      "type_name_en": "Flyer",
+      "weight": "light",
+      "name": "Gyrocopter",
+      "name_en": "Gyrocopter",
+      "description": "A Flight of 3 Gyrocopters",
+      "description_en": "A Flight of 3 Gyrocopters",
+      "squadron-size": 3,
+      "cost": 75
+    }
+  ],
+  "names": [
+    {
+      "id": "name1",
+      "value": [
+        "Grugni's",
+        "Slayer's",
+        "High King's",
+        "Longbeard's",
+        "Thane's",
+        "Runesmith's"
+      ]
+    },
+    {
+      "id": "name2",
+      "value": [
+        "Revenge",
+        "Surprise",
+        "Wrath",
+        "Mistake",
+        "Hammer",
+        "Sword",
+        "Spear"
+      ]
+    },
+    {
+      "id": "name3",
+      "value": [
+        "Grombrindal",
+        "Thungni",
+        "Gazul",
+        "Grimnir",
+        "Valaya",
+        "Grungni"
+      ]
+    },
+    {
+      "id": "name4",
+      "value": [
+        "Karak",
+        "Barad"
+      ]
+    },
+    {
+      "id": "name5",
+      "value": [
+        "Eight Peaks",
+        "High Peaks",
+        "Valley",
+        "Chasm"
+      ]
+    },
+    {
+      "id": "name6",
+      "value": [
+        "Hammer of",
+        "Fist of",
+        "Sword of",
+        "Club of",
+        "Rune of"
+      ]
+    },
+    {
+      "id": "name8",
+      "value": [
+        "Crazy",
+        "Crazed",
+        "Loonie",
+        "Loco",
+        "Bug-Eyed",
+        "Mad",
+        "Unhinged",
+        "Bonkers",
+        "Sane"
+      ]
+    },
+    {
+      "id": "name9",
+      "value": [
+        "Ariksson",
+        "Grunnasdottir",
+        "Skagnev",
+        "Sovrissniz",
+        "Alrik",
+        "Bronda",
+        "Dimzad",
+        "Fenna",
+        "Gottri",
+        "Gudrun",
+        "Snorri"
+      ]
+    }
+  ],
+  "naming_rules": [
+    {
+      "id": "dreadnought",
+      "rule": [
+        "name1 name2",
+        "name2",
+        "name3"
+      ]
+    },
+    {
+      "id": "ironclad",
+      "rule": [
+        "name1 name5",
+        "name5",
+        "name4 name5"
+      ]
+    },
+    {
+      "id": "monitor",
+      "rule": [
+        "name4 name5"
+      ]
+    },
+    {
+      "id": "nautilus",
+      "rule": [
+        "name6 name3"
+      ]
+    },
+    {
+      "id": "warballoon",
+      "rule": [
+        "name3",
+        "name6 name5"
+      ]
+    },
+    {
+      "id": "gyrocopter",
+      "rule": [
+        "name8 name9, name8 name9, name8 name9"
+      ]
+    }
+  ]
+}

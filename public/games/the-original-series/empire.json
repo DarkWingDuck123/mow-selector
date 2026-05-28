@@ -308,7 +308,7 @@
     },
     {
       "id" : "griffonrider",
-      "rule" : [ "name8 name9 , name8 name9 , name8 name9" ]
+      "rule" : [ "name8 name9, name8 name9, name8 name9" ]
     }
   ]
 }
