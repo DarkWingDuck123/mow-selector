@@ -175,10 +175,14 @@ export const ListEditor = ({
       setFactionData(custom);
       return;
     }
-    fetch(`${process.env.PUBLIC_URL}/games/${list.rulesetId}/${list.factionId}.json`)
+    const controller = new AbortController();
+    fetch(`${process.env.PUBLIC_URL}/games/${list.rulesetId}/${list.factionId}.json`, {
+      signal: controller.signal,
+    })
       .then((r) => r.json())
       .then(setFactionData)
-      .catch(() => setFactionData(null));
+      .catch((e) => { if (e.name !== "AbortError") setFactionData(null); });
+    return () => controller.abort();
   }, [list?.rulesetId, list?.factionId, customFactions]);
 
   useEffect(() => {

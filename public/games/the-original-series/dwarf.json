@@ -152,15 +152,15 @@
       "cost": 225
     },
     {
-      "id": "Ironclad",
+      "id": "ironclad",
       "type": "manowar",
       "type_name": "Man O'War",
       "type_name_en": "Man O'War",
       "weight": "heavy",
       "name": "Ironclad",
       "name_en": "Ironclad",
-      "description": "A Ironclad",
-      "description_en": "A Ironclad",
+      "description": "An Ironclad",
+      "description_en": "An Ironclad",
       "squadron-size": 1,
       "cost": 150
     },
@@ -172,8 +172,8 @@
       "weight": "heavy",
       "name": "Monitor",
       "name_en": "Monitor",
-      "description": "A Squadron of 3 Monitor",
-      "description_en": "A Squadron of 3 Monitor",
+      "description": "A Squadron of 3 Monitors",
+      "description_en": "A Squadron of 3 Monitors",
       "squadron-size": 3,
       "cost": 75
     },
@@ -260,7 +260,7 @@
       ]
     },
     {
-      "id": "name5",
+      "id": "dname5",
       "value": [
         "Eight Peaks",
         "High Peaks",
@@ -309,6 +309,7 @@
       ]
     }
   ],
+
   "naming_rules": [
     {
       "id": "dreadnought",
@@ -321,15 +322,15 @@
     {
       "id": "ironclad",
       "rule": [
-        "name1 name5",
-        "name5",
-        "name4 name5"
+        "name1 dname5",
+        "dname5",
+        "name4 dname5"
       ]
     },
     {
       "id": "monitor",
       "rule": [
-        "name4 name5"
+        "name4 dname5"
       ]
     },
     {
@@ -342,7 +343,7 @@
       "id": "warballoon",
       "rule": [
         "name3",
-        "name6 name5"
+        "name6 dname5"
       ]
     },
     {
