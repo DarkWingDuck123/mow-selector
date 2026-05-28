@@ -25,3 +25,5 @@ yarn-error.log*
 # scratch files
 *.js2
 *.bak
+*.swp
+*.png
