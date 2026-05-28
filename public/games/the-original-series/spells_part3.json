@@ -1,0 +1,276 @@
+[
+  {
+    "color": "orc",
+    "type": "spell",
+    "name": "Gaze of Mork",
+    "power": 3,
+    "cast_on": "Special",
+    "effect": "Place the range ruler so that it is touching the ship the Shaman is on. It does not have to correspond to the normal fire arcs. Any vessel, friend or foe, under the template suffers D3 hits. The saving throw modifier depends on Shaman level: 1=0, 2/3=-1, 4/5=-2."
+  },
+  {
+    "color": "orc",
+    "type": "spell",
+    "name": "Mork Save Uz!",
+    "power": 2,
+    "cast_on": "A single friendly ship or squadron",
+    "effect": "The ships gain an additional 4+ dispel until the end of the turn. This dispel will only affect spells that are actually targeted at the ship or a ship within the squadron."
+  },
+  {
+    "color": "orc",
+    "type": "spell",
+    "name": "Da Krunch",
+    "power": 3,
+    "cast_on": "Any enemy ship within 9\"",
+    "effect": "The ship is hit in the same way as a catapult. Roll to see which location is hit (a high location on appropriate vessels). This location is hit with a -2 save modifier. Lower locations have the save modifier reduced by one, rolling randomly if there is a choice of locations. See catapult rules for full details."
+  },
+  {
+    "color": "orc",
+    "type": "spell",
+    "name": "Fists of Gork",
+    "power": 2,
+    "cast_on": "The Shaman",
+    "effect": "The Shaman's presence adds +3 to the ship's total in any boarding action this turn."
+  },
+  {
+    "color": "orc",
+    "type": "spell",
+    "name": "Waaagh!",
+    "power": 4,
+    "cast_on": "Any orc ships within range (Shaman level 1/2=6\", 3/4=9\", 5=12\")",
+    "effect": "All affected Orc ships gain +2 to their boarding rolls for the remainder of the turn. In addition, any enemy wizard within range of the spell must lose D6 spell cards from his hand immediately."
+  },
+  {
+    "color": "orc",
+    "type": "spell",
+    "name": "Mork Wants Ya!",
+    "power": 4,
+    "cast_on": "Any enemy ship within 9\"",
+    "effect": "The enemy vessel suffers a number of hits equal to the level of the caster. These hits are resolved with a -1 saving throw modifier. The ship may also be moved D6\" in a direction specified by the Orc player. This may result in running aground or collisions as normal."
+  },
+  {
+    "color": "orc",
+    "type": "spell",
+    "name": "The Hand of Gork",
+    "power": 3,
+    "cast_on": "A single friendly ship",
+    "effect": "The ship can be moved up to 9\" in any direction. The ship may pass over other ships and terrain without penalty. It may be placed facing in any direction and may move and fire normally in the next Battle Phase. The ship will become a straggler if moved out of the range of a squadron flagship."
+  },
+  {
+    "color": "orc",
+    "type": "spell",
+    "name": "Brain Bursta",
+    "power": 4,
+    "cast_on": "The range rules",
+    "effect": "Each vessel under the range ruler loses a number of crew counters equal to the roll of a dice. Shaman level 1/2/3=D3-1 crew killed, 4/5=D3 crew killed."
+  },
+  {
+    "color": "orc",
+    "type": "spell",
+    "name": "Ere We Go!",
+    "power": 3,
+    "cast_on": "Any orc ships within range (Shaman level 1/2=6\", 3/4=9\", 5=12\")",
+    "effect": "All affected Orc ships gain +1 to their total in any boarding action this turn."
+  },
+  {
+    "color": "orc",
+    "type": "spell",
+    "name": "'Eadbutt",
+    "power": 3,
+    "cast_on": "The enemy Wizard",
+    "effect": "Each player rolls a D6 and adds their Wizard's level. The Orc player can also add +1 to his roll if he rolled a 6 to cast this spell. If the enemy Wizard scores less than the Shaman then he is killed and removed from the game. If the scores are equal or the Shaman loses there is no further effect."
+  },
+  {
+    "color": "orc",
+    "type": "event",
+    "name": "Over Da Side",
+    "effect": "This card is played on an Orc ship, chosen by the opponent. The ship loses a crew counter. There is a chance that another counter is dragged along and is removed as well. After removing the counter that goes overboard roll a D6; on a 1 or 2 another counter is removed. Keep rolling for each plunging crew until you roll 3+. Play this card immediately."
+  },
+  {
+    "color": "orc",
+    "type": "event",
+    "name": "Get Da Skumbo!",
+    "effect": "Play this card on any enemy vessel. Any Orc ships which attempt to board this vessel gain an additional +2 modifier to their roll. Play this card immediately."
+  },
+  {
+    "color": "orc",
+    "type": "event",
+    "name": "'Eadbang!",
+    "effect": "The Shaman must make an immediate roll on the Kickback Table, using the power he has in his hand rather than the amount of power he used to cast a spell. Play this card immediately."
+  },
+  {
+    "color": "orc",
+    "type": "event",
+    "name": "Gerroutavit",
+    "effect": "A single Orc ship, chosen by the enemy player, may not move or fire this turn. Play this card immediately."
+  },
+  {
+    "color": "orc",
+    "type": "event",
+    "name": "Ded 'Ard",
+    "effect": "Play this card on any vessel within the Orc fleet. This ship may make an immediate move, and may board another vessel if it moves into contact. This does not affect the ship's ability to move and fire normally. Play this card immediately."
+  },
+  {
+    "color": "orc",
+    "type": "kustom_kard",
+    "name": "Beer!",
+    "cost": "Free",
+    "battle_honours": 0,
+    "effect": "The crew of this vessel have spent the last few hours drinking barrels of fungus beer and eating sacks of squig flavoured crisps. They are so drunk that they believe they could defeat anybody. Unfortunately they are far too poor to be reliable. When you wish to move the ship during the battle phase roll a D6. On a roll of 1 the Orcs may do nothing at all and give passes to your opponent. The Orcs will add D6-2 to their combat total this turn."
+  },
+  {
+    "color": "orc",
+    "type": "kustom_kard",
+    "name": "Pointy Bit",
+    "cost": "50pts",
+    "battle_honours": 2,
+    "effect": "The ship is equipped with a ram and may make a ram attack as described in the main rulebook. The ram is located on the Front location and will be destroyed if that area takes damage. If a ship with Iron Claws manages to ram a target that was 5 or more inches away the target will also take 3 random hits."
+  },
+  {
+    "color": "orc",
+    "type": "kustom_kard",
+    "name": "Squig Launchers",
+    "cost": "25pts",
+    "battle_honours": 1,
+    "effect": "The Orc ship may fire its squig launchers at the start of any boarding action. Before the dice are rolled, roll a D6 on the Artillery Dice. If the result is 5+ the angry squigs have overwhelmed some of the boarding crew and one counter is removed from the ship's template. If the D6 roll is 1 the launcher has broken and may not be used for the remainder of the battle."
+  },
+  {
+    "color": "orc",
+    "type": "kustom_kard",
+    "name": "Fanatics",
+    "cost": "50pts",
+    "battle_honours": 2,
+    "effect": "At the start of any boarding action the ship may unleash its Fanatics. To determine the effect roll D3+1 hits on the crew locations of the enemy ship. These locations must make a saving throw at a -2 modifier. Fanatics can cause Critical hits. Any location that comes up as a 1 means the Fanatic has careened out of control and adds +D6 to the enemy side's total this turn. Both crews are occupied fighting the Fanatics and neither may carry on with the boarding action or perform any other actions until the combat this turn."
+  },
+  {
+    "color": "orc",
+    "type": "kustom_kard",
+    "name": "Gobbedoes",
+    "cost": "30pts",
+    "battle_honours": 2,
+    "effect": "The Gobbedo may be fired in the same way as a Dwarf torpedo except that the ammunition may also attempt to alter direction. When you roll to see which direction the Gobbedo is fired, any hit also allows the Gobbo player to add or remove one from the roll."
+  },
+  {
+    "color": "orc",
+    "type": "kustom_kard",
+    "name": "Big Whip",
+    "cost": "25pts",
+    "battle_honours": 1,
+    "effect": "The ship may add D3\" to its movement rate when using the slaves to drive the treadwheel to propel itself. Roll the dice each time you move the ship."
+  },
+  {
+    "color": "orc",
+    "type": "kustom_kard",
+    "name": "Troll Pens",
+    "cost": "50pts",
+    "battle_honours": 2,
+    "effect": "In any boarding action you may release the Trolls. Roll on the table below: 1=The trolls go overboard and attack the Orcs; your opponent may add the roll and add +D3 to his combat total this turn. 2-5=The trolls shamble into the fray and add +D3 to the Orc combat total this turn. 6=The trolls go berserk and wade into the enemy; the Orc player may add +D6 to his combat total this turn."
+  },
+  {
+    "color": "undead",
+    "type": "spell",
+    "name": "Deathship",
+    "casting_value": "4+",
+    "cast_on": "Any single friendly ship",
+    "effect": "The ship may not be attacked this turn in any way.",
+    "flavor": "Glowing tendrils of mist cover a friendly ship and produce an illusion around the ship which makes the ship even more frightening than it already is. The stench of death surrounds the ship and enemy sailors refuse to go near it."
+  },
+  {
+    "color": "undead",
+    "type": "spell",
+    "name": "Curse of Years",
+    "casting_value": "6+",
+    "cast_on": "Any single enemy ship",
+    "effect": "Roll a D6 for each crew counter on the ship. On a 5 or 6 the crew are aged and die. If there are any crew left alive after the roll, in the next magic phase roll again but this time subtract -1 from the roll required to kill them, by a maximum of 2-6. This spell may be dispelled in the same way as it would normally be done (see main text).",
+    "flavor": "The Necromancer calls upon the most powerful magic he knows and hurls an ancient curse at an enemy ship. The ship's crew are aged and die due to this hideous curse."
+  },
+  {
+    "color": "undead",
+    "type": "spell",
+    "name": "Leg Bone Connected to the Knee Bone",
+    "casting_value": "4+",
+    "cast_on": "Any friendly ship which has damaged locations",
+    "effect": "Completely repairs two locations which have been damaged.",
+    "flavor": "The Necromancer reaches out and knits the two damaged bones together to heal a ship of some damage it has suffered. The damaged arm works as if new."
+  },
+  {
+    "color": "undead",
+    "type": "spell",
+    "name": "Horde of the Grave",
+    "casting_value": "6+",
+    "cast_on": "Any single friendly ship",
+    "effect": "You may add D6 + 2 Skeletons to any ship in your fleet provided it does not take them over the crew limit of the ship. Any crew which cannot fit on a ship are lost in the void.",
+    "flavor": "The Necromancer utters an age old incantation and proceeds to summon the horde of the grave. The horde will arrive clattering and desperate to get into action."
+  },
+  {
+    "color": "undead",
+    "type": "spell",
+    "name": "Spirit Wraith",
+    "casting_value": "4+",
+    "cast_on": "Any enemy ship",
+    "effect": "The Spirit Wraith carries away 1 crew from an enemy ship.",
+    "flavor": "In a shower of magic a Spirit Wraith appears and rushes across the sky towards the enemy. The Wraith drops on to the deck of the ship, licks up some crew and departs again to the world of night."
+  },
+  {
+    "color": "undead",
+    "type": "spell",
+    "name": "Legion of the Damned",
+    "casting_value": "6+",
+    "cast_on": "Any single friendly ship",
+    "effect": "The crew on a ship of your choice are doubled this turn only. Next turn they will be back to the normal amount.",
+    "flavor": "A dark void rises behind the Undead fleet and riding upon the shadows are the legions of the damned who land upon the deck of an Undead ship."
+  },
+  {
+    "color": "undead",
+    "type": "spell",
+    "name": "Raise the Lost",
+    "casting_value": "5+",
+    "cast_on": "Any ship that has sunk, provided the wreck counter is still there",
+    "effect": "Bring the ship up to 3\" from the wreck counter. It may move and fire, board if it can, under our control. The ship sinks again during the next End Phase, but does not take damage for the duration. No prior damage counts as having been repaired for the duration. Any special bonus the crew had lost are restored and it will count as 2 Skeleton counters.",
+    "flavor": "The Necromancer fires black beams of magic from his hands into the sea and brings a recently sunken ship to the surface for a short time to do his bidding."
+  },
+  {
+    "color": "undead",
+    "type": "spell",
+    "name": "Davy Jones' Locker",
+    "casting_value": "5+",
+    "cast_on": "Any enemy ship",
+    "effect": "Fight a boarding action immediately; you will have 2 Skeletons and no grapshot is allowed. After the boarding action is finished the magic sustaining the skeletons is lost and they fall back into the sea. This is a fight to the death with no escape for either side.",
+    "flavor": "The Necromancer stretches his senses to a nearby shipwreck and touches each man who died there. The Skeletons rise up from the deep and attack an enemy vessel!"
+  },
+  {
+    "color": "undead",
+    "type": "spell",
+    "name": "Rite of Summoning",
+    "casting_value": "3+",
+    "cast_on": "Any friendly ship which has lost crew",
+    "effect": "Roll a D6 for the ship which has lost crew and see what is summoned in their place: 1-2=2 Zombies; 3-4=2 Skeletons; 5-6=1 Wight.",
+    "flavor": "Twisting tendrils of black smoke swirl around the bodies of the fallen and restore them to life."
+  },
+  {
+    "color": "undead",
+    "type": "spell",
+    "name": "Vanhel's Dance Macabre",
+    "casting_value": "4+",
+    "cast_on": "The whole Undead fleet",
+    "effect": "All Undead ships may move an extra 2\" this turn.",
+    "flavor": "The power of the grave screams across the sea and strikes every Undead ship, imbuing the crew with the power of darkness. The strength of this magic drives them into a macabre dance of destruction."
+  },
+  {
+    "color": "undead",
+    "type": "spell",
+    "name": "Plague of Skulls",
+    "casting_value": "4+",
+    "cast_on": "Any single enemy ship",
+    "effect": "The ship may not fire this turn and also on a D6 roll of 4 or more they will lose one crew counter to the biting skulls.",
+    "flavor": "The Necromancer picks a skull out of a big black bag and hurls it at an enemy ship. The magic power makes the skull multiply a hundred times, and the barrage of skulls suddenly take on life and fall on the enemy crew, biting at them as they fall."
+  },
+  {
+    "color": "undead",
+    "type": "spell",
+    "name": "Death Bolt",
+    "casting_value": "4+",
+    "cast_on": "Any single enemy ship within 18\" of the Necromancer",
+    "effect": "The Death Bolt inflicts 3 random hits to low locations with a -1 saving throw modifier.",
+    "flavor": "The wizard swallows some ground bone powder and spits it out as the power of the Necromancer, which strikes a ship close by."
+  }
+]
