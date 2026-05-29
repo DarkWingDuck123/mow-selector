@@ -28,7 +28,7 @@
         {
           "height": 100,
           "title": {"value": "CREW", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The decks of the ship are protected from assault by an impenetrable wall of shields, from behind which the defenders may launch missile attacks and hurl boiling lead and oil onto their foes. The ship gains a +2 bonus in boarding actions, but only in defence.</div>", "scale": 1.0}
         }
       ]
     },
@@ -38,7 +38,7 @@
         {
           "height": 100,
           "title": {"value": "CREW", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The ship has a contingent of berserkers aboard. These crazed individuals live only for the joy of battle and the screams of their victims as they reap a terrible harvest from the crews of enemy warships. The berserkers give you a +2 in boarding actions, and are lost as soon as you lose a boarding action.</div>", "scale": 1.0}
         }
       ]
     },
@@ -48,7 +48,7 @@
         {
           "height": 100,
           "title": {"value": "CREW", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">A mighty warrior of dread renown leads the boarding parties of this ship. His battle skill is legendary and his opponents are in great fear of his martial prowess. The War Leader allows you to either add +1 to your boarding dice roll, or to re-roll any one boarding dice roll. If you re-roll the dice, then this card must be discarded after use.</div>", "scale": 1.0}
         }
       ]
     },
@@ -58,7 +58,7 @@
         {
           "height": 100,
           "title": {"value": "CREW", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The ship carries a company of condemned convicts and cutthroats, who are always thrown into the frontline of any boarding action. The convicts give +1 to your boarding dice roll, and this card may be given up instead of losing a crew counter if you are beaten.</div>", "scale": 1.0}
         }
       ]
     },
@@ -68,7 +68,7 @@
         {
           "height": 100,
           "title": {"value": "CREW", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The open upper decks of the ship are protected by huge nets and chains which impede attacking troops. Attackers count -1 to their dice rolls in boarding actions.</div>", "scale": 1.0}
         }
       ]
     },
@@ -78,7 +78,7 @@
         {
           "height": 100,
           "title": {"value": "CREW", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">When closing for boarding, the crew fire sturdy chain grapples to pull their hapless victim towards them. If the defender wins the action, and does not wish to counter-board, he can only break the grapples on a roll of a 6. If he doesn't, the attacker may continue his assault! Location: Bows.</div>", "scale": 1.0}
         }
       ]
     },
@@ -88,7 +88,7 @@
         {
           "height": 100,
           "title": {"value": "CREW", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The ship has companies of missile troops who shoot a murderous volley in boarding actions as the enemy troops attempt to assault their vessel. Once your opponent declares that he is boarding your ship, roll a dice before he does so. On a score of 5 or 6 he loses a crew counter before the action takes place.</div>", "scale": 1.0}
         }
       ]
     },
@@ -98,7 +98,7 @@
         {
           "height": 100,
           "title": {"value": "CREW", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">Incensed to mindless berserking fury, the warrior priests leap screaming onto the enemy ship. Roll a dice: 1=Roll a dice and add it to your opponent's boarding dice as the priests run amok, killing their own troops. 2-5=Add +2 to your boarding dice roll. 6=Roll a dice and add it to your boarding dice roll.</div>", "scale": 1.0}
         }
       ]
     },
@@ -108,7 +108,7 @@
         {
           "height": 100,
           "title": {"value": "MISC", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">On the prow of this vessel is a magic figurehead, in the image of the god of war. It provides a shield of protection to the vessel against the evil magicks of the enemy spellcasters. The ship gets a saving roll of 5 or 6 against any spells cast against it. Location: Prow.</div>", "scale": 1.0}
         }
       ]
     },
@@ -118,7 +118,7 @@
         {
           "height": 100,
           "title": {"value": "MISC", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">Your Admiral has placed a traitor in the enemy fleet. Declare that you are going to use him and roll on this table: 1=Double Agent. Roll again and apply the result to your own flagship. 2=Poison! Enemy ship loses one random crew counter. 3=Spiked guns. Enemy ship loses one random weapon battery. 4=Arson. A fire breaks out in an area of your choice. 5=Rudder jammed. Roll a dice; the target may only move that many inches straight forward this turn. 6=Sabotage. Enemy ship takes 1 point of below the waterline damage. <b>Discard after use.</b></div>", "scale": 1.0}
         }
       ]
     },
@@ -128,7 +128,7 @@
         {
           "height": 100,
           "title": {"value": "MISC", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The war leader carries a banner depicting the many valiant actions which he has won in his glorious history. The banner inspires his soldiers to fight with religious fervour, and its loss is unthinkable. Roll a dice as you start each round of a boarding action: 1=The banner is lost! Morale is destroyed, the round of combat is automatically lost too. 2-5=Add +1 to your boarding roll this round. 6=This round of action is automatically won. <b>Discard after use.</b></div>", "scale": 1.0}
         }
       ]
     },
@@ -138,7 +138,7 @@
         {
           "height": 100,
           "title": {"value": "MISC", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The captain of this Man O'War knows that to catch the enemy off guard is half the battle won. His tactics are often dangerous, but have won him a reputation as a deadly adversary. At the start of each battle phase, the ship may declare that it is joining a particular squadron for the duration of the turn, moving and firing with the squadron. He is never a straggler, however.</div>", "scale": 1.0}
         }
       ]
     },
@@ -148,7 +148,7 @@
         {
           "height": 100,
           "title": {"value": "MISC", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The captain has a reputation for invincibility, having sunk many enemy ships during his long and glorious service. Enemy troops fear to board his ship, and will only attempt to grapple and board on a dice roll of 5 or 6.</div>", "scale": 1.0}
         }
       ]
     },
@@ -158,7 +158,7 @@
         {
           "height": 100,
           "title": {"value": "MISC", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">Mounted on the prow of this ship is an ancient holy artifact, which sends gouts of burning white fire towards enemy vessels if they dare to stray too close. The icon gives the ship an extra 2 dice attack with no save modifiers, with a range of 3\" only, facing forwards. Location: Bows.</div>", "scale": 1.0}
         }
       ]
     },
@@ -168,7 +168,7 @@
         {
           "height": 100,
           "title": {"value": "MISC", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The wet rasping of the surgeon's saw is heard, as the master surgeon strives to restore the wounded to some semblance of fighting fitness. In the end phase of each turn, roll once for each crew counter currently missing from the ship: 1=Lose another crew counter to the hurried depredations of the surgeon's saw. 2-4=No effect. 5-6=Get a crew counter back.</div>", "scale": 1.0}
         }
       ]
     },
@@ -178,7 +178,7 @@
         {
           "height": 100,
           "title": {"value": "MISC", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">Flying proudly from the main mast of this great vessel is an ancient battle banner endowed with magical abilities. This venerable battle banner brings good luck to the ship throughout the battle. You may re-roll any single dice roll affecting this ship per turn. Location: Main Mast.</div>", "scale": 1.0}
         }
       ]
     },
@@ -188,7 +188,7 @@
         {
           "height": 100,
           "title": {"value": "HULL", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The ship has been clad in extra layers of solid timber making it very robust indeed. Count +1 to all low area saving rolls.</div>", "scale": 1.0}
         }
       ]
     },
@@ -198,7 +198,7 @@
         {
           "height": 100,
           "title": {"value": "HULL", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">Judging the waves and winds perfectly, the grim faced captain of the mighty ship permits himself a wry grin as his ship executes a highly complicated and dangerous manoeuvre which stains the ship's timbers to the limits of their endurance. The ship may move twice its move rate. <b>Discard after use.</b></div>", "scale": 1.0}
         }
       ]
     },
@@ -208,7 +208,7 @@
         {
           "height": 100,
           "title": {"value": "HULL", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The ship is very old and has been rebuilt many times. The hull of this immense vessel is made of massive timbers which have been reinforced over the years. The ship may disregard its first below the waterline hit, discarding this card instead.</div>", "scale": 1.0}
         }
       ]
     },
@@ -218,7 +218,7 @@
         {
           "height": 100,
           "title": {"value": "HULL", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">This ship has been carefully maintained to ensure that the hull remains free of encrustations and other items which may slow it down in battle. The captain places great stead in speed and agility as the deciding factor in a firefight. The ship may add an extra 2\" to its move rates.</div>", "scale": 1.0}
         }
       ]
     },
@@ -228,7 +228,7 @@
         {
           "height": 100,
           "title": {"value": "HULL", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">This ship has revolutionary equipment mounted in its bilges — a rudimentary beam engine driving a pump for putting out fires. It is linked up to hoses capable of directing volumes of sea water onto any fire which breaks out on the ship during the battle. In the End Phase of each turn, roll a dice for each blaze on board. On a score of 5 or 6 the blaze goes out.</div>", "scale": 1.0}
         }
       ]
     },
@@ -238,7 +238,7 @@
         {
           "height": 100,
           "title": {"value": "HULL", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">This ship has been clad in great sheets of hammered iron and bronze, which glint dully in the sunlight. The armour plating gives a +1 to all low area saving rolls.</div>", "scale": 1.0}
         }
       ]
     },
@@ -248,7 +248,7 @@
         {
           "height": 100,
           "title": {"value": "HULL", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The hull of this magnificent warship is constructed from rare and much sought after timbers of great strength and resilience. This ship gains +1 to all saving rolls. <b>Discard after use.</b></div>", "scale": 1.0}
         }
       ]
     },
@@ -258,7 +258,7 @@
         {
           "height": 100,
           "title": {"value": "HULL", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">This ship has been carefully maintained to ensure that the hull remains free of encrustations and other items which may slow it down in battle. The captain places great stead in speed and agility as the deciding factor in a firefight. The ship may add an extra 2\" to its movement rates.</div>", "scale": 1.0}
         }
       ]
     },
@@ -268,7 +268,7 @@
         {
           "height": 100,
           "title": {"value": "GUNNERY", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The ship is equipped with experimental extended range weaponry, increasing the long range of all its guns from 9\" to 12\".</div>", "scale": 1.0}
         }
       ]
     },
@@ -278,7 +278,7 @@
         {
           "height": 100,
           "title": {"value": "GUNNERY", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">Goaded to even greater efforts in the heat of battle, the gunners achieve an amazing rate of fire. Fire twice in one single round during the battle. <b>Discard after use.</b></div>", "scale": 1.0}
         }
       ]
     },
@@ -288,7 +288,7 @@
         {
           "height": 100,
           "title": {"value": "GUNNERY", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The ship's guncrews are skilled enough to fire red hot shot from their cannon. Once in the battle, all the cannon attacks the ship makes in one turn cause blazes if the areas hit fail their saving throws. <b>Discard after use.</b></div>", "scale": 1.0}
         }
       ]
     },
@@ -298,7 +298,7 @@
         {
           "height": 100,
           "title": {"value": "GUNNERY", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">Due to the Master Gunner's skill and accuracy in supervising the gun crews you may re-roll any 1 shooting dice per turn.</div>", "scale": 1.0}
         }
       ]
     },
@@ -308,7 +308,7 @@
         {
           "height": 100,
           "title": {"value": "GUNNERY", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The ship has a massive fortified crows nest. Equipped with cannon, it can deliver blistering firepower in all directions. Add 1 dice to any one cannon attack per turn.</div>", "scale": 1.0}
         }
       ]
     },
@@ -318,7 +318,7 @@
         {
           "height": 100,
           "title": {"value": "GUNNERY", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The ship has an extra cannon battery mounted in the bows to fire forwards. This gives a 1 dice forward cannon attack to the ship. Location: Bows.</div>", "scale": 1.0}
         }
       ]
     },
@@ -328,7 +328,7 @@
         {
           "height": 100,
           "title": {"value": "GUNNERY", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The ship's batteries of guns have been replaced by huge iron siege cannon, aptly named Great Murderers for the immense damage they wreak when fired upon their foes. These great guns give a -1 to any saving roll made against them.</div>", "scale": 1.0}
         }
       ]
     },
@@ -338,7 +338,7 @@
         {
           "height": 100,
           "title": {"value": "GUNNERY", "scale": 1.0},
-          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\"></div>", "scale": 1.0}
+          "note": {"value": "<div style=\"font-size:32px;padding:4px 8px\">The ship has additional swivel guns mounted on the aftcastle giving a single dice broadside attack to port and a starboard once per turn. Location: Aftcastle.</div>", "scale": 1.0}
         }
       ]
     }
