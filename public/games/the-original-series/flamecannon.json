@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "FLAME CANNON", "scale": 0.85},
+  "type": {"value": "MASTER ENGINEER", "scale": 0.75},
+  "honors": {"value": "Honors: 1", "scale": 1.0},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 25,
+      "title": {"value": "DESCRIPTION", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Mounted on the front of the ship, a deadly Flame Cannon points its barrel menacingly at the enemy fleet.</i></div>", "scale": 1.0}
+    },
+    {
+      "height": 75,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The Flame Cannon is an additional weapon mounted in the Bows location with a 180 degree fire arc to the front of the vessel. If the bows are destroyed so is the Flame Cannon. It has one dice attack, may fire at targets at a maximum of medium range, and has no save modifier. If the target fails its save place a Blaze marker on the location.</div>", "scale": 1.0}
+    }
+  ]
+}

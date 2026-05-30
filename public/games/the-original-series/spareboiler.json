@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "SPARE BOILER", "scale": 0.85},
+  "type": {"value": "MASTER ENGINEER", "scale": 0.75},
+  "honors": {"value": "Honors: 2", "scale": 1.0},
+  "cost": {"value": "50 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 25,
+      "title": {"value": "DESCRIPTION", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The Master Engineer has fitted a back-up boiler in case the main one is blown up.</i></div>", "scale": 1.0}
+    },
+    {
+      "height": 75,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">If a ship with this card has its boiler location destroyed place the Spare Boiler counter on the template instead of a normal Damage marker. The spare boiler does not benefit from any other engine improvements and will only move the vessel at normal speed. If the spare boiler is also destroyed the ship is immobilised as usual. The spare boiler may be repaired and counts as a separate location.</div>", "scale": 1.0}
+    }
+  ]
+}

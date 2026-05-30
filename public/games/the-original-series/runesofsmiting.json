@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "RUNES OF SMITING", "scale": 0.75},
+  "type": {"value": "HULL RUNE", "scale": 0.75},
+  "honors": {"value": "Honors: 0", "scale": 1.0},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 35,
+      "title": {"value": "DESCRIPTION", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This Runic ammunition has been toughened with an intensity found in the heart of a volcano. When they hit an enemy ship planking is split asunder and men are thrown from the decks in the storm of enchanted iron.</i></div>", "scale": 1.0}
+    },
+    {
+      "height": 65,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">If a location fails its saving throw against this ammunition it will take two points of damage instead of one. Critical hits and all other rules for multiple damage apply.<br><br><b>Discard after use.</b></div>", "scale": 1.0}
+    }
+  ]
+}

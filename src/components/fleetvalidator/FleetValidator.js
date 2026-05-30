@@ -92,7 +92,7 @@ const validateRules = (list, faction) => {
     const byCardName = allEntries.filter((u) => u.name_en === name || u.name === name);
     const cardCount = byCardName.length > 0
       ? byCardName.reduce((sum, u) => sum + (cardCounts[u.id] || 0), 0)
-      : (faction.units || []).filter((u) => u.type_name_en === name || u.type_name === name)
+      : allEntries.filter((u) => u.type_name_en === name || u.type_name === name)
           .reduce((sum, u) => sum + (cardCounts[u.id] || 0), 0);
 
     // Count matching crew, by name then type_name

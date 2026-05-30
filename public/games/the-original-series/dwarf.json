@@ -54,6 +54,18 @@
     },
     {
       "rule": "Max 1 Gatling Cannon per 1 Man O'War"
+    },
+    {
+      "rule": "Max 1 Runesmith"
+    },
+    {
+      "rule": "Max 2 Rune per 1 Runesmith"
+    },
+    {
+      "rule": "Max 1 Master Engineer per 1 Man O'War"
+    },
+    {
+      "rule": "Max 2 Master Engineer Card per 1 Master Engineer"
     }
   ],
   "freebies": [
@@ -79,6 +91,39 @@
       "description_en": "(A) +1 CC",
       "type": "crew",
       "cost": "-"
+    },
+    {
+      "id": "runesmith",
+      "name": "Runesmith",
+      "name_en": "Runesmith",
+      "type_name": "Runesmith",
+      "type_name_en": "Runesmith",
+      "description": "(R)",
+      "description_en": "(R)",
+      "type": "crew",
+      "cost": "50"
+    },
+    {
+      "id": "masterengineer",
+      "name": "Master Engineer",
+      "name_en": "Master Engineer",
+      "type_name": "Master Engineer",
+      "type_name_en": "Master Engineer",
+      "description": "(E)",
+      "description_en": "(E)",
+      "type": "crew",
+      "cost": "50"
+    },
+    {
+      "id": "slayers",
+      "name": "Slayers",
+      "name_en": "Slayers",
+      "type_name": "Slayers",
+      "type_name_en": "Slayers",
+      "description": "(S)",
+      "description_en": "(S)",
+      "type": "crew",
+      "cost": "25"
     }
   ],
   "addons": [
@@ -125,6 +170,146 @@
       "name_en": "Special Rules - Dwarf",
       "type": "card",
       "cost": "0"
+    },
+    {
+      "id": "masterruneofswiftness",
+      "weight": "negligible",
+      "name": "Master Rune of Swiftness",
+      "name_en": "Master Rune of Swiftness",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "50"
+    },
+    {
+      "id": "masterruneofgromril",
+      "weight": "negligible",
+      "name": "Master Rune of Gromril",
+      "name_en": "Master Rune of Gromril",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "50"
+    },
+    {
+      "id": "masterruneofadamant",
+      "weight": "negligible",
+      "name": "Master Rune of Adamant",
+      "name_en": "Master Rune of Adamant",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "50"
+    },
+    {
+      "id": "runeofspelleating",
+      "weight": "negligible",
+      "name": "Rune of Spell Eating",
+      "name_en": "Rune of Spell Eating",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "50"
+    },
+    {
+      "id": "runesoffortune",
+      "weight": "negligible",
+      "name": "Runes of Fortune",
+      "name_en": "Runes of Fortune",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "25"
+    },
+    {
+      "id": "runesofsmiting",
+      "weight": "negligible",
+      "name": "Runes of Smiting",
+      "name_en": "Runes of Smiting",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "25"
+    },
+    {
+      "id": "runeofpenetrating",
+      "weight": "negligible",
+      "name": "Rune of Penetrating",
+      "name_en": "Rune of Penetrating",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "25"
+    },
+    {
+      "id": "runeofburning",
+      "weight": "negligible",
+      "name": "Rune of Burning",
+      "name_en": "Rune of Burning",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "25"
+    },
+    {
+      "id": "runeofpiercing",
+      "weight": "negligible",
+      "name": "Rune of Piercing",
+      "name_en": "Rune of Piercing",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "25"
+    },
+    {
+      "id": "runeofcleaving",
+      "weight": "negligible",
+      "name": "Rune of Cleaving",
+      "name_en": "Rune of Cleaving",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "25"
+    },
+    {
+      "id": "overdriveengine",
+      "weight": "negligible",
+      "name": "Overdrive Engine",
+      "name_en": "Overdrive Engine",
+      "type": "card",
+      "type_name": "Master Engineer Card",
+      "type_name_en": "Master Engineer Card",
+      "cost": "50"
+    },
+    {
+      "id": "spareboiler",
+      "weight": "negligible",
+      "name": "Spare Boiler",
+      "name_en": "Spare Boiler",
+      "type": "card",
+      "type_name": "Master Engineer Card",
+      "type_name_en": "Master Engineer Card",
+      "cost": "50"
+    },
+    {
+      "id": "flamecannon",
+      "weight": "negligible",
+      "name": "Flame Cannon",
+      "name_en": "Flame Cannon",
+      "type": "card",
+      "type_name": "Master Engineer Card",
+      "type_name_en": "Master Engineer Card",
+      "cost": "25"
+    },
+    {
+      "id": "improvedgears",
+      "weight": "negligible",
+      "name": "Improved Gears",
+      "name_en": "Improved Gears",
+      "type": "card",
+      "type_name": "Master Engineer Card",
+      "type_name_en": "Master Engineer Card",
+      "cost": "25"
     },
     {
       "id": "blank",

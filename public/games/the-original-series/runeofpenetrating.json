@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "RUNE OF PENETRATING", "scale": 0.70},
+  "type": {"value": "HULL RUNE", "scale": 0.75},
+  "honors": {"value": "Honors: 1", "scale": 1.0},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 35,
+      "title": {"value": "DESCRIPTION", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Cannon bearing the marking of this Rune will magically toughen any ammunition they are loaded with, causing their shots to smash through armour and planking with greater ease.</i></div>", "scale": 1.0}
+    },
+    {
+      "height": 65,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Shots from this cannon have an additional -1 saving throw modifier. This is subject to other modifications such as Man O'War cards and range.</div>", "scale": 1.0}
+    }
+  ]
+}
