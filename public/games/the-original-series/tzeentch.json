@@ -21,39 +21,27 @@
 
   "addons": [
     {
-      "id": "manowarcard",
-      "type": "card",
-      "cost": "25",
-      "min": "0",
-      "freeForAdmiral": true
-    },
-    {
-      "id": "chaoscard",
-      "cost": "25",
-      "min": "0"
-    },
-    {
       "id": "tzeentchcard",
-      "cost": "25",
-      "min": "0"
+      "weight": "negligible",
+      "name": "Tzeentch Chaos Reward Card",
+      "name_en": "Tzeentch Chaos Reward Card",
+      "type": "card",
+      "type_name": "Chaos Reward Card",
+      "type_name_en": "Chaos Reward Card",
+      "cost": "25"
     },
     {
       "id": "turnsummary",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "empireblank",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "empirespecialrules",
+      "weight": "negligible",
+      "name": "Turn Summary",
+      "name_en": "Turn Summary",
       "type": "card",
       "cost": "0"
     },
     {
       "id": "blank",
+      "name": "Empty",
+      "name_en": "Empty",
       "type": "card",
       "cost": "0"
     }
