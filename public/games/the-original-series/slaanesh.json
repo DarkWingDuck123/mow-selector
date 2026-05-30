@@ -1,0 +1,76 @@
+{
+  "id": "slaanesh",
+  "style": {
+    "bgColor": "rebeccapurple",
+    "fgColor": "lightpink",
+    "parchmentColor": "lavenderblush",
+    "waterColor": "plum",
+    "accentColor": "hotpink"
+  },
+
+  "name": "Slaanesh",
+  "name_de": "Slaanesh",
+  "name_en": "Slaanesh",
+  "name_es": "Slaanesh",
+  "name_fr": "Slaanesh",
+
+  "validation_rules": [],
+  "freebies": [],
+  "allies": [],
+  "crew": [],
+
+  "addons": [
+    {
+      "id": "manowarcard",
+      "type": "card",
+      "cost": "25",
+      "min": "0",
+      "freeForAdmiral": true
+    },
+    {
+      "id": "chaoscard",
+      "cost": "25",
+      "min": "0"
+    },
+    {
+      "id": "slaaneshcard",
+      "cost": "25",
+      "min": "0"
+    },
+    {
+      "id": "turnsummary",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "empireblank",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "empirespecialrules",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "blank",
+      "type": "card",
+      "cost": "0"
+    }
+  ],
+
+  "units": [
+    {
+      "id": "deathgalley",
+      "type": "shipoftheline",
+      "weight": "heavy",
+      "name_en": "Death Galley",
+      "description_en": "A Squadron of 3 Death Galley",
+      "squadron-size": 3,
+      "cost": 75
+    }
+  ],
+
+  "names": [],
+  "naming_rules": []
+}

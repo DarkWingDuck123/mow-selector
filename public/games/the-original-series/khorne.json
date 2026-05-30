@@ -29,6 +29,11 @@
       "min" : "0"
     },
     {
+      "id" : "khornecard",
+      "cost" : "25",
+      "min" : "0"
+    },
+    {
       "id" : "turnsummary",
       "type" : "card",
       "cost" : "0"

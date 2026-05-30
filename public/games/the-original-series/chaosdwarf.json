@@ -1,0 +1,66 @@
+{
+  "id": "chaosdwarf",
+  "style": {
+    "bgColor": "darkslategray",
+    "fgColor": "darkorange",
+    "parchmentColor": "tan",
+    "waterColor": "slategray",
+    "accentColor": "orangered"
+  },
+
+  "name": "Chaos Dwarf",
+  "name_de": "Chaos Dwarf",
+  "name_en": "Chaos Dwarf",
+  "name_es": "Chaos Dwarf",
+  "name_fr": "Chaos Dwarf",
+
+  "validation_rules": [],
+  "freebies": [],
+  "allies": [],
+  "crew": [],
+
+  "addons": [
+    {
+      "id": "manowarcard",
+      "type": "card",
+      "cost": "25",
+      "min": "0",
+      "freeForAdmiral": true
+    },
+    {
+      "id": "chaoscard",
+      "cost": "25",
+      "min": "0"
+    },
+    {
+      "id": "hashutcard",
+      "cost": "25",
+      "min": "0"
+    },
+    {
+      "id": "turnsummary",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "empireblank",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "empirespecialrules",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "blank",
+      "type": "card",
+      "cost": "0"
+    }
+  ],
+
+  "units": [],
+
+  "names": [],
+  "naming_rules": []
+}

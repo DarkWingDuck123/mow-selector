@@ -46,6 +46,46 @@
         "allies": [ "skaven" ]
       },
       {
+        "id": "nurgle",
+        "name_de": "Nurgle",
+        "name_en": "Nurgle",
+        "name_es": "Nurgle",
+        "name_fr": "Nurgle",
+        "allies": []
+      },
+      {
+        "id": "slaanesh",
+        "name_de": "Slaanesh",
+        "name_en": "Slaanesh",
+        "name_es": "Slaanesh",
+        "name_fr": "Slaanesh",
+        "allies": []
+      },
+      {
+        "id": "tzeentch",
+        "name_de": "Tzeentch",
+        "name_en": "Tzeentch",
+        "name_es": "Tzeentch",
+        "name_fr": "Tzeentch",
+        "allies": []
+      },
+      {
+        "id": "undivided",
+        "name_de": "Chaos Undivided",
+        "name_en": "Chaos Undivided",
+        "name_es": "Chaos Undivided",
+        "name_fr": "Chaos Undivided",
+        "allies": []
+      },
+      {
+        "id": "chaosdwarf",
+        "name_de": "Chaos Dwarf",
+        "name_en": "Chaos Dwarf",
+        "name_es": "Chaos Dwarf",
+        "name_fr": "Chaos Dwarf",
+        "allies": []
+      },
+      {
         "id": "skaven",
         "name_de": "Skaven Clanfleet",
         "name_en": "Skaven Clanfleet",
