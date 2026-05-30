@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "IRSHKILETH", "scale": 0.85},
+  "type": {"value": "TAINTED STONE", "scale": 0.75},
+  "honors": {"value": "Honors: 2", "scale": 1.0},
+  "cost": {"value": "100 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 35,
+      "title": {"value": "DESCRIPTION", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Irshkileth is a deep red colour, and pulses to life when blood is spilled upon it. When the life force of a sacrificial victim is poured into its sponge-like surface it begins to emit a purring noise.</i></div>", "scale": 1.0}
+    },
+    {
+      "height": 65,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Restriction: Black Ark Only</b><br><br>The Stone may be used to heal wounds on all Sea Monsters, not just those enslaved to the Dark Elves. To use it the monster must be in contact with the ship that the Stone is on. A monster is healed one wound, but you may only use this ability three times in total. In addition, when on a Black Ark, Irshkileth allows the Dark Elf player to add +1 to his dice roll for attacks on all Sea Monsters.</div>", "scale": 1.0}
+    }
+  ]
+}

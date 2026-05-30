@@ -60,6 +60,14 @@
         "name_es": "High Elf",
         "name_fr": "High Elf",
         "allies": []
+      },
+      {
+        "id": "darkelf",
+        "name_de": "Dark Elf",
+        "name_en": "Dark Elf",
+        "name_es": "Dark Elf",
+        "name_fr": "Dark Elf",
+        "allies": []
       }
     ]
   },
