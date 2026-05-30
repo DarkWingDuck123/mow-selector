@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Stone of Anurell",
+    "cost": "50pts",
+    "battle_honours": 2,
+    "flavor": "Also known as the Navigator Stone, this crystal gives the owner an insight into the tides and winds, allowing the Captain to plot his course with unparalleled precision.",
+    "effect": "The ship owning this Crystal may be repositioned once when you are setting up your forces. This is done instead of placing a ship or squadron and the ship's basic position cannot be more than 12\" from its original placing and must be within the normal limits for deployment. The ship may ignore any spells which would cause the ship to move directly, such as Wind Blast and Blizzard."
+  },
+  {
+    "name": "Orb of Paerennir",
+    "cost": "50pts",
+    "battle_honours": 2,
+    "flavor": "Paerennir was the captain of the Dragonship Indravagar, the first vessel to sink a Dark Elf Black Ark. The Eagle Claw bolt throwers of his ship were enchanted, giving them a potency which outmatched even the mystic evils surrounding a Black Ark.",
+    "effect": "A vessel carrying this Crystal may always fire any undamaged armaments; spells and other factors will not stop it from firing at its selected target. The only reason it will be unable to fire is if the ship is abandoned."
+  },
+  {
+    "name": "Damned Sphere of Caltahari",
+    "cost": "50pts",
+    "battle_honours": 2,
+    "flavor": "This Crystal was originally empowered to provide a warding spell over its owner, however its original owner Caltahari died when his ship crashed on the shore of Ulthuan. When its powers are invoked his ghostly ship, the Pride of Caltahar, rises from the depths in front of his enemy.",
+    "effect": "The Damned Sphere is used at the start of the Magic phase, before any spells are cast. Any Chaos sorcerer who has cast a spell must make a 3 dice roll or have their spells cast reduced. On a 3-6 the Admiral adds +1 to these rolls."
+  },
+  {
+    "name": "Delianiath's Arch",
+    "cost": "25pts",
+    "battle_honours": 1,
+    "flavor": "Delianiath was famed for the love his crew had for him and the concern he showed for them in turn. This green and blue globe was made by Mistellia for him and contains a ghostly bridge that allows the crew to reach safety if their ship is sunk.",
+    "effect": "If the ship with Delianiath's Arch is sunk, place any Crew, Admiral or Mage counters on the nearest Elven ship, including the Admiral. If the crew cannot fit they are taken to the second closest, and so on. The Crystal is exhausted after it is used and so may only be used once per battle."
+  },
+  {
+    "name": "Crystal Dagger of Remianath",
+    "cost": "25pts",
+    "battle_honours": 1,
+    "flavor": "The power that Mistellia placed within this white, two foot long Crystal Dagger gave Remianath mighty powers in melee combat. It has a mind of its own and cuts through boarders and defenders in a furious bloodlust.",
+    "effect": "The Dagger may only be bought for an Admiral's vessel and permits the Admiral to add +3 to the boarding total instead of +1. If the Admiral changes ship the Dagger goes with him."
+  },
+  {
+    "name": "Salithis' Heart",
+    "cost": "25pts",
+    "battle_honours": 1,
+    "flavor": "Salithis was the High Admiral for Bel Shanaar and was instrumental in the defeat of many Chaos raiding fleets. Salithis' Heart is a deep blue crystal that absorbs Warp energy preventing nearby Chaos Sorcerers from harnessing it.",
+    "effect": "The Crystal takes effect at the start of the Magic phase, before any cards are picked up, dice rolled or spells cast. Any Chaos Sorcerer within 9\" of the Crystal will lose one power point. If he is within 3\" he will lose three power points. Change the Sorcerer's power total immediately."
+  }
+]

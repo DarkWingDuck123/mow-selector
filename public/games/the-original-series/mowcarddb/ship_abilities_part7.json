@@ -1,0 +1,66 @@
+[
+  {
+    "faction": "hashut",
+    "type": "Special Attack",
+    "name": "Ash Cloud",
+    "flavor": "Flowing around this vessel is a choking cloud of roiling black ash, seeming to seek out the enemies of the Chaos Dwarfs of its own volition. This billowing miasma of burning hot ash, cinder and embers makes boarding the ship hazardous and also poses a lethal threat to the crew of enemy vessels that draw alongside.",
+    "effect": "Any ship that comes into contact with this vessel must roll a dice; on a roll of 1, one random enemy crew counter is removed as the sailors choke and burn in the scorching hot pall of ash.",
+    "discard": false
+  },
+  {
+    "faction": "hashut",
+    "type": "Ship Ability",
+    "name": "Shadows of Hashut",
+    "flavor": "Suddenly, thick viscous shadows creep across the hull of the ship, enshrouding it from view and making it difficult to target. These unnatural shadows are a blessing from the Shadow Lord Hashut, god of the Chaos Dwarfs, and serve to obscure the war engines of his chosen champions aboard the Barge that possesses this dark blessing.",
+    "effect": "Any ship firing at this vessel for the rest of the turn must roll a dice; on a roll of 3+ the gunners are able to accurately pick out the shape of the barge amidst the shadows to fire as normal; on a roll of 1 or 2 their shots hit nothing but shadow.",
+    "discard": true
+  },
+  {
+    "faction": "hashut",
+    "type": "Special Attack",
+    "name": "Obsidian Prow of Doom",
+    "flavor": "The prow of this ship has been capped with a huge black obsidian bull's head, a powerful symbol of the Chaos Dwarf evil patron god Hashut. The special prow has been imbued with the essence of a daemon, glowing menacingly at nearby ships with shards of red lightning arcing across its obsidian skin and around its mighty horns.",
+    "effect": "When ramming, a thunderclap echoes across the waves as the Obsidian prow releases a blast of energy that inflicts low damage to the enemy vessel. Make an extra 1 dice attack against a random low location. All saves made against the prow of doom's attack are at -1.",
+    "discard": false
+  },
+  {
+    "faction": "hashut",
+    "type": "Special Attack",
+    "name": "Flaming Hull",
+    "flavor": "As an enemy vessel draws near, a wave of sulphurous flames rolls over the hull of the Chaos Dwarf ship, covering it in a magical fire that dances across its hull without burning the vessel itself or its crew. The mystical flames cannot be extinguished with water and cling to clothing, skin and armour — even burning metal and other normally non-flammable materials!",
+    "effect": "Use this card when the vessel is being boarded, rolling a dice for each enemy crew counter that is involved in the boarding action. On a roll of 6 they fail to avoid the magic flames and are removed before the boarding action is resolved.",
+    "discard": true
+  },
+  {
+    "faction": "hashut",
+    "type": "Special Attack",
+    "name": "Hashut's Vengence",
+    "flavor": "At the peak of the ship's citadel a heavily enchanted rocket launcher of the blackest lead is mounted. Finely detailed by artisan-slaves and blessed by the high priests of Hashut, it is an artefact of great power. When the war-priests aboard the vessel light the holy fuse, the rocket arcs screaming to the heavens above a targeted enemy vessel. It explodes in the air with a mighty thunderclap, releasing a storm of lava rain in a pall of burning ash and sulphurous smoke.",
+    "effect": "Hashut's Vengence has a range of 6\" and may be fired in any direction at an enemy ship. It is always aimed high, and is a 4 dice attack with a saving throw modifier of -2.",
+    "discard": true
+  },
+  {
+    "faction": "hashut",
+    "type": "Special Attack",
+    "name": "Magma Blast",
+    "flavor": "In front of the main armament on the vessel a huge black iron cauldron of magma is mounted on special sponsons, the lava within kept warm and flowing by unholy magics. As the ship approaches an enemy vessel, the chain pulley system tilts the cauldron around the prow of the vessel, causing horrendous damage to enemy ships caught within the flow of lava.",
+    "effect": "The magma uses the Skaven Deathburner template placed at the prow of the ship and pointing straight forward. Any ships (friend or foe) under the template suffer a 3 dice attack with a saving throw modifier of -2. Any area that is hit must make a saving throw or be set ablaze; place a blaze marker on the area and roll for fire spreading during the End Phase.",
+    "discard": true
+  },
+  {
+    "faction": "hashut",
+    "type": "Special Attack",
+    "name": "Blessed Ammunition",
+    "flavor": "The armament of this ship has been made in the most Holy forges of Zharr-Naggrund, under the scrutiny of merciless High priests of Hashut, and a special set of ammunition made to match. Their construction has been held to the most exacting standards, and their explosives of the highest quality surpass the normal ammunition of any Chaos Dwarf admiral.",
+    "effect": "Before firing you may use this card to declare you are using the special ammunition. For the remainder of the turn you may roll the artillery dice twice for any shots fired from this vessel, and use the better of the two rolls.",
+    "discard": true
+  },
+  {
+    "faction": "hashut",
+    "type": "Ship Ability",
+    "name": "Black Iron Plating",
+    "flavor": "Thick plates of blackest iron coat the hull of this barge in a protective shroud of metal, turning aside even the mightiest of weapons that fire upon it. The heavy plating is specially designed to absorb or deflect the most punishing damage and protect the main hull of the ship itself.",
+    "effect": "The vessel may ignore low area hits on the roll of a 4+. On the roll of a 6 however the Black Iron plating stops the shot, but is so badly damaged that it can provide no meaningful protection; discard this card and make saves as normal thereafter.",
+    "discard": false
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Irshkileth",
+    "cost": "100pts",
+    "battle_honours": 2,
+    "restriction": "Black Ark Only",
+    "flavor": "Irshkileth is a deep red colour, and pulses to life when blood is spilled upon it. When the life force of a sacrificial victim is poured into its sponge-like surface it begins to emit a purring noise.",
+    "effect": "The Stone may be used to heal wounds on all Sea Monsters, not just those enslaved to the Dark Elves. To use it the monster must be in contact with the ship that the Stone is on. A monster is healed one wound, but you may only use this ability three times in total. In addition, when on a Black Ark, Irshkileth allows the Dark Elf player to add +1 to his dice roll for attacks on all Sea Monsters."
+  },
+  {
+    "name": "Ikonarashk",
+    "cost": "75pts",
+    "battle_honours": 2,
+    "restriction": "Beast-Lord Only",
+    "flavor": "Ikonarashk is the name given by the Dark Elves to this deep purple coloured Stone. When the correct chants are spoken over Ikonarashk it allows a Beast-Lord to communicate with the mind of a Sea Monster.",
+    "effect": "Ikonarashk allows a Beast-Lord to take control of a Dark Elf Sea Monster that has had its crew destroyed. The Monster does not dive to the bottom as normal, but instead continues on the surface as if it had crew. If the Beast-Lord controlling the Monster is killed or captured it is removed from play as normal. Ikonarashk allows you to control one monster at a time."
+  },
+  {
+    "name": "The Wild Mind",
+    "cost": "50pts",
+    "battle_honours": 1,
+    "restriction": "Beast-Lord Only",
+    "flavor": "When a Sea Monster is not performing as its controlling Beast-Lord wishes, it speaks words of power and magical lightning strikes out from the Wild Mind allowing the Beast-Lord to control his charges more easily.",
+    "effect": "The Wildmind may be used only once per turn. It allows the Dark Elf player to perform one of the following: Allow the Dark Elf player to re-roll the dice on the Doom-Diver table. Add one to a single Monster Reaction roll (i.e. a double 1 counts as a double 2). Prevent Triton using his 'Banish' ability on a roll of 4+ on a D6."
+  },
+  {
+    "name": "The Trueseeker",
+    "cost": "75pts",
+    "battle_honours": 2,
+    "restriction": "Black Ark Only",
+    "flavor": "The True-Seeker Stone was originally a device used by High Elf Captains to glance into the future. It is now a large black stone that sits upon a bronze cradle in the middle of the deck and drains all the available light into itself, yet helps to guide the Reapers mounted on the vessel.",
+    "effect": "A Black Ark with the True-Seeker on board may add one to its dice rolls when it fires its Reapers. Note that in the case of Reapers a roll of one still indicates that it is jammed."
+  },
+  {
+    "name": "Misharolth",
+    "cost": "50pts",
+    "battle_honours": 1,
+    "restriction": "Black Ark Only",
+    "flavor": "The Misharolth was kept for centuries in the deepest dungeons of a Black Ark, where the evil of the vessel slowly corrupted and changed this sickly green egg-shaped Stone. It is now eternally intertwined with the vessels of the Dark Elves.",
+    "effect": "While retained as a source of magical power, Misharolth emits an ear-piercing shriek as if it felt any damage the Black Ark took. The power of the Misharolth may be invoked once per game to repair one waterline hit that would sink the Black Ark. This can be done at any time."
+  },
+  {
+    "name": "Urkarontir",
+    "cost": "75pts",
+    "battle_honours": 2,
+    "restriction": "Black Ark Only",
+    "flavor": "This Stone requires the constant chants of Dark Elf Priestesses to maintain control over its evil sentience. When it does the bidding of the Dark Elves it viciously strikes out with its negative energy, but sometimes it demands sacrifices or it will destroy the ship it is on.",
+    "effect": "Every turn, just before you move the Black Ark, roll D6. On a roll of 4+ Urkarontir performs a 3 dice attack with a -3 save modifier directed in a D6 direction from the Black Ark. On a roll of 2 or 3 nothing happens this turn. A roll of 1 means the Black Ark either loses one crew counter or suffers D3 hits on Low locations."
+  }
+]
