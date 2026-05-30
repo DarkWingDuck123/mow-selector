@@ -121,6 +121,16 @@
 
   "addons" : [
     {
+      "id" : "skavenspell",
+      "weight" : "negligible",
+      "name" : "Skaven Spell",
+      "name_en" : "Skaven Spell",
+      "type" : "card",
+      "type_name" : "Skaven Spell",
+      "type_name_en" : "Skaven Spell",
+      "cost" : "-"
+    },
+    {
       "id" : "manowarcard",
       "name_en" : "Man O'War Card",
       "type" : "card",

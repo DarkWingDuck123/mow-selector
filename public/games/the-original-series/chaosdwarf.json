@@ -21,6 +21,16 @@
 
   "addons": [
     {
+      "id": "chaosspell",
+      "weight": "negligible",
+      "name": "Chaos Spell",
+      "name_en": "Chaos Spell",
+      "type": "card",
+      "type_name": "Chaos Spell",
+      "type_name_en": "Chaos Spell",
+      "cost": "-"
+    },
+    {
       "id": "hashutcard",
       "weight": "negligible",
       "name": "Hashut Chaos Reward Card",

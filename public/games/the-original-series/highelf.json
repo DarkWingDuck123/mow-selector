@@ -18,6 +18,16 @@
   "crew": [],
   "addons": [
     {
+      "id": "highspell",
+      "weight": "negligible",
+      "name": "High Spell",
+      "name_en": "High Spell",
+      "type": "card",
+      "type_name": "High Spell",
+      "type_name_en": "High Spell",
+      "cost": "-"
+    },
+    {
       "id": "stoneofanurell",
       "weight": "negligible",
       "name": "Stone of Anurell",
