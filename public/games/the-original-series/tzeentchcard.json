@@ -1,0 +1,156 @@
+{
+  "weight": "negligible",
+  "name": {"value": "", "scale": 1.0},
+  "type": {"value": "TZEENTCH REWARD", "scale": 0.60},
+  "honors": {"value": "", "scale": 1.0},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 35,
+      "title": {"value": "", "scale": 1.0},
+      "note": {"value": "", "scale": 1.0}
+    },
+    {
+      "height": 65,
+      "title": {"value": "", "scale": 1.0},
+      "note": {"value": "", "scale": 1.0}
+    }
+  ],
+  "randomizable": true,
+  "random": [
+    {
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "", "scale": 1.0},
+          "note": {"value": "", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "", "scale": 1.0},
+          "note": {"value": "", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "CONFUSION", "scale": 0.80},
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This vessel appears to be constantly changing colour and shape, sometimes taking on the guise of a fearsome beast, and sometimes fading to little more than a shadow. It continually throws a rainbow array of reflections upon the waves, sowing confusion and doubt in the minds of all who behold it.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "SHIP ABILITY", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">No enemy ship will take offensive action against this vessel this turn, as their crews are confused and entranced by its magical appearance. The ship itself may move and fight as normal.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "RAZOR CLAWS", "scale": 0.75},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This ship has glittering spiked claws protruding from its sides. As it glides past enemy vessels, these claws rip and tear through wood and flesh alike, maiming crew and wrecking timbers.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">When this ship comes within 1\" of an opponent, the Chaos Player may nominate a hull or crew strike. A hull strike is a 1 dice attack with a -1 save, aimed at a random low location. A crew strike strikes at the ship's sailors; roll a dice and on a score of 6 an enemy crew counter is removed.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "ELEMENTAL FORCE", "scale": 0.70},
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The audible hum of barely controlled energies emanates from within this vessel. Its hull ripples and cracks as it attempts to contain the raw power of Chaos. When the time is right, the Captain of the ship may unleash these forces in a bolt of energy.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The burst of power uses the normal firing template and may be fired in a 90 degree arc to the front of the ship. Any targets caught in the template's area of effect suffer a 3 dice attack, resolved as a 3 dice cannon attack.<br><br><b>Discard after use.</b></div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "AURA OF TZEENTCH", "scale": 0.65},
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This ship slips between dimensions, appearing hazy and indistinct one moment, yet solid and real the next. Around the vessel, time slows or speeds up, allowing its Captain to observe and predict the manoeuvres of his opponents.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "SHIP ABILITY", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">This ship may operate as an Independent, and in any turn may either move first or last, irrespective of who won the initiative.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "CRYSTAL HULL", "scale": 0.75},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This bizarre vessel has a glittering hull of an unknown crystal substance that reflects the sun in blinding patterns as the ship weaves and manoeuvres.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
+          "title": {"value": "SHIP ABILITY", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Any ship wishing to fire at this ship must roll a dice; on a score of 1 or 2 the gunners are blinded and miss completely, otherwise the ship may be shot at as usual.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "HYPNOTIC GAZE", "scale": 0.70},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The penetrating glare of the giant eyes painted on the bows of this vessel sweeps the battlescape, causing opponents to flinch and look away.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">This hypnotic gaze has a range of 6\", and affects a 180 degree arc from the prow of the ship. Any vessel caught in the arc must roll a dice: 1-2=Caught by the Chaos ship's withering glare, the target stops and may do nothing but defend itself this turn. 3-6=The target ship may function as normal.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "WARPFLIGHT", "scale": 0.80},
+      "notes": [
+        {
+          "height": 40,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Coruscating energies flash and thunder above this vessel as it harnesses the raw energy of the warp. As the storm grows, the ship abruptly vanishes, leaving nothing but a stench of ozone on the air. Then, with a flash of lightning, it instantly re-appears behind its foes.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 60,
+          "title": {"value": "SHIP ABILITY", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Once during a game, this ship may teleport to any location on the seascape instead of moving. It may fire and board other vessels this turn, as usual, after its warpflight.<br><br><b>Discard after use.</b></div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "INVISIBILITY", "scale": 0.75},
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>As this vessel rushes headlong towards its foes it appears to fade, its outline becoming insubstantial and fragile as a phantom, until it is gone from sight. The magic of Tzeentch has made it invisible to the mortal eye.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "SHIP ABILITY", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">This card allows the ship to become invisible. While in this state, the ship cannot be attacked in any way, although it may move and fight as normal. It re-appears at the start of the next turn.<br><br><b>Discard after use.</b></div>", "scale": 1.0}
+        }
+      ]
+    }
+  ]
+}
