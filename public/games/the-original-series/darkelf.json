@@ -18,6 +18,16 @@
   "crew": [],
   "addons": [
     {
+      "id": "colorspell",
+      "weight": "negligible",
+      "name": "Color Spell",
+      "name_en": "Color Spell",
+      "type": "card",
+      "type_name": "Color Spell",
+      "type_name_en": "Color Spell",
+      "cost": "-"
+    },
+    {
       "id": "irshkileth",
       "weight": "negligible",
       "name": "Irshkileth",
