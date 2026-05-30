@@ -52,6 +52,14 @@
         "name_es": "Skaven Clanfleet",
         "name_fr": "Skaven Clanfleet",
         "allies": [ "khorne" ]
+      },
+      {
+        "id": "highelf",
+        "name_de": "High Elf",
+        "name_en": "High Elf",
+        "name_es": "High Elf",
+        "name_fr": "High Elf",
+        "allies": []
       }
     ]
   },

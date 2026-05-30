@@ -1,0 +1,91 @@
+{
+  "id": "highelf",
+  "style": {
+    "bgColor": "white",
+    "fgColor": "navy",
+    "parchmentColor": "ivory",
+    "waterColor": "lightblue",
+    "accentColor": "gold"
+  },
+  "name": "High Elf",
+  "name_en": "High Elf",
+  "name_de": "High Elf",
+  "name_es": "High Elf",
+  "name_fr": "High Elf",
+  "validation_rules": [],
+  "freebies": [],
+  "allies": [],
+  "crew": [],
+  "addons": [
+    {
+      "id": "stoneofanurell",
+      "weight": "negligible",
+      "name": "Stone of Anurell",
+      "name_en": "Stone of Anurell",
+      "type": "card",
+      "type_name": "Crystal of Power",
+      "type_name_en": "Crystal of Power",
+      "cost": "50"
+    },
+    {
+      "id": "orbofpaerennir",
+      "weight": "negligible",
+      "name": "Orb of Paerennir",
+      "name_en": "Orb of Paerennir",
+      "type": "card",
+      "type_name": "Crystal of Power",
+      "type_name_en": "Crystal of Power",
+      "cost": "50"
+    },
+    {
+      "id": "damnedsphereofcaltahari",
+      "weight": "negligible",
+      "name": "Damned Sphere of Caltahari",
+      "name_en": "Damned Sphere of Caltahari",
+      "type": "card",
+      "type_name": "Crystal of Power",
+      "type_name_en": "Crystal of Power",
+      "cost": "50"
+    },
+    {
+      "id": "delianiathsarch",
+      "weight": "negligible",
+      "name": "Delianiath's Arch",
+      "name_en": "Delianiath's Arch",
+      "type": "card",
+      "type_name": "Crystal of Power",
+      "type_name_en": "Crystal of Power",
+      "cost": "25"
+    },
+    {
+      "id": "crystaldaggerofremianath",
+      "weight": "negligible",
+      "name": "Crystal Dagger of Remianath",
+      "name_en": "Crystal Dagger of Remianath",
+      "type": "card",
+      "type_name": "Crystal of Power",
+      "type_name_en": "Crystal of Power",
+      "cost": "25"
+    },
+    {
+      "id": "salithisheart",
+      "weight": "negligible",
+      "name": "Salithis' Heart",
+      "name_en": "Salithis' Heart",
+      "type": "card",
+      "type_name": "Crystal of Power",
+      "type_name_en": "Crystal of Power",
+      "cost": "25"
+    },
+    {
+      "id": "blank",
+      "name": "Empty",
+      "name_en": "Empty",
+      "type": "card",
+      "cost": "0"
+    }
+  ],
+  "units": [],
+  "names": [],
+  "naming_rules": []
+}

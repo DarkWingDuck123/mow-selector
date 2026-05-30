@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "ORB OF PAERENNIR", "scale": 0.70},
+  "type": {"value": "CRYSTAL OF POWER", "scale": 0.65},
+  "honors": {"value": "Honors: 2", "scale": 1.0},
+  "cost": {"value": "50 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 35,
+      "title": {"value": "DESCRIPTION", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Paerennir was the captain of the Dragonship Indravagar, the first vessel to sink a Dark Elf Black Ark. The Eagle Claw bolt throwers of his ship were enchanted, giving them a potency which outmatched even the mystic evils surrounding a Black Ark.</i></div>", "scale": 1.0}
+    },
+    {
+      "height": 65,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">A vessel carrying this Crystal may always fire any undamaged armaments; spells and other factors will not stop it from firing at its selected target. The only reason it will be unable to fire is if the ship is abandoned.</div>", "scale": 1.0}
+    }
+  ]
+}
