@@ -1,41 +1,41 @@
 {
-  "id" : "brettonia",
-  "style" : {
+  "id": "brettonia",
+  "style": {
     "bgColor": "blue",
     "fgColor": "gold",
     "parchmentColor": "beige",
     "waterColor": "lightblue",
     "accentColor": "red"
   },
-  "name_en" : "Brettonia",
-  "addons" : [
+  "name_en": "Brettonia",
+  "addons": [
     {
-      "id" : "colorspell",
-      "weight" : "negligible",
-      "name" : "Color Spell",
-      "name_en" : "Color Spell",
-      "type" : "card",
-      "type_name" : "Color Spell",
-      "type_name_en" : "Color Spell",
-      "cost" : "-"
+      "id": "colorspell",
+      "weight": "negligible",
+      "name": "Color Spell",
+      "name_en": "Color Spell",
+      "type": "card",
+      "type_name": "Color Spell",
+      "type_name_en": "Color Spell",
+      "cost": "-"
     },
     {
-      "id" : "blank",
-      "name" : "Empty",
-      "name_en" : "Empty",
-      "type" : "card",
-      "cost" : "0"
+      "id": "blank",
+      "name": "Empty",
+      "name_en": "Empty",
+      "type": "card",
+      "cost": "0"
     }
   ],
-  "units" : [
+  "units": [
     {
-      "id" : "galleon",
-      "type" : "manowar",
-      "weight" : "heavy",
-      "name_en" : "Galleon",
-      "squadron-size" : 1, 
-      "cost" : 150,
-      "cards" : [
+      "id": "brettonia_galleon",
+      "type": "manowar",
+      "weight": "heavy",
+      "name_en": "Galleon",
+      "squadron-size": 1,
+      "cost": 150,
+      "cards": [
         {
           "type": "manowar",
           "cost": 25,
@@ -46,35 +46,31 @@
       ]
     },
     {
-      "id" : "corsair",
-      "type" : "shipoftheline",
-      "weight" : "heavy",
-      "name_en" : "Corsair",
-      "squadron-size" : 3,
-      "cost" : 300,
-      "cards" : [
-      ]
+      "id": "brettonia_corsair",
+      "type": "shipoftheline",
+      "weight": "heavy",
+      "name_en": "Corsair",
+      "squadron-size": 3,
+      "cost": 300,
+      "cards": []
     },
     {
-      "id" : "buccaneer",
-      "type" : "shipoftheline",
-      "weight" : "heavy",
-      "name_en" : "Buccaneer",
-      "squadron-size" : 3,
-      "cost" : 150,
-      "cards" : [
-      ]
+      "id": "brettonia_buccaneer",
+      "type": "shipoftheline",
+      "weight": "heavy",
+      "name_en": "Buccaneer",
+      "squadron-size": 3,
+      "cost": 150,
+      "cards": []
     },
     {
-      "id" : "pegasusrider",
-      "type" : "flyer",
-      "weight" : "light",
-      "name_en" : "Pegasus Rider",
-      "squadron-size" : 3,
-      "cost" : 75,
-      "cards" : [
-      ]
+      "id": "brettonia_pegasusrider",
+      "type": "flyer",
+      "weight": "light",
+      "name_en": "Pegasus Rider",
+      "squadron-size": 3,
+      "cost": 75,
+      "cards": []
     }
   ]
 }
- 

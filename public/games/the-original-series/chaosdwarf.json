@@ -7,18 +7,15 @@
     "waterColor": "slategray",
     "accentColor": "orangered"
   },
-
   "name": "Chaos Dwarf",
   "name_de": "Chaos Dwarf",
   "name_en": "Chaos Dwarf",
   "name_es": "Chaos Dwarf",
   "name_fr": "Chaos Dwarf",
-
   "validation_rules": [],
   "freebies": [],
   "allies": [],
   "crew": [],
-
   "addons": [
     {
       "id": "chaosspell",
@@ -31,7 +28,7 @@
       "cost": "-"
     },
     {
-      "id": "hashutcard",
+      "id": "chaosdwarf_hashutcard",
       "weight": "negligible",
       "name": "Hashut Chaos Reward Card",
       "name_en": "Hashut Chaos Reward Card",
@@ -56,9 +53,7 @@
       "cost": "0"
     }
   ],
-
   "units": [],
-
   "names": [],
   "naming_rules": []
 }

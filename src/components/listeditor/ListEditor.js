@@ -52,20 +52,24 @@ function parseFreebie(free, freebiePoints) {
   return null;
 }
 
-// Count how many cards in the list match a unit by name_en, name, type_name, or type.
+// Count how many cards/crew in the list match a trigger by name_en, name, type_name, or type.
 function countTriggerUnits(triggerName, list, factionData) {
   const trigger = triggerName.toLowerCase();
-  const matchingIds = new Set(
-    (factionData.units || [])
-      .filter((u) =>
-        u.name_en?.toLowerCase() === trigger ||
-        u.name?.toLowerCase() === trigger ||
-        u.type_name?.toLowerCase() === trigger ||
-        u.type?.toLowerCase() === trigger
-      )
-      .map((u) => u.id)
+  const matches = (pool) =>
+    pool.filter((u) =>
+      u.name_en?.toLowerCase() === trigger ||
+      u.name?.toLowerCase() === trigger ||
+      u.type_name?.toLowerCase() === trigger ||
+      u.type?.toLowerCase() === trigger
+    ).map((u) => u.id);
+
+  const matchingUnitIds = new Set(matches(factionData.units || []));
+  const matchingCrewIds = new Set(matches(factionData.crew || []));
+
+  return (
+    (list.cards || []).filter((c) => matchingUnitIds.has(c.id)).length +
+    (list.crew || []).filter((c) => matchingCrewIds.has(c.id)).length
   );
-  return (list.cards || []).filter((c) => matchingIds.has(c.id)).length;
 }
 
 function findUnit(factionData, unitName) {
@@ -116,6 +120,7 @@ export const ListEditor = ({
   );
 
   const cardIds = list?.cards?.map((c) => c.id).join(",") ?? "";
+  const crewIds = list?.crew?.map((c) => c.id).join(",") ?? "";
 
   const handleChange = (field, value) => {
     dispatch(updateList({ listId, [field]: value }));
@@ -237,7 +242,7 @@ export const ListEditor = ({
     if (grants.length || revocations.length || clearDismissed.length) {
       dispatch(syncFreebies({ listId, grants, revocations, clearDismissed }));
     }
-  }, [pointsSpent, cardIds, factionData, listId]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [pointsSpent, cardIds, crewIds, factionData, listId]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <>

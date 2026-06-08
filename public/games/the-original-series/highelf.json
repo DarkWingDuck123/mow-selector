@@ -18,7 +18,7 @@
   "crew": [],
   "addons": [
     {
-      "id": "highspell",
+      "id": "highelf_highspell",
       "weight": "negligible",
       "name": "High Spell",
       "name_en": "High Spell",
@@ -28,7 +28,7 @@
       "cost": "-"
     },
     {
-      "id": "stoneofanurell",
+      "id": "highelf_stoneofanurell",
       "weight": "negligible",
       "name": "Stone of Anurell",
       "name_en": "Stone of Anurell",
@@ -38,7 +38,7 @@
       "cost": "50"
     },
     {
-      "id": "orbofpaerennir",
+      "id": "highelf_orbofpaerennir",
       "weight": "negligible",
       "name": "Orb of Paerennir",
       "name_en": "Orb of Paerennir",
@@ -48,7 +48,7 @@
       "cost": "50"
     },
     {
-      "id": "damnedsphereofcaltahari",
+      "id": "highelf_damnedsphereofcaltahari",
       "weight": "negligible",
       "name": "Damned Sphere of Caltahari",
       "name_en": "Damned Sphere of Caltahari",
@@ -58,7 +58,7 @@
       "cost": "50"
     },
     {
-      "id": "delianiathsarch",
+      "id": "highelf_delianiathsarch",
       "weight": "negligible",
       "name": "Delianiath's Arch",
       "name_en": "Delianiath's Arch",
@@ -68,7 +68,7 @@
       "cost": "25"
     },
     {
-      "id": "crystaldaggerofremianath",
+      "id": "highelf_crystaldaggerofremianath",
       "weight": "negligible",
       "name": "Crystal Dagger of Remianath",
       "name_en": "Crystal Dagger of Remianath",
@@ -78,7 +78,7 @@
       "cost": "25"
     },
     {
-      "id": "salithisheart",
+      "id": "highelf_salithisheart",
       "weight": "negligible",
       "name": "Salithis' Heart",
       "name_en": "Salithis' Heart",

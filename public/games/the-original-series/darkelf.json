@@ -28,7 +28,7 @@
       "cost": "-"
     },
     {
-      "id": "irshkileth",
+      "id": "darkelf_irshkileth",
       "weight": "negligible",
       "name": "Irshkileth",
       "name_en": "Irshkileth",
@@ -38,7 +38,7 @@
       "cost": "100"
     },
     {
-      "id": "ikonarashk",
+      "id": "darkelf_ikonarashk",
       "weight": "negligible",
       "name": "Ikonarashk",
       "name_en": "Ikonarashk",
@@ -48,7 +48,7 @@
       "cost": "75"
     },
     {
-      "id": "thetrueseeker",
+      "id": "darkelf_thetrueseeker",
       "weight": "negligible",
       "name": "The Trueseeker",
       "name_en": "The Trueseeker",
@@ -58,7 +58,7 @@
       "cost": "75"
     },
     {
-      "id": "urkarontir",
+      "id": "darkelf_urkarontir",
       "weight": "negligible",
       "name": "Urkarontir",
       "name_en": "Urkarontir",
@@ -68,7 +68,7 @@
       "cost": "75"
     },
     {
-      "id": "thewildmind",
+      "id": "darkelf_thewildmind",
       "weight": "negligible",
       "name": "The Wild Mind",
       "name_en": "The Wild Mind",
@@ -78,7 +78,7 @@
       "cost": "50"
     },
     {
-      "id": "misharolth",
+      "id": "darkelf_misharolth",
       "weight": "negligible",
       "name": "Misharolth",
       "name_en": "Misharolth",

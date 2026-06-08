@@ -66,6 +66,9 @@
     },
     {
       "rule": "Max 2 Master Engineer Card per 1 Master Engineer"
+    },
+    {
+      "rule": "Max 1 Slayers"
     }
   ],
   "freebies": [
@@ -98,8 +101,8 @@
       "name_en": "Runesmith",
       "type_name": "Runesmith",
       "type_name_en": "Runesmith",
-      "description": "(R)",
-      "description_en": "(R)",
+      "description": "(R) All dwarf ships ignore spells on a 5 or 6,<br>+2 battle honors, +1 summoning sea monsters<br>upto 2 rune cards, may cling to wreckage",
+      "description_en": "(R) All dwarf ships ignore spells on a 5 or 6,<br>+2 battle honors, +1 summoning sea monsters<br>upto 2 Rune Cards, may cling to wreckage",
       "type": "crew",
       "cost": "50"
     },
@@ -109,10 +112,10 @@
       "name_en": "Master Engineer",
       "type_name": "Master Engineer",
       "type_name_en": "Master Engineer",
-      "description": "(E)",
-      "description_en": "(E)",
+      "description": "(E) Allows a reroll when repairing damage, may repair waterline damage on a roll of 6<br>+1 battle honors, upto 2 Master Engineer Cards, may cling to wreckage",
+      "description_en": "(E) Allows a reroll when repairing damage, may repair waterline damage on a roll of 6<br>+1 battle honors, upto 2 Master Engineer Cards, may cling to wreckage",
       "type": "crew",
-      "cost": "50"
+      "cost": "25"
     },
     {
       "id": "slayers",
@@ -120,10 +123,10 @@
       "name_en": "Slayers",
       "type_name": "Slayers",
       "type_name_en": "Slayers",
-      "description": "(S)",
-      "description_en": "(S)",
+      "description": "(S) Adds 1d3+1 CC to attached ship, if a casualty occurs 4+ removes the Slayers, Slayers cannot crew a ship",
+      "description_en": "(S) Adds 1d3+1 CC to attached ship, if a casualty occurs 4+ removes the Slayers, Slayers cannot crew a ship",
       "type": "crew",
-      "cost": "25"
+      "cost": "50"
     }
   ],
   "addons": [
@@ -138,7 +141,7 @@
       "cost": "25"
     },
     {
-      "id": "gatlingcannon",
+      "id": "dwarf_gatlingcannon",
       "weight": "negligible",
       "name": "Gatling Cannon",
       "name_en": "Gatling Cannon",
@@ -164,7 +167,7 @@
       "cost": "0"
     },
     {
-      "id": "dwarfspecialrules",
+      "id": "dwarf_specialrules",
       "weight": "negligible",
       "name": "Special Rules - Dwarf",
       "name_en": "Special Rules - Dwarf",
@@ -172,7 +175,7 @@
       "cost": "0"
     },
     {
-      "id": "masterruneofswiftness",
+      "id": "dwarf_masterruneofswiftness",
       "weight": "negligible",
       "name": "Master Rune of Swiftness",
       "name_en": "Master Rune of Swiftness",
@@ -182,7 +185,7 @@
       "cost": "50"
     },
     {
-      "id": "masterruneofgromril",
+      "id": "dwarf_masterruneofgromril",
       "weight": "negligible",
       "name": "Master Rune of Gromril",
       "name_en": "Master Rune of Gromril",
@@ -192,7 +195,7 @@
       "cost": "50"
     },
     {
-      "id": "masterruneofadamant",
+      "id": "dwarf_masterruneofadamant",
       "weight": "negligible",
       "name": "Master Rune of Adamant",
       "name_en": "Master Rune of Adamant",
@@ -202,7 +205,7 @@
       "cost": "50"
     },
     {
-      "id": "runeofspelleating",
+      "id": "dwarf_runeofspelleating",
       "weight": "negligible",
       "name": "Rune of Spell Eating",
       "name_en": "Rune of Spell Eating",
@@ -212,7 +215,7 @@
       "cost": "50"
     },
     {
-      "id": "runesoffortune",
+      "id": "dwarf_runesoffortune",
       "weight": "negligible",
       "name": "Runes of Fortune",
       "name_en": "Runes of Fortune",
@@ -222,7 +225,7 @@
       "cost": "25"
     },
     {
-      "id": "runesofsmiting",
+      "id": "dwarf_runesofsmiting",
       "weight": "negligible",
       "name": "Runes of Smiting",
       "name_en": "Runes of Smiting",
@@ -232,7 +235,7 @@
       "cost": "25"
     },
     {
-      "id": "runeofpenetrating",
+      "id": "dwarf_runeofpenetrating",
       "weight": "negligible",
       "name": "Rune of Penetrating",
       "name_en": "Rune of Penetrating",
@@ -242,7 +245,7 @@
       "cost": "25"
     },
     {
-      "id": "runeofburning",
+      "id": "dwarf_runeofburning",
       "weight": "negligible",
       "name": "Rune of Burning",
       "name_en": "Rune of Burning",
@@ -252,7 +255,7 @@
       "cost": "25"
     },
     {
-      "id": "runeofpiercing",
+      "id": "dwarf_runeofpiercing",
       "weight": "negligible",
       "name": "Rune of Piercing",
       "name_en": "Rune of Piercing",
@@ -262,7 +265,7 @@
       "cost": "25"
     },
     {
-      "id": "runeofcleaving",
+      "id": "dwarf_runeofcleaving",
       "weight": "negligible",
       "name": "Rune of Cleaving",
       "name_en": "Rune of Cleaving",
@@ -272,7 +275,7 @@
       "cost": "25"
     },
     {
-      "id": "overdriveengine",
+      "id": "dwarf_overdriveengine",
       "weight": "negligible",
       "name": "Overdrive Engine",
       "name_en": "Overdrive Engine",
@@ -282,7 +285,7 @@
       "cost": "50"
     },
     {
-      "id": "spareboiler",
+      "id": "dwarf_spareboiler",
       "weight": "negligible",
       "name": "Spare Boiler",
       "name_en": "Spare Boiler",
@@ -292,7 +295,7 @@
       "cost": "50"
     },
     {
-      "id": "flamecannon",
+      "id": "dwarf_flamecannon",
       "weight": "negligible",
       "name": "Flame Cannon",
       "name_en": "Flame Cannon",
@@ -302,7 +305,7 @@
       "cost": "25"
     },
     {
-      "id": "improvedgears",
+      "id": "dwarf_improvedgears",
       "weight": "negligible",
       "name": "Improved Gears",
       "name_en": "Improved Gears",
@@ -321,7 +324,7 @@
   ],
   "units": [
     {
-      "id": "dreadnought",
+      "id": "dwarf_dreadnought",
       "type": "manowar",
       "type_name": "Man O'War",
       "type_name_en": "Man O'War",
@@ -337,7 +340,7 @@
       "cost": 225
     },
     {
-      "id": "ironclad",
+      "id": "dwarf_ironclad",
       "type": "manowar",
       "type_name": "Man O'War",
       "type_name_en": "Man O'War",
@@ -350,7 +353,7 @@
       "cost": 150
     },
     {
-      "id": "monitor",
+      "id": "dwarf_monitor",
       "type": "shipoftheline",
       "type_name": "Ship of the Line",
       "type_name_en": "Ship of the Line",
@@ -363,7 +366,7 @@
       "cost": 75
     },
     {
-      "id": "nautilus",
+      "id": "dwarf_nautilus",
       "type": "independent",
       "type_name": "Independent",
       "type_name_en": "Independent",
@@ -376,7 +379,7 @@
       "cost": 75
     },
     {
-      "id": "warballoon",
+      "id": "dwarf_warballoon",
       "type": "flyer",
       "type_name": "Flyer",
       "type_name_en": "Flyer",
@@ -389,7 +392,7 @@
       "cost": 75
     },
     {
-      "id": "gyrocopter",
+      "id": "dwarf_gyrocopter",
       "type": "flyer",
       "type_name": "Flyer",
       "type_name_en": "Flyer",
@@ -494,10 +497,9 @@
       ]
     }
   ],
-
   "naming_rules": [
     {
-      "id": "dreadnought",
+      "id": "dwarf_dreadnought",
       "rule": [
         "name1 name2",
         "name2",
@@ -505,7 +507,7 @@
       ]
     },
     {
-      "id": "ironclad",
+      "id": "dwarf_ironclad",
       "rule": [
         "name1 dname5",
         "dname5",
@@ -513,26 +515,26 @@
       ]
     },
     {
-      "id": "monitor",
+      "id": "dwarf_monitor",
       "rule": [
         "name4 dname5"
       ]
     },
     {
-      "id": "nautilus",
+      "id": "dwarf_nautilus",
       "rule": [
         "name6 name3"
       ]
     },
     {
-      "id": "warballoon",
+      "id": "dwarf_warballoon",
       "rule": [
         "name3",
         "name6 dname5"
       ]
     },
     {
-      "id": "gyrocopter",
+      "id": "dwarf_gyrocopter",
       "rule": [
         "name8 name9, name8 name9, name8 name9"
       ]
