@@ -13,13 +13,21 @@ const parseRule = (ruleStr) => {
   const rest = mainPart.slice(4); // Remove "Max " or "Min "
   const perIndex = rest.indexOf(" per ");
 
+  const parseSubjectTokens = (nameStr) => {
+    const tokens = nameStr.split(/,\s+(?:or\s+)?/i);
+    return tokens.map((token) => {
+      const m = token.trim().match(/^\d+\s+(.+)$/);
+      return { name: (m ? m[1] : token).trim() };
+    });
+  };
+
   if (perIndex === -1) {
     const match = rest.match(/^(\d+)\s+(.+)$/);
     if (!match) return null;
     return {
       type: isMax ? "max" : "min",
       limit: parseInt(match[1]),
-      subject: match[2].trim(),
+      subjects: parseSubjectTokens(match[2]),
       targets: null,
       modifier,
     };
@@ -43,7 +51,7 @@ const parseRule = (ruleStr) => {
   return {
     type: isMax ? "max" : "min",
     limit: parseInt(subjectMatch[1]),
-    subject: subjectMatch[2].trim(),
+    subjects: parseSubjectTokens(subjectMatch[2]),
     targets,
     modifier,
   };
@@ -127,7 +135,7 @@ const validateRules = (list, faction) => {
     const parsed = parseRule(ruleStr);
     if (!parsed) continue;
 
-    const subjectCount = countForName(parsed.subject);
+    const subjectCount = parsed.subjects.reduce((sum, s) => sum + countForName(s.name), 0);
 
     if (!parsed.targets) {
       if (parsed.type === "max" && subjectCount > parsed.limit) {
