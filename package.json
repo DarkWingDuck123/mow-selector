@@ -59,6 +59,7 @@
     ]
   },
   "devDependencies": {
+    "playwright": "^1.60.0",
     "react-router-dom": "^7.13.1"
   }
 }

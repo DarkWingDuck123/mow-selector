@@ -1,32 +1,122 @@
 {
-  "weight":"light",
-  "name":{"value":"MANTICORE LORD","scale":1.0},
-  "type":{"value":"DARK ELF FLYERS","scale":0.75},
-  "honors":{"value":"Honors: 3", "scale":1.0},
-  "cost":{"value":"75 pts", "scale":1.0},
-  "moveTitle":{"value":"MOVE","scale":0.75},
-  "move":{"value":"<div style=\"font-size:40px\">15\" fly</div>","scale":1.0},
-  "upperNotes":[],
-  "dmgBoxes":[
-    {"width":100, "height":50, "left":0, "bottom":50,
-     "name":{"value":"RIDER", "scale":1.0},
-     "zone":"6",
-     "save":"4+",
-     "notes":{"value":"Rider killed<br>Remove Model", "scale":1.0}},
-    {"width":100, "height":50, "left":0, "bottom":0,
-     "name":{"value":"MANTICORE", "scale":1.0},
-     "zone":"4,5",
-     "save":"4+",
-     "notes":{"value":"Does one Wound", "scale":1.0}}],
-  "numberOf":1,
-  "criticalTitle":{"value":"WOUNDS","scale":1.0},
-  "criticalBoxes":3,
-  "lowerNotes":[
-    {"height":50,
-     "title":{"value":"ATTACKS", "scale":1.0},
-     "note":{"value":"<div style='font-size:18px;;padding:4px 8px;text-align:left;'>Drops <b>Deathfist</b>on specified high location. Roll <b>d6</b>:<br><b>1-2</b> misses, <b>3</b> hits location in front, <b>4</b> hits location behind, <b>5-6</b> hits target.<br><b>Deathfist</b> has -1 save and does 1 damage.</div>","scale":1.0}},
-    {"height":50,
-     "title":{"value":"CLOSE COMBAT", "scale":1.0},
-     "note":{"value":"<div style='font-size:20px;;padding:4px 8px;text-align:left;'>+3 CC (+4 CC if attacking)</div>","scale":1.0}}
-    ]
+  "weight": "light",
+  "name": {
+    "value": "WYVERN RIDER",
+    "scale": 1,
+    "value_en": "WYVERN RIDER",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "ORC FLYER",
+    "scale": 0.75,
+    "value_en": "ORC FLYER",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "Honors: 2",
+    "scale": 1,
+    "value_en": "Honors: 2",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "50 pts",
+    "scale": 1,
+    "value_en": "50 pts",
+    "scale_en": 1
+  },
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 0.75,
+    "value_en": "MOVE",
+    "scale_en": 0.75
+  },
+  "move": {
+    "value": "<div style=\"font-size:40px\">15\" fly</div>",
+    "scale": 1,
+    "value_en": "<div style=\"font-size:40px\">15\" fly</div>",
+    "scale_en": 1
+  },
+  "upperNotes": [],
+  "dmgBoxes": [
+    {
+      "width": 100,
+      "height": 50,
+      "left": 0,
+      "bottom": 50,
+      "name": {
+        "value": "RIDER",
+        "scale": 1,
+        "value_en": "RIDER",
+        "scale_en": 1
+      },
+      "zone": "6",
+      "save": "4+",
+      "notes": {
+        "value": "Rider killed<br>Remove Model",
+        "scale": 1,
+        "value_en": "Rider killed<br>Remove Model",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 100,
+      "height": 50,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "WYVERN",
+        "scale": 1,
+        "value_en": "WYVERN",
+        "scale_en": 1
+      },
+      "zone": "4,5",
+      "save": "4+",
+      "notes": {
+        "value": "Does one Wound",
+        "scale": 1,
+        "value_en": "Does one Wound",
+        "scale_en": 1
+      }
+    }
+  ],
+  "numberOf": 1,
+  "criticalTitle": {
+    "value": "WOUNDS",
+    "scale": 1,
+    "value_en": "WOUNDS",
+    "scale_en": 1
+  },
+  "criticalBoxes": 3,
+  "lowerNotes": [
+    {
+      "height": 80,
+      "title": {
+        "value": "ATTACKS",
+        "scale": 1,
+        "value_en": "ATTACKS",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style='font-size:18px;;padding:4px 8px;text-align:left;'>Drops 3 <b>Squigbombs</b> on adjacent high locations starting from rear of target. Roll <b>d6</b>:<br><b>1-2</b> misses, <br><b>3</b> hits location in front, <br><b>4</b> hits location behind, <br><b>5-6</b> hits target.<br><b>Squigbombs</b> do 1 damage on failed save.</div>",
+        "scale": 1,
+        "value_en": "<div style='font-size:18px;;padding:4px 8px;text-align:left;'>Drops 3 <b>Squigbombs</b> on adjacent high locations starting from rear of target. Roll <b>d6</b>:<br><b>1-2</b> misses, <br><b>3</b> hits location in front, <br><b>4</b> hits location behind, <br><b>5-6</b> hits target.<br><b>Squigbombs</b> do 1 damage on failed save.</div>",
+        "scale_en": 1
+      }
+    },
+    {
+      "height": 20,
+      "title": {
+        "value": "CLOSE COMBAT",
+        "scale": 1,
+        "value_en": "CLOSE COMBAT",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style='font-size:20px;;padding:4px 8px;text-align:left;'>+3 CC</div>",
+        "scale": 1,
+        "value_en": "<div style='font-size:20px;;padding:4px 8px;text-align:left;'>+3 CC</div>",
+        "scale_en": 1
+      }
+    }
+  ]
 }

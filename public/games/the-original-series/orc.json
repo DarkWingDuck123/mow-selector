@@ -14,7 +14,19 @@
   "name_fr": "Orc",
   "validation_rules": [
     {
-      "rule": "Min 1 Orc Hulk"
+      "rule": "Min 1 Hulk"
+    },
+    {
+      "rule": "Max 1 Hulk per 1 Ship of the Line; First One Free"
+    },
+    {
+      "rule": "Min 1 Drillakilla"
+    },
+    {
+      "rule": "Min 1 Bigchukka"
+    },
+    {
+      "rule": "Max 2 Bigchukka per 1 Drillakilla"
     },
     {
       "rule": "Max 1 Shaman per 1 Ship of the Line, or 1 Man O'War"
@@ -249,10 +261,10 @@
       "type_name": "Man O'War",
       "type_name_en": "Man O'War",
       "weight": "heavy",
-      "name": "Orc Hulk",
-      "name_en": "Orc Hulk",
-      "description": "An Orc Hulk",
-      "description_en": "An Orc Hulk",
+      "name": "Hulk",
+      "name_en": "Hulk",
+      "description": "A Hulk",
+      "description_en": "A Hulk",
       "squadron-size": 1,
       "cost": 150
     },
@@ -262,8 +274,8 @@
       "type_name": "Ship of the Line",
       "type_name_en": "Ship of the Line",
       "weight": "heavy",
-      "name": "Drilla Killa",
-      "name_en": "Drilla Killa",
+      "name": "Drillakilla",
+      "name_en": "Drillakilla",
       "squadron-size": 3,
       "cost": 150 
     },
@@ -273,8 +285,8 @@
       "type_name": "Ship of the Line",
       "type_name_en": "Ship of the Line",
       "weight": "heavy",
-      "name": "Big Chukka",
-      "name_en": "Big Chukka",
+      "name": "Bigchukka",
+      "name_en": "Bigchukka",
       "squadron-size": 3,
       "cost": 75 
     },

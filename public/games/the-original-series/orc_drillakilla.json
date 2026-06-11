@@ -1,38 +1,138 @@
 {
-  "weight":"heavy",
-  "name":{"value":"BUCCANEER","scale":1.0},
-  "type":{"value":"BRETONNIAN SHIP OF THE LINE","scale":0.65},
-  "honors":{"value":"Honors: 1", "scale":0.8},
-  "cost":{"value":"75 pts per 3", "scale":1.0},
-  "crewTitle":{"value":"CREW","scale":1.0},
-  "crew":2,
-  "moveTitle":{"value":"MOVE","scale":1.0},
-  "move":{"value":"<div style=\"font-size:24px\">SAIL 9\"</div>","scale":0.75},
-  "upperNotes":[],
-  "dmgBoxes":[
-    {"width":100, "height":50, "left":0, "bottom":50,
-     "name":{"value":"MAST", "scale":1.0},
-     "zone":"4",
-     "save":"5+",
-     "isHorizontal":false,
-     "boxes":[{"value":"<b>Mast Lost</b><br>Cannot Move", "scale":1.0}],
-     "notes":{"value":"<i>No Criticals</i>", "scale":1.5}},
-    {"width":50, "height":50, "left":0, "bottom":0,
-     "name":{"value":"FORE CASTLE", "scale":1.0},
-     "zone":"5",
-     "save":"4+",
-     "isHorizontal":false,
-     "boxes":[{"value":"<b>Catapult destroyed</b><br>May not fire", "scale":1.0}]},
-    {"width":50, "height":50, "left":50, "bottom":0,
-     "name":{"value":"AFT CASTLE", "scale":1.0},
-     "zone":"6",
-     "save":"5+",
-     "isHorizontal":false,
-     "boxes":[{"value":"", "scale":1.0}]}],
-  "criticalTitle":{"value":"BELOW WATERLINE","scale":1.0},
-  "criticalSave":"5+",
-  "criticalBoxes":2,
-  "lowerNotesTitle":{"value":"WEAPONS","scale":1.0},
-  "lowerNotes":{"value":"<b>Fore Catapult:</b> May not repel boarders","scale":0.85},
-  "foreBattery":"1"
+  "weight": "heavy",
+  "name": {
+    "value": "DRILLAKILLA",
+    "scale": 0.9,
+    "value_en": "DRILLAKILLA",
+    "scale_en": 0.9
+  },
+  "type": {
+    "value": "ORC SHIP OF THE LINE",
+    "scale": 0.65,
+    "value_en": "ORC SHIP OF THE LINE",
+    "scale_en": 0.65
+  },
+  "honors": {
+    "value": "Honors: 1",
+    "scale": 0.8,
+    "value_en": "Honors: 1",
+    "scale_en": 0.8
+  },
+  "cost": {
+    "value": "150 pts per 3",
+    "scale": 1,
+    "value_en": "150 pts per 3",
+    "scale_en": 1
+  },
+  "crew": 2,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 1,
+    "value_en": "CREW",
+    "scale_en": 1
+  },
+  "move": {
+    "value": "<div style=\"font-size:24px\">TREADWHEEL 3d6\"</div>Roll 3 1's DrillKilla sinks",
+    "scale": 0.75,
+    "value_en": "<div style=\"font-size:24px\">TREADWHEEL 3d6\"</div>Roll 3 1's DrillKilla sinks",
+    "scale_en": 0.75
+  },
+  "upperNotes": [],
+  "dmgBoxes": [
+    {
+      "width": 33,
+      "height": 100,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "DRILL",
+        "scale": 1,
+        "value_en": "DRILL",
+        "scale_en": 1
+      },
+      "zone": "4",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Drill</b> Lost",
+          "scale": 1,
+          "value_en": "<b>Drill</b> Lost",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 34,
+      "height": 100,
+      "left": 33,
+      "bottom": 0,
+      "name": {
+        "value": "WORKY BITZ",
+        "scale": 1,
+        "value_en": "WORKY BITZ",
+        "scale_en": 1
+      },
+      "zone": "5",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Ship<br><b>Immobilized</b>",
+          "scale": 1,
+          "value_en": "Ship<br><b>Immobilized</b>",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 33,
+      "height": 100,
+      "left": 67,
+      "bottom": 0,
+      "name": {
+        "value": "TREADWHEEL",
+        "scale": 0.8,
+        "value_en": "TREADWHEEL",
+        "scale_en": 0.8
+      },
+      "zone": "6",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Ship<br><b>Immobilized</b>",
+          "scale": 1,
+          "value_en": "Ship<br><b>Immobilized</b>",
+          "scale_en": 1
+        }
+      ]
+    }
+  ],
+  "criticalTitle": {
+    "value": "BELOW WATERLINE",
+    "scale": 1,
+    "value_en": "BELOW WATERLINE",
+    "scale_en": 1
+  },
+  "criticalSave": "4+",
+  "criticalBoxes": 1,
+  "lowerNotesTitle": {
+    "value": "WEAPONS",
+    "scale": 1,
+    "value_en": "WEAPONS",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Drill</b>: Rams. Roll d6 <b>1</b>: DrillaKilla sinks, <b>2</b>: 1 low location destroyed (no save), DrillaKilla sinks, <b>3</b>: 1 BtW damage, <b>4</b>: 1 low location damaged (no save), DrillKilla stuck, Orcs immediately board, if Orcs win, ship is sunk. <b>5</b>: Same as 4, but 1 BtW damage, <b>6</b>: Same as 5, but d6 BtW dmg, if ship sunk by BtW dmg may continue moving (and ramming).",
+    "scale": 0.7,
+    "value_en": "<b>Drill</b>: Rams. Roll d6 <b>1</b>: DrillaKilla sinks, <b>2</b>: 1 low location destroyed (no save), DrillaKilla sinks, <b>3</b>: 1 BtW damage, <b>4</b>: 1 low location damaged (no save), DrillKilla stuck, Orcs immediately board, if Orcs win, ship is sunk. <b>5</b>: Same as 4, but 1 BtW damage, <b>6</b>: Same as 5, but d6 BtW dmg, if ship sunk by BtW dmg may continue moving (and ramming).",
+    "scale_en": 0.7
+  }
 }
