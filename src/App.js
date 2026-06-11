@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Blogs2 from "./pages/Blogs2";
@@ -40,7 +40,7 @@ export default function App() {
   }, [dispatch]);
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <Routes>
         {/*<Route path="/" element={<><Header /><Layout /></>} />*/}
         <Route index element={<><Header /><Home /></>} />
@@ -56,6 +56,6 @@ export default function App() {
         <Route path="FactionBuilder" element={<><FactionBuilder /></>} />
         <Route path="*" element={<><Header /><NoPage /></>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
