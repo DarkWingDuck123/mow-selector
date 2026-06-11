@@ -4,7 +4,7 @@
 //  require('abortcontroller-polyfill/dist/abortsignal-polyfill-only');
 //}
 
-const baseUrl = "/";
+const baseUrl = `${process.env.PUBLIC_URL}/`;
 let controller;
 
 const abortFetch = () => {
