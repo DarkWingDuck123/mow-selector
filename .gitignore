@@ -22,6 +22,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# rulebook PDFs (large, copyrighted)
+public/games/**/docs/
+
 # scratch files
 *.js2
 *.bak
