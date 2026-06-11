@@ -15,31 +15,31 @@
       "cost" : "0"
     },
     {
-      "id" : "greatship",
+      "id" : "empire_greatship",
       "name" : "Greatship",
-      "description" : "An Empire Greatship",
+      "description" : "A Greatship",
       "number" : "1",
-      "cost" : "250",
+      "cost" : "150",
       "shipNames" : [ "Ghal Maraz" ]
     },
     {
       "id" : "manowarcard",
-      "name" : "Empty Man O'War Card",
+      "name" : "Man O'War Card",
       "number" : "1",
-      "cost" : "0"
+      "cost" : "25"
     },
     {
-      "id" : "wolfship",
+      "id" : "empire_wolfship",
       "name" : "Wolfship",
-      "description" : "Squadron of 3 Empire Wolfship",
+      "description" : "A Squadron of 3 Wolfship",
       "number" : "3",
-      "cost" : "225",
+      "cost" : "300",
       "shipNames" : [ "Seawolf", "Fury of Sigmar", "Surprise" ]
     },
     {
-      "id" : "wargalley",
+      "id" : "empire_wargalley",
       "name" : "Wargalley",
-      "description" : "Squadron of 3 Empire Wargalley",
+      "description" : "A Squadron of 3 Wargalley",
       "number" : "3",
       "cost" : "75",
       "shipNames" : [ "The Witch", "Hansel", "Gretel" ]
