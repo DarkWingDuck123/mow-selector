@@ -35,7 +35,7 @@ function renderCard(meta, obj, inst) {
   }
 }
 
-function buildCrewCardObj(addonDef, list) {
+function buildCrewCardObj(addonDef, list, cardObj) {
   const crewGroups = (list.crew || []).reduce((groups, entry) => {
     const key = entry.id;
     const existing = groups.find((g) => g.key === key);
@@ -60,22 +60,18 @@ function buildCrewCardObj(addonDef, list) {
 
   const totalCost = (list.crew || []).reduce((sum, c) => sum + (Number(c.cost) || 0), 0);
 
+  const baseNotes = cardObj?.notes?.length > 0 ? cardObj.notes : null;
+  const notes = baseNotes
+    ? [{ ...baseNotes[0], note: { ...baseNotes[0].note, value: crewHtml } }, ...baseNotes.slice(1)]
+    : [{ height: 100, title: { value: "DESCRIPTION", scale: 1.0 }, note: { value: crewHtml, scale: 1.0 } }];
+
   return {
     weight: "negligible",
     name: { value: (addonDef.name_en || addonDef.name || "Crew Card").toUpperCase(), scale: 1.0 },
     type: { value: (addonDef.type_name_en || addonDef.type_name || "Crew").toUpperCase(), scale: 0.75 },
     honors: { value: "", scale: 1.0 },
     cost: { value: `${totalCost} pts`, scale: 1.0 },
-    notes: [
-      {
-        height: 100,
-        title: { value: "DESCRIPTION", scale: 1.0 },
-        note: {
-          value: crewHtml,
-          scale: 1.0,
-        },
-      },
-    ],
+    notes,
   };
 }
 
@@ -211,10 +207,10 @@ export const CardViewer = ({ listId, bwOverride }) => {
         const cardFactionId = card.factionId || factionId;
         const meta = metaByFaction[cardFactionId];
 
-        // Dynamic crew card — build obj from list.crew
+        // Dynamic crew card — build obj from list.crew, merging into fetched card JSON notes
         const addonDef = factionData?.addons?.find((a) => a.id === card.id);
         if (addonDef?.type === "crew_card") {
-          const obj = buildCrewCardObj(addonDef, list);
+          const obj = buildCrewCardObj(addonDef, list, cardObjs[`${cardFactionId}/${card.id}`]);
           const html = meta ? DOMPurify.sanitize(negligibleCard(meta, obj, {})) : null;
           return Array.from({ length: count }, (_, j) => (
             <div key={`${card.uid || `${card.id}-${i}`}-${j}`} className="card-viewer__card">

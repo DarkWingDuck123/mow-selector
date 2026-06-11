@@ -1,11 +1,11 @@
 {
   "weight":"light",
-  "name":{"value":"PEGASUS RIDERS","scale":1.0},
-  "type":{"value":"BRETTONIAN FLYERS","scale":0.75},
+  "name":{"value":"WAR EAGLES","scale":1.0},
+  "type":{"value":"HIGH ELF FLYERS","scale":0.75},
   "honors":{"value":"Honors: 1", "scale":1.0},
   "cost":{"value":"75 pts for 3", "scale":1.0},
   "moveTitle":{"value":"MOVE","scale":0.75},
-  "move":{"value":"<div style=\"font-size:40px\">18\" fly</div>","scale":1.0},
+  "move":{"value":"<div style=\"font-size:40px\">24\" fly</div>","scale":1.0},
   "upperNotes":[],
   "dmgBoxes":[
     {"width":100, "height":50, "left":0, "bottom":50,
@@ -14,15 +14,15 @@
      "save":"-",
      "notes":{"value":"Rider killed,<br>Remove Model", "scale":1.0}},
     {"width":100, "height":50, "left":0, "bottom":0,
-     "name":{"value":"PEGASUS", "scale":1.0},
+     "name":{"value":"EAGLE", "scale":1.0},
      "zone":"4,5",
      "save":"-",
-     "notes":{"value":"Does one Wound", "scale":1.0}}],
+     "notes":{"value":"Eagle killed,<br>Remove Model", "scale":1.0}}],
   "numberOf":3,
   "criticalTitle":{"value":"Wounds","scale":1.5},
-  "criticalBoxes":2,
+  "criticalBoxes":1,
   "lowerNotes":[
     {"height":100,
      "title":{"value":"CLOSE COMBAT", "scale":1.0},
-     "note":{"value":"<div style='font-size:20px;;padding:4px 8px;text-align:left;'>+2 CC<br><br>If attacking +1 CC (for a total of +3)<br><br>On an unmodified 6 rolled for CC, the enemy always<br>loses a wound or crew counter.</div>","scale":1.0}}]
+     "note":{"value":"<div style='font-size:20px;;padding:4px 8px;text-align:left;'>+1 CC<br><br>In the first round of combat, if attacking, adds an additional dice to its roll for 2d6+1.</div>","scale":1.0}}]
 }

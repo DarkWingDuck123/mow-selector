@@ -108,6 +108,14 @@
         "name_es": "Dark Elf",
         "name_fr": "Dark Elf",
         "allies": []
+      },
+      {
+        "id": "orc",
+        "name_de": "Orc",
+        "name_en": "Orc",
+        "name_es": "Orc",
+        "name_fr": "Orc",
+        "allies": []
       }
     ]
   },

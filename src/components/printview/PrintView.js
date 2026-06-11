@@ -13,7 +13,7 @@ import { negligibleCard } from "../../utils/card/negligible";
 
 import "./PrintView.css";
 
-function buildCrewCardObj(addonDef, list) {
+function buildCrewCardObj(addonDef, list, cardObj) {
   const crewGroups = (list.crew || []).reduce((groups, entry) => {
     const key = entry.id;
     const existing = groups.find((g) => g.key === key);
@@ -34,6 +34,7 @@ function buildCrewCardObj(addonDef, list) {
       }).join("");
 
   const totalCost = (list.crew || []).reduce((sum, c) => sum + (Number(c.cost) || 0), 0);
+  const baseNotes = cardObj?.notes?.length > 0 ? cardObj.notes : null;
 
   return {
     weight: "negligible",
@@ -41,16 +42,9 @@ function buildCrewCardObj(addonDef, list) {
     type: { value: (addonDef.type_name_en || addonDef.type_name || "Crew").toUpperCase(), scale: 0.75 },
     honors: { value: "", scale: 1.0 },
     cost: { value: `${totalCost} pts`, scale: 1.0 },
-    notes: [
-      {
-        height: 100,
-        title: { value: "DESCRIPTION", scale: 1.0 },
-        note: {
-          value: crewHtml,
-          scale: 1.0,
-        },
-      },
-    ],
+    notes: baseNotes
+      ? [{ ...baseNotes[0], note: { ...baseNotes[0].note, value: crewHtml } }, ...baseNotes.slice(1)]
+      : [{ height: 100, title: { value: "DESCRIPTION", scale: 1.0 }, note: { value: crewHtml, scale: 1.0 } }],
   };
 }
 
@@ -98,18 +92,14 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
   // cardObjs: "factionId/cardId" -> card obj
   const [cardObjs, setCardObjs] = useState({});
 
-  const crewCardIds = new Set(
-    (factionData?.addons ?? []).filter((a) => a.type === "crew_card").map((a) => a.id)
-  );
-
-  // Build unique "factionId/cardId" pairs, excluding blanks and crew cards.
+  // Build unique "factionId/cardId" pairs, excluding only blanks.
   // Always include the primary factionId so crew card meta is available.
   const uniquePairsStr = [
     ...new Set([
       // Sentinel so the primary faction is always in the meta fetch
       `${factionId}/__primary__`,
       ...(list?.cards ?? [])
-        .filter((c) => c.id !== "blank" && !crewCardIds.has(c.id))
+        .filter((c) => c.id !== "blank")
         .map((c) => `${c.factionId || factionId}/${c.id}`)
         .filter((key) => !key.startsWith("/")),
     ]),
@@ -203,7 +193,7 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
 
     const addonDef = factionData?.addons?.find((a) => a.id === card.id);
     if (addonDef?.type === "crew_card") {
-      const obj = buildCrewCardObj(addonDef, list);
+      const obj = buildCrewCardObj(addonDef, list, cardObjs[`${cardFactionId}/${card.id}`]);
       const html = meta ? DOMPurify.sanitize(negligibleCard(meta, obj, {})) : null;
       if (!html) return [];
       return Array.from({ length: count }, (_, j) => ({
@@ -293,7 +283,6 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
     if (card.id === "blank") return true;
     const cardFactionId = card.factionId || factionId;
     if (!metaByFaction[cardFactionId]) return false;
-    if (crewCardIds.has(card.id)) return true;
     return cardObjs[`${cardFactionId}/${card.id}`] !== undefined;
   });
 

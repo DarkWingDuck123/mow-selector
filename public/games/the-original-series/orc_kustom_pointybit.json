@@ -1,0 +1,14 @@
+{
+  "weight": "negligible",
+  "name": {"value": "POINTY BIT", "scale": 0.9},
+  "type": {"value": "ORC KUSTOM KARD", "scale": 0.65},
+  "honors": {"value": "Battle Honours: 2", "scale": 0.8},
+  "cost": {"value": "50 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 100,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The ship is equipped with a ram and may make a ram attack as described in the main rulebook. The ram is located on the Front location and will be destroyed if that area takes damage. If a ship with Iron Claws manages to ram a target that was 5 or more inches away the target will also take 3 random hits.</div>", "scale": 1.0}
+    }
+  ]
+}

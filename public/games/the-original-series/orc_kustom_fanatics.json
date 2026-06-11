@@ -1,0 +1,14 @@
+{
+  "weight": "negligible",
+  "name": {"value": "FANATICS", "scale": 0.9},
+  "type": {"value": "ORC KUSTOM KARD", "scale": 0.65},
+  "honors": {"value": "Battle Honours: 2", "scale": 0.8},
+  "cost": {"value": "50 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 100,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">At the start of any boarding action the ship may unleash its Fanatics. To determine the effect roll D3+1 hits on the crew locations of the enemy ship. These locations must make a saving throw at a -2 modifier. Fanatics can cause Critical hits. Any location that comes up as a 1 means the Fanatic has careened out of control and adds +D6 to the enemy side's total this turn. Both crews are occupied fighting the Fanatics and neither may carry on with the boarding action or perform any other actions until the combat this turn.</div>", "scale": 1.0}
+    }
+  ]
+}

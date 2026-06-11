@@ -101,8 +101,8 @@
       "name_en": "Runesmith",
       "type_name": "Runesmith",
       "type_name_en": "Runesmith",
-      "description": "(R) All dwarf ships ignore spells on a 5 or 6,<br>+2 battle honors, +1 summoning sea monsters<br>upto 2 rune cards, may cling to wreckage",
-      "description_en": "(R) All dwarf ships ignore spells on a 5 or 6,<br>+2 battle honors, +1 summoning sea monsters<br>upto 2 Rune Cards, may cling to wreckage",
+      "description": "(R) All dwarf ships ignore spells on a 5 or 6,<br>+2 battle honors, +1 summoning sea monsters<br>upto 2 rune cards, may cling to wreckage, must begin attached to Admiral's ship",
+      "description_en": "(R) All dwarf ships ignore spells on a 5 or 6,<br>+2 battle honors, +1 summoning sea monsters<br>upto 2 Rune Cards, may cling to wreckage, must begin attached to Admiral's ship",
       "type": "crew",
       "cost": "50"
     },
@@ -112,8 +112,8 @@
       "name_en": "Master Engineer",
       "type_name": "Master Engineer",
       "type_name_en": "Master Engineer",
-      "description": "(E) Allows a reroll when repairing damage, may repair waterline damage on a roll of 6<br>+1 battle honors, upto 2 Master Engineer Cards, may cling to wreckage",
-      "description_en": "(E) Allows a reroll when repairing damage, may repair waterline damage on a roll of 6<br>+1 battle honors, upto 2 Master Engineer Cards, may cling to wreckage",
+      "description": "(M) Allows a reroll when repairing damage,<br>may repair waterline damage on a roll of 6<br>+1 battle honors, upto 2 Master Engineer Cards, may cling to wreckage",
+      "description_en": "(M) Allows a reroll when repairing damage,<br>may repair waterline damage on a roll of 6<br>+1 battle honors, upto 2 Master Engineer Cards, may cling to wreckage",
       "type": "crew",
       "cost": "25"
     },
@@ -123,8 +123,8 @@
       "name_en": "Slayers",
       "type_name": "Slayers",
       "type_name_en": "Slayers",
-      "description": "(S) Adds 1d3+1 CC to attached ship, if a casualty occurs 4+ removes the Slayers, Slayers cannot crew a ship",
-      "description_en": "(S) Adds 1d3+1 CC to attached ship, if a casualty occurs 4+ removes the Slayers, Slayers cannot crew a ship",
+      "description": "(L) Adds 1d3+1 CC to attached ship, if a casualty occurs 4+ removes the Slayers<br>Slayers cannot crew a ship, must attach to Admiral's ship",
+      "description_en": "(L) Adds 1d3+1 CC to attached ship, if a casualty occurs 4+ removes the Slayers<br>Slayers cannot crew a ship, must attach to Admiral's ship",
       "type": "crew",
       "cost": "50"
     }

@@ -1,0 +1,14 @@
+{
+  "weight": "negligible",
+  "name": {"value": "SQUIG LAUNCHERS", "scale": 0.8},
+  "type": {"value": "ORC KUSTOM KARD", "scale": 0.65},
+  "honors": {"value": "Battle Honours: 1", "scale": 0.8},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 100,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The Orc ship may fire its squig launchers at the start of any boarding action. Before the dice are rolled, roll a D6 on the Artillery Dice. If the result is 5+ the angry squigs have overwhelmed some of the boarding crew and one counter is removed from the ship's template. If the D6 roll is 1 the launcher has broken and may not be used for the remainder of the battle.</div>", "scale": 1.0}
+    }
+  ]
+}

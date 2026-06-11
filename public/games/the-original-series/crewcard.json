@@ -6,9 +6,14 @@
   "cost": {"value": "0 pts", "scale": 1.0},
   "notes": [
     {
-      "height": 100,
+      "height": 75,
       "title": {"value": "", "scale": 1.0},
       "note": {"value": "", "scale": 1.0}
+    },
+    {
+      "height": 25,
+      "title": {"value": "EXPERIENCE", "scale": 1.0},
+      "note": {"value": "(S)ailors: crew level 1<br>(V)eterans: crew level 2<br>Sea(D)ogs: crew level 3<br>(C)utthroats: crew level 4<br>(E)lite: crew level 5", "scale": 1.0}
     }
   ]
 }

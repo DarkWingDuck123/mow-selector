@@ -1,0 +1,14 @@
+{
+  "weight": "negligible",
+  "name": {"value": "BIG WHIP", "scale": 0.9},
+  "type": {"value": "ORC KUSTOM KARD", "scale": 0.65},
+  "honors": {"value": "Battle Honours: 1", "scale": 0.8},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 100,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The ship may add D3\" to its movement rate when using the slaves to drive the treadwheel to propel itself. Roll the dice each time you move the ship.</div>", "scale": 1.0}
+    }
+  ]
+}

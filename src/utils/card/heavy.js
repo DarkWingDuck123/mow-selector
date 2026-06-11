@@ -111,6 +111,7 @@ function shipname(gw, gh, w, h, x, y, name, meta) {
 }
 
 function crewbox(gw, gh, w, h, x, y, num, crewTitle) {
+  if (!exists(crewTitle)) return "";
   var s = ""
     + "<div "
       + "style='"
