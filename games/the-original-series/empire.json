@@ -1,0 +1,460 @@
+{
+  "id": "empire",
+  "style": {
+    "bgColor": "firebrick",
+    "fgColor": "gold",
+    "parchmentColor": "beige",
+    "waterColor": "lightblue",
+    "accentColor": "red"
+  },
+  "name_de": "The Empire",
+  "name_en": "The Empire",
+  "name_es": "The Empire",
+  "name_fr": "The Empire",
+  "validation_rules": [
+    {
+      "rule": "Max 1 Greatship per 1 Ship of the Line; First One Free"
+    },
+    {
+      "rule": "Max 2 Wargalley per 1 Greatship, or 1 Wolfship"
+    },
+    {
+      "rule": "Max 1 Hellhammer per 2 Ship of the Line"
+    },
+    {
+      "rule": "Max 1 Ironfist per 2 Ship of the Line"
+    },
+    {
+      "rule": "Max 1 Griffon Rider per 1 Ship of the Line"
+    },
+    {
+      "rule": "Min 1 Greatship"
+    },
+    {
+      "rule": "Min 1 Wolfship"
+    },
+    {
+      "rule": "Min 1 Wargalley"
+    },
+    {
+      "rule": "Max 1 Wizard"
+    },
+    {
+      "rule": "Max 33% Allies"
+    },
+    {
+      "rule": "Max 0% Non-Allies"
+    },
+    {
+      "rule": "Max 1 Sea Monster per 1 Ship of the Line"
+    },
+    {
+      "rule": "Max 1 Anti-Flyer per 1 Man O'War"
+    }
+  ],
+  "freebies": [
+    {
+      "free": "1 Admiral"
+    },
+    {
+      "free": "1 Man O'War Card"
+    },
+    {
+      "free": "2 Color Spell per Wizard Champion"
+    },
+    {
+      "free": "3 Color Spell per High Wizard Champion"
+    },
+    {
+      "free": "4 Color Spell per Master Wizard"
+    },
+    {
+      "free": "5 Color Spell per High Master Wizard"
+    },
+    {
+      "free": "6 Color Spell per Wizard Lord"
+    },
+    {
+      "free": "7 Color Spell per High Wizard Lord"
+    },
+    {
+      "free": "8 Color Spell per Grand Wizard Lord"
+    }
+  ],
+  "crew": [
+    {
+      "id": "admiral",
+      "name": "Admiral",
+      "name_en": "Admiral",
+      "type_name": "Admiral",
+      "type_name_en": "Admiral",
+      "description": "(A) +1 CC, may cling to wreckage",
+      "description_en": "(A) +1 CC, may cling to wreckage",
+      "type": "crew",
+      "cost": "-"
+    },
+    {
+      "id": "wizard1",
+      "name": "Wizard Champion",
+      "name_en": "Wizard Champion",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+      "description_en": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+      "type": "crew",
+      "cost": "50"
+    },
+    {
+      "id": "wizard2",
+      "name": "High Wizard Champion",
+      "name_en": "High Wizard Champion",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+      "description_en": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+      "type": "crew",
+      "cost": "75"
+    },
+    {
+      "id": "wizard3",
+      "name": "Master Wizard",
+      "name_en": "Master Wizard",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+      "description_en": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+      "type": "crew",
+      "cost": "100"
+    },
+    {
+      "id": "wizard4",
+      "name": "High Master Wizard",
+      "name_en": "High Master Wizard",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+      "description_en": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+      "type": "crew",
+      "cost": "125"
+    },
+    {
+      "id": "wizard5",
+      "name": "Wizard Lord",
+      "name_en": "Wizard Lord",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
+      "description_en": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
+      "type": "crew",
+      "cost": "150"
+    },
+    {
+      "id": "wizard6",
+      "name": "High Wizard Lord",
+      "name_en": "High Wizard Lord",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
+      "description_en": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
+      "type": "crew",
+      "cost": "175"
+    },
+    {
+      "id": "wizard7",
+      "name": "Grand Wizard Lord",
+      "name_en": "Grand Wizard Lord",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
+      "description_en": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> May reroll any color of spell failed to cast or dispell<br> Remove with last crew, may cling to wreckage",
+      "type": "crew",
+      "cost": "200"
+    }
+  ],
+  "allies": [
+    "brettonia"
+  ],
+  "addons": [
+    {
+      "id": "colorspell",
+      "weight": "negligible",
+      "name": "Color Spell",
+      "name_en": "Color Spell",
+      "type": "card",
+      "type_name": "Color Spell",
+      "type_name_en": "Color Spell",
+      "cost": "-"
+    },
+    {
+      "id": "manowarcard",
+      "weight": "negligible",
+      "name": "Man O'War Card",
+      "name_en": "Man O'War Card",
+      "type": "card",
+      "type_name": "Man O'War Card",
+      "cost": "25"
+    },
+    {
+      "id": "empire_hellblaster",
+      "weight": "negligible",
+      "name": "Hellblaster",
+      "name_en": "Hellblaster",
+      "type": "card",
+      "type_name": "Anti-Flyer",
+      "cost": "25"
+    },
+    {
+      "id": "crewcard",
+      "weight": "negligible",
+      "name": "Crew Card",
+      "name_en": "Crew Card",
+      "type": "crew_card",
+      "type_name": "",
+      "type_name_en": "",
+      "cost": "0"
+    },
+    {
+      "id": "turnsummary",
+      "weight": "negligible",
+      "name": "Turn Summary",
+      "name_en": "Turn Summary",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "empire_specialrules",
+      "weight": "negligible",
+      "name": "Special Rules - Empire",
+      "name_en": "Special Rules - Empire",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "blank",
+      "name": "Empty",
+      "name_en": "Empty",
+      "type": "card",
+      "cost": "0"
+    }
+  ],
+  "units": [
+    {
+      "id": "empire_greatship",
+      "type": "manowar",
+      "type_name": "Man O'War",
+      "weight": "heavy",
+      "name": "Greatship",
+      "name_de": "Greatship",
+      "name_en": "Greatship",
+      "name_es": "Greatship",
+      "name_fr": "Greatship",
+      "description_en": "A Greatship",
+      "squadron-size": 1,
+      "cost": 150
+    },
+    {
+      "id": "empire_wolfship",
+      "type": "shipoftheline",
+      "type_name": "Ship of the Line",
+      "type_name_en": "Ship of the Line",
+      "weight": "heavy",
+      "name": "Wolfship",
+      "name_en": "Wolfship",
+      "description_en": "A Squadron of 3 Wolfship",
+      "squadron-size": 3,
+      "cost": 300
+    },
+    {
+      "id": "empire_wargalley",
+      "type": "shipoftheline",
+      "type_name": "Ship of the Line",
+      "type_name_en": "Ship of the Line",
+      "weight": "heavy",
+      "name": "Wargalley",
+      "name_en": "Wargalley",
+      "description_en": "A Squadron of 3 Wargalley",
+      "squadron-size": 3,
+      "cost": 75
+    },
+    {
+      "id": "empire_griffonrider",
+      "type": "flyer",
+      "type_name": "Flyer",
+      "type_name_en": "Flyer",
+      "weight": "light",
+      "name": "Griffon Rider",
+      "name_en": "Griffon Rider",
+      "description_en": "A Flight of 3 Griffon Riders",
+      "squadron-size": 1,
+      "cost": 75
+    },
+    {
+      "id": "empire_hellhammer",
+      "type": "shipoftheline",
+      "type_name": "Ship of the Line",
+      "type_name_en": "Ship of the Line",
+      "weight": "heavy",
+      "name": "Hellhammer",
+      "name_en": "Hellhammer",
+      "description_en": "A Squadron of 3 Hellhammer",
+      "squadron-size": 3,
+      "cost": 150
+    },
+    {
+      "id": "empire_ironfist",
+      "type": "shipoftheline",
+      "type_name": "Ship of the Line",
+      "type_name_en": "Ship of the Line",
+      "weight": "heavy",
+      "name": "Ironfist",
+      "name_en": "Ironfist",
+      "description_en": "A Squadron of 3 Ironfist",
+      "squadron-size": 3,
+      "cost": 150
+    }
+  ],
+  "names": [
+    {
+      "id": "name1",
+      "value": [
+        "Nuln's",
+        "Altdorf's",
+        "Middenheim's",
+        "Moot's",
+        "Reikland's",
+        "Emperor's"
+      ]
+    },
+    {
+      "id": "name2",
+      "value": [
+        "Revenge",
+        "Surprise",
+        "Wrath",
+        "Mistake",
+        "Hammer",
+        "Sword",
+        "Spear"
+      ]
+    },
+    {
+      "id": "name3",
+      "value": [
+        "Karl Franz",
+        "Ghal Maraz",
+        "Runefang"
+      ]
+    },
+    {
+      "id": "name4",
+      "value": [
+        "Sea",
+        "Midnight",
+        "Night",
+        "Dawn",
+        "Dusk",
+        "Twighlight"
+      ]
+    },
+    {
+      "id": "name5",
+      "value": [
+        "Witch",
+        "Raider",
+        "Pirate",
+        "Wizard",
+        "Dragon",
+        "Sorcerer"
+      ]
+    },
+    {
+      "id": "name6",
+      "value": [
+        "Hammer of",
+        "Fist of",
+        "Sword of",
+        "Club of"
+      ]
+    },
+    {
+      "id": "name7",
+      "value": [
+        "Sigmar",
+        "Destiny",
+        "Wrath",
+        "Anger",
+        "Annihilation",
+        "Armegedon",
+        "Ulrik"
+      ]
+    },
+    {
+      "id": "name8",
+      "value": [
+        "Sir",
+        "Sir",
+        "Sir",
+        "Baron",
+        "Duke",
+        "Prince-Elector",
+        "Count",
+        "Grand Duke"
+      ]
+    },
+    {
+      "id": "name9",
+      "value": [
+        "Bernert",
+        "Wolff",
+        "Udet",
+        "Menchkhoff",
+        "Berthold",
+        "Richthofen",
+        "Voss"
+      ]
+    }
+  ],
+  "naming_rules": [
+    {
+      "id": "empire_greatship",
+      "rule": [
+        "name1 name2",
+        "name2",
+        "name3"
+      ]
+    },
+    {
+      "id": "empire_wolfship",
+      "rule": [
+        "name1 name5",
+        "name5",
+        "name4 name5"
+      ]
+    },
+    {
+      "id": "empire_wargalley",
+      "rule": [
+        "name4 name5"
+      ]
+    },
+    {
+      "id": "empire_ironfist",
+      "rule": [
+        "name6 name7"
+      ]
+    },
+    {
+      "id": "empire_hellhammer",
+      "rule": [
+        "name7",
+        "name6 name5"
+      ]
+    },
+    {
+      "id": "empire_griffonrider",
+      "rule": [
+        "name8 name9, name8 name9, name8 name9"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "category": "CREW",
+    "name": "Shield Wall",
+    "effect": "The decks of the ship are protected from assault by an impenetrable wall of shields, from behind which the defenders may launch missile attacks and hurl boiling lead and oil onto their foes. The ship gains a +2 bonus in boarding actions, but only in defence.",
+    "discard": false
+  },
+  {
+    "category": "CREW",
+    "name": "Berserkers",
+    "effect": "The ship has a contingent of berserkers aboard. These crazed individuals live only for the joy of battle and the screams of their victims as they reap a terrible harvest from the crews of enemy warships. The berserkers give you a +2 in boarding actions, and are lost as soon as you lose a boarding action.",
+    "discard": false
+  },
+  {
+    "category": "CREW",
+    "name": "War Leader",
+    "effect": "A mighty warrior of dread renown leads the boarding parties of this ship. His battle skill is legendary and his opponents are in great fear of his martial prowess. The War Leader allows you to either add +1 to your boarding dice roll, or to re-roll any one boarding dice roll. If you re-roll the dice, then this card must be discarded after use.",
+    "discard": false
+  },
+  {
+    "category": "CREW",
+    "name": "Villainous Crew",
+    "effect": "The ship carries a company of condemned convicts and cutthroats, who are always thrown into the frontline of any boarding action. The convicts give +1 to your boarding dice roll, and this card may be given up instead of losing a crew counter if you are beaten.",
+    "discard": false
+  },
+  {
+    "category": "CREW",
+    "name": "Boarding Nets",
+    "effect": "The open upper decks of the ship are protected by huge nets and chains which impede attacking troops. Attackers count -1 to their dice rolls in boarding actions.",
+    "discard": false
+  },
+  {
+    "category": "CREW",
+    "name": "Chain Grapples",
+    "effect": "When closing for boarding, the crew fire sturdy chain grapples to pull their hapless victim towards them. If the defender wins the action, and does not wish to counter-board, he can only break the grapples on a roll of a 6. If he doesn't, the attacker may continue his assault! Location: Bows.",
+    "discard": false
+  },
+  {
+    "category": "CREW",
+    "name": "Volley Fire",
+    "effect": "The ship has companies of missile troops who shoot a murderous volley in boarding actions as the enemy troops attempt to assault their vessel. Once your opponent declares that he is boarding your ship, roll a dice before he does so. On a score of 5 or 6 he loses a crew counter before the action takes place.",
+    "discard": false
+  },
+  {
+    "category": "CREW",
+    "name": "Warrior Priests",
+    "effect": "Incensed to mindless berserking fury, the warrior priests leap screaming onto the enemy ship. Roll a dice: 1=Roll a dice and add it to your opponent's boarding dice as the priests run amok, killing their own troops. 2-5=Add +2 to your boarding dice roll. 6=Roll a dice and add it to your boarding dice roll.",
+    "discard": false
+  },
+  {
+    "category": "MISC",
+    "name": "Magic Figurehead",
+    "effect": "On the prow of this vessel is a magic figurehead, in the image of the god of war. It provides a shield of protection to the vessel against the evil magicks of the enemy spellcasters. The ship gets a saving roll of 5 or 6 against any spells cast against it. Location: Prow.",
+    "discard": false
+  },
+  {
+    "category": "MISC",
+    "name": "Treachery!",
+    "effect": "Your Admiral has placed a traitor in the enemy fleet. Declare that you are going to use him and roll on this table: 1=Double Agent. Roll again and apply the result to your own flagship. 2=Poison! Enemy ship loses one random crew counter. 3=Spiked guns. Enemy ship loses one random weapon battery. 4=Arson. A fire breaks out in an area of your choice. 5=Rudder jammed. Roll a dice; the target may only move that many inches straight forward this turn. 6=Sabotage. Enemy ship takes 1 point of below the waterline damage.",
+    "discard": true
+  },
+  {
+    "category": "MISC",
+    "name": "War Banner",
+    "effect": "The war leader carries a banner depicting the many valiant actions which he has won in his glorious history. The banner inspires his soldiers to fight with religious fervour, and its loss is unthinkable. Roll a dice as you start each round of a boarding action: 1=The banner is lost! Morale is destroyed, the round of combat is automatically lost too. 2-5=Add +1 to your boarding roll this round. 6=This round of action is automatically won.",
+    "discard": true
+  },
+  {
+    "category": "MISC",
+    "name": "Rogue Captain",
+    "effect": "The captain of this Man O'War knows that to catch the enemy off guard is half the battle won. His tactics are often dangerous, but have won him a reputation as a deadly adversary. At the start of each battle phase, the ship may declare that it is joining a particular squadron for the duration of the turn, moving and firing with the squadron. He is never a straggler, however.",
+    "discard": false
+  },
+  {
+    "category": "MISC",
+    "name": "Dreaded Captain",
+    "effect": "The captain has a reputation for invincibility, having sunk many enemy ships during his long and glorious service. Enemy troops fear to board his ship, and will only attempt to grapple and board on a dice roll of 5 or 6.",
+    "discard": false
+  },
+  {
+    "category": "MISC",
+    "name": "Divine Icon of Wrath",
+    "effect": "Mounted on the prow of this ship is an ancient holy artifact, which sends gouts of burning white fire towards enemy vessels if they dare to stray too close. The icon gives the ship an extra 2 dice attack with no save modifiers, with a range of 3\" only, facing forwards. Location: Bows.",
+    "discard": false
+  },
+  {
+    "category": "MISC",
+    "name": "Ship's Surgeon",
+    "effect": "The wet rasping of the surgeon's saw is heard, as the master surgeon strives to restore the wounded to some semblance of fighting fitness. In the end phase of each turn, roll once for each crew counter currently missing from the ship: 1=Lose another crew counter to the hurried depredations of the surgeon's saw. 2-4=No effect. 5-6=Get a crew counter back.",
+    "discard": false
+  },
+  {
+    "category": "MISC",
+    "name": "Magic Standard",
+    "effect": "Flying proudly from the main mast of this great vessel is an ancient battle banner endowed with magical abilities. This venerable battle banner brings good luck to the ship throughout the battle. You may re-roll any single dice roll affecting this ship per turn. Location: Main Mast.",
+    "discard": false
+  },
+  {
+    "category": "HULL",
+    "name": "Reinforced Bulkheads",
+    "effect": "The ship has been clad in extra layers of solid timber making it very robust indeed. Count +1 to all low area saving rolls.",
+    "discard": false
+  },
+  {
+    "category": "HULL",
+    "name": "Inspired Seamanship",
+    "effect": "Judging the waves and winds perfectly, the grim faced captain of the mighty ship permits himself a wry grin as his ship executes a highly complicated and dangerous manoeuvre which stains the ship's timbers to the limits of their endurance. The ship may move twice its move rate.",
+    "discard": true
+  },
+  {
+    "category": "HULL",
+    "name": "Massive Hull",
+    "effect": "The ship is very old and has been rebuilt many times. The hull of this immense vessel is made of massive timbers which have been reinforced over the years. The ship may disregard its first below the waterline hit, discarding this card instead.",
+    "discard": false
+  },
+  {
+    "category": "HULL",
+    "name": "Streamlined Hull",
+    "effect": "This ship has been carefully maintained to ensure that the hull remains free of encrustations and other items which may slow it down in battle. The captain places great stead in speed and agility as the deciding factor in a firefight. The ship may add an extra 2\" to its move rates.",
+    "discard": false
+  },
+  {
+    "category": "HULL",
+    "name": "Firepumps",
+    "effect": "This ship has revolutionary equipment mounted in its bilges — a rudimentary beam engine driving a pump for putting out fires. It is linked up to hoses capable of directing volumes of sea water onto any fire which breaks out on the ship during the battle. In the End Phase of each turn, roll a dice for each blaze on board. On a score of 5 or 6 the blaze goes out.",
+    "discard": false
+  },
+  {
+    "category": "HULL",
+    "name": "Armour Plating",
+    "effect": "This ship has been clad in great sheets of hammered iron and bronze, which glint dully in the sunlight. The armour plating gives a +1 to all low area saving rolls.",
+    "discard": false
+  },
+  {
+    "category": "HULL",
+    "name": "Heavy Timbering",
+    "effect": "The hull of this magnificent warship is constructed from rare and much sought after timbers of great strength and resilience. This ship gains +1 to all saving rolls.",
+    "discard": true
+  },
+  {
+    "category": "HULL",
+    "name": "Streamlined Hull",
+    "effect": "This ship has been carefully maintained to ensure that the hull remains free of encrustations and other items which may slow it down in battle. The captain places great stead in speed and agility as the deciding factor in a firefight. The ship may add an extra 2\" to its movement rates.",
+    "discard": false
+  },
+  {
+    "category": "GUNNERY",
+    "name": "Long Range",
+    "effect": "The ship is equipped with experimental extended range weaponry, increasing the long range of all its guns from 9\" to 12\".",
+    "discard": false
+  },
+  {
+    "category": "GUNNERY",
+    "name": "Inspired Gunnery",
+    "effect": "Goaded to even greater efforts in the heat of battle, the gunners achieve an amazing rate of fire. Fire twice in one single round during the battle.",
+    "discard": true
+  },
+  {
+    "category": "GUNNERY",
+    "name": "Fire Strike",
+    "effect": "The ship's guncrews are skilled enough to fire red hot shot from their cannon. Once in the battle, all the cannon attacks the ship makes in one turn cause blazes if the areas hit fail their saving throws.",
+    "discard": true
+  },
+  {
+    "category": "GUNNERY",
+    "name": "Master Gunner",
+    "effect": "Due to the Master Gunner's skill and accuracy in supervising the gun crews you may re-roll any 1 shooting dice per turn.",
+    "discard": false
+  },
+  {
+    "category": "GUNNERY",
+    "name": "Crows-Nest Guns",
+    "effect": "The ship has a massive fortified crows nest. Equipped with cannon, it can deliver blistering firepower in all directions. Add 1 dice to any one cannon attack per turn.",
+    "discard": false
+  },
+  {
+    "category": "GUNNERY",
+    "name": "Bow Chasers",
+    "effect": "The ship has an extra cannon battery mounted in the bows to fire forwards. This gives a 1 dice forward cannon attack to the ship. Location: Bows.",
+    "discard": false
+  },
+  {
+    "category": "GUNNERY",
+    "name": "Heavy Cannon",
+    "effect": "The ship's batteries of guns have been replaced by huge iron siege cannon, aptly named Great Murderers for the immense damage they wreak when fired upon their foes. These great guns give a -1 to any saving roll made against them.",
+    "discard": false
+  },
+  {
+    "category": "GUNNERY",
+    "name": "Swivel Guns",
+    "effect": "The ship has additional swivel guns mounted on the aftcastle giving a single dice broadside attack to port and a starboard once per turn. Location: Aftcastle.",
+    "discard": false
+  }
+]

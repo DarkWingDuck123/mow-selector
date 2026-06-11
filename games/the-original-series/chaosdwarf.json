@@ -1,0 +1,59 @@
+{
+  "id": "chaosdwarf",
+  "style": {
+    "bgColor": "darkslategray",
+    "fgColor": "darkorange",
+    "parchmentColor": "tan",
+    "waterColor": "slategray",
+    "accentColor": "orangered"
+  },
+  "name": "Chaos Dwarf",
+  "name_de": "Chaos Dwarf",
+  "name_en": "Chaos Dwarf",
+  "name_es": "Chaos Dwarf",
+  "name_fr": "Chaos Dwarf",
+  "validation_rules": [],
+  "freebies": [],
+  "allies": [],
+  "crew": [],
+  "addons": [
+    {
+      "id": "chaosspell",
+      "weight": "negligible",
+      "name": "Chaos Spell",
+      "name_en": "Chaos Spell",
+      "type": "card",
+      "type_name": "Chaos Spell",
+      "type_name_en": "Chaos Spell",
+      "cost": "-"
+    },
+    {
+      "id": "chaosdwarf_hashutcard",
+      "weight": "negligible",
+      "name": "Hashut Chaos Reward Card",
+      "name_en": "Hashut Chaos Reward Card",
+      "type": "card",
+      "type_name": "Chaos Reward Card",
+      "type_name_en": "Chaos Reward Card",
+      "cost": "25"
+    },
+    {
+      "id": "turnsummary",
+      "weight": "negligible",
+      "name": "Turn Summary",
+      "name_en": "Turn Summary",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "blank",
+      "name": "Empty",
+      "name_en": "Empty",
+      "type": "card",
+      "cost": "0"
+    }
+  ],
+  "units": [],
+  "names": [],
+  "naming_rules": []
+}

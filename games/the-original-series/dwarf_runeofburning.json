@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "RUNE OF BURNING", "scale": 0.75},
+  "type": {"value": "HULL RUNE", "scale": 0.75},
+  "honors": {"value": "Honors: 1", "scale": 1.0},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 35,
+      "title": {"value": "DESCRIPTION", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>When ammunition is loaded into the cannon bearing this Rune it starts to smoulder. Within a few seconds it blazes white hot but the powder is magically prevented from igniting until it is necessary.</i></div>", "scale": 1.0}
+    },
+    {
+      "height": 65,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Shots from this turret will set fire to the target ship. Place a Blaze counter instead of a normal Damage marker if it causes a hit.</div>", "scale": 1.0}
+    }
+  ]
+}

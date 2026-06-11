@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "SALITHIS' HEART", "scale": 0.70},
+  "type": {"value": "CRYSTAL OF POWER", "scale": 0.65},
+  "honors": {"value": "Honors: 1", "scale": 1.0},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 35,
+      "title": {"value": "DESCRIPTION", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Salithis was the High Admiral for Bel Shanaar and was instrumental in the defeat of many Chaos raiding fleets. Salithis' Heart is a deep blue crystal that absorbs Warp energy preventing nearby Chaos Sorcerers from harnessing it.</i></div>", "scale": 1.0}
+    },
+    {
+      "height": 65,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The Crystal takes effect at the start of the Magic phase, before any cards are picked up, dice rolled or spells cast. Any Chaos Sorcerer within 9\" of the Crystal will lose one power point. If he is within 3\" he will lose three power points. Change the Sorcerer's power total immediately.</div>", "scale": 1.0}
+    }
+  ]
+}

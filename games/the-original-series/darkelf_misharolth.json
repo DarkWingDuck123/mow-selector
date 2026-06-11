@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "MISHAROLTH", "scale": 0.80},
+  "type": {"value": "TAINTED STONE", "scale": 0.75},
+  "honors": {"value": "Honors: 1", "scale": 1.0},
+  "cost": {"value": "50 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 40,
+      "title": {"value": "DESCRIPTION", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The Misharolth was kept for centuries in the deepest dungeons of a Black Ark, where the evil of the vessel slowly corrupted and changed this sickly green egg-shaped Stone. It is now eternally intertwined with the vessels of the Dark Elves.</i></div>", "scale": 1.0}
+    },
+    {
+      "height": 60,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Restriction: Black Ark Only</b><br><br>While retained as a source of magical power, Misharolth emits an ear-piercing shriek as if it felt any damage the Black Ark took. The power of the Misharolth may be invoked once per game to repair one waterline hit that would sink the Black Ark. This can be done at any time.</div>", "scale": 1.0}
+    }
+  ]
+}

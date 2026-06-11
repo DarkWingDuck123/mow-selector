@@ -1,0 +1,586 @@
+{
+  "weight": "negligible",
+  "name": {
+    "value": "",
+    "scale": 1.0
+  },
+  "type": {
+    "value": "CHAOS SPELL",
+    "scale": 0.65
+  },
+  "honors": {
+    "value": "",
+    "scale": 1.0
+  },
+  "cost": {
+    "value": "25 pts",
+    "scale": 1.0
+  },
+  "notes": [
+    {
+      "height": 30,
+      "title": {
+        "value": "",
+        "scale": 1.0
+      },
+      "note": {
+        "value": "",
+        "scale": 1.0
+      }
+    },
+    {
+      "height": 15,
+      "title": {
+        "value": "",
+        "scale": 1.0
+      },
+      "note": {
+        "value": "",
+        "scale": 1.0
+      }
+    },
+    {
+      "height": 55,
+      "title": {
+        "value": "",
+        "scale": 1.0
+      },
+      "note": {
+        "value": "",
+        "scale": 1.0
+      }
+    }
+  ],
+  "randomizable": true,
+  "random": [
+    {
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "ABJECT TERROR",
+        "scale": 0.8
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>As the Chaos Fleet advances, icy fingers of terror reach out to grasp the hearts of those who are foolish enough to stand in its path.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">9+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> The enemy fleet<br><br>This turn the enemy fleet cannot do anything except defend itself against boarding actions. They may not move, fire, or make any special attacks at all.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "VORTEX OF CHAOS",
+        "scale": 0.8
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The Chaos Vortex is a spitting ball of energy that devours everything it touches. Once unleashed, the Vortex of Chaos moves at the same speed as the Chaos Fleet and the enemy fleet equally.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">7+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> The whole seascape<br><br>State the direction the Vortex will move initially, then roll a D3 and move the Vortex of Chaos template that many inches from the Chaos Sorcerer's ship. After the initial move, roll a dice at the end of each Magic Phase: 1=the Vortex dissipates; remove it; 2=the Vortex remains still; 3=the Vortex moves north D6\"; 4=the Vortex moves south D6\"; 5=the Vortex moves east D6\". Any ship touched by the template takes 4 dice hits as cannonfire and loses 1 crew counter.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "HOWLING INSANITY",
+        "scale": 0.8
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The whirling forces of Chaos stab out towards the enemy fleet. An area of the seascape turns pitch-black as a tangible shadow of congealed darkness descends.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">7+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>Place the Howling Insanity template over the target ship; any ship completely or wholly covered by it immediately opens fire with all its weapons. Resolve damage for any ships hit as usual. Ships inside the template may not do anything but fire their weapons this turn, and may not be attacked (except by other ships within the template's area).</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "PLAGUE SEA",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The sea takes on a bilious green hue, coagulating to the texture of cold blood, and the wind is stifled to a sluggish breeze by the fetid vapours which rise and form a gaping maw that closes around the vessel, deadening the air.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">8+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> The whole seascape<br><br>The only vessels that can move or manoeuvre upon this outlandish ocean are the ships of Chaos, who seem to draw power and sustenance from the sweetly cloying waves. All ships except Chaos vessels are totally becalmed, and are unable to move this turn.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "WIND OF CHAOS",
+        "scale": 0.8
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>A screaming wind is summoned up by the Chaos Sorcerer. It circles above the fleet in huge, broiling purple clouds for a few moments, gaining in intensity before screaming down upon the enemy fleet, scattering the enemy ships like feathers in the wind.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">7+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> The enemy fleet<br><br>Place the Wind of Chaos template over the enemy fleet, with the centre of the storm over the target ship. Any ship caught under the template, even if only partially, is blown D6\" in a direction of the Chaos Player's choosing; pick the direction and roll the scatter distance individually for each ship.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "PLAGUEFLIES",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>A writhing cloud of millions of noxious plagueflies rally towards the enemy fleet. The thick, treacly layer of flies descends on a single vessel, their weight causing the ship to settle in the water. With a terrible droning noise, the flies crawl into the noses and mouths of the ship's crew, rapidly killing those that cannot escape.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">7+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>Roll a dice for each crew counter on the target ship: on a score of 4, 5 or 6 it is removed.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "CRAWLING FLESH",
+        "scale": 0.8
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The sea around the target ship begins to solidify, taking on the form of heaving, bubbling flesh which grasps its hull in a vice-like embrace. The ship can make no headway through this sea of muscle and skin, and is becalmed.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">5+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>Place one of the Crawling Flesh counters next to the target. The ship is trapped until the spell is either dispelled or dissipates naturally; at the start of each Magic Phase roll a dice — the spell dissipates on a score of 1, 2 or 3. The spell is also dissipated if the Chaos Sorcerer dies.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "CARNAGE",
+        "scale": 1.0
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>As the raw energies of the warp ripple and crackle in the air, a great roar goes up from the Plague Fleet. Enraged by the Dark Lords of Battle, the crews of the Chaos ships descend upon their foes.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">7+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any Chaos ship making a boarding action<br><br>Any Chaos ship making a boarding action this turn gains a +2 modifier to its dice rolls.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "MAW OF DOOM",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The sea boils and turns black around the target ship, violently shaking it from side to side. The dark waves rise and form a gaping maw that closes around the vessel, submerging it completely.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">8+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>Roll on the following table: 1-2=Roll 1 dice; the target takes that many hits, save as usual; 3=Lose 1 crew counter, plus roll 1 dice; the target takes that many hits, save as usual; 5-6=The target takes 2 hits and 1 point of below the waterline damage with no save, and loses 1 crew counter.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "VISION OF DESPAIR",
+        "scale": 0.7
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The enemy crew's battle-lust is replaced by an all-pervading feeling of doom.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">8+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>Nominate a target and roll a dice. If the score is lower than or equal to the number of crew counters on the target ship, the spell has no discernible effect. If the score is higher, the ship gives up all hope: it may do nothing this turn and may not defend itself against boarding actions. If boarded this turn, the crew simply surrender.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "DEATHSURGE",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>A black wave towers over the Chaos Fleet, inexorably rolling towards them, but the hideous cackling and laughter from the warped fleet belies any sense of impending doom. As the wave strikes, it lifts up the Chaos Fleet and hurls it towards its opponents.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">6+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> The Chaos Fleet<br><br>All the Chaos Ships on the seascape gain an extra D6\" to movement as they are carried along by the mystical wave; roll a single dice to find the extra distance the whole Fleet may move this turn.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "DEATH VENOM",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Cracking gobbets of fiery acid hurtle towards the enemy, flashing flesh to wood and bones to timber.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">5+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any target (line of sight not required)<br><br>Death Venom may be fired from the Chaos Sorcerer's Tower as a 1 dice attack with a range of 2 dice inches, or as a 4 dice attack with a range of 1 dice inches. Roll an attack for each gobbet; areas hit have a -1 save modifier. Any dice which scores a 1 to hit also maims the Sorcerer — remove one crew counter.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

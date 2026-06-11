@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "RUNES OF FORTUNE", "scale": 0.75},
+  "type": {"value": "HULL RUNE", "scale": 0.75},
+  "honors": {"value": "Honors: 0", "scale": 1.0},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 35,
+      "title": {"value": "DESCRIPTION", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Shot marked with this magical sigil have a mind of their own. They growl and snarl as they are loaded and can change their course when fired at the enemy.</i></div>", "scale": 1.0}
+    },
+    {
+      "height": 65,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">When you fire this ammunition you may add or subtract one from the to hit roll, making it more likely to hit an already damaged location. A roll of one is still a miss.<br><br><b>Discard after use.</b></div>", "scale": 1.0}
+    }
+  ]
+}

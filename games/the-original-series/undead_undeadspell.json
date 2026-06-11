@@ -1,0 +1,298 @@
+{
+  "weight": "negligible",
+  "name": {
+    "value": "",
+    "scale": 1.0
+  },
+  "type": {
+    "value": "UNDEAD SPELL",
+    "scale": 0.65
+  },
+  "honors": {
+    "value": "",
+    "scale": 1.0
+  },
+  "cost": {
+    "value": "25 pts",
+    "scale": 1.0
+  },
+  "notes": [
+    {
+      "height": 30,
+      "title": {"value": "", "scale": 1.0},
+      "note": {"value": "", "scale": 1.0}
+    },
+    {
+      "height": 15,
+      "title": {"value": "", "scale": 1.0},
+      "note": {"value": "", "scale": 1.0}
+    },
+    {
+      "height": 55,
+      "title": {"value": "", "scale": 1.0},
+      "note": {"value": "", "scale": 1.0}
+    }
+  ],
+  "randomizable": true,
+  "random": [
+    {
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "", "scale": 1.0},
+          "note": {"value": "", "scale": 1.0}
+        },
+        {
+          "height": 15,
+          "title": {"value": "", "scale": 1.0},
+          "note": {"value": "", "scale": 1.0}
+        },
+        {
+          "height": 55,
+          "title": {"value": "", "scale": 1.0},
+          "note": {"value": "", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "DEATHSHIP", "scale": 0.9},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Glowing tendrils of mist cover a friendly ship and produce an illusion around the ship which makes the ship even more frightening than it already is. The stench of death surrounds the ship and enemy sailors refuse to go near it.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>", "scale": 1.0}
+        },
+        {
+          "height": 55,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any single friendly ship<br><br>The ship may not be attacked this turn in any way.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "CURSE OF YEARS", "scale": 0.8},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The Necromancer calls upon the most powerful magic he knows and hurls an ancient curse at an enemy ship. The ship's crew are aged and die due to this hideous curse.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">6+</div>", "scale": 1.0}
+        },
+        {
+          "height": 55,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any single enemy ship<br><br>Roll a D6 for each crew counter on the ship. On a 5 or 6 the crew are aged and die. If there are any crew left alive after the roll, in the next magic phase roll again but this time subtract -1 from the roll required to kill them, by a maximum of 2-6. This spell may be dispelled in the same way as it would normally be done (see main text).</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "LEG BONE CONNECTED TO THE KNEE BONE", "scale": 0.6},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The Necromancer reaches out and knits the two damaged bones together to heal a ship of some damage it has suffered. The damaged arm works as if new.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>", "scale": 1.0}
+        },
+        {
+          "height": 55,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any friendly ship which has damaged locations<br><br>Completely repairs two locations which have been damaged.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "HORDE OF THE GRAVE", "scale": 0.7},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The Necromancer utters an age old incantation and proceeds to summon the horde of the grave. The horde will arrive clattering and desperate to get into action.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">6+</div>", "scale": 1.0}
+        },
+        {
+          "height": 55,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any single friendly ship<br><br>You may add D6 + 2 Skeletons to any ship in your fleet provided it does not take them over the crew limit of the ship. Any crew which cannot fit on a ship are lost in the void.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "SPIRIT WRAITH", "scale": 0.8},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>In a shower of magic a Spirit Wraith appears and rushes across the sky towards the enemy. The Wraith drops on to the deck of the ship, licks up some crew and departs again to the world of night.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>", "scale": 1.0}
+        },
+        {
+          "height": 55,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>The Spirit Wraith carries away 1 crew from an enemy ship.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "LEGION OF THE DAMNED", "scale": 0.7},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>A dark void rises behind the Undead fleet and riding upon the shadows are the legions of the damned who land upon the deck of an Undead ship.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">6+</div>", "scale": 1.0}
+        },
+        {
+          "height": 55,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any single friendly ship<br><br>The crew on a ship of your choice are doubled this turn only. Next turn they will be back to the normal amount.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "RAISE THE LOST", "scale": 0.8},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The Necromancer fires black beams of magic from his hands into the sea and brings a recently sunken ship to the surface for a short time to do his bidding.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">5+</div>", "scale": 1.0}
+        },
+        {
+          "height": 55,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any ship that has sunk, provided the wreck counter is still there<br><br>Bring the ship up to 3\" from the wreck counter. It may move and fire, board if it can, under our control. The ship sinks again during the next End Phase, but does not take damage for the duration. No prior damage counts as having been repaired for the duration. Any special bonus the crew had lost are restored and it will count as 2 Skeleton counters.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "DAVY JONES' LOCKER", "scale": 0.7},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The Necromancer stretches his senses to a nearby shipwreck and touches each man who died there. The Skeletons rise up from the deep and attack an enemy vessel!</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">5+</div>", "scale": 1.0}
+        },
+        {
+          "height": 55,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>Fight a boarding action immediately; you will have 2 Skeletons and no grapshot is allowed. After the boarding action is finished the magic sustaining the skeletons is lost and they fall back into the sea. This is a fight to the death with no escape for either side.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "RITE OF SUMMONING", "scale": 0.7},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Twisting tendrils of black smoke swirl around the bodies of the fallen and restore them to life.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">3+</div>", "scale": 1.0}
+        },
+        {
+          "height": 55,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any friendly ship which has lost crew<br><br>Roll a D6 for the ship which has lost crew and see what is summoned in their place: 1-2=2 Zombies; 3-4=2 Skeletons; 5-6=1 Wight.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "VANHEL'S DANCE MACABRE", "scale": 0.6},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The power of the grave screams across the sea and strikes every Undead ship, imbuing the crew with the power of darkness. The strength of this magic drives them into a macabre dance of destruction.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>", "scale": 1.0}
+        },
+        {
+          "height": 55,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> The whole Undead fleet<br><br>All Undead ships may move an extra 2\" this turn.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "PLAGUE OF SKULLS", "scale": 0.8},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The Necromancer picks a skull out of a big black bag and hurls it at an enemy ship. The magic power makes the skull multiply a hundred times, and the barrage of skulls suddenly take on life and fall on the enemy crew, biting at them as they fall.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>", "scale": 1.0}
+        },
+        {
+          "height": 55,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any single enemy ship<br><br>The ship may not fire this turn and also on a D6 roll of 4 or more they will lose one crew counter to the biting skulls.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "DEATH BOLT", "scale": 0.9},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard swallows some ground bone powder and spits it out as the power of the Necromancer, which strikes a ship close by.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>", "scale": 1.0}
+        },
+        {
+          "height": 55,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any single enemy ship within 18\" of the Necromancer<br><br>The Death Bolt inflicts 3 random hits to low locations with a -1 saving throw modifier.</div>", "scale": 1.0}
+        }
+      ]
+    }
+  ]
+}

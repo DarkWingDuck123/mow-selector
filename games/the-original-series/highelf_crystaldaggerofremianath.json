@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "CRYSTAL DAGGER OF REMIANATH", "scale": 0.45},
+  "type": {"value": "CRYSTAL OF POWER", "scale": 0.65},
+  "honors": {"value": "Honors: 1", "scale": 1.0},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 40,
+      "title": {"value": "DESCRIPTION", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The power that Mistellia placed within this white, two foot long Crystal Dagger gave Remianath mighty powers in melee combat. It has a mind of its own and cuts through boarders and defenders in a furious bloodlust.</i></div>", "scale": 1.0}
+    },
+    {
+      "height": 60,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The Dagger may only be bought for an Admiral's vessel and permits the Admiral to add +3 to the boarding total instead of +1. If the Admiral changes ship the Dagger goes with him.</div>", "scale": 1.0}
+    }
+  ]
+}

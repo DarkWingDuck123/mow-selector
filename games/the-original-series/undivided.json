@@ -1,0 +1,104 @@
+{
+  "id": "undivided",
+  "style": {
+    "bgColor": "black",
+    "fgColor": "gold",
+    "parchmentColor": "darkgray",
+    "waterColor": "dimgray",
+    "accentColor": "silver"
+  },
+
+  "name": "Chaos Undivided",
+  "name_de": "Chaos Undivided",
+  "name_en": "Chaos Undivided",
+  "name_es": "Chaos Undivided",
+  "name_fr": "Chaos Undivided",
+
+  "validation_rules": [],
+  "freebies": [],
+  "allies": [],
+  "crew": [],
+
+  "addons": [
+    {
+      "id": "chaosspell",
+      "weight": "negligible",
+      "name": "Chaos Spell",
+      "name_en": "Chaos Spell",
+      "type": "card",
+      "type_name": "Chaos Spell",
+      "type_name_en": "Chaos Spell",
+      "cost": "-"
+    },
+    {
+      "id": "khornecard",
+      "weight": "negligible",
+      "name": "Khorne Chaos Reward Card",
+      "name_en": "Khorne Chaos Reward Card",
+      "type": "card",
+      "type_name": "Chaos Reward Card",
+      "type_name_en": "Chaos Reward Card",
+      "cost": "25"
+    },
+    {
+      "id": "nurglecard",
+      "weight": "negligible",
+      "name": "Nurgle Chaos Reward Card",
+      "name_en": "Nurgle Chaos Reward Card",
+      "type": "card",
+      "type_name": "Chaos Reward Card",
+      "type_name_en": "Chaos Reward Card",
+      "cost": "25"
+    },
+    {
+      "id": "slaaneshcard",
+      "weight": "negligible",
+      "name": "Slaanesh Chaos Reward Card",
+      "name_en": "Slaanesh Chaos Reward Card",
+      "type": "card",
+      "type_name": "Chaos Reward Card",
+      "type_name_en": "Chaos Reward Card",
+      "cost": "25"
+    },
+    {
+      "id": "tzeentchcard",
+      "weight": "negligible",
+      "name": "Tzeentch Chaos Reward Card",
+      "name_en": "Tzeentch Chaos Reward Card",
+      "type": "card",
+      "type_name": "Chaos Reward Card",
+      "type_name_en": "Chaos Reward Card",
+      "cost": "25"
+    },
+    {
+      "id": "turnsummary",
+      "weight": "negligible",
+      "name": "Turn Summary",
+      "name_en": "Turn Summary",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "blank",
+      "name": "Empty",
+      "name_en": "Empty",
+      "type": "card",
+      "cost": "0"
+    }
+  ],
+
+  "units": [
+    {
+      "id": "deathgalley",
+      "type": "shipoftheline",
+      "weight": "heavy",
+      "name_en": "Death Galley",
+      "description_en": "A Squadron of 3 Death Galley",
+      "squadron-size": 3,
+      "cost": 75
+    }
+  ],
+
+  "names": [],
+  "naming_rules": []
+}

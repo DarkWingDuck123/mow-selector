@@ -1,0 +1,156 @@
+{
+  "weight": "negligible",
+  "name": {"value": "", "scale": 1.0},
+  "type": {"value": "SLAANESH REWARD", "scale": 0.60},
+  "honors": {"value": "", "scale": 1.0},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 35,
+      "title": {"value": "", "scale": 1.0},
+      "note": {"value": "", "scale": 1.0}
+    },
+    {
+      "height": 65,
+      "title": {"value": "", "scale": 1.0},
+      "note": {"value": "", "scale": 1.0}
+    }
+  ],
+  "randomizable": true,
+  "random": [
+    {
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "", "scale": 1.0},
+          "note": {"value": "", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "", "scale": 1.0},
+          "note": {"value": "", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "LAUGHTER OF THE DAMNED", "scale": 0.50},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>As this ship glides towards its prey, the hysterical, yet strangely entrancing laughter of its crewmen echoes across the water.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The Laughter of the Damned affects all ships within 3\" of this vessel at the start of the turn. Each must make a saving roll of 3, 4, 5 or 6 or be enthralled by the sound. If affected, a ship may do nothing but defend itself this turn; place a 'no movement' and a 'no firing' counter next to the vessel.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "LURE OF SLAANESH", "scale": 0.65},
+      "notes": [
+        {
+          "height": 25,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The warping powers of this ship sow confusion in the minds of warriors, turning friend against friend.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 75,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The Lure of Slaanesh has a range of 12\" and is played on a single enemy. Roll a dice for each crew counter on the target: any that score 1, 2 or 3 switch sides. Fight a single boarding action between the two sides. At the end of the boarding action, sanity is restored.<br><br><b>Discard after use.</b></div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "EMBRACE OF DOOM", "scale": 0.70},
+      "notes": [
+        {
+          "height": 25,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This ship pulses and quivers with a foul life of its own. During a boarding action, the ship attacks the enemy vessel.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 75,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">At the start of each round the ships remain engaged, roll a dice: 1-3=No damage. 4=A crew counter is plucked off the enemy ship and killed. 5=A mass of quivering flesh-like gunge inflicts 1 point of damage to a low area of the enemy ship. 6=A grasping pseudopod inflicts one below the waterline hit on the enemy.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "HYPNOTIC BEAUTY", "scale": 0.65},
+      "notes": [
+        {
+          "height": 40,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This ship appears differently to everyone who gazes upon it, but all see it as stunningly beautiful in one way or another. Some observers drop their weapons and stare dumbfounded, while others hide their heads in their hands, unable to look.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 60,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Any time this ship is engaged in a boarding action, its opponent is affected by this hypnotic appearance and suffers a -1 to its boarding action dice rolls.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "WHISPERING DEATH", "scale": 0.65},
+      "notes": [
+        {
+          "height": 25,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>An eerie, yet alluring whispering emanates from this ship, reaching out across the water to ensnare unwitting sailors.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 75,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The Whispering Death has a range of 12\", and attacks a single enemy ship. The chosen target must roll a dice; on a score of 1, 2, 3, 4 or 5 it will immediately attack the nearest friendly ship, firing all the guns it can bring to bear. The ship will fight to the last man if necessary. At the end of the boarding action, the ship may act normally.<br><br><b>Discard after use.</b></div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "INCENSE OF DESPAIR", "scale": 0.62},
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Mounted on the deck of this ship are huge copper and gold incense burners, tended by warped acolytes of Slaanesh. Noxious fumes build up within the swinging burners and are then released periodically as great gouts of sickly, cloying smoke that engulf the ships.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The incense has a range of 8\", uses the normal firing template, and has a 360 degree arc of fire. Every ship falling under the template, even partially, suffers a 1 dice attack with no save, as its own crew hack and slash at the deck and rigging.<br><br><b>Discard after use.</b></div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "DEAFENING NOISE", "scale": 0.65},
+      "notes": [
+        {
+          "height": 40,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>A deafening cacophony of clashing sounds can be heard from the ship. Sometimes harmonic melodies gain superiority, only to be quashed by atonal rumblings in the everchanging morass of sound. Listeners are pounded by the relentless echoes until, as the ear-splitting row reaches its crescendo, their eardrums burst and heads explode.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 60,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">When this ship takes part in a boarding action, roll a dice for each of the enemy vessel's crew counters; on a roll of 6 the crew's heads explode and the counter is removed.<br><br><b>Discard after use.</b></div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "BLINDING COLOURS", "scale": 0.65},
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This ship is painted in a blinding pattern of magical colours that shift and blend as the vessel moves. This masks the actual shape of the ship, making it a difficult target to shoot.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "SHIP ABILITY", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Any ship wishing to fire at this vessel must roll a dice; on a score of 1 or 2, the enemy gunners are confused and miss completely, otherwise the ship may be shot at as normal.</div>", "scale": 1.0}
+        }
+      ]
+    }
+  ]
+}

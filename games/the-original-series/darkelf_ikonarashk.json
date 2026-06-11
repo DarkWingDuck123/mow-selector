@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "IKONARASHK", "scale": 0.80},
+  "type": {"value": "TAINTED STONE", "scale": 0.75},
+  "honors": {"value": "Honors: 2", "scale": 1.0},
+  "cost": {"value": "75 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 40,
+      "title": {"value": "DESCRIPTION", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Ikonarashk is the name given by the Dark Elves to this deep purple coloured Stone. When the correct chants are spoken over Ikonarashk it allows a Beast-Lord to communicate with the mind of a Sea Monster.</i></div>", "scale": 1.0}
+    },
+    {
+      "height": 60,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Restriction: Beast-Lord Only</b><br><br>Ikonarashk allows a Beast-Lord to take control of a Dark Elf Sea Monster that has had its crew destroyed. The Monster does not dive to the bottom as normal, but instead continues on the surface as if it had crew. If the Beast-Lord controlling the Monster is killed or captured it is removed from play as normal. Ikonarashk allows you to control one monster at a time.</div>", "scale": 1.0}
+    }
+  ]
+}

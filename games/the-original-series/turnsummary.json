@@ -1,0 +1,14 @@
+{
+  "weight": "negligible",
+  "name": {"value": "TURN SUMMARY", "scale": 1.0},
+  "type": {"value": "RULES", "scale": 1.0},
+  "honors": {"value": "", "scale": 1.0},
+  "cost": {"value": "", "scale": 1.0},
+  "notes": [
+    {
+      "height": 100,
+      "title": {"value": "SUMMARY", "scale": 1.0},
+      "note": {"value": "<div style='font-size:18px;;padding:4px 8px;text-align:left;'>1. do stuff<br>2. do more stuff<br>3. do even more stuff<br>4. end phase</div>", "scale": 1.0}
+    }
+  ]
+}

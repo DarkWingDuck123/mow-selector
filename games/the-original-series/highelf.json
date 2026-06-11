@@ -1,0 +1,426 @@
+{
+  "id": "highelf",
+  "style": {
+    "bgColor": "white",
+    "fgColor": "navy",
+    "parchmentColor": "ivory",
+    "waterColor": "lightblue",
+    "accentColor": "gold"
+  },
+  "name": "High Elf",
+  "name_en": "High Elf",
+  "name_de": "High Elf",
+  "name_es": "High Elf",
+  "name_fr": "High Elf",
+  "validation_rules": [
+    {
+      "rule": "Max 1 Dragonship per 1 Eagleship"
+    },
+    {
+      "rule": "Max 2 Hawkship per 1 Man O'War"
+    },
+    {
+      "rule": "Max 1 War Eagle per 1 Ship of the Line"
+    },
+    {
+      "rule": "Max 1 Dragon Rider per 1 Ship of the Line"
+    },
+    {
+      "rule": "Min 1 Dragonship"
+    },
+    {
+      "rule": "Min 1 Eagleship"
+    },
+    {
+      "rule": "Min 1 Hawkship"
+    },
+    {
+      "rule": "Max 1 Wizard"
+    },
+    {
+      "rule": "Max 33% Allies"
+    },
+    {
+      "rule": "Max 0% Non-Allies"
+    },
+    {
+      "rule": "Max 1 Sea Monster per 1 Ship of the Line"
+    },
+    {
+      "rule": "Max 1 Anti-Flyer per 1 Man O'War"
+    },
+    {
+      "rule": "Max 1 Stone of Anurell"
+    },
+    {
+      "rule": "Max 1 Orb of Paerennir"
+    },
+    {
+      "rule": "Max 1 Damned Sphere of Caltahari"
+    },
+    {
+      "rule": "Max 1 Delianiath's Arch"
+    },
+    {
+      "rule": "Max 1 Crystal Dagger of Remianath"
+    },
+    {
+      "rule": "Max 1 Salithis' Heart"
+    }
+  ],
+  "freebies": [
+    {
+      "free": "1 Admiral"
+    },
+    {
+      "free": "1 Man O'War Card"
+    }
+  ],
+  "allies": [
+    "empire",
+    "brettonia"
+  ],
+  "crew": [
+    {
+      "id": "admiral",
+      "name": "Admiral",
+      "name_en": "Admiral",
+      "type_name": "Admiral",
+      "type_name_en": "Admiral",
+      "description": "(A) +1 CC, May cling to wreckage",
+      "description_en": "(A) +1 CC, May cling to wreckage",
+      "type": "crew",
+      "cost": "-"
+    },
+    {
+      "id": "wizard1",
+      "name": "Wizard Champion",
+      "name_en": "Wizard Champion",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, May cling to wreckage",
+      "description_en": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, May cling to wreckage",
+      "type": "crew",
+      "cost": "50"
+    },
+    {
+      "id": "wizard2",
+      "name": "High Wizard Champion",
+      "name_en": "High Wizard Champion",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, May cling to wreckage",
+      "description_en": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, May cling to wreckage",
+      "type": "crew",
+      "cost": "75"
+    },
+    {
+      "id": "wizard3",
+      "name": "Master Wizard",
+      "name_en": "Master Wizard",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, May cling to wreckage",
+      "description_en": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, May cling to wreckage",
+      "type": "crew",
+      "cost": "100"
+    },
+    {
+      "id": "wizard4",
+      "name": "High Master Wizard",
+      "name_en": "High Master Wizard",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, May cling to wreckage",
+      "description_en": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, May cling to wreckage",
+      "type": "crew",
+      "cost": "125"
+    },
+    {
+      "id": "wizard5",
+      "name": "Wizard Lord",
+      "name_en": "Wizard Lord",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, May cling to wreckage",
+      "description_en": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, May cling to wreckage",
+      "type": "crew",
+      "cost": "150"
+    },
+    {
+      "id": "wizard6",
+      "name": "High Wizard Lord",
+      "name_en": "High Wizard Lord",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, May cling to wreckage",
+      "description_en": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, May cling to wreckage",
+      "type": "crew",
+      "cost": "175"
+    },
+    {
+      "id": "wizard7",
+      "name": "Grand Wizard Lord",
+      "name_en": "Grand Wizard Lord",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, May cling to wreckage",
+      "description_en": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> May reroll any color of spell failed to cast or dispell<br> Remove with last crew, May cling to wreckage",
+      "type": "crew",
+      "cost": "200"
+    },
+    {
+      "id": "mage1",
+      "name": "Mage",
+      "name_en": "Mage",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(M) 2 Cards, +1 Honor, +0 CC, 1d3+1 Power per Turn, 5 Power Max, Dispel Cost 3, Remove with last crew, May cling to wreckage",
+      "description_en": "(M) 2 Cards, +1 Honor, +0 CC, 1d3+1 Power per Turn, 5 Power Max, Dispel Cost 3, Remove with last crew, May cling to wreckage",
+      "type": "crew",
+      "cost": "50"
+    },
+    {
+      "id": "mage2",
+      "name": "Mage Master",
+      "name_en": "Mage Master",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(G) 3 Cards, +1 Honor, +0 CC, 2d3 Power per Turn, 7 Power Max, Dispel Cost 2, Remove with last crew, May cling to wreckage",
+      "description_en": "(G) 3 Cards, +1 Honor, +0 CC, 2d3 Power per Turn, 7 Power Max, Dispel Cost 2, Remove with last crew, May cling to wreckage",
+      "type": "crew",
+      "cost": "75"
+    },
+    {
+      "id": "mage3",
+      "name": "Mage Lord",
+      "name_en": "Mage Lord",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(L) 4 Cards, +2 Honor, +0 CC, 1d6+1 Power per Turn, 9 Power Max, Dispel Cost 2, Remove with last crew, May cling to wreckage",
+      "description_en": "(L) 4 Cards, +2 Honor, +0 CC, 1d6+1 Power per Turn, 9 Power Max, Dispel Cost 2, Remove with last crew, May cling to wreckage",
+      "type": "crew",
+      "cost": "100"
+    },
+    {
+      "id": "mage4",
+      "name": "High Mage",
+      "name_en": "High Mage",
+      "type_name": "Wizard",
+      "type_name_en": "Wizard",
+      "description": "(H) 6 Cards, +2 Honor, +0 CC, 1d6+2 Power per Turn, 11 Power Max, Dispel Cost 1, Remove with last crew, May cling to wreckage",
+      "description_en": "(H) 6 Cards, +2 Honor, +0 CC, 1d6+2 Power per Turn, 11 Power Max, Dispel Cost 1, Remove with last crew, May cling to wreckage",
+      "type": "crew",
+      "cost": "150"
+    }
+  ],
+  "addons": [
+    {
+      "id": "manowarcard",
+      "weight": "negligible",
+      "name": "Man O'War Card",
+      "name_en": "Man O'War Card",
+      "type": "card",
+      "type_name": "Man O'War Card",
+      "cost": "25"
+    },
+    {
+      "id": "highelf_boltthrower",
+      "weight": "negligible",
+      "name": "Bolt Thrower",
+      "name_en": "Bolt Thrower",
+      "type": "card",
+      "type_name": "Anti-Flyer",
+      "cost": "25"
+    },
+    {
+      "id": "crewcard",
+      "weight": "negligible",
+      "name": "Crew Card",
+      "name_en": "Crew Card",
+      "type": "crew_card",
+      "type_name": "",
+      "type_name_en": "",
+      "cost": "0"
+    },
+    {
+      "id": "turnsummary",
+      "weight": "negligible",
+      "name": "Turn Summary",
+      "name_en": "Turn Summary",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "highelf_specialrules",
+      "weight": "negligible",
+      "name": "Special Rules - High Elf",
+      "name_en": "Special Rules - High Elf",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "blank",
+      "name": "Empty",
+      "name_en": "Empty",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "highelf_highspell",
+      "weight": "negligible",
+      "name": "High Spell",
+      "name_en": "High Spell",
+      "type": "card",
+      "type_name": "High Spell",
+      "type_name_en": "High Spell",
+      "cost": "0"
+    },
+    {
+      "id": "colorspell",
+      "weight": "negligible",
+      "name": "Color Spell",
+      "name_en": "Color Spell",
+      "type": "card",
+      "type_name": "Color Spell",
+      "type_name_en": "Color Spell",
+      "cost": "0"
+    },
+    {
+      "id": "highelf_stoneofanurell",
+      "weight": "negligible",
+      "name": "Stone of Anurell",
+      "name_en": "Stone of Anurell",
+      "type": "card",
+      "type_name": "Crystal of Power",
+      "type_name_en": "Crystal of Power",
+      "cost": "50"
+    },
+    {
+      "id": "highelf_orbofpaerennir",
+      "weight": "negligible",
+      "name": "Orb of Paerennir",
+      "name_en": "Orb of Paerennir",
+      "type": "card",
+      "type_name": "Crystal of Power",
+      "type_name_en": "Crystal of Power",
+      "cost": "50"
+    },
+    {
+      "id": "highelf_damnedsphereofcaltahari",
+      "weight": "negligible",
+      "name": "Damned Sphere of Caltahari",
+      "name_en": "Damned Sphere of Caltahari",
+      "type": "card",
+      "type_name": "Crystal of Power",
+      "type_name_en": "Crystal of Power",
+      "cost": "50"
+    },
+    {
+      "id": "highelf_delianiathsarch",
+      "weight": "negligible",
+      "name": "Delianiath's Arch",
+      "name_en": "Delianiath's Arch",
+      "type": "card",
+      "type_name": "Crystal of Power",
+      "type_name_en": "Crystal of Power",
+      "cost": "25"
+    },
+    {
+      "id": "highelf_crystaldaggerofremianath",
+      "weight": "negligible",
+      "name": "Crystal Dagger of Remianath",
+      "name_en": "Crystal Dagger of Remianath",
+      "type": "card",
+      "type_name": "Crystal of Power",
+      "type_name_en": "Crystal of Power",
+      "cost": "25"
+    },
+    {
+      "id": "highelf_salithisheart",
+      "weight": "negligible",
+      "name": "Salithis' Heart",
+      "name_en": "Salithis' Heart",
+      "type": "card",
+      "type_name": "Crystal of Power",
+      "type_name_en": "Crystal of Power",
+      "cost": "25"
+    },
+    {
+      "id": "blank",
+      "name": "Empty",
+      "name_en": "Empty",
+      "type": "card",
+      "cost": "0"
+    }
+  ],
+  "units": [
+    {
+      "id": "highelf_dragonship",
+      "type": "manowar",
+      "type_name": "Man O'War",
+      "type_name_en": "Man O'War",
+      "weight": "heavy",
+      "name": "Dragonship",
+      "name_en": "Dragonship",
+      "description": "A Dragonship",
+      "description_en": "A Dragonship",
+      "squadron-size": 1,
+      "cost": 150
+    },
+    {
+      "id": "highelf_eagleship",
+      "type": "manowar",
+      "type_name": "Man O'War",
+      "type_name_en": "Man O'War",
+      "weight": "heavy",
+      "name": "Eagleship",
+      "name_en": "Eagleship",
+      "description": "An Eagleship",
+      "description_en": "An Eagleship",
+      "squadron-size": 1,
+      "cost": 150
+    },
+    {
+      "id": "highelf_hawkship",
+      "type": "shipoftheline",
+      "type_name": "Ship of the Line",
+      "type_name_en": "Ship of the Line",
+      "weight": "heavy",
+      "name": "Hawkship",
+      "name_en": "Hawkship",
+      "description": "A Squadron of 3 Hawkship",
+      "description_en": "A Squadron of 3 Hawkship",
+      "squadron-size": 3,
+      "cost": 150
+    },
+    {
+      "id": "highelf_wareagle",
+      "type": "flyer",
+      "type_name": "Flyer",
+      "type_name_en": "Flyer",
+      "weight": "light",
+      "name": "War Eagle Rider",
+      "name_en": "War Eagle Rider",
+      "description": "A Flight of 3 War Eagle",
+      "description_en": "A Flight of 3 War Eagle",
+      "squadron-size": 1,
+      "cost": 75
+    },
+    {
+      "id": "highelf_dragonrider",
+      "type": "flyer",
+      "type_name": "Flyer",
+      "type_name_en": "Flyer",
+      "weight": "light",
+      "name": "Dragon Rider",
+      "name_en": "Dragon Rider",
+      "description": "A Dragon Rider",
+      "description_en": "A Dragon Rider",
+      "squadron-size": 1,
+      "cost": 75
+    }
+  ],
+  "names": [],
+  "naming_rules": []
+}

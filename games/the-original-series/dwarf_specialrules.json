@@ -1,0 +1,24 @@
+{
+  "weight": "negligible",
+  "name": {"value": "SPECIAL RULES", "scale": 1.0},
+  "type": {"value": "DWARF SPECIAL RULES", "scale": 0.75},
+  "honors": {"value": "", "scale": 0.8},
+  "cost": {"value": "", "scale": 1.0},
+  "notes": [
+    {
+      "height": 34,
+      "title": {"value": "ENGINEERS", "scale": 1.0},
+      "note": {"value": "<div style='font-size:18px;;padding:4px 8px;text-align:left;'>Dwarf engineers are able to perform battlefield repairs. During the end phase, after checking if fires have spread, choose a location and roll a die. On a 5 or 6 that location is repaired.</div>", "scale": 1.0}
+    },
+    {
+      "height": 33,
+      "title": {"value": "MAGIC", "scale": 1.0},
+      "note": {"value": "<div style='font-size:18px;;padding:4px 8px;text-align:left;'>Dwarf fleets may not have wizards. If a dwarf ships is effected by a spell, roll a die, on a 6 the ship is uneffected.</div>", "scale": 1.0}
+    },
+    {
+      "height": 33,
+      "title": {"value": "BOARDING", "scale": 1.0},
+      "note": {"value": "<div style='font-size:18px;;padding:4px 8px;text-align:left;'>Undamaged Dwarf ships may not be boarded.</div>", "scale": 1.0}
+    }
+  ]
+}

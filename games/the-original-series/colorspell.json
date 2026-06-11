@@ -1,0 +1,1534 @@
+{
+  "weight": "negligible",
+  "name": {
+    "value": "",
+    "scale": 1.0
+  },
+  "type": {
+    "value": "COLOR SPELL",
+    "scale": 0.65
+  },
+  "honors": {
+    "value": "",
+    "scale": 1.0
+  },
+  "cost": {
+    "value": "25 pts",
+    "scale": 1.0
+  },
+  "notes": [
+    {
+      "height": 30,
+      "title": {
+        "value": "",
+        "scale": 1.0
+      },
+      "note": {
+        "value": "",
+        "scale": 1.0
+      }
+    },
+    {
+      "height": 15,
+      "title": {
+        "value": "",
+        "scale": 1.0
+      },
+      "note": {
+        "value": "",
+        "scale": 1.0
+      }
+    },
+    {
+      "height": 55,
+      "title": {
+        "value": "",
+        "scale": 1.0
+      },
+      "note": {
+        "value": "",
+        "scale": 1.0
+      }
+    }
+  ],
+  "randomizable": true,
+  "random": [
+    {
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "VOLCANO",
+        "scale": 1.0
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Black smoke issues from the wizard's lips, and the sea around his intended victim begins to churn and boil as a volcano erupts directly under the ship and engulfs it in flame.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">6+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>The target vessel takes a number of firestrikes. Roll a dice: 1=One firestrike, 2-4=Two firestrikes, 5-6=Three firestrikes. Roll a dice for each firestrike as if it were a normal shot; place a blaze counter on a ship's template. There is no saving roll.<br><br><b>Dispels Amber spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "BRIGHT SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "RAGING INSANITY",
+        "scale": 0.8
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Letting his boiling emotions carry him, the wizard begins to shake uncontrollably as fire crackles from his fingertips. Focussing on an enemy vessel, he lets his anger fly as a hail of sparks towards his foe, striking the crew of the vessel.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">5+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>The enemy crew are engulfed in a glowing flame. Seized by a mindless rage, they are unable to do anything except fight in boarding actions this turn.<br><br><b>Dispels Amber spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "BRIGHT SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "INFERNO",
+        "scale": 1.0
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Sparks fly from the wizard's fingertips, and his eyes glow aflame. Clapping his blazing hands together, he directs a gout of flame towards the enemy vessel, igniting whatever it hits. Soon the ship is blazing fiercely.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>Roll a 1d6 attack (declaring high or low). A 1 is a miss as usual. The area which it hits bursts into flame. Place a blaze counter on a ship's template. There is no saving roll.<br><br><b>Dispels Amber spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "BRIGHT SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "PANIC",
+        "scale": 1.0
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard crushes a pile of rags in his fist, breathing hard upon them as he does so. The rags burst into flame and he quickly releases the attack, hurling them into the air. They drift rapidly into the very midst of the enemy fleet. The enemy sailors are hard put to control the blazes breaking out on their ships, and as they struggle to put out numerous small blazes before they become serious, the fleet loses the initiative.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">3+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>The enemy loses the initiative for the rest of the turn.<br><br><b>Dispels Amber spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "BRIGHT SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "REPAIR",
+        "scale": 1.0
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard takes a jar of what looks like watery honey. Unscrewing the top, a pungent odour spreads across the ship. Moving towards a damaged area of the ship, the wizard pours a few drops of the liquid upon the timbers. As the salve takes effect, a golden hue spreads throughout the timbers and they begin to bind themselves together as new.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">2+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any friendly ship<br><br>This spell allows you to mend one damaged area of your choice on the target ship.<br><br><b>Dispels Jade spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "GOLD SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "SUNBLAZE",
+        "scale": 1.0
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard pours a phial of iridescent liquid into a small golden bowl. Adding a small quantity of an almost coagulated liquid, he plunges a golden dart into the bowl. The mixture bursts into a white gold flame, blinding all who look upon it. Holding the burning dart aloft, he throws it towards the enemy ship.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>Place a blaze counter on the ship's template. Roll to hit as normal; a 1 is a miss as usual. There is no save.<br><br><b>Dispels Jade spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "GOLD SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "HEAL",
+        "scale": 1.0
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard walks amongst the wounded crew of the ship, touching them with a glowing golden dagger. Deep wounds close, and flesh wounds are healed completely.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any friendly ship<br><br>The target ship may replace 1 lost crew counter.<br><br><b>Dispels Jade spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "GOLD SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "BLADES OF BATTLE",
+        "scale": 0.8
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard mixes together a foul smelling brew in a large cauldron. Soon the mixture is bubbling and an evil smell permeates the ship. After adding the final ingredients, the wizard calls the ship's crew to dip their swords and armour into the murky liquid. The crew do so, and their armament emerges from the cauldron glinting a shining gold.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any friendly ship<br><br>The target ship may count +2 to its dice roll in any boarding action this turn, as their armour and swords are extra tough and extra sharp.<br><br><b>Dispels Jade spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "GOLD SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "SEA OF GLASS",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard demands that all aboard the ship be silent as he invokes the Ritual of Calm and Serenity upon the elements. An eerie quiet emanates almost palpably from the wizard, quickly enveloping the ship and spreading to encompass the whole battlezone. All ships on the tabletop moving under sail find themselves becalmed on a glassy sea.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">5+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>All ships moving under sails find themselves becalmed for this turn.<br><br><b>Dispels Grey spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "CELESTIAL SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "BLIZZARD",
+        "scale": 1.0
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard stands in the forecastle, whispering words of magic to the powers of the air. The atmosphere around him grows icy cold, and snow crystals form on his cloak. As he continues to whisper to the wind, gathering eddies of snow sweep around him, obscuring him from view. His voice can be heard, rising to a shout as he hurls the blizzard towards an enemy vessel.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>Roll a dice. The target ship is pushed that many inches in a direction of your choosing.<br><br><b>Dispels Grey spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "CELESTIAL SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "STORM FORCE",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Leaning far over the bows of the ship, the mage calls upon his powers to bend the will of the elements and bring down a storm upon his foes. As if in answer, the wind rises to a shout as stormclouds gather over the battlescape. As the wind rises, a violent storm breaks. The torrents of rain and crashing waves reduce visibility to point blank range, quenching all fires on any ships.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">5+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> The whole seascape<br><br>Visibility is reduced to close range. Ramming and boarding is impossible until the storm abates at the end of the turn. All blazes on all ships are put out.<br><br><b>Dispels Grey spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "CELESTIAL SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "STORM STRIKE",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Gesturing to the skies, the wizard begins to chant a monotonous litany of binding. Dark clouds gather around his intended victim, and distant thunderclaps sound. As the wizard's chant continues, white lightning bolts smash into the enemy ship, killing crew and causing great panic.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>The target ship loses 1 crew counter.<br><br><b>Dispels Grey spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "CELESTIAL SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "BLOOD SILVER",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard clenches his fist tight around a delicate mirror-glass ball. As the pressure of his grip increases, the glass shatters, the shards flying across the deck of the ship and into the sea. Still the wizard clenches his fist, muttering words of protection. Blood drips from his hand, mingling with the glittering fragments on the deck.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Your fleet<br><br>This spell deflects any spell cast on your fleet this turn and directs the effects to the enemy wizard instead.<br><br><b>Dispels Amethyst spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "GREY SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "TORRENT",
+        "scale": 1.0
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard screams an invocation to the sky, forcing the storm clouds to take heed and do his bidding. From nowhere a sudden rainstorm of violent proportions sweeps over the ships in the fleet, drenching their crews and extinguishing any blazing areas.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Your fleet<br><br>All blaze counters on all ships in the fleet are removed and replaced with damage markers.<br><br><b>Dispels Amethyst spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "GREY SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "WIND BLAST",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard braces himself against the deck, and furrows his brow in concentration. He begins to exhale, softly at first, but with growing force, until a veritable gale is issuing from his gaping mouth.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any squadron moving under sail<br><br>Roll a dice. The target squadron may move that many extra inches this turn.<br><br><b>Dispels Amethyst spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "GREY SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "WIND MASTER",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard's staff begins to emit a flickering glow, and eddies of wind flap the folds of his cloak. Steadying himself on the deck against the rising storm, the wizard bends the gale to his will, sending it in a direction of his choosing.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> The whole seascape<br><br>The wind changes direction at once, causing previously limp sails to billow, and ships under sail to be calmed. You may now choose which direction the wind is blowing. The wind stays in this direction until changed during the Initiative Phase or by another spell.<br><br><b>Dispels Amethyst spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "GREY SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "LIVING MIRE",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Leaning out from the stern of the ship, the wizard imbibes a foul-smelling liquid, made in equal measure of fetid seawater and seaweed. Within seconds the wizard's eyes glaze over and from his mouth issues a seemingly endless stream of frothing, living vegetation, which quickly engulfs the target vessel.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>The target vessel may not move this turn.<br><br><b>Dispels Celestial spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "JADE SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "HELL STORM",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard dances frenziedly around the ship's capstan, shouting aloud the name of his intended victim. The sea begins to boil around the target vessel, sending violent currents surging all around it.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">5+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>The target ship is caught in a whirlpool. Place the whirlpool marker under it. The ship must roll a 5 or 6 at the start of the Movement Phase each turn from now on to escape. Any other ships even partially covered by the whirlpool counter are affected, and must roll in the same way.<br><br><b>Dispels Celestial spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "JADE SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "CHILL BONES",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard sprinkles a jade fragment with sea water. Placing his hands on the damp stone he closes his eyes and begins a whining chant. A green glow emanates from between his fingers. The enemy crew are suddenly caught in an aura of dull green light which robs all energy from them and chills them to the bone. Taken with a terrible lethargy, they cannot even man the ship's armament.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>The target vessel may not fire this turn.<br><br><b>Dispels Celestial spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "JADE SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "WARP SHIFT",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard's eyes roll upwards until just the whites are visible, then he utters the words of power in a sibilant whisper. The outline of the ship becomes hazy and indistinct, shimmering as though it were an illusion.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any ship<br><br>While affected by the warp shift, the ship may neither attack nor be attacked, and may move through obstacles as if they weren't there.<br><br><b>Dispels Celestial spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "JADE SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "FOG OF LIMBO",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard begins to ring a large iron bell. Groaning aloud, he calls upon the spirits of lost sailors to gather around him. A grey mist gathers around the wizard. Soon he is obscured completely, and the ringing of his bell sounds as a distant, disembodied tolling. The fog rolls off the deck towards the target vessel, swathing it in an impenetrable fog.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any ship<br><br>This fog gives +2 to all saving throws against any form of attack made against the target ship. The fog also prevents any spellcasting from the target vessel.<br><br><b>Dispels Gold spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "LIGHT SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "ROTTING TIMBERS",
+        "scale": 0.8
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>After consulting a dust encrusted scroll, the wizard mutters the words of an ancient and long forgotten spell. The timbers of the target vessel begin to shrivel and wither, shrinking and splintering as if with age. As water pours in through the gaping holes in the ship's hull, the crew frenziedly struggle to keep the ship afloat.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>This spell inflicts 1 point of below the waterline damage on the target vessel.<br><br><b>Dispels Gold spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "LIGHT SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "ICEBERG",
+        "scale": 1.0
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard's breath chills the air, and frost forms on his lips as he reads aloud the Invocation of Ice from a leather bound tome. With a loud crack, a vast iceberg appears moving relentlessly towards the enemy.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">5+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>Nominate a target ship and place the iceberg marker anywhere on the wizard's table edge. Roll a dice at the start of each turn; it drifts that many inches towards the target. The iceberg vanishes if the distance rolled is 1\". If it contacts its target, the ship takes D6 points of below the waterline damage. Normal saves apply.<br><br><b>Dispels Gold spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "LIGHT SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "ILLUSION OF DEATH",
+        "scale": 0.7
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard opens a weighty tome whose pages rustle with a life of their own. As he speaks them, the words of the chosen spell spit and hiss in the air. The ship shimmers and takes on the guise of a deathship, crewed by skeletons, zombies and ghouls.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any friendly ship<br><br>Terrified enemy sailors will not attack the ship in any way this turn.<br><br><b>Dispels Gold spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "LIGHT SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "SOARING DISC",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard produces a metallic purple amulet on a chain which gleams dully in the sunlight. Gasping, as if in surprise, the wizard releases the amulet, which flies towards its target as a blazing purple disc, growing rapidly as it flies. The disc flies straight towards the chosen wizard, sweeping him off his feet and carrying him away from his ship.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">6+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any ship carrying a wizard<br><br>This spell allows you to move either wizard to another ship in their fleet.<br><br><b>Dispels Bright spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "AMETHYST SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "SPECTRE",
+        "scale": 1.0
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Staring hard at his intended victim, the wizard's eyes begin to shine with a purple light. Moving his hand as if controlling an invisible marionette, he beckons to the figurehead on the enemy vessel. With a groaning of stiff timbers, the figurehead climbs from the prow into the ship, attacking the crew and causing havoc.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>The animated figurehead kills 1 crew counter in the enemy fleet.<br><br><b>Dispels Bright spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "AMETHYST SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "BURNING FIST",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard ignites a small phial of purple oil while chanting a strange monologue. Sweat breaks out on his forehead as the subdued mutterings become insane ravings as the purple fire grows. As he clenches his fist, the purple flames take on the shape of a burning fist which he directs towards the ships of the enemy.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">5+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>The target ship is set ablaze in an area of the wizard's choice.<br><br><b>Dispels Bright spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "AMETHYST SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "WALL OF FLAME",
+        "scale": 0.8
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Placing a pebble on the deck of the ship, the wizard pours a thick liquid around it until the pebble is immersed. With a gleeful cry, the wizard ignites the liquid, which burns with a thick, oily smoke and sends huge flames arcing towards the target ship and hemming it in with leaping purple flames.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">3+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>The target ship may not move this turn.<br><br><b>Dispels Bright spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "AMETHYST SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "CAUSEWAY OF LIGHT",
+        "scale": 0.7
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard holds up a piece of amber. Within its core a small flame flickers. Caressing the amber, he encourages the flame. Sweat breaks out on his brow, and the flame rapidly grows, breaking out of the stone itself, expanding and flowing as a dull orange mist towards the enemy vessel.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any ship<br><br>The amber mist hits the ship, forming a glowing causeway that enables you to make a boarding action against it from up to 3\" away.<br><br><b>Dispels Light spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "AMBER SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "AURA OF GROWTH",
+        "scale": 0.8
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard rummages around in his cloak for a moment before producing an acorn. Placing the acorn on the deck, he pours a small quantity of water upon it whilst uttering words of power. The acorn starts to grow, binding together damaged bulwarks and planking together with new wood. Smashed timbers suddenly become living wood again, binding and growing together.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any friendly ship<br><br>This spell mends two damaged areas of your choice on the target ship.<br><br><b>Dispels Light spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "AMBER SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "SERPENTS OF DOOM",
+        "scale": 0.8
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard grimaces as he plunges his hand into a basket of writhing venomous snakes. Screaming in pain, he withdraws his hand, serpentine fangs digging deep into his flesh, and hurls the snakes at the enemy. The ropes and rigging on the target ship twist and writhe, entangling crewmen in a living, constricting mass of heaving rope.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>The target ship cannot move this turn as the crewmen struggle to cut themselves free.<br><br><b>Dispels Light spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "AMBER SPELL",
+        "scale": 0.65
+      }
+    },
+    {
+      "name": {
+        "value": "PLAGUE VERMIN",
+        "scale": 0.8
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The wizard takes a necklace of yellowing rat fangs from around his neck. Cutting his forearm with a small dagger, the wizard places a drop of blood on each tooth, before snapping the twine which binds the teeth to the necklace and hurling the fangs into the sea. The target ship is quickly overrun by ferocious starved rats that erupt in a heaving mass from the bilges.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">5+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>The target ship loses 1 crew counter and may not fire, board, or ram this turn.<br><br><b>Dispels Light spells.</b></div>",
+            "scale": 1.0
+          }
+        }
+      ],
+      "type": {
+        "value": "AMBER SPELL",
+        "scale": 0.65
+      }
+    }
+  ]
+}

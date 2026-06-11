@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "IMPROVED GEARS", "scale": 0.75},
+  "type": {"value": "MASTER ENGINEER", "scale": 0.75},
+  "honors": {"value": "Honors: 1", "scale": 1.0},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 35,
+      "title": {"value": "DESCRIPTION", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The gears and other systems that connect the two engines and allow the ship to turn have been improved as a result of the diligent experimentation by the Master Engineer.</i></div>", "scale": 1.0}
+    },
+    {
+      "height": 65,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The ship may make turns between 90 and 180 degrees for half its movement, the same penalty as turns between 0 and 90 degrees.</div>", "scale": 1.0}
+    }
+  ]
+}

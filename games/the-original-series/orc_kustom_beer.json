@@ -1,0 +1,14 @@
+{
+  "weight": "negligible",
+  "name": {"value": "BEER!", "scale": 0.9},
+  "type": {"value": "ORC KUSTOM KARD", "scale": 0.65},
+  "honors": {"value": "Battle Honours: 0", "scale": 0.8},
+  "cost": {"value": "Free", "scale": 1.0},
+  "notes": [
+    {
+      "height": 100,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The crew of this vessel have spent the last few hours drinking barrels of fungus beer and eating sacks of squig flavoured crisps. They are so drunk that they believe they could defeat anybody. Unfortunately they are far too poor to be reliable. When you wish to move the ship during the battle phase roll a D6. On a roll of 1 the Orcs may do nothing at all and give passes to your opponent. The Orcs will add D6-2 to their combat total this turn.</div>", "scale": 1.0}
+    }
+  ]
+}

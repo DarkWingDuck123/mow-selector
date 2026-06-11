@@ -1,0 +1,258 @@
+[
+  {
+    "faction": "tzeentch",
+    "type": "Ship Ability",
+    "name": "Confusion",
+    "flavor": "This vessel appears to be constantly changing colour and shape, sometimes taking on the guise of a fearsome beast, and sometimes fading to little more than a shadow. It continually throws a rainbow array of reflections upon the waves, sowing confusion and doubt in the minds of all who behold it.",
+    "effect": "No enemy ship will take offensive action against this vessel this turn, as their crews are confused and entranced by its magical appearance. The ship itself may move and fight as normal.",
+    "discard": false
+  },
+  {
+    "faction": "tzeentch",
+    "type": "Special Attack",
+    "name": "Razor Claws",
+    "flavor": "This ship has glittering spiked claws protruding from its sides. As it glides past enemy vessels, these claws rip and tear through wood and flesh alike, maiming crew and wrecking timbers.",
+    "effect": "When this ship comes within 1\" of an opponent, the Chaos Player may nominate a hull or crew strike. A hull strike is a 1 dice attack with a -1 save, aimed at a random low location. A crew strike strikes at the ship's sailors; roll a dice and on a score of 6 an enemy crew counter is removed.",
+    "discard": false
+  },
+  {
+    "faction": "tzeentch",
+    "type": "Special Attack",
+    "name": "Elemental Force",
+    "flavor": "The audible hum of barely controlled energies emanates from within this vessel. Its hull ripples and cracks as it attempts to contain the raw power of Chaos. When the time is right, the Captain of the ship may unleash these forces in a bolt of energy.",
+    "effect": "The burst of power uses the normal firing template and may be fired in a 90 degree arc to the front of the ship. Any targets caught in the template's area of effect suffer a 3 dice attack, resolved as a 3 dice cannon attack.",
+    "discard": true
+  },
+  {
+    "faction": "tzeentch",
+    "type": "Ship Ability",
+    "name": "Aura of Tzeentch",
+    "flavor": "This ship slips between dimensions, appearing hazy and indistinct one moment, yet solid and real the next. Around the vessel, time slows or speeds up, allowing its Captain to observe and predict the manoeuvres of his opponents.",
+    "effect": "This ship may operate as an Independent, and in any turn may either move first or last, irrespective of who won the initiative.",
+    "discard": false
+  },
+  {
+    "faction": "tzeentch",
+    "type": "Ship Ability",
+    "name": "Crystal Hull",
+    "flavor": "This bizarre vessel has a glittering hull of an unknown crystal substance that reflects the sun in blinding patterns as the ship weaves and manoeuvres.",
+    "effect": "Any ship wishing to fire at this ship must roll a dice; on a score of 1 or 2 the gunners are blinded and miss completely, otherwise the ship may be shot at as usual.",
+    "discard": false
+  },
+  {
+    "faction": "tzeentch",
+    "type": "Special Attack",
+    "name": "Hypnotic Gaze",
+    "flavor": "The penetrating glare of the giant eyes painted on the bows of this vessel sweeps the battlescape, causing opponents to flinch and look away.",
+    "effect": "This hypnotic gaze has a range of 6\", and affects a 180 degree arc from the prow of the ship. Any vessel caught in the arc must roll a dice: 1-2=Caught by the Chaos ship's withering glare, the target stops and may do nothing but defend itself this turn. 3-6=The target ship may function as normal.",
+    "discard": false
+  },
+  {
+    "faction": "tzeentch",
+    "type": "Ship Ability",
+    "name": "Warpflight",
+    "flavor": "Coruscating energies flash and thunder above this vessel as it harnesses the raw energy of the warp. As the storm grows, the ship abruptly vanishes, leaving nothing but a stench of ozone on the air. Then, with a flash of lightning, it instantly re-appears behind its foes.",
+    "effect": "Once during a game, this ship may teleport to any location on the seascape instead of moving. It may fire and board other vessels this turn, as usual, after its warpflight.",
+    "discard": true
+  },
+  {
+    "faction": "tzeentch",
+    "type": "Ship Ability",
+    "name": "Invisibility",
+    "flavor": "As this vessel rushes headlong towards its foes it appears to fade, its outline becoming insubstantial and fragile as a phantom, until it is gone from sight. The magic of Tzeentch has made it invisible to the mortal eye.",
+    "effect": "This card allows the ship to become invisible. While in this state, the ship cannot be attacked in any way, although it may move and fight as normal. It re-appears at the start of the next turn.",
+    "discard": true
+  },
+  {
+    "faction": "khorne",
+    "type": "Special Attack",
+    "name": "Biting Skull",
+    "flavor": "This ship's prow bears a hideous skull of immense proportions. As this vessel closes with its victim to make a boarding action, the mouth of this skull opens wide, revealing rows of gleaming steel fangs that rend and gouge chunks from the target, inflicting great damage.",
+    "effect": "The skull attacks a random low location, doing a 1 dice attack. If the attack succeeds (i.e. causes some damage), the target is gripped by the skull's jaws and must roll a 6 in any attempt to break away from the boarding action to successfully escape.",
+    "discard": false
+  },
+  {
+    "faction": "khorne",
+    "type": "Special Attack",
+    "name": "Frenzy",
+    "flavor": "In any one boarding action in the game, the Captain of this ship may goad his warriors into a frenzy of bloodlust. With no regard for their own safety, they hurl themselves at the enemy, even if heavily outnumbered.",
+    "effect": "Add an extra +1 to the boarding action dice roll for every crew counter from this ship taking part.",
+    "discard": true
+  },
+  {
+    "faction": "khorne",
+    "type": "Special Attack",
+    "name": "Bloodrage",
+    "flavor": "The first time the crew of this ship engage in a boarding action, they are enraged by a violent bloodlust that lets them ignore wounds and injuries which would kill normal men.",
+    "effect": "Any crew counter that is 'killed' in the action may ignore its wounds on a roll of 4, 5 or 6, and may carry on fighting. However, at the end of the battle roll a dice for each surviving crew counter — on a 5 or 6 it dies from its wounds as the bloodlust recedes.",
+    "discard": true
+  },
+  {
+    "faction": "khorne",
+    "type": "Ship Ability",
+    "name": "Armoured Scales",
+    "flavor": "The ship is covered from stem to stern with thick bronze and iron plates and bands; the hideous panels are said to be made from the melted-down armour and shields of vanquished foes, and add greatly to the ship's strength.",
+    "effect": "All low areas of this ship can take an extra point of damage before being destroyed.",
+    "discard": false
+  },
+  {
+    "faction": "khorne",
+    "type": "Special Attack",
+    "name": "Bludgeon of Khorne",
+    "flavor": "This ship is armed with the Bludgeon of Khorne, a great iron-shod hammer mounted in its bows. When this vessel initiates a boarding action with the enemy, the Bludgeon is released and smashes into the target's hull.",
+    "effect": "The Bludgeon makes a 1 dice attack against a random low location. Saves against the Bludgeon's attack are at -1.",
+    "discard": false
+  },
+  {
+    "faction": "khorne",
+    "type": "Special Attack",
+    "name": "Daemon Horns",
+    "flavor": "This ship bears a bronze bull's skull as a figurehead. The sweeping horns of this skull are viciously barbed, so that they will hold fast onto whatever they strike.",
+    "effect": "When moving into a boarding action, the figurehead's horns inflict 1 point of damage to a random low area. The area struck gets a saving throw as normal. If the save is failed, the target vessel is locked in place and may only be released if it wins a boarding action and then rolls a 6 on a dice, or if the Chaos player allows it to be released.",
+    "discard": false
+  },
+  {
+    "faction": "khorne",
+    "type": "Special Attack",
+    "name": "Bloodthrower",
+    "flavor": "This ship has a huge fanged cannon mounted on its prow that is linked by some infernal device to a tank of coagulated blood-like substance that gushes out of the cannon and splatters the decks and crew of its target. Whatever this foul liquid comes into contact with is set alight.",
+    "effect": "The Bloodthrower makes a one dice attack with a range of 6\". It is aimed and fired like a normal cannon, with a result of a 1 being a miss. Any area hit must make a saving roll or be set alight; place a blaze marker on the area and roll for spreading during the End Phase.",
+    "discard": false
+  },
+  {
+    "faction": "khorne",
+    "type": "Special Attack",
+    "name": "Flaming Prow",
+    "flavor": "The hideous, bronze Daemon's face mounted at the prow of this ship bellows and roars in anger as the vessel charges towards its enemy. When in range, great gouts of searing flame issue from the Daemon's mouth, scorching and burning its opponent.",
+    "effect": "The Flaming Prow has a range of 6\" and is aimed like a normal weapon. It makes a 1 dice attack, and any area hit must make a saving roll or be set ablaze; place a blaze marker on the area and roll for fire spreading during the End Phase.",
+    "discard": false
+  },
+  {
+    "faction": "slaanesh",
+    "type": "Special Attack",
+    "name": "Laughter of the Damned",
+    "flavor": "As this ship glides towards its prey, the hysterical, yet strangely entrancing laughter of its crewmen echoes across the water.",
+    "effect": "The Laughter of the Damned affects all ships within 3\" of this vessel at the start of the turn. Each must make a saving roll of 3, 4, 5 or 6 or be enthralled by the sound. If affected, a ship may do nothing but defend itself this turn; place a 'no movement' and a 'no firing' counter next to the vessel.",
+    "discard": false
+  },
+  {
+    "faction": "slaanesh",
+    "type": "Special Attack",
+    "name": "Lure of Slaanesh",
+    "flavor": "The warping powers of this ship sow confusion in the minds of warriors, turning friend against friend.",
+    "effect": "The Lure of Slaanesh has a range of 12\" and is played on a single enemy. Roll a dice for each crew counter on the target: any that score 1, 2 or 3 switch sides. Fight a single boarding action between the two sides. At the end of the boarding action, sanity is restored.",
+    "discard": true
+  },
+  {
+    "faction": "slaanesh",
+    "type": "Special Attack",
+    "name": "Embrace of Doom",
+    "flavor": "This ship pulses and quivers with a foul life of its own. During a boarding action, the ship attacks the enemy vessel.",
+    "effect": "At the start of each round the ships remain engaged, roll a dice: 1-3=No damage. 4=A crew counter is plucked off the enemy ship and killed. 5=A mass of quivering flesh-like gunge inflicts 1 point of damage to a low area of the enemy ship. 6=A grasping pseudopod inflicts one below the waterline hit on the enemy.",
+    "discard": false
+  },
+  {
+    "faction": "slaanesh",
+    "type": "Special Attack",
+    "name": "Hypnotic Beauty",
+    "flavor": "This ship appears differently to everyone who gazes upon it, but all see it as stunningly beautiful in one way or another. Some observers drop their weapons and stare dumbfounded, while others hide their heads in their hands, unable to look.",
+    "effect": "Any time this ship is engaged in a boarding action, its opponent is affected by this hypnotic appearance and suffers a -1 to its boarding action dice rolls.",
+    "discard": false
+  },
+  {
+    "faction": "slaanesh",
+    "type": "Special Attack",
+    "name": "Whispering Death",
+    "flavor": "An eerie, yet alluring whispering emanates from this ship, reaching out across the water to ensnare unwitting sailors.",
+    "effect": "The Whispering Death has a range of 12\", and attacks a single enemy ship. The chosen target must roll a dice; on a score of 1, 2, 3, 4 or 5 it will immediately attack the nearest friendly ship, firing all the guns it can bring to bear. The ship will fight to the last man if necessary. At the end of the boarding action, the ship may act normally.",
+    "discard": true
+  },
+  {
+    "faction": "slaanesh",
+    "type": "Special Attack",
+    "name": "Incense of Despair",
+    "flavor": "Mounted on the deck of this ship are huge copper and gold incense burners, tended by warped acolytes of Slaanesh. Noxious fumes build up within the swinging burners and are then released periodically as great gouts of sickly, cloying smoke that engulf the ships.",
+    "effect": "The incense has a range of 8\", uses the normal firing template, and has a 360 degree arc of fire. Every ship falling under the template, even partially, suffers a 1 dice attack with no save, as its own crew hack and slash at the deck and rigging.",
+    "discard": true
+  },
+  {
+    "faction": "slaanesh",
+    "type": "Special Attack",
+    "name": "Deafening Noise",
+    "flavor": "A deafening cacophony of clashing sounds can be heard from the ship. Sometimes harmonic melodies gain superiority, only to be quashed by atonal rumblings in the everchanging morass of sound. Listeners are pounded by the relentless echoes until, as the ear-splitting row reaches its crescendo, their eardrums burst and heads explode.",
+    "effect": "When this ship takes part in a boarding action, roll a dice for each of the enemy vessel's crew counters; on a roll of 6 the crew's heads explode and the counter is removed.",
+    "discard": true
+  },
+  {
+    "faction": "slaanesh",
+    "type": "Ship Ability",
+    "name": "Blinding Colours",
+    "flavor": "This ship is painted in a blinding pattern of magical colours that shift and blend as the vessel moves. This masks the actual shape of the ship, making it a difficult target to shoot.",
+    "effect": "Any ship wishing to fire at this vessel must roll a dice; on a score of 1 or 2, the enemy gunners are confused and miss completely, otherwise the ship may be shot at as normal.",
+    "discard": false
+  },
+  {
+    "faction": "nurgle",
+    "type": "Special Attack",
+    "name": "Hideous Stench",
+    "flavor": "This ship gives off a foul smell which floats downwind as a choking cloud.",
+    "effect": "Using the range rules, any ships within 9\" and downwind of the stench suffer a -1 on boarding action dice rolls as the crew is sickened by the foul odour and cannot fight to their full potential.",
+    "discard": false
+  },
+  {
+    "faction": "nurgle",
+    "type": "Ship Ability",
+    "name": "Regenerate Damage",
+    "flavor": "This ship has an indistinct, almost flowing outline, as great gobbets of slime shift and roll across the deck, dripping down the hull into the sea. This thick substance seeps into any holes made in the ship, plugging them up and making the hull watertight again.",
+    "effect": "At the end of each turn, roll a dice for each location of the ship that is damaged; on a score of 6 the location is repaired.",
+    "discard": false
+  },
+  {
+    "faction": "nurgle",
+    "type": "Special Attack",
+    "name": "Tentacles",
+    "flavor": "The prow of this ship is covered in writhing, slime-coated tentacles which grope and grasp with grinding suckers.",
+    "effect": "The tentacles have a 3\" range and may be used once per Battle Phase. Roll a dice; on a score of 6, the target ship loses one crew counter as the screaming sailors are plucked from the deck and ripped limb from limb.",
+    "discard": false
+  },
+  {
+    "faction": "nurgle",
+    "type": "Special Attack",
+    "name": "Vomit Blast",
+    "flavor": "As the ship approaches its target, a huge toad-like mouth opens at its prow, vomiting a torrent of caustic, foul smelling bile at the target.",
+    "effect": "The blast has a range of 6\" and uses a plague trail template. It is always aimed low, is a 3 dice attack, and has a saving throw modifier of -2.",
+    "discard": true
+  },
+  {
+    "faction": "nurgle",
+    "type": "Special Attack",
+    "name": "Plagueship",
+    "flavor": "Flies cover this ship like a cloud, and numerous hideous diseases run rife onboard. Any vessel that comes too near runs the risk of catching the plague.",
+    "effect": "Any ship which comes into contact with this ship must roll a dice; on a score of 6, one crew counter is removed as the sailors succumb to Nurgle's Rot.",
+    "discard": false
+  },
+  {
+    "faction": "nurgle",
+    "type": "Special Attack",
+    "name": "Poisoned Arrows",
+    "flavor": "In preparation for battle, the reeking, rotting warriors of Nurgle coat their weapons with an evil, green slime that withers and melts flesh on contact.",
+    "effect": "Before starting a boarding action, roll a dice for each crew counter on the enemy ship; on a score of 5 or 6 the crew is killed by poisoned arrows and the counter is removed.",
+    "discard": true
+  },
+  {
+    "faction": "nurgle",
+    "type": "Special Attack",
+    "name": "Ship Rot",
+    "flavor": "This ship has a forward-firing catapult loaded with slime and rotting filth. It may fire once per battle and has a 9\" range. Roll to hit as a catapult. A 1 misses. Any area hit takes 1 point of damage.",
+    "effect": "Roll for the rot spreading immediately, using the fire spreading table. Any area it spreads to must make a saving throw or take a point of damage. Roll for each area the rot spreads to until it either tries to spread to an area it cannot, remains still, re-infects a rotten area, or the whole ship is affected.",
+    "discard": true
+  },
+  {
+    "faction": "nurgle",
+    "type": "Ship Ability",
+    "name": "Warty Scales",
+    "flavor": "This ship is covered in thick, warty growths that glisten with a hideous slime.",
+    "effect": "These scale-like nodules add +1 to all the ship's saving throws.",
+    "discard": false
+  }
+]

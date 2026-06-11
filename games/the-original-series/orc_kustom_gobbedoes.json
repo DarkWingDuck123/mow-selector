@@ -1,0 +1,14 @@
+{
+  "weight": "negligible",
+  "name": {"value": "GOBBEDOES", "scale": 0.9},
+  "type": {"value": "ORC KUSTOM KARD", "scale": 0.65},
+  "honors": {"value": "Battle Honours: 2", "scale": 0.8},
+  "cost": {"value": "30 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 100,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The Gobbedo may be fired in the same way as a Dwarf torpedo except that the ammunition may also attempt to alter direction. When you roll to see which direction the Gobbedo is fired, any hit also allows the Gobbo player to add or remove one from the roll.</div>", "scale": 1.0}
+    }
+  ]
+}

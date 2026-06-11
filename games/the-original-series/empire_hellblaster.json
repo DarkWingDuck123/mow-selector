@@ -1,0 +1,14 @@
+{
+  "weight": "negligible",
+  "name": {"value": "HELLBLASTER", "scale": 1.0},
+  "type": {"value": "IMPERIAL ANTI-FLYER WEAPON", "scale": 0.75},
+  "honors": {"value": "Honors: 1", "scale": 0.8},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 100,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style='font-size:48px;;padding:4px 8px;text-align:left;'><b>Range:</b> 6\"<br><b>Dice:</b> 3</div>", "scale": 1.0}
+    }
+  ]
+}

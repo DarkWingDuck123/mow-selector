@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "", "scale": 1.0},
+  "type": {"value": "CREW CARD", "scale": 0.75},
+  "honors": {"value": "", "scale": 1.0},
+  "cost": {"value": "0 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 75,
+      "title": {"value": "", "scale": 1.0},
+      "note": {"value": "", "scale": 1.0}
+    },
+    {
+      "height": 25,
+      "title": {"value": "EXPERIENCE", "scale": 1.0},
+      "note": {"value": "(S)ailors: crew level 1<br>(V)eterans: crew level 2<br>Sea(D)ogs: crew level 3<br>(C)utthroats: crew level 4<br>(E)lite: crew level 5", "scale": 1.0}
+    }
+  ]
+}

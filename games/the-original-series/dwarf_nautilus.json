@@ -1,0 +1,212 @@
+{
+  "weight": "heavy",
+  "name": {
+    "value": "NAUTILUS",
+    "scale": 0.7,
+    "value_en": "NAUTILUS",
+    "scale_en": 0.7
+  },
+  "type": {
+    "value": "DWARF SHIP OF THE LINE",
+    "scale": 1,
+    "value_en": "DWARF SHIP OF THE LINE",
+    "scale_en": 1
+  },
+  "honors": {
+    "value": "Honors: 3",
+    "scale": 0.8,
+    "value_en": "Honors: 3",
+    "scale_en": 0.8
+  },
+  "cost": {
+    "value": "75 pts",
+    "scale": 1,
+    "value_en": "75 pts",
+    "scale_en": 1
+  },
+  "crew": 2,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 1,
+    "value_en": "CREW",
+    "scale_en": 1
+  },
+  "move": {
+    "value": "<div style=\"font-size:24px\">STEAM 6\"</div><b>Reverse 3\"</b><br>Turn 90 degrees for 1/2 move",
+    "scale": 0.75,
+    "value_en": "<div style=\"font-size:24px\">STEAM 6\"</div><b>Reverse 3\"</b><br>Turn 90 degrees for 1/2 move",
+    "scale_en": 0.75
+  },
+  "upperNotes": [
+    {
+      "value": "SPELLS: On a 6, spells cast on dwarfs have no effect.",
+      "scale": 1,
+      "value_en": "SPELLS: On a 6, spells cast on dwarfs have no effect.",
+      "scale_en": 1
+    },
+    {
+      "value": "REPAIR: After fires check, may repair 1 location on a 5 or 6",
+      "scale": 1,
+      "value_en": "REPAIR: After fires check, may repair 1 location on a 5 or 6",
+      "scale_en": 1
+    },
+    {
+      "value": "DIVE: May submerge at start of Battle Phase. Must surface during next Battle Phase.",
+      "scale": 0.7,
+      "value_en": "DIVE: May submerge at start of Battle Phase. Must surface during next Battle Phase.",
+      "scale_en": 0.7
+    },
+    {
+      "value": "DIVE: Roll a d6 for each damaged location, on a 1 the ship sinks",
+      "scale": 0.92,
+      "value_en": "DIVE: Roll a d6 for each damaged location, on a 1 the ship sinks",
+      "scale_en": 0.92
+    },
+    {
+      "value": "SUBMERGED: May not be attacked or effected by spells",
+      "scale": 1,
+      "value_en": "SUBMERGED: May not be attacked or effected by spells",
+      "scale_en": 1
+    }
+  ],
+  "dmgBoxes": [
+    {
+      "width": 35,
+      "height": 100,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "BOWS",
+        "scale": 1,
+        "value_en": "BOWS",
+        "scale_en": 1
+      },
+      "zone": "3",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Torpedo Lost",
+          "scale": 1,
+          "value_en": "Torpedo Lost",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "",
+        "scale": 1,
+        "value_en": "",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 30,
+      "height": 50,
+      "left": 35,
+      "bottom": 50,
+      "name": {
+        "value": "TURRET",
+        "scale": 0.6,
+        "value_en": "TURRET",
+        "scale_en": 0.6
+      },
+      "zone": "4",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Cannon lost",
+          "scale": 1,
+          "value_en": "Cannon lost",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "",
+        "scale": 1.5,
+        "value_en": "",
+        "scale_en": 1.5
+      }
+    },
+    {
+      "width": 30,
+      "height": 50,
+      "left": 35,
+      "bottom": 0,
+      "name": {
+        "value": "HULL",
+        "scale": 1,
+        "value_en": "HULL",
+        "scale_en": 1
+      },
+      "zone": "5",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "",
+        "scale": 1,
+        "value_en": "",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 35,
+      "height": 100,
+      "left": 65,
+      "bottom": 0,
+      "name": {
+        "value": "PADDLE WHEEL",
+        "scale": 0.7,
+        "value_en": "PADDLE WHEEL",
+        "scale_en": 0.7
+      },
+      "zone": "6",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Immobilized",
+          "scale": 1,
+          "value_en": "Immobilized",
+          "scale_en": 1
+        }
+      ]
+    }
+  ],
+  "criticalTitle": {
+    "value": "BELOW WATERLINE",
+    "scale": 1,
+    "value_en": "BELOW WATERLINE",
+    "scale_en": 1
+  },
+  "criticalSave": "6+",
+  "criticalBoxes": 1,
+  "lowerNotesTitle": {
+    "value": "WEAPONS",
+    "scale": 1,
+    "value_en": "WEAPONS",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Turret Cannon:</b> May repel boarders<br><b>Boarders:</b> Cannot be boarded until damaged.<br><b>Torpedo:</b> Use Torpedo template, <b>Range</b>: 2d6\", if foe fails Below Waterline save, roll for Below Waterline damage.<br><b>1-2</b>: 1 pt, <b>3-4</b>: 2 pts, <b>5</b>: 3 pts, <b>6</b>: d6 pts",
+    "scale": 0.9,
+    "value_en": "<b>Turret Cannon:</b> May repel boarders<br><b>Boarders:</b> Cannot be boarded until damaged.<br><b>Torpedo:</b> Use Torpedo template, <b>Range</b>: 2d6\", if foe fails Below Waterline save, roll for Below Waterline damage.<br><b>1-2</b>: 1 pt, <b>3-4</b>: 2 pts, <b>5</b>: 3 pts, <b>6</b>: d6 pts",
+    "scale_en": 0.9
+  },
+  "foreSpread": "T",
+  "fullTurret": "1"
+}

@@ -1,0 +1,32 @@
+{
+  "weight":"heavy",
+  "name":{"value":"DOOMREAVER","scale":0.8},
+  "type":{"value":"DARK ELF SHIP OF THE LINE","scale":0.8},
+  "honors":{"value":"Honors: 1", "scale":0.8},
+  "cost":{"value":"75 pts per 3", "scale":1.0},
+  "moveTitle":{"value":"MOVE","scale":1.0},
+  "move":{"value":"<div style=\"font-size:24px\">MONSTER 6\"</div>May Turn Freely","scale":0.75},
+  "upperNotes":[
+    {"value":"<b>MOVE</b>: Each wound reduces move by 2\"", "scale":1.0},
+    {"value":"<b>CREW</b>: Crew cannot board, Crew of 1 may be targeted by spells, if lost remove ship","scale":0.75}],
+  "dmgBoxes":[
+    {"width":50, "height":100, "left":0, "bottom":0,
+     "name":{"value":"HELLDRAKE", "scale":1.0},
+     "zone":"4,5",
+     "save":"5+",
+     "isHorizontal":false,
+     "boxes":[],
+     "notes":{"value":"Helldrake takes 1 wound<br><br><br><br><br><br><br>No Criticals", "scale":1.0}},
+    {"width":50, "height":100, "left":50, "bottom":0,
+     "name":{"value":"DOOMREAVER", "scale":1.0},
+     "zone":"6",
+     "save":"5+",
+     "isHorizontal":false,
+     "boxes":[],
+     "notes":{"value":"Helldrake loses control.<br>Remove model.<br><br><br><br><br><br><br>", "scale":1.0}}],
+  "criticalTitle":{"value":"WOUNDS","scale":1.0},
+  "criticalSave":"5+",
+  "criticalBoxes":3,
+  "lowerNotesTitle":{"value":"WEAPONS & SPECIAL RULES","scale":1.0},
+  "lowerNotes":{"value":"<b>Boarding</b>: May board (d6+remaining wounds) or <b>frenzy</b> (roll d6): <b>1</b>: opponent moves Helldrake upto 6\" and makes <b>frenzy</b> attack. <b>2</b>: Refuses to attack. <b>3</b>: Attacks chosen location. <b>4</b>: Attacks 2 chosen locations. <b>5</b>: Attacks chosen location twice. <b>6</b>: d6+1 attacks, roll for locations, -1 save, then roll d6 on 1 remove model.<br>Anytime Helldrake hits a location on fire, takes 1 wound.","scale":0.6}
+}

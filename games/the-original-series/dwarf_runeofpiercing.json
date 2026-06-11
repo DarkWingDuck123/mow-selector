@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "RUNE OF PIERCING", "scale": 0.75},
+  "type": {"value": "WEAPON RUNE", "scale": 0.75},
+  "honors": {"value": "Honors: 1", "scale": 1.0},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 40,
+      "title": {"value": "DESCRIPTION", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This Rune glows with a menacing red hue which it casts onto the ship's prow, enveloping it in the mystic aura. When the ship rams another vessel the ambient light blazes into an eye searing rainbow while the prow slides effortlessly through the opposing ship's hull.</i></div>", "scale": 1.0}
+    },
+    {
+      "height": 60,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">When this vessel rams another its target has an additional -1 modifier on its below the waterline saving throw.</div>", "scale": 1.0}
+    }
+  ]
+}

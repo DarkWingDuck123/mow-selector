@@ -1,0 +1,14 @@
+{
+  "weight": "negligible",
+  "name": {"value": "TROLL PENS", "scale": 0.9},
+  "type": {"value": "ORC KUSTOM KARD", "scale": 0.65},
+  "honors": {"value": "Battle Honours: 2", "scale": 0.8},
+  "cost": {"value": "50 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 100,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">In any boarding action you may release the Trolls. Roll on the table below: 1=The trolls go overboard and attack the Orcs; your opponent may add the roll and add +D3 to his combat total this turn. 2-5=The trolls shamble into the fray and add +D3 to the Orc combat total this turn. 6=The trolls go berserk and wade into the enemy; the Orc player may add +D6 to his combat total this turn.</div>", "scale": 1.0}
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "weight": "negligible",
+  "name": {"value": "", "scale": 1.0},
+  "type": {"value": "KHORNE REWARD", "scale": 0.65},
+  "honors": {"value": "", "scale": 1.0},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 35,
+      "title": {"value": "", "scale": 1.0},
+      "note": {"value": "", "scale": 1.0}
+    },
+    {
+      "height": 65,
+      "title": {"value": "", "scale": 1.0},
+      "note": {"value": "", "scale": 1.0}
+    }
+  ],
+  "randomizable": true,
+  "random": [
+    {
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "", "scale": 1.0},
+          "note": {"value": "", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "", "scale": 1.0},
+          "note": {"value": "", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "BITING SKULL", "scale": 0.75},
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This ship's prow bears a hideous skull of immense proportions. As this vessel closes with its victim to make a boarding action, the mouth of this skull opens wide, revealing rows of gleaming steel fangs that rend and gouge chunks from the target, inflicting great damage.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The skull attacks a random low location, doing a 1 dice attack. If the attack succeeds (i.e. causes some damage), the target is gripped by the skull's jaws and must roll a 6 in any attempt to break away from the boarding action to successfully escape.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "FRENZY", "scale": 0.85},
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>In any one boarding action in the game, the Captain of this ship may goad his warriors into a frenzy of bloodlust. With no regard for their own safety, they hurl themselves at the enemy, even if heavily outnumbered.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Add an extra +1 to the boarding action dice roll for every crew counter from this ship taking part.<br><br><b>Discard after use.</b></div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "BLOODRAGE", "scale": 0.80},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The first time the crew of this ship engage in a boarding action, they are enraged by a violent bloodlust that lets them ignore wounds and injuries which would kill normal men.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Any crew counter that is 'killed' in the action may ignore its wounds on a roll of 4, 5 or 6, and may carry on fighting. However, at the end of the battle roll a dice for each surviving crew counter — on a 5 or 6 it dies from its wounds as the bloodlust recedes.<br><br><b>Discard after use.</b></div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "ARMOURED SCALES", "scale": 0.70},
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The ship is covered from stem to stern with thick bronze and iron plates and bands; the hideous panels are said to be made from the melted-down armour and shields of vanquished foes, and add greatly to the ship's strength.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "SHIP ABILITY", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">All low areas of this ship can take an extra point of damage before being destroyed.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "BLUDGEON OF KHORNE", "scale": 0.58},
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This ship is armed with the Bludgeon of Khorne, a great iron-shod hammer mounted in its bows. When this vessel initiates a boarding action with the enemy, the Bludgeon is released and smashes into the target's hull.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The Bludgeon makes a 1 dice attack against a random low location. Saves against the Bludgeon's attack are at -1.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "DAEMON HORNS", "scale": 0.75},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This ship bears a bronze bull's skull as a figurehead. The sweeping horns of this skull are viciously barbed, so that they will hold fast onto whatever they strike.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">When moving into a boarding action, the figurehead's horns inflict 1 point of damage to a random low area. The area struck gets a saving throw as normal. If the save is failed, the target vessel is locked in place and may only be released if it wins a boarding action and then rolls a 6 on a dice, or if the Chaos player allows it to be released.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "BLOODTHROWER", "scale": 0.75},
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This ship has a huge fanged cannon mounted on its prow that is linked by some infernal device to a tank of coagulated blood-like substance that gushes out of the cannon and splatters the decks and crew of its target. Whatever this foul liquid comes into contact with is set alight.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The Bloodthrower makes a one dice attack with a range of 6\". It is aimed and fired like a normal cannon, with a result of a 1 being a miss. Any area hit must make a saving roll or be set alight; place a blaze marker on the area and roll for spreading during the End Phase.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "FLAMING PROW", "scale": 0.75},
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The hideous, bronze Daemon's face mounted at the prow of this ship bellows and roars in anger as the vessel charges towards its enemy. When in range, great gouts of searing flame issue from the Daemon's mouth, scorching and burning its opponent.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The Flaming Prow has a range of 6\" and is aimed like a normal weapon. It makes a 1 dice attack, and any area hit must make a saving roll or be set ablaze; place a blaze marker on the area and roll for fire spreading during the End Phase.</div>", "scale": 1.0}
+        }
+      ]
+    }
+  ]
+}

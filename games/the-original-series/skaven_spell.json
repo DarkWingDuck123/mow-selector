@@ -1,0 +1,422 @@
+{
+  "weight": "negligible",
+  "name": {
+    "value": "",
+    "scale": 1.0
+  },
+  "type": {
+    "value": "SKAVEN SPELL",
+    "scale": 0.65
+  },
+  "honors": {
+    "value": "",
+    "scale": 1.0
+  },
+  "cost": {
+    "value": "25 pts",
+    "scale": 1.0
+  },
+  "notes": [
+    {
+      "height": 30,
+      "title": {
+        "value": "",
+        "scale": 1.0
+      },
+      "note": {
+        "value": "",
+        "scale": 1.0
+      }
+    },
+    {
+      "height": 15,
+      "title": {
+        "value": "",
+        "scale": 1.0
+      },
+      "note": {
+        "value": "",
+        "scale": 1.0
+      }
+    },
+    {
+      "height": 55,
+      "title": {
+        "value": "",
+        "scale": 1.0
+      },
+      "note": {
+        "value": "",
+        "scale": 1.0
+      }
+    }
+  ],
+  "randomizable": true,
+  "random": [
+    {
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "DEATH FRENZY",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This spell may be cast on any friendly ship or squadron, driving them into a mindless all-consuming rage.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">7+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any friendly ship or squadron<br><br>The affected ship or ships may move or attack twice in each turn. During the End Phase, roll a dice for each affected crew counter: 1=the ship loses a crew counter and stops working; 2=the ship loses a crew counter but continues to work; 3-6=no ill-effects this turn. Place a Death Frenzy counter next to the affected ship.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "POISON WIND",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>A stinking, foul fog spreads across the seascape. Anything touched by the decaying cloud is withered and perished.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">7+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any ship<br><br>Place the Poison Wind template on the table, centred over any ship. Roll a dice for every ship covered by the template, even if only partially; on a score of 4, 5 or 6 the ship loses one crew counter.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "SKITTERLEAP",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Skitterleap affects a ship of the Grey Seer's choice, causing it to vanish with a thunderous roar and a flash of glowing warp fire. It then re-appears anywhere on the table, at the whim of the Grey Seer.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">6+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any ship<br><br>The target ship vanishes and re-appears anywhere on the table, at the whim of the Grey Seer. The spell can be used to run a ship aground, but not to place ships inland.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "CURSE OF THE HORNED ONE",
+        "scale": 0.6
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Screeching with unholy glee, the Grey Seer is enveloped by a swirling black cloud, which moves across the water and engulfs the target ship.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">9+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>When the enemy player wishes to use this ship, he must roll a dice: 1=the spell dissipates and is removed; 2=the ship may not move or fire this turn; 3=the ship may not fire this turn; 4=the ship may not move this turn; 5-6=the ship may move and fire as normal. Place a Curse of the Horned One counter next to the affected ship.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "VERMINTIDE",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The Skaven Sorcerer cackles in delight as hordes of giant rats erupt from the hold of the enemy ship and swarm over its decks, burying the crew under a tide of vermin.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">8+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>This spell affects a single ship. Roll a dice and remove that many crew from the target ship.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "MADNESS",
+        "scale": 1.0
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Hissing through tightly clenched jaws, the Skaven Sorcerer searches the enemy fleet for an unseen weakness. With a sharp out-take of breath he selects his victim.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">8+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship or squadron<br><br>The target ship or squadron falls under the control of the Skaven player for this turn. At the end of the turn it returns to its proper side. Note that this spell cannot be used to deliberately scuttle a ship.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "WARP LIGHTNING",
+        "scale": 0.8
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Clutching a rat claw talisman around his neck, the Skaven Grey Seer utters a shrill chittering noise. A bolt of blood red lightning shoots forth from the talisman, striking its target with a hideous crash.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">8+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>The target vessel takes a number of random hits. Any location which fails its saving throw is set ablaze. Roll a dice to see how many hits the attack causes: 1-2=3 hits; 3-4=4 hits; 5-6=6 hits. Re-roll any attacks which miss.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "PESTILENT BREATH",
+        "scale": 0.8
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The Grey Seer opens his jaws and a foul cloud spills forth. The Skaven Sorcerer sends the plume of pestilent breath towards a ship of its choice.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">5+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any ship<br><br>Roll a dice for each crew counter on the target ship: on a 4, 5 or 6 it is killed and removed.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

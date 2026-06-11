@@ -1,0 +1,372 @@
+{
+  "weight": "heavy",
+  "name": {
+    "value": "DREADNOUGHT",
+    "scale": 0.7,
+    "value_en": "DREADNOUGHT",
+    "scale_en": 0.7
+  },
+  "type": {
+    "value": "DWARF MAN O'WAR",
+    "scale": 1,
+    "value_en": "DWARF MAN O'WAR",
+    "scale_en": 1
+  },
+  "honors": {
+    "value": "Honors: 8",
+    "scale": 0.8,
+    "value_en": "Honors: 8",
+    "scale_en": 0.8
+  },
+  "cost": {
+    "value": "200 pts",
+    "scale": 1,
+    "value_en": "200 pts",
+    "scale_en": 1
+  },
+  "crew": 4,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 1,
+    "value_en": "CREW",
+    "scale_en": 1
+  },
+  "move": {
+    "value": "<div style=\"font-size:24px\">STEAM 6\"</div><b>Reverse 4\"</b><br>Turn 90 degrees for 1/2 unless paddle destroyed",
+    "scale": 0.75,
+    "value_en": "<div style=\"font-size:24px\">STEAM 6\"</div><b>Reverse 4\"</b><br>Turn 90 degrees for 1/2 unless paddle destroyed",
+    "scale_en": 0.75
+  },
+  "upperNotes": [
+    {
+      "value": "SPELLS: On a 6, spells cast on dwarfs have no effect.",
+      "scale": 1,
+      "value_en": "SPELLS: On a 6, spells cast on dwarfs have no effect.",
+      "scale_en": 1
+    },
+    {
+      "value": "REPAIR: After fires check, may repair 1 location on a 5 or 6",
+      "scale": 1,
+      "value_en": "REPAIR: After fires check, may repair 1 location on a 5 or 6",
+      "scale_en": 1
+    }
+  ],
+  "highLow": [
+    {
+      "title": "LOW",
+      "title_en": "LOW",
+      "height": 50
+    },
+    {
+      "title": "HIGH",
+      "title_en": "HIGH",
+      "height": 50
+    }
+  ],
+  "dmgBoxes": [
+    {
+      "width": 30,
+      "height": 50,
+      "left": 0,
+      "bottom": 50,
+      "name": {
+        "value": "FORE TURRETS",
+        "scale": 0.65,
+        "value_en": "FORE TURRETS",
+        "scale_en": 0.65
+      },
+      "zone": "3",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": " ",
+          "scale": 1,
+          "value_en": " ",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "Each hit destroys a turret; attacker chooses.",
+        "scale": 1,
+        "value_en": "Each hit destroys a turret; attacker chooses.",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 30,
+      "bottom": 50,
+      "name": {
+        "value": "BRIDGE",
+        "scale": 0.6,
+        "value_en": "BRIDGE",
+        "scale_en": 0.6
+      },
+      "zone": "4",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "",
+        "scale": 1.5,
+        "value_en": "",
+        "scale_en": 1.5
+      }
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 50,
+      "bottom": 50,
+      "name": {
+        "value": "FUNNEL",
+        "scale": 0.6,
+        "value_en": "FUNNEL",
+        "scale_en": 0.6
+      },
+      "zone": "5",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "",
+        "scale": 1,
+        "value_en": "",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 30,
+      "height": 50,
+      "left": 70,
+      "bottom": 50,
+      "name": {
+        "value": "AFT TURRETS",
+        "scale": 0.7,
+        "value_en": "AFT TURRETS",
+        "scale_en": 0.7
+      },
+      "zone": "6",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "Each hit destroys a turret; attacker chooses.",
+        "scale": 1,
+        "value_en": "Each hit destroys a turret; attacker chooses.",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "BOWS",
+        "scale": 0.5,
+        "value_en": "BOWS",
+        "scale_en": 0.5
+      },
+      "zone": "2",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 20,
+      "bottom": 0,
+      "name": {
+        "value": "BSIDES",
+        "scale": 0.6,
+        "value_en": "BSIDES",
+        "scale_en": 0.6
+      },
+      "zone": "3",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "Each Hit reduces Broadside by 1 die.",
+        "scale": 0.85,
+        "value_en": "Each Hit reduces Broadside by 1 die.",
+        "scale_en": 0.85
+      }
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 40,
+      "bottom": 0,
+      "name": {
+        "value": "PADDLE",
+        "scale": 0.65,
+        "value_en": "PADDLE",
+        "scale_en": 0.65
+      },
+      "zone": "4",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "Speed -3\"",
+        "scale": 1,
+        "value_en": "Speed -3\"",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 60,
+      "bottom": 0,
+      "name": {
+        "value": "BOILER",
+        "scale": 0.65,
+        "value_en": "BOILER",
+        "scale_en": 0.65
+      },
+      "zone": "5",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "Immoblized",
+        "scale": 1,
+        "value_en": "Immoblized",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 80,
+      "bottom": 0,
+      "name": {
+        "value": "PADDLE",
+        "scale": 0.6,
+        "value_en": "PADDLE",
+        "scale_en": 0.6
+      },
+      "zone": "6",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "Speed -3\"",
+        "scale": 1,
+        "value_en": "Speed -3\"",
+        "scale_en": 1
+      }
+    }
+  ],
+  "criticalTitle": {
+    "value": "BELOW WATERLINE",
+    "scale": 1,
+    "value_en": "BELOW WATERLINE",
+    "scale_en": 1
+  },
+  "criticalSave": "3+",
+  "criticalBoxes": 4,
+  "lowerNotesTitle": {
+    "value": "WEAPONS",
+    "scale": 1,
+    "value_en": "WEAPONS",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>All Cannons:</b> May repel boarders<br><b>Boarders:</b> Cannot be boarded until damaged.<br><b>Ram:</b> 3\" Straight, if foe fails Below Waterline save, roll for Below Waterline damage.<br><b>1</b>: 1pt, <b>2-4</b>: 2pts, <b>5-6</b>: 3pts",
+    "scale": 1,
+    "value_en": "<b>All Cannons:</b> May repel boarders<br><b>Boarders:</b> Cannot be boarded until damaged.<br><b>Ram:</b> 3\" Straight, if foe fails Below Waterline save, roll for Below Waterline damage.<br><b>1</b>: 1pt, <b>2-4</b>: 2pts, <b>5-6</b>: 3pts",
+    "scale_en": 1
+  },
+  "broadsideBattery": "2",
+  "forePortTurret": "1",
+  "foreStarboardTurret": "1",
+  "aftPortTurret": "1",
+  "aftStarboardTurret": "1"
+}

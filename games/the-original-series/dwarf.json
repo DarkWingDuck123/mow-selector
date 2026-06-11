@@ -1,0 +1,543 @@
+{
+  "id": "dwarf",
+  "style": {
+    "bgColor": "blue",
+    "fgColor": "white",
+    "parchmentColor": "beige",
+    "waterColor": "lightblue",
+    "accentColor": "red"
+  },
+  "name": "Dwarf",
+  "name_en": "Dwarf",
+  "name_de": "Dwarf",
+  "name_es": "Dwarf",
+  "name_fr": "Dwarf",
+  "validation_rules": [
+    {
+      "rule": "Max 2 Monitor per 1 Man O'War"
+    },
+    {
+      "rule": "Max 1 Dreadnought per 1 Ironclad"
+    },
+    {
+      "rule": "Max 1 Nautilus per 1 Man O'War"
+    },
+    {
+      "rule": "Min 1 Ironclad"
+    },
+    {
+      "rule": "Min 1 Dreadnought"
+    },
+    {
+      "rule": "Min 1 Monitor"
+    },
+    {
+      "rule": "Min 1 Nautilus"
+    },
+    {
+      "rule": "Max 33% Allies"
+    },
+    {
+      "rule": "Max 0% Non-Allies"
+    },
+    {
+      "rule": "Max 1 Sea Monster per 1 Ship of the Line"
+    },
+    {
+      "rule": "Max 1 Anti-Flyer per 1 Man O'War"
+    },
+    {
+      "rule": "Max 1 Warballoon per 1 Ship of the Line"
+    },
+    {
+      "rule": "Max 1 Gyrocopter per 1 Ship of the Line"
+    },
+    {
+      "rule": "Max 1 Gatling Cannon per 1 Man O'War"
+    },
+    {
+      "rule": "Max 1 Runesmith"
+    },
+    {
+      "rule": "Max 2 Rune per 1 Runesmith"
+    },
+    {
+      "rule": "Max 1 Master Engineer per 1 Man O'War"
+    },
+    {
+      "rule": "Max 2 Master Engineer Card per 1 Master Engineer"
+    },
+    {
+      "rule": "Max 1 Slayers"
+    }
+  ],
+  "freebies": [
+    {
+      "free": "1 Admiral"
+    },
+    {
+      "free": "1 Man O'War Card"
+    }
+  ],
+  "allies": [
+    "empire",
+    "brettonia"
+  ],
+  "crew": [
+    {
+      "id": "admiral",
+      "name": "Admiral",
+      "name_en": "Admiral",
+      "type_name": "Admiral",
+      "type_name_en": "Admiral",
+      "description": "(A) +1 CC",
+      "description_en": "(A) +1 CC",
+      "type": "crew",
+      "cost": "-"
+    },
+    {
+      "id": "runesmith",
+      "name": "Runesmith",
+      "name_en": "Runesmith",
+      "type_name": "Runesmith",
+      "type_name_en": "Runesmith",
+      "description": "(R) All dwarf ships ignore spells on a 5 or 6,<br>+2 battle honors, +1 summoning sea monsters<br>upto 2 rune cards, may cling to wreckage, must begin attached to Admiral's ship",
+      "description_en": "(R) All dwarf ships ignore spells on a 5 or 6,<br>+2 battle honors, +1 summoning sea monsters<br>upto 2 Rune Cards, may cling to wreckage, must begin attached to Admiral's ship",
+      "type": "crew",
+      "cost": "50"
+    },
+    {
+      "id": "masterengineer",
+      "name": "Master Engineer",
+      "name_en": "Master Engineer",
+      "type_name": "Master Engineer",
+      "type_name_en": "Master Engineer",
+      "description": "(M) Allows a reroll when repairing damage,<br>may repair waterline damage on a roll of 6<br>+1 battle honors, upto 2 Master Engineer Cards, may cling to wreckage",
+      "description_en": "(M) Allows a reroll when repairing damage,<br>may repair waterline damage on a roll of 6<br>+1 battle honors, upto 2 Master Engineer Cards, may cling to wreckage",
+      "type": "crew",
+      "cost": "25"
+    },
+    {
+      "id": "slayers",
+      "name": "Slayers",
+      "name_en": "Slayers",
+      "type_name": "Slayers",
+      "type_name_en": "Slayers",
+      "description": "(L) Adds 1d3+1 CC to attached ship, if a casualty occurs 4+ removes the Slayers<br>Slayers cannot crew a ship, must attach to Admiral's ship",
+      "description_en": "(L) Adds 1d3+1 CC to attached ship, if a casualty occurs 4+ removes the Slayers<br>Slayers cannot crew a ship, must attach to Admiral's ship",
+      "type": "crew",
+      "cost": "50"
+    }
+  ],
+  "addons": [
+    {
+      "id": "manowarcard",
+      "weight": "negligible",
+      "name": "Man O'War Card",
+      "name_en": "Man O'War Card",
+      "type": "card",
+      "type_name": "Man O'War Card",
+      "type_name_en": "Man O'War Card",
+      "cost": "25"
+    },
+    {
+      "id": "dwarf_gatlingcannon",
+      "weight": "negligible",
+      "name": "Gatling Cannon",
+      "name_en": "Gatling Cannon",
+      "type": "card",
+      "type_name": "Anti-Flyer",
+      "type_name_en": "Anti-Flyer",
+      "cost": "25"
+    },
+    {
+      "id": "crewcard",
+      "weight": "negligible",
+      "name": "Crew Card",
+      "name_en": "Crew Card",
+      "type": "crew_card",
+      "cost": "0"
+    },
+    {
+      "id": "turnsummary",
+      "weight": "negligible",
+      "name": "Turn Summary",
+      "name_en": "Turn Summary",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "dwarf_specialrules",
+      "weight": "negligible",
+      "name": "Special Rules - Dwarf",
+      "name_en": "Special Rules - Dwarf",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "dwarf_masterruneofswiftness",
+      "weight": "negligible",
+      "name": "Master Rune of Swiftness",
+      "name_en": "Master Rune of Swiftness",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "50"
+    },
+    {
+      "id": "dwarf_masterruneofgromril",
+      "weight": "negligible",
+      "name": "Master Rune of Gromril",
+      "name_en": "Master Rune of Gromril",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "50"
+    },
+    {
+      "id": "dwarf_masterruneofadamant",
+      "weight": "negligible",
+      "name": "Master Rune of Adamant",
+      "name_en": "Master Rune of Adamant",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "50"
+    },
+    {
+      "id": "dwarf_runeofspelleating",
+      "weight": "negligible",
+      "name": "Rune of Spell Eating",
+      "name_en": "Rune of Spell Eating",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "50"
+    },
+    {
+      "id": "dwarf_runesoffortune",
+      "weight": "negligible",
+      "name": "Runes of Fortune",
+      "name_en": "Runes of Fortune",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "25"
+    },
+    {
+      "id": "dwarf_runesofsmiting",
+      "weight": "negligible",
+      "name": "Runes of Smiting",
+      "name_en": "Runes of Smiting",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "25"
+    },
+    {
+      "id": "dwarf_runeofpenetrating",
+      "weight": "negligible",
+      "name": "Rune of Penetrating",
+      "name_en": "Rune of Penetrating",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "25"
+    },
+    {
+      "id": "dwarf_runeofburning",
+      "weight": "negligible",
+      "name": "Rune of Burning",
+      "name_en": "Rune of Burning",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "25"
+    },
+    {
+      "id": "dwarf_runeofpiercing",
+      "weight": "negligible",
+      "name": "Rune of Piercing",
+      "name_en": "Rune of Piercing",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "25"
+    },
+    {
+      "id": "dwarf_runeofcleaving",
+      "weight": "negligible",
+      "name": "Rune of Cleaving",
+      "name_en": "Rune of Cleaving",
+      "type": "card",
+      "type_name": "Rune",
+      "type_name_en": "Rune",
+      "cost": "25"
+    },
+    {
+      "id": "dwarf_overdriveengine",
+      "weight": "negligible",
+      "name": "Overdrive Engine",
+      "name_en": "Overdrive Engine",
+      "type": "card",
+      "type_name": "Master Engineer Card",
+      "type_name_en": "Master Engineer Card",
+      "cost": "50"
+    },
+    {
+      "id": "dwarf_spareboiler",
+      "weight": "negligible",
+      "name": "Spare Boiler",
+      "name_en": "Spare Boiler",
+      "type": "card",
+      "type_name": "Master Engineer Card",
+      "type_name_en": "Master Engineer Card",
+      "cost": "50"
+    },
+    {
+      "id": "dwarf_flamecannon",
+      "weight": "negligible",
+      "name": "Flame Cannon",
+      "name_en": "Flame Cannon",
+      "type": "card",
+      "type_name": "Master Engineer Card",
+      "type_name_en": "Master Engineer Card",
+      "cost": "25"
+    },
+    {
+      "id": "dwarf_improvedgears",
+      "weight": "negligible",
+      "name": "Improved Gears",
+      "name_en": "Improved Gears",
+      "type": "card",
+      "type_name": "Master Engineer Card",
+      "type_name_en": "Master Engineer Card",
+      "cost": "25"
+    },
+    {
+      "id": "blank",
+      "name": "Empty",
+      "name_en": "Empty",
+      "type": "card",
+      "cost": "0"
+    }
+  ],
+  "units": [
+    {
+      "id": "dwarf_dreadnought",
+      "type": "manowar",
+      "type_name": "Man O'War",
+      "type_name_en": "Man O'War",
+      "weight": "heavy",
+      "name": "Dreadnought",
+      "name_en": "Dreadnought",
+      "name_de": "Greatship",
+      "name_es": "Greatship",
+      "name_fr": "Greatship",
+      "description": "A Dreadnought",
+      "description_en": "A Dreadnought",
+      "squadron-size": 1,
+      "cost": 225
+    },
+    {
+      "id": "dwarf_ironclad",
+      "type": "manowar",
+      "type_name": "Man O'War",
+      "type_name_en": "Man O'War",
+      "weight": "heavy",
+      "name": "Ironclad",
+      "name_en": "Ironclad",
+      "description": "An Ironclad",
+      "description_en": "An Ironclad",
+      "squadron-size": 1,
+      "cost": 150
+    },
+    {
+      "id": "dwarf_monitor",
+      "type": "shipoftheline",
+      "type_name": "Ship of the Line",
+      "type_name_en": "Ship of the Line",
+      "weight": "heavy",
+      "name": "Monitor",
+      "name_en": "Monitor",
+      "description": "A Squadron of 3 Monitors",
+      "description_en": "A Squadron of 3 Monitors",
+      "squadron-size": 3,
+      "cost": 75
+    },
+    {
+      "id": "dwarf_nautilus",
+      "type": "independent",
+      "type_name": "Independent",
+      "type_name_en": "Independent",
+      "weight": "heavy",
+      "name": "Nautilus",
+      "name_en": "Nautilus",
+      "description": "A Nautilus",
+      "description_en": "A Nautilus",
+      "squadron-size": 1,
+      "cost": 75
+    },
+    {
+      "id": "dwarf_warballoon",
+      "type": "flyer",
+      "type_name": "Flyer",
+      "type_name_en": "Flyer",
+      "weight": "light",
+      "name": "Warballoon",
+      "name_en": "Warballoon",
+      "description": "A Flight of 3 Warballoons",
+      "description_en": "A Flight of 3 Warballoons",
+      "squadron-size": 1,
+      "cost": 75
+    },
+    {
+      "id": "dwarf_gyrocopter",
+      "type": "flyer",
+      "type_name": "Flyer",
+      "type_name_en": "Flyer",
+      "weight": "light",
+      "name": "Gyrocopter",
+      "name_en": "Gyrocopter",
+      "description": "A Flight of 3 Gyrocopters",
+      "description_en": "A Flight of 3 Gyrocopters",
+      "squadron-size": 3,
+      "cost": 75
+    }
+  ],
+  "names": [
+    {
+      "id": "name1",
+      "value": [
+        "Grugni's",
+        "Slayer's",
+        "High King's",
+        "Longbeard's",
+        "Thane's",
+        "Runesmith's"
+      ]
+    },
+    {
+      "id": "name2",
+      "value": [
+        "Revenge",
+        "Surprise",
+        "Wrath",
+        "Mistake",
+        "Hammer",
+        "Sword",
+        "Spear"
+      ]
+    },
+    {
+      "id": "name3",
+      "value": [
+        "Grombrindal",
+        "Thungni",
+        "Gazul",
+        "Grimnir",
+        "Valaya",
+        "Grungni"
+      ]
+    },
+    {
+      "id": "name4",
+      "value": [
+        "Karak",
+        "Barad"
+      ]
+    },
+    {
+      "id": "dname5",
+      "value": [
+        "Eight Peaks",
+        "High Peaks",
+        "Valley",
+        "Chasm"
+      ]
+    },
+    {
+      "id": "name6",
+      "value": [
+        "Hammer of",
+        "Fist of",
+        "Sword of",
+        "Club of",
+        "Rune of"
+      ]
+    },
+    {
+      "id": "name8",
+      "value": [
+        "Crazy",
+        "Crazed",
+        "Loonie",
+        "Loco",
+        "Bug-Eyed",
+        "Mad",
+        "Unhinged",
+        "Bonkers",
+        "Sane"
+      ]
+    },
+    {
+      "id": "name9",
+      "value": [
+        "Ariksson",
+        "Grunnasdottir",
+        "Skagnev",
+        "Sovrissniz",
+        "Alrik",
+        "Bronda",
+        "Dimzad",
+        "Fenna",
+        "Gottri",
+        "Gudrun",
+        "Snorri"
+      ]
+    }
+  ],
+  "naming_rules": [
+    {
+      "id": "dwarf_dreadnought",
+      "rule": [
+        "name1 name2",
+        "name2",
+        "name3"
+      ]
+    },
+    {
+      "id": "dwarf_ironclad",
+      "rule": [
+        "name1 dname5",
+        "dname5",
+        "name4 dname5"
+      ]
+    },
+    {
+      "id": "dwarf_monitor",
+      "rule": [
+        "name4 dname5"
+      ]
+    },
+    {
+      "id": "dwarf_nautilus",
+      "rule": [
+        "name6 name3"
+      ]
+    },
+    {
+      "id": "dwarf_warballoon",
+      "rule": [
+        "name3",
+        "name6 dname5"
+      ]
+    },
+    {
+      "id": "dwarf_gyrocopter",
+      "rule": [
+        "name8 name9, name8 name9, name8 name9"
+      ]
+    }
+  ]
+}

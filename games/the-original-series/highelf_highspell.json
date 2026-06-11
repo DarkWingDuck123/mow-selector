@@ -1,0 +1,340 @@
+{
+  "weight": "negligible",
+  "name": {
+    "value": "",
+    "scale": 1.0
+  },
+  "type": {
+    "value": "HIGH SPELL",
+    "scale": 0.65
+  },
+  "honors": {
+    "value": "",
+    "scale": 1.0
+  },
+  "cost": {
+    "value": "25 pts",
+    "scale": 1.0
+  },
+  "notes": [
+    {
+      "height": 30,
+      "title": {
+        "value": "",
+        "scale": 1.0
+      },
+      "note": {
+        "value": "",
+        "scale": 1.0
+      }
+    },
+    {
+      "height": 15,
+      "title": {
+        "value": "",
+        "scale": 1.0
+      },
+      "note": {
+        "value": "",
+        "scale": 1.0
+      }
+    },
+    {
+      "height": 55,
+      "title": {
+        "value": "",
+        "scale": 1.0
+      },
+      "note": {
+        "value": "",
+        "scale": 1.0
+      }
+    }
+  ],
+  "randomizable": true,
+  "random": [
+    {
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "DRAIN MAGIC",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The Mage screams into the forbidding dark knowing that his chants have coalesced above his ship. They lower to the deck and pass into his body, taking all of the magical power that currently surrounds the sea battle.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">8+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> The whole seascape<br><br>The Magic Phase ends immediately. All Wizards in the battle except the Mage who casts Drain Magic randomly lose D3 of their spells from their hand. All magical items such as banners, Dwarf Runes and Elven Scrolls of Power have no effect for the remainder of the turn. The Mage immediately gains 1D6 Power points and must test as usual if this takes him over his limit.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "CALL OF THE WILD",
+        "scale": 0.8
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>In a clear, piercing voice the Mage cries out over the seascape. Deep below the waves in the dark depths of the oceans, beasts of the sea stir in blue slumber. Hearing the cry they rise to the surface in answer to the distant call for aid.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">9+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> The whole seascape<br><br>The Elf player may place a Sea Monster swimming template immediately. This costs him no points but follows all the rules for Sea Monsters as if he had paid for it at the start of the game. He may not select Triton, a Sea Elemental or a Black Leviathan, as these beasts are too powerful to be summoned at such short notice.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "FATE WALK",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>While murmuring staves of the incantation the Mage turns sedately at the falling skies. The spirit of the Mage briefly departs his body to take a glimpse along the winds of time, into the futures. Already knowing, he can warn nearby Captains of the enemy's plans, allowing them to avoid their fate.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">8+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Own Fleet<br><br>The Elven player immediately gains the initiative if he does not already have it. Friendly ships within 9\" of the Mage (including the one he is on) gain a +1 modifier to all saving throws for the rest of the turn. This does not affect the below waterline saves.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "MIND STEAL",
+        "scale": 0.9
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The Mage frowns with effort as he sends his spirit body across the void to battle the psyche of the opposing Wizard.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">7+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> The enemy Wizard<br><br>Each player rolls a D6 and adds the level of his magic user. Wizards that use power points (including the Mage) may add up to three points to their roll, spent before the roll is made. Skaven may add warpstone (+1 per stone consumed). If the Mage has a higher score, the enemy Wizard counts as one level lower for the rest of the game. Chaos sorcerers and Skaven must make an impossible test, deducting the difference of scores from the Mage. The Mage suffers no ill effect if he loses.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "LANGUOROUS BREEZE",
+        "scale": 0.7
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>After chanting the incantation the Mage turns towards the target ship and slowly exhales a long, deep breath. The sigh settles towards the ship accompanied by a background of peaceful music. The enemy ship is enveloped by a pacifying mood that completely detaches their minds from the battle raging around them.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">8+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>The ship may not move or fire for the rest of the game unless it can roll a 5 or 6 at the start of each Magic Phase. The spell remains in play even if the ship changes hands, and resets the test each turn for the rest of the game.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "WRATH OF THE SEA",
+        "scale": 0.8
+      },
+      "notes": [
+        {
+          "height": 30,
+          "title": {
+            "value": "DESCRIPTION",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The Mage cries dire words of vengeance to the skies. As his chant echoes the waves dance and swell, increasing in intensity to a frothing maelstrom. With an extravagant gesture the Mage directs the widespread at an opposing ship.</i></div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 15,
+          "title": {
+            "value": "CASTING VALUE",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\">7+</div>",
+            "scale": 1.0
+          }
+        },
+        {
+          "height": 55,
+          "title": {
+            "value": "EFFECT",
+            "scale": 1.0
+          },
+          "note": {
+            "value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship<br><br>Roll a D6 for each crew counter; a 5 or 6 indicates they are washed overboard and killed. Roll also for any characters such as Admirals or Wizards; if they are washed overboard follow the procedure given in the Captain Washed Overboard result on the Captains Chart.</div>",
+            "scale": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

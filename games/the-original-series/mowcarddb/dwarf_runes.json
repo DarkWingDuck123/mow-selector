@@ -1,0 +1,128 @@
+[
+  {
+    "deck": "Hull Rune",
+    "name": "Runes of Fortune",
+    "cost": "25pts",
+    "battle_honours": 0,
+    "flavor": "Shot marked with this magical sigil have a mind of their own. They growl and snarl as they are loaded and can change their course when fired at the enemy.",
+    "effect": "When you fire this ammunition you may add or subtract one from the to hit roll, making it more likely to hit an already damaged location. A roll of one is still a miss.",
+    "discard": true
+  },
+  {
+    "deck": "Hull Rune",
+    "name": "Runes of Smiting",
+    "cost": "25pts",
+    "battle_honours": 0,
+    "flavor": "This Runic ammunition has been toughened with an intensity found in the heart of a volcano. When they hit an enemy ship planking is split asunder and men are thrown from the decks in the storm of enchanted iron.",
+    "effect": "If a location fails its saving throw against this ammunition it will take two points of damage instead of one. Critical hits and all other rules for multiple damage apply.",
+    "discard": true
+  },
+  {
+    "deck": "Hull Rune",
+    "name": "Rune of Penetrating",
+    "cost": "25pts",
+    "battle_honours": 1,
+    "flavor": "Cannon bearing the marking of this Rune will magically toughen any ammunition they are loaded with, causing their shots to smash through armour and planking with greater ease.",
+    "effect": "Shots from this cannon have an additional -1 saving throw modifier. This is subject to other modifications such as Man O'War cards and range.",
+    "discard": false
+  },
+  {
+    "deck": "Hull Rune",
+    "name": "Rune of Burning",
+    "cost": "25pts",
+    "battle_honours": 1,
+    "flavor": "When ammunition is loaded into the cannon bearing this Rune it starts to smoulder. Within a few seconds it blazes white hot but the powder is magically prevented from igniting until it is necessary.",
+    "effect": "Shots from this turret will set fire to the target ship. Place a Blaze counter instead of a normal Damage marker if it causes a hit.",
+    "discard": false
+  },
+  {
+    "deck": "Hull Rune",
+    "name": "Master Rune of Swiftness",
+    "cost": "50pts",
+    "battle_honours": 2,
+    "flavor": "This Rune distorts time and space in its immediate vicinity. When used on a cannon it allows the crew to load and fire with the ease of a crew not achievable by natural training and experience.",
+    "effect": "A cannon with this Rune gains an extra shot in the Battle phase. This extra shot can be taken at any time, even while your opponent is using a ship. Simply declare that you are firing and follow the normal procedure. You may not interrupt firing if the hit roll and dice have already been made but the saving throw is yet to be rolled.",
+    "discard": false
+  },
+  {
+    "deck": "Weapon Rune",
+    "name": "Master Rune of Gromril",
+    "cost": "50pts",
+    "battle_honours": 2,
+    "flavor": "The ship's hull bends and twists itself under the magical influence of this Rune. Where gaping holes from battle damage have appeared it grows new plates and struts to repair the damage.",
+    "effect": "You may add +1 to the dice roll when you attempt to repair a ship location above the waterline.",
+    "discard": false
+  },
+  {
+    "deck": "Weapon Rune",
+    "name": "Master Rune of Adamant",
+    "cost": "50pts",
+    "battle_honours": 2,
+    "flavor": "A ship with this Rune has its metallic skin toughened beyond belief. With the endurance of the roots of mountain it withstands attacks that would shatter lesser vessels.",
+    "effect": "The ship may re-roll any saving throws that it fails. If the second roll fails a hit is taken as normal. No saving throw can be re-rolled more than once, irrespective of the source of the re-roll. This Rune does not apply to below waterline saves.",
+    "discard": false
+  },
+  {
+    "deck": "Weapon Rune",
+    "name": "Rune of Spell Eating",
+    "cost": "50pts",
+    "battle_honours": 2,
+    "flavor": "The hull of the ship is covered by a shimmering curtain of energy. Spells cast at the ship are reflected harmlessly into the sky, away from the Dwarf fleet.",
+    "effect": "The ship may re-roll an attempt to dispel. It may only use the re-roll if the spell is directed at the ship with the Rune. If the second dispel roll fails the spell has its usual effect on the vessel.",
+    "discard": false
+  },
+  {
+    "deck": "Weapon Rune",
+    "name": "Rune of Piercing",
+    "cost": "25pts",
+    "battle_honours": 1,
+    "flavor": "This Rune glows with a menacing red hue which it casts onto the ship's prow, enveloping it in the mystic aura. When the ship rams another vessel the ambient light blazes into an eye searing rainbow while the prow slides effortlessly through the opposing ship's hull.",
+    "effect": "When this vessel rams another its target has an additional -1 modifier on its below the waterline saving throw.",
+    "discard": false
+  },
+  {
+    "deck": "Weapon Rune",
+    "name": "Rune of Cleaving",
+    "cost": "25pts",
+    "battle_honours": 1,
+    "flavor": "The ship's ram glints with a wicked sheen. When it comes into contact with an enemy ship it glows white and cuts its way through the planks and armour without stopping.",
+    "effect": "A Dwarf ship with this Rune may make a ram attack even if it has turned during the same Battle phase. The ship still needs to move 3 or more inches, but does not have to travel in a straight line. The ram is resolved as normal.",
+    "discard": false
+  },
+  {
+    "deck": "Master Engineer",
+    "name": "Overdrive Engine",
+    "cost": "50pts",
+    "battle_honours": 2,
+    "flavor": "The Master Engineer on this vessel has installed a Thrumrocks triple gauged, double can, loop-wired Overdrive engine.",
+    "effect": "A ship with an Overdrive engine may add 2\" to all its movement rates. If the ship is moving forward and does not turn it may add 4\" to its movement value.",
+    "discard": false
+  },
+  {
+    "deck": "Master Engineer",
+    "name": "Spare Boiler",
+    "cost": "50pts",
+    "battle_honours": 2,
+    "flavor": "The Master Engineer has fitted a back-up boiler in case the main one is blown up.",
+    "effect": "If a ship with this card has its boiler location destroyed place the Spare Boiler counter on the template instead of a normal Damage marker. The spare boiler does not benefit from any other engine improvements and will only move the vessel at normal speed. If the spare boiler is also destroyed the ship is immobilised as usual. The spare boiler may be repaired and counts as a separate location.",
+    "discard": false
+  },
+  {
+    "deck": "Master Engineer",
+    "name": "Flame Cannon",
+    "cost": "25pts",
+    "battle_honours": 1,
+    "flavor": "Mounted on the front of the ship, a deadly Flame Cannon points its barrel menacingly at the enemy fleet.",
+    "effect": "The Flame Cannon is an additional weapon mounted in the Bows location with a 180 degree fire arc to the front of the vessel. If the bows are destroyed so is the Flame Cannon. It has one dice attack, may fire at targets at a maximum of medium range, and has no save modifier. If the target fails its save place a Blaze marker on the location.",
+    "discard": false
+  },
+  {
+    "deck": "Master Engineer",
+    "name": "Improved Gears",
+    "cost": "25pts",
+    "battle_honours": 1,
+    "flavor": "The gears and other systems that connect the two engines and allow the ship to turn have been improved as a result of the diligent experimentation by the Master Engineer.",
+    "effect": "The ship may make turns between 90 and 180 degrees for half its movement, the same penalty as turns between 0 and 90 degrees.",
+    "discard": false
+  }
+]

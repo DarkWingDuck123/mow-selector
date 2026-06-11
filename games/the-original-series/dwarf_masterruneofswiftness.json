@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "MASTER RUNE OF SWIFTNESS", "scale": 0.55},
+  "type": {"value": "HULL RUNE", "scale": 0.75},
+  "honors": {"value": "Honors: 2", "scale": 1.0},
+  "cost": {"value": "50 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 35,
+      "title": {"value": "DESCRIPTION", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This Rune distorts time and space in its immediate vicinity. When used on a cannon it allows the crew to load and fire with the ease of a crew not achievable by natural training and experience.</i></div>", "scale": 1.0}
+    },
+    {
+      "height": 65,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">A cannon with this Rune gains an extra shot in the Battle phase. This extra shot can be taken at any time, even while your opponent is using a ship. Simply declare that you are firing and follow the normal procedure. You may not interrupt firing if the hit roll and dice have already been made but the saving throw is yet to be rolled.</div>", "scale": 1.0}
+    }
+  ]
+}

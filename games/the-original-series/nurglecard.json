@@ -1,0 +1,156 @@
+{
+  "weight": "negligible",
+  "name": {"value": "", "scale": 1.0},
+  "type": {"value": "NURGLE REWARD", "scale": 0.65},
+  "honors": {"value": "", "scale": 1.0},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 35,
+      "title": {"value": "", "scale": 1.0},
+      "note": {"value": "", "scale": 1.0}
+    },
+    {
+      "height": 65,
+      "title": {"value": "", "scale": 1.0},
+      "note": {"value": "", "scale": 1.0}
+    }
+  ],
+  "randomizable": true,
+  "random": [
+    {
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "", "scale": 1.0},
+          "note": {"value": "", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "", "scale": 1.0},
+          "note": {"value": "", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "HIDEOUS STENCH", "scale": 0.70},
+      "notes": [
+        {
+          "height": 25,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This ship gives off a foul smell which floats downwind as a choking cloud.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 75,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Using the range rules, any ships within 9\" and downwind of the stench suffer a -1 on boarding action dice rolls as the crew is sickened by the foul odour and cannot fight to their full potential.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "REGENERATE DAMAGE", "scale": 0.62},
+      "notes": [
+        {
+          "height": 40,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This ship has an indistinct, almost flowing outline, as great gobbets of slime shift and roll across the deck, dripping down the hull into the sea. This thick substance seeps into any holes made in the ship, plugging them up and making the hull watertight again.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 60,
+          "title": {"value": "SHIP ABILITY", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">At the end of each turn, roll a dice for each location of the ship that is damaged; on a score of 6 the location is repaired.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "TENTACLES", "scale": 0.80},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>The prow of this ship is covered in writhing, slime-coated tentacles which grope and grasp with grinding suckers.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The tentacles have a 3\" range and may be used once per Battle Phase. Roll a dice; on a score of 6, the target ship loses one crew counter as the screaming sailors are plucked from the deck and ripped limb from limb.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "VOMIT BLAST", "scale": 0.75},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>As the ship approaches its target, a huge toad-like mouth opens at its prow, vomiting a torrent of caustic, foul smelling bile at the target.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The blast has a range of 6\" and uses a plague trail template. It is always aimed low, is a 3 dice attack, and has a saving throw modifier of -2.<br><br><b>Discard after use.</b></div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "PLAGUESHIP", "scale": 0.80},
+      "notes": [
+        {
+          "height": 30,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Flies cover this ship like a cloud, and numerous hideous diseases run rife onboard. Any vessel that comes too near runs the risk of catching the plague.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Any ship which comes into contact with this ship must roll a dice; on a score of 6, one crew counter is removed as the sailors succumb to Nurgle's Rot.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "POISONED ARROWS", "scale": 0.68},
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>In preparation for battle, the reeking, rotting warriors of Nurgle coat their weapons with an evil, green slime that withers and melts flesh on contact.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Before starting a boarding action, roll a dice for each crew counter on the enemy ship; on a score of 5 or 6 the crew is killed by poisoned arrows and the counter is removed.<br><br><b>Discard after use.</b></div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "SHIP ROT", "scale": 0.85},
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This ship has a forward-firing catapult loaded with slime and rotting filth. It may fire once per battle and has a 9\" range. Roll to hit as a catapult. A 1 misses. Any area hit takes 1 point of damage.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "SPECIAL ATTACK", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Roll for the rot spreading immediately, using the fire spreading table. Any area it spreads to must make a saving throw or take a point of damage. Roll for each area the rot spreads to until it either tries to spread to an area it cannot, remains still, re-infects a rotten area, or the whole ship is affected.<br><br><b>Discard after use.</b></div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "WARTY SCALES", "scale": 0.75},
+      "notes": [
+        {
+          "height": 35,
+          "title": {"value": "DESCRIPTION", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>This ship is covered in thick, warty growths that glisten with a hideous slime.</i></div>", "scale": 1.0}
+        },
+        {
+          "height": 65,
+          "title": {"value": "SHIP ABILITY", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">These scale-like nodules add +1 to all the ship's saving throws.</div>", "scale": 1.0}
+        }
+      ]
+    }
+  ]
+}

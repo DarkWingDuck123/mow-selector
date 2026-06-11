@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "DELIANIATH'S ARCH", "scale": 0.65},
+  "type": {"value": "CRYSTAL OF POWER", "scale": 0.65},
+  "honors": {"value": "Honors: 1", "scale": 1.0},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 40,
+      "title": {"value": "DESCRIPTION", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>Delianiath was famed for the love his crew had for him and the concern he showed for them in turn. This green and blue globe was made by Mistellia for him and contains a ghostly bridge that allows the crew to reach safety if their ship is sunk.</i></div>", "scale": 1.0}
+    },
+    {
+      "height": 60,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">If the ship with Delianiath's Arch is sunk, place any Crew, Admiral or Mage counters on the nearest Elven ship, including the Admiral. If the crew cannot fit they are taken to the second closest, and so on. The Crystal is exhausted after it is used and so may only be used once per battle.</div>", "scale": 1.0}
+    }
+  ]
+}

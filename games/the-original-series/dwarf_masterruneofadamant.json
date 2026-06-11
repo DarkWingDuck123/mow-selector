@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "MASTER RUNE OF ADAMANT", "scale": 0.55},
+  "type": {"value": "WEAPON RUNE", "scale": 0.75},
+  "honors": {"value": "Honors: 2", "scale": 1.0},
+  "cost": {"value": "50 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 35,
+      "title": {"value": "DESCRIPTION", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><i>A ship with this Rune has its metallic skin toughened beyond belief. With the endurance of the roots of a mountain it withstands attacks that would shatter lesser vessels.</i></div>", "scale": 1.0}
+    },
+    {
+      "height": 65,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The ship may re-roll any saving throws that it fails. If the second roll fails a hit is taken as normal. No saving throw can be re-rolled more than once, irrespective of the source of the re-roll. This Rune does not apply to below waterline saves.</div>", "scale": 1.0}
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "weight": "heavy",
+  "name": {
+    "value": "HULK",
+    "scale": 1,
+    "value_en": "HULK",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "ORC MAN O'WAR",
+    "scale": 1,
+    "value_en": "ORC MAN O'WAR",
+    "scale_en": 1
+  },
+  "honors": {
+    "value": "Honors: 6",
+    "scale": 0.8,
+    "value_en": "Honors: 6",
+    "scale_en": 0.8
+  },
+  "cost": {
+    "value": "150 pts",
+    "scale": 1,
+    "value_en": "150 pts",
+    "scale_en": 1
+  },
+  "crew": 5,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 1,
+    "value_en": "CREW",
+    "scale_en": 1
+  },
+  "move": {
+    "value": "<div style=\"font-size:20px\">TREADWHEEL 4\"</div>or<div style=\"font-size:20px\">SAIL 4\"</div>Wind Behind 6\"</b>",
+    "scale": 0.75,
+    "value_en": "<div style=\"font-size:20px\">TREADWHEEL 4\"</div>or<div style=\"font-size:20px\">SAIL 4\"</div>Wind Behind 6\"</b>",
+    "scale_en": 0.75
+  },
+  "upperNotes": [
+    {
+      "value": "MOVE: May reverse upto 2\", May NOT turn on spot.",
+      "scale": 1,
+      "value_en": "MOVE: May reverse upto 2\", May NOT turn on spot.",
+      "scale_en": 1
+    }
+  ],
+  "highLow": [
+    {
+      "title": "LOW",
+      "title_en": "LOW",
+      "height": 40
+    },
+    {
+      "title": "HIGH",
+      "title_en": "HIGH",
+      "height": 60
+    }
+  ],
+  "dmgBoxes": [
+    {
+      "width": 33,
+      "height": 40,
+      "left": 0,
+      "bottom": 60,
+      "name": {
+        "value": "HAMMERS",
+        "scale": 1,
+        "value_en": "HAMMERS",
+        "scale_en": 1
+      },
+      "zone": "4",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Smasha Hammer</b> Lost",
+          "scale": 0.7,
+          "value_en": "<b>Smasha Hammer</b> Lost",
+          "scale_en": 0.7
+        },
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 33,
+      "height": 40,
+      "left": 33,
+      "bottom": 60,
+      "name": {
+        "value": "MAINMAST",
+        "scale": 1,
+        "value_en": "MAINMAST",
+        "scale_en": 1
+      },
+      "zone": "5",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "No effect",
+          "scale": 1,
+          "value_en": "No effect",
+          "scale_en": 1
+        },
+        {
+          "value": "<b>Mast Lost</b> May not move under Sail",
+          "scale": 0.8,
+          "value_en": "<b>Mast Lost</b> May not move under Sail",
+          "scale_en": 0.8
+        }
+      ],
+      "notes": {
+        "value": "<i>No Criticals</i>",
+        "scale": 1.1,
+        "value_en": "<i>No Criticals</i>",
+        "scale_en": 1.1
+      }
+    },
+    {
+      "width": 34,
+      "height": 40,
+      "left": 66,
+      "bottom": 60,
+      "name": {
+        "value": "SHOOTY BITZ",
+        "scale": 0.85,
+        "value_en": "SHOOTY BITZ",
+        "scale_en": 0.85
+      },
+      "zone": "6",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Fore <b>Big Chukka</b> Lost",
+          "scale": 0.65,
+          "value_en": "Fore <b>Big Chukka</b> Lost",
+          "scale_en": 0.65
+        },
+        {
+          "value": "Aft <b>Big Chukka</b> Lost",
+          "scale": 0.65,
+          "value_en": "Aft <b>Big Chukka</b> Lost",
+          "scale_en": 0.65
+        }
+      ],
+      "notes": {
+        "value": "Owner decides damage order",
+        "scale": 0.75,
+        "value_en": "Owner decides damage order",
+        "scale_en": 0.75
+      }
+    },
+    {
+      "width": 50,
+      "height": 30,
+      "left": 0,
+      "bottom": 30,
+      "name": {
+        "value": "IRONCLAWZ",
+        "scale": 1,
+        "value_en": "IRONCLAWZ",
+        "scale_en": 1
+      },
+      "zone": "2",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Iron Clawz</b> Lost",
+          "scale": 0.9,
+          "value_en": "<b>Iron Clawz</b> Lost",
+          "scale_en": 0.9
+        }
+      ]
+    },
+    {
+      "width": 50,
+      "height": 30,
+      "left": 50,
+      "bottom": 30,
+      "name": {
+        "value": "GUBBINZ",
+        "scale": 1,
+        "value_en": "GUBBINZ",
+        "scale_en": 1
+      },
+      "zone": "3",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 0.8,
+          "value_en": "",
+          "scale_en": 0.8
+        }
+      ]
+    },
+    {
+      "width": 25,
+      "height": 30,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "FRUNT",
+        "scale": 1,
+        "value_en": "FRUNT",
+        "scale_en": 1
+      },
+      "zone": "4",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 42,
+      "height": 30,
+      "left": 25,
+      "bottom": 0,
+      "name": {
+        "value": "SHOOTY BITZ",
+        "scale": 1,
+        "value_en": "SHOOTY BITZ",
+        "scale_en": 1
+      },
+      "zone": "5",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Broadside <b>Big Chukka</b><br>Lost",
+          "scale": 0.85,
+          "value_en": "Broadside <b>Big Chukka</b><br>Lost",
+          "scale_en": 0.85
+        }
+      ]
+    },
+    {
+      "width": 33,
+      "height": 30,
+      "left": 67,
+      "bottom": 0,
+      "name": {
+        "value": "TREADWHEEL",
+        "scale": 0.55,
+        "value_en": "TREADWHEEL",
+        "scale_en": 0.55
+      },
+      "zone": "6",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Wheel</b> lost.<br>May only<br>move under sail.",
+          "scale": 0.85,
+          "value_en": "<b>Wheel</b> lost.<br>May only<br>move under sail.",
+          "scale_en": 0.85
+        }
+      ]
+    }
+  ],
+  "criticalTitle": {
+    "value": "BELOW WATERLINE",
+    "scale": 1,
+    "value_en": "BELOW WATERLINE",
+    "scale_en": 1
+  },
+  "criticalSave": "4+",
+  "criticalBoxes": 5,
+  "lowerNotesTitle": {
+    "value": "WEAPONS & SPECIAL RULES",
+    "scale": 1,
+    "value_en": "WEAPONS & SPECIAL RULES",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Iron Clawz</b>:Roll d6 > range to target to hit. Move smaller ship into contact. Enemy can only separate on a 5 or 6.<br><b>Smash Hamma</b>: 1 low attack on a ship in contact with bow. Does d6 hits to that location.<br><b>Big Chukka</b>: Fires as catapult, -1 Save",
+    "scale": 0.9,
+    "value_en": "<b>Iron Clawz</b>:Roll d6 > range to target to hit. Move smaller ship into contact. Enemy can only separate on a 5 or 6.<br><b>Smash Hamma</b>: 1 low attack on a ship in contact with bow. Does d6 hits to that location.<br><b>Big Chukka</b>: Fires as catapult, -1 Save",
+    "scale_en": 0.9
+  },
+  "foreBattery": "1",
+  "aftBattery": "1",
+  "broadsideBattery": "1"
+}

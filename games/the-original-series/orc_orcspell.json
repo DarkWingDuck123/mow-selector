@@ -1,0 +1,273 @@
+{
+  "weight": "negligible",
+  "name": {
+    "value": "",
+    "scale": 1.0
+  },
+  "type": {
+    "value": "ORC SPELL",
+    "scale": 0.65
+  },
+  "honors": {
+    "value": "",
+    "scale": 1.0
+  },
+  "cost": {
+    "value": "25 pts",
+    "scale": 1.0
+  },
+  "notes": [
+    {
+      "height": 15,
+      "title": {"value": "", "scale": 1.0},
+      "note": {"value": "", "scale": 1.0}
+    },
+    {
+      "height": 85,
+      "title": {"value": "", "scale": 1.0},
+      "note": {"value": "", "scale": 1.0}
+    }
+  ],
+  "randomizable": true,
+  "random": [
+    {
+      "notes": [
+        {
+          "height": 15,
+          "title": {"value": "", "scale": 1.0},
+          "note": {"value": "", "scale": 1.0}
+        },
+        {
+          "height": 85,
+          "title": {"value": "", "scale": 1.0},
+          "note": {"value": "", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "GAZE OF MORK", "scale": 0.9},
+      "notes": [
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 3</div>", "scale": 1.0}
+        },
+        {
+          "height": 85,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Special<br><br>Place the range ruler so that it is touching the ship the Shaman is on. It does not have to correspond to the normal fire arcs. Any vessel, friend or foe, under the template suffers D3 hits. The saving throw modifier depends on Shaman level: 1=0, 2/3=-1, 4/5=-2.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "MORK SAVE UZ!", "scale": 0.8},
+      "notes": [
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 2</div>", "scale": 1.0}
+        },
+        {
+          "height": 85,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> A single friendly ship or squadron<br><br>The ships gain an additional 4+ dispel until the end of the turn. This dispel will only affect spells that are actually targeted at the ship or a ship within the squadron.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "DA KRUNCH", "scale": 0.9},
+      "notes": [
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 3</div>", "scale": 1.0}
+        },
+        {
+          "height": 85,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship within 9\"<br><br>The ship is hit in the same way as a catapult. Roll to see which location is hit (a high location on appropriate vessels). This location is hit with a -2 save modifier. Lower locations have the save modifier reduced by one, rolling randomly if there is a choice of locations. See catapult rules for full details.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "FISTS OF GORK", "scale": 0.8},
+      "notes": [
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 2</div>", "scale": 1.0}
+        },
+        {
+          "height": 85,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> The Shaman<br><br>The Shaman's presence adds +3 to the ship's total in any boarding action this turn.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "WAAAGH!", "scale": 1.0},
+      "notes": [
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 4</div>", "scale": 1.0}
+        },
+        {
+          "height": 85,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any orc ships within range (Shaman level 1/2=6\", 3/4=9\", 5=12\")<br><br>All affected Orc ships gain +2 to their boarding rolls for the remainder of the turn. In addition, any enemy wizard within range of the spell must lose D6 spell cards from his hand immediately.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "MORK WANTS YA!", "scale": 0.8},
+      "notes": [
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 4</div>", "scale": 1.0}
+        },
+        {
+          "height": 85,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship within 9\"<br><br>The enemy vessel suffers a number of hits equal to the level of the caster. These hits are resolved with a -1 saving throw modifier. The ship may also be moved D6\" in a direction specified by the Orc player. This may result in running aground or collisions as normal.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "THE HAND OF GORK", "scale": 0.8},
+      "notes": [
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 3</div>", "scale": 1.0}
+        },
+        {
+          "height": 85,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> A single friendly ship<br><br>The ship can be moved up to 9\" in any direction. The ship may pass over other ships and terrain without penalty. It may be placed facing in any direction and may move and fire normally in the next Battle Phase. The ship will become a straggler if moved out of the range of a squadron flagship.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "BRAIN BURSTA", "scale": 0.9},
+      "notes": [
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 4</div>", "scale": 1.0}
+        },
+        {
+          "height": 85,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> The range rules<br><br>Each vessel under the range ruler loses a number of crew counters equal to the roll of a dice. Shaman level 1/2/3=D3-1 crew killed, 4/5=D3 crew killed.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "ERE WE GO!", "scale": 0.9},
+      "notes": [
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 3</div>", "scale": 1.0}
+        },
+        {
+          "height": 85,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any orc ships within range (Shaman level 1/2=6\", 3/4=9\", 5=12\")<br><br>All affected Orc ships gain +1 to their total in any boarding action this turn.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "'EADBUTT", "scale": 1.0},
+      "notes": [
+        {
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 3</div>", "scale": 1.0}
+        },
+        {
+          "height": 85,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> The enemy Wizard<br><br>Each player rolls a D6 and adds their Wizard's level. The Orc player can also add +1 to his roll if he rolled a 6 to cast this spell. If the enemy Wizard scores less than the Shaman then he is killed and removed from the game. If the scores are equal or the Shaman loses there is no further effect.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "OVER DA SIDE", "scale": 0.8},
+      "notes": [
+        {
+          "height": 15,
+          "title": {"value": "EVENT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Play immediately</div>", "scale": 1.0}
+        },
+        {
+          "height": 85,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">This card is played on an Orc ship, chosen by the opponent. The ship loses a crew counter. There is a chance that another counter is dragged along and is removed as well. After removing the counter that goes overboard roll a D6; on a 1 or 2 another counter is removed. Keep rolling for each plunging crew until you roll 3+.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "GET DA SKUMBO!", "scale": 0.7},
+      "notes": [
+        {
+          "height": 15,
+          "title": {"value": "EVENT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Play immediately</div>", "scale": 1.0}
+        },
+        {
+          "height": 85,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Play this card on any enemy vessel. Any Orc ships which attempt to board this vessel gain an additional +2 modifier to their roll.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "'EADBANG!", "scale": 0.9},
+      "notes": [
+        {
+          "height": 15,
+          "title": {"value": "EVENT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Play immediately</div>", "scale": 1.0}
+        },
+        {
+          "height": 85,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">The Shaman must make an immediate roll on the Kickback Table, using the power he has in his hand rather than the amount of power he used to cast a spell.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "GERROUTAVIT", "scale": 0.8},
+      "notes": [
+        {
+          "height": 15,
+          "title": {"value": "EVENT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Play immediately</div>", "scale": 1.0}
+        },
+        {
+          "height": 85,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">A single Orc ship, chosen by the enemy player, may not move or fire this turn.</div>", "scale": 1.0}
+        }
+      ]
+    },
+    {
+      "name": {"value": "DED 'ARD", "scale": 0.9},
+      "notes": [
+        {
+          "height": 15,
+          "title": {"value": "EVENT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Play immediately</div>", "scale": 1.0}
+        },
+        {
+          "height": 85,
+          "title": {"value": "EFFECT", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Play this card on any vessel within the Orc fleet. This ship may make an immediate move, and may board another vessel if it moves into contact. This does not affect the ship's ability to move and fire normally.</div>", "scale": 1.0}
+        }
+      ]
+    }
+  ]
+}
