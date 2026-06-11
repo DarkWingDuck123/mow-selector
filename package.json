@@ -24,11 +24,14 @@
     "react-tooltip": "^5.28.0",
     "web-vitals": "^5.1.0"
   },
+  "homepage": "https://DarkWingDuck123.github.io/mow-selector",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "jest": {
     "transformIgnorePatterns": [
@@ -59,6 +62,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "playwright": "^1.60.0",
     "react-router-dom": "^7.13.1"
   }
