@@ -98,9 +98,6 @@ export const ShowLists = ({
               />
             ))}
           </OrderableList>
-          <Expandable headline="Data" noMargin>
-            {<pre>{JSON.stringify(lists, null, 2)}</pre>}
-          </Expandable>
         </>
       )}
     </>

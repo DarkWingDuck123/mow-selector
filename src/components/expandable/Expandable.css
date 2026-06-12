@@ -14,7 +14,7 @@
   padding-bottom: 0.5rem;
   color: var(--color-headline);
   line-height: 1.5;
-  display: list-item;
+  display: block;
   transition: color 0.2s linear;
 }
 
