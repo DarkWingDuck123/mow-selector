@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mow-selector/static/css/main.59c58288.css",
+    "main.css": "/mow-selector/static/css/main.465a769e.css",
     "main.js": "/mow-selector/static/js/main.eeb9aa49.js",
     "static/js/488.70fbce0b.chunk.js": "/mow-selector/static/js/488.70fbce0b.chunk.js",
     "static/media/spain.svg": "/mow-selector/static/media/spain.fe46f7a778fdc34b4cb31895f52d2247.svg",
@@ -11,12 +11,12 @@
     "static/media/italy.svg": "/mow-selector/static/media/italy.bb2033dcda58d584b313a60a850a36cb.svg",
     "static/media/polen.svg": "/mow-selector/static/media/polen.0882b3e3846c9861e7150d74c94a7ee9.svg",
     "static/media/france.svg": "/mow-selector/static/media/france.bf26b172fbb19d5193a5a0a28e69c4ba.svg",
-    "main.59c58288.css.map": "/mow-selector/static/css/main.59c58288.css.map",
+    "main.465a769e.css.map": "/mow-selector/static/css/main.465a769e.css.map",
     "main.eeb9aa49.js.map": "/mow-selector/static/js/main.eeb9aa49.js.map",
     "488.70fbce0b.chunk.js.map": "/mow-selector/static/js/488.70fbce0b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.59c58288.css",
+    "static/css/main.465a769e.css",
     "static/js/main.eeb9aa49.js"
   ]
 }
