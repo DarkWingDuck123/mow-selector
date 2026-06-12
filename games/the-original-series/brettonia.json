@@ -7,7 +7,7 @@
     "waterColor": "lightblue",
     "accentColor": "red"
   },
-  "name_en": "Brettonia",
+  "name_en": "Brettonian Fleet",
   "validation_rules": [
     {
       "rule": "Max 1 Galleon per 1 Ship of the Line; First One Free"
@@ -72,7 +72,6 @@
       "free": "8 Color Spell per Grand Wizard Lord"
     }
   ],
-
   "crew": [
     {
       "id": "admiral",
@@ -163,12 +162,10 @@
       "cost": "200"
     }
   ],
-
   "allies": [
     "empire",
     "dwarf"
   ],
-
   "addons": [
     {
       "id": "colorspell",

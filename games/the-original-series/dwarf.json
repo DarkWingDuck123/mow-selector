@@ -7,11 +7,11 @@
     "waterColor": "lightblue",
     "accentColor": "red"
   },
-  "name": "Dwarf",
-  "name_en": "Dwarf",
-  "name_de": "Dwarf",
-  "name_es": "Dwarf",
-  "name_fr": "Dwarf",
+  "name": "Dwarf Fleet",
+  "name_en": "Dwarf Fleet",
+  "name_de": "Dwarf Fleet",
+  "name_es": "Dwarf Fleet",
+  "name_fr": "Dwarf Fleet",
   "validation_rules": [
     {
       "rule": "Max 2 Monitor per 1 Man O'War"

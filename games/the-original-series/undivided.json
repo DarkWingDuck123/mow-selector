@@ -7,18 +7,15 @@
     "waterColor": "dimgray",
     "accentColor": "silver"
   },
-
-  "name": "Chaos Undivided",
-  "name_de": "Chaos Undivided",
-  "name_en": "Chaos Undivided",
-  "name_es": "Chaos Undivided",
-  "name_fr": "Chaos Undivided",
-
+  "name": "Plague Fleet",
+  "name_de": "Plague Fleet",
+  "name_en": "Plague Fleet",
+  "name_es": "Plague Fleet",
+  "name_fr": "Plague Fleet",
   "validation_rules": [],
   "freebies": [],
   "allies": [],
   "crew": [],
-
   "addons": [
     {
       "id": "chaosspell",
@@ -86,7 +83,6 @@
       "cost": "0"
     }
   ],
-
   "units": [
     {
       "id": "deathgalley",
@@ -98,7 +94,6 @@
       "cost": 75
     }
   ],
-
   "names": [],
   "naming_rules": []
 }

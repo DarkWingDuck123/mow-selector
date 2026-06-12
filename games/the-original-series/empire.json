@@ -7,10 +7,10 @@
     "waterColor": "lightblue",
     "accentColor": "red"
   },
-  "name_de": "The Empire",
-  "name_en": "The Empire",
-  "name_es": "The Empire",
-  "name_fr": "The Empire",
+  "name_de": "Imperial Fleet",
+  "name_en": "Imperial Fleet",
+  "name_es": "Imperial Fleet",
+  "name_fr": "Imperial Fleet",
   "validation_rules": [
     {
       "rule": "Max 1 Greatship per 1 Ship of the Line; First One Free"
