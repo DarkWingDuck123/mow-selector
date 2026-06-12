@@ -7,18 +7,15 @@
     "waterColor": "plum",
     "accentColor": "hotpink"
   },
-
-  "name": "Slaanesh",
-  "name_de": "Slaanesh",
-  "name_en": "Slaanesh",
-  "name_es": "Slaanesh",
-  "name_fr": "Slaanesh",
-
+  "name": "Slaanesh Fleet",
+  "name_de": "Slaanesh Fleet",
+  "name_en": "Slaanesh Fleet",
+  "name_es": "Slaanesh Fleet",
+  "name_fr": "Slaanesh Fleet",
   "validation_rules": [],
   "freebies": [],
   "allies": [],
   "crew": [],
-
   "addons": [
     {
       "id": "chaosspell",
@@ -56,7 +53,6 @@
       "cost": "0"
     }
   ],
-
   "units": [
     {
       "id": "deathgalley",
@@ -68,7 +64,6 @@
       "cost": 75
     }
   ],
-
   "names": [],
   "naming_rules": []
 }

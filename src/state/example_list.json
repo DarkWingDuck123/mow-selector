@@ -1,48 +1,58 @@
 {
-  "id" : "lid",
-  "rulesetId" : "the-original-series",
-  "rulesetName" : "Man O'War",
-  "name" : "Nuln Expeditionary Fleet",
-  "description" : "Hailing from the great city of Nuln, this fleet seeks a naval route to the grand cities of Cathay. This is the smallest legal Empire Fleet.",
-  "pointsSpent" : "550",
-  "factionId" : "empire",
-  "factionName" : "The Empire",
-  "cards" : [
+  "id": "lid",
+  "rulesetId": "the-original-series",
+  "rulesetName": "Man O'War",
+  "name": "Nuln Expeditionary Fleet",
+  "description": "Hailing from the great city of Nuln, this fleet seeks a naval route to the grand cities of Cathay. This is the smallest legal Empire Fleet.",
+  "pointsSpent": "550",
+  "factionId": "empire",
+  "factionName": "Imperial Fleet",
+  "cards": [
     {
-      "id" : "blank",
-      "name" : "Blank Card",
-      "number" : 1,
-      "cost" : "0"
+      "id": "blank",
+      "name": "Blank Card",
+      "number": 1,
+      "cost": "0"
     },
     {
-      "id" : "empire_greatship",
-      "name" : "Greatship",
-      "description" : "A Greatship",
-      "number" : "1",
-      "cost" : "150",
-      "shipNames" : [ "Ghal Maraz" ]
+      "id": "empire_greatship",
+      "name": "Greatship",
+      "description": "A Greatship",
+      "number": "1",
+      "cost": "150",
+      "shipNames": [
+        "Ghal Maraz"
+      ]
     },
     {
-      "id" : "manowarcard",
-      "name" : "Man O'War Card",
-      "number" : "1",
-      "cost" : "25"
+      "id": "manowarcard",
+      "name": "Man O'War Card",
+      "number": "1",
+      "cost": "25"
     },
     {
-      "id" : "empire_wolfship",
-      "name" : "Wolfship",
-      "description" : "A Squadron of 3 Wolfship",
-      "number" : "3",
-      "cost" : "300",
-      "shipNames" : [ "Seawolf", "Fury of Sigmar", "Surprise" ]
+      "id": "empire_wolfship",
+      "name": "Wolfship",
+      "description": "A Squadron of 3 Wolfship",
+      "number": "3",
+      "cost": "300",
+      "shipNames": [
+        "Seawolf",
+        "Fury of Sigmar",
+        "Surprise"
+      ]
     },
     {
-      "id" : "empire_wargalley",
-      "name" : "Wargalley",
-      "description" : "A Squadron of 3 Wargalley",
-      "number" : "3",
-      "cost" : "75",
-      "shipNames" : [ "The Witch", "Hansel", "Gretel" ]
+      "id": "empire_wargalley",
+      "name": "Wargalley",
+      "description": "A Squadron of 3 Wargalley",
+      "number": "3",
+      "cost": "75",
+      "shipNames": [
+        "The Witch",
+        "Hansel",
+        "Gretel"
+      ]
     }
   ]
 }

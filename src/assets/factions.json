@@ -3,14 +3,14 @@
     "id": "the-original-series",
     "name": "Man O'War",
     "name_en": "Man O'War",
-    "description_en" : "The Original Man O'War. This ruleset is as close to the original rules as possible. This includes the original series of expansions/rules that were released by Games Workshop, as well as, any supplemental content found in White Dwarf and Citadel Journal (i.e. as long as it was published by Games Workshop).<br><br>It turns out the data entry for adding a race takes some time, so currently this only includes the races found in the initial box game. I'll be adding the others whenever I can find time.",
+    "description_en": "The Original Man O'War. This ruleset is as close to the original rules as possible. This includes the original series of expansions/rules that were released by Games Workshop, as well as, any supplemental content found in White Dwarf and Citadel Journal (i.e. as long as it was published by Games Workshop).<br><br>It turns out the data entry for adding a race takes some time, so currently this only includes the races found in the initial box game. I'll be adding the others whenever I can find time.",
     "nations": [
       {
         "id": "empire",
-        "name_de": "The Empire",
-        "name_en": "The Empire", 
-        "name_es": "The Empire",
-        "name_fr": "The Empire",
+        "name_de": "Imperial Fleet",
+        "name_en": "Imperial Fleet",
+        "name_es": "Imperial Fleet",
+        "name_fr": "Imperial Fleet",
         "allies": [
           "dwarf",
           "brettonia"
@@ -18,10 +18,10 @@
       },
       {
         "id": "dwarf",
-        "name_de": "Dwarfs",
-        "name_en": "Dwarfs", 
-        "name_es": "Dwarfs",
-        "name_fr": "Dwarfs",
+        "name_de": "Dwarf Fleet",
+        "name_en": "Dwarf Fleet",
+        "name_es": "Dwarf Fleet",
+        "name_fr": "Dwarf Fleet",
         "allies": [
           "brettonia",
           "empire"
@@ -29,60 +29,62 @@
       },
       {
         "id": "brettonia",
-        "name_de": "Brettonia",
-        "name_en": "Brettonia", 
-        "name_es": "Brettonia",
-        "name_fr": "Brettonia",
+        "name_de": "Brettonian Fleet",
+        "name_en": "Brettonian Fleet",
+        "name_es": "Brettonian Fleet",
+        "name_fr": "Brettonian Fleet",
         "allies": [
           "empire"
         ]
       },
       {
         "id": "khorne",
-        "name_de": "Khorne",
-        "name_en": "Khorne",
-        "name_es": "Khorne",
-        "name_fr": "Khorne",
-        "allies": [ "skaven" ]
+        "name_de": "Khorne Fleet",
+        "name_en": "Khorne Fleet",
+        "name_es": "Khorne Fleet",
+        "name_fr": "Khorne Fleet",
+        "allies": [
+          "skaven"
+        ]
       },
       {
         "id": "nurgle",
-        "name_de": "Nurgle",
-        "name_en": "Nurgle",
-        "name_es": "Nurgle",
-        "name_fr": "Nurgle",
+        "name_de": "Nurgle Fleet",
+        "name_en": "Nurgle Fleet",
+        "name_es": "Nurgle Fleet",
+        "name_fr": "Nurgle Fleet",
         "allies": []
       },
       {
         "id": "slaanesh",
-        "name_de": "Slaanesh",
-        "name_en": "Slaanesh",
-        "name_es": "Slaanesh",
-        "name_fr": "Slaanesh",
+        "name_de": "Slaanesh Fleet",
+        "name_en": "Slaanesh Fleet",
+        "name_es": "Slaanesh Fleet",
+        "name_fr": "Slaanesh Fleet",
         "allies": []
       },
       {
         "id": "tzeentch",
-        "name_de": "Tzeentch",
-        "name_en": "Tzeentch",
-        "name_es": "Tzeentch",
-        "name_fr": "Tzeentch",
+        "name_de": "Tzeentch Fleet",
+        "name_en": "Tzeentch Fleet",
+        "name_es": "Tzeentch Fleet",
+        "name_fr": "Tzeentch Fleet",
         "allies": []
       },
       {
         "id": "undivided",
-        "name_de": "Chaos Undivided",
-        "name_en": "Chaos Undivided",
-        "name_es": "Chaos Undivided",
-        "name_fr": "Chaos Undivided",
+        "name_de": "Plague Fleet",
+        "name_en": "Plague Fleet",
+        "name_es": "Plague Fleet",
+        "name_fr": "Plague Fleet",
         "allies": []
       },
       {
         "id": "chaosdwarf",
-        "name_de": "Chaos Dwarf",
-        "name_en": "Chaos Dwarf",
-        "name_es": "Chaos Dwarf",
-        "name_fr": "Chaos Dwarf",
+        "name_de": "Chaos Dwarf Fleet",
+        "name_en": "Chaos Dwarf Fleet",
+        "name_es": "Chaos Dwarf Fleet",
+        "name_fr": "Chaos Dwarf Fleet",
         "allies": []
       },
       {
@@ -91,30 +93,32 @@
         "name_en": "Skaven Clanfleet",
         "name_es": "Skaven Clanfleet",
         "name_fr": "Skaven Clanfleet",
-        "allies": [ "khorne" ]
+        "allies": [
+          "khorne"
+        ]
       },
       {
         "id": "highelf",
-        "name_de": "High Elf",
-        "name_en": "High Elf",
-        "name_es": "High Elf",
-        "name_fr": "High Elf",
+        "name_de": "Elf Fleet",
+        "name_en": "Elf Fleet",
+        "name_es": "Elf Fleet",
+        "name_fr": "Elf Fleet",
         "allies": []
       },
       {
         "id": "darkelf",
-        "name_de": "Dark Elf",
-        "name_en": "Dark Elf",
-        "name_es": "Dark Elf",
-        "name_fr": "Dark Elf",
+        "name_de": "Dark Elf Fleet",
+        "name_en": "Dark Elf Fleet",
+        "name_es": "Dark Elf Fleet",
+        "name_fr": "Dark Elf Fleet",
         "allies": []
       },
       {
         "id": "orc",
-        "name_de": "Orc",
-        "name_en": "Orc",
-        "name_es": "Orc",
-        "name_fr": "Orc",
+        "name_de": "Orc Fleet",
+        "name_en": "Orc Fleet",
+        "name_es": "Orc Fleet",
+        "name_fr": "Orc Fleet",
         "allies": []
       }
     ]
@@ -123,25 +127,24 @@
     "id": "mow-revolution-the-old-world",
     "name": "Man O'War: The Old World",
     "name_en": "Man O'War: The Old World",
-    "description_en" : "<b>Not Complete</b><br><br>The original Man O'War wasn't without flaws and/or missed opportunities. It's time in the sun, so to speak, was very short, so many of these weren't ever addressed.<p>Over the last 30 odd years there have been a number of house rules, fan expansions, and other content that have been put forth by fans to address these gaps. This ruleset tries to pull all these together and present an expanded Man O'War universe (so to speak) that is even more enjoyable to play.",
-
+    "description_en": "<b>Not Complete</b><br><br>The original Man O'War wasn't without flaws and/or missed opportunities. It's time in the sun, so to speak, was very short, so many of these weren't ever addressed.<p>Over the last 30 odd years there have been a number of house rules, fan expansions, and other content that have been put forth by fans to address these gaps. This ruleset tries to pull all these together and present an expanded Man O'War universe (so to speak) that is even more enjoyable to play.",
     "nations": [
       {
         "id": "empire",
-        "name_de": "The Empire",
-        "name_en": "The Empire", 
-        "name_es": "The Empire",
-        "name_fr": "The Empire",
+        "name_de": "Imperial Fleet",
+        "name_en": "Imperial Fleet",
+        "name_es": "Imperial Fleet",
+        "name_fr": "Imperial Fleet",
         "allies": [
           "brettonia"
         ]
       },
       {
         "id": "brettonia",
-        "name_de": "Brettonia",
-        "name_en": "Brettonia", 
-        "name_es": "Brettonia",
-        "name_fr": "Brettonia",
+        "name_de": "Brettonian Fleet",
+        "name_en": "Brettonian Fleet",
+        "name_es": "Brettonian Fleet",
+        "name_fr": "Brettonian Fleet",
         "allies": [
           "empire"
         ]
@@ -152,25 +155,23 @@
     "id": "mow-revolution-age-of-sigmar",
     "name": "Man O'War: Age of Sigmar",
     "name_en": "Man O'War: Age of Sigmar",
-    "description_en" : "<b>Really Not Complete</b><br><br>Games Workshop blew up 'The Warhammer Old World' in the mid 2010's. Out of that destruction arose the 8 Mortal Realms, one for each of the 8 winds of magic. The Age of Sigmar is a high fantasy setting with flying sky ships, islands in the sky, and entire kingdoms beneath the waves. This is my attempt to update Man O'War so that it works in a high fantasy setting (even higher than it was originally written for).",
+    "description_en": "<b>Really Not Complete</b><br><br>Games Workshop blew up 'The Warhammer Old World' in the mid 2010's. Out of that destruction arose the 8 Mortal Realms, one for each of the 8 winds of magic. The Age of Sigmar is a high fantasy setting with flying sky ships, islands in the sky, and entire kingdoms beneath the waves. This is my attempt to update Man O'War so that it works in a high fantasy setting (even higher than it was originally written for).",
     "nations": [
       {
         "id": "free-cities-ghyran",
         "name_de": "Free Cities: Ghyran",
-        "name_en": "Free Cities: Ghyran", 
-        "name_es": "Free Cities: Ghyran", 
-        "name_fr": "Free Cities: Ghyran", 
-        "allies": [
-        ]
+        "name_en": "Free Cities: Ghyran",
+        "name_es": "Free Cities: Ghyran",
+        "name_fr": "Free Cities: Ghyran",
+        "allies": []
       },
       {
         "id": "free-cities-chamon",
         "name_de": "Free Cities: Chamon",
-        "name_en": "Free Cities: Chamon", 
-        "name_es": "Free Cities: Chamon", 
-        "name_fr": "Free Cities: Chamon", 
-        "allies": [
-        ]
+        "name_en": "Free Cities: Chamon",
+        "name_es": "Free Cities: Chamon",
+        "name_fr": "Free Cities: Chamon",
+        "allies": []
       }
     ]
   },
@@ -178,16 +179,14 @@
     "id": "mow-revolution-utopian-wars",
     "name": "Man O'War: Utopian Wars",
     "name_en": "Man O'War: Utopian Wars",
-    "description_en" : "<b>A Random Idea</b><br><br>It's nearing the end of the 20th century and an alien race hurtles into the Solar System. Crashing in Antarctica, they quickly offer gifts in the form of technological advancements and knowledge in exchange for promises of safety upon the frozen plateaus of the southernmost continent. Two decades have past and the great colonial powers of the early 21st century are now pitted against one another, just as they had once pitted the tribes and kingdoms of Africa and Asia, all as the climate slowly cools across the globe. Thus begins the Utopian Wars.<p>This is a ruleset for using the Dystopian Wars miniatures with the more streamlined MoW rules.",
-    "nations": [
-    ]
+    "description_en": "<b>A Random Idea</b><br><br>It's nearing the end of the 20th century and an alien race hurtles into the Solar System. Crashing in Antarctica, they quickly offer gifts in the form of technological advancements and knowledge in exchange for promises of safety upon the frozen plateaus of the southernmost continent. Two decades have past and the great colonial powers of the early 21st century are now pitted against one another, just as they had once pitted the tribes and kingdoms of Africa and Asia, all as the climate slowly cools across the globe. Thus begins the Utopian Wars.<p>This is a ruleset for using the Dystopian Wars miniatures with the more streamlined MoW rules.",
+    "nations": []
   },
   {
     "id": "wm-naval",
     "name": "Warmaster Naval",
     "name_en": "Warmaster Naval",
-    "description_en" : "<b>Idea Phase</b><br><br>Warmaster Naval uses Man O'War miniatures and is a little less rules heavy than MoW. It combines some of the rules of MoW and WM for a new ruleset. It shouldn't be too hard to create fleet builders (along with ship cards) for this game too. I seem to remember the ship cards look a lot like the current <i>medium</i> weight ship cards I wrote for sea monsters.",
-    "nations": [
-    ]
-  } 
+    "description_en": "<b>Idea Phase</b><br><br>Warmaster Naval uses Man O'War miniatures and is a little less rules heavy than MoW. It combines some of the rules of MoW and WM for a new ruleset. It shouldn't be too hard to create fleet builders (along with ship cards) for this game too. I seem to remember the ship cards look a lot like the current <i>medium</i> weight ship cards I wrote for sea monsters.",
+    "nations": []
+  }
 ]

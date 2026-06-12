@@ -7,11 +7,11 @@
     "waterColor": "lightblue",
     "accentColor": "goldenrod"
   },
-  "name": "Orc",
-  "name_en": "Orc",
-  "name_de": "Orc",
-  "name_es": "Orc",
-  "name_fr": "Orc",
+  "name": "Orc Fleet",
+  "name_en": "Orc Fleet",
+  "name_de": "Orc Fleet",
+  "name_es": "Orc Fleet",
+  "name_fr": "Orc Fleet",
   "validation_rules": [
     {
       "rule": "Min 1 Hulk"
@@ -277,7 +277,7 @@
       "name": "Drillakilla",
       "name_en": "Drillakilla",
       "squadron-size": 3,
-      "cost": 150 
+      "cost": 150
     },
     {
       "id": "orc_bigchukka",
@@ -288,7 +288,7 @@
       "name": "Bigchukka",
       "name_en": "Bigchukka",
       "squadron-size": 3,
-      "cost": 75 
+      "cost": 75
     },
     {
       "id": "orc_wyvernrider",

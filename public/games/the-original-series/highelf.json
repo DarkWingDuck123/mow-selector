@@ -7,11 +7,11 @@
     "waterColor": "lightblue",
     "accentColor": "gold"
   },
-  "name": "High Elf",
-  "name_en": "High Elf",
-  "name_de": "High Elf",
-  "name_es": "High Elf",
-  "name_fr": "High Elf",
+  "name": "Elf Fleet",
+  "name_en": "Elf Fleet",
+  "name_de": "Elf Fleet",
+  "name_es": "Elf Fleet",
+  "name_fr": "Elf Fleet",
   "validation_rules": [
     {
       "rule": "Max 1 Dragonship per 1 Eagleship"

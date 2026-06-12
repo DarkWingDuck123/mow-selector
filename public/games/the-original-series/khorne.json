@@ -1,21 +1,18 @@
 {
-  "id" : "khorne",
-  "style" : {
+  "id": "khorne",
+  "style": {
     "bgColor": "darkred",
     "fgColor": "gold",
     "parchmentColor": "beige",
     "waterColor": "lightblue",
     "accentColor": "red"
   },
-
-  "name_de": "Khorne",
-  "name_en": "Khorne", 
-  "name_es": "Khorne",
-  "name_fr": "Khorne",
-
-  "allies" : [ ],
-
-  "addons" : [
+  "name_de": "Khorne Fleet",
+  "name_en": "Khorne Fleet",
+  "name_es": "Khorne Fleet",
+  "name_fr": "Khorne Fleet",
+  "allies": [],
+  "addons": [
     {
       "id": "khornecard",
       "weight": "negligible",
@@ -42,17 +39,15 @@
       "cost": "0"
     }
   ],
-
-  "units" : [
+  "units": [
     {
-      "id" : "deathgalley",
-      "type" : "shipoftheline",
-      "weight" : "heavy",
-      "name_en" : "Death Galley",
-      "description_en" : "A Squadron of 3 Death Galley",
-      "squadron-size" : 3,
-      "cost" : 75
+      "id": "deathgalley",
+      "type": "shipoftheline",
+      "weight": "heavy",
+      "name_en": "Death Galley",
+      "description_en": "A Squadron of 3 Death Galley",
+      "squadron-size": 3,
+      "cost": 75
     }
   ]
 }
- 

@@ -7,18 +7,15 @@
     "waterColor": "deepskyblue",
     "accentColor": "cyan"
   },
-
-  "name": "Tzeentch",
-  "name_de": "Tzeentch",
-  "name_en": "Tzeentch",
-  "name_es": "Tzeentch",
-  "name_fr": "Tzeentch",
-
+  "name": "Tzeentch Fleet",
+  "name_de": "Tzeentch Fleet",
+  "name_en": "Tzeentch Fleet",
+  "name_es": "Tzeentch Fleet",
+  "name_fr": "Tzeentch Fleet",
   "validation_rules": [],
   "freebies": [],
   "allies": [],
   "crew": [],
-
   "addons": [
     {
       "id": "chaosspell",
@@ -56,7 +53,6 @@
       "cost": "0"
     }
   ],
-
   "units": [
     {
       "id": "deathgalley",
@@ -68,7 +64,6 @@
       "cost": 75
     }
   ],
-
   "names": [],
   "naming_rules": []
 }

@@ -7,11 +7,11 @@
     "waterColor": "lightblue",
     "accentColor": "red"
   },
-  "name": "Dark Elf",
-  "name_en": "Dark Elf",
-  "name_de": "Dark Elf",
-  "name_es": "Dark Elf",
-  "name_fr": "Dark Elf",
+  "name": "Dark Elf Fleet",
+  "name_en": "Dark Elf Fleet",
+  "name_de": "Dark Elf Fleet",
+  "name_es": "Dark Elf Fleet",
+  "name_fr": "Dark Elf Fleet",
   "validation_rules": [
     {
       "rule": "Max 1 Black Ark of Naggaroth per 1 Death Fortress"
@@ -83,7 +83,6 @@
     }
   ],
   "allies": [],
-  "crew": [],
   "crew": [
     {
       "id": "admiral",
@@ -196,7 +195,6 @@
       "cost": "200"
     }
   ],
-
   "addons": [
     {
       "id": "darkelf_skyreaper",
@@ -362,7 +360,7 @@
       "description": "A Manticore Lord",
       "description_en": "A Manticore Lord",
       "squadron-size": 1,
-      "cost": 50 
+      "cost": 50
     }
   ],
   "names": [],
