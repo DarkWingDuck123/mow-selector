@@ -21,6 +21,8 @@
       "type": "card",
       "type_name": "Chaos Reward Card",
       "type_name_en": "Chaos Reward Card",
+      "source": "PF",
+      "source_en": "PF",
       "cost": "25"
     },
     {
@@ -47,6 +49,8 @@
       "name_en": "Death Galley",
       "description_en": "A Squadron of 3 Death Galley",
       "squadron-size": 3,
+      "source": "PF",
+      "source_en": "PF",
       "cost": 75
     }
   ]

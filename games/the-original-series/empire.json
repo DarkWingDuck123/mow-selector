@@ -91,6 +91,8 @@
       "description": "(A) +1 CC, may cling to wreckage",
       "description_en": "(A) +1 CC, may cling to wreckage",
       "type": "crew",
+      "source": "MoW",
+      "source_en": "MoW",
       "cost": "-"
     },
     {
@@ -102,6 +104,8 @@
       "description": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
       "description_en": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
       "type": "crew",
+      "source": "MoW",
+      "source_en": "MoW",
       "cost": "50"
     },
     {
@@ -113,6 +117,8 @@
       "description": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
       "description_en": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
       "type": "crew",
+      "source": "MoW",
+      "source_en": "MoW",
       "cost": "75"
     },
     {
@@ -124,6 +130,8 @@
       "description": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
       "description_en": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
       "type": "crew",
+      "source": "MoW",
+      "source_en": "MoW",
       "cost": "100"
     },
     {
@@ -135,6 +143,8 @@
       "description": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
       "description_en": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
       "type": "crew",
+      "source": "WD 164",
+      "source_en": "WD 164",
       "cost": "125"
     },
     {
@@ -146,6 +156,8 @@
       "description": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
       "description_en": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
       "type": "crew",
+      "source": "WD 164",
+      "source_en": "WD 164",
       "cost": "150"
     },
     {
@@ -157,6 +169,8 @@
       "description": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
       "description_en": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
       "type": "crew",
+      "source": "WD 164",
+      "source_en": "WD 164",
       "cost": "175"
     },
     {
@@ -168,6 +182,8 @@
       "description": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
       "description_en": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> May reroll any color of spell failed to cast or dispell<br> Remove with last crew, may cling to wreckage",
       "type": "crew",
+      "source": "WD 164",
+      "source_en": "WD 164",
       "cost": "200"
     }
   ],
@@ -176,22 +192,14 @@
   ],
   "addons": [
     {
-      "id": "colorspell",
-      "weight": "negligible",
-      "name": "Color Spell",
-      "name_en": "Color Spell",
-      "type": "card",
-      "type_name": "Color Spell",
-      "type_name_en": "Color Spell",
-      "cost": "-"
-    },
-    {
       "id": "manowarcard",
       "weight": "negligible",
       "name": "Man O'War Card",
       "name_en": "Man O'War Card",
       "type": "card",
       "type_name": "Man O'War Card",
+      "source": "MoW",
+      "source_en": "MoW",
       "cost": "25"
     },
     {
@@ -201,7 +209,21 @@
       "name_en": "Hellblaster",
       "type": "card",
       "type_name": "Anti-Flyer",
+      "source": "SoB",
+      "source_en": "SoB",
       "cost": "25"
+    },
+    {
+      "id": "colorspell",
+      "weight": "negligible",
+      "name": "Color Spell",
+      "name_en": "Color Spell",
+      "type": "card",
+      "type_name": "Color Spell",
+      "type_name_en": "Color Spell",
+      "source": "MoW",
+      "source_en": "MoW",
+      "cost": "-"
     },
     {
       "id": "crewcard",
@@ -250,6 +272,8 @@
       "name_fr": "Greatship",
       "description_en": "A Greatship",
       "squadron-size": 1,
+      "source": "MoW",
+      "source_en": "MoW",
       "cost": 150
     },
     {
@@ -262,6 +286,8 @@
       "name_en": "Wolfship",
       "description_en": "A Squadron of 3 Wolfship",
       "squadron-size": 3,
+      "source": "MoW",
+      "source_en": "MoW",
       "cost": 300
     },
     {
@@ -274,6 +300,8 @@
       "name_en": "Wargalley",
       "description_en": "A Squadron of 3 Wargalley",
       "squadron-size": 3,
+      "source": "MoW",
+      "source_en": "MoW",
       "cost": 75
     },
     {
@@ -286,6 +314,8 @@
       "name_en": "Griffon Rider",
       "description_en": "A Flight of 3 Griffon Riders",
       "squadron-size": 1,
+      "source": "SoB",
+      "source_en": "SoB",
       "cost": 75
     },
     {
@@ -298,6 +328,8 @@
       "name_en": "Hellhammer",
       "description_en": "A Squadron of 3 Hellhammer",
       "squadron-size": 3,
+      "source": "SoB",
+      "source_en": "SoB",
       "cost": 150
     },
     {
@@ -310,6 +342,8 @@
       "name_en": "Ironfist",
       "description_en": "A Squadron of 3 Ironfist",
       "squadron-size": 3,
+      "source": "SoB",
+      "source_en": "SoB",
       "cost": 150
     }
   ],
