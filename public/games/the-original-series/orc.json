@@ -155,18 +155,6 @@
       "cost": "25"
     },
     {
-      "id": "orc_orcspell",
-      "weight": "negligible",
-      "name": "Orc Spell",
-      "name_en": "Orc Spell",
-      "type": "card",
-      "type_name": "Orc Spell",
-      "type_name_en": "Orc Spell",
-      "source": "CJ 5",
-      "source_en": "CJ 5",
-      "cost": "0"
-    },
-    {
       "id": "orc_kustom_beer",
       "weight": "negligible",
       "name": "Beer!",
@@ -177,18 +165,6 @@
       "source": "CJ 5",
       "source_en": "CJ 5",
       "cost": "0"
-    },
-    {
-      "id": "orc_kustom_pointybit",
-      "weight": "negligible",
-      "name": "Pointy Bit",
-      "name_en": "Pointy Bit",
-      "type": "card",
-      "type_name": "Kustom Kard",
-      "type_name_en": "Kustom Kard",
-      "source": "CJ 5",
-      "source_en": "CJ 5",
-      "cost": "50"
     },
     {
       "id": "orc_kustom_squiglaunchers",
@@ -203,16 +179,16 @@
       "cost": "25"
     },
     {
-      "id": "orc_kustom_fanatics",
+      "id": "orc_kustom_bigwhip",
       "weight": "negligible",
-      "name": "Fanatics",
-      "name_en": "Fanatics",
+      "name": "Big Whip",
+      "name_en": "Big Whip",
       "type": "card",
       "type_name": "Kustom Kard",
       "type_name_en": "Kustom Kard",
       "source": "CJ 5",
       "source_en": "CJ 5",
-      "cost": "50"
+      "cost": "25"
     },
     {
       "id": "orc_kustom_gobbedoes",
@@ -227,16 +203,28 @@
       "cost": "30"
     },
     {
-      "id": "orc_kustom_bigwhip",
+      "id": "orc_kustom_pointybit",
       "weight": "negligible",
-      "name": "Big Whip",
-      "name_en": "Big Whip",
+      "name": "Pointy Bit",
+      "name_en": "Pointy Bit",
       "type": "card",
       "type_name": "Kustom Kard",
       "type_name_en": "Kustom Kard",
       "source": "CJ 5",
       "source_en": "CJ 5",
-      "cost": "25"
+      "cost": "50"
+    },
+    {
+      "id": "orc_kustom_fanatics",
+      "weight": "negligible",
+      "name": "Fanatics",
+      "name_en": "Fanatics",
+      "type": "card",
+      "type_name": "Kustom Kard",
+      "type_name_en": "Kustom Kard",
+      "source": "CJ 5",
+      "source_en": "CJ 5",
+      "cost": "50"
     },
     {
       "id": "orc_kustom_trollpens",
@@ -249,6 +237,18 @@
       "source": "CJ 5",
       "source_en": "CJ 5",
       "cost": "50"
+    },
+    {
+      "id": "orc_orcspell",
+      "weight": "negligible",
+      "name": "Orc Spell",
+      "name_en": "Orc Spell",
+      "type": "card",
+      "type_name": "Orc Spell",
+      "type_name_en": "Orc Spell",
+      "source": "CJ 5",
+      "source_en": "CJ 5",
+      "cost": "0"
     },
     {
       "id": "crewcard",

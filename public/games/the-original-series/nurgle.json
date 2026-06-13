@@ -18,18 +18,6 @@
   "crew": [],
   "addons": [
     {
-      "id": "chaosspell",
-      "weight": "negligible",
-      "name": "Chaos Spell",
-      "name_en": "Chaos Spell",
-      "type": "card",
-      "type_name": "Chaos Spell",
-      "type_name_en": "Chaos Spell",
-      "source": "PF",
-      "source_en": "PF",
-      "cost": "-"
-    },
-    {
       "id": "nurglecard",
       "weight": "negligible",
       "name": "Nurgle Chaos Reward Card",
@@ -40,6 +28,18 @@
       "source": "PF",
       "source_en": "PF",
       "cost": "25"
+    },
+    {
+      "id": "chaosspell",
+      "weight": "negligible",
+      "name": "Chaos Spell",
+      "name_en": "Chaos Spell",
+      "type": "card",
+      "type_name": "Chaos Spell",
+      "type_name_en": "Chaos Spell",
+      "source": "PF",
+      "source_en": "PF",
+      "cost": "-"
     },
     {
       "id": "turnsummary",

@@ -228,42 +228,40 @@
       "cost": "25"
     },
     {
-      "id": "crewcard",
+      "id": "colorspell",
       "weight": "negligible",
-      "name": "Crew Card",
-      "name_en": "Crew Card",
-      "type": "crew_card",
-      "type_name": "",
-      "type_name_en": "",
-      "cost": "0"
-    },
-    {
-      "id": "turnsummary",
-      "weight": "negligible",
-      "name": "Turn Summary",
-      "name_en": "Turn Summary",
+      "name": "Color Spell",
+      "name_en": "Color Spell",
       "type": "card",
+      "type_name": "Color Spell",
+      "type_name_en": "Color Spell",
+      "source": "MoW",
+      "source_en": "MoW",
       "cost": "0"
     },
     {
-      "id": "darkelf_specialrules",
+      "id": "darkelf_thewildmind",
       "weight": "negligible",
-      "name": "Special Rules - Dark Elf",
-      "name_en": "Special Rules - Dark Elf",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "darkelf_irshkileth",
-      "weight": "negligible",
-      "name": "Irshkileth",
-      "name_en": "Irshkileth",
+      "name": "The Wild Mind",
+      "name_en": "The Wild Mind",
       "type": "card",
       "type_name": "Tainted Stone",
       "type_name_en": "Tainted Stone",
       "source": "CJ 3",
       "source_en": "CJ 3",
-      "cost": "100"
+      "cost": "50"
+    },
+    {
+      "id": "darkelf_misharolth",
+      "weight": "negligible",
+      "name": "Misharolth",
+      "name_en": "Misharolth",
+      "type": "card",
+      "type_name": "Tainted Stone",
+      "type_name_en": "Tainted Stone",
+      "source": "CJ 3",
+      "source_en": "CJ 3",
+      "cost": "50"
     },
     {
       "id": "darkelf_ikonarashk",
@@ -302,39 +300,41 @@
       "cost": "75"
     },
     {
-      "id": "darkelf_thewildmind",
+      "id": "darkelf_irshkileth",
       "weight": "negligible",
-      "name": "The Wild Mind",
-      "name_en": "The Wild Mind",
+      "name": "Irshkileth",
+      "name_en": "Irshkileth",
       "type": "card",
       "type_name": "Tainted Stone",
       "type_name_en": "Tainted Stone",
       "source": "CJ 3",
       "source_en": "CJ 3",
-      "cost": "50"
+      "cost": "100"
     },
     {
-      "id": "darkelf_misharolth",
+      "id": "crewcard",
       "weight": "negligible",
-      "name": "Misharolth",
-      "name_en": "Misharolth",
-      "type": "card",
-      "type_name": "Tainted Stone",
-      "type_name_en": "Tainted Stone",
-      "source": "CJ 3",
-      "source_en": "CJ 3",
-      "cost": "50"
+      "name": "Crew Card",
+      "name_en": "Crew Card",
+      "type": "crew_card",
+      "type_name": "",
+      "type_name_en": "",
+      "cost": "0"
     },
     {
-      "id": "colorspell",
+      "id": "turnsummary",
       "weight": "negligible",
-      "name": "Color Spell",
-      "name_en": "Color Spell",
+      "name": "Turn Summary",
+      "name_en": "Turn Summary",
       "type": "card",
-      "type_name": "Color Spell",
-      "type_name_en": "Color Spell",
-      "source": "MoW",
-      "source_en": "MoW",
+      "cost": "0"
+    },
+    {
+      "id": "darkelf_specialrules",
+      "weight": "negligible",
+      "name": "Special Rules - Dark Elf",
+      "name_en": "Special Rules - Dark Elf",
+      "type": "card",
       "cost": "0"
     },
     {

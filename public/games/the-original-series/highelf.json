@@ -262,51 +262,6 @@
       "cost": "25"
     },
     {
-      "id": "crewcard",
-      "weight": "negligible",
-      "name": "Crew Card",
-      "name_en": "Crew Card",
-      "type": "crew_card",
-      "type_name": "",
-      "type_name_en": "",
-      "cost": "0"
-    },
-    {
-      "id": "turnsummary",
-      "weight": "negligible",
-      "name": "Turn Summary",
-      "name_en": "Turn Summary",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "highelf_specialrules",
-      "weight": "negligible",
-      "name": "Special Rules - High Elf",
-      "name_en": "Special Rules - High Elf",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "blank",
-      "name": "Empty",
-      "name_en": "Empty",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "highelf_highspell",
-      "weight": "negligible",
-      "name": "High Spell",
-      "name_en": "High Spell",
-      "type": "card",
-      "type_name": "High Spell",
-      "type_name_en": "High Spell",
-      "source": "CJ 2",
-      "source_en": "CJ 2",
-      "cost": "0"
-    },
-    {
       "id": "colorspell",
       "weight": "negligible",
       "name": "Color Spell",
@@ -317,6 +272,42 @@
       "source": "MoW",
       "source_en": "MoW",
       "cost": "0"
+    },
+    {
+      "id": "highelf_delianiathsarch",
+      "weight": "negligible",
+      "name": "Delianiath's Arch",
+      "name_en": "Delianiath's Arch",
+      "type": "card",
+      "type_name": "Crystal of Power",
+      "type_name_en": "Crystal of Power",
+      "source": "CJ 2",
+      "source_en": "CJ 2",
+      "cost": "25"
+    },
+    {
+      "id": "highelf_crystaldaggerofremianath",
+      "weight": "negligible",
+      "name": "Crystal Dagger of Remianath",
+      "name_en": "Crystal Dagger of Remianath",
+      "type": "card",
+      "type_name": "Crystal of Power",
+      "type_name_en": "Crystal of Power",
+      "source": "CJ 2",
+      "source_en": "CJ 2",
+      "cost": "25"
+    },
+    {
+      "id": "highelf_salithisheart",
+      "weight": "negligible",
+      "name": "Salithis' Heart",
+      "name_en": "Salithis' Heart",
+      "type": "card",
+      "type_name": "Crystal of Power",
+      "type_name_en": "Crystal of Power",
+      "source": "CJ 2",
+      "source_en": "CJ 2",
+      "cost": "25"
     },
     {
       "id": "highelf_stoneofanurell",
@@ -355,40 +346,42 @@
       "cost": "50"
     },
     {
-      "id": "highelf_delianiathsarch",
+      "id": "highelf_highspell",
       "weight": "negligible",
-      "name": "Delianiath's Arch",
-      "name_en": "Delianiath's Arch",
+      "name": "High Spell",
+      "name_en": "High Spell",
       "type": "card",
-      "type_name": "Crystal of Power",
-      "type_name_en": "Crystal of Power",
+      "type_name": "High Spell",
+      "type_name_en": "High Spell",
       "source": "CJ 2",
       "source_en": "CJ 2",
-      "cost": "25"
+      "cost": "0"
     },
     {
-      "id": "highelf_crystaldaggerofremianath",
+      "id": "crewcard",
       "weight": "negligible",
-      "name": "Crystal Dagger of Remianath",
-      "name_en": "Crystal Dagger of Remianath",
-      "type": "card",
-      "type_name": "Crystal of Power",
-      "type_name_en": "Crystal of Power",
-      "source": "CJ 2",
-      "source_en": "CJ 2",
-      "cost": "25"
+      "name": "Crew Card",
+      "name_en": "Crew Card",
+      "type": "crew_card",
+      "type_name": "",
+      "type_name_en": "",
+      "cost": "0"
     },
     {
-      "id": "highelf_salithisheart",
+      "id": "turnsummary",
       "weight": "negligible",
-      "name": "Salithis' Heart",
-      "name_en": "Salithis' Heart",
+      "name": "Turn Summary",
+      "name_en": "Turn Summary",
       "type": "card",
-      "type_name": "Crystal of Power",
-      "type_name_en": "Crystal of Power",
-      "source": "CJ 2",
-      "source_en": "CJ 2",
-      "cost": "25"
+      "cost": "0"
+    },
+    {
+      "id": "highelf_specialrules",
+      "weight": "negligible",
+      "name": "Special Rules - High Elf",
+      "name_en": "Special Rules - High Elf",
+      "type": "card",
+      "cost": "0"
     },
     {
       "id": "blank",

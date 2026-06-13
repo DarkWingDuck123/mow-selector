@@ -127,6 +127,23 @@
   ],
   "addons": [
     {
+      "id": "skaven_admiralmanowarcard",
+      "name": "Admiral's Man O'War Card",
+      "name_en": "Admiral's Man O'War Card",
+      "type": "card",
+      "source": "PF",
+      "source_en": "PF",
+      "cost": "0"
+    },
+    {
+      "id": "manowarcard",
+      "name_en": "Man O'War Card",
+      "type": "card",
+      "source": "MoW",
+      "source_en": "MoW",
+      "cost": "25"
+    },
+    {
       "id": "skaven_spell",
       "weight": "negligible",
       "name": "Skaven Spell",
@@ -139,31 +156,18 @@
       "cost": "-"
     },
     {
-      "id": "manowarcard",
-      "name_en": "Man O'War Card",
-      "type": "card",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "25"
-    },
-    {
-      "id": "skaven_admiralmanowarcard",
-      "name": "Admiral's Man O'War Card",
-      "name_en": "Admiral's Man O'War Card",
-      "type": "card",
-      "source": "PF",
-      "source_en": "PF",
+      "id": "crewcard",
+      "weight": "negligible",
+      "name": "Crew Card",
+      "name_en": "Crew Card",
+      "type": "crew_card",
+      "type_name": "",
+      "type_name_en": "",
       "cost": "0"
     },
     {
       "id": "turnsummary",
       "name_en": "Turn Summary",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "skaven_blank",
-      "name_en": "Empire Symbol",
       "type": "card",
       "cost": "0"
     },
@@ -174,13 +178,9 @@
       "cost": "0"
     },
     {
-      "id": "crewcard",
-      "weight": "negligible",
-      "name": "Crew Card",
-      "name_en": "Crew Card",
-      "type": "crew_card",
-      "type_name": "",
-      "type_name_en": "",
+      "id": "skaven_blank",
+      "name_en": "Empire Symbol",
+      "type": "card",
       "cost": "0"
     },
     {
