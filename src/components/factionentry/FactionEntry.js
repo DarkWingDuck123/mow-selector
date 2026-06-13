@@ -32,6 +32,19 @@ export const FactionEntry = ({
     dispatch(addCrew({ listId, unit }));
   };
 
+  const renderMeta = (entry) => {
+    const type = entry.type_name_en || entry.type_name || "";
+    const source = entry.source_en || entry.source || "";
+    if (!type && !source) return null;
+    return (
+      <div className="faction-entry__meta">
+        {type}
+        {type && source ? " · " : ""}
+        {source && `Source: ${source}`}
+      </div>
+    );
+  };
+
   const buildFaction = (faction) => (
     <>
       <h4>Units</h4>
@@ -43,6 +56,7 @@ export const FactionEntry = ({
           }
           <span style={{float:"right"}}>{unit.cost} pts</span>
           <br/>
+          {renderMeta(unit)}
         </div>
       ))}
       <h5>Add Ons</h5>
@@ -54,6 +68,7 @@ export const FactionEntry = ({
           }
           <span style={{float:"right"}}>{addon.cost} pts</span>
           <br/>
+          {renderMeta(addon)}
         </div>
       ))}
       {faction?.crew && (
@@ -67,6 +82,7 @@ export const FactionEntry = ({
               }
               <span style={{float:"right"}}>{crew.cost} pts</span>
               <br/>
+              {renderMeta(crew)}
             </div>
           ))}
         </>
