@@ -249,7 +249,27 @@ export const ListEditor = ({
       {!list && <p>Select a list to edit.</p>}
       {list && (
         <div className="list-editor">
-          <h2 className="list-editor__ruleset-name">{list.rulesetName}</h2>
+          <div className="list-editor__field">
+            <label className="list-editor__label" htmlFor="le-faction">Faction</label>
+            <select
+              id="le-faction"
+              className="list-editor__select"
+              value={list.factionId}
+              onChange={handleFactionChange}
+            >
+              <option value="">— select faction —</option>
+              {builtInNations.map((nation) => (
+                <option key={nation.id} value={nation.id}>{nation.name_en}</option>
+              ))}
+              {customNations.length > 0 && (
+                <optgroup label="Custom Factions">
+                  {customNations.map((nation) => (
+                    <option key={nation.id} value={nation.id}>{nation.name_en}</option>
+                  ))}
+                </optgroup>
+              )}
+            </select>
+          </div>
 
           <div className="list-editor__field">
             <label className="list-editor__label" htmlFor="le-name">Name</label>
@@ -271,28 +291,6 @@ export const ListEditor = ({
               onChange={(e) => handleChange("description", e.target.value)}
               rows={3}
             />
-          </div>
-
-          <div className="list-editor__field">
-            <label className="list-editor__label" htmlFor="le-faction">Faction</label>
-            <select
-              id="le-faction"
-              className="list-editor__select"
-              value={list.factionId}
-              onChange={handleFactionChange}
-            >
-              <option value="">— select faction —</option>
-              {builtInNations.map((nation) => (
-                <option key={nation.id} value={nation.id}>{nation.name_en}</option>
-              ))}
-              {customNations.length > 0 && (
-                <optgroup label="Custom Factions">
-                  {customNations.map((nation) => (
-                    <option key={nation.id} value={nation.id}>{nation.name_en}</option>
-                  ))}
-                </optgroup>
-              )}
-            </select>
           </div>
 
           <div className="list-editor__field">
