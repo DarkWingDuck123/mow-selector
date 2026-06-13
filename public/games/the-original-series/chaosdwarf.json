@@ -25,6 +25,8 @@
       "type": "card",
       "type_name": "Chaos Spell",
       "type_name_en": "Chaos Spell",
+      "source": "PF",
+      "source_en": "PF",
       "cost": "-"
     },
     {
@@ -35,6 +37,8 @@
       "type": "card",
       "type_name": "Chaos Reward Card",
       "type_name_en": "Chaos Reward Card",
+      "source": "PF",
+      "source_en": "PF",
       "cost": "25"
     },
     {

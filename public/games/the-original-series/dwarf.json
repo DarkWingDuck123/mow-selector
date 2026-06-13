@@ -93,6 +93,8 @@
       "description": "(A) +1 CC",
       "description_en": "(A) +1 CC",
       "type": "crew",
+      "source": "MoW",
+      "source_en": "MoW",
       "cost": "-"
     },
     {
@@ -104,6 +106,8 @@
       "description": "(R) All dwarf ships ignore spells on a 5 or 6,<br>+2 battle honors, +1 summoning sea monsters<br>upto 2 rune cards, may cling to wreckage, must begin attached to Admiral's ship",
       "description_en": "(R) All dwarf ships ignore spells on a 5 or 6,<br>+2 battle honors, +1 summoning sea monsters<br>upto 2 Rune Cards, may cling to wreckage, must begin attached to Admiral's ship",
       "type": "crew",
+      "source": "MoW",
+      "source_en": "MoW",
       "cost": "50"
     },
     {
@@ -115,6 +119,8 @@
       "description": "(M) Allows a reroll when repairing damage,<br>may repair waterline damage on a roll of 6<br>+1 battle honors, upto 2 Master Engineer Cards, may cling to wreckage",
       "description_en": "(M) Allows a reroll when repairing damage,<br>may repair waterline damage on a roll of 6<br>+1 battle honors, upto 2 Master Engineer Cards, may cling to wreckage",
       "type": "crew",
+      "source": "MoW",
+      "source_en": "MoW",
       "cost": "25"
     },
     {
@@ -126,6 +132,8 @@
       "description": "(L) Adds 1d3+1 CC to attached ship, if a casualty occurs 4+ removes the Slayers<br>Slayers cannot crew a ship, must attach to Admiral's ship",
       "description_en": "(L) Adds 1d3+1 CC to attached ship, if a casualty occurs 4+ removes the Slayers<br>Slayers cannot crew a ship, must attach to Admiral's ship",
       "type": "crew",
+      "source": "MoW",
+      "source_en": "MoW",
       "cost": "50"
     }
   ],
@@ -138,6 +146,8 @@
       "type": "card",
       "type_name": "Man O'War Card",
       "type_name_en": "Man O'War Card",
+      "source": "MoW",
+      "source_en": "MoW",
       "cost": "25"
     },
     {
@@ -148,6 +158,8 @@
       "type": "card",
       "type_name": "Anti-Flyer",
       "type_name_en": "Anti-Flyer",
+      "source": "SoB",
+      "source_en": "SoB",
       "cost": "25"
     },
     {
@@ -182,6 +194,8 @@
       "type": "card",
       "type_name": "Rune",
       "type_name_en": "Rune",
+      "source": "CJ 1",
+      "source_en": "CJ 1",
       "cost": "50"
     },
     {
@@ -192,6 +206,8 @@
       "type": "card",
       "type_name": "Rune",
       "type_name_en": "Rune",
+      "source": "CJ 1",
+      "source_en": "CJ 1",
       "cost": "50"
     },
     {
@@ -202,6 +218,8 @@
       "type": "card",
       "type_name": "Rune",
       "type_name_en": "Rune",
+      "source": "CJ 1",
+      "source_en": "CJ 1",
       "cost": "50"
     },
     {
@@ -212,6 +230,8 @@
       "type": "card",
       "type_name": "Rune",
       "type_name_en": "Rune",
+      "source": "CJ 1",
+      "source_en": "CJ 1",
       "cost": "50"
     },
     {
@@ -222,6 +242,8 @@
       "type": "card",
       "type_name": "Rune",
       "type_name_en": "Rune",
+      "source": "CJ 1",
+      "source_en": "CJ 1",
       "cost": "25"
     },
     {
@@ -232,6 +254,8 @@
       "type": "card",
       "type_name": "Rune",
       "type_name_en": "Rune",
+      "source": "CJ 1",
+      "source_en": "CJ 1",
       "cost": "25"
     },
     {
@@ -242,6 +266,8 @@
       "type": "card",
       "type_name": "Rune",
       "type_name_en": "Rune",
+      "source": "CJ 1",
+      "source_en": "CJ 1",
       "cost": "25"
     },
     {
@@ -252,6 +278,8 @@
       "type": "card",
       "type_name": "Rune",
       "type_name_en": "Rune",
+      "source": "CJ 1",
+      "source_en": "CJ 1",
       "cost": "25"
     },
     {
@@ -262,6 +290,8 @@
       "type": "card",
       "type_name": "Rune",
       "type_name_en": "Rune",
+      "source": "CJ 1",
+      "source_en": "CJ 1",
       "cost": "25"
     },
     {
@@ -272,6 +302,8 @@
       "type": "card",
       "type_name": "Rune",
       "type_name_en": "Rune",
+      "source": "CJ 1",
+      "source_en": "CJ 1",
       "cost": "25"
     },
     {
@@ -282,6 +314,8 @@
       "type": "card",
       "type_name": "Master Engineer Card",
       "type_name_en": "Master Engineer Card",
+      "source": "CJ 1",
+      "source_en": "CJ 1",
       "cost": "50"
     },
     {
@@ -292,6 +326,8 @@
       "type": "card",
       "type_name": "Master Engineer Card",
       "type_name_en": "Master Engineer Card",
+      "source": "CJ 1",
+      "source_en": "CJ 1",
       "cost": "50"
     },
     {
@@ -302,6 +338,8 @@
       "type": "card",
       "type_name": "Master Engineer Card",
       "type_name_en": "Master Engineer Card",
+      "source": "CJ 1",
+      "source_en": "CJ 1",
       "cost": "25"
     },
     {
@@ -312,6 +350,8 @@
       "type": "card",
       "type_name": "Master Engineer Card",
       "type_name_en": "Master Engineer Card",
+      "source": "CJ 1",
+      "source_en": "CJ 1",
       "cost": "25"
     },
     {
@@ -337,6 +377,8 @@
       "description": "A Dreadnought",
       "description_en": "A Dreadnought",
       "squadron-size": 1,
+      "source": "SoB",
+      "source_en": "SoB",
       "cost": 225
     },
     {
@@ -350,6 +392,8 @@
       "description": "An Ironclad",
       "description_en": "An Ironclad",
       "squadron-size": 1,
+      "source": "MoW",
+      "source_en": "MoW",
       "cost": 150
     },
     {
@@ -363,6 +407,8 @@
       "description": "A Squadron of 3 Monitors",
       "description_en": "A Squadron of 3 Monitors",
       "squadron-size": 3,
+      "source": "MoW",
+      "source_en": "MoW",
       "cost": 75
     },
     {
@@ -376,6 +422,8 @@
       "description": "A Nautilus",
       "description_en": "A Nautilus",
       "squadron-size": 1,
+      "source": "MoW",
+      "source_en": "MoW",
       "cost": 75
     },
     {
@@ -389,6 +437,8 @@
       "description": "A Flight of 3 Warballoons",
       "description_en": "A Flight of 3 Warballoons",
       "squadron-size": 1,
+      "source": "SoB",
+      "source_en": "SoB",
       "cost": 75
     },
     {
@@ -402,6 +452,8 @@
       "description": "A Flight of 3 Gyrocopters",
       "description_en": "A Flight of 3 Gyrocopters",
       "squadron-size": 3,
+      "source": "SoB",
+      "source_en": "SoB",
       "cost": 75
     }
   ],
