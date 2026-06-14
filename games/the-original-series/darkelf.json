@@ -82,7 +82,18 @@
       "free": "1 Man O'War Card"
     }
   ],
-  "allies": [],
+  "allies": [
+    "orc",
+    "khorne",
+    "nurgle",
+    "slaanesh",
+    "tzeentch",
+    "undivided",
+    "chaosdwarf",
+    "pirate",
+    "skaven",
+    "norse"
+  ],
   "crew": [
     {
       "id": "admiral",

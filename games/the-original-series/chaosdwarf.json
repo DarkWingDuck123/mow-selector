@@ -14,7 +14,19 @@
   "name_fr": "Chaos Dwarf Fleet",
   "validation_rules": [],
   "freebies": [],
-  "allies": [],
+  "allies": [
+    "darkelf",
+    "orc",
+    "nurgle",
+    "tzeentch",
+    "khorne",
+    "slaanesh",
+    "undivided",
+    "chaosdwarf",
+    "pirate",
+    "skaven",
+    "norse"
+  ],
   "crew": [],
   "addons": [
     {
