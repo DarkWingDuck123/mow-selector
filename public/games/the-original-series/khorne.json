@@ -11,7 +11,18 @@
   "name_en": "Khorne Fleet",
   "name_es": "Khorne Fleet",
   "name_fr": "Khorne Fleet",
-  "allies": [],
+  "allies": [
+    "darkelf",
+    "orc",
+    "nurgle",
+    "slaanesh",
+    "tzeentch",
+    "undivided",
+    "chaosdwarf",
+    "pirate",
+    "skaven",
+    "norse"
+  ],
   "addons": [
     {
       "id": "khornecard",

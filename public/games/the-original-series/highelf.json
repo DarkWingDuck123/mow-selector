@@ -77,8 +77,10 @@
     }
   ],
   "allies": [
+    "dwarf",
     "empire",
-    "brettonia"
+    "brettonia",
+    "norse"
   ],
   "crew": [
     {

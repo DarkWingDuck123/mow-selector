@@ -167,7 +167,10 @@
     }
   ],
   "allies": [
-    "brettonia"
+    "dwarf",
+    "highelf",
+    "brettonia",
+    "norse"
   ],
   "addons": [
     {

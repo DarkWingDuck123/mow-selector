@@ -50,7 +50,16 @@
     }
   ],
   "allies": [
-    "khorne"
+    "darkelf",
+    "orc",
+    "khorne",
+    "nurgle",
+    "slaanesh",
+    "tzeentch",
+    "undivided",
+    "chaosdwarf",
+    "pirate",
+    "norse"
   ],
   "crew": [
     {
