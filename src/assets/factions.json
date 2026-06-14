@@ -120,6 +120,15 @@
         "name_es": "Orc Fleet",
         "name_fr": "Orc Fleet",
         "allies": []
+      },
+      {
+        "id": "spelldecks",
+        "name_de": "Spell Decks",
+        "name_en": "Spell Decks",
+        "name_es": "Spell Decks",
+        "name_fr": "Spell Decks",
+        "allies": [],
+        "browseOnly": true
       }
     ]
   },

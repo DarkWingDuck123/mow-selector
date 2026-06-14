@@ -108,7 +108,7 @@ export const ListEditor = ({
   const rulesetSystems = list
     ? gameSystems.find((sys) => sys.id === list.rulesetId)
     : null;
-  const builtInNations = rulesetSystems?.nations || [];
+  const builtInNations = (rulesetSystems?.nations || []).filter((n) => !n.browseOnly);
   const customNations = customFactions
     .filter((f) => f.rulesetId === list?.rulesetId)
     .map((f) => ({ id: f.id, name_en: f.name_en || f.name || f.id, isCustom: true }));
