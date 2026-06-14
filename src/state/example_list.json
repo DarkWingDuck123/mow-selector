@@ -4,7 +4,7 @@
   "rulesetName": "Man O'War",
   "name": "Nuln Expeditionary Fleet",
   "description": "Hailing from the great city of Nuln, this fleet seeks a naval route to the grand cities of Cathay. This is the smallest legal Empire Fleet.",
-  "pointsSpent": "550",
+  "pointsSpent": "525",
   "factionId": "empire",
   "factionName": "Imperial Fleet",
   "cards": [
@@ -23,12 +23,6 @@
       "shipNames": [
         "Ghal Maraz"
       ]
-    },
-    {
-      "id": "manowarcard",
-      "name": "Man O'War Card",
-      "number": "1",
-      "cost": "25"
     },
     {
       "id": "empire_wolfship",
