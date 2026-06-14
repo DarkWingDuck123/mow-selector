@@ -58,27 +58,6 @@
     },
     {
       "free": "1 Man O'War Card"
-    },
-    {
-      "free": "2 Color Spell per Wizard Champion"
-    },
-    {
-      "free": "3 Color Spell per High Wizard Champion"
-    },
-    {
-      "free": "4 Color Spell per Master Wizard"
-    },
-    {
-      "free": "5 Color Spell per High Master Wizard"
-    },
-    {
-      "free": "6 Color Spell per Wizard Lord"
-    },
-    {
-      "free": "7 Color Spell per High Wizard Lord"
-    },
-    {
-      "free": "8 Color Spell per Grand Wizard Lord"
     }
   ],
   "crew": [
@@ -223,7 +202,7 @@
       "type_name_en": "Color Spell",
       "source": "MoW",
       "source_en": "MoW",
-      "cost": "-"
+      "cost": "0"
     },
     {
       "id": "crewcard",
