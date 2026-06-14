@@ -24,7 +24,7 @@
     "react-tooltip": "^5.28.0",
     "web-vitals": "^5.1.0"
   },
-  "homepage": "https://DarkWingDuck123.github.io/mow-selector",
+  "homepage": "https://www.mow-selector.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
