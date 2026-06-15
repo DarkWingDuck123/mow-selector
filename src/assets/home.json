@@ -1,15 +1,15 @@
 {
   "description_title_en" : "Welcome!",
 
-  "description_en" : "<p>Welcome to the Fleet Builder for the Man O'War tabletop game! Man O'War is the game of 'Raging Sea Battles in the World of Warhammer'. Unfortunately, it was discontinued in the 90's. With that said, if you can find the components and miniatures, it's still surprisingly fun! This web app is an attempt to make this game accessible to the masses once more.<p>A brief guide to using this app: the Fleet Builder (and other pages) can be found under the 3 bars on the right pull down menu. From there, you can select the ruleset and create a list. The lists are stored in your browser's cache so they won't disappear between browser refreshes. There is a dataset page that allows you to import/export (or clear) these lists so you can share them between browsers (or save them someplace more permanent).",
+  "description_en" : "<p>Welcome to the Fleet Builder for the Man O'War tabletop game! Man O'War is the game of 'Raging Sea Battles in the World of Warhammer'. Unfortunately, it was discontinued in the 90's. With that said, if you can find the components and miniatures, it's still surprisingly fun! This web app is an attempt to make this game a little more accessible to the masses.<h3>A brief guide to using this app</h3> The Fleet Builder (and other pages) can be found under the 3 bars on the right pull down menu. From there, you can select a ruleset and create a list. The lists are stored in your browser's cache so they won't disappear between browser refreshes. There is a dataset page that allows you to import/export (or clear) these lists so you can share them between browsers (or save them someplace more permanent).<p>When you create a new list, if you select the primary faction it'll make it easier to make selections. If you select a ship or squadron, there is a text box for adding either a ship name or description of the ship. You can reorder the ship list by dragging the ships up or down, it also controls the order they appear in the card viewer; In this way you can use empty cards, rules cards, crew cards, etc. to make the printed pages more aesthetic. Lastly, you can select the Card Tab to see what it will look like when you print the cards.",
 
   "rulesets_title_en" : "Supported Rulesets:",
 
   "new_title_en" : "News:",
   "news" : [
     {
-      "date_en" : "April 3rd, 2026",
-      "announcement_en" : "<p><b>We've launched!</b><p>I'm always looking for input (i.e. bug reports, suggestions, critiques, etc), but at this moment I'm still not sure the best way to take it. Please don't hesitate to reach out using whatever channel you found this on. At some point I'll set up something more formal (probably using the github repository I plan to create for this). <p>- Drake"
+      "date_en" : "June 14th, 2026",
+      "announcement_en" : "<p><b>We've launched!</b><p>The site is live and all of the lists/rules from the original box game and Sea of Blood are available. I'll be adding the contents for Plaguefleet and various Citadel Journals in the next few days.<p>- Drake"
     }
   ],
 
@@ -17,6 +17,18 @@
   "bugs" : [
     {
       "description" : "The about page is seriously out of date and needs to be rewritten. It should note the 'inspiration' derived from the old world army builder pages."
+    },
+    {
+      "description" : "The print scaling is off. Currently it often wraps when trying to print a page. The work around is to lower the scaling when printing the pages."
+    },
+    {
+      "description" : "When trying to print a fleet with multiple pages, it's cutting off parts of last line of ships on the first page. This might just be an issue with my print drivers though. Work around: print one page at a time. To help, I added a feature for printing single pages at a time."
+    },
+    {
+      "description" : "Every so often, I'm seeing some extra text at the top of the Faction Roster (i.e. the rightmost column in the Fleet Builder). It doesn't seem to hurt anything, but it is odd."
+    },
+    {
+      "description" : "I need to setup a more formal bug & feature reporting system. I'm thinking GitHub issues. But for now, if you have feedback add it to whatever thread you found this from."
     }
   ]
 }
