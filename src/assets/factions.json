@@ -122,6 +122,47 @@
         "allies": []
       },
       {
+        "id": "pirate",
+        "name_de": "Pirate Fleet",
+        "name_en": "Pirate Fleet",
+        "name_es": "Pirate Fleet",
+        "name_fr": "Pirate Fleet",
+        "allies": [
+          "brettonia",
+          "chaosdwarf",
+          "darkelf",
+          "khorne",
+          "nurgle",
+          "orc",
+          "skaven",
+          "slaanesh",
+          "tzeentch",
+          "undivided"
+        ]
+      },
+      {
+        "id": "norse",
+        "name_de": "Norse Raiders",
+        "name_en": "Norse Raiders",
+        "name_es": "Norse Raiders",
+        "name_fr": "Norse Raiders",
+        "allies": [
+          "brettonia",
+          "chaosdwarf",
+          "darkelf",
+          "dwarf",
+          "empire",
+          "highelf",
+          "khorne",
+          "nurgle",
+          "orc",
+          "pirate",
+          "skaven",
+          "slaanesh",
+          "tzeentch"
+        ]
+      },
+      {
         "id": "spelldecks",
         "name_de": "Spell Decks",
         "name_en": "Spell Decks",

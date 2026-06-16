@@ -1,0 +1,261 @@
+{
+  "weight": "heavy",
+  "name": {
+    "value": "KINGSHIP",
+    "scale": 1,
+    "value_en": "KINGSHIP",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "NORSE MAN O'WAR",
+    "scale": 1,
+    "value_en": "NORSE MAN O'WAR",
+    "scale_en": 1
+  },
+  "honors": {
+    "value": "Honors: 4",
+    "scale": 0.8,
+    "value_en": "Honors: 4",
+    "scale_en": 0.8
+  },
+  "cost": {
+    "value": "100 pts",
+    "scale": 1,
+    "value_en": "100 pts",
+    "scale_en": 1
+  },
+  "crew": 5,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 1,
+    "value_en": "CREW",
+    "scale_en": 1
+  },
+  "move": {
+    "value": "<div style=\"font-size:24px\">SAIL 6\"</div><b>Wind Behind 9\"</b><div style=\"font-size:24px\">OARS 6\"</div><b>No turns 8\"</b>",
+    "scale": 0.75,
+    "value_en": "<div style=\"font-size:24px\">SAIL 6\"</div><b>Wind Behind 9\"</b><div style=\"font-size:24px\">OARS 6\"</div><b>No turns 8\"</b>",
+    "scale_en": 0.75
+  },
+  "upperNotes": [
+    {
+      "value": "OARS: 1/2 move 90 degree turn, may reverse upto 2\"",
+      "scale": 1,
+      "value_en": "OARS: 1/2 move 90 degree turn, may reverse upto 2\"",
+      "scale_en": 1
+    }
+  ],
+  "highLow": [
+    {
+      "title": "LOW",
+      "title_en": "LOW",
+      "height": 50
+    },
+    {
+      "title": "HIGH",
+      "title_en": "HIGH",
+      "height": 50
+    }
+  ],
+  "dmgBoxes": [
+    {
+      "width": 20,
+      "height": 50,
+      "left": 0,
+      "bottom": 50,
+      "name": {
+        "value": "FHEAD",
+        "scale": 0.8,
+        "value_en": "FHEAD",
+        "scale_en": 0.8
+      },
+      "zone": "3",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 60,
+      "height": 50,
+      "left": 20,
+      "bottom": 50,
+      "name": {
+        "value": "MAINMAST",
+        "scale": 1,
+        "value_en": "MAINMAST",
+        "scale_en": 1
+      },
+      "zone": "4,5",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "No effect",
+          "scale": 1,
+          "value_en": "No effect",
+          "scale_en": 1
+        },
+        {
+          "value": "<b>Mast Lost</b><br>May not move under sail",
+          "scale": 0.95,
+          "value_en": "<b>Mast Lost</b><br>May not move under sail",
+          "scale_en": 0.95
+        }
+      ],
+      "notes": {
+        "value": "<i>No Criticals</i>",
+        "scale": 1.5,
+        "value_en": "<i>No Criticals</i>",
+        "scale_en": 1.5
+      }
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 80,
+      "bottom": 50,
+      "name": {
+        "value": "STERN",
+        "scale": 0.75,
+        "value_en": "STERN",
+        "scale_en": 0.75
+      },
+      "zone": "6",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "PROW",
+        "scale": 0.8,
+        "value_en": "PROW",
+        "scale_en": 0.8
+      },
+      "zone": "3",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 0.8,
+          "value_en": "",
+          "scale_en": 0.8
+        }
+      ]
+    },
+    {
+      "width": 30,
+      "height": 50,
+      "left": 20,
+      "bottom": 0,
+      "name": {
+        "value": "OARDECK",
+        "scale": 1,
+        "value_en": "OARDECK",
+        "scale_en": 1
+      },
+      "zone": "4",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Oars</b> lost<br>Oar speed<br>reduced<br>3\" (4\")",
+          "scale": 0.8,
+          "value_en": "<b>Oars</b> lost<br>Oar speed<br>reduced<br>3\" (4\")",
+          "scale_en": 0.8
+        }
+      ]
+    },
+    {
+      "width": 30,
+      "height": 50,
+      "left": 50,
+      "bottom": 0,
+      "name": {
+        "value": "OARDECK",
+        "scale": 1,
+        "value_en": "OARDECK",
+        "scale_en": 1
+      },
+      "zone": "5",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Oars</b> lost<br>Oar speed<br>reduced by<br>3\" (4\")",
+          "scale": 0.8,
+          "value_en": "<b>Oars</b> lost<br>Oar speed<br>reduced by<br>3\" (4\")",
+          "scale_en": 0.8
+        }
+      ]
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 80,
+      "bottom": 0,
+      "name": {
+        "value": "AFT",
+        "scale": 1,
+        "value_en": "AFT",
+        "scale_en": 1
+      },
+      "zone": "6",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    }
+  ],
+  "criticalTitle": {
+    "value": "BELOW WATERLINE",
+    "scale": 1,
+    "value_en": "BELOW WATERLINE",
+    "scale_en": 1
+  },
+  "criticalSave": "4+",
+  "criticalBoxes": 4,
+  "lowerNotesTitle": {
+    "value": "SPECIAL RULES",
+    "scale": 1,
+    "value_en": "SPECIAL RULES",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "Draw 4 random crew of Ulfwerener, Berserkers, Bonsmen or Huscarls.<br>If ship runs aground and fails BtW save, roll d6: <b>1</b>: take 2 BtW dmg, <b>2-5</b>: take 1 BtW dmg, <b>6</b>: no damage.<br>Then roll 3+ to move away freely.",
+    "scale": 0.95,
+    "value_en": "Draw 4 random crew of Ulfwerener, Berserkers, Bonsmen or Huscarls.<br>If ship runs aground and fails BtW save, roll d6: <b>1</b>: take 2 BtW dmg, <b>2-5</b>: take 1 BtW dmg, <b>6</b>: no damage.<br>Then roll 3+ to move away freely.",
+    "scale_en": 0.95
+  }
+}

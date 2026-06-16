@@ -4,7 +4,7 @@
   "rulesetName": "Man O'War",
   "name": "Nuln Expeditionary Fleet",
   "description": "Hailing from the great city of Nuln, this fleet seeks a naval route to the grand cities of Cathay. This is the smallest legal Empire Fleet.",
-  "pointsSpent": "525",
+  "pointsSpent": "600",
   "factionId": "empire",
   "factionName": "Imperial Fleet",
   "cards": [
@@ -41,7 +41,7 @@
       "name": "Wargalley",
       "description": "A Squadron of 3 Wargalley",
       "number": "3",
-      "cost": "75",
+      "cost": "150",
       "shipNames": [
         "The Witch",
         "Hansel",

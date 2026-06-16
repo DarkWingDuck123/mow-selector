@@ -1,40 +1,28 @@
 {
-  "id": "empire",
+  "id": "norse",
   "style": {
-    "bgColor": "firebrick",
-    "fgColor": "gold",
+    "bgColor": "yellow",
+    "fgColor": "black",
     "parchmentColor": "beige",
     "waterColor": "lightblue",
     "accentColor": "red"
   },
-  "name_de": "Imperial Fleet",
-  "name_en": "Imperial Fleet",
-  "name_es": "Imperial Fleet",
-  "name_fr": "Imperial Fleet",
+  "name_en": "Norse Raiders",
   "validation_rules": [
     {
-      "rule": "Max 1 Greatship per 1 Ship of the Line; First One Free"
+      "rule": "Max 1 Kingship per 1 Ship of the Line; First One Free"
     },
     {
-      "rule": "Max 2 Wargalley per 1 Greatship, or 1 Wolfship"
+      "rule": "Max 1 Longship per 1 Man O'War"
     },
     {
-      "rule": "Max 1 Hellhammer per 2 Ship of the Line"
+      "rule": "Max 4 Norseman per 1 Kingship"
     },
     {
-      "rule": "Max 1 Ironfist per 2 Ship of the Line"
+      "rule": "Min 1 Kingship"
     },
     {
-      "rule": "Max 1 Griffon Rider per 1 Ship of the Line"
-    },
-    {
-      "rule": "Min 1 Greatship"
-    },
-    {
-      "rule": "Min 1 Wolfship"
-    },
-    {
-      "rule": "Min 1 Wargalley"
+      "rule": "Min 1 Longship"
     },
     {
       "rule": "Max 1 Wizard"
@@ -47,9 +35,6 @@
     },
     {
       "rule": "Max 1 Sea Monster per 1 Ship of the Line"
-    },
-    {
-      "rule": "Max 1 Anti-Flyer per 1 Man O'War"
     }
   ],
   "freebies": [
@@ -73,6 +58,58 @@
       "source": "MoW",
       "source_en": "MoW",
       "cost": "-"
+    },
+    {
+      "id": "ulfwerener",
+      "name": "Ulfwerener",
+      "name_en": "Ulfwerener",
+      "type_name": "Norseman",
+      "type_name_en": "Norseman",
+      "description": "(U) When leading roll d6: <b>4-6</b>: +1 CC, roll for each enemy crew on a 1 discard",
+      "description_en": "(U) When leading roll d6: <b>4-6</b>: +1 CC, roll for each enemy crew on a 1 discard",
+      "type": "crew",
+      "source": "SoBW",
+      "source_en": "SoB",
+      "cost": "0"
+    },
+    {
+      "id": "berserker",
+      "name": "Berserker",
+      "name_en": "Berserker",
+      "type_name": "Norseman",
+      "type_name_en": "Norseman",
+      "description": "(Be) When leading roll d6: <b>1-2</b>: -1 CC, <b>3-4<b>: +1 CC, <b>5</b>: +2 CC, <b>6</b>: +d6 CC",
+      "description_en": "(Be) When leading roll d6: <b>1-2</b>: -1 CC, <b>3-4<b>: +1 CC, <b>5</b>: +2 CC, <b>6</b>: +d6 CC",
+      "type": "crew",
+      "source": "SoBW",
+      "source_en": "SoB",
+      "cost": "0"
+    },
+    {
+      "id": "bondsmen",
+      "name": "Bondsmen",
+      "name_en": "Bondsmen",
+      "type_name": "Norseman",
+      "type_name_en": "Norseman",
+      "description": "(B) +1 CC when leading",
+      "description_en": "(B) +1 CC when leading",
+      "type": "crew",
+      "source": "SoBW",
+      "source_en": "SoB",
+      "cost": "0"
+    },
+    {
+      "id": "huscarl",
+      "name": "Huscarls",
+      "name_en": "Huscarles",
+      "type_name": "Norseman",
+      "type_name_en": "Norseman",
+      "description": "(H) +1 CC when leading attack, +3 when leading defence",
+      "description_en": "(H) +1 CC when leading attack, +3 when leading defence",
+      "type": "crew",
+      "source": "SoBW",
+      "source_en": "SoB",
+      "cost": "0"
     },
     {
       "id": "wizard1",
@@ -167,10 +204,20 @@
     }
   ],
   "allies": [
-    "dwarf",
-    "highelf",
     "brettonia",
-    "norse"
+    "chaosdwarf",
+    "darkelf",
+    "dwarf",
+    "empire",
+    "highelf",
+    "khorne",
+    "nurgle",
+    "orc",
+    "pirate",
+    "skaven",
+    "slaanesh",
+    "tzeentch",
+    "undivided"
   ],
   "addons": [
     {
@@ -182,17 +229,6 @@
       "type_name": "Man O'War Card",
       "source": "MoW",
       "source_en": "MoW",
-      "cost": "25"
-    },
-    {
-      "id": "empire_hellblaster",
-      "weight": "negligible",
-      "name": "Hellblaster",
-      "name_en": "Hellblaster",
-      "type": "card",
-      "type_name": "Anti-Flyer",
-      "source": "SoB",
-      "source_en": "SoB",
       "cost": "25"
     },
     {
@@ -226,10 +262,10 @@
       "cost": "0"
     },
     {
-      "id": "empire_specialrules",
+      "id": "norse",
       "weight": "negligible",
-      "name": "Special Rules - Empire",
-      "name_en": "Special Rules - Empire",
+      "name": "Special Rules - Norse",
+      "name_en": "Special Rules - Norse",
       "type": "card",
       "cost": "0"
     },
@@ -243,234 +279,30 @@
   ],
   "units": [
     {
-      "id": "empire_greatship",
+      "id": "norse_kingship",
       "type": "manowar",
       "type_name": "Man O'War",
+      "type_name_en": "Man O'War",
       "weight": "heavy",
-      "name": "Greatship",
-      "name_de": "Greatship",
-      "name_en": "Greatship",
-      "name_es": "Greatship",
-      "name_fr": "Greatship",
-      "description_en": "A Greatship",
+      "name": "Kingship",
+      "name_en": "Kingship",
       "squadron-size": 1,
       "source": "MoW",
       "source_en": "MoW",
-      "cost": 150
+      "cost": 100
     },
     {
-      "id": "empire_wolfship",
+      "id": "norse_longship",
       "type": "shipoftheline",
       "type_name": "Ship of the Line",
       "type_name_en": "Ship of the Line",
       "weight": "heavy",
-      "name": "Wolfship",
-      "name_en": "Wolfship",
-      "description_en": "A Squadron of 3 Wolfship",
-      "squadron-size": 3,
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": 300
-    },
-    {
-      "id": "empire_wargalley",
-      "type": "shipoftheline",
-      "type_name": "Ship of the Line",
-      "type_name_en": "Ship of the Line",
-      "weight": "heavy",
-      "name": "Wargalley",
-      "name_en": "Wargalley",
-      "description_en": "A Squadron of 3 Wargalley",
+      "name": "Longship",
+      "name_en": "Longship",
       "squadron-size": 3,
       "source": "MoW",
       "source_en": "MoW",
       "cost": 150 
-    },
-    {
-      "id": "empire_griffonrider",
-      "type": "flyer",
-      "type_name": "Flyer",
-      "type_name_en": "Flyer",
-      "weight": "light",
-      "name": "Griffon Rider",
-      "name_en": "Griffon Rider",
-      "description_en": "A Flight of 3 Griffon Riders",
-      "squadron-size": 1,
-      "source": "SoB",
-      "source_en": "SoB",
-      "cost": 75
-    },
-    {
-      "id": "empire_hellhammer",
-      "type": "shipoftheline",
-      "type_name": "Ship of the Line",
-      "type_name_en": "Ship of the Line",
-      "weight": "heavy",
-      "name": "Hellhammer",
-      "name_en": "Hellhammer",
-      "description_en": "A Squadron of 3 Hellhammer",
-      "squadron-size": 3,
-      "source": "SoB",
-      "source_en": "SoB",
-      "cost": 150
-    },
-    {
-      "id": "empire_ironfist",
-      "type": "shipoftheline",
-      "type_name": "Ship of the Line",
-      "type_name_en": "Ship of the Line",
-      "weight": "heavy",
-      "name": "Ironfist",
-      "name_en": "Ironfist",
-      "description_en": "A Squadron of 3 Ironfist",
-      "squadron-size": 3,
-      "source": "SoB",
-      "source_en": "SoB",
-      "cost": 150
-    }
-  ],
-  "names": [
-    {
-      "id": "name1",
-      "value": [
-        "Nuln's",
-        "Altdorf's",
-        "Middenheim's",
-        "Moot's",
-        "Reikland's",
-        "Emperor's"
-      ]
-    },
-    {
-      "id": "name2",
-      "value": [
-        "Revenge",
-        "Surprise",
-        "Wrath",
-        "Mistake",
-        "Hammer",
-        "Sword",
-        "Spear"
-      ]
-    },
-    {
-      "id": "name3",
-      "value": [
-        "Karl Franz",
-        "Ghal Maraz",
-        "Runefang"
-      ]
-    },
-    {
-      "id": "name4",
-      "value": [
-        "Sea",
-        "Midnight",
-        "Night",
-        "Dawn",
-        "Dusk",
-        "Twighlight"
-      ]
-    },
-    {
-      "id": "name5",
-      "value": [
-        "Witch",
-        "Raider",
-        "Pirate",
-        "Wizard",
-        "Dragon",
-        "Sorcerer"
-      ]
-    },
-    {
-      "id": "name6",
-      "value": [
-        "Hammer of",
-        "Fist of",
-        "Sword of",
-        "Club of"
-      ]
-    },
-    {
-      "id": "name7",
-      "value": [
-        "Sigmar",
-        "Destiny",
-        "Wrath",
-        "Anger",
-        "Annihilation",
-        "Armegedon",
-        "Ulrik"
-      ]
-    },
-    {
-      "id": "name8",
-      "value": [
-        "Sir",
-        "Sir",
-        "Sir",
-        "Baron",
-        "Duke",
-        "Prince-Elector",
-        "Count",
-        "Grand Duke"
-      ]
-    },
-    {
-      "id": "name9",
-      "value": [
-        "Bernert",
-        "Wolff",
-        "Udet",
-        "Menchkhoff",
-        "Berthold",
-        "Richthofen",
-        "Voss"
-      ]
-    }
-  ],
-  "naming_rules": [
-    {
-      "id": "empire_greatship",
-      "rule": [
-        "name1 name2",
-        "name2",
-        "name3"
-      ]
-    },
-    {
-      "id": "empire_wolfship",
-      "rule": [
-        "name1 name5",
-        "name5",
-        "name4 name5"
-      ]
-    },
-    {
-      "id": "empire_wargalley",
-      "rule": [
-        "name4 name5"
-      ]
-    },
-    {
-      "id": "empire_ironfist",
-      "rule": [
-        "name6 name7"
-      ]
-    },
-    {
-      "id": "empire_hellhammer",
-      "rule": [
-        "name7",
-        "name6 name5"
-      ]
-    },
-    {
-      "id": "empire_griffonrider",
-      "rule": [
-        "name8 name9, name8 name9, name8 name9"
-      ]
     }
   ]
 }
