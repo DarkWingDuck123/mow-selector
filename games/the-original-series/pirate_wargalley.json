@@ -1,7 +1,7 @@
 {
   "weight":"heavy",
   "name":{"value":"WARGALLEY","scale":1.0},
-  "type":{"value":"IMPERIAL SHIP OF THE LINE","scale":0.75},
+  "type":{"value":"PIRATE SHIP OF THE LINE","scale":0.75},
   "honors":{"value":"Honors: 2", "scale":0.8},
   "cost":{"value":"150 pts per 3", "scale":1.0},
   "crewTitle":{"value":"CREW","scale":0.75},

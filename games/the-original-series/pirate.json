@@ -1,0 +1,127 @@
+{
+  "id": "pirate",
+  "style": {
+    "bgColor": "gray",
+    "fgColor": "white",
+    "parchmentColor": "beige",
+    "waterColor": "lightblue",
+    "accentColor": "red"
+  },
+  "name": "Pirate Fleet",
+  "name_en": "Pirate Fleet",
+  "name_de": "Pirate Fleet",
+  "name_es": "Pirate Fleet",
+  "name_fr": "Pirate Fleet",
+  "validation_rules": [
+    {
+      "rule": "Min 1 Wargalley"
+    },
+    {
+      "rule": "Max 1 Sea Monster per 1 Ship of the Line"
+    },
+    {
+      "rule": "Max 33% Allies"
+    },
+    {
+      "rule": "Max 0% Non-Allies"
+    }
+  ],
+  "allies": [
+    "brettonia",
+    "chaosdwarf",
+    "darkelf",
+    "khorne",
+    "nurgle",
+    "orc",
+    "skaven",
+    "slaanesh",
+    "tzeentch",
+    "undivided"
+  ],
+  "addons": [
+    {
+      "id": "crewcard",
+      "weight": "negligible",
+      "name": "Crew Card",
+      "name_en": "Crew Card",
+      "type": "crew_card",
+      "cost": "0"
+    },
+    {
+      "id": "turnsummary",
+      "weight": "negligible",
+      "name": "Turn Summary",
+      "name_en": "Turn Summary",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "pirate_specialrules",
+      "weight": "negligible",
+      "name": "Special Rules - Pirate",
+      "name_en": "Special Rules - Pirate",
+      "type": "card",
+      "cost": "0"
+    },
+    {
+      "id": "blank",
+      "name": "Empty",
+      "name_en": "Empty",
+      "type": "card",
+      "cost": "0"
+    }
+  ],
+  "units": [
+    {
+      "id": "pirate_wargalley",
+      "type": "shipoftheline",
+      "type_name": "Ship of the Line",
+      "type_name_en": "Ship of the Line",
+      "weight": "heavy",
+      "name": "Wargalley",
+      "name_en": "Wargalley",
+      "description": "A Squadron of 3 Wargalley",
+      "description_en": "A Squadron of 3 Wargalley",
+      "squadron-size": 3,
+      "cost": 150 
+    }
+  ],
+  "names": [
+    {
+      "id": "name1",
+      "value": [
+        "The Black",
+        "The Dread",
+        "The Horrible",
+        "The Jolly",
+        "The Odious",
+        "The Gentle",
+        "The Bloody",
+        "The Drunken",
+        "Siren's",
+        "Mermaid's",
+        "Triton's"
+      ]
+    },
+    {
+      "id": "name2",
+      "value": [
+        "Revenge",
+        "Pearl",
+        "Wench",
+        "Kiss",
+        "Mercy",
+        "Fortune",
+        "Lament"
+      ]
+    }
+  ],
+  "naming_rules": [
+    {
+      "id": "pirate_wargalley",
+      "rule": [
+        "name1 name2"
+      ]
+    }
+  ]
+}

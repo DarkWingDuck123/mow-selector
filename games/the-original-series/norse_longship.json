@@ -1,0 +1,180 @@
+{
+  "weight": "heavy",
+  "name": {
+    "value": "LONGSHIP",
+    "scale": 1,
+    "value_en": "LONGSHIP",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "NORSE SHIP OF THE LINE",
+    "scale": 0.65,
+    "value_en": "NORSE SHIP OF THE LINE",
+    "scale_en": 0.65
+  },
+  "honors": {
+    "value": "Honors: 2",
+    "scale": 0.8,
+    "value_en": "Honors: 2",
+    "scale_en": 0.8
+  },
+  "cost": {
+    "value": "150 pts per 3",
+    "scale": 1,
+    "value_en": "150 pts per 3",
+    "scale_en": 1
+  },
+  "crew": 3,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 1,
+    "value_en": "CREW",
+    "scale_en": 1
+  },
+  "move": {
+    "value": "<div style=\"font-size:24px\">SAIL 6\"</div><b>Wind Behind 9\"</b><div style=\"font-size:24px\">OARS 6\"</div><b>No turns 8\"</b>",
+    "scale": 0.75,
+    "value_en": "<div style=\"font-size:24px\">SAIL 6\"</div><b>Wind Behind 9\"</b><div style=\"font-size:24px\">OARS 6\"</div><b>No turns 8\"</b>",
+    "scale_en": 0.75
+  },
+  "upperNotes": [
+    {
+      "value": "OARS: 1/2 move 90 degree turn, may reverse upto 2\"",
+      "scale": 1,
+      "value_en": "OARS: 1/2 move 90 degree turn, may reverse upto 2\"",
+      "scale_en": 1
+    }
+  ],
+  "dmgBoxes": [
+    {
+      "width": 50,
+      "height": 50,
+      "left": 25,
+      "bottom": 0,
+      "name": {
+        "value": "OARDECK",
+        "scale": 1,
+        "value_en": "OARDECK",
+        "scale_en": 1
+      },
+      "zone": "3",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Oars</b>l ost<br>Cannot move under oars",
+          "scale": 1,
+          "value_en": "<b>Oars</b>l ost<br>Cannot move under oars",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "",
+        "scale": 1,
+        "value_en": "",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 25,
+      "height": 100,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "PROW",
+        "scale": 1,
+        "value_en": "PROW",
+        "scale_en": 1
+      },
+      "zone": "4",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 50,
+      "height": 50,
+      "left": 25,
+      "bottom": 50,
+      "name": {
+        "value": "MAIN MAST",
+        "scale": 1,
+        "value_en": "MAIN MAST",
+        "scale_en": 1
+      },
+      "zone": "5",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Mast</b> lost<br>Cannot move under Sails",
+          "scale": 1,
+          "value_en": "<b>Mast</b> lost<br>Cannot move under Sails",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "<i>No Criticals</i>",
+        "scale": 1.35,
+        "value_en": "<i>No Criticals</i>",
+        "scale_en": 1.35
+      }
+    },
+    {
+      "width": 25,
+      "height": 100,
+      "left": 75,
+      "bottom": 0,
+      "name": {
+        "value": "STERN",
+        "scale": 1,
+        "value_en": "STERN",
+        "scale_en": 1
+      },
+      "zone": "6",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    }
+  ],
+  "criticalTitle": {
+    "value": "BELOW WATERLINE",
+    "scale": 1,
+    "value_en": "BELOW WATERLINE",
+    "scale_en": 1
+  },
+  "criticalSave": "5+",
+  "criticalBoxes": 2,
+  "lowerNotesTitle": {
+    "value": "SPECIAL RULES",
+    "scale": 1,
+    "value_en": "SPECIAL RULES",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Lashed Together</b>: A squadron touching each other at the start of a Battle Phase, they may <b>lash together</b>. Move as one, may not move under <b>oars</b>, <b>sail</b> 4\". Act as one ship in boarding actions.<br>If ship runs aground and fails BtW save, roll d6: <b>1</b>: take 2 BtW dmg, <b>2-5</b>: take 1 BtW dmg, <b>6</b>: no damage. Then roll 3+ to move away freely.",
+    "scale": 0.75,
+    "value_en": "<b>Lashed Together</b>: A squadron touching each other at the start of a Battle Phase, they may <b>lash together</b>. Move as one, may not move under <b>oars</b>, <b>sail</b> 4\". Act as one ship in boarding actions.<br>If ship runs aground and fails BtW save, roll d6: <b>1</b>: take 2 BtW dmg, <b>2-5</b>: take 1 BtW dmg, <b>6</b>: no damage. Then roll 3+ to move away freely.",
+    "scale_en": 0.75
+  }
+}
