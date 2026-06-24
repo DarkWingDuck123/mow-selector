@@ -1,423 +1,463 @@
 {
-  "id": "darkelf",
-  "style": {
-    "bgColor": "purple",
-    "fgColor": "white",
-    "parchmentColor": "beige",
-    "waterColor": "lightblue",
-    "accentColor": "red"
-  },
-  "name": "Dark Elf Fleet",
-  "name_en": "Dark Elf Fleet",
-  "name_de": "Dark Elf Fleet",
-  "name_es": "Dark Elf Fleet",
-  "name_fr": "Dark Elf Fleet",
-  "validation_rules": [
-    {
-      "rule": "Max 1 Black Ark of Naggaroth per 1 Death Fortress"
+    "id": "darkelf",
+    "style": {
+        "bgColor": "purple",
+        "fgColor": "white",
+        "parchmentColor": "beige",
+        "waterColor": "lightblue",
+        "accentColor": "red"
     },
-    {
-      "rule": "Max 2 Doomreaver per 1 Man O'War"
-    },
-    {
-      "rule": "Max 1 Manticore Lord per 1 Ship of the Line"
-    },
-    {
-      "rule": "Max 1 Beast Lord per 1 Black Ark of Naggaroth"
-    },
-    {
-      "rule": "Max 1 Beast Lord per 1 Death Fortress"
-    },
-    {
-      "rule": "Max 1 Witch Elf"
-    },
-    {
-      "rule": "Min 1 Black Ark of Naggaroth"
-    },
-    {
-      "rule": "Min 1 Death Fortress"
-    },
-    {
-      "rule": "Min 1 Doomreaver"
-    },
-    {
-      "rule": "Max 1 Wizard"
-    },
-    {
-      "rule": "Max 33% Allies"
-    },
-    {
-      "rule": "Max 0% Non-Allies"
-    },
-    {
-      "rule": "Max 1 Sea Monster per 1 Ship of the Line"
-    },
-    {
-      "rule": "Max 1 Anti-Flyer per 1 Man O'War"
-    },
-    {
-      "rule": "Max 1 Irshkileth"
-    },
-    {
-      "rule": "Max 1 Ikonarashk"
-    },
-    {
-      "rule": "Max 1 The Trueseeker"
-    },
-    {
-      "rule": "Max 1 Urkarontir"
-    },
-    {
-      "rule": "Max 1 The Wild Mind"
-    },
-    {
-      "rule": "Max 1 Misharolth"
-    }
-  ],
-  "freebies": [
-    {
-      "free": "1 Admiral"
-    },
-    {
-      "free": "1 Man O'War Card"
-    }
-  ],
-  "allies": [
-    "orc",
-    "khorne",
-    "nurgle",
-    "slaanesh",
-    "tzeentch",
-    "undivided",
-    "chaosdwarf",
-    "pirate",
-    "skaven",
-    "norse"
-  ],
-  "crew": [
-    {
-      "id": "admiral",
-      "name": "Admiral",
-      "name_en": "Admiral",
-      "type_name": "Admiral",
-      "type_name_en": "Admiral",
-      "description": "(A) +1 CC, May cling to wreckage",
-      "description_en": "(A) +1 CC, May cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "-"
-    },
-    {
-      "id": "witchelf",
-      "name": "Witch Elf",
-      "name_en": "Witch Elf",
-      "type_name": "Witch Elf",
-      "type_name_en": "Beast Lord",
-      "description": "(WE) +1 Honor, +1 CC, Remove with last crew, After successful boarding roll d6: <b>5-6</b> remove 1 additional crew counter, Attaches to Admiral's Black Ark.",
-      "description_en": "(WE) +1 Honor, +1 CC, Remove with last crew, After successful boarding roll d6: <b>5-6</b> remove 1 additional crew counter, Attaches to Admiral's Black Ark.",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "50"
-    },
-    {
-      "id": "beastlord",
-      "name": "Beast Lord",
-      "name_en": "Beast Lord",
-      "type_name": "Beast Lord",
-      "type_name_en": "Beast Lord",
-      "description": "(B) +2 Honor, +0 CC, Remove with last crew, +1 to Summon Sea Monster (not cumulative), May summon additional Sea Monsters, Attaches to Death Fortress or Black Ark, May cling to wreckage.",
-      "description_en": "(B) +2 Honor, +0 CC, Remove with last crew, +1 to Summon Sea Monster (not cumulative), May summon additional Sea Monsters, Attaches to Death Fortress or Black Ark, May cling to wreckage.",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "75"
-    },
-    {
-      "id": "wizard1",
-      "name": "Wizard Champion",
-      "name_en": "Wizard Champion",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, May cling to wreckage",
-      "description_en": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, May cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "50"
-    },
-    {
-      "id": "wizard2",
-      "name": "High Wizard Champion",
-      "name_en": "High Wizard Champion",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, May cling to wreckage",
-      "description_en": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, May cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "75"
-    },
-    {
-      "id": "wizard3",
-      "name": "Master Wizard",
-      "name_en": "Master Wizard",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, May cling to wreckage",
-      "description_en": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, May cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "100"
-    },
-    {
-      "id": "wizard4",
-      "name": "High Master Wizard",
-      "name_en": "High Master Wizard",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, May cling to wreckage",
-      "description_en": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, May cling to wreckage",
-      "type": "crew",
-      "source": "WD 164",
-      "source_en": "WD 164",
-      "cost": "125"
-    },
-    {
-      "id": "wizard5",
-      "name": "Wizard Lord",
-      "name_en": "Wizard Lord",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, May cling to wreckage",
-      "description_en": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, May cling to wreckage",
-      "type": "crew",
-      "source": "WD 164",
-      "source_en": "WD 164",
-      "cost": "150"
-    },
-    {
-      "id": "wizard6",
-      "name": "High Wizard Lord",
-      "name_en": "High Wizard Lord",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, May cling to wreckage",
-      "description_en": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, May cling to wreckage",
-      "type": "crew",
-      "source": "WD 164",
-      "source_en": "WD 164",
-      "cost": "175"
-    },
-    {
-      "id": "wizard7",
-      "name": "Grand Wizard Lord",
-      "name_en": "Grand Wizard Lord",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, May cling to wreckage",
-      "description_en": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> May reroll any color of spell failed to cast or dispell<br> Remove with last crew, May cling to wreckage",
-      "type": "crew",
-      "source": "WD 164",
-      "source_en": "WD 164",
-      "cost": "200"
-    }
-  ],
-  "addons": [
-    {
-      "id": "darkelf_skyreaper",
-      "weight": "negligible",
-      "name": "Sky Reaper",
-      "name_en": "Sky Reaper",
-      "type": "card",
-      "type_name": "Anti-Flyer",
-      "source": "SoB",
-      "source_en": "SoB",
-      "cost": "25"
-    },
-    {
-      "id": "colorspell",
-      "weight": "negligible",
-      "name": "Color Spell",
-      "name_en": "Color Spell",
-      "type": "card",
-      "type_name": "Color Spell",
-      "type_name_en": "Color Spell",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "0"
-    },
-    {
-      "id": "darkelf_thewildmind",
-      "weight": "negligible",
-      "name": "The Wild Mind",
-      "name_en": "The Wild Mind",
-      "type": "card",
-      "type_name": "Tainted Stone",
-      "type_name_en": "Tainted Stone",
-      "source": "CJ 3",
-      "source_en": "CJ 3",
-      "cost": "50"
-    },
-    {
-      "id": "darkelf_misharolth",
-      "weight": "negligible",
-      "name": "Misharolth",
-      "name_en": "Misharolth",
-      "type": "card",
-      "type_name": "Tainted Stone",
-      "type_name_en": "Tainted Stone",
-      "source": "CJ 3",
-      "source_en": "CJ 3",
-      "cost": "50"
-    },
-    {
-      "id": "darkelf_ikonarashk",
-      "weight": "negligible",
-      "name": "Ikonarashk",
-      "name_en": "Ikonarashk",
-      "type": "card",
-      "type_name": "Tainted Stone",
-      "type_name_en": "Tainted Stone",
-      "source": "CJ 3",
-      "source_en": "CJ 3",
-      "cost": "75"
-    },
-    {
-      "id": "darkelf_thetrueseeker",
-      "weight": "negligible",
-      "name": "The Trueseeker",
-      "name_en": "The Trueseeker",
-      "type": "card",
-      "type_name": "Tainted Stone",
-      "type_name_en": "Tainted Stone",
-      "source": "CJ 3",
-      "source_en": "CJ 3",
-      "cost": "75"
-    },
-    {
-      "id": "darkelf_urkarontir",
-      "weight": "negligible",
-      "name": "Urkarontir",
-      "name_en": "Urkarontir",
-      "type": "card",
-      "type_name": "Tainted Stone",
-      "type_name_en": "Tainted Stone",
-      "source": "CJ 3",
-      "source_en": "CJ 3",
-      "cost": "75"
-    },
-    {
-      "id": "darkelf_irshkileth",
-      "weight": "negligible",
-      "name": "Irshkileth",
-      "name_en": "Irshkileth",
-      "type": "card",
-      "type_name": "Tainted Stone",
-      "type_name_en": "Tainted Stone",
-      "source": "CJ 3",
-      "source_en": "CJ 3",
-      "cost": "100"
-    },
-    {
-      "id": "crewcard",
-      "weight": "negligible",
-      "name": "Crew Card",
-      "name_en": "Crew Card",
-      "type": "crew_card",
-      "type_name": "",
-      "type_name_en": "",
-      "cost": "0"
-    },
-    {
-      "id": "turnsummary",
-      "weight": "negligible",
-      "name": "Turn Summary",
-      "name_en": "Turn Summary",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "darkelf_specialrules",
-      "weight": "negligible",
-      "name": "Special Rules - Dark Elf",
-      "name_en": "Special Rules - Dark Elf",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "blank",
-      "name": "Empty",
-      "name_en": "Empty",
-      "type": "card",
-      "cost": "0"
-    }
-  ],
-  "units": [
-    {
-      "id": "darkelf_blackark",
-      "type": "manowar",
-      "type_name": "Man O'War",
-      "type_name_en": "Man O'War",
-      "weight": "heavy",
-      "name": "Black Ark of Naggaroth",
-      "name_en": "Black Ark of Naggaroth",
-      "description": "A Black Ark of Naggaroth",
-      "description_en": "A Black Ark of Naggaroth",
-      "squadron-size": 1,
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": 250
-    },
-    {
-      "id": "darkelf_deathfortress",
-      "type": "manowar",
-      "type_name": "Independent",
-      "type_name_en": "Independent",
-      "weight": "heavy",
-      "name": "Death Fortress",
-      "name_en": "Death Fortress",
-      "description": "A Death Fortress",
-      "description_en": "A Death Fortress",
-      "squadron-size": 1,
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": 100
-    },
-    {
-      "id": "darkelf_doomreaver",
-      "type": "shipoftheline",
-      "type_name": "Ship of the Line",
-      "type_name_en": "Ship of the Line",
-      "weight": "heavy",
-      "name": "Doomreaver",
-      "name_en": "Doomreaver",
-      "description": "A Squadron of 3 Doomreaver",
-      "description_en": "A Squadron of 3 Doomreaver",
-      "squadron-size": 3,
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": 150
-    },
-    {
-      "id": "darkelf_manticorelord",
-      "type": "flyer",
-      "type_name": "Flyer",
-      "type_name_en": "Flyer",
-      "weight": "light",
-      "name": "Manticore Lord",
-      "name_en": "Manticore Lord",
-      "description": "A Manticore Lord",
-      "description_en": "A Manticore Lord",
-      "squadron-size": 1,
-      "source": "SoB",
-      "source_en": "SoB",
-      "cost": 50
-    }
-  ],
-  "names": [],
-  "naming_rules": []
+    "name": "Dark Elf Fleet",
+    "name_en": "Dark Elf Fleet",
+    "name_de": "Dark Elf Fleet",
+    "name_es": "Dark Elf Fleet",
+    "name_fr": "Dark Elf Fleet",
+    "validation_rules": [
+        {
+            "rule": "Max 1 Black Ark of Naggaroth per 1 Death Fortress"
+        },
+        {
+            "rule": "Max 2 Doomreaver per 1 Man O'War"
+        },
+        {
+            "rule": "Max 1 Manticore Lord per 1 Ship of the Line"
+        },
+        {
+            "rule": "Max 1 Beast Lord per 1 Black Ark of Naggaroth"
+        },
+        {
+            "rule": "Max 1 Beast Lord per 1 Death Fortress"
+        },
+        {
+            "rule": "Max 1 Witch Elf"
+        },
+        {
+            "rule": "Min 1 Black Ark of Naggaroth"
+        },
+        {
+            "rule": "Min 1 Death Fortress"
+        },
+        {
+            "rule": "Min 1 Doomreaver"
+        },
+        {
+            "rule": "Max 1 Wizard"
+        },
+        {
+            "rule": "Max 33% Allies"
+        },
+        {
+            "rule": "Max 0% Non-Allies"
+        },
+        {
+            "rule": "Max 1 Sea Monster per 1 Ship of the Line"
+        },
+        {
+            "rule": "Max 1 Anti-Flyer per 1 Man O'War"
+        },
+        {
+            "rule": "Max 1 Irshkileth"
+        },
+        {
+            "rule": "Max 1 Ikonarashk"
+        },
+        {
+            "rule": "Max 1 The Trueseeker"
+        },
+        {
+            "rule": "Max 1 Urkarontir"
+        },
+        {
+            "rule": "Max 1 The Wild Mind"
+        },
+        {
+            "rule": "Max 1 Misharolth"
+        }
+    ],
+    "freebies": [
+        {
+            "free": "1 Admiral"
+        },
+        {
+            "free": "1 Man O'War Card"
+        }
+    ],
+    "allies": [
+        "orc",
+        "khorne",
+        "nurgle",
+        "slaanesh",
+        "tzeentch",
+        "undivided",
+        "chaosdwarf",
+        "pirate",
+        "skaven",
+        "norse"
+    ],
+    "entries": [
+        {
+            "title": "Units",
+            "title_en": "Units",
+            "title_de": "Units",
+            "title_es": "Units",
+            "title_fr": "Units",
+            "type": "UNIT",
+            "expanded": true,
+            "units": [
+                {
+                    "id": "darkelf_blackark",
+                    "type": "manowar",
+                    "type_name": "Man O'War",
+                    "type_name_en": "Man O'War",
+                    "weight": "heavy",
+                    "name": "Black Ark of Naggaroth",
+                    "name_en": "Black Ark of Naggaroth",
+                    "description": "A Black Ark of Naggaroth",
+                    "description_en": "A Black Ark of Naggaroth",
+                    "squadron-size": 1,
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": 250
+                },
+                {
+                    "id": "darkelf_deathfortress",
+                    "type": "manowar",
+                    "type_name": "Independent",
+                    "type_name_en": "Independent",
+                    "weight": "heavy",
+                    "name": "Death Fortress",
+                    "name_en": "Death Fortress",
+                    "description": "A Death Fortress",
+                    "description_en": "A Death Fortress",
+                    "squadron-size": 1,
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": 100
+                },
+                {
+                    "id": "darkelf_doomreaver",
+                    "type": "shipoftheline",
+                    "type_name": "Ship of the Line",
+                    "type_name_en": "Ship of the Line",
+                    "weight": "heavy",
+                    "name": "Doomreaver",
+                    "name_en": "Doomreaver",
+                    "description": "A Squadron of 3 Doomreaver",
+                    "description_en": "A Squadron of 3 Doomreaver",
+                    "squadron-size": 3,
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": 150
+                },
+                {
+                    "id": "darkelf_manticorelord",
+                    "type": "flyer",
+                    "type_name": "Flyer",
+                    "type_name_en": "Flyer",
+                    "weight": "light",
+                    "name": "Manticore Lord",
+                    "name_en": "Manticore Lord",
+                    "description": "A Manticore Lord",
+                    "description_en": "A Manticore Lord",
+                    "squadron-size": 1,
+                    "source": "SoB",
+                    "source_en": "SoB",
+                    "cost": 50
+                }
+            ]
+        },
+        {
+            "title": "Add Ons",
+            "title_en": "Add Ons",
+            "title_de": "Add Ons",
+            "title_es": "Add Ons",
+            "title_fr": "Add Ons",
+            "type": "UNIT",
+            "expanded": true,
+            "units": [
+                {
+                    "id": "darkelf_skyreaper",
+                    "weight": "negligible",
+                    "name": "Sky Reaper",
+                    "name_en": "Sky Reaper",
+                    "type": "card",
+                    "type_name": "Anti-Flyer",
+                    "source": "SoB",
+                    "source_en": "SoB",
+                    "cost": "25"
+                },
+                {
+                    "id": "darkelf_thewildmind",
+                    "weight": "negligible",
+                    "name": "The Wild Mind",
+                    "name_en": "The Wild Mind",
+                    "type": "card",
+                    "type_name": "Tainted Stone",
+                    "type_name_en": "Tainted Stone",
+                    "source": "CJ 3",
+                    "source_en": "CJ 3",
+                    "cost": "50"
+                },
+                {
+                    "id": "darkelf_misharolth",
+                    "weight": "negligible",
+                    "name": "Misharolth",
+                    "name_en": "Misharolth",
+                    "type": "card",
+                    "type_name": "Tainted Stone",
+                    "type_name_en": "Tainted Stone",
+                    "source": "CJ 3",
+                    "source_en": "CJ 3",
+                    "cost": "50"
+                },
+                {
+                    "id": "darkelf_ikonarashk",
+                    "weight": "negligible",
+                    "name": "Ikonarashk",
+                    "name_en": "Ikonarashk",
+                    "type": "card",
+                    "type_name": "Tainted Stone",
+                    "type_name_en": "Tainted Stone",
+                    "source": "CJ 3",
+                    "source_en": "CJ 3",
+                    "cost": "75"
+                },
+                {
+                    "id": "darkelf_thetrueseeker",
+                    "weight": "negligible",
+                    "name": "The Trueseeker",
+                    "name_en": "The Trueseeker",
+                    "type": "card",
+                    "type_name": "Tainted Stone",
+                    "type_name_en": "Tainted Stone",
+                    "source": "CJ 3",
+                    "source_en": "CJ 3",
+                    "cost": "75"
+                },
+                {
+                    "id": "darkelf_urkarontir",
+                    "weight": "negligible",
+                    "name": "Urkarontir",
+                    "name_en": "Urkarontir",
+                    "type": "card",
+                    "type_name": "Tainted Stone",
+                    "type_name_en": "Tainted Stone",
+                    "source": "CJ 3",
+                    "source_en": "CJ 3",
+                    "cost": "75"
+                },
+                {
+                    "id": "darkelf_irshkileth",
+                    "weight": "negligible",
+                    "name": "Irshkileth",
+                    "name_en": "Irshkileth",
+                    "type": "card",
+                    "type_name": "Tainted Stone",
+                    "type_name_en": "Tainted Stone",
+                    "source": "CJ 3",
+                    "source_en": "CJ 3",
+                    "cost": "100"
+                },
+                {
+                    "id": "crewcard",
+                    "weight": "negligible",
+                    "name": "Crew Card",
+                    "name_en": "Crew Card",
+                    "type": "crew_card",
+                    "type_name": "",
+                    "type_name_en": "",
+                    "cost": "0"
+                },
+                {
+                    "id": "turnsummary",
+                    "weight": "negligible",
+                    "name": "Turn Summary",
+                    "name_en": "Turn Summary",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "darkelf_specialrules",
+                    "weight": "negligible",
+                    "name": "Special Rules - Dark Elf",
+                    "name_en": "Special Rules - Dark Elf",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "blank",
+                    "name": "Empty",
+                    "name_en": "Empty",
+                    "type": "card",
+                    "cost": "0"
+                }
+            ]
+        },
+        {
+            "title": "Crew",
+            "title_en": "Crew",
+            "title_de": "Crew",
+            "title_es": "Crew",
+            "title_fr": "Crew",
+            "type": "CREW",
+            "expanded": true,
+            "units": [
+                {
+                    "id": "admiral",
+                    "name": "Admiral",
+                    "name_en": "Admiral",
+                    "type_name": "Admiral",
+                    "type_name_en": "Admiral",
+                    "description": "(A) +1 CC, May cling to wreckage",
+                    "description_en": "(A) +1 CC, May cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "-"
+                },
+                {
+                    "id": "witchelf",
+                    "name": "Witch Elf",
+                    "name_en": "Witch Elf",
+                    "type_name": "Witch Elf",
+                    "type_name_en": "Beast Lord",
+                    "description": "(WE) +1 Honor, +1 CC, Remove with last crew, After successful boarding roll d6: <b>5-6</b> remove 1 additional crew counter, Attaches to Admiral's Black Ark.",
+                    "description_en": "(WE) +1 Honor, +1 CC, Remove with last crew, After successful boarding roll d6: <b>5-6</b> remove 1 additional crew counter, Attaches to Admiral's Black Ark.",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "50"
+                },
+                {
+                    "id": "beastlord",
+                    "name": "Beast Lord",
+                    "name_en": "Beast Lord",
+                    "type_name": "Beast Lord",
+                    "type_name_en": "Beast Lord",
+                    "description": "(B) +2 Honor, +0 CC, Remove with last crew, +1 to Summon Sea Monster (not cumulative), May summon additional Sea Monsters, Attaches to Death Fortress or Black Ark, May cling to wreckage.",
+                    "description_en": "(B) +2 Honor, +0 CC, Remove with last crew, +1 to Summon Sea Monster (not cumulative), May summon additional Sea Monsters, Attaches to Death Fortress or Black Ark, May cling to wreckage.",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "75"
+                },
+                {
+                    "id": "wizard1",
+                    "name": "Wizard Champion",
+                    "name_en": "Wizard Champion",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, May cling to wreckage",
+                    "description_en": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, May cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "50"
+                },
+                {
+                    "id": "wizard2",
+                    "name": "High Wizard Champion",
+                    "name_en": "High Wizard Champion",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, May cling to wreckage",
+                    "description_en": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, May cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "75"
+                },
+                {
+                    "id": "wizard3",
+                    "name": "Master Wizard",
+                    "name_en": "Master Wizard",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, May cling to wreckage",
+                    "description_en": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, May cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "100"
+                },
+                {
+                    "id": "wizard4",
+                    "name": "High Master Wizard",
+                    "name_en": "High Master Wizard",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, May cling to wreckage",
+                    "description_en": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, May cling to wreckage",
+                    "type": "crew",
+                    "source": "WD 164",
+                    "source_en": "WD 164",
+                    "cost": "125"
+                },
+                {
+                    "id": "wizard5",
+                    "name": "Wizard Lord",
+                    "name_en": "Wizard Lord",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, May cling to wreckage",
+                    "description_en": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, May cling to wreckage",
+                    "type": "crew",
+                    "source": "WD 164",
+                    "source_en": "WD 164",
+                    "cost": "150"
+                },
+                {
+                    "id": "wizard6",
+                    "name": "High Wizard Lord",
+                    "name_en": "High Wizard Lord",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, May cling to wreckage",
+                    "description_en": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, May cling to wreckage",
+                    "type": "crew",
+                    "source": "WD 164",
+                    "source_en": "WD 164",
+                    "cost": "175"
+                },
+                {
+                    "id": "wizard7",
+                    "name": "Grand Wizard Lord",
+                    "name_en": "Grand Wizard Lord",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, May cling to wreckage",
+                    "description_en": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> May reroll any color of spell failed to cast or dispell<br> Remove with last crew, May cling to wreckage",
+                    "type": "crew",
+                    "source": "WD 164",
+                    "source_en": "WD 164",
+                    "cost": "200"
+                }
+            ]
+        },
+        {
+            "title": "Spells",
+            "title_en": "Spells",
+            "title_de": "Spells",
+            "title_es": "Spells",
+            "title_fr": "Spells",
+            "type": "UNIT",
+            "expanded": false,
+            "units": [
+                {
+                    "id": "colorspell",
+                    "weight": "negligible",
+                    "name": "Color Spell",
+                    "name_en": "Color Spell",
+                    "type": "card",
+                    "type_name": "Color Spell",
+                    "type_name_en": "Color Spell",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "0"
+                }
+            ]
+        }
+    ],
+    "names": [],
+    "naming_rules": []
 }

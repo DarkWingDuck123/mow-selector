@@ -10,6 +10,7 @@ import { lightCard } from "../../utils/card/light";
 import { mediumCard } from "../../utils/card/medium";
 import { tremendousCard } from "../../utils/card/tremendous";
 import { negligibleCard } from "../../utils/card/negligible";
+import { findFactionUnit } from "../../utils/faction";
 
 import "./PrintView.css";
 
@@ -191,10 +192,14 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
     const cardFactionId = card.factionId || factionId;
     const meta = metaByFaction[cardFactionId];
 
-    const addonDef = factionData?.addons?.find((a) => a.id === card.id);
+    const addonDef = findFactionUnit(factionData, card.id);
     if (addonDef?.type === "crew_card") {
-      const obj = buildCrewCardObj(addonDef, list, cardObjs[`${cardFactionId}/${card.id}`]);
-      const html = meta ? DOMPurify.sanitize(negligibleCard(meta, obj, {})) : null;
+      const fetchedCrewJson = cardObjs[`${cardFactionId}/${card.id}`];
+      const crewMeta = fetchedCrewJson?.styleOverride
+        ? { ...DEFAULT_META, ...fetchedCrewJson.styleOverride }
+        : meta;
+      const obj = buildCrewCardObj(addonDef, list, fetchedCrewJson);
+      const html = crewMeta ? DOMPurify.sanitize(negligibleCard(crewMeta, obj, {})) : null;
       if (!html) return [];
       return Array.from({ length: count }, (_, j) => ({
         key: `${card.uid || card.id}-${i}-${j}`,
@@ -205,10 +210,11 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
     const obj = cardObjs[`${cardFactionId}/${card.id}`];
     if (!obj || !meta) return [];
     const effectiveObj = card.randomOverride ? { ...obj, ...card.randomOverride } : obj;
+    const effectiveMeta = obj.styleOverride ? { ...DEFAULT_META, ...obj.styleOverride } : meta;
     return Array.from({ length: count }, (_, j) => {
       const shipName = (card.shipNames || [])[j];
       const inst = shipName ? { name: { value: shipName, scale: 1.0 } } : {};
-      const html = DOMPurify.sanitize(renderCard(meta, effectiveObj, inst));
+      const html = DOMPurify.sanitize(renderCard(effectiveMeta, effectiveObj, inst));
       if (!html) return null;
       return { key: `${card.uid || card.id}-${i}-${j}`, html };
     }).filter(Boolean);

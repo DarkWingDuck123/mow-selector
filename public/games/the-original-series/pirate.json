@@ -38,52 +38,72 @@
     "tzeentch",
     "undivided"
   ],
-  "addons": [
+  "entries": [
     {
-      "id": "crewcard",
-      "weight": "negligible",
-      "name": "Crew Card",
-      "name_en": "Crew Card",
-      "type": "crew_card",
-      "cost": "0"
+      "title": "Units",
+      "title_en": "Units",
+      "title_de": "Units",
+      "title_es": "Units",
+      "title_fr": "Units",
+      "type": "UNIT",
+      "expanded": true,
+      "units": [
+        {
+          "id": "pirate_wargalley",
+          "type": "shipoftheline",
+          "type_name": "Ship of the Line",
+          "type_name_en": "Ship of the Line",
+          "weight": "heavy",
+          "name": "Wargalley",
+          "name_en": "Wargalley",
+          "description": "A Squadron of 3 Wargalley",
+          "description_en": "A Squadron of 3 Wargalley",
+          "squadron-size": 3,
+          "cost": 150
+        }
+      ]
     },
     {
-      "id": "turnsummary",
-      "weight": "negligible",
-      "name": "Turn Summary",
-      "name_en": "Turn Summary",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "pirate_specialrules",
-      "weight": "negligible",
-      "name": "Special Rules - Pirate",
-      "name_en": "Special Rules - Pirate",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "blank",
-      "name": "Empty",
-      "name_en": "Empty",
-      "type": "card",
-      "cost": "0"
-    }
-  ],
-  "units": [
-    {
-      "id": "pirate_wargalley",
-      "type": "shipoftheline",
-      "type_name": "Ship of the Line",
-      "type_name_en": "Ship of the Line",
-      "weight": "heavy",
-      "name": "Wargalley",
-      "name_en": "Wargalley",
-      "description": "A Squadron of 3 Wargalley",
-      "description_en": "A Squadron of 3 Wargalley",
-      "squadron-size": 3,
-      "cost": 150 
+      "title": "Add Ons",
+      "title_en": "Add Ons",
+      "title_de": "Add Ons",
+      "title_es": "Add Ons",
+      "title_fr": "Add Ons",
+      "type": "UNIT",
+      "expanded": true,
+      "units": [
+        {
+          "id": "crewcard",
+          "weight": "negligible",
+          "name": "Crew Card",
+          "name_en": "Crew Card",
+          "type": "crew_card",
+          "cost": "0"
+        },
+        {
+          "id": "turnsummary",
+          "weight": "negligible",
+          "name": "Turn Summary",
+          "name_en": "Turn Summary",
+          "type": "card",
+          "cost": "0"
+        },
+        {
+          "id": "pirate_specialrules",
+          "weight": "negligible",
+          "name": "Special Rules - Pirate",
+          "name_en": "Special Rules - Pirate",
+          "type": "card",
+          "cost": "0"
+        },
+        {
+          "id": "blank",
+          "name": "Empty",
+          "name_en": "Empty",
+          "type": "card",
+          "cost": "0"
+        }
+      ]
     }
   ],
   "names": [

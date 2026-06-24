@@ -13,6 +13,7 @@ import { lightCard } from '../../utils/card/light';
 import { mediumCard } from '../../utils/card/medium';
 import { negligibleCard } from '../../utils/card/negligible';
 import { tremendousCard } from '../../utils/card/tremendous';
+import { getAllUnits } from '../../utils/faction';
 import './CardBuilder.css';
 
 const LANGUAGES = [
@@ -361,10 +362,7 @@ function CardBrowser({ onLoad, onClose }) {
     }
   };
 
-  const cards = [
-    ...(factionIndex?.units || []),
-    ...(factionIndex?.addons || []),
-  ];
+  const cards = getAllUnits(factionIndex);
 
   return (
     <div className="cb-browser">

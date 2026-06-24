@@ -1,5 +1,7 @@
 import { useSelector } from "react-redux";
 
+import { getAllUnits, getAllCrew } from "../../utils/faction";
+
 import "./FleetValidator.css";
 
 const parseRule = (ruleStr) => {
@@ -79,11 +81,8 @@ const validateRules = (list, faction) => {
       .filter((c) => c.factionId && predicate(c.factionId))
       .reduce((sum, c) => sum + (Number(c.cost) || 0), 0);
 
-  const allEntries = [
-    ...(faction.units || []),
-    ...(faction.addons || []),
-  ];
-  const crewEntries = faction.crew || [];
+  const allEntries = getAllUnits(faction);
+  const crewEntries = getAllCrew(faction);
 
   const cardCounts = (list.cards || []).reduce((acc, card) => {
     acc[card.id] = (acc[card.id] || 0) + 1;

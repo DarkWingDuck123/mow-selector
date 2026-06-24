@@ -44,84 +44,84 @@
   "allies_meta": {"name_en": "Allies", "type": "ARRAY", "subtype": "STRING", "optional": true},
   "allies": ["brettonia"],
 
-  "crew_meta": {"name_en": "Crew", "type": "ARRAY", "subtype": "CREW_ENTRY", "optional": true},
-  "crew": [
+  "entries_meta": {"name_en": "Entries", "type": "ARRAY", "subtype": "FACTION_ENTRY"},
+  "entries": [
     {
-      "id_meta": {"name_en": "ID", "type": "STRING"},
-      "id": "admiral",
-      "name_meta": {"name_en": "Name", "type": "INTERNATIONALIZED_STRING"},
-      "name": "Admiral",
-      "name_en": "Admiral",
-      "type_name_meta": {"name_en": "Type Name", "type": "INTERNATIONALIZED_STRING", "optional": true},
-      "type_name": "Admiral",
-      "type_name_en": "Admiral",
-      "description_meta": {"name_en": "Description", "type": "INTERNATIONALIZED_STRING", "optional": true},
-      "description": "(A) +1 CC",
-      "description_en": "(A) +1 CC",
-      "type_meta": {"name_en": "Type", "type": "ENUM"},
-      "type": "crew",
-      "cost_meta": {"name_en": "Cost (pts, or '-' if free)", "type": "STRING", "optional": true},
-      "cost": "-"
-    }
-  ],
-
-  "addons_meta": {"name_en": "Add-ons", "type": "ARRAY", "subtype": "ADDON_ENTRY", "optional": true},
-  "addons": [
-    {
-      "id_meta": {"name_en": "ID", "type": "STRING"},
-      "id": "manowarcard",
-      "weight_meta": {"name_en": "Weight", "type": "ENUM", "optional": true},
-      "weight": "negligible",
-      "name_meta": {"name_en": "Name", "type": "INTERNATIONALIZED_STRING"},
-      "name": "Man O'War Card",
-      "name_en": "Man O'War Card",
-      "type_meta": {"name_en": "Type", "type": "ENUM"},
-      "type": "card",
-      "type_name_meta": {"name_en": "Type Name", "type": "INTERNATIONALIZED_STRING", "optional": true},
-      "type_name": "Man O'War Card",
-      "type_name_en": "Man O'War Card",
-      "cost_meta": {"name_en": "Cost (pts)", "type": "STRING"},
-      "cost": "25"
-    }
-  ],
-
-  "units_meta": {"name_en": "Units", "type": "ARRAY", "subtype": "UNIT_ENTRY"},
-  "units": [
-    {
-      "id_meta": {"name_en": "ID", "type": "STRING"},
-      "id": "greatship",
-      "type_meta": {"name_en": "Type", "type": "ENUM"},
-      "type": "manowar",
-      "type_name_meta": {"name_en": "Type Name", "type": "INTERNATIONALIZED_STRING", "optional": true},
-      "type_name": "Man O'War",
-      "type_name_en": "Man O'War",
-      "weight_meta": {"name_en": "Weight", "type": "ENUM"},
-      "weight": "heavy",
-      "name_meta": {"name_en": "Name", "type": "INTERNATIONALIZED_STRING"},
-      "name": "Greatship",
-      "name_en": "Greatship",
-      "name_de": "Großschiff",
-      "name_es": "Gran Barco",
-      "name_fr": "Grand Navire",
-      "description_meta": {"name_en": "Description", "type": "INTERNATIONALIZED_STRING", "optional": true},
-      "description_en": "A Greatship",
-      "squadron-size_meta": {"name_en": "Squadron Size", "type": "INTEGER"},
-      "squadron-size": 1,
-      "cost_meta": {"name_en": "Cost (pts)", "type": "INTEGER"},
-      "cost": 150,
-      "cards_meta": {"name_en": "Cards", "type": "ARRAY", "subtype": "CARD_ENTRY", "optional": true},
-      "cards": [
+      "title_meta": {"name_en": "Title", "type": "INTERNATIONALIZED_STRING"},
+      "title": "Units",
+      "title_en": "Units",
+      "type_meta": {"name_en": "Type (UNIT or CREW)", "type": "ENUM"},
+      "type": "UNIT",
+      "expanded_meta": {"name_en": "Start Expanded", "type": "BOOLEAN", "optional": true},
+      "expanded": true,
+      "units_meta": {"name_en": "Units", "type": "ARRAY", "subtype": "UNIT_ENTRY"},
+      "units": [
         {
+          "id_meta": {"name_en": "ID", "type": "STRING"},
+          "id": "greatship",
           "type_meta": {"name_en": "Type", "type": "ENUM"},
           "type": "manowar",
-          "cost_meta": {"name_en": "Cost (pts)", "type": "INTEGER"},
-          "cost": 25,
-          "min_meta": {"name_en": "Minimum", "type": "INTEGER"},
-          "min": 0,
-          "max_meta": {"name_en": "Maximum", "type": "INTEGER", "optional": true},
-          "max": 1,
-          "freeForAdmiral_meta": {"name_en": "Free for Admiral", "type": "BOOLEAN", "optional": true},
-          "freeForAdmiral": true
+          "type_name_meta": {"name_en": "Type Name", "type": "INTERNATIONALIZED_STRING", "optional": true},
+          "type_name": "Man O'War",
+          "type_name_en": "Man O'War",
+          "weight_meta": {"name_en": "Weight", "type": "ENUM", "optional": true},
+          "weight": "heavy",
+          "name_meta": {"name_en": "Name", "type": "INTERNATIONALIZED_STRING"},
+          "name": "Greatship",
+          "name_en": "Greatship",
+          "name_de": "Großschiff",
+          "name_es": "Gran Barco",
+          "name_fr": "Grand Navire",
+          "description_meta": {"name_en": "Description", "type": "INTERNATIONALIZED_STRING", "optional": true},
+          "description_en": "A Greatship",
+          "squadron-size_meta": {"name_en": "Squadron Size", "type": "INTEGER", "optional": true},
+          "squadron-size": 1,
+          "cost_meta": {"name_en": "Cost (pts, or '-' if free)", "type": "STRING"},
+          "cost": "150",
+          "cards_meta": {"name_en": "Cards", "type": "ARRAY", "subtype": "CARD_ENTRY", "optional": true},
+          "cards": [
+            {
+              "type_meta": {"name_en": "Type", "type": "ENUM"},
+              "type": "manowar",
+              "cost_meta": {"name_en": "Cost (pts)", "type": "INTEGER"},
+              "cost": 25,
+              "min_meta": {"name_en": "Minimum", "type": "INTEGER"},
+              "min": 0,
+              "max_meta": {"name_en": "Maximum", "type": "INTEGER", "optional": true},
+              "max": 1,
+              "freeForAdmiral_meta": {"name_en": "Free for Admiral", "type": "BOOLEAN", "optional": true},
+              "freeForAdmiral": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title_meta": {"name_en": "Title", "type": "INTERNATIONALIZED_STRING"},
+      "title": "Crew",
+      "title_en": "Crew",
+      "type_meta": {"name_en": "Type (UNIT or CREW)", "type": "ENUM"},
+      "type": "CREW",
+      "expanded_meta": {"name_en": "Start Expanded", "type": "BOOLEAN", "optional": true},
+      "expanded": false,
+      "units_meta": {"name_en": "Crew", "type": "ARRAY", "subtype": "UNIT_ENTRY"},
+      "units": [
+        {
+          "id_meta": {"name_en": "ID", "type": "STRING"},
+          "id": "admiral",
+          "name_meta": {"name_en": "Name", "type": "INTERNATIONALIZED_STRING"},
+          "name": "Admiral",
+          "name_en": "Admiral",
+          "type_name_meta": {"name_en": "Type Name", "type": "INTERNATIONALIZED_STRING", "optional": true},
+          "type_name": "Admiral",
+          "type_name_en": "Admiral",
+          "description_meta": {"name_en": "Description", "type": "INTERNATIONALIZED_STRING", "optional": true},
+          "description": "(A) +1 CC",
+          "description_en": "(A) +1 CC",
+          "type_meta": {"name_en": "Type", "type": "ENUM"},
+          "type": "crew",
+          "cost_meta": {"name_en": "Cost (pts, or '-' if free)", "type": "STRING"},
+          "cost": "-"
         }
       ]
     }

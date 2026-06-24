@@ -7,6 +7,7 @@ import { lightCard } from "../../utils/card/light";
 import { mediumCard } from "../../utils/card/medium";
 import { tremendousCard } from "../../utils/card/tremendous";
 import { negligibleCard } from "../../utils/card/negligible";
+import { findFactionUnit } from "../../utils/faction";
 
 import "./CardViewer.css";
 
@@ -208,10 +209,14 @@ export const CardViewer = ({ listId, bwOverride }) => {
         const meta = metaByFaction[cardFactionId];
 
         // Dynamic crew card — build obj from list.crew, merging into fetched card JSON notes
-        const addonDef = factionData?.addons?.find((a) => a.id === card.id);
+        const addonDef = findFactionUnit(factionData, card.id);
         if (addonDef?.type === "crew_card") {
-          const obj = buildCrewCardObj(addonDef, list, cardObjs[`${cardFactionId}/${card.id}`]);
-          const html = meta ? DOMPurify.sanitize(negligibleCard(meta, obj, {})) : null;
+          const fetchedCrewJson = cardObjs[`${cardFactionId}/${card.id}`];
+          const crewMeta = fetchedCrewJson?.styleOverride
+            ? { ...DEFAULT_META, ...fetchedCrewJson.styleOverride }
+            : meta;
+          const obj = buildCrewCardObj(addonDef, list, fetchedCrewJson);
+          const html = crewMeta ? DOMPurify.sanitize(negligibleCard(crewMeta, obj, {})) : null;
           return Array.from({ length: count }, (_, j) => (
             <div key={`${card.uid || `${card.id}-${i}`}-${j}`} className="card-viewer__card">
               {html ? (
@@ -229,10 +234,11 @@ export const CardViewer = ({ listId, bwOverride }) => {
 
         const obj = cardObjs[`${cardFactionId}/${card.id}`];
         const effectiveObj = obj && card.randomOverride ? { ...obj, ...card.randomOverride } : obj;
+        const effectiveMeta = obj?.styleOverride ? { ...DEFAULT_META, ...obj.styleOverride } : meta;
         return Array.from({ length: count }, (_, j) => {
           const shipName = (card.shipNames || [])[j];
           const inst = shipName ? { name: { value: shipName, scale: 1.0 } } : {};
-          const html = effectiveObj && meta ? DOMPurify.sanitize(renderCard(meta, effectiveObj, inst)) : null;
+          const html = effectiveObj && effectiveMeta ? DOMPurify.sanitize(renderCard(effectiveMeta, effectiveObj, inst)) : null;
           return (
             <div key={`${card.uid || `${card.id}-${i}`}-${j}`} className="card-viewer__card">
               {html ? (

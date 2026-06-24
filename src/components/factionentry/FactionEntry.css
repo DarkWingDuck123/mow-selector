@@ -31,6 +31,18 @@ h5 {
   color: var(--color-headline);
 }
 
+.faction-entry__category-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.faction-entry__divider {
+  border: none;
+  border-top: 2px solid var(--color-list);
+  margin: 1rem 0;
+}
+
 .double__column {
   width: 50%;
   padding: 0 2rem 1rem 2rem;

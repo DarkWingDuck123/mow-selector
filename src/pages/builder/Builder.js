@@ -21,6 +21,7 @@ import gameSystems from "../../assets/factions.json";
 import { fetcher } from "../../utils/fetcher";
 import { setFactions } from "../../state/factions";
 import { setUnits } from "../../state/units";
+import { getAllUnits } from "../../utils/faction";
 
 import "./Builder.css";
 
@@ -62,7 +63,7 @@ export const Builder = () => {
     factions &&
     !units &&
     fetcher({
-      urls: factions.map(f => f.units.map(u => `games/${game.id}/${u.id}`)).flat(),
+      urls: factions.map(f => getAllUnits(f).map(u => `games/${game.id}/${u.id}`)).flat(),
       onSuccess: (data) => {
         console.log('loaded unit urls: ', 'na');
         console.log('unit value: ', data);

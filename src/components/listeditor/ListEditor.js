@@ -6,6 +6,7 @@ import { randomName } from "../../utils/naming";
 import { OrderableList } from "../../components/orderablelist";
 import gameSystems from "../../assets/factions.json";
 import { getRandomId } from "../../utils/id";
+import { getAllUnits, getAllCrew } from "../../utils/faction";
 
 import "./ListEditor.css";
 
@@ -63,8 +64,8 @@ function countTriggerUnits(triggerName, list, factionData) {
       u.type?.toLowerCase() === trigger
     ).map((u) => u.id);
 
-  const matchingUnitIds = new Set(matches(factionData.units || []));
-  const matchingCrewIds = new Set(matches(factionData.crew || []));
+  const matchingUnitIds = new Set(matches(getAllUnits(factionData)));
+  const matchingCrewIds = new Set(matches(getAllCrew(factionData)));
 
   return (
     (list.cards || []).filter((c) => matchingUnitIds.has(c.id)).length +
@@ -82,9 +83,8 @@ function findUnit(factionData, unitName) {
     return unit ? { unit, entryType } : null;
   };
   return (
-    search(factionData.crew, "crew") ||
-    search(factionData.units, "cards") ||
-    search(factionData.addons, "cards") ||
+    search(getAllCrew(factionData), "crew") ||
+    search(getAllUnits(factionData), "cards") ||
     null
   );
 }

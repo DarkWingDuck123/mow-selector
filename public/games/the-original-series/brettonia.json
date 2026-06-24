@@ -1,290 +1,330 @@
 {
-  "id": "brettonia",
-  "style": {
-    "bgColor": "blue",
-    "fgColor": "gold",
-    "parchmentColor": "beige",
-    "waterColor": "lightblue",
-    "accentColor": "red"
-  },
-  "name_en": "Brettonian Fleet",
-  "validation_rules": [
-    {
-      "rule": "Max 1 Galleon per 1 Ship of the Line; First One Free"
+    "id": "brettonia",
+    "style": {
+        "bgColor": "blue",
+        "fgColor": "gold",
+        "parchmentColor": "beige",
+        "waterColor": "lightblue",
+        "accentColor": "red"
     },
-    {
-      "rule": "Max 2 Buccaneers per 1 Galleon, or 1 Corsair"
-    },
-    {
-      "rule": "Max 1 Pegasus Rider per 1 Ship of the Line"
-    },
-    {
-      "rule": "Min 1 Galleon"
-    },
-    {
-      "rule": "Min 1 Corsair"
-    },
-    {
-      "rule": "Min 1 Buccaneer"
-    },
-    {
-      "rule": "Max 1 Wizard"
-    },
-    {
-      "rule": "Max 33% Allies"
-    },
-    {
-      "rule": "Max 0% Non-Allies"
-    },
-    {
-      "rule": "Max 1 Sea Monster per 1 Ship of the Line"
-    },
-    {
-      "rule": "Max 1 Anti-Flyer per 1 Man O'War"
-    }
-  ],
-  "freebies": [
-    {
-      "free": "1 Admiral"
-    },
-    {
-      "free": "1 Man O'War Card"
-    }
-  ],
-  "crew": [
-    {
-      "id": "admiral",
-      "name": "Admiral",
-      "name_en": "Admiral",
-      "type_name": "Admiral",
-      "type_name_en": "Admiral",
-      "description": "(A) +1 CC, may cling to wreckage",
-      "description_en": "(A) +1 CC, may cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "-"
-    },
-    {
-      "id": "wizard1",
-      "name": "Wizard Champion",
-      "name_en": "Wizard Champion",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
-      "description_en": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "50"
-    },
-    {
-      "id": "wizard2",
-      "name": "High Wizard Champion",
-      "name_en": "High Wizard Champion",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
-      "description_en": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "75"
-    },
-    {
-      "id": "wizard3",
-      "name": "Master Wizard",
-      "name_en": "Master Wizard",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
-      "description_en": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "100"
-    },
-    {
-      "id": "wizard4",
-      "name": "High Master Wizard",
-      "name_en": "High Master Wizard",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
-      "description_en": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
-      "type": "crew",
-      "source": "WD 164",
-      "source_en": "WD 164",
-      "cost": "125"
-    },
-    {
-      "id": "wizard5",
-      "name": "Wizard Lord",
-      "name_en": "Wizard Lord",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
-      "description_en": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
-      "type": "crew",
-      "source": "WD 164",
-      "source_en": "WD 164",
-      "cost": "150"
-    },
-    {
-      "id": "wizard6",
-      "name": "High Wizard Lord",
-      "name_en": "High Wizard Lord",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
-      "description_en": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
-      "type": "crew",
-      "source": "WD 164",
-      "source_en": "WD 164",
-      "cost": "175"
-    },
-    {
-      "id": "wizard7",
-      "name": "Grand Wizard Lord",
-      "name_en": "Grand Wizard Lord",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
-      "description_en": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> May reroll any color of spell failed to cast or dispell<br> Remove with last crew, may cling to wreckage",
-      "type": "crew",
-      "source": "WD 164",
-      "source_en": "WD 164",
-      "cost": "200"
-    }
-  ],
-  "allies": [
-    "dwarf",
-    "highelf",
-    "empire",
-    "pirate",
-    "norse"
-  ],
-  "addons": [
-    {
-      "id": "manowarcard",
-      "weight": "negligible",
-      "name": "Man O'War Card",
-      "name_en": "Man O'War Card",
-      "type": "card",
-      "type_name": "Man O'War Card",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "25"
-    },
-    {
-      "id": "brettonia_archer_regiment",
-      "weight": "negligible",
-      "name": "Archer Regiment",
-      "name_en": "Archer Regiment",
-      "type": "card",
-      "type_name": "Anti-Flyer",
-      "source": "SoB",
-      "source_en": "SoB",
-      "cost": "25"
-    },
-    {
-      "id": "colorspell",
-      "weight": "negligible",
-      "name": "Color Spell",
-      "name_en": "Color Spell",
-      "type": "card",
-      "type_name": "Color Spell",
-      "type_name_en": "Color Spell",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "0"
-    },
-    {
-      "id": "crewcard",
-      "weight": "negligible",
-      "name": "Crew Card",
-      "name_en": "Crew Card",
-      "type": "crew_card",
-      "type_name": "",
-      "type_name_en": "",
-      "cost": "0"
-    },
-    {
-      "id": "turnsummary",
-      "weight": "negligible",
-      "name": "Turn Summary",
-      "name_en": "Turn Summary",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "brettonia_specialrules",
-      "weight": "negligible",
-      "name": "Special Rules - Brettonia",
-      "name_en": "Special Rules - Brettonia",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "blank",
-      "name": "Empty",
-      "name_en": "Empty",
-      "type": "card",
-      "cost": "0"
-    }
-  ],
-  "units": [
-    {
-      "id": "brettonia_galleon",
-      "type": "manowar",
-      "type_name": "Man O'War",
-      "type_name_en": "Man O'War",
-      "weight": "heavy",
-      "name": "Galleon",
-      "name_en": "Galleon",
-      "squadron-size": 1,
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": 150
-    },
-    {
-      "id": "brettonia_corsair",
-      "type": "shipoftheline",
-      "type_name": "Ship of the Line",
-      "type_name_en": "Ship of the Line",
-      "weight": "heavy",
-      "name": "Corsair",
-      "name_en": "Corsair",
-      "squadron-size": 3,
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": 300
-    },
-    {
-      "id": "brettonia_buccaneer",
-      "type": "shipoftheline",
-      "type_name": "Ship of the Line",
-      "type_name_en": "Ship of the Line",
-      "weight": "heavy",
-      "name": "Buccaneer",
-      "name_en": "Buccaneer",
-      "squadron-size": 3,
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": 150
-    },
-    {
-      "id": "brettonia_pegasusrider",
-      "type": "flyer",
-      "type_name": "Flyer",
-      "type_name_en": "Flyer",
-      "weight": "light",
-      "name": "Pegasus Rider",
-      "name_en": "Pegasus Rider",
-      "squadron-size": 3,
-      "source": "SoB",
-      "source_en": "SoB",
-      "cost": 75
-    }
-  ]
+    "name_en": "Brettonian Fleet",
+    "validation_rules": [
+        {
+            "rule": "Max 1 Galleon per 1 Ship of the Line; First One Free"
+        },
+        {
+            "rule": "Max 2 Buccaneers per 1 Galleon, or 1 Corsair"
+        },
+        {
+            "rule": "Max 1 Pegasus Rider per 1 Ship of the Line"
+        },
+        {
+            "rule": "Min 1 Galleon"
+        },
+        {
+            "rule": "Min 1 Corsair"
+        },
+        {
+            "rule": "Min 1 Buccaneer"
+        },
+        {
+            "rule": "Max 1 Wizard"
+        },
+        {
+            "rule": "Max 33% Allies"
+        },
+        {
+            "rule": "Max 0% Non-Allies"
+        },
+        {
+            "rule": "Max 1 Sea Monster per 1 Ship of the Line"
+        },
+        {
+            "rule": "Max 1 Anti-Flyer per 1 Man O'War"
+        }
+    ],
+    "freebies": [
+        {
+            "free": "1 Admiral"
+        },
+        {
+            "free": "1 Man O'War Card"
+        }
+    ],
+    "entries": [
+        {
+            "title": "Units",
+            "title_en": "Units",
+            "title_de": "Units",
+            "title_es": "Units",
+            "title_fr": "Units",
+            "type": "UNIT",
+            "expanded": true,
+            "units": [
+                {
+                    "id": "brettonia_galleon",
+                    "type": "manowar",
+                    "type_name": "Man O'War",
+                    "type_name_en": "Man O'War",
+                    "weight": "heavy",
+                    "name": "Galleon",
+                    "name_en": "Galleon",
+                    "squadron-size": 1,
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": 150
+                },
+                {
+                    "id": "brettonia_corsair",
+                    "type": "shipoftheline",
+                    "type_name": "Ship of the Line",
+                    "type_name_en": "Ship of the Line",
+                    "weight": "heavy",
+                    "name": "Corsair",
+                    "name_en": "Corsair",
+                    "squadron-size": 3,
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": 300
+                },
+                {
+                    "id": "brettonia_buccaneer",
+                    "type": "shipoftheline",
+                    "type_name": "Ship of the Line",
+                    "type_name_en": "Ship of the Line",
+                    "weight": "heavy",
+                    "name": "Buccaneer",
+                    "name_en": "Buccaneer",
+                    "squadron-size": 3,
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": 150
+                },
+                {
+                    "id": "brettonia_pegasusrider",
+                    "type": "flyer",
+                    "type_name": "Flyer",
+                    "type_name_en": "Flyer",
+                    "weight": "light",
+                    "name": "Pegasus Rider",
+                    "name_en": "Pegasus Rider",
+                    "squadron-size": 3,
+                    "source": "SoB",
+                    "source_en": "SoB",
+                    "cost": 75
+                }
+            ]
+        },
+        {
+            "title": "Add Ons",
+            "title_en": "Add Ons",
+            "title_de": "Add Ons",
+            "title_es": "Add Ons",
+            "title_fr": "Add Ons",
+            "type": "UNIT",
+            "expanded": true,
+            "units": [
+                {
+                    "id": "manowarcard",
+                    "weight": "negligible",
+                    "name": "Man O'War Card",
+                    "name_en": "Man O'War Card",
+                    "type": "card",
+                    "type_name": "Man O'War Card",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "25"
+                },
+                {
+                    "id": "brettonia_archer_regiment",
+                    "weight": "negligible",
+                    "name": "Archer Regiment",
+                    "name_en": "Archer Regiment",
+                    "type": "card",
+                    "type_name": "Anti-Flyer",
+                    "source": "SoB",
+                    "source_en": "SoB",
+                    "cost": "25"
+                },
+                {
+                    "id": "crewcard",
+                    "weight": "negligible",
+                    "name": "Crew Card",
+                    "name_en": "Crew Card",
+                    "type": "crew_card",
+                    "type_name": "",
+                    "type_name_en": "",
+                    "cost": "0"
+                },
+                {
+                    "id": "turnsummary",
+                    "weight": "negligible",
+                    "name": "Turn Summary",
+                    "name_en": "Turn Summary",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "brettonia_specialrules",
+                    "weight": "negligible",
+                    "name": "Special Rules - Brettonia",
+                    "name_en": "Special Rules - Brettonia",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "blank",
+                    "name": "Empty",
+                    "name_en": "Empty",
+                    "type": "card",
+                    "cost": "0"
+                }
+            ]
+        },
+        {
+            "title": "Crew",
+            "title_en": "Crew",
+            "title_de": "Crew",
+            "title_es": "Crew",
+            "title_fr": "Crew",
+            "type": "CREW",
+            "expanded": true,
+            "units": [
+                {
+                    "id": "admiral",
+                    "name": "Admiral",
+                    "name_en": "Admiral",
+                    "type_name": "Admiral",
+                    "type_name_en": "Admiral",
+                    "description": "(A) +1 CC, may cling to wreckage",
+                    "description_en": "(A) +1 CC, may cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "-"
+                },
+                {
+                    "id": "wizard1",
+                    "name": "Wizard Champion",
+                    "name_en": "Wizard Champion",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+                    "description_en": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "50"
+                },
+                {
+                    "id": "wizard2",
+                    "name": "High Wizard Champion",
+                    "name_en": "High Wizard Champion",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+                    "description_en": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "75"
+                },
+                {
+                    "id": "wizard3",
+                    "name": "Master Wizard",
+                    "name_en": "Master Wizard",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+                    "description_en": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "100"
+                },
+                {
+                    "id": "wizard4",
+                    "name": "High Master Wizard",
+                    "name_en": "High Master Wizard",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+                    "description_en": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+                    "type": "crew",
+                    "source": "WD 164",
+                    "source_en": "WD 164",
+                    "cost": "125"
+                },
+                {
+                    "id": "wizard5",
+                    "name": "Wizard Lord",
+                    "name_en": "Wizard Lord",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
+                    "description_en": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
+                    "type": "crew",
+                    "source": "WD 164",
+                    "source_en": "WD 164",
+                    "cost": "150"
+                },
+                {
+                    "id": "wizard6",
+                    "name": "High Wizard Lord",
+                    "name_en": "High Wizard Lord",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
+                    "description_en": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
+                    "type": "crew",
+                    "source": "WD 164",
+                    "source_en": "WD 164",
+                    "cost": "175"
+                },
+                {
+                    "id": "wizard7",
+                    "name": "Grand Wizard Lord",
+                    "name_en": "Grand Wizard Lord",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
+                    "description_en": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> May reroll any color of spell failed to cast or dispell<br> Remove with last crew, may cling to wreckage",
+                    "type": "crew",
+                    "source": "WD 164",
+                    "source_en": "WD 164",
+                    "cost": "200"
+                }
+            ]
+        },
+        {
+            "title": "Spells",
+            "title_en": "Spells",
+            "title_de": "Spells",
+            "title_es": "Spells",
+            "title_fr": "Spells",
+            "type": "UNIT",
+            "expanded": false,
+            "units": [
+                {
+                    "id": "colorspell",
+                    "weight": "negligible",
+                    "name": "Color Spell",
+                    "name_en": "Color Spell",
+                    "type": "card",
+                    "type_name": "Color Spell",
+                    "type_name_en": "Color Spell",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "0"
+                }
+            ]
+        }
+    ],
+    "allies": [
+        "dwarf",
+        "highelf",
+        "empire",
+        "pirate",
+        "norse"
+    ]
 }

@@ -8,6 +8,15 @@ h3 {
   color: var(--color-headline);
 }
 
+.faction-roster__group-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-headline);
+  margin: 1.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-list);
+}
+
 .double__column {
   width: 50%;
   padding: 0 2rem 1rem 2rem;

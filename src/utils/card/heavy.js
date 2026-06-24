@@ -207,6 +207,7 @@ function rowOneColTwo(gw, gh, w, h, x, y, meta, obj) {
 
 // rewrite so it can have multiple notes
 function rowTwo(gw, gh, w, h, x, y, meta, obj) {
+  if (!obj.upperNotes) return "";
   var internal = "";
   obj.upperNotes.forEach((note) => {
     internal = internal + textRow(gh, gh, w, h, x, y, note);
@@ -216,7 +217,7 @@ function rowTwo(gw, gh, w, h, x, y, meta, obj) {
 }
 
 function rowTwoHeight(obj) {
-  return obj.upperNotes.length * 30;
+  return (obj.upperNotes?.length ?? 0) * 30;
 }
 
 // Row three is the damage row. It contains the to hit/damange boxes.

@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Button } from "../../components/button";
 import { Expandable } from "../../components/expandable";
 import { addCard, addCrew } from "../../state/lists";
+import { ENTRY_TYPE, getEntries } from "../../utils/faction";
 
 import "./FactionEntry.css";
 
@@ -45,48 +46,33 @@ export const FactionEntry = ({
     );
   };
 
+  const renderUnit = (unit, onAdd) => (
+    <div key={unit.id}>
+      {unit.cost === "-"
+        ? <span>{unit.name_en}</span>
+        : <Button type="text" size="small" label={unit.id} color="dark" onClick={onAdd(unit)}>{unit.name_en}</Button>
+      }
+      <span style={{float:"right"}}>{unit.cost} pts</span>
+      <br/>
+      {renderMeta(unit)}
+    </div>
+  );
+
   const buildFaction = (faction) => (
     <>
-      <h4>Units</h4>
-      {faction?.units?.map((unit) => (
-        <div key={unit.id}>
-          {unit.cost === "-"
-            ? <span>{unit.name_en}</span>
-            : <Button type="text" size="small" label={unit.id} color="dark" onClick={handleAddUnit(unit)}>{unit.name_en}</Button>
-          }
-          <span style={{float:"right"}}>{unit.cost} pts</span>
-          <br/>
-          {renderMeta(unit)}
-        </div>
-      ))}
-      <h5>Add Ons</h5>
-      {faction?.addons?.map((addon) => (
-        <div key={addon.id}>
-          {addon.cost === "-"
-            ? <span>{addon.name_en}</span>
-            : <Button type="text" size="small" label={addon.id} color="dark" onClick={handleAddUnit(addon)}>{addon.name_en}</Button>
-          }
-          <span style={{float:"right"}}>{addon.cost} pts</span>
-          <br/>
-          {renderMeta(addon)}
-        </div>
-      ))}
-      {faction?.crew && (
-        <>
-          <h5>Crew</h5>
-          {faction.crew.map((crew) => (
-            <div key={crew.id}>
-              {crew.cost === "-"
-                ? <span>{crew.name_en}</span>
-                : <Button type="text" size="small" label={crew.id} color="dark" onClick={handleAddCrew(crew)}>{crew.name_en}</Button>
-              }
-              <span style={{float:"right"}}>{crew.cost} pts</span>
-              <br/>
-              {renderMeta(crew)}
-            </div>
-          ))}
-        </>
-      )}
+      {getEntries(faction).map((entry, index) => {
+        if (!entry.units?.length) return null;
+        const onAdd = entry.type === ENTRY_TYPE.CREW ? handleAddCrew : handleAddUnit;
+        return (
+          <Expandable
+            key={`${entry.title_en}-${index}`}
+            headline={<span className="faction-entry__category-title">{entry.title_en}</span>}
+            open={entry.expanded}
+          >
+            {entry.units.map((unit) => renderUnit(unit, onAdd))}
+          </Expandable>
+        );
+      })}
     </>
   );
 
@@ -104,6 +90,7 @@ export const FactionEntry = ({
           {buildFaction(faction)}
         </Expandable>
       )}
+      {faction && <hr className="faction-entry__divider" />}
     </>
   );
 };

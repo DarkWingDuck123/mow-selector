@@ -1,70 +1,80 @@
 {
-  "id": "spelldecks",
-  "name_de": "Spell Decks",
-  "name_en": "Spell Decks",
-  "name_es": "Spell Decks",
-  "name_fr": "Spell Decks",
-  "units": [],
-  "addons": [
-    {
-      "id": "colorspell",
-      "weight": "negligible",
-      "name": "Color Spell",
-      "name_en": "Color Spell",
-      "type": "card",
-      "type_name": "Color Spell",
-      "type_name_en": "Color Spell",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "0"
-    },
-    {
-      "id": "skaven_spell",
-      "weight": "negligible",
-      "name": "Skaven Spell",
-      "name_en": "Skaven Spell",
-      "type": "card",
-      "type_name": "Skaven Spell",
-      "type_name_en": "Skaven Spell",
-      "source": "PF",
-      "source_en": "PF",
-      "cost": "0"
-    },
-    {
-      "id": "chaosspell",
-      "weight": "negligible",
-      "name": "Chaos Spell",
-      "name_en": "Chaos Spell",
-      "type": "card",
-      "type_name": "Chaos Spell",
-      "type_name_en": "Chaos Spell",
-      "source": "PF",
-      "source_en": "PF",
-      "cost": "0"
-    },
-    {
-      "id": "highelf_highspell",
-      "weight": "negligible",
-      "name": "High Spell",
-      "name_en": "High Spell",
-      "type": "card",
-      "type_name": "High Spell",
-      "type_name_en": "High Spell",
-      "source": "CJ 2",
-      "source_en": "CJ 2",
-      "cost": "0"
-    },
-    {
-      "id": "orc_orcspell",
-      "weight": "negligible",
-      "name": "Orc Spell",
-      "name_en": "Orc Spell",
-      "type": "card",
-      "type_name": "Orc Spell",
-      "type_name_en": "Orc Spell",
-      "source": "CJ 5",
-      "source_en": "CJ 5",
-      "cost": "0"
-    }
-  ]
+    "id": "spelldecks",
+    "name_de": "Spell Decks",
+    "name_en": "Spell Decks",
+    "name_es": "Spell Decks",
+    "name_fr": "Spell Decks",
+    "entries": [
+        {
+            "title": "Spells",
+            "title_en": "Spells",
+            "title_de": "Spells",
+            "title_es": "Spells",
+            "title_fr": "Spells",
+            "type": "UNIT",
+            "expanded": false,
+            "units": [
+                {
+                    "id": "colorspell",
+                    "weight": "negligible",
+                    "name": "Color Spell",
+                    "name_en": "Color Spell",
+                    "type": "card",
+                    "type_name": "Color Spell",
+                    "type_name_en": "Color Spell",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "0"
+                },
+                {
+                    "id": "skaven_spell",
+                    "weight": "negligible",
+                    "name": "Skaven Spell",
+                    "name_en": "Skaven Spell",
+                    "type": "card",
+                    "type_name": "Skaven Spell",
+                    "type_name_en": "Skaven Spell",
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": "0"
+                },
+                {
+                    "id": "chaosspell",
+                    "weight": "negligible",
+                    "name": "Chaos Spell",
+                    "name_en": "Chaos Spell",
+                    "type": "card",
+                    "type_name": "Chaos Spell",
+                    "type_name_en": "Chaos Spell",
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": "0"
+                },
+                {
+                    "id": "highelf_highspell",
+                    "weight": "negligible",
+                    "name": "High Spell",
+                    "name_en": "High Spell",
+                    "type": "card",
+                    "type_name": "High Spell",
+                    "type_name_en": "High Spell",
+                    "source": "CJ 2",
+                    "source_en": "CJ 2",
+                    "cost": "0"
+                },
+                {
+                    "id": "orc_orcspell",
+                    "weight": "negligible",
+                    "name": "Orc Spell",
+                    "name_en": "Orc Spell",
+                    "type": "card",
+                    "type_name": "Orc Spell",
+                    "type_name_en": "Orc Spell",
+                    "source": "CJ 5",
+                    "source_en": "CJ 5",
+                    "cost": "0"
+                }
+            ]
+        }
+    ]
 }

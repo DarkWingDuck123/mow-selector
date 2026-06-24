@@ -53,11 +53,11 @@ export const FactionRoster = ({
       {primaryFaction && (
         <>
           <FactionEntry factionId={primaryFaction?.id} listId={listId} primaryFaction />
-          <h3> Allies </h3>
+          <h3 className="faction-roster__group-title">Allies</h3>
           {allyFactions?.map((fac) => (
             <FactionEntry key={fac.id} factionId={fac.id} listId={listId} />
           ))}
-          <h3> Other </h3>
+          <h3 className="faction-roster__group-title">Other</h3>
           {otherFactions?.map((fac) => (
             <FactionEntry key={fac.id} factionId={fac.id} listId={listId} />
           ))}
