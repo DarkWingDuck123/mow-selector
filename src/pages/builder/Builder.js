@@ -42,6 +42,10 @@ export const Builder = () => {
   }, [location.pathname]);
 
   useEffect(() => {
+    setSelectedListId(null);
+  }, [selectedRuleset]);
+
+  useEffect(() => {
     game &&
     !factions &&
     fetcher({
