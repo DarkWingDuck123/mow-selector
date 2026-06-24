@@ -1,75 +1,95 @@
 {
-  "id": "chaosdwarf",
-  "style": {
-    "bgColor": "darkslategray",
-    "fgColor": "darkorange",
-    "parchmentColor": "tan",
-    "waterColor": "slategray",
-    "accentColor": "orangered"
-  },
-  "name": "Chaos Dwarf Fleet",
-  "name_de": "Chaos Dwarf Fleet",
-  "name_en": "Chaos Dwarf Fleet",
-  "name_es": "Chaos Dwarf Fleet",
-  "name_fr": "Chaos Dwarf Fleet",
-  "validation_rules": [],
-  "freebies": [],
-  "allies": [
-    "darkelf",
-    "orc",
-    "nurgle",
-    "tzeentch",
-    "khorne",
-    "slaanesh",
-    "undivided",
-    "chaosdwarf",
-    "pirate",
-    "skaven",
-    "norse"
-  ],
-  "crew": [],
-  "addons": [
-    {
-      "id": "chaosdwarf_hashutcard",
-      "weight": "negligible",
-      "name": "Hashut Chaos Reward Card",
-      "name_en": "Hashut Chaos Reward Card",
-      "type": "card",
-      "type_name": "Chaos Reward Card",
-      "type_name_en": "Chaos Reward Card",
-      "source": "PF",
-      "source_en": "PF",
-      "cost": "25"
+    "id": "chaosdwarf",
+    "style": {
+        "bgColor": "darkslategray",
+        "fgColor": "darkorange",
+        "parchmentColor": "tan",
+        "waterColor": "slategray",
+        "accentColor": "orangered"
     },
-    {
-      "id": "chaosspell",
-      "weight": "negligible",
-      "name": "Chaos Spell",
-      "name_en": "Chaos Spell",
-      "type": "card",
-      "type_name": "Chaos Spell",
-      "type_name_en": "Chaos Spell",
-      "source": "PF",
-      "source_en": "PF",
-      "cost": "0"
-    },
-    {
-      "id": "turnsummary",
-      "weight": "negligible",
-      "name": "Turn Summary",
-      "name_en": "Turn Summary",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "blank",
-      "name": "Empty",
-      "name_en": "Empty",
-      "type": "card",
-      "cost": "0"
-    }
-  ],
-  "units": [],
-  "names": [],
-  "naming_rules": []
+    "name": "Chaos Dwarf Fleet",
+    "name_de": "Chaos Dwarf Fleet",
+    "name_en": "Chaos Dwarf Fleet",
+    "name_es": "Chaos Dwarf Fleet",
+    "name_fr": "Chaos Dwarf Fleet",
+    "validation_rules": [],
+    "freebies": [],
+    "allies": [
+        "darkelf",
+        "orc",
+        "nurgle",
+        "tzeentch",
+        "khorne",
+        "slaanesh",
+        "undivided",
+        "chaosdwarf",
+        "pirate",
+        "skaven",
+        "norse"
+    ],
+    "entries": [
+        {
+            "title": "Add Ons",
+            "title_en": "Add Ons",
+            "title_de": "Add Ons",
+            "title_es": "Add Ons",
+            "title_fr": "Add Ons",
+            "type": "UNIT",
+            "expanded": true,
+            "units": [
+                {
+                    "id": "chaosdwarf_hashutcard",
+                    "weight": "negligible",
+                    "name": "Hashut Chaos Reward Card",
+                    "name_en": "Hashut Chaos Reward Card",
+                    "type": "card",
+                    "type_name": "Chaos Reward Card",
+                    "type_name_en": "Chaos Reward Card",
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": "25"
+                },
+                {
+                    "id": "turnsummary",
+                    "weight": "negligible",
+                    "name": "Turn Summary",
+                    "name_en": "Turn Summary",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "blank",
+                    "name": "Empty",
+                    "name_en": "Empty",
+                    "type": "card",
+                    "cost": "0"
+                }
+            ]
+        },
+        {
+            "title": "Spells",
+            "title_en": "Spells",
+            "title_de": "Spells",
+            "title_es": "Spells",
+            "title_fr": "Spells",
+            "type": "UNIT",
+            "expanded": false,
+            "units": [
+                {
+                    "id": "chaosspell",
+                    "weight": "negligible",
+                    "name": "Chaos Spell",
+                    "name_en": "Chaos Spell",
+                    "type": "card",
+                    "type_name": "Chaos Spell",
+                    "type_name_en": "Chaos Spell",
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": "0"
+                }
+            ]
+        }
+    ],
+    "names": [],
+    "naming_rules": []
 }

@@ -1,0 +1,35 @@
+{
+  "weight":"medium",
+  "styleOverride": {
+      "bgColor": "DarkCyan",
+      "fgColor": "black",
+      "parchmentColor": "beige",
+      "waterColor": "lightblue",
+      "accentColor": "red"
+  },
+  "name":{"value":"MEGALADON","scale":0.75},
+  "type":{"value":"SEA MONSTER","scale":0.75},
+  "honors":{"value":"Honors: 3", "scale":1.0},
+  "cost":{"value":"75 pts", "scale":1.0},
+  "moveTitle":{"value":"MOVE","scale":0.75},
+  "move":{"value":"<div style=\"font-size:30px\">2d6\"</div><br>If double, roll on<br>Sea Monster Reaction","scale":0.75},
+  "upperNotes":[
+    {"value":"SEA MONSTER: May turn as desired","scale":1.0}
+  ],
+  "criticalTitle":{"value":"WOUNDS","scale":1.0},
+  "criticalSave":"5+",
+  "criticalBoxes":4,
+  "lowerNotes":[
+    {"height":15,
+     "title":{"value":"TO HIT", "scale":1.0},
+     "note":{"value":"All Ranges: 4+","scale":0.5}},
+    {"height":70,
+     "title":{"value":"SPECIAL ATTACK", "scale":1.0},
+     "note":{"value":"<b>Roll a d6</b>:<div style=\"position:relative;left:20px;width:300px;text-align:left\"><b>1</b>: Other player moves Meg up to 6\" and attacks any ship.<br><b>2</b>: Meg refuses to attack<br><b>3</b>: Choose a location, it takes 1 hit<br><b>4</b>: Choose two locations, each takes 1 hit<br><b>5</b>: Choose a location, it is hit twice<br><b>6</b>: Hits d6+1 low locations, -1 save<br></div><br>Roll a <b>d6</b> after attack. On a <b>1</b> remove Meg from game.<br><br>","scale":2.0}},
+    {"height":15,
+     "title":{"value":"CLOSE COMBAT", "scale":1.0},
+     "note":{"value":"+4 CC","scale":1.0}}],
+  "diagram":{
+    "type":"fish"
+  }
+}

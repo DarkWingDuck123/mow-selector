@@ -1,358 +1,398 @@
 {
-  "id": "orc",
-  "style": {
-    "bgColor": "darkgreen",
-    "fgColor": "white",
-    "parchmentColor": "beige",
-    "waterColor": "lightblue",
-    "accentColor": "goldenrod"
-  },
-  "name": "Orc Fleet",
-  "name_en": "Orc Fleet",
-  "name_de": "Orc Fleet",
-  "name_es": "Orc Fleet",
-  "name_fr": "Orc Fleet",
-  "validation_rules": [
-    {
-      "rule": "Min 1 Hulk"
+    "id": "orc",
+    "style": {
+        "bgColor": "darkgreen",
+        "fgColor": "white",
+        "parchmentColor": "beige",
+        "waterColor": "lightblue",
+        "accentColor": "goldenrod"
     },
-    {
-      "rule": "Max 1 Hulk per 1 Ship of the Line; First One Free"
-    },
-    {
-      "rule": "Min 1 Drillakilla"
-    },
-    {
-      "rule": "Min 1 Bigchukka"
-    },
-    {
-      "rule": "Max 2 Bigchukka per 1 Drillakilla"
-    },
-    {
-      "rule": "Max 1 Shaman per 1 Ship of the Line, or 1 Man O'War"
-    },
-    {
-      "rule": "Max 1 Orc Shaman Lord, 1 Orc Boss Shaman, 1 Goblin Boss Shaman, or 1 Orc Shaman per 1 Man O'War"
-    },
-    {
-      "rule": "Max 1 Orc Shaman Lord, or 1 Orc Boss Shaman"
-    },
-    {
-      "rule": "Max 33% Allies"
-    },
-    {
-      "rule": "Max 0% Non-Allies"
-    },
-    {
-      "rule": "Max 1 Sea Monster per 1 Ship of the Line"
-    },
-    {
-      "rule": "Max 1 Anti-Flyer per 1 Man O'War"
-    },
-    {
-      "rule": "Max 2 Kustom Kard per 1 Man O'War"
-    }
-  ],
-  "freebies": [
-    {
-      "free": "1 Admiral"
-    },
-    {
-      "free": "1 Man O'War Card"
-    }
-  ],
-  "allies": [
-    "darkelf",
-    "khorne",
-    "nurgle",
-    "tzeentch",
-    "slaanesh",
-    "undivided",
-    "chaosdwarf",
-    "pirate",
-    "skaven",
-    "norse"
-  ],
-  "crew": [
-    {
-      "id": "admiral",
-      "name": "Admiral",
-      "name_en": "Admiral",
-      "type_name": "Admiral",
-      "type_name_en": "Admiral",
-      "description": "(A) +1 CC, May cling to wreckage",
-      "description_en": "(A) +1 CC, May cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "-"
-    },
-    {
-      "id": "shaman1",
-      "name": "Goblin Shaman",
-      "name_en": "Goblin Shaman",
-      "type_name": "Shaman",
-      "type_name_en": "Shaman",
-      "description": "(G) Level 1, +1 Honor, +0 CC, Dispel Range 6\", Remove with last crew, May cling to wreckage",
-      "description_en": "(G) Level 1, +1 Honor, +0 CC, Dispel Range 6\", Remove with last crew, May cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "25"
-    },
-    {
-      "id": "shaman2",
-      "name": "Orc Shaman",
-      "name_en": "Orc Shaman",
-      "type_name": "Shaman",
-      "type_name_en": "Shaman",
-      "description": "(O) Level 2, +2 Honor, +0 CC, Dispel Range 6\", Remove with last crew, May cling to wreckage",
-      "description_en": "(O) Level 2, +2 Honor, +0 CC, Dispel Range 6\", Remove with last crew, May cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "50"
-    },
-    {
-      "id": "shaman3",
-      "name": "Goblin Boss Shaman",
-      "name_en": "Goblin Boss Shaman",
-      "type_name": "Shaman",
-      "type_name_en": "Shaman",
-      "description": "(GB) Level 3, +3 Honor, +0 CC, Dispel Range 9\", Remove with last crew, May cling to wreckage",
-      "description_en": "(GB) Level 3, +3 Honor, +0 CC, Dispel Range 9\", Remove with last crew, May cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "75"
-    },
-    {
-      "id": "shaman4",
-      "name": "Orc Boss Shaman",
-      "name_en": "Orc Boss Shaman",
-      "type_name": "Shaman",
-      "type_name_en": "Shaman",
-      "description": "(GB) Level 4, +4 Honor, +0 CC, Dispel Range 9\", Remove with last crew, May cling to wreckage",
-      "description_en": "(GB) Level 4, +4 Honor, +0 CC, Dispel Range 9\", Remove with last crew, May cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "100"
-    },
-    {
-      "id": "shaman5",
-      "name": "Orc Shaman Lord",
-      "name_en": "Orc Shaman Lord",
-      "type_name": "Shaman",
-      "type_name_en": "Shaman",
-      "description": "(GB) Level 5, +5 Honor, +0 CC, Dispel Range 12\", Remove with last crew, May cling to wreckage",
-      "description_en": "(GB) Level 5, +5 Honor, +0 CC, Dispel Range 12\", Remove with last crew, May cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "125"
-    }
-  ],
-  "addons": [
-    {
-      "id": "manowarcard",
-      "weight": "negligible",
-      "name": "Man O'War Card",
-      "name_en": "Man O'War Card",
-      "type": "card",
-      "type_name": "Man O'War Card",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "25"
-    },
-    {
-      "id": "orc_kustom_beer",
-      "weight": "negligible",
-      "name": "Beer!",
-      "name_en": "Beer!",
-      "type": "card",
-      "type_name": "Kustom Kard",
-      "type_name_en": "Kustom Kard",
-      "source": "CJ 5",
-      "source_en": "CJ 5",
-      "cost": "0"
-    },
-    {
-      "id": "orc_kustom_squiglaunchers",
-      "weight": "negligible",
-      "name": "Squig Launchers",
-      "name_en": "Squig Launchers",
-      "type": "card",
-      "type_name": "Kustom Kard",
-      "type_name_en": "Kustom Kard",
-      "source": "CJ 5",
-      "source_en": "CJ 5",
-      "cost": "25"
-    },
-    {
-      "id": "orc_kustom_bigwhip",
-      "weight": "negligible",
-      "name": "Big Whip",
-      "name_en": "Big Whip",
-      "type": "card",
-      "type_name": "Kustom Kard",
-      "type_name_en": "Kustom Kard",
-      "source": "CJ 5",
-      "source_en": "CJ 5",
-      "cost": "25"
-    },
-    {
-      "id": "orc_kustom_gobbedoes",
-      "weight": "negligible",
-      "name": "Gobbedoes",
-      "name_en": "Gobbedoes",
-      "type": "card",
-      "type_name": "Kustom Kard",
-      "type_name_en": "Kustom Kard",
-      "source": "CJ 5",
-      "source_en": "CJ 5",
-      "cost": "50"
-    },
-    {
-      "id": "orc_kustom_pointybit",
-      "weight": "negligible",
-      "name": "Pointy Bit",
-      "name_en": "Pointy Bit",
-      "type": "card",
-      "type_name": "Kustom Kard",
-      "type_name_en": "Kustom Kard",
-      "source": "CJ 5",
-      "source_en": "CJ 5",
-      "cost": "50"
-    },
-    {
-      "id": "orc_kustom_fanatics",
-      "weight": "negligible",
-      "name": "Fanatics",
-      "name_en": "Fanatics",
-      "type": "card",
-      "type_name": "Kustom Kard",
-      "type_name_en": "Kustom Kard",
-      "source": "CJ 5",
-      "source_en": "CJ 5",
-      "cost": "50"
-    },
-    {
-      "id": "orc_kustom_trollpens",
-      "weight": "negligible",
-      "name": "Troll Pens",
-      "name_en": "Troll Pens",
-      "type": "card",
-      "type_name": "Kustom Kard",
-      "type_name_en": "Kustom Kard",
-      "source": "CJ 5",
-      "source_en": "CJ 5",
-      "cost": "50"
-    },
-    {
-      "id": "orc_orcspell",
-      "weight": "negligible",
-      "name": "Orc Spell",
-      "name_en": "Orc Spell",
-      "type": "card",
-      "type_name": "Orc Spell",
-      "type_name_en": "Orc Spell",
-      "source": "CJ 5",
-      "source_en": "CJ 5",
-      "cost": "0"
-    },
-    {
-      "id": "crewcard",
-      "weight": "negligible",
-      "name": "Crew Card",
-      "name_en": "Crew Card",
-      "type": "crew_card",
-      "type_name": "",
-      "type_name_en": "",
-      "cost": "0"
-    },
-    {
-      "id": "turnsummary",
-      "weight": "negligible",
-      "name": "Turn Summary",
-      "name_en": "Turn Summary",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "orc_specialrules",
-      "weight": "negligible",
-      "name": "Special Rules - Orc",
-      "name_en": "Special Rules - Orc",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "blank",
-      "name": "Empty",
-      "name_en": "Empty",
-      "type": "card",
-      "cost": "0"
-    }
-  ],
-  "units": [
-    {
-      "id": "orc_hulk",
-      "type": "manowar",
-      "type_name": "Man O'War",
-      "type_name_en": "Man O'War",
-      "weight": "heavy",
-      "name": "Hulk",
-      "name_en": "Hulk",
-      "description": "A Hulk",
-      "description_en": "A Hulk",
-      "squadron-size": 1,
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": 150
-    },
-    {
-      "id": "orc_drillakilla",
-      "type": "shipoftheline",
-      "type_name": "Ship of the Line",
-      "type_name_en": "Ship of the Line",
-      "weight": "heavy",
-      "name": "Drillakilla",
-      "name_en": "Drillakilla",
-      "squadron-size": 3,
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": 150
-    },
-    {
-      "id": "orc_bigchukka",
-      "type": "shipoftheline",
-      "type_name": "Ship of the Line",
-      "type_name_en": "Ship of the Line",
-      "weight": "heavy",
-      "name": "Bigchukka",
-      "name_en": "Bigchukka",
-      "squadron-size": 3,
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": 75
-    },
-    {
-      "id": "orc_wyvernrider",
-      "type": "flyer",
-      "type_name": "Flyer",
-      "type_name_en": "Flyer",
-      "weight": "light",
-      "name": "Wyvern Rider",
-      "name_en": "Wyvern Rider",
-      "description": "A Wyvern Rider",
-      "description_en": "A Wyvern Rider",
-      "squadron-size": 1,
-      "source": "SoB",
-      "source_en": "SoB",
-      "cost": 50
-    }
-  ],
-  "names": [],
-  "naming_rules": []
+    "name": "Orc Fleet",
+    "name_en": "Orc Fleet",
+    "name_de": "Orc Fleet",
+    "name_es": "Orc Fleet",
+    "name_fr": "Orc Fleet",
+    "validation_rules": [
+        {
+            "rule": "Min 1 Hulk"
+        },
+        {
+            "rule": "Max 1 Hulk per 1 Ship of the Line; First One Free"
+        },
+        {
+            "rule": "Min 1 Drillakilla"
+        },
+        {
+            "rule": "Min 1 Bigchukka"
+        },
+        {
+            "rule": "Max 2 Bigchukka per 1 Drillakilla"
+        },
+        {
+            "rule": "Max 1 Shaman per 1 Ship of the Line, or 1 Man O'War"
+        },
+        {
+            "rule": "Max 1 Orc Shaman Lord, 1 Orc Boss Shaman, 1 Goblin Boss Shaman, or 1 Orc Shaman per 1 Man O'War"
+        },
+        {
+            "rule": "Max 1 Orc Shaman Lord, or 1 Orc Boss Shaman"
+        },
+        {
+            "rule": "Max 33% Allies"
+        },
+        {
+            "rule": "Max 0% Non-Allies"
+        },
+        {
+            "rule": "Max 1 Sea Monster per 1 Ship of the Line"
+        },
+        {
+            "rule": "Max 1 Anti-Flyer per 1 Man O'War"
+        },
+        {
+            "rule": "Max 2 Kustom Kard per 1 Man O'War"
+        }
+    ],
+    "freebies": [
+        {
+            "free": "1 Admiral"
+        },
+        {
+            "free": "1 Man O'War Card"
+        }
+    ],
+    "allies": [
+        "darkelf",
+        "khorne",
+        "nurgle",
+        "tzeentch",
+        "slaanesh",
+        "undivided",
+        "chaosdwarf",
+        "pirate",
+        "skaven",
+        "norse"
+    ],
+    "entries": [
+        {
+            "title": "Units",
+            "title_en": "Units",
+            "title_de": "Units",
+            "title_es": "Units",
+            "title_fr": "Units",
+            "type": "UNIT",
+            "expanded": true,
+            "units": [
+                {
+                    "id": "orc_hulk",
+                    "type": "manowar",
+                    "type_name": "Man O'War",
+                    "type_name_en": "Man O'War",
+                    "weight": "heavy",
+                    "name": "Hulk",
+                    "name_en": "Hulk",
+                    "description": "A Hulk",
+                    "description_en": "A Hulk",
+                    "squadron-size": 1,
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": 150
+                },
+                {
+                    "id": "orc_drillakilla",
+                    "type": "shipoftheline",
+                    "type_name": "Ship of the Line",
+                    "type_name_en": "Ship of the Line",
+                    "weight": "heavy",
+                    "name": "Drillakilla",
+                    "name_en": "Drillakilla",
+                    "squadron-size": 3,
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": 150
+                },
+                {
+                    "id": "orc_bigchukka",
+                    "type": "shipoftheline",
+                    "type_name": "Ship of the Line",
+                    "type_name_en": "Ship of the Line",
+                    "weight": "heavy",
+                    "name": "Bigchukka",
+                    "name_en": "Bigchukka",
+                    "squadron-size": 3,
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": 75
+                },
+                {
+                    "id": "orc_wyvernrider",
+                    "type": "flyer",
+                    "type_name": "Flyer",
+                    "type_name_en": "Flyer",
+                    "weight": "light",
+                    "name": "Wyvern Rider",
+                    "name_en": "Wyvern Rider",
+                    "description": "A Wyvern Rider",
+                    "description_en": "A Wyvern Rider",
+                    "squadron-size": 1,
+                    "source": "SoB",
+                    "source_en": "SoB",
+                    "cost": 50
+                }
+            ]
+        },
+        {
+            "title": "Add Ons",
+            "title_en": "Add Ons",
+            "title_de": "Add Ons",
+            "title_es": "Add Ons",
+            "title_fr": "Add Ons",
+            "type": "UNIT",
+            "expanded": true,
+            "units": [
+                {
+                    "id": "manowarcard",
+                    "weight": "negligible",
+                    "name": "Man O'War Card",
+                    "name_en": "Man O'War Card",
+                    "type": "card",
+                    "type_name": "Man O'War Card",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "25"
+                },
+                {
+                    "id": "orc_kustom_beer",
+                    "weight": "negligible",
+                    "name": "Beer!",
+                    "name_en": "Beer!",
+                    "type": "card",
+                    "type_name": "Kustom Kard",
+                    "type_name_en": "Kustom Kard",
+                    "source": "CJ 5",
+                    "source_en": "CJ 5",
+                    "cost": "0"
+                },
+                {
+                    "id": "orc_kustom_squiglaunchers",
+                    "weight": "negligible",
+                    "name": "Squig Launchers",
+                    "name_en": "Squig Launchers",
+                    "type": "card",
+                    "type_name": "Kustom Kard",
+                    "type_name_en": "Kustom Kard",
+                    "source": "CJ 5",
+                    "source_en": "CJ 5",
+                    "cost": "25"
+                },
+                {
+                    "id": "orc_kustom_bigwhip",
+                    "weight": "negligible",
+                    "name": "Big Whip",
+                    "name_en": "Big Whip",
+                    "type": "card",
+                    "type_name": "Kustom Kard",
+                    "type_name_en": "Kustom Kard",
+                    "source": "CJ 5",
+                    "source_en": "CJ 5",
+                    "cost": "25"
+                },
+                {
+                    "id": "orc_kustom_gobbedoes",
+                    "weight": "negligible",
+                    "name": "Gobbedoes",
+                    "name_en": "Gobbedoes",
+                    "type": "card",
+                    "type_name": "Kustom Kard",
+                    "type_name_en": "Kustom Kard",
+                    "source": "CJ 5",
+                    "source_en": "CJ 5",
+                    "cost": "50"
+                },
+                {
+                    "id": "orc_kustom_pointybit",
+                    "weight": "negligible",
+                    "name": "Pointy Bit",
+                    "name_en": "Pointy Bit",
+                    "type": "card",
+                    "type_name": "Kustom Kard",
+                    "type_name_en": "Kustom Kard",
+                    "source": "CJ 5",
+                    "source_en": "CJ 5",
+                    "cost": "50"
+                },
+                {
+                    "id": "orc_kustom_fanatics",
+                    "weight": "negligible",
+                    "name": "Fanatics",
+                    "name_en": "Fanatics",
+                    "type": "card",
+                    "type_name": "Kustom Kard",
+                    "type_name_en": "Kustom Kard",
+                    "source": "CJ 5",
+                    "source_en": "CJ 5",
+                    "cost": "50"
+                },
+                {
+                    "id": "orc_kustom_trollpens",
+                    "weight": "negligible",
+                    "name": "Troll Pens",
+                    "name_en": "Troll Pens",
+                    "type": "card",
+                    "type_name": "Kustom Kard",
+                    "type_name_en": "Kustom Kard",
+                    "source": "CJ 5",
+                    "source_en": "CJ 5",
+                    "cost": "50"
+                },
+                {
+                    "id": "crewcard",
+                    "weight": "negligible",
+                    "name": "Crew Card",
+                    "name_en": "Crew Card",
+                    "type": "crew_card",
+                    "type_name": "",
+                    "type_name_en": "",
+                    "cost": "0"
+                },
+                {
+                    "id": "turnsummary",
+                    "weight": "negligible",
+                    "name": "Turn Summary",
+                    "name_en": "Turn Summary",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "orc_specialrules",
+                    "weight": "negligible",
+                    "name": "Special Rules - Orc",
+                    "name_en": "Special Rules - Orc",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "blank",
+                    "name": "Empty",
+                    "name_en": "Empty",
+                    "type": "card",
+                    "cost": "0"
+                }
+            ]
+        },
+        {
+            "title": "Crew",
+            "title_en": "Crew",
+            "title_de": "Crew",
+            "title_es": "Crew",
+            "title_fr": "Crew",
+            "type": "CREW",
+            "expanded": true,
+            "units": [
+                {
+                    "id": "admiral",
+                    "name": "Admiral",
+                    "name_en": "Admiral",
+                    "type_name": "Admiral",
+                    "type_name_en": "Admiral",
+                    "description": "(A) +1 CC, May cling to wreckage",
+                    "description_en": "(A) +1 CC, May cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "-"
+                },
+                {
+                    "id": "shaman1",
+                    "name": "Goblin Shaman",
+                    "name_en": "Goblin Shaman",
+                    "type_name": "Shaman",
+                    "type_name_en": "Shaman",
+                    "description": "(G) Level 1, +1 Honor, +0 CC, Dispel Range 6\", Remove with last crew, May cling to wreckage",
+                    "description_en": "(G) Level 1, +1 Honor, +0 CC, Dispel Range 6\", Remove with last crew, May cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "25"
+                },
+                {
+                    "id": "shaman2",
+                    "name": "Orc Shaman",
+                    "name_en": "Orc Shaman",
+                    "type_name": "Shaman",
+                    "type_name_en": "Shaman",
+                    "description": "(O) Level 2, +2 Honor, +0 CC, Dispel Range 6\", Remove with last crew, May cling to wreckage",
+                    "description_en": "(O) Level 2, +2 Honor, +0 CC, Dispel Range 6\", Remove with last crew, May cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "50"
+                },
+                {
+                    "id": "shaman3",
+                    "name": "Goblin Boss Shaman",
+                    "name_en": "Goblin Boss Shaman",
+                    "type_name": "Shaman",
+                    "type_name_en": "Shaman",
+                    "description": "(GB) Level 3, +3 Honor, +0 CC, Dispel Range 9\", Remove with last crew, May cling to wreckage",
+                    "description_en": "(GB) Level 3, +3 Honor, +0 CC, Dispel Range 9\", Remove with last crew, May cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "75"
+                },
+                {
+                    "id": "shaman4",
+                    "name": "Orc Boss Shaman",
+                    "name_en": "Orc Boss Shaman",
+                    "type_name": "Shaman",
+                    "type_name_en": "Shaman",
+                    "description": "(GB) Level 4, +4 Honor, +0 CC, Dispel Range 9\", Remove with last crew, May cling to wreckage",
+                    "description_en": "(GB) Level 4, +4 Honor, +0 CC, Dispel Range 9\", Remove with last crew, May cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "100"
+                },
+                {
+                    "id": "shaman5",
+                    "name": "Orc Shaman Lord",
+                    "name_en": "Orc Shaman Lord",
+                    "type_name": "Shaman",
+                    "type_name_en": "Shaman",
+                    "description": "(GB) Level 5, +5 Honor, +0 CC, Dispel Range 12\", Remove with last crew, May cling to wreckage",
+                    "description_en": "(GB) Level 5, +5 Honor, +0 CC, Dispel Range 12\", Remove with last crew, May cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "125"
+                }
+            ]
+        },
+        {
+            "title": "Spells",
+            "title_en": "Spells",
+            "title_de": "Spells",
+            "title_es": "Spells",
+            "title_fr": "Spells",
+            "type": "UNIT",
+            "expanded": false,
+            "units": [
+                {
+                    "id": "orc_orcspell",
+                    "weight": "negligible",
+                    "name": "Orc Spell",
+                    "name_en": "Orc Spell",
+                    "type": "card",
+                    "type_name": "Orc Spell",
+                    "type_name_en": "Orc Spell",
+                    "source": "CJ 5",
+                    "source_en": "CJ 5",
+                    "cost": "0"
+                }
+            ]
+        }
+    ],
+    "names": [],
+    "naming_rules": []
 }

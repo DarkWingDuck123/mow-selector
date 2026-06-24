@@ -23,46 +23,66 @@
     "skaven",
     "norse"
   ],
-  "addons": [
+  "entries": [
     {
-      "id": "khornecard",
-      "weight": "negligible",
-      "name": "Khorne Chaos Reward Card",
-      "name_en": "Khorne Chaos Reward Card",
-      "type": "card",
-      "type_name": "Chaos Reward Card",
-      "type_name_en": "Chaos Reward Card",
-      "source": "PF",
-      "source_en": "PF",
-      "cost": "25"
+      "title": "Units",
+      "title_en": "Units",
+      "title_de": "Units",
+      "title_es": "Units",
+      "title_fr": "Units",
+      "type": "UNIT",
+      "expanded": true,
+      "units": [
+        {
+          "id": "deathgalley",
+          "type": "shipoftheline",
+          "weight": "heavy",
+          "name_en": "Death Galley",
+          "description_en": "A Squadron of 3 Death Galley",
+          "squadron-size": 3,
+          "source": "PF",
+          "source_en": "PF",
+          "cost": 75
+        }
+      ]
     },
     {
-      "id": "turnsummary",
-      "weight": "negligible",
-      "name": "Turn Summary",
-      "name_en": "Turn Summary",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "blank",
-      "name": "Empty",
-      "name_en": "Empty",
-      "type": "card",
-      "cost": "0"
-    }
-  ],
-  "units": [
-    {
-      "id": "deathgalley",
-      "type": "shipoftheline",
-      "weight": "heavy",
-      "name_en": "Death Galley",
-      "description_en": "A Squadron of 3 Death Galley",
-      "squadron-size": 3,
-      "source": "PF",
-      "source_en": "PF",
-      "cost": 75
+      "title": "Add Ons",
+      "title_en": "Add Ons",
+      "title_de": "Add Ons",
+      "title_es": "Add Ons",
+      "title_fr": "Add Ons",
+      "type": "UNIT",
+      "expanded": true,
+      "units": [
+        {
+          "id": "khornecard",
+          "weight": "negligible",
+          "name": "Khorne Chaos Reward Card",
+          "name_en": "Khorne Chaos Reward Card",
+          "type": "card",
+          "type_name": "Chaos Reward Card",
+          "type_name_en": "Chaos Reward Card",
+          "source": "PF",
+          "source_en": "PF",
+          "cost": "25"
+        },
+        {
+          "id": "turnsummary",
+          "weight": "negligible",
+          "name": "Turn Summary",
+          "name_en": "Turn Summary",
+          "type": "card",
+          "cost": "0"
+        },
+        {
+          "id": "blank",
+          "name": "Empty",
+          "name_en": "Empty",
+          "type": "card",
+          "cost": "0"
+        }
+      ]
     }
   ]
 }

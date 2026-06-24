@@ -1,308 +1,348 @@
 {
-  "id": "norse",
-  "style": {
-    "bgColor": "yellow",
-    "fgColor": "black",
-    "parchmentColor": "beige",
-    "waterColor": "lightblue",
-    "accentColor": "red"
-  },
-  "name_en": "Norse Raiders",
-  "validation_rules": [
-    {
-      "rule": "Max 1 Kingship per 1 Ship of the Line; First One Free"
+    "id": "norse",
+    "style": {
+        "bgColor": "yellow",
+        "fgColor": "black",
+        "parchmentColor": "beige",
+        "waterColor": "lightblue",
+        "accentColor": "red"
     },
-    {
-      "rule": "Max 1 Longship per 1 Man O'War"
-    },
-    {
-      "rule": "Max 4 Norseman per 1 Kingship"
-    },
-    {
-      "rule": "Min 1 Kingship"
-    },
-    {
-      "rule": "Min 1 Longship"
-    },
-    {
-      "rule": "Max 1 Wizard"
-    },
-    {
-      "rule": "Max 33% Allies"
-    },
-    {
-      "rule": "Max 0% Non-Allies"
-    },
-    {
-      "rule": "Max 1 Sea Monster per 1 Ship of the Line"
-    }
-  ],
-  "freebies": [
-    {
-      "free": "1 Admiral"
-    },
-    {
-      "free": "1 Man O'War Card"
-    }
-  ],
-  "crew": [
-    {
-      "id": "admiral",
-      "name": "Admiral",
-      "name_en": "Admiral",
-      "type_name": "Admiral",
-      "type_name_en": "Admiral",
-      "description": "(A) +1 CC, may cling to wreckage",
-      "description_en": "(A) +1 CC, may cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "-"
-    },
-    {
-      "id": "ulfwerener",
-      "name": "Ulfwerener",
-      "name_en": "Ulfwerener",
-      "type_name": "Norseman",
-      "type_name_en": "Norseman",
-      "description": "(U) When leading roll d6: <b>4-6</b>: +1 CC, roll for each enemy crew on a 1 discard",
-      "description_en": "(U) When leading roll d6: <b>4-6</b>: +1 CC, roll for each enemy crew on a 1 discard",
-      "type": "crew",
-      "source": "SoBW",
-      "source_en": "SoB",
-      "cost": "0"
-    },
-    {
-      "id": "berserker",
-      "name": "Berserker",
-      "name_en": "Berserker",
-      "type_name": "Norseman",
-      "type_name_en": "Norseman",
-      "description": "(Be) When leading roll d6: <b>1-2</b>: -1 CC, <b>3-4<b>: +1 CC, <b>5</b>: +2 CC, <b>6</b>: +d6 CC",
-      "description_en": "(Be) When leading roll d6: <b>1-2</b>: -1 CC, <b>3-4<b>: +1 CC, <b>5</b>: +2 CC, <b>6</b>: +d6 CC",
-      "type": "crew",
-      "source": "SoBW",
-      "source_en": "SoB",
-      "cost": "0"
-    },
-    {
-      "id": "bondsmen",
-      "name": "Bondsmen",
-      "name_en": "Bondsmen",
-      "type_name": "Norseman",
-      "type_name_en": "Norseman",
-      "description": "(B) +1 CC when leading",
-      "description_en": "(B) +1 CC when leading",
-      "type": "crew",
-      "source": "SoBW",
-      "source_en": "SoB",
-      "cost": "0"
-    },
-    {
-      "id": "huscarl",
-      "name": "Huscarls",
-      "name_en": "Huscarles",
-      "type_name": "Norseman",
-      "type_name_en": "Norseman",
-      "description": "(H) +1 CC when leading attack, +3 when leading defence",
-      "description_en": "(H) +1 CC when leading attack, +3 when leading defence",
-      "type": "crew",
-      "source": "SoBW",
-      "source_en": "SoB",
-      "cost": "0"
-    },
-    {
-      "id": "wizard1",
-      "name": "Wizard Champion",
-      "name_en": "Wizard Champion",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
-      "description_en": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "50"
-    },
-    {
-      "id": "wizard2",
-      "name": "High Wizard Champion",
-      "name_en": "High Wizard Champion",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
-      "description_en": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "75"
-    },
-    {
-      "id": "wizard3",
-      "name": "Master Wizard",
-      "name_en": "Master Wizard",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
-      "description_en": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
-      "type": "crew",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "100"
-    },
-    {
-      "id": "wizard4",
-      "name": "High Master Wizard",
-      "name_en": "High Master Wizard",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
-      "description_en": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
-      "type": "crew",
-      "source": "WD 164",
-      "source_en": "WD 164",
-      "cost": "125"
-    },
-    {
-      "id": "wizard5",
-      "name": "Wizard Lord",
-      "name_en": "Wizard Lord",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
-      "description_en": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
-      "type": "crew",
-      "source": "WD 164",
-      "source_en": "WD 164",
-      "cost": "150"
-    },
-    {
-      "id": "wizard6",
-      "name": "High Wizard Lord",
-      "name_en": "High Wizard Lord",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
-      "description_en": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
-      "type": "crew",
-      "source": "WD 164",
-      "source_en": "WD 164",
-      "cost": "175"
-    },
-    {
-      "id": "wizard7",
-      "name": "Grand Wizard Lord",
-      "name_en": "Grand Wizard Lord",
-      "type_name": "Wizard",
-      "type_name_en": "Wizard",
-      "description": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
-      "description_en": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> May reroll any color of spell failed to cast or dispell<br> Remove with last crew, may cling to wreckage",
-      "type": "crew",
-      "source": "WD 164",
-      "source_en": "WD 164",
-      "cost": "200"
-    }
-  ],
-  "allies": [
-    "brettonia",
-    "chaosdwarf",
-    "darkelf",
-    "dwarf",
-    "empire",
-    "highelf",
-    "khorne",
-    "nurgle",
-    "orc",
-    "pirate",
-    "skaven",
-    "slaanesh",
-    "tzeentch",
-    "undivided"
-  ],
-  "addons": [
-    {
-      "id": "manowarcard",
-      "weight": "negligible",
-      "name": "Man O'War Card",
-      "name_en": "Man O'War Card",
-      "type": "card",
-      "type_name": "Man O'War Card",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "25"
-    },
-    {
-      "id": "colorspell",
-      "weight": "negligible",
-      "name": "Color Spell",
-      "name_en": "Color Spell",
-      "type": "card",
-      "type_name": "Color Spell",
-      "type_name_en": "Color Spell",
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": "0"
-    },
-    {
-      "id": "crewcard",
-      "weight": "negligible",
-      "name": "Crew Card",
-      "name_en": "Crew Card",
-      "type": "crew_card",
-      "type_name": "",
-      "type_name_en": "",
-      "cost": "0"
-    },
-    {
-      "id": "turnsummary",
-      "weight": "negligible",
-      "name": "Turn Summary",
-      "name_en": "Turn Summary",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "norse",
-      "weight": "negligible",
-      "name": "Special Rules - Norse",
-      "name_en": "Special Rules - Norse",
-      "type": "card",
-      "cost": "0"
-    },
-    {
-      "id": "blank",
-      "name": "Empty",
-      "name_en": "Empty",
-      "type": "card",
-      "cost": "0"
-    }
-  ],
-  "units": [
-    {
-      "id": "norse_kingship",
-      "type": "manowar",
-      "type_name": "Man O'War",
-      "type_name_en": "Man O'War",
-      "weight": "heavy",
-      "name": "Kingship",
-      "name_en": "Kingship",
-      "squadron-size": 1,
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": 100
-    },
-    {
-      "id": "norse_longship",
-      "type": "shipoftheline",
-      "type_name": "Ship of the Line",
-      "type_name_en": "Ship of the Line",
-      "weight": "heavy",
-      "name": "Longship",
-      "name_en": "Longship",
-      "squadron-size": 3,
-      "source": "MoW",
-      "source_en": "MoW",
-      "cost": 150 
-    }
-  ]
+    "name_en": "Norse Raiders",
+    "validation_rules": [
+        {
+            "rule": "Max 1 Kingship per 1 Ship of the Line; First One Free"
+        },
+        {
+            "rule": "Max 1 Longship per 1 Man O'War"
+        },
+        {
+            "rule": "Max 4 Norseman per 1 Kingship"
+        },
+        {
+            "rule": "Min 1 Kingship"
+        },
+        {
+            "rule": "Min 1 Longship"
+        },
+        {
+            "rule": "Max 1 Wizard"
+        },
+        {
+            "rule": "Max 33% Allies"
+        },
+        {
+            "rule": "Max 0% Non-Allies"
+        },
+        {
+            "rule": "Max 1 Sea Monster per 1 Ship of the Line"
+        }
+    ],
+    "freebies": [
+        {
+            "free": "1 Admiral"
+        },
+        {
+            "free": "1 Man O'War Card"
+        }
+    ],
+    "entries": [
+        {
+            "title": "Units",
+            "title_en": "Units",
+            "title_de": "Units",
+            "title_es": "Units",
+            "title_fr": "Units",
+            "type": "UNIT",
+            "expanded": true,
+            "units": [
+                {
+                    "id": "norse_kingship",
+                    "type": "manowar",
+                    "type_name": "Man O'War",
+                    "type_name_en": "Man O'War",
+                    "weight": "heavy",
+                    "name": "Kingship",
+                    "name_en": "Kingship",
+                    "squadron-size": 1,
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": 100
+                },
+                {
+                    "id": "norse_longship",
+                    "type": "shipoftheline",
+                    "type_name": "Ship of the Line",
+                    "type_name_en": "Ship of the Line",
+                    "weight": "heavy",
+                    "name": "Longship",
+                    "name_en": "Longship",
+                    "squadron-size": 3,
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": 150
+                }
+            ]
+        },
+        {
+            "title": "Add Ons",
+            "title_en": "Add Ons",
+            "title_de": "Add Ons",
+            "title_es": "Add Ons",
+            "title_fr": "Add Ons",
+            "type": "UNIT",
+            "expanded": true,
+            "units": [
+                {
+                    "id": "manowarcard",
+                    "weight": "negligible",
+                    "name": "Man O'War Card",
+                    "name_en": "Man O'War Card",
+                    "type": "card",
+                    "type_name": "Man O'War Card",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "25"
+                },
+                {
+                    "id": "crewcard",
+                    "weight": "negligible",
+                    "name": "Crew Card",
+                    "name_en": "Crew Card",
+                    "type": "crew_card",
+                    "type_name": "",
+                    "type_name_en": "",
+                    "cost": "0"
+                },
+                {
+                    "id": "turnsummary",
+                    "weight": "negligible",
+                    "name": "Turn Summary",
+                    "name_en": "Turn Summary",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "norse",
+                    "weight": "negligible",
+                    "name": "Special Rules - Norse",
+                    "name_en": "Special Rules - Norse",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "blank",
+                    "name": "Empty",
+                    "name_en": "Empty",
+                    "type": "card",
+                    "cost": "0"
+                }
+            ]
+        },
+        {
+            "title": "Crew",
+            "title_en": "Crew",
+            "title_de": "Crew",
+            "title_es": "Crew",
+            "title_fr": "Crew",
+            "type": "CREW",
+            "expanded": true,
+            "units": [
+                {
+                    "id": "admiral",
+                    "name": "Admiral",
+                    "name_en": "Admiral",
+                    "type_name": "Admiral",
+                    "type_name_en": "Admiral",
+                    "description": "(A) +1 CC, may cling to wreckage",
+                    "description_en": "(A) +1 CC, may cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "-"
+                },
+                {
+                    "id": "ulfwerener",
+                    "name": "Ulfwerener",
+                    "name_en": "Ulfwerener",
+                    "type_name": "Norseman",
+                    "type_name_en": "Norseman",
+                    "description": "(U) When leading roll d6: <b>4-6</b>: +1 CC, roll for each enemy crew on a 1 discard",
+                    "description_en": "(U) When leading roll d6: <b>4-6</b>: +1 CC, roll for each enemy crew on a 1 discard",
+                    "type": "crew",
+                    "source": "SoBW",
+                    "source_en": "SoB",
+                    "cost": "0"
+                },
+                {
+                    "id": "berserker",
+                    "name": "Berserker",
+                    "name_en": "Berserker",
+                    "type_name": "Norseman",
+                    "type_name_en": "Norseman",
+                    "description": "(Be) When leading roll d6: <b>1-2</b>: -1 CC, <b>3-4<b>: +1 CC, <b>5</b>: +2 CC, <b>6</b>: +d6 CC",
+                    "description_en": "(Be) When leading roll d6: <b>1-2</b>: -1 CC, <b>3-4<b>: +1 CC, <b>5</b>: +2 CC, <b>6</b>: +d6 CC",
+                    "type": "crew",
+                    "source": "SoBW",
+                    "source_en": "SoB",
+                    "cost": "0"
+                },
+                {
+                    "id": "bondsmen",
+                    "name": "Bondsmen",
+                    "name_en": "Bondsmen",
+                    "type_name": "Norseman",
+                    "type_name_en": "Norseman",
+                    "description": "(B) +1 CC when leading",
+                    "description_en": "(B) +1 CC when leading",
+                    "type": "crew",
+                    "source": "SoBW",
+                    "source_en": "SoB",
+                    "cost": "0"
+                },
+                {
+                    "id": "huscarl",
+                    "name": "Huscarls",
+                    "name_en": "Huscarles",
+                    "type_name": "Norseman",
+                    "type_name_en": "Norseman",
+                    "description": "(H) +1 CC when leading attack, +3 when leading defence",
+                    "description_en": "(H) +1 CC when leading attack, +3 when leading defence",
+                    "type": "crew",
+                    "source": "SoBW",
+                    "source_en": "SoB",
+                    "cost": "0"
+                },
+                {
+                    "id": "wizard1",
+                    "name": "Wizard Champion",
+                    "name_en": "Wizard Champion",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+                    "description_en": "(C) 2 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "50"
+                },
+                {
+                    "id": "wizard2",
+                    "name": "High Wizard Champion",
+                    "name_en": "High Wizard Champion",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+                    "description_en": "(H) 3 Cards, +1 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "75"
+                },
+                {
+                    "id": "wizard3",
+                    "name": "Master Wizard",
+                    "name_en": "Master Wizard",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+                    "description_en": "(W) 4 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "100"
+                },
+                {
+                    "id": "wizard4",
+                    "name": "High Master Wizard",
+                    "name_en": "High Master Wizard",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+                    "description_en": "(HW) 5 Cards, +2 Honor, +0 CC, Remove with last crew, may cling to wreckage",
+                    "type": "crew",
+                    "source": "WD 164",
+                    "source_en": "WD 164",
+                    "cost": "125"
+                },
+                {
+                    "id": "wizard5",
+                    "name": "Wizard Lord",
+                    "name_en": "Wizard Lord",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
+                    "description_en": "(L) 6 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
+                    "type": "crew",
+                    "source": "WD 164",
+                    "source_en": "WD 164",
+                    "cost": "150"
+                },
+                {
+                    "id": "wizard6",
+                    "name": "High Wizard Lord",
+                    "name_en": "High Wizard Lord",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
+                    "description_en": "(HL) 7 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
+                    "type": "crew",
+                    "source": "WD 164",
+                    "source_en": "WD 164",
+                    "cost": "175"
+                },
+                {
+                    "id": "wizard7",
+                    "name": "Grand Wizard Lord",
+                    "name_en": "Grand Wizard Lord",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> Remove with last crew, may cling to wreckage",
+                    "description_en": "(G) 8 Cards, +3 Honor, +0 CC, +1 Cast/Dispell,<br> May reroll any color of spell failed to cast or dispell<br> Remove with last crew, may cling to wreckage",
+                    "type": "crew",
+                    "source": "WD 164",
+                    "source_en": "WD 164",
+                    "cost": "200"
+                }
+            ]
+        },
+        {
+            "title": "Spells",
+            "title_en": "Spells",
+            "title_de": "Spells",
+            "title_es": "Spells",
+            "title_fr": "Spells",
+            "type": "UNIT",
+            "expanded": false,
+            "units": [
+                {
+                    "id": "colorspell",
+                    "weight": "negligible",
+                    "name": "Color Spell",
+                    "name_en": "Color Spell",
+                    "type": "card",
+                    "type_name": "Color Spell",
+                    "type_name_en": "Color Spell",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "0"
+                }
+            ]
+        }
+    ],
+    "allies": [
+        "brettonia",
+        "chaosdwarf",
+        "darkelf",
+        "dwarf",
+        "empire",
+        "highelf",
+        "khorne",
+        "nurgle",
+        "orc",
+        "pirate",
+        "skaven",
+        "slaanesh",
+        "tzeentch",
+        "undivided"
+    ]
 }
