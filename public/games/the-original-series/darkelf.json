@@ -176,6 +176,17 @@
             "expanded": true,
             "units": [
                 {
+                    "id": "manowarcard",
+                    "weight": "negligible",
+                    "name": "Man O'War Card",
+                    "name_en": "Man O'War Card",
+                    "type": "card",
+                    "type_name": "Man O'War Card",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "25"
+                },
+                {
                     "id": "darkelf_skyreaper",
                     "weight": "negligible",
                     "name": "Sky Reaper",
@@ -186,6 +197,50 @@
                     "source_en": "SoB",
                     "cost": "25"
                 },
+                {
+                    "id": "crewcard",
+                    "weight": "negligible",
+                    "name": "Crew Card",
+                    "name_en": "Crew Card",
+                    "type": "crew_card",
+                    "type_name": "",
+                    "type_name_en": "",
+                    "cost": "0"
+                },
+                {
+                    "id": "turnsummary",
+                    "weight": "negligible",
+                    "name": "Turn Summary",
+                    "name_en": "Turn Summary",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "darkelf_specialrules",
+                    "weight": "negligible",
+                    "name": "Special Rules - Dark Elf",
+                    "name_en": "Special Rules - Dark Elf",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "blank",
+                    "name": "Empty",
+                    "name_en": "Empty",
+                    "type": "card",
+                    "cost": "0"
+                }
+            ]
+        },
+        {
+            "title": "Tainted Stones",
+            "title_en": "Tainted Stones",
+            "title_de": "Tainted Stones",
+            "title_es": "Tainted Stones",
+            "title_fr": "Tainted Stones",
+            "type": "UNIT",
+            "expanded": false,
+            "units": [
                 {
                     "id": "darkelf_thewildmind",
                     "weight": "negligible",
@@ -257,39 +312,6 @@
                     "source": "CJ 3",
                     "source_en": "CJ 3",
                     "cost": "100"
-                },
-                {
-                    "id": "crewcard",
-                    "weight": "negligible",
-                    "name": "Crew Card",
-                    "name_en": "Crew Card",
-                    "type": "crew_card",
-                    "type_name": "",
-                    "type_name_en": "",
-                    "cost": "0"
-                },
-                {
-                    "id": "turnsummary",
-                    "weight": "negligible",
-                    "name": "Turn Summary",
-                    "name_en": "Turn Summary",
-                    "type": "card",
-                    "cost": "0"
-                },
-                {
-                    "id": "darkelf_specialrules",
-                    "weight": "negligible",
-                    "name": "Special Rules - Dark Elf",
-                    "name_en": "Special Rules - Dark Elf",
-                    "type": "card",
-                    "cost": "0"
-                },
-                {
-                    "id": "blank",
-                    "name": "Empty",
-                    "name_en": "Empty",
-                    "type": "card",
-                    "cost": "0"
                 }
             ]
         },
@@ -554,6 +576,65 @@
                     "source": "SoB",
                     "source_en": "SoB",
                     "cost": 100
+                }
+            ]
+        },
+        {
+            "title": "Fortifications",
+            "title_en": "Fortifications",
+            "title_de": "Fortifications",
+            "title_es": "Fortifications",
+            "title_fr": "Fortifications",
+            "type": "UNIT",
+            "expanded": false,
+            "units": [
+                {
+                    "id": "fort_seafortress",
+                    "weight": "heavy",
+                    "name": "Sea Fortress",
+                    "name_en": "Sea Fortress",
+                    "type": "card",
+                    "type_name": "Fortification",
+                    "type_name_en": "Fortification",
+                    "source": "WD 167",
+                    "source_en": "WD 167",
+                    "cost": "500"
+                },
+                {
+                    "id": "fort_coastalbastion",
+                    "weight": "heavy",
+                    "name": "Coastal Bastion",
+                    "name_en": "Coastal Bastion",
+                    "type": "card",
+                    "type_name": "Fortification",
+                    "type_name_en": "Fortification",
+                    "source": "WD 167",
+                    "source_en": "WD 167",
+                    "cost": "250"
+                },
+                {
+                    "id": "fort_shorefort",
+                    "weight": "heavy",
+                    "name": "Shore Fort",
+                    "name_en": "Shore Fort",
+                    "type": "card",
+                    "type_name": "Fortification",
+                    "type_name_en": "Fortification",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "125"
+                },
+                {
+                    "id": "fort_defencetower",
+                    "weight": "heavy",
+                    "name": "Defence Tower",
+                    "name_en": "Defence Tower",
+                    "type": "card",
+                    "type_name": "Fortification",
+                    "type_name_en": "Fortification",
+                    "source": "WD 167",
+                    "source_en": "WD 167",
+                    "cost": "50"
                 }
             ]
         },

@@ -493,6 +493,65 @@
             ]
         },
         {
+            "title": "Fortifications",
+            "title_en": "Fortifications",
+            "title_de": "Fortifications",
+            "title_es": "Fortifications",
+            "title_fr": "Fortifications",
+            "type": "UNIT",
+            "expanded": false,
+            "units": [
+                {
+                    "id": "fort_seafortress",
+                    "weight": "heavy",
+                    "name": "Sea Fortress",
+                    "name_en": "Sea Fortress",
+                    "type": "card",
+                    "type_name": "Fortification",
+                    "type_name_en": "Fortification",
+                    "source": "WD 167",
+                    "source_en": "WD 167",
+                    "cost": "500"
+                },
+                {
+                    "id": "fort_coastalbastion",
+                    "weight": "heavy",
+                    "name": "Coastal Bastion",
+                    "name_en": "Coastal Bastion",
+                    "type": "card",
+                    "type_name": "Fortification",
+                    "type_name_en": "Fortification",
+                    "source": "WD 167",
+                    "source_en": "WD 167",
+                    "cost": "250"
+                },
+                {
+                    "id": "fort_shorefort",
+                    "weight": "heavy",
+                    "name": "Shore Fort",
+                    "name_en": "Shore Fort",
+                    "type": "card",
+                    "type_name": "Fortification",
+                    "type_name_en": "Fortification",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "125"
+                },
+                {
+                    "id": "fort_defencetower",
+                    "weight": "heavy",
+                    "name": "Defence Tower",
+                    "name_en": "Defence Tower",
+                    "type": "card",
+                    "type_name": "Fortification",
+                    "type_name_en": "Fortification",
+                    "source": "WD 167",
+                    "source_en": "WD 167",
+                    "cost": "50"
+                }
+            ]
+        },
+        {
             "title": "Spells",
             "title_en": "Spells",
             "title_de": "Spells",
