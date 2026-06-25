@@ -1,47 +1,154 @@
 {
-  "weight":"medium",
-  "name":{"value":"MEGALADON","scale":0.5},
-  "type":{"value":"SEA MONSTER","scale":0.75},
-  "honors":{"value":"Honors: 1", "scale":1.0},
-  "cost":{"value":"75 pts", "scale":1.0},
-  "moveTitle":{"value":"MOVE","scale":0.75},
-  "move":{"value":"<div style=\"font-size:30px\">2d6\"</div><br>If double, roll on<br>Sea Monster Reaction","scale":0.75},
-  "crew":2,
-  "crewTitle":{"value":"CREW","scale":0.75},
-  "upperNotes":[
-    {"value":"SeaMonster, Nimble","scale":1.0},
-    {"value":"Notes line 2","scale":0.5},
-    {"value":"Notes line 3","scale":0.5}
+  "weight": "medium",
+  "styleOverride": {
+    "bgColor": "DarkCyan",
+    "fgColor": "black",
+    "parchmentColor": "beige",
+    "waterColor": "lightblue",
+    "accentColor": "red"
+  },
+  "name": {
+    "value": "TRITON",
+    "scale": 1,
+    "value_en": "TRITON",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "SEA MONSTER",
+    "scale": 0.75,
+    "value_en": "SEA MONSTER",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "Honors: 4",
+    "scale": 1,
+    "value_en": "Honors: 4",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "100 pts",
+    "scale": 1,
+    "value_en": "100 pts",
+    "scale_en": 1
+  },
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 0.75,
+    "value_en": "MOVE",
+    "scale_en": 0.75
+  },
+  "move": {
+    "value": "<div style=\"font-size:30px\">2d6\"</div><br>If double, roll on<br>Sea Monster Reaction",
+    "scale": 0.75,
+    "value_en": "<div style=\"font-size:30px\">2d6\"</div><br>If double, roll on<br>Sea Monster Reaction",
+    "scale_en": 0.75
+  },
+  "crewTitle": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "upperNotes": [
+    {
+      "value": "SEA MONSTER: May turn as desired",
+      "scale": 1,
+      "value_en": "SEA MONSTER: May turn as desired",
+      "scale_en": 1
+    },
+    {
+      "value": "UNIQUE: There may only ever be 1 Triton in a game.",
+      "scale": 1,
+      "value_en": "UNIQUE: There may only ever be 1 Triton in a game.",
+      "scale_en": 1
+    }
   ],
-  "criticalTitle":{"value":"WOUNDS","scale":1.0},
-  "criticalSave":"5+",
-  "criticalBoxes":4,
-  "lowerNotes":[
-    {"height":15,
-     "title":{"value":"TO HIT", "scale":1.0},
-     "note":{"value":"All Ranges: 5+","scale":0.5}},
-    {"height":70,
-     "title":{"value":"SPECIAL ATTACK", "scale":1.0},
-     "note":{"value":"<b>Roll a d6</b>:<div style=\"position:relative;left:20px;width:300px;text-align:left\">1: Other player moves Meg up to 6\" and attacks any ship.<br>2: Meg refuses to attack<br>3: Choose a location, it takes 1 hit<br>4: Choose two locations, each takes 1 hit<br>5: Choose a location, it is hit twice<br>6: Hits d6+1 low locations, -1 save<br></div>Roll a d6 after attack. On a 1 remove Meg from game.","scale":2.0}},
-    {"height":15,
-     "title":{"value":"CLOSE COMBAT", "scale":1.0},
-     "note":{"value":"+4 CC","scale":1.0}}],
-  "diagram":{
-    "type":"fish",
-    "foreBattery":"1",
-    "aftBattery":"2",
-    "broadsideBattery":"2",
-    "foreSpread":"2",
-    "fullTurret":"2",
-    "foreTurret":"2",
-    "aftTurret":"2",
-    "portTurret":"2",
-    "starboardTurret":"2",
-    "forePortTurret":"2",
-    "foreStarboardTurret":"2",
-    "aftPortTurret":"2",
-    "aftStarboardTurret":"2",
-    "ammoNumRows":2,
-    "ammo":"4"
+  "criticalTitle": {
+    "value": "WOUNDS",
+    "scale": 1,
+    "value_en": "WOUNDS",
+    "scale_en": 1
+  },
+  "criticalSave": "5+",
+  "criticalBoxes": 3,
+  "lowerNotes": [
+    {
+      "height": 15,
+      "title": {
+        "value": "TO HIT",
+        "scale": 1,
+        "value_en": "TO HIT",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<b>All Ranges</b>: 4+",
+        "scale": 1,
+        "value_en": "<b>All Ranges</b>: 4+",
+        "scale_en": 1
+      }
+    },
+    {
+      "height": 15,
+      "title": {
+        "value": "SPECIAL ATTACK",
+        "scale": 1,
+        "value_en": "SPECIAL ATTACK",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style=\"font-size:20px;position:relative;left:8px;width:492px;text-align:left\">Does 2 pts damage if Triton hits chosen location on a 3-6.</div>",
+        "scale": 1,
+        "value_en": "<div style=\"font-size:20px;position:relative;left:8px;width:492px;text-align:left\">Does 2 pts damage if Triton hits chosen location on a 3-6.</div>",
+        "scale_en": 1
+      }
+    },
+    {
+      "height": 25,
+      "title": {
+        "value": "MAGIC",
+        "scale": 1,
+        "value_en": "MAGIC",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style=\"font-size:15px;position:relative;left:8px;width:480px;text-align:left\">Triton recieves 1 random color spell. May redraw once.<br>At the end of any Magic Phase, Triton may cast this spell. Auto succeeds, no save and cannot be dispelled. Discard spell once cast.</div>",
+        "scale": 1,
+        "value_en": "<div style=\"font-size:15px;position:relative;left:8px;width:480px;text-align:left\">Triton recieves 1 random color spell. May redraw once.<br>At the end of any Magic Phase, Triton may cast this spell. Auto succeeds, no save and cannot be dispelled. Discard spell once cast.</div>",
+        "scale_en": 1
+      }
+    },
+    {
+      "height": 30,
+      "title": {
+        "value": "SPECIAL ABILITY",
+        "scale": 1,
+        "value_en": "SPECIAL ABILITY",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style=\"font-size:16px;position:relative;left:8px;width:330px;text-align:left\">At start of player's Battle Phase, Triton may banish 1 enemy sea monster on a roll of 5-6. If successful, creature is placed in it's lair and may return at the start of next turn (need not be resummoned).</div>",
+        "scale": 1,
+        "value_en": "<div style=\"font-size:16px;position:relative;left:8px;width:330px;text-align:left\">At start of player's Battle Phase, Triton may banish 1 enemy sea monster on a roll of 5-6. If successful, creature is placed in it's lair and may return at the start of next turn (need not be resummoned).</div>",
+        "scale_en": 1
+      }
+    },
+    {
+      "height": 15,
+      "title": {
+        "value": "CLOSE COMBAT",
+        "scale": 1,
+        "value_en": "CLOSE COMBAT",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "+3 CC",
+        "scale": 1,
+        "value_en": "+3 CC",
+        "scale_en": 1
+      }
+    }
+  ],
+  "diagram": {
+    "type": "trident"
   }
 }

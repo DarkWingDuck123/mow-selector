@@ -1,0 +1,118 @@
+{
+  "weight": "medium",
+  "styleOverride": {
+    "bgColor": "DarkCyan",
+    "fgColor": "black",
+    "parchmentColor": "beige",
+    "waterColor": "lightblue",
+    "accentColor": "red"
+  },
+  "name": {
+    "value": "PROMETHEAN",
+    "scale": 0.9,
+    "value_en": "PROMETHEAN",
+    "scale_en": 0.9
+  },
+  "type": {
+    "value": "SEA MONSTER",
+    "scale": 0.75,
+    "value_en": "SEA MONSTER",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "Honors: 3",
+    "scale": 1,
+    "value_en": "Honors: 3",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "75 pts",
+    "scale": 1,
+    "value_en": "75 pts",
+    "scale_en": 1
+  },
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 0.75,
+    "value_en": "MOVE",
+    "scale_en": 0.75
+  },
+  "move": {
+    "value": "<div style=\"font-size:30px\">3d6\"</div><br>If double, roll on<br>Sea Monster Reaction",
+    "scale": 0.75,
+    "value_en": "<div style=\"font-size:30px\">3d6\"</div><br>If double, roll on<br>Sea Monster Reaction",
+    "scale_en": 0.75
+  },
+  "crewTitle": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "upperNotes": [
+    {
+      "value": "SEA MONSTER: May turn as desired",
+      "scale": 1,
+      "value_en": "SEA MONSTER: May turn as desired",
+      "scale_en": 1
+    }
+  ],
+  "criticalTitle": {
+    "value": "WOUNDS",
+    "scale": 1,
+    "value_en": "WOUNDS",
+    "scale_en": 1
+  },
+  "criticalSave": "4+",
+  "criticalBoxes": 2,
+  "lowerNotes": [
+    {
+      "height": 15,
+      "title": {
+        "value": "TO HIT",
+        "scale": 1,
+        "value_en": "TO HIT",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "All Ranges: 4+",
+        "scale": 0.5,
+        "value_en": "All Ranges: 4+",
+        "scale_en": 0.5
+      }
+    },
+    {
+      "height": 70,
+      "title": {
+        "value": "SPECIAL ATTACK",
+        "scale": 1,
+        "value_en": "SPECIAL ATTACK",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style=\"font-size:20px;position:relative;left:20px;width:300px;text-align:left\"><b>Makes four d6 attacks.</b><br><br>Always aims high.<br><br><br><br><br><br><br><br></div>",
+        "scale": 2,
+        "value_en": "<div style=\"font-size:20px;position:relative;left:20px;width:300px;text-align:left\"><b>Makes four d6 attacks.</b><br><br>Always aims high.<br><br><br><br><br><br><br><br></div>",
+        "scale_en": 2
+      }
+    },
+    {
+      "height": 15,
+      "title": {
+        "value": "CLOSE COMBAT",
+        "scale": 1,
+        "value_en": "CLOSE COMBAT",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "+2 CC",
+        "scale": 1,
+        "value_en": "+2 CC",
+        "scale_en": 1
+      }
+    }
+  ],
+  "diagram": {
+    "type": "crab"
+  }
+}
