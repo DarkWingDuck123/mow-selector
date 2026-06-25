@@ -176,6 +176,17 @@
             "expanded": true,
             "units": [
                 {
+                    "id": "manowarcard",
+                    "weight": "negligible",
+                    "name": "Man O'War Card",
+                    "name_en": "Man O'War Card",
+                    "type": "card",
+                    "type_name": "Man O'War Card",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "25"
+                },
+                {
                     "id": "darkelf_skyreaper",
                     "weight": "negligible",
                     "name": "Sky Reaper",
@@ -186,6 +197,50 @@
                     "source_en": "SoB",
                     "cost": "25"
                 },
+                {
+                    "id": "crewcard",
+                    "weight": "negligible",
+                    "name": "Crew Card",
+                    "name_en": "Crew Card",
+                    "type": "crew_card",
+                    "type_name": "",
+                    "type_name_en": "",
+                    "cost": "0"
+                },
+                {
+                    "id": "turnsummary",
+                    "weight": "negligible",
+                    "name": "Turn Summary",
+                    "name_en": "Turn Summary",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "darkelf_specialrules",
+                    "weight": "negligible",
+                    "name": "Special Rules - Dark Elf",
+                    "name_en": "Special Rules - Dark Elf",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "blank",
+                    "name": "Empty",
+                    "name_en": "Empty",
+                    "type": "card",
+                    "cost": "0"
+                }
+            ]
+        },
+        {
+            "title": "Tainted Stones",
+            "title_en": "Tainted Stones",
+            "title_de": "Tainted Stones",
+            "title_es": "Tainted Stones",
+            "title_fr": "Tainted Stones",
+            "type": "UNIT",
+            "expanded": false,
+            "units": [
                 {
                     "id": "darkelf_thewildmind",
                     "weight": "negligible",
@@ -257,39 +312,6 @@
                     "source": "CJ 3",
                     "source_en": "CJ 3",
                     "cost": "100"
-                },
-                {
-                    "id": "crewcard",
-                    "weight": "negligible",
-                    "name": "Crew Card",
-                    "name_en": "Crew Card",
-                    "type": "crew_card",
-                    "type_name": "",
-                    "type_name_en": "",
-                    "cost": "0"
-                },
-                {
-                    "id": "turnsummary",
-                    "weight": "negligible",
-                    "name": "Turn Summary",
-                    "name_en": "Turn Summary",
-                    "type": "card",
-                    "cost": "0"
-                },
-                {
-                    "id": "darkelf_specialrules",
-                    "weight": "negligible",
-                    "name": "Special Rules - Dark Elf",
-                    "name_en": "Special Rules - Dark Elf",
-                    "type": "card",
-                    "cost": "0"
-                },
-                {
-                    "id": "blank",
-                    "name": "Empty",
-                    "name_en": "Empty",
-                    "type": "card",
-                    "cost": "0"
                 }
             ]
         },
@@ -431,6 +453,188 @@
                     "source": "WD 164",
                     "source_en": "WD 164",
                     "cost": "200"
+                }
+            ]
+        },
+        {
+            "title": "Sea Monsters",
+            "title_en": "Sea Monsters",
+            "title_de": "Sea Monsters",
+            "title_es": "Sea Monsters",
+            "title_fr": "Sea Monsters",
+            "type": "UNIT",
+            "expanded": false,
+            "units": [
+                {
+                    "id": "seamonster_behemoth",
+                    "type": "seamonster",
+                    "type_name": "Sea Monster",
+                    "type_name_en": "Sea Monster",
+                    "weight": "medium",
+                    "name": "Behemoth",
+                    "name_en": "Behemoth",
+                    "description_en": "A Behemoth",
+                    "squadron-size": 1,
+                    "source": "SoB",
+                    "source_en": "SoB",
+                    "cost": 50
+                },
+                {
+                    "id": "seamonster_kraken",
+                    "type": "seamonster",
+                    "type_name": "Sea Monster",
+                    "type_name_en": "Sea Monster",
+                    "weight": "medium",
+                    "name": "Kraken",
+                    "name_en": "Kraken",
+                    "description_en": "A Kraken",
+                    "squadron-size": 1,
+                    "source": "SoB",
+                    "source_en": "SoB",
+                    "cost": 50
+                },
+                {
+                    "id": "seamonster_gargantuan",
+                    "type": "seamonster",
+                    "type_name": "Sea Monster",
+                    "type_name_en": "Sea Monster",
+                    "weight": "medium",
+                    "name": "Gargantuan",
+                    "name_en": "Gargantuan",
+                    "description_en": "A Gargantuan",
+                    "squadron-size": 1,
+                    "source": "SoB",
+                    "source_en": "SoB",
+                    "cost": 75
+                },
+                {
+                    "id": "seamonster_megaladon",
+                    "type": "seamonster",
+                    "type_name": "Sea Monster",
+                    "type_name_en": "Sea Monster",
+                    "weight": "medium",
+                    "name": "Megaladon",
+                    "name_en": "Megaladon",
+                    "description_en": "A Megaladon",
+                    "squadron-size": 1,
+                    "source": "SoB",
+                    "source_en": "SoB",
+                    "cost": 75
+                },
+                {
+                    "id": "seamonster_promethean",
+                    "type": "seamonster",
+                    "type_name": "Sea Monster",
+                    "type_name_en": "Sea Monster",
+                    "weight": "medium",
+                    "name": "Promethean",
+                    "name_en": "Promethean",
+                    "description_en": "A Promethean",
+                    "squadron-size": 1,
+                    "source": "SoB",
+                    "source_en": "SoB",
+                    "cost": 75
+                },
+                {
+                    "id": "seamonster_seadragon",
+                    "type": "seamonster",
+                    "type_name": "Sea Monster",
+                    "type_name_en": "Sea Monster",
+                    "weight": "medium",
+                    "name": "Sea Dragon",
+                    "name_en": "Sea Dragon",
+                    "description_en": "A Sea Dragon",
+                    "squadron-size": 1,
+                    "source": "SoB",
+                    "source_en": "SoB",
+                    "cost": 75
+                },
+                {
+                    "id": "seamonster_seaelemental",
+                    "type": "seamonster",
+                    "type_name": "Sea Monster",
+                    "type_name_en": "Sea Monster",
+                    "weight": "medium",
+                    "name": "Sea Elemental",
+                    "name_en": "Sea Elemental",
+                    "description_en": "A Sea Elemental",
+                    "squadron-size": 1,
+                    "source": "SoB",
+                    "source_en": "SoB",
+                    "cost": 75
+                },
+                {
+                    "id": "seamonster_blackleviathan",
+                    "type": "seamonster",
+                    "type_name": "Sea Monster",
+                    "type_name_en": "Sea Monster",
+                    "weight": "medium",
+                    "name": "Black Leviathan",
+                    "name_en": "Black Leviathan",
+                    "description_en": "A Black Leviathan",
+                    "squadron-size": 1,
+                    "source": "SoB",
+                    "source_en": "SoB",
+                    "cost": 100
+                }
+            ]
+        },
+        {
+            "title": "Fortifications",
+            "title_en": "Fortifications",
+            "title_de": "Fortifications",
+            "title_es": "Fortifications",
+            "title_fr": "Fortifications",
+            "type": "UNIT",
+            "expanded": false,
+            "units": [
+                {
+                    "id": "fort_seafortress",
+                    "weight": "heavy",
+                    "name": "Sea Fortress",
+                    "name_en": "Sea Fortress",
+                    "type": "card",
+                    "type_name": "Fortification",
+                    "type_name_en": "Fortification",
+                    "source": "WD 167",
+                    "source_en": "WD 167",
+                    "cost": "500"
+                },
+                {
+                    "id": "fort_coastalbastion",
+                    "weight": "heavy",
+                    "name": "Coastal Bastion",
+                    "name_en": "Coastal Bastion",
+                    "type": "card",
+                    "type_name": "Fortification",
+                    "type_name_en": "Fortification",
+                    "source": "WD 167",
+                    "source_en": "WD 167",
+                    "cost": "250"
+                },
+                {
+                    "id": "fort_shorefort",
+                    "weight": "heavy",
+                    "name": "Shore Fort",
+                    "name_en": "Shore Fort",
+                    "type": "card",
+                    "type_name": "Fortification",
+                    "type_name_en": "Fortification",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "125"
+                },
+                {
+                    "id": "fort_defencetower",
+                    "weight": "heavy",
+                    "name": "Defence Tower",
+                    "name_en": "Defence Tower",
+                    "type": "card",
+                    "type_name": "Fortification",
+                    "type_name_en": "Fortification",
+                    "source": "WD 167",
+                    "source_en": "WD 167",
+                    "cost": "50"
                 }
             ]
         },
