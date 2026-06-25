@@ -1,0 +1,368 @@
+{
+  "weight": "heavy",
+  "styleOverride": {
+    "bgColor": "grey",
+    "fgColor": "white",
+    "parchmentColor": "beige",
+    "waterColor": "lightblue",
+    "accentColor": "red"
+  },
+  "name": {
+    "value": "SEAFORTRESS",
+    "scale": 0.55,
+    "value_en": "SEAFORTRESS",
+    "scale_en": 0.55
+  },
+  "type": {
+    "value": "TERRAIN PIECE",
+    "scale": 0.75,
+    "value_en": "TERRAIN PIECE",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "Honors: 20",
+    "scale": 1,
+    "value_en": "Honors: 20",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "500 pts",
+    "scale": 1,
+    "value_en": "500 pts",
+    "scale_en": 1
+  },
+  "crew": 10,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 0.75,
+    "value_en": "CREW",
+    "scale_en": 0.75
+  },
+  "move": {
+    "value": "<div style=\"font-size:24px\">MAY NOT MOVE</div>",
+    "scale": 0.75,
+    "value_en": "<div style=\"font-size:24px\">MAY NOT MOVE</div>",
+    "scale_en": 0.75
+  },
+  "upperNotes": [],
+  "highLow":[{"title":"LOW","height":50},{"title":"HIGH","height":50}],
+  "dmgBoxes": [
+    {
+      "width": 20,
+      "height": 50,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "SEA WALL",
+        "scale": 0.5,
+        "value_en": "SEA WALL",
+        "scale_en": 0.5
+      },
+      "zone": "2",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale": 1,
+          "value_en": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale": 1,
+        "value_en": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 20,
+      "bottom": 0,
+      "name": {
+        "value": "MAIN GATE",
+        "scale": 0.5,
+        "value_en": "MAIN GATE",
+        "scale_en": 0.5
+      },
+      "zone": "3",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale": 1,
+          "value_en": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale": 1,
+        "value_en": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 40,
+      "bottom": 0,
+      "name": {
+        "value": "CURTAIN WALL",
+        "scale": 0.5,
+        "value_en": "CURTAIN WALL",
+        "scale_en": 0.5
+      },
+      "zone": "4",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale": 1,
+          "value_en": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale": 1,
+        "value_en": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 60,
+      "bottom": 0,
+      "name": {
+        "value": "COURTYARD WALL",
+        "scale": 0.5,
+        "value_en": "COURTYARD WALL",
+        "scale_en": 0.5
+      },
+      "zone": "5",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale": 1,
+          "value_en": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale": 1,
+        "value_en": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 80,
+      "bottom": 0,
+      "name": {
+        "value": "DUNGEON WALL",
+        "scale": 0.5,
+        "value_en": "DUNGEON WALL",
+        "scale_en": 0.5
+      },
+      "zone": "6",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale": 1,
+          "value_en": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale": 1,
+        "value_en": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 0,
+      "bottom": 50,
+      "name": {
+        "value": "GARRISON TOWER",
+        "scale": 0.5,
+        "value_en": "GARRISON TOWER",
+        "scale_en": 0.5
+      },
+      "zone": "2",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale": 1,
+          "value_en": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale": 1,
+        "value_en": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 20,
+      "bottom": 50,
+      "name": {
+        "value": "GATE TOWER",
+        "scale": 0.5,
+        "value_en": "GATE TOWER",
+        "scale_en": 0.5
+      },
+      "zone": "3",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale": 1,
+          "value_en": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale": 1,
+        "value_en": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 40,
+      "bottom": 50,
+      "name": {
+        "value": "KINGS TOWER",
+        "scale": 0.5,
+        "value_en": "KINGS TOWER",
+        "scale_en": 0.5
+      },
+      "zone": "4",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale": 1,
+          "value_en": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale": 1,
+        "value_en": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 60,
+      "bottom": 50,
+      "name": {
+        "value": "PRISON TOWER",
+        "scale": 0.5,
+        "value_en": "PRISON TOWER",
+        "scale_en": 0.5
+      },
+      "zone": "5",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale": 1,
+          "value_en": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale": 1,
+        "value_en": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 80,
+      "bottom": 50,
+      "name": {
+        "value": "FLAG TOWER",
+        "scale": 0.5,
+        "value_en": "FLAG TOWER",
+        "scale_en": 0.5
+      },
+      "zone": "6",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale": 1,
+          "value_en": "<b>Cannon Lost</b><br>1 Cannon turret<br>lost",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale": 1,
+        "value_en": "<i>Further hits damage structure and kill 1 crew.</i>",
+        "scale_en": 1
+      }
+    }
+  ],
+  "criticalTitle": {
+    "value": "STRUCTURAL DAMAGE",
+    "scale": 1,
+    "value_en": "STRUCTURAL DAMAGE",
+    "scale_en": 1
+  },
+  "criticalSave": "-",
+  "criticalBoxes": 10,
+  "lowerNotesTitle": {
+    "value": "WEAPONS & SPECIAL RULES",
+    "scale": 1,
+    "value_en": "WEAPONS & SPECIAL RULES",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Cannons:</b> 10 turrets, may repel boarders<br><b>Capturing:</b> Move ships to touch, roll a d6; on 5+ they run aground. Then board. An undamaged <b>COASTAL BASTION</b> is +5 crew, +5 guns, +1 walls for +11 CC<br>Immune to rammers, rammers run aground.",
+    "scale": 0.85,
+    "value_en": "<b>Cannons:</b> 5 turrets, may repel boarders<br><b>Capturing:</b> Move ships to touch, roll a d6; on 5+ they run aground. Then board. An undamaged <b>COASTAL BASTION</b> is +10 crew, +10 guns, +1 walls for +21 CC<br>Immune to rammers, rammers run aground.",
+    "scale_en": 0.85
+  },
+  "fullTurret": "10"
+}

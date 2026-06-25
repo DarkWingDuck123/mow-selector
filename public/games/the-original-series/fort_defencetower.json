@@ -1,0 +1,106 @@
+{
+  "weight": "heavy",
+  "styleOverride": {
+    "bgColor": "grey",
+    "fgColor": "white",
+    "parchmentColor": "beige",
+    "waterColor": "lightblue",
+    "accentColor": "red"
+  },
+  "name": {
+    "value": "DEFENCETOWER",
+    "scale": 0.65,
+    "value_en": "DEFENCETOWER",
+    "scale_en": 0.65
+  },
+  "type": {
+    "value": "TERRAIN PIECE",
+    "scale": 0.75,
+    "value_en": "TERRAIN PIECE",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "Honors: 2",
+    "scale": 0.8,
+    "value_en": "Honors: 2",
+    "scale_en": 0.8
+  },
+  "cost": {
+    "value": "50 pts",
+    "scale": 1,
+    "value_en": "50 pts",
+    "scale_en": 1
+  },
+  "crew": 1,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 0.75,
+    "value_en": "CREW",
+    "scale_en": 0.75
+  },
+  "move": {
+    "value": "<div style=\"font-size:24px\">MAY NOT MOVE</div>",
+    "scale": 0.75,
+    "value_en": "<div style=\"font-size:24px\">MAY NOT MOVE</div>",
+    "scale_en": 0.75
+  },
+  "upperNotes": [],
+  "dmgBoxes": [
+    {
+      "width": 100,
+      "height": 100,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "CANNON BATTERY",
+        "scale": 1,
+        "value_en": "CANNON BATTERY",
+        "scale_en": 1
+      },
+      "zone": "5,6",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Cannon Lost</b><br>1 Cannon turret lost",
+          "scale": 1,
+          "value_en": "<b>Cannon Lost</b><br>1 Cannon turret lost",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "<i>Further hits damage structure.</i>",
+        "scale": 1.5,
+        "value_en": "<i>Further hits damage structure.</i>",
+        "scale_en": 1.5
+      }
+    }
+  ],
+  "criticalTitle": {
+    "value": "STRUCTURE DAMAGE",
+    "scale": 1,
+    "value_en": "STRUCTURE DAMAGE",
+    "scale_en": 1
+  },
+  "criticalSave": "-",
+  "criticalBoxes": 1,
+  "lowerNotesTitle": {
+    "value": "WEAPONS & SPECIAL RULES",
+    "scale": 1,
+    "value_en": "WEAPONS & SPECIAL RULES",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Cannons:</b> 1 turrets, may repel boarders<br><b>Capturing:</b> Move ships to touch, roll a d6; on 5+ they run aground. Then board. An undamaged <b>Defence Tower</b> is +1 crew, +1 guns, +1 walls for +3 CC<br>Immune to rammers, rammers run aground.",
+    "scale": 0.85,
+    "value_en": "<b>Cannons:</b> 1 turrets, may repel boarders<br><b>Capturing:</b> Move ships to touch, roll a d6; on 5+ they run aground. Then board. An undamaged <b>Defence Tower</b> is +1 crew, +1 guns, +1 walls for +3 CC<br>Immune to rammers, rammers run aground.",
+    "scale_en": 0.85
+  },
+  "fullTurret": "1"
+}
