@@ -144,7 +144,9 @@ const validateRules = (list, faction) => {
       }
     } else {
       const targetTotal = parsed.targets.reduce((sum, target) => {
-        return sum + Math.floor(countForName(target.name) / target.count);
+        const isPts = /^pts?$/i.test(target.name) || /^points?$/i.test(target.name);
+        const base = isPts ? totalPoints : countForName(target.name);
+        return sum + Math.floor(base / target.count);
       }, 0);
 
       let allowed = targetTotal * parsed.limit;
