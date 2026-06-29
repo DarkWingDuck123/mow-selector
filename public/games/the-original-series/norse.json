@@ -130,6 +130,14 @@
                     "cost": "0"
                 },
                 {
+                    "id": "colorspell_magicrules",
+                    "weight": "negligible",
+                    "name": "Color Wizard Summary",
+                    "name_en": "Color Wizard Summary",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
                     "id": "blank",
                     "name": "Empty",
                     "name_en": "Empty",
