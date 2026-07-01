@@ -41,6 +41,9 @@
         },
         {
             "rule": "Max 1 Anti-Flyer per 1 Man O'War"
+        },
+        {
+            "rule": "Max 1 Schmidt's Ironfist"
         }
     ],
     "allies": [
@@ -406,6 +409,39 @@
                     "source": "SoB",
                     "source_en": "SoB",
                     "cost": 100
+                }
+            ]
+        },
+        {
+            "title": "Renegades",
+            "title_en": "Renegades",
+            "title_de": "Renegades",
+            "title_es": "Renegades",
+            "title_fr": "Renegades",
+            "type": "UNIT",
+            "expanded": false,
+            "units": [
+                {
+                    "id": "renegade_ironfist",
+                    "type": "shipoftheline",
+                    "type_name": "Ship of the Line",
+                    "type_name_en": "Ship of the Line",
+                    "weight": "heavy",
+                    "name": "Schmidt's Ironfist",
+                    "name_en": "Schmidt's Ironfist",
+                    "description_en": "A Squadron of 3 Schmidt's Ironfist",
+                    "squadron-size": 3,
+                    "source": "SoB",
+                    "source_en": "SoB",
+                    "cost": 150
+                },
+                {
+                    "id": "renegade_ironfistrules",
+                    "weight": "negligible",
+                    "name": "Ironfist Rules - Schmidt's Renegades",
+                    "name_en": "Ironfist Rules - Schmidt's Renegades",
+                    "type": "card",
+                    "cost": "0"
                 }
             ]
         },
