@@ -165,6 +165,14 @@
                     "cost": "0"
                 },
                 {
+                    "id": "damagetables",
+                    "weight": "negligible",
+                    "name": "Damage Tables",
+                    "name_en": "Damage Tables",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
                     "id": "brettonia_specialrules",
                     "weight": "negligible",
                     "name": "Special Rules - Brettonia",

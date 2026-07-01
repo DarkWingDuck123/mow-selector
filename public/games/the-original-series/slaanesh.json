@@ -79,6 +79,14 @@
                     "cost": "0"
                 },
                 {
+                    "id": "damagetables",
+                    "weight": "negligible",
+                    "name": "Damage Tables",
+                    "name_en": "Damage Tables",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
                     "id": "blank",
                     "name": "Empty",
                     "name_en": "Empty",
