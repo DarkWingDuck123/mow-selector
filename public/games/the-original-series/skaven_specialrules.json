@@ -1,19 +1,44 @@
 {
   "weight": "negligible",
-  "name": {"value": "SPECIAL RULES", "scale": 1.0},
-  "type": {"value": "SKAVEN CLANFLEET", "scale": 0.75},
-  "honors": {"value": "", "scale": 1.0},
-  "cost": {"value": "0 pts", "scale": 1.0},
+  "name": {
+    "value": "SPECIAL RULES",
+    "scale": 1,
+    "value_en": "SPECIAL RULES",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "SKAVEN CLANFLEET",
+    "scale": 0.75,
+    "value_en": "SKAVEN CLANFLEET",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
   "notes": [
     {
-      "height": 50,
-      "title": {"value": "WARPFIRE CANNONS", "scale": 1.0},
-      "note": {"value": "Warpfire Cannons are flamethrowers. They may only fire in the Fore arc. They cause automatic hits (no to-hit roll). Target saves at -1.", "scale": 0.9}
-    },
-    {
-      "height": 50,
-      "title": {"value": "UNRELIABLE", "scale": 1.0},
-      "note": {"value": "Each time a Warpfire Cannon fires, roll a die. On a 1, it misfires and causes 1 hit on the firing ship instead.", "scale": 0.9}
+      "height": 100,
+      "title": {
+        "value": "SKAVEN CREW",
+        "scale": 1,
+        "value_en": "SKAVEN CREW",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style='font-size:24px'><b>Initial Setup</b>: The <b>Skaven Warlord</b> crews his ships using the free <b>Slaves</b>, <b>Clanrats</b> & <b>Storm Vermin</b> at the start of the game. Each squadron must have the same crew type. Cross out any crew not used.<br><br><b>Morale</b>: A Skaven ship that takes a critical hit rolls on the following table:<br><b>0-1:</b> Wide Scale Panic - remove d6 crew<br><b>2</b>: Major panic - remove 2 crew<br><b>3</b>: Minor panic - remove 1 crew<br><b>4-8</b>: No problem!<br><br><b>Morale Modifiers</b>: <b>Doombringer</b> +1, <b>Slaves</b> -1, <b>Storm Vermin</b> +1</div>",
+        "scale": 0.9,
+        "value_en": "<div style='font-size:24px'><b>Initial Setup</b>: The <b>Skaven Warlord</b> crews his ships using the free <b>Slaves</b>, <b>Clanrats</b> & <b>Storm Vermin</b> at the start of the game. Each squadron must have the same crew type. Cross out any crew not used.<br><br><b>Morale</b>: A Skaven ship that takes a critical hit rolls on the following table:<br><b>0-1:</b> Wide Scale Panic - remove d6 crew<br><b>2</b>: Major panic - remove 2 crew<br><b>3</b>: Minor panic - remove 1 crew<br><b>4-8</b>: No problem!<br><br><b>Morale Modifiers</b>: <b>Doombringer</b> +1, <b>Slaves</b> -1, <b>Storm Vermin</b> +1</div>",
+        "scale_en": 0.9
+      }
     }
   ]
 }

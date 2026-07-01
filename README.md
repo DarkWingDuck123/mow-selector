@@ -19,6 +19,24 @@ npm start
 
 The app runs at http://localhost:3000.
 
+## Pushing and Deploying
+
+### Push to GitHub
+
+```bash
+git push
+```
+
+This pushes to `origin/main` at https://github.com/DarkWingDuck123/mow-selector.git.
+
+### Deploy to GitHub Pages
+
+```bash
+npm run deploy
+```
+
+This runs `npm run build` (production build into `build/`) and then publishes that directory to the `gh-pages` branch via the `gh-pages` package. The live site updates at the GitHub Pages URL within a minute or two.
+
 ## License
 
 The source code is released under the [MIT License](LICENSE).

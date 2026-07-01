@@ -1,66 +1,175 @@
 {
-  "weight":"heavy",
-  "name":{"value":"DEATHBURNER","scale":1.0},
-  "type":{"value":"SKAVEN SHIP OF THE LINE","scale":1.0},
-  "honors":{"value":"Honors: 4", "scale":0.8},
-  "cost":{"value":"300 pts per 3", "scale":1.0},
-  "crewTitle":{"value":"CREW","scale":1.0},
-  "crew":3,
-  "moveTitle":{"value":"MOVE","scale":1.0},
-  "move":{"value":"<div style=\"font-size:24px\">OARS 6\"</div>","scale":0.75},
-  "upperNotes":[{"value":"6\" straight line | 1/2 move per 45 degree turn | may reverse upto 2\"","scale":0.8}],
-  "highLow":[{"title":"LOW","height":50},{"title":"HIGH","height":50}],
-  "dmgBoxes":[
-    {"width":50, "height":40, "left":0, "bottom":60,
-     "name":{"value":"PADDLE WHEEL (P)", "scale":0.9},
-     "zone":"4",
-     "save":"5+",
-     "isHorizontal":false,
-     "boxes":[{"value":"<b>Wheel Lost</b> - Move reduced by 1\"", "scale":0.8}],
-     "notes":{"value":"<i>No Criticals</i>", "scale":1.5}},
-    {"width":50, "height":40, "left":50, "bottom":60,
-     "name":{"value":"PADDLE WHEEL (S)", "scale":0.9},
-     "zone":"5",
-     "save":"5+",
-     "isHorizontal":false,
-     "boxes":[{"value":"<b>Wheel Lost</b> - Move reduced by 1\"", "scale":0.8}],
-     "notes":{"value":"<i>No Criticals</i>", "scale":1.5}},
-    {"width":50, "height":30, "left":0, "bottom":30,
-     "name":{"value":"FORECASTLE", "scale":1.0},
-     "zone":"2",
-     "save":"4+",
-     "isHorizontal":false,
-     "boxes":[{"value":"<b>One Fore Warpfire Destroyed</b>", "scale":0.8},
-              {"value":"<b>One Fore Warpfire Destroyed</b>", "scale":0.8}]},
-    {"width":50, "height":30, "left":50, "bottom":30,
-     "name":{"value":"MAIN DECK", "scale":1.0},
-     "zone":"3",
-     "save":"5+",
-     "isHorizontal":false,
-     "boxes":[{"value":"<b>Broadside Warpfire Destroyed</b>", "scale":1.0}]},
-    {"width":35, "height":30, "left":0, "bottom":0,
-     "name":{"value":"BOWS", "scale":1.0},
-     "zone":"4",
-     "save":"4+",
-     "isHorizontal":false,
-     "boxes":[{"value":"<b>One Fore Warpfire Destroyed</b>", "scale":1.0}]},
-    {"width":35, "height":30, "left":35, "bottom":0,
-     "name":{"value":"OAR DECK", "scale":1.0},
-     "zone":"5",
-     "save":"4+",
-     "isHorizontal":false,
-     "boxes":[{"value":"<b>Oars Lost</b>", "scale":1.0}]},
-    {"width":30, "height":30, "left":70, "bottom":0,
-     "name":{"value":"STERN", "scale":1.0},
-     "zone":"6",
-     "save":"4+",
-     "isHorizontal":false,
-     "boxes":[{"value":"", "scale":1.0}]}],
-  "criticalTitle":{"value":"BELOW WATERLINE","scale":1.0},
-  "criticalSave":"4+",
-  "criticalBoxes":3,
-  "lowerNotesTitle":{"value":"WEAPONS","scale":1.0},
-  "lowerNotes":{"value":"<b>2 Fore Warpfire Cannon:</b> May repel boarders<br><b>1 Broadside Warpfire Cannon:</b> May repel boarders<br><b>Ram:</b> 3\" straight. Below waterline save, if failed:<br>1-2: 1pt, 3-4: 2pts, 5-6: 3pts","scale":0.85},
-  "foreBattery":"2",
-  "broadsideBattery":"1"
+  "weight": "heavy",
+  "name": {
+    "value": "DEATHBURNER",
+    "scale": 0.8,
+    "value_en": "DEATHBURNER",
+    "scale_en": 0.8
+  },
+  "type": {
+    "value": "SKAVEN SHIP OF THE LINE",
+    "scale": 0.75,
+    "value_en": "SKAVEN SHIP OF THE LINE",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "Honors: 2",
+    "scale": 0.95,
+    "value_en": "Honors: 2",
+    "scale_en": 0.95
+  },
+  "cost": {
+    "value": "150 pts per 3",
+    "scale": 1,
+    "value_en": "150 pts per 3",
+    "scale_en": 1
+  },
+  "crew": 6,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW PURCHASED",
+    "scale": 0.75,
+    "value_en": "CREW PURCHASED",
+    "scale_en": 0.75
+  },
+  "move": {
+    "value": "<div style=\"font-size:24px\"><b>PADDLES</b> 8\"</div>May move backwards/forwards; unaffected by wind; Uses standard turn template",
+    "scale": 0.75,
+    "value_en": "<div style=\"font-size:24px\"><b>PADDLES</b> 8\"</div>May move backwards/forwards; unaffected by wind; Uses standard turn template",
+    "scale_en": 0.75
+  },
+  "upperNotes": [
+    {
+      "value": "<b>CREW</b>: Skaven crew must check morale if ship takes a critical hit.",
+      "scale": 0.95,
+      "value_en": "<b>CREW</b>: Skaven crew must check morale if ship takes a critical hit.",
+      "scale_en": 0.95
+    }
+  ],
+  "dmgBoxes": [
+    {
+      "width": 25,
+      "height": 100,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "BOWS",
+        "scale": 1,
+        "value_en": "BOWS",
+        "scale_en": 1
+      },
+      "zone": "3",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": "<b>Plague-Burner</b> destroyed",
+          "scale": 1,
+          "value_en": "<b>Plague-Burner</b> destroyed",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 25,
+      "height": 100,
+      "left": 25,
+      "bottom": 0,
+      "name": {
+        "value": "WINCH",
+        "scale": 1,
+        "value_en": "WINCH",
+        "scale_en": 1
+      },
+      "zone": "4",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 0.9,
+          "value_en": "",
+          "scale_en": 0.9
+        }
+      ]
+    },
+    {
+      "width": 25,
+      "height": 100,
+      "left": 50,
+      "bottom": 0,
+      "name": {
+        "value": "ENGINE",
+        "scale": 1,
+        "value_en": "ENGINE",
+        "scale_en": 1
+      },
+      "zone": "5",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Speed<br>reduced<br>by 4\"",
+          "scale": 1,
+          "value_en": "Speed<br>reduced<br>by 4\"",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 25,
+      "height": 100,
+      "left": 75,
+      "bottom": 0,
+      "name": {
+        "value": "PADDLE",
+        "scale": 0.85,
+        "value_en": "PADDLE",
+        "scale_en": 0.85
+      },
+      "zone": "6",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Speed<br>reduced<br>by 4\"",
+          "scale": 1,
+          "value_en": "Speed<br>reduced<br>by 4\"",
+          "scale_en": 1
+        }
+      ]
+    }
+  ],
+  "criticalTitle": {
+    "value": "BELOW WATERLINE",
+    "scale": 1,
+    "value_en": "BELOW WATERLINE",
+    "scale_en": 1
+  },
+  "criticalSave": "5+",
+  "criticalBoxes": 2,
+  "lowerNotesTitle": {
+    "value": "WEAPONS",
+    "scale": 1,
+    "value_en": "WEAPONS",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Plagueburner</b>: 1 firing ahead, my not repel boarders.<br>Once the Deathburner has finished moving, place the <b>Plagueburner</b> template at the front of the ship and roll d6 for each vessel under it:<br><b>1-4</b>: No effect; <b>5-6</b>: ship loses 1 crew.<br>Also make 1 dice attack against each ship. Also affects friendly vessels.",
+    "scale": 0.75,
+    "value_en": "<b>Plagueburner</b>: 1 firing ahead, my not repel boarders.<br>Once the Deathburner has finished moving, place the <b>Plagueburner</b> template at the front of the ship and roll d6 for each vessel under it:<br><b>1-4</b>: No effect; <b>5-6</b>: ship loses 1 crew.<br>Also make 1 dice attack against each ship. Also affects friendly vessels.",
+    "scale_en": 0.75
+  },
+  "foreSpread": "1"
 }

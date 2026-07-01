@@ -1,0 +1,59 @@
+{
+  "weight": "negligible",
+  "name": {
+    "value": "COLOR MAGIC RULES",
+    "scale": 1,
+    "value_en": "COLOR MAGIC RULES",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "COLOR SPELL",
+    "scale": 1,
+    "value_en": "COLOR SPELL",
+    "scale_en": 1
+  },
+  "honors": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "notes": [
+    {
+      "height": 15,
+      "title": {
+        "value": "DOMINANT WIZARD'S COLLEGE",
+        "scale": 1,
+        "value_en": "DOMINANT WIZARD'S COLLEGE",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "",
+        "scale": 1,
+        "value_en": "",
+        "scale_en": 1
+      }
+    },
+    {
+      "height": 85,
+      "title": {
+        "value": "COLOR MAGIC",
+        "scale": 1,
+        "value_en": "COLOR MAGIC",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style='font-size:24px'><b>Initial Setup</b>: Choose a college for your <b>Wizard</b>.<br><br><b>Casting Spells</b>: Roll above casting value to cast a spell. May reroll casting attempt if <b>Wizard's</b> college.<br><br><b>Dispelling Spells</b>: Roll above the casting value of the dispelling card. May reroll dispel attempt if <b>Wizard's</b> college.<br><br><b>End Phase</b>: Remove lingering spells. If not clinging to wreckage, discard cards then replenish hand.</div>",
+        "scale": 0.9,
+        "value_en": "<div style='font-size:24px'><b>Initial Setup</b>: Choose a college for your <b>Wizard</b>.<br><br><b>Casting Spells</b>: Roll above casting value to cast a spell. May reroll casting attempt if <b>Wizard's</b> college.<br><br><b>Dispelling Spells</b>: Roll above the casting value of the dispelling card. May reroll dispel attempt if <b>Wizard's</b> college.<br><br><b>End Phase</b>: Remove lingering spells. If not clinging to wreckage, discard cards then replenish hand.</div>",
+        "scale_en": 0.9
+      }
+    }
+  ]
+}

@@ -178,7 +178,9 @@ function rowTwo(w, h, x, y, meta, obj) {
                 + "text-align:left;"
                 + "position:absolute;"
                 + "top:0;"
-                + "padding:4px 8px'>"
+                + "padding:4px 8px;"
+                + scaleStyle(note.note)
+                + ";'>"
             + DOMPurify.sanitize(contents.value)
           + "</div>"
         + "</div>"

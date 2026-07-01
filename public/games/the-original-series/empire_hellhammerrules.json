@@ -1,0 +1,44 @@
+{
+  "weight": "negligible",
+  "name": {
+    "value": "HELLHAMMER RULES",
+    "scale": 1,
+    "value_en": "HELLHAMMER RULES",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "EMPIRE RULES",
+    "scale": 1,
+    "value_en": "EMPIRE RULES",
+    "scale_en": 1
+  },
+  "honors": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "notes": [
+    {
+      "height": 100,
+      "title": {
+        "value": "HELLHAMMER RULES",
+        "scale": 1,
+        "value_en": "HELLHAMMER RULES",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style='font-size:22px'><b>Combat</b>: The <b>Hellhammer</b> gun can only  fire 3 times.<br><b>Range</b>: The <b>Hellhammer</b> uses the 12\" bolt template.<br><b>Close</b> range is 0\" to 6\" with a -2 Save Modifier.<br><b>Long</b> range is 6\" to 12\" with a -1 Save Modifier.<br><b>Damage</b>: The Hellhammer cannon does 2 damage per hit, this might cause a <b>Critical Hit</b>.<br><b>Misfires</b>: Attack rolls of 1 cause a Misfire, roll on the <b>Critical Hit</b> table.<br><b>Recoil</b>: After firing, move <b>Hellhammer</b> 3\" back. If it collides with another ship, each ship takes a random <b>low</b> area hit.<br><b>Reloading</b>: It takes 2 turns to reload the <b>Hellhammer's</b> cannon. Slash mark ammo when firing, X 1st turn reloading, Asterick on 2nd turn when fully reloaded.<br><b>Boarding Actions</b>: +2 CC modifier to the fore.</div>",
+        "scale": 1,
+        "value_en": "<div style='font-size:22px'><b>Combat</b>: The <b>Hellhammer</b> gun can only  fire 3 times.<br><b>Range</b>: The <b>Hellhammer</b> uses the 12\" bolt template.<br><b>Close</b> range is 0\" to 6\" with a -2 Save Modifier.<br><b>Long</b> range is 6\" to 12\" with a -1 Save Modifier.<br><b>Damage</b>: The Hellhammer cannon does 2 damage per hit, this might cause a <b>Critical Hit</b>.<br><b>Misfires</b>: Attack rolls of 1 cause a Misfire, roll on the <b>Critical Hit</b> table.<br><b>Recoil</b>: After firing, move <b>Hellhammer</b> 3\" back. If it collides with another ship, each ship takes a random <b>low</b> area hit.<br><b>Reloading</b>: It takes 2 turns to reload the <b>Hellhammer's</b> cannon. Slash mark ammo when firing, X 1st turn reloading, Asterick on 2nd turn when fully reloaded.<br><b>Boarding Actions</b>: +2 CC modifier to the fore.</div>",
+        "scale_en": 1
+      }
+    }
+  ]
+}

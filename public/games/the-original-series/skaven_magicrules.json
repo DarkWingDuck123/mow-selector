@@ -1,0 +1,59 @@
+{
+  "weight": "negligible",
+  "name": {
+    "value": "MAGIC RULES",
+    "scale": 1,
+    "value_en": "MAGIC RULES",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "SKAVEN CLANFLEET",
+    "scale": 0.75,
+    "value_en": "SKAVEN CLANFLEET",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "notes": [
+    {
+      "height": 15,
+      "title": {
+        "value": "USED WARP TOKENS",
+        "scale": 1,
+        "value_en": "USED WARP TOKENS",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "",
+        "scale": 0.9,
+        "value_en": "",
+        "scale_en": 0.9
+      }
+    },
+    {
+      "height": 85,
+      "title": {
+        "value": "SKAVEN MAGIC",
+        "scale": 1,
+        "value_en": "SKAVEN MAGIC",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<b>Initial Setup</b>: The <b>Grey Seer</b> starts the game with 24 <b>Warp Tokens</b> and all <b>Skaven Spells</b> in hand.<br><br><b>Casting Spells</b>: To cast a spell a <b>Grey Seer</b> must roll the casting cost of the spell. They may consume any number of <b>Warp Tokens</b> to add +1 to the attempt per token. A roll of 1 always fails. Discard the spell no matter the outcome. You may discard spells you have no means of casting. Renew hand once all spells are cast.<br><br><b>Failing to Cast</b>: If the spell fails to cast (not due to a dispel) roll a d6 per token consumed and check for doubles. <b>Double 1</b>: Grey Seer explodes, All remaining spells in hand cast centered on the Grey Seer's ship; <b>Double 2-4</b>: Roll a d6, Grey Seer consumes that much additional <b>Warp Tokens</b>; <b>Double 5-6</b>: The <b>Grey Seer</b> gains +1 to cast next turn.<br><br><b>Dispelling Skaven Magic (7+)</b>: Wizards attempting to dispel <b>Skaven Magic</b> must discard 2 cards to get a +1 to dispel. No automatic dispels.<br><br><b>Grey Seer Dispelling (7+)</b>: <b>Grey Seers</b> dispel using <b>Warp Tokens</b>. Each token adds +1 to the dispel attempt. Always roll as if <b>Failing to Cast</b> a spell.",
+        "scale": 0.9,
+        "value_en": "<b>Initial Setup</b>: The <b>Grey Seer</b> starts the game with 24 <b>Warp Tokens</b> and all <b>Skaven Spells</b> in hand.<br><br><b>Casting Spells</b>: To cast a spell a <b>Grey Seer</b> must roll the casting cost of the spell. They may consume any number of <b>Warp Tokens</b> to add +1 to the attempt per token. A roll of 1 always fails. Discard the spell no matter the outcome. You may discard spells you have no means of casting. Renew hand once all spells are cast.<br><br><b>Failing to Cast</b>: If the spell fails to cast (not due to a dispel) roll a d6 per token consumed and check for doubles. <b>Double 1</b>: Grey Seer explodes, All remaining spells in hand cast centered on the Grey Seer's ship; <b>Double 2-4</b>: Roll a d6, Grey Seer consumes that much additional <b>Warp Tokens</b>; <b>Double 5-6</b>: The <b>Grey Seer</b> gains +1 to cast next turn.<br><br><b>Dispelling Skaven Magic (7+)</b>: Wizards attempting to dispel <b>Skaven Magic</b> must discard 2 cards to get a +1 to dispel. No automatic dispels.<br><br><b>Grey Seer Dispelling (7+)</b>: <b>Grey Seers</b> dispel using <b>Warp Tokens</b>. Each token adds +1 to the dispel attempt. Always roll as if <b>Failing to Cast</b> a spell.",
+        "scale_en": 0.9
+      }
+    }
+  ]
+}

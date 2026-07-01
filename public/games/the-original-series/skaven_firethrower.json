@@ -1,0 +1,44 @@
+{
+  "weight": "negligible",
+  "name": {
+    "value": "FIRE THROWER",
+    "scale": 1,
+    "value_en": "FIRE THROWER",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "SKAVEN ANTI-FLYER WEAPON",
+    "scale": 0.75,
+    "value_en": "SKAVEN ANTI-FLYER WEAPON",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "Honors: 1",
+    "scale": 0.8,
+    "value_en": "Honors: 1",
+    "scale_en": 0.8
+  },
+  "cost": {
+    "value": "25 pts",
+    "scale": 1,
+    "value_en": "25 pts",
+    "scale_en": 1
+  },
+  "notes": [
+    {
+      "height": 100,
+      "title": {
+        "value": "EFFECT",
+        "scale": 1,
+        "value_en": "EFFECT",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style='font-size:32px;;padding:4px 8px;text-align:left;'><b>Range</b>: 2d6\"<br><b>Effect</b>: Roll 3d6, check for doubles:<br><b>Double 1</b>: Firethrower explodes discard firethrower then do 1 damage to a random low location (reroll misses)<br><b>Double 2-5</b>: Do one wound, no save<br><b>Double 6</b>: Target is destroyed</div>",
+        "scale": 1,
+        "value_en": "<div style='font-size:32px;;padding:4px 8px;text-align:left;'><b>Range</b>: 2d6\"<br><b>Effect</b>: Roll 3d6, check for doubles:<br><b>Double 1</b>: Firethrower explodes discard firethrower then do 1 damage to a random low location (reroll misses)<br><b>Double 2-5</b>: Do one wound, no save<br><b>Double 6</b>: Target is destroyed</div>",
+        "scale_en": 1
+      }
+    }
+  ]
+}

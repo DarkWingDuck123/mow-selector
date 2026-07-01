@@ -1,75 +1,240 @@
 {
-  "weight":"heavy",
-  "name":{"value":"DOOMBRINGER","scale":1.0},
-  "type":{"value":"SKAVEN MAN O'WAR","scale":1.0},
-  "honors":{"value":"Honors: 6", "scale":0.8},
-  "cost":{"value":"150 pts", "scale":1.0},
-  "crewTitle":{"value":"CREW","scale":1.0},
-  "crew":5,
-  "moveTitle":{"value":"MOVE","scale":1.0},
-  "move":{"value":"<div style=\"font-size:24px\">OARS 5\"</div>","scale":0.75},
-  "upperNotes":[{"value":"5\" straight line | 1/2 move per 45 degree turn | may reverse upto 2\"","scale":0.8}],
-  "highLow":[{"title":"LOW","height":50},{"title":"HIGH","height":50}],
-  "dmgBoxes":[
-    {"width":33, "height":40, "left":0, "bottom":60,
-     "name":{"value":"PADDLE WHEEL (P)", "scale":0.85},
-     "zone":"4",
-     "save":"5+",
-     "isHorizontal":false,
-     "boxes":[{"value":"No effect", "scale":1.0},{"value":"<b>Wheel Lost</b> - Move reduced by 1\"", "scale":0.8}],
-     "notes":{"value":"<i>No Criticals</i>", "scale":1.5}},
-    {"width":33, "height":40, "left":33, "bottom":60,
-     "name":{"value":"DEATHWHEEL", "scale":1.0},
-     "zone":"5",
-     "save":"4+",
-     "isHorizontal":false,
-     "boxes":[{"value":"No effect", "scale":1.0},{"value":"<b>Deathwheel Lost</b> - Ram attacks reduced", "scale":0.8}],
-     "notes":{"value":"<i>No Criticals</i>", "scale":1.5}},
-    {"width":34, "height":40, "left":66, "bottom":60,
-     "name":{"value":"PADDLE WHEEL (S)", "scale":0.85},
-     "zone":"6",
-     "save":"5+",
-     "isHorizontal":false,
-     "boxes":[{"value":"No effect", "scale":1.0},{"value":"<b>Wheel Lost</b> - Move reduced by 1\"", "scale":0.8}],
-     "notes":{"value":"<i>No Criticals</i>", "scale":1.5}},
-    {"width":50, "height":30, "left":0, "bottom":30,
-     "name":{"value":"FORECASTLE", "scale":1.0},
-     "zone":"2",
-     "save":"4+",
-     "isHorizontal":false,
-     "boxes":[{"value":"<b>One Fore Warpfire Destroyed</b>", "scale":0.8},
-              {"value":"<b>One Fore Warpfire Destroyed</b>", "scale":0.8}]},
-    {"width":50, "height":30, "left":50, "bottom":30,
-     "name":{"value":"AFT CASTLE", "scale":1.0},
-     "zone":"3",
-     "save":"4+",
-     "isHorizontal":false,
-     "boxes":[{"value":"<b>One Aft Warpfire Destroyed</b>", "scale":0.8},
-              {"value":"<b>One Aft Warpfire Destroyed</b>", "scale":0.8}]},
-    {"width":33, "height":30, "left":0, "bottom":0,
-     "name":{"value":"BOWS", "scale":1.0},
-     "zone":"4",
-     "save":"4+",
-     "isHorizontal":false,
-     "boxes":[{"value":"<b>One Broadside Destroyed</b>", "scale":1.0}]},
-    {"width":33, "height":30, "left":33, "bottom":0,
-     "name":{"value":"OAR DECK", "scale":1.0},
-     "zone":"5",
-     "save":"4+",
-     "isHorizontal":false,
-     "boxes":[{"value":"<b>One Broadside Destroyed</b>", "scale":1.0}]},
-    {"width":34, "height":30, "left":66, "bottom":0,
-     "name":{"value":"STERN", "scale":1.0},
-     "zone":"6",
-     "save":"4+",
-     "isHorizontal":false,
-     "boxes":[{"value":"<b>One Broadside Destroyed</b>", "scale":1.0}]}],
-  "criticalTitle":{"value":"BELOW WATERLINE","scale":1.0},
-  "criticalSave":"4+",
-  "criticalBoxes":4,
-  "lowerNotesTitle":{"value":"WEAPONS","scale":1.0},
-  "lowerNotes":{"value":"<b>Warpfire Cannons:</b> May repel boarders<br><b>Deathwheel Ram:</b> 3\" straight. Below waterline save, if failed:<br>1-2: 1pt, 3-4: 2pts, 5-6: 3pts","scale":1.0},
-  "foreBattery":"2",
-  "broadsideBattery":"2",
-  "aftBattery":"2"
+  "weight": "heavy",
+  "name": {
+    "value": "DOOMBRINGER",
+    "scale": 0.8,
+    "value_en": "DOOMBRINGER",
+    "scale_en": 0.8
+  },
+  "type": {
+    "value": "SKAVEN SHIP OF THE LINE",
+    "scale": 0.75,
+    "value_en": "SKAVEN SHIP OF THE LINE",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "Honors: 8",
+    "scale": 0.95,
+    "value_en": "Honors: 8",
+    "scale_en": 0.95
+  },
+  "cost": {
+    "value": "200 pts",
+    "scale": 1,
+    "value_en": "200 pts",
+    "scale_en": 1
+  },
+  "crew": 6,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW PURCHASED",
+    "scale": 0.75,
+    "value_en": "CREW PURCHASED",
+    "scale_en": 0.75
+  },
+  "move": {
+    "value": "<div style=\"font-size:24px\"><b>PADDLES</b> 6\"</div>May move backwards/forwards; unaffected by wind; Uses standard turn template",
+    "scale": 0.75,
+    "value_en": "<div style=\"font-size:24px\"><b>PADDLES</b> 6\"</div>May move backwards/forwards; unaffected by wind; Uses standard turn template",
+    "scale_en": 0.75
+  },
+  "upperNotes": [
+    {
+      "value": "<b>CREW</b>: Skaven crew must check morale if ship takes a critical hit.",
+      "scale": 0.95,
+      "value_en": "<b>CREW</b>: Skaven crew must check morale if ship takes a critical hit.",
+      "scale_en": 0.95
+    }
+  ],
+  "highLow": [
+    {
+      "title": "LOW",
+      "title_en": "LOW",
+      "height": 50
+    },
+    {
+      "title": "HIGH",
+      "title_en": "HIGH",
+      "height": 50
+    }
+  ],
+  "dmgBoxes": [
+    {
+      "width": 33,
+      "height": 50,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "PADDLE",
+        "scale": 1,
+        "value_en": "PADDLE",
+        "scale_en": 1
+      },
+      "zone": "2,3",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Speed<br> reduced<br>by 2\"",
+          "scale": 1,
+          "value_en": "Speed<br> reduced<br>by 2\"",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 34,
+      "height": 50,
+      "left": 33,
+      "bottom": 0,
+      "name": {
+        "value": "HULL",
+        "scale": 1,
+        "value_en": "HULL",
+        "scale_en": 1
+      },
+      "zone": "4,5",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 0.9,
+          "value_en": "",
+          "scale_en": 0.9
+        }
+      ]
+    },
+    {
+      "width": 33,
+      "height": 50,
+      "left": 67,
+      "bottom": 0,
+      "name": {
+        "value": "PADDLE",
+        "scale": 1,
+        "value_en": "PADDLE",
+        "scale_en": 1
+      },
+      "zone": "6",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Speed<br>reduced<br>by 2\"",
+          "scale": 1,
+          "value_en": "Speed<br>reduced<br>by 2\"",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 33,
+      "height": 50,
+      "left": 0,
+      "bottom": 50,
+      "name": {
+        "value": "PADDLE",
+        "scale": 0.85,
+        "value_en": "PADDLE",
+        "scale_en": 0.85
+      },
+      "zone": "2",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Speed<br>reduced<br>by 1\"",
+          "scale": 1,
+          "value_en": "Speed<br>reduced<br>by 1\"",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 34,
+      "height": 50,
+      "left": 33,
+      "bottom": 50,
+      "name": {
+        "value": "GREAT BELL",
+        "scale": 1,
+        "value_en": "GREAT BELL",
+        "scale_en": 1
+      },
+      "zone": "3,4",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": "<b>Bell</b><br>destroyed",
+          "scale": 1,
+          "value_en": "<b>Bell</b><br>destroyed",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 33,
+      "height": 50,
+      "left": 67,
+      "bottom": 50,
+      "name": {
+        "value": "PADDLE",
+        "scale": 1,
+        "value_en": "PADDLE",
+        "scale_en": 1
+      },
+      "zone": "5,6",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Speed<br>reduced<br>by 1\"",
+          "scale": 1,
+          "value_en": "Speed<br>reduced<br>by 1\"",
+          "scale_en": 1
+        }
+      ]
+    }
+  ],
+  "criticalTitle": {
+    "value": "BELOW WATERLINE",
+    "scale": 1,
+    "value_en": "BELOW WATERLINE",
+    "scale_en": 1
+  },
+  "criticalSave": "4+",
+  "criticalBoxes": 4,
+  "lowerNotesTitle": {
+    "value": "WEAPONS",
+    "scale": 1,
+    "value_en": "WEAPONS",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Great Bell</b>: 1 firing 360 degrees, my not repel boarders.<br>Roll (2 + Volume) d6. All enemies within range of highest double affected. Apply all doubles, highest first. <b>1</b>: Bell explodes; <b>2</b>: unmoved ships cannot move this turn; <b>3</b>: unfired ships cannot fire this turn; <b>4</b>: ships take 1 random hit; <b>5</b>: ships lose 1 crew; <b>6</b>: ships roll for critical damage. Increase volume by 1 each time bell is rung; decrease by 1 if its not rung.",
+    "scale": 0.55,
+    "value_en": "<b>Great Bell</b>: 1 firing 360 degrees, my not repel boarders.<br>Roll (2 + Volume) d6. All enemies within range of highest double affected. Apply all doubles, highest first. <b>1</b>: Bell explodes; <b>2</b>: unmoved ships cannot move this turn; <b>3</b>: unfired ships cannot fire this turn; <b>4</b>: ships take 1 random hit; <b>5</b>: ships lose 1 crew; <b>6</b>: ships roll for critical damage. Increase volume by 1 each time bell is rung; decrease by 1 if its not rung.",
+    "scale_en": 0.55
+  },
+  "fullTurret": "Bell",
+  "ammo": "5"
 }
