@@ -3,9 +3,9 @@
     "style": {
         "bgColor": "#1c2a08",
         "fgColor": "#d4cc20",
-        "parchmentColor": "#8a7840",
-        "waterColor": "#2a5c14",
-        "accentColor": "#7ab818"
+        "parchmentColor": "beige",
+        "waterColor": "lightblue",
+        "accentColor": "red"
     },
     "name_en": "Skaven Clanfleet",
     "name_de": "Skaven Clanfleet",
@@ -13,19 +13,7 @@
     "name_fr": "Skaven Clanfleet",
     "validation_rules": [
         {
-            "rule": "Max 1 Man O'War per 1 Ship of the Line; First One Free"
-        },
-        {
-            "rule": "Max 2 Warp-Raider per 1 Doombringer, or 1 Deathburner"
-        },
-        {
-            "rule": "Max 1 Hellhammer per 2 Ship of the Line"
-        },
-        {
-            "rule": "Max 1 Ironfist per 2 Ship of the Line"
-        },
-        {
-            "rule": "Max 1 Griffon Rider per 1 Ship of the Line"
+            "rule": "Max 1 Doombringer per 1000 pts"
         },
         {
             "rule": "Min 1 Doombringer"
@@ -37,13 +25,19 @@
             "rule": "Min 1 Warp-Raider"
         },
         {
-            "rule": "Max 1 Admiral's Man O'War Card"
-        },
-        {
-            "rule": "Max 34% Allies per 1000 pts"
+            "rule": "Max 33% Allies per 1000 pts"
         },
         {
             "rule": "Max 1 Sea Monster per 1 Ship of the Line"
+        },
+        {
+            "rule": "Max 1 Grey Seer"
+        },
+        {
+            "rule": "Max 1 Eshin Assassin per 500 pts"
+        },
+        {
+            "rule": "Max 3 Nurgle Chaos Reward Card per 1 Deathburner"
         },
         {
             "rule": "Max 1 Anti-Flyer per 1 Man O'War"
@@ -85,7 +79,7 @@
                     "squadron-size": 1,
                     "source": "PF",
                     "source_en": "PF",
-                    "cost": 150
+                    "cost": 200 
                 },
                 {
                     "id": "skaven_deathburner",
@@ -99,7 +93,7 @@
                     "squadron-size": 3,
                     "source": "PF",
                     "source_en": "PF",
-                    "cost": 300
+                    "cost": 150
                 },
                 {
                     "id": "skaven_warpraider",
@@ -127,20 +121,26 @@
             "expanded": true,
             "units": [
                 {
-                    "id": "skaven_admiralmanowarcard",
-                    "name": "Admiral's Man O'War Card",
-                    "name_en": "Admiral's Man O'War Card",
+                    "id": "nurglecard",
+                    "weight": "negligible",
+                    "name": "Nurgle Chaos Reward Card",
+                    "name_en": "Nurgle Chaos Reward Card",
                     "type": "card",
+                    "type_name": "Chaos Reward Card",
+                    "type_name_en": "Chaos Reward Card",
                     "source": "PF",
                     "source_en": "PF",
-                    "cost": "0"
+                    "cost": "25"
                 },
                 {
-                    "id": "manowarcard",
-                    "name_en": "Man O'War Card",
+                    "id": "skaven_firethrower",
+                    "weight": "negligible",
+                    "name": "Fire Thrower",
+                    "name_en": "Fire Thrower",
                     "type": "card",
-                    "source": "MoW",
-                    "source_en": "MoW",
+                    "type_name": "Anti-Flyer",
+                    "source": "SoB",
+                    "source_en": "SoB",
                     "cost": "25"
                 },
                 {
@@ -166,8 +166,8 @@
                     "cost": "0"
                 },
                 {
-                    "id": "skaven_blank",
-                    "name_en": "Empire Symbol",
+                    "id": "skaven_magicrules",
+                    "name_en": "Magic Rules - Skaven",
                     "type": "card",
                     "cost": "0"
                 },
@@ -190,9 +190,11 @@
             "units": [
                 {
                     "id": "admiral",
-                    "name": "Admiral",
-                    "name_en": "Admiral",
-                    "description_en": "(A) +1 CC",
+                    "name": "Skaven Warlord",
+                    "name_en": "Skaven Warlord",
+                    "type_name": "Skaven Admiral",
+                    "type_name_en": "Skaven Admiral",
+                    "description_en": "(W) +1 CC",
                     "type": "crew",
                     "source": "PF",
                     "source_en": "PF",
@@ -202,6 +204,8 @@
                     "id": "slave",
                     "name": "Slave",
                     "name_en": "Slave",
+                    "type_name": "Skaven Crew",
+                    "type_name_en": "Skaven Crew",
                     "description_en": "(S) -1 CC",
                     "type": "crew",
                     "source": "PF",
@@ -212,6 +216,8 @@
                     "id": "clanrat",
                     "name": "Clanrat",
                     "name_en": "Clanrat",
+                    "type_name": "Skaven Crew",
+                    "type_name_en": "Skaven Crew",
                     "description_en": "Regular Crew",
                     "type": "crew",
                     "source": "PF",
@@ -222,6 +228,8 @@
                     "id": "stormvermin",
                     "name": "Storm Vermin",
                     "name_en": "Storm Vermin",
+                    "type_name": "Skaven Crew",
+                    "type_name_en": "Skaven Crew",
                     "description_en": "(C) +1 CC",
                     "type": "crew",
                     "source": "PF",
@@ -232,6 +240,8 @@
                     "id": "ratogre",
                     "name": "Rat Ogre",
                     "name_en": "Rat Ogre",
+                    "type_name": "Skaven Crew",
+                    "type_name_en": "Skaven Crew",
                     "description_en": "(O) +1 CC when leading",
                     "type": "crew",
                     "source": "PF",
@@ -242,11 +252,37 @@
                     "id": "eshin",
                     "name": "Eshin Assassin",
                     "name_en": "Eshin Assassin",
+                    "type_name": "Skaven Crew",
+                    "type_name_en": "Skaven Crew",
                     "description_en": "(E) Precombat roll 1 die, 5-6 remove 1 enemy crew then remove assassin",
                     "type": "crew",
                     "source": "PF",
                     "source_en": "PF",
                     "cost": "50"
+                },
+                {
+                    "id": "greyseer1",
+                    "name": "Warlock Champion",
+                    "name_en": "Warlock Champion",
+                    "type_name": "Grey Seer",
+                    "type_name_en": "Grey Seer",
+                    "description_en": "(C) start with 24 warpstone and all skaven spells, +1 to cast per warpsonte used, if failed to cast roll d6 per warpstone used and consult failed to cast table.",
+                    "type": "crew",
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": "100"
+                },
+                {
+                    "id": "greyseer2",
+                    "name": "Warlock Master",
+                    "name_en": "Warlock Master",
+                    "type_name": "Grey Seer",
+                    "type_name_en": "Grey Seer",
+                    "description_en": "(M) +1 cast/dispell, start with 24 warpstone and all skaven spells, +1 to cast per warpsonte used, if failed to cast roll d6 per warpstone used and consult failed to cast table.",
+                    "type": "crew",
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": "150"
                 }
             ]
         },
@@ -457,6 +493,9 @@
         }
     ],
     "freebies": [
+        {
+            "free": "1 Skaven Warlord"
+        },
         {
             "free": "2 Slave per 100 pts"
         },

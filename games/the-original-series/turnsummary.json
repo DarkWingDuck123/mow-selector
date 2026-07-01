@@ -8,7 +8,7 @@
     {
       "height": 100,
       "title": {"value": "SUMMARY", "scale": 1.0},
-      "note": {"value": "<div style='font-size:18px;;padding:4px 8px;text-align:left;'>1. do stuff<br>2. do more stuff<br>3. do even more stuff<br>4. end phase</div>", "scale": 1.0}
+      "note": {"value": "<div style='font-size:24px;;padding:4px 8px;text-align:left;'><ol type='1'><li><b>Initiative Phase</b> Each side rolls a d6<br>If a tie, wind changes direction; <i>even</i> 1 position clockwise; <i>odd</i> 1 position anticlockwise. Reroll initiative.<br><b><li>Magic Phase</b>: The player with initiative may cast a spell, then the other player may cast a spell.<br><b><li>Battle Phase</b><br>   Starting with the initiative winner, take turns moving ships/squadrons.<br><ol type='a'><li><i>Move</i><li><i>Combat</i><li><i>Ramming and Boarding</i></ol><li><b>End Phase</b><br>Pick up survivors; Remove debris; Fires spread; Move stragglers; Scuttle ships; Remove counters; Pick up Magic Cards; Decide victory</ol></div>", "scale": 1.0}
     }
   ]
 }

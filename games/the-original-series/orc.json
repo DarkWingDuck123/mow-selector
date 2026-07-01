@@ -264,10 +264,26 @@
                     "cost": "0"
                 },
                 {
+                    "id": "damagetables",
+                    "weight": "negligible",
+                    "name": "Damage Tables",
+                    "name_en": "Damage Tables",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
                     "id": "orc_specialrules",
                     "weight": "negligible",
                     "name": "Special Rules - Orc",
                     "name_en": "Special Rules - Orc",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "colorspell_magicrules",
+                    "weight": "negligible",
+                    "name": "Color Wizard Summary",
+                    "name_en": "Color Wizard Summary",
                     "type": "card",
                     "cost": "0"
                 },

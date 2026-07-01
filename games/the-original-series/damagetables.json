@@ -1,0 +1,74 @@
+{
+  "weight": "negligible",
+  "name": {
+    "value": "DAMAGE TABLES",
+    "scale": 1,
+    "value_en": "DAMAGE TABLES",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "COMMON TABLES",
+    "scale": 1,
+    "value_en": "COMMON TABLES",
+    "scale_en": 1
+  },
+  "honors": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "notes": [
+    {
+      "height": 33,
+      "title": {
+        "value": "CRITICAL HIT TABLE",
+        "scale": 1,
+        "value_en": "CRITICAL HIT TABLE",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<b>1</b>: Make a roll on the <i>Captain's Chart.</i><br><b>2</b>: Replace the damager marker on this location with a blaze marker.<br><b>3</b>: The ship loses 1 crew.<br><b>4</b>: The ship takes 1 Below the Waterline (BtW) hit.<br><b>5</b>: The ship takes 2 BtW hits.<br><b>6</b>: The ship takes 3 BtW hits.",
+        "scale": 1,
+        "value_en": "<b>1</b>: Make a roll on the <i>Captain's Chart.</i><br><b>2</b>: Replace the damager marker on this location with a blaze marker.<br><b>3</b>: The ship loses 1 crew.<br><b>4</b>: The ship takes 1 Below the Waterline (BtW) hit.<br><b>5</b>: The ship takes 2 BtW hits.<br><b>6</b>: The ship takes 3 BtW hits.",
+        "scale_en": 1
+      }
+    },
+    {
+      "height": 34,
+      "title": {
+        "value": "BLAZE SPREADING TABLE",
+        "scale": 1,
+        "value_en": "BLAZE SPREADING TABLE",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "During the <b>End Phase</b>, roll on this table for each blaze marker.<br><b>1</b>: Blaze goes out. Replace blaze marker with damage marker.<br><b>2-3</b>: Blaze doesn't spread.<br><b>4</b>: Blaze spreads forward. Place another blaze marker.<br><b>5</b>: Blaze spreads upward. Place another blaze marker.<br><b>6</b>: Blaze spreads backwards. Place another blaze marker.",
+        "scale": 1,
+        "value_en": "During the <b>End Phase</b>, roll on this table for each blaze marker.<br><b>1</b>: Blaze goes out. Replace blaze marker with damage marker.<br><b>2-3</b>: Blaze doesn't spread.<br><b>4</b>: Blaze spreads forward. Place another blaze marker.<br><b>5</b>: Blaze spreads upward. Place another blaze marker.<br><b>6</b>: Blaze spreads backwards. Place another blaze marker.",
+        "scale_en": 1
+      }
+    },
+    {
+      "height": 33,
+      "title": {
+        "value": "CAPTAIN'S CHART",
+        "scale": 1,
+        "value_en": "CAPTAIN'S CHART",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<b>1</b>: <i>Captain's maps destroyed.</i> The ship may not move this turn.<br><b>2</b>: <i>Treasure chest hit, spilling gold.</i> The ship may not fire this turn.<br><b>3</b>: <i>Captain killed.</i> The ship may not move or fire this turn.<br><b>4</b>: <i>Captain knocked overboard.</i> Roll d6: <b>1-2</b> Ship makes 2\" left turn. <b>3-4</b> Ship make 2\" right turn. <b>5-6</b>: Ship moves 2\" straight ahead.<br><b>5</b>: <i>Rum stash hit.</i> Roll d6 for each crew, on a 6 remove the crew.<br><b>6</b>: <i>Mutiny!</i> Roll d6 for each crew, on a 5-6 remove the crew.",
+        "scale": 1,
+        "value_en": "<b>1</b>: <i>Captain's maps destroyed.</i> The ship may not move this turn.<br><b>2</b>: <i>Treasure chest hit, spilling gold.</i> The ship may not fire this turn.<br><b>3</b>: <i>Captain killed.</i> The ship may not move or fire this turn.<br><b>4</b>: <i>Captain knocked overboard.</i> Roll d6: <b>1-2</b> Ship makes 2\" left turn. <b>3-4</b> Ship make 2\" right turn. <b>5-6</b>: Ship moves 2\" straight ahead.<br><b>5</b>: <i>Rum stash hit.</i> Roll d6 for each crew, on a 6 remove the crew.<br><b>6</b>: <i>Mutiny!</i> Roll d6 for each crew, on a 5-6 remove the crew.",
+        "scale_en": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "weight": "negligible",
+  "name": {
+    "value": "IRONFIST RULES",
+    "scale": 1,
+    "value_en": "IRONFIST RULES",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "EMPIRE RULES",
+    "scale": 1,
+    "value_en": "EMPIRE RULES",
+    "scale_en": 1
+  },
+  "honors": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "notes": [
+    {
+      "height": 100,
+      "title": {
+        "value": "IRONFIST RULES",
+        "scale": 1,
+        "value_en": "IRONFIST RULES",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style='font-size:22px'><b>Range</b>: The <b>Ironfist</b> uses the 12\" bolt template. The <b>Ironfist</b> may only target ships at <b>Long</b> range.<br><b>Long</b> range is 6\" to 12\"<br><b>To Hit</b>: If your target is in range and unobstructed, place a 1\" template on the target. If your target is in range but obstructed roll a d6; <b>1</b>: falls short by d6\"; <b>2-5</b>: hits the target; <b>6</b>: goes long by d6\"; place the 1\" template where the shot hits. In either case all ships under the template take a 1 die high <b>Catapult</b> attack.<br><b>Catapult</b>: <b>Catapults</b> always aim high. A target hit by a <b>Catapult</b> may take damage in multiple locations as the projectile falls through the ship from above. If a location is damaged, also roll to see if the location below is damaged with a +1 saving throw (cumulative). If there is a choice between two locations, roll a die; 1-3 hits the left, 4-6 hits the right. If the location is already damaged, the projectile falls through and does not incur an additional +1 saving throw. In this way a catapult shot might fall all the way through a ship.<br><b>Boarding Action</b>: The <b>Ironfist</b> may not repel boarders.</div>",
+        "scale": 0.9,
+        "value_en": "<div style='font-size:22px'><b>Range</b>: The <b>Ironfist</b> uses the 12\" bolt template. The <b>Ironfist</b> may only target ships at <b>Long</b> range.<br><b>Long</b> range is 6\" to 12\"<br><b>To Hit</b>: If your target is in range and unobstructed, place a 1\" template on the target. If your target is in range but obstructed roll a d6; <b>1</b>: falls short by d6\"; <b>2-5</b>: hits the target; <b>6</b>: goes long by d6\"; place the 1\" template where the shot hits. In either case all ships under the template take a 1 die high <b>Catapult</b> attack.<br><b>Catapult</b>: <b>Catapults</b> always aim high. A target hit by a <b>Catapult</b> may take damage in multiple locations as the projectile falls through the ship from above. If a location is damaged, also roll to see if the location below is damaged with a +1 saving throw (cumulative). If there is a choice between two locations, roll a die; 1-3 hits the left, 4-6 hits the right. If the location is already damaged, the projectile falls through and does not incur an additional +1 saving throw. In this way a catapult shot might fall all the way through a ship.<br><b>Boarding Action</b>: The <b>Ironfist</b> may not repel boarders.</div>",
+        "scale_en": 0.9
+      }
+    }
+  ]
+}

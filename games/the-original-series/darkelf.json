@@ -216,10 +216,26 @@
                     "cost": "0"
                 },
                 {
+                    "id": "damagetables",
+                    "weight": "negligible",
+                    "name": "Damage Tables",
+                    "name_en": "Damage Tables",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
                     "id": "darkelf_specialrules",
                     "weight": "negligible",
                     "name": "Special Rules - Dark Elf",
                     "name_en": "Special Rules - Dark Elf",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "colorspell_magicrules",
+                    "weight": "negligible",
+                    "name": "Color Wizard Summary",
+                    "name_en": "Color Wizard Summary",
                     "type": "card",
                     "cost": "0"
                 },

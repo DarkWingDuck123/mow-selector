@@ -1,0 +1,59 @@
+{
+  "weight": "negligible",
+  "name": {
+    "value": "SPECIAL RULES",
+    "scale": 1,
+    "value_en": "SPECIAL RULES",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "BRETTONIAN RULES",
+    "scale": 0.75,
+    "value_en": "BRETTONIAN RULES",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "notes": [
+    {
+      "height": 30,
+      "title": {
+        "value": "MOVEMENT",
+        "scale": 1,
+        "value_en": "MOVEMENT",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style='font-size:24px'>Brettonian sailing ships can move 9\" during the Battle Phase whether the wind is astern or coming from the side. Only against the wind makes any difference.</div>",
+        "scale": 1,
+        "value_en": "<div style='font-size:24px'>Brettonian sailing ships can move 9\" during the Battle Phase whether the wind is astern or coming from the side. Only against the wind makes any difference.</div>",
+        "scale_en": 1
+      }
+    },
+    {
+      "height": 70,
+      "title": {
+        "value": "CATAPULTS",
+        "scale": 1,
+        "value_en": "CATAPULTS",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style='font-size:24px'>Some Brettonian ships are armed with <b>Catapults</b>. <b>Catapults</b> always aim high. A target hit by a <b>Catapult</b> may take damage in multiple locations as the projectile falls through the ship from above. If a location is damaged, also roll to see if the location below is damaged with a +1 saving throw (cumulative). If there is a choice between two locations, roll a die; 1-3 hits the left, 4-6 hits the right. If the location is already damaged, the projectile falls through and does not incur an additional +1 saving throw. In this way a catapult shot might fall all the way through a ship.</div>",
+        "scale": 1,
+        "value_en": "<div style='font-size:24px'>Some Brettonian ships are armed with <b>Catapults</b>. <b>Catapults</b> always aim high. A target hit by a <b>Catapult</b> may take damage in multiple locations as the projectile falls through the ship from above. If a location is damaged, also roll to see if the location below is damaged with a +1 saving throw (cumulative). If there is a choice between two locations, roll a die; 1-3 hits the left, 4-6 hits the right. If the location is already damaged, the projectile falls through and does not incur an additional +1 saving throw. In this way a catapult shot might fall all the way through a ship.</div>",
+        "scale_en": 1
+      }
+    }
+  ]
+}
