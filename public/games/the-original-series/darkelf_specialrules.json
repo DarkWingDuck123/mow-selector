@@ -1,14 +1,19 @@
 {
   "weight": "negligible",
   "name": {"value": "SPECIAL RULES", "scale": 1.0},
-  "type": {"value": "EMPIRE", "scale": 0.75},
+  "type": {"value": "DARK ELF", "scale": 0.75},
   "honors": {"value": "", "scale": 1.0},
-  "cost": {"value": "0 pts", "scale": 1.0},
+  "cost": {"value": "", "scale": 1.0},
   "notes": [
     {
-      "height": 100,
-      "title": {"value": "SPECIAL RULES", "scale": 1.0},
-      "note": {"value": "", "scale": 1.0}
+      "height": 60,
+      "title": {"value": "BLACK ARK OF NAGGAROTH", "scale": 1.0},
+      "note": {"value": "<div style='font-size:18px'><b>Movement</b>: Black Arks are immune to spells that effect their movement. Black Arks move ships out of their when when moving. Move any ship in it's way the minimum distance to make way.<br><br><b>Berth</b>: The <b>Black Ark</b> acts as a berth for lesser ships. Monsters may enter the ship. In the <b>End Phase</b> roll a d6; <b>1</b> The Monster is destroyed; <b>2-5</b>: The Monster regainst a wound; <b>6</b>: The Monster regains all wounds.<br><br><b>Stragglers</b>: Stragglers with 6\" of the Ark act as Independents until their squadron's flagship moves within 6\".</div>", "scale": 1.0}
+    },
+    {
+      "height": 40,
+      "title": {"value": "MONSTERS", "scale": 1.0},
+      "note": {"value": "<div style='font-size:18px'><b>Crew</b>: Monsters (i.e. <b>DeathFortress</b> & <b>Doomreaver</b>) have a crew of 1 for the purpose of spells. If the crew is destroyed, remove the model as the Monster flees te seascape.<br><br><b>Boarding Actions:</b> Boarding actions are against the Monster (instead of Crew).<br><b>Critical Hits</b>: Monsters do not take <b>Critical Hits</b> or be set aflame. BtW hits only wound the Monster.</div>", "scale": 1.0}
     }
   ]
 }

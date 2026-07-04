@@ -1,0 +1,19 @@
+{
+  "weight": "negligible",
+  "name": {"value": "HIGH MAGIC RULES", "scale": 1.0},
+  "type": {"value": "ELF", "scale": 0.75},
+  "honors": {"value": "", "scale": 1.0},
+  "cost": {"value": "", "scale": 1.0},
+  "notes": [
+    {
+      "height": 20,
+      "title": {"value": "POWER POINTS", "scale": 0.75},
+      "note": {"value": "", "scale": 1.0}
+    },
+    {
+      "height": 80,
+      "title": {"value": "HIGH MAGIC", "scale": 1},
+      "note": {"value": "<div style='font-size:19px'><b>Wizards</b>: High Elfs may purchase either a normal color <b>Wizard</b> or a <b>Mage</b>.<br><b>Spell Deck</b>: <b>Mages</b> may draw from either the <b>High Magic</b> or <b>Color</b> spell decks.<br><b>Power Points</b>: A <b>Mage</b> generates <b>Power Points</b> at the start of the Magic phase. If a <b>Mage</b> goes over their max power value, then decrease to their max and then roll on the <b>Feedback</b> table. A Mage may skip generating <b>Power Points</b>, but then may not exchange or discard spells in the End Phase.<br><b>Casting</b>: <b>Power Points</b> can be spent for +1's to the casting attempt (even for Color Spells). If you fail to cast a spell (1's always fail), roll on the <b>Feedback</b> table.<br><b>Dispelling Mage Spells</b>: Attempts to dispel a <b>Mage's</b> spell incur a -1 per pip over the casting value of the caster's roll.<br><b>Dispelling</b>: Expend the <b>Power Points</b> indicated on the Mage's level then roll the casting value of the spell being dispelled. Before rolling, may expend additional <b>Power Points</b> for +1's to dispell.<br><b>Feedback</b>: Roll d6 + Mage level - Power Points used/over; <b>0 or less</b> <b>Mage</b> explodes, does a random Low hit; <b>1-2</b> <b>Mage</b> loses all saved <b>Power Points</b>; <b>3-4</b> <b>Mage</b> loses d6 <b>Power Points</b>; <b>5+</b>: <b>Mage</b> loses d3 <b>Power Points</b>.</div>", "scale": 0.75}
+    }
+  ]
+}

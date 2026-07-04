@@ -1,0 +1,14 @@
+{
+  "weight": "negligible",
+  "name": {"value": "ORC WAAGH MAGIC", "scale": 1.0},
+  "type": {"value": "ORC", "scale": 0.75},
+  "honors": {"value": "", "scale": 1.0},
+  "cost": {"value": "0 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 100,
+      "title": {"value": "MAGIC RULES", "scale": 1},
+      "note": {"value": "<div style='font-size:16px'><b>Shamans</b>: Orcs may have multiple <b>Shamans</b>. The Flagship may have upto a level 5, Man O'War may have upto level 3, squadron flagships may have level 1 <b>Goblin Shamans</b>. You may cast one spell per shaman per turn.<br><b>Waagh Cards</b>: Each <b>Shaman</b> draws <b>Waagh Cards</b> based on the total the number of crew within 6\" of the <b>Shamans</b> ship, roll a die for each crew. On a 3+ draw a card for that <b>Shaman</b>. Do not look at the cards.<br><b>Casting a Spell</b>: Choose a Shaman, and look at their <b>Waagh Cards</b>. You must meet or exceed the Power Cost on the spell using Power Cards. Then roll to see if you successfully cast the spell. If you fail this roll, roll on the <b>Kickback</b> table. You may save <b>Event Cards</b> for later use if they don't say to use immediately.<br><b>Postponing Casting</b>: Once a spell is successfully cast, you may postpone it's effect. Roll a d6 and add the <b>Shaman's</b> level. on a 7+ you've postponed the spell and may activate it during the battle phase in place of activating a ship. If you fail to postone, the spell goes off immediately against the <b>Shaman's</b> ship and the <b>Shaman</b> rolls on the <b>Kickback</b> table.<br><b>Dispelling with Waagh Magic (7+)</b>: A shaman may attempt to dispel a spell targeting a ship within it's dispel range, or if the target is the seascape and the casting Wizard is within the dispel range. Use any revealed <b>Power Cards</b> to add a +1 to the dispel attempt.<br><b>Dispelling Waagh Magic</b>: Opponent may dispel Waagh Magic with any card as normal. Opponent may attempt to dispel each Waagh spell cast. Each excess <b>Power Card</b> used to cast the spell gives a -1 to the dispel attempt. Opponent may attempt to dispel each cast spell once. Opponent does not get a bonus for a Lord Level Wizards versus Waagh Magic.<br><b>Kickback Table</b>: Roll a d6 + Shaman Level - Spell's Power Level; <b>0 or less</b> <i>Kabang</i> Remove Shaman; <b>1-3</b>: Discard Shaman's Waagh cards, may not draw new ones next turn; <b>4-5</b>: Discard Shaman's Waagh cards, may draw as normal next turn; <b>6+</b>: No effect</div>", "scale": 0.75}
+    }
+  ]
+}

@@ -1,13 +1,18 @@
 {
   "weight": "negligible",
   "name": {"value": "SPECIAL RULES", "scale": 1.0},
-  "type": {"value": "EMPIRE", "scale": 0.75},
+  "type": {"value": "ORC", "scale": 0.75},
   "honors": {"value": "", "scale": 1.0},
-  "cost": {"value": "0 pts", "scale": 1.0},
+  "cost": {"value": "", "scale": 1.0},
   "notes": [
     {
-      "height": 100,
-      "title": {"value": "SPECIAL RULES", "scale": 1.0},
+      "height": 20,
+      "title": {"value": "KUSTOM KARDS", "scale": 1.0},
+      "note": {"value": "Each Man O'War may have upto 2 <b>Kustom Kards</b>. Each card adds to the battle honors of that Man O'War.", "scale": 1.0}
+    },
+    {
+      "height": 80,
+      "title": {"value": "OTHER RULES", "scale": 1.0},
       "note": {"value": "", "scale": 1.0}
     }
   ]

@@ -109,6 +109,14 @@
             "expanded": false,
             "units": [
                 {
+                    "id": "seamonster_rules",
+                    "weight": "negligible",
+                    "name": "Sea Monster Summary",
+                    "name_en": "Sea Monster Summary",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
                     "id": "seamonster_behemoth",
                     "type": "seamonster",
                     "type_name": "Sea Monster",

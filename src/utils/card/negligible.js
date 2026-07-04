@@ -179,6 +179,7 @@ function rowTwo(w, h, x, y, meta, obj) {
                 + "position:absolute;"
                 + "top:0;"
                 + "padding:4px 8px;"
+                + "box-sizing: border-box;"
                 + scaleStyle(note.note)
                 + ";'>"
             + DOMPurify.sanitize(contents.value)

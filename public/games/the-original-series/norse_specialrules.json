@@ -1,0 +1,14 @@
+{
+  "weight": "negligible",
+  "name": {"value": "SPECIAL RULES", "scale": 1.0},
+  "type": {"value": "NORSE RAIDERS", "scale": 1.0},
+  "honors": {"value": "", "scale": 1.0},
+  "cost": {"value": "", "scale": 1.0},
+  "notes": [
+    {
+      "height": 100,
+      "title": {"value": "KINGSHIP", "scale": 1.0},
+      "note": {"value": "<div style='font-size:24px'><b>Crew</b>: Draw 4 specialist Norse crew counters between <b>Ulfwerener</b>, <b>Berserker</b>, <b>Huscarls</b> & <b>Bondsmen</b> to replace 4 of the crew on the <b>Kingship</b>. The distribution of counters from SoB was 6 of each. (Note: roll 4d4 with <b>1</b>: Ulfwerener, <b>2</b>: Berserker</b>, <b>3</b>: Huscarls, <b>4</b>: Bondsmen will give close to the same distribution). As such, a <b>Kingship</b> has 1 <b>Thrall</b> which acts as a normal crew.</div>", "scale": 1.0}
+    }
+  ]
+}

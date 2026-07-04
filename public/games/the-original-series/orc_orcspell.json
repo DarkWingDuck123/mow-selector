@@ -23,7 +23,7 @@
       "note": {"value": "", "scale": 1.0}
     },
     {
-      "height": 85,
+      "height": 70,
       "title": {"value": "", "scale": 1.0},
       "note": {"value": "", "scale": 1.0}
     }
@@ -38,7 +38,7 @@
           "note": {"value": "", "scale": 1.0}
         },
         {
-          "height": 85,
+          "height": 70,
           "title": {"value": "", "scale": 1.0},
           "note": {"value": "", "scale": 1.0}
         }
@@ -49,11 +49,16 @@
       "notes": [
         {
           "height": 15,
-          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "title": {"value": "POWER VALUE", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 3</div>", "scale": 1.0}
         },
         {
-          "height": 85,
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
           "title": {"value": "EFFECT", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Special<br><br>Place the range ruler so that it is touching the ship the Shaman is on. It does not have to correspond to the normal fire arcs. Any vessel, friend or foe, under the template suffers D3 hits. The saving throw modifier depends on Shaman level: 1=0, 2/3=-1, 4/5=-2.</div>", "scale": 1.0}
         }
@@ -64,11 +69,16 @@
       "notes": [
         {
           "height": 15,
-          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "title": {"value": "POWER VALUE", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 2</div>", "scale": 1.0}
         },
         {
-          "height": 85,
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
           "title": {"value": "EFFECT", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> A single friendly ship or squadron<br><br>The ships gain an additional 4+ dispel until the end of the turn. This dispel will only affect spells that are actually targeted at the ship or a ship within the squadron.</div>", "scale": 1.0}
         }
@@ -79,11 +89,16 @@
       "notes": [
         {
           "height": 15,
-          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "title": {"value": "POWER VALUE", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 3</div>", "scale": 1.0}
         },
         {
-          "height": 85,
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">5+</div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
           "title": {"value": "EFFECT", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship within 9\"<br><br>The ship is hit in the same way as a catapult. Roll to see which location is hit (a high location on appropriate vessels). This location is hit with a -2 save modifier. Lower locations have the save modifier reduced by one, rolling randomly if there is a choice of locations. See catapult rules for full details.</div>", "scale": 1.0}
         }
@@ -94,11 +109,16 @@
       "notes": [
         {
           "height": 15,
-          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "title": {"value": "POWER VALUE", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 2</div>", "scale": 1.0}
         },
         {
-          "height": 85,
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
           "title": {"value": "EFFECT", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> The Shaman<br><br>The Shaman's presence adds +3 to the ship's total in any boarding action this turn.</div>", "scale": 1.0}
         }
@@ -109,11 +129,16 @@
       "notes": [
         {
           "height": 15,
-          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "title": {"value": "POWER VALUE", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 4</div>", "scale": 1.0}
         },
         {
-          "height": 85,
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">5+</div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
           "title": {"value": "EFFECT", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any orc ships within range (Shaman level 1/2=6\", 3/4=9\", 5=12\")<br><br>All affected Orc ships gain +2 to their boarding rolls for the remainder of the turn. In addition, any enemy wizard within range of the spell must lose D6 spell cards from his hand immediately.</div>", "scale": 1.0}
         }
@@ -124,11 +149,16 @@
       "notes": [
         {
           "height": 15,
-          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "title": {"value": "POWER VALUE", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 4</div>", "scale": 1.0}
         },
         {
-          "height": 85,
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">5+</div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
           "title": {"value": "EFFECT", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any enemy ship within 9\"<br><br>The enemy vessel suffers a number of hits equal to the level of the caster. These hits are resolved with a -1 saving throw modifier. The ship may also be moved D6\" in a direction specified by the Orc player. This may result in running aground or collisions as normal.</div>", "scale": 1.0}
         }
@@ -139,11 +169,16 @@
       "notes": [
         {
           "height": 15,
-          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "title": {"value": "POWER VALUE", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 3</div>", "scale": 1.0}
         },
         {
-          "height": 85,
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
           "title": {"value": "EFFECT", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> A single friendly ship<br><br>The ship can be moved up to 9\" in any direction. The ship may pass over other ships and terrain without penalty. It may be placed facing in any direction and may move and fire normally in the next Battle Phase. The ship will become a straggler if moved out of the range of a squadron flagship.</div>", "scale": 1.0}
         }
@@ -154,11 +189,16 @@
       "notes": [
         {
           "height": 15,
-          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "title": {"value": "POWER VALUE", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 4</div>", "scale": 1.0}
         },
         {
-          "height": 85,
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">5+</div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
           "title": {"value": "EFFECT", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> The range rules<br><br>Each vessel under the range ruler loses a number of crew counters equal to the roll of a dice. Shaman level 1/2/3=D3-1 crew killed, 4/5=D3 crew killed.</div>", "scale": 1.0}
         }
@@ -169,11 +209,16 @@
       "notes": [
         {
           "height": 15,
-          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "title": {"value": "POWER VALUE", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 3</div>", "scale": 1.0}
         },
         {
-          "height": 85,
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">4+</div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
           "title": {"value": "EFFECT", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> Any orc ships within range (Shaman level 1/2=6\", 3/4=9\", 5=12\")<br><br>All affected Orc ships gain +1 to their total in any boarding action this turn.</div>", "scale": 1.0}
         }
@@ -184,11 +229,16 @@
       "notes": [
         {
           "height": 15,
-          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "title": {"value": "POWER VALUE", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">Power: 3</div>", "scale": 1.0}
         },
         {
-          "height": 85,
+          "height": 15,
+          "title": {"value": "CASTING VALUE", "scale": 1.0},
+          "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\">5+</div>", "scale": 1.0}
+        },
+        {
+          "height": 70,
           "title": {"value": "EFFECT", "scale": 1.0},
           "note": {"value": "<div style=\"font-size:20px;padding:4px 8px\"><b>Cast On:</b> The enemy Wizard<br><br>Each player rolls a D6 and adds their Wizard's level. The Orc player can also add +1 to his roll if he rolled a 6 to cast this spell. If the enemy Wizard scores less than the Shaman then he is killed and removed from the game. If the scores are equal or the Shaman loses there is no further effect.</div>", "scale": 1.0}
         }

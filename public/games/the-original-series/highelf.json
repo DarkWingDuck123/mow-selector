@@ -238,6 +238,14 @@
                     "cost": "0"
                 },
                 {
+                    "id": "highelf_magicrules",
+                    "weight": "negligible",
+                    "name": "High Mage Summary",
+                    "name_en": "High Mage Summary",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
                     "id": "colorspell_magicrules",
                     "weight": "negligible",
                     "name": "Color Wizard Summary",
@@ -358,6 +366,19 @@
                     "source": "MoW",
                     "source_en": "MoW",
                     "cost": "-"
+                },
+                {
+                    "id": "wardancer",
+                    "name": "Wardancers",
+                    "name_en": "Wardancers",
+                    "type_name": "crew",
+                    "type_name_en": "crew",
+                    "description": "(D) reroll CC, Remove with last crew, Max 1 per ship",
+                    "description_en": "(D) reroll CC, Remove with last crew, Max 1 per ship",
+                    "type": "crew",
+                    "source": "MoW",
+                    "source_en": "MoW",
+                    "cost": "25"
                 },
                 {
                     "id": "wizard1",
@@ -513,6 +534,14 @@
             "type": "UNIT",
             "expanded": false,
             "units": [
+                {
+                    "id": "seamonster_rules",
+                    "weight": "negligible",
+                    "name": "Sea Monster Summary",
+                    "name_en": "Sea Monster Summary",
+                    "type": "card",
+                    "cost": "0"
+                },
                 {
                     "id": "seamonster_behemoth",
                     "type": "seamonster",
