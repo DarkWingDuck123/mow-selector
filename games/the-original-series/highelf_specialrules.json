@@ -1,14 +1,19 @@
 {
   "weight": "negligible",
   "name": {"value": "SPECIAL RULES", "scale": 1.0},
-  "type": {"value": "EMPIRE", "scale": 0.75},
+  "type": {"value": "ELF", "scale": 0.75},
   "honors": {"value": "", "scale": 1.0},
-  "cost": {"value": "0 pts", "scale": 1.0},
+  "cost": {"value": "", "scale": 1.0},
   "notes": [
     {
-      "height": 100,
-      "title": {"value": "SPECIAL RULES", "scale": 1.0},
-      "note": {"value": "", "scale": 1.0}
+      "height": 30,
+      "title": {"value": "ELF SEAMANSHIP", "scale": 1.0},
+      "note": {"value": "<div style='font-size:20px'>High Elf ships move twice in a turn, but only attack or board once. They may Move, Move, Attack -or- Move, Attack, Move -or- Attack, Move (forgoing their first Move). They may even take their second Move after boarding.</div>", "scale": 1.0}
+    },
+    {
+      "height": 70,
+      "title": {"value": "DRAGONBLADES", "scale": 1.0},
+      "note": {"value": "<div style='font-size:18px'><b>Dragonblades</b> are a special form of ram.<br><br>A ship rammed by a <b>Dragonblade</b> that subsequently sinks is sheared through, and the <b>Dragonship</b> continues with it's current move (potentially ramming other ships).<br><br>Using the <b>Dragonblade</b> does not count as an attack.<br><br>A ship that does not sink when rammed by a <b>Dragonblade</b> is impaled. The <b>Dragonship</b> is stuck until that ship is sunk (either through scuttling or damage by it's <b>Eagleclaws</b>). If you do manage to sink the ship this way, you may move off using your second Move.<br><br>A ship with an intact <b>Dragonblade</b> may sail through wreckage with no penalty.</div>", "scale": 1.0}
     }
   ]
 }

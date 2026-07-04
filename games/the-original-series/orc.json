@@ -283,6 +283,14 @@
                     "cost": "0"
                 },
                 {
+                    "id": "orc_waaghmagic",
+                    "weight": "negligible",
+                    "name": "Waagh Magic Summary",
+                    "name_en": "Waagh Magic Summary",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
                     "id": "colorspell_magicrules",
                     "weight": "negligible",
                     "name": "Color Wizard Summary",
@@ -397,6 +405,14 @@
             "type": "UNIT",
             "expanded": false,
             "units": [
+                {
+                    "id": "seamonster_rules",
+                    "weight": "negligible",
+                    "name": "Sea Monster Summary",
+                    "name_en": "Sea Monster Summary",
+                    "type": "card",
+                    "cost": "0"
+                },
                 {
                     "id": "seamonster_behemoth",
                     "type": "seamonster",

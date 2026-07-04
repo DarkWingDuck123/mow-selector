@@ -133,7 +133,7 @@
                     "cost": "0"
                 },
                 {
-                    "id": "norse",
+                    "id": "norse_specialrules",
                     "weight": "negligible",
                     "name": "Special Rules - Norse",
                     "name_en": "Special Rules - Norse",
@@ -333,6 +333,14 @@
             "type": "UNIT",
             "expanded": false,
             "units": [
+                {
+                    "id": "seamonster_rules",
+                    "weight": "negligible",
+                    "name": "Sea Monster Summary",
+                    "name_en": "Sea Monster Summary",
+                    "type": "card",
+                    "cost": "0"
+                },
                 {
                     "id": "seamonster_behemoth",
                     "type": "seamonster",

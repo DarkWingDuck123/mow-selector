@@ -1,0 +1,21 @@
+{
+  "weight": "negligible",
+  "styleOverride": {
+    "bgColor": "DarkCyan",
+    "fgColor": "black",
+    "parchmentColor": "beige",
+    "waterColor": "lightblue",
+    "accentColor": "red"
+  },
+  "name": {"value": "SEA MONSTER RULES", "scale": 1.0},
+  "type": {"value": "SEA MONSTER", "scale": 0.75},
+  "honors": {"value": "", "scale": 1.0},
+  "cost": {"value": "", "scale": 1.0},
+  "notes": [
+    {
+      "height": 100,
+      "title": {"value": "RULES", "scale": 1.0},
+      "note": {"value": "<div style='font-size:16px'><b>Deployment</b>: Before setting up ships, starting with the first player, place <b>Sea Monster</b> templates face down anywhere on the seascape.<br><br><b>Summoning</b>: During the <i>Battle Phase</i> you may attempt to summon a <b>Sea Monster</b> instead of activating a ship. Roll a die, on a 4+ the <b>Sea Monster</b> is summoned within the bounds of the template and may act. You may adjust the summon roll by your <b>Wizard's</b> casting modifier.<br><br><b>Sea Monster Reaction Table</b>: If you roll a double during a <b>Sea Monster's</b> movement, look up the double: <b>1</b>: Un-summon the <b>Sea Monster</b>, opponent places template 2\" from any ship, a <b>Sea Monster</b> heals one wound each turn it's not on the seascape; <b>2</b>: <b>Sea Monster</b> frenzies, move toward nearest friendly vessel and, if reached, attack it; <b>3-5</b>: No effect; <b>6</b>: Move twice or attack twice this turn.<br><br><b>Diving</b>: Start of turn a <b>Sea Monster</b> may dive. Choose a target, the Sea Monster is submerged and moves straight toward the target. While submerged the <b>Sea Monster</b> is immune to all attacks, but may also not attack. At the start of it's next move, the <b>Sea Monster</b> surfaces and may not dive again that turn.<br><br><b>Attacks</b>: <b>Sea Monsters</b> make a special attack followed by a boarding action.<br><br><b>Sea Monsters in Combat</b>: If a <b>Sea Monster</b> is in combat and is targeted by another ship, roll a die, on a <b>1-3</b> the attacks are made against the ship in combat with the <b>Sea Monster</b>. In addition, spells cast against the <b>Sea Monster</b> also affect the entangled ship.<br><br><b>Against Flyers</b>: <b>Sea Monster's</b> defensive fire is equal to it's wounds, a <b>Sea Monster</b> wounded by a <b>Flyer</b> immediately dives.</div>", "scale": 0.75}
+    }
+  ]
+}

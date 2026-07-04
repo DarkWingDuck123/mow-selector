@@ -8,12 +8,12 @@
     {
       "height": 34,
       "title": {"value": "ENGINEERS", "scale": 1.0},
-      "note": {"value": "<div style='font-size:18px;;padding:4px 8px;text-align:left;'>Dwarf engineers are able to perform battlefield repairs. During the end phase, after checking if fires have spread, choose a location and roll a die. On a 5 or 6 that location is repaired.</div>", "scale": 1.0}
+      "note": {"value": "<div style='font-size:18px;;padding:4px 8px;text-align:left;'>Dwarf engineers are able to perform battlefield repairs. During the end phase, after checking if fires have spread, choose a location and roll a die. On a 5 or 6 that location is repaired. A ship with a <b>Master Engineer</b> may reroll this roll.</div>", "scale": 1.0}
     },
     {
       "height": 33,
       "title": {"value": "MAGIC", "scale": 1.0},
-      "note": {"value": "<div style='font-size:18px;;padding:4px 8px;text-align:left;'>Dwarf fleets may not have wizards. If a dwarf ships is effected by a spell, roll a die, on a 6 the ship is uneffected.</div>", "scale": 1.0}
+      "note": {"value": "<div style='font-size:18px;;padding:4px 8px;text-align:left;'>Dwarf fleets may not have wizards. If a dwarf ships is effected by a spell, roll a die, on a 6 the ship is uneffected. A fleet with an active <b>Runesmith</b> is uneffected on a 5 or 6.</div>", "scale": 1.0}
     },
     {
       "height": 33,
