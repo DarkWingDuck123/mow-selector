@@ -1,0 +1,14 @@
+{
+  "weight": "negligible",
+  "name": {"value": "CHAOS CREW EXPERIENCE", "scale": 1.0},
+  "type": {"value": "CREW CARD", "scale": 0.75},
+  "honors": {"value": "", "scale": 1.0},
+  "cost": {"value": "", "scale": 1.0},
+  "notes": [
+    {
+      "height": 100,
+      "title": {"value": "CHAOS CREW EXPERIENCE", "scale": 1.0},
+      "note": {"value": "<div style='font-size:20px'>After a battle, you may spend <b>Battle Honors</b> to represent gifts granted by the chaos powers. You may either draw experience tokens (or if lacking tokens) roll on the table below. Choose the number of gifts you will receive prior to determining any counters. Then draw or roll that many times. Each counter (or card) gains costs a number of <b>Battle Honors</b>. If you do not have the <b>Battle Honors</b>, then you gain one <b>Spawn</b>. A ship may have upto twice the number of Crew Counters it starts with, but when adding new crew, if it goes over, you must replace a different type of crew than the being added (in this way you might end up with an entire crew of <b>Spawn</b>).<br><br><b>Rolling Crew</b>: Roll a d20. <b>1-3</b>: <b>Spawn</b> (costs 0 <b>Battle Honors</b>); <b>4-7</b>: <b>Chaos Cultist</b> (costs 2 <b>Battle Honors</b>); <b>8-11</b>: <b>Beastmen</b> (costs 5 <b>Battle Honors</b>); <b>12-15</b>: <b>Chaos Warrior</b> (costs 10 <b>Battle Honors</b>); <b>16-17</b>: <b>Chaos Knight</b> (costs 20 <b>Battle Honors</b>); <b>18-19</b>: <b>Chaos Reward<b> (costs 12 <b>Battle Honors</b>); <b>20</b>: Roll again.<br><br><b>Chaos Reward Card</b>: Reward cards must be of the same patronage as the ship or squadron, May not have more reward cards than BtW boxes.</div>", "scale": 1.0}
+    }
+  ]
+}

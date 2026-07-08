@@ -94,7 +94,7 @@
         "nurgle",
         "slaanesh",
         "tzeentch",
-        "undivided",
+        "plaguefleet",
         "chaosdwarf",
         "pirate",
         "skaven",
@@ -226,6 +226,12 @@
                     "weight": "negligible",
                     "name": "Damage Tables",
                     "name_en": "Damage Tables",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "chaos_magicrules",
+                    "name_en": "Magic Rules - Chaos",
                     "type": "card",
                     "cost": "0"
                 },

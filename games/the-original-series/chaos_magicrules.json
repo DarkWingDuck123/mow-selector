@@ -1,0 +1,59 @@
+{
+  "weight": "negligible",
+  "name": {
+    "value": "CHAOS MAGIC RULES",
+    "scale": 1,
+    "value_en": "CHAOS MAGIC RULES",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "MAGIC RULES",
+    "scale": 1.0,
+    "value_en": "MAGIC RULES",
+    "scale_en": 1.0
+  },
+  "honors": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "notes": [
+    {
+      "height": 10,
+      "title": {
+        "value": "POWER LEVEL",
+        "scale": 1,
+        "value_en": "POWER LEVEL",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style='font-size:22px'><b>6</b>:</div>",
+        "scale": 1,
+        "value_en": "<div style='font-size:22px'><b>6</b>:</div>",
+        "scale_en": 1
+      }
+    },
+    {
+      "height": 90,
+      "title": {
+        "value": "CHAOS MAGIC",
+        "scale": 1,
+        "value_en": "CHAOS MAGIC",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style='font-size:16px'><b>Setup</b>: Draw 6 Chaos Magic Cards.<br><br><b>Casting</b>: <b>Chaos Sorcerer</b> have +1 to cast. Each <b>Power Card</b> spent adds a +1 to cast. <b>1</b> always fails, <b>6</b> always succeeds. If fails to cast (but not dispelled), roll on the <i>Failing To Cast</i> table.<br><br><b>Dispelling</b>: Opponent may choose any spell to dispel chaos magic. Subtract 1 from the roll for every <b>Power Card</b> used in the casting. <b>1</b> always fails, <b>6</b> always succeeds.<br><br><b>Dispelling Enemy Magic</b>: Choose any Chaos spell and roll equal to or above it's casting number, +1 per <b>Power Card</b> spent. If you fail to dispel, roll on the <i>Failed to Cast</i> table.<br><br><b>Replenishing Power</b>: Start of <i>Magic Phase</i> may spend 1 or more <b>Power Cards</b> to increase <b>Power Level</b> to a max of 6.<br><br><b>Replenishing Cards</b>: During <i>End Phase</i> replenish <b>Power Level</b> number of cards, up to a max of 6.<br><br><b>Failed to Cast</b>: Roll once per <b>Power Card</b> used. <b>1</b>: <b>Chaos Sorceror</b> consumed by the warp; <b>2-3</b>: <b>Chaos Sorceror</b>: lose one <b>Power Level</b>; <b>4-6</b>: No ill effects.</div>",
+        "scale": 1,
+        "value_en": "<div style='font-size:16px'><b>Setup</b>: Draw 6 Chaos Magic Cards.<br><br><b>Casting</b>: <b>Chaos Sorcerer</b> have +1 to cast. Each <b>Power Card</b> spent adds a +1 to cast. <b>1</b> always fails, <b>6</b> always succeeds. If fails to cast (but not dispelled), roll on the <i>Failing To Cast</i> table.<br><br><b>Dispelling</b>: Opponent may choose any spell to dispel chaos magic. Subtract 1 from the roll for every <b>Power Card</b> used in the casting. <b>1</b> always fails, <b>6</b> always succeeds.<br><br><b>Dispelling Enemy Magic</b>: Choose any Chaos spell and roll equal to or above it's casting number, +1 per <b>Power Card</b> spent. If you fail to dispel, roll on the <i>Failed to Cast</i> table.<br><br><b>Replenishing Power</b>: Start of <i>Magic Phase</i> may spend 1 or more <b>Power Cards</b> to increase <b>Power Level</b> to a max of 6.<br><br><b>Replenishing Cards</b>: During <i>End Phase</i> replenish <b>Power Level</b> number of cards, up to a max of 6.<br><br><b>Failed to Cast</b>: Roll once per <b>Power Card</b> used. <b>1</b>: <b>Chaos Sorceror</b> consumed by the warp; <b>2-3</b>: <b>Chaos Sorceror</b>: lose one <b>Power Level</b>; <b>4-6</b>: No ill effects.</div>",
+        "scale_en": 1
+      }
+    }
+  ]
+}
