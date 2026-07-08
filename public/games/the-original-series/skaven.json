@@ -53,7 +53,7 @@
         "nurgle",
         "slaanesh",
         "tzeentch",
-        "undivided",
+        "plaguefleet",
         "chaosdwarf",
         "pirate",
         "norse"
@@ -197,7 +197,7 @@
                     "name_en": "Skaven Warlord",
                     "type_name": "Skaven Admiral",
                     "type_name_en": "Skaven Admiral",
-                    "description_en": "(W) +1 CC",
+                    "description_en": "(W)",
                     "type": "crew",
                     "source": "PF",
                     "source_en": "PF",

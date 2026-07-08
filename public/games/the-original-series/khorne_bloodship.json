@@ -1,0 +1,325 @@
+{
+  "weight": "heavy",
+  "name": {
+    "value": "BLOODSHIP",
+    "scale": 1,
+    "value_en": "BLOODSHIP",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "KHORNE MAN O'WAR",
+    "scale": 1,
+    "value_en": "KHORNE MAN O'WAR",
+    "scale_en": 1
+  },
+  "honors": {
+    "value": "Honors: 6",
+    "scale": 0.8,
+    "value_en": "Honors: 6",
+    "scale_en": 0.8
+  },
+  "cost": {
+    "value": "150 pts",
+    "scale": 1,
+    "value_en": "150 pts",
+    "scale_en": 1
+  },
+  "crew": 3,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 1,
+    "value_en": "CREW",
+    "scale_en": 1
+  },
+  "move": {
+    "value": "<div style=\"font-size:32px\">OARS 6\"</div><b>No Turns 9\"</b>",
+    "scale": 1,
+    "value_en": "<div style=\"font-size:32px\">OARS 6\"</div><b>No Turns 9\"</b>",
+    "scale_en": 1
+  },
+  "upperNotes": [
+    {
+      "value": "OARS: May turn 90 degrees per 1/2 move. May reverse up to 2\"",
+      "scale": 1,
+      "value_en": "OARS: May turn 90 degrees per 1/2 move. May reverse up to 2\"",
+      "scale_en": 1
+    },
+    {
+      "value": "CREW: Chaos Warriors",
+      "scale": 1,
+      "value_en": "CREW: Chaos Warriors",
+      "scale_en": 1
+    }
+  ],
+  "highLow": [
+    {
+      "title": "LOW",
+      "title_en": "LOW",
+      "height": 50
+    },
+    {
+      "title": "HIGH",
+      "title_en": "HIGH",
+      "height": 50
+    }
+  ],
+  "dmgBoxes": [
+    {
+      "width": 15,
+      "height": 50,
+      "left": 0,
+      "bottom": 50,
+      "name": {
+        "value": "PROW",
+        "scale": 0.5,
+        "value_en": "PROW",
+        "scale_en": 0.5
+      },
+      "zone": "2",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 28,
+      "height": 50,
+      "left": 15,
+      "bottom": 50,
+      "name": {
+        "value": "GUN DECKS",
+        "scale": 0.65,
+        "value_en": "GUN DECKS",
+        "scale_en": 0.65
+      },
+      "zone": "3",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "If <b>Blood Cauldrons</b> destroyed, <b>Burning Skulls</b> lost.",
+          "scale": 1,
+          "value_en": "If <b>Blood Cauldrons</b> destroyed, <b>Burning Skulls</b> lost.",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 25,
+      "height": 50,
+      "left": 43,
+      "bottom": 50,
+      "name": {
+        "value": "BLOOD CAULDRONS",
+        "scale": 0.6,
+        "value_en": "BLOOD CAULDRONS",
+        "scale_en": 0.6
+      },
+      "zone": "4",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "If <b>Gun Decks</b> destroyed, <b>Burning Skulls</b> lost.",
+          "scale": 1,
+          "value_en": "If <b>Gun Decks</b> destroyed, <b>Burning Skulls</b> lost.",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 17,
+      "height": 50,
+      "left": 68,
+      "bottom": 50,
+      "name": {
+        "value": "BRIDGE",
+        "scale": 0.5,
+        "value_en": "BRIDGE",
+        "scale_en": 0.5
+      },
+      "zone": "5",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 15,
+      "height": 50,
+      "left": 85,
+      "bottom": 50,
+      "name": {
+        "value": "STERN",
+        "scale": 0.5,
+        "value_en": "STERN",
+        "scale_en": 0.5
+      },
+      "zone": "6",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "HAMMER",
+        "scale": 0.5,
+        "value_en": "HAMMER",
+        "scale_en": 0.5
+      },
+      "zone": "2",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "May not <b>ram</b>,<br><b>Hammer</b> lost",
+          "scale": 0.8,
+          "value_en": "May not <b>ram</b>,<br><b>Hammer</b> lost",
+          "scale_en": 0.8
+        }
+      ]
+    },
+    {
+      "width": 23,
+      "height": 50,
+      "left": 20,
+      "bottom": 0,
+      "name": {
+        "value": "OAR DECK",
+        "scale": 0.5,
+        "value_en": "OAR DECK",
+        "scale_en": 0.5
+      },
+      "zone": "3",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Speed<br>-2\"(-3\")",
+          "scale": 0.65,
+          "value_en": "Speed<br>-2\"(-3\")",
+          "scale_en": 0.65
+        }
+      ]
+    },
+    {
+      "width": 22,
+      "height": 50,
+      "left": 43,
+      "bottom": 0,
+      "name": {
+        "value": "OAR DECK",
+        "scale": 0.55,
+        "value_en": "OAR DECK",
+        "scale_en": 0.55
+      },
+      "zone": "4",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Speed<br>-2\"(-3\")",
+          "scale": 0.65,
+          "value_en": "Speed<br>-2\"(-3\")",
+          "scale_en": 0.65
+        }
+      ]
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 65,
+      "bottom": 0,
+      "name": {
+        "value": "OAR DECK",
+        "scale": 0.55,
+        "value_en": "OAR DECK",
+        "scale_en": 0.55
+      },
+      "zone": "5",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Speed<br>-2\"(-3\")",
+          "scale": 0.65,
+          "value_en": "Speed<br>-2\"(-3\")",
+          "scale_en": 0.65
+        }
+      ]
+    },
+    {
+      "width": 15,
+      "height": 50,
+      "left": 85,
+      "bottom": 0,
+      "name": {
+        "value": "AFT",
+        "scale": 0.6,
+        "value_en": "AFT",
+        "scale_en": 0.6
+      },
+      "zone": "6",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    }
+  ],
+  "criticalTitle": {
+    "value": "BELOW WATERLINE",
+    "scale": 1,
+    "value_en": "BELOW WATERLINE",
+    "scale_en": 1
+  },
+  "criticalSave": "3+",
+  "criticalBoxes": 4,
+  "lowerNotesTitle": {
+    "value": "WEAPONS",
+    "scale": 1,
+    "value_en": "WEAPONS",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Burning Skulls:</b> 1 die <b>Cannon</b> attack. range 6\", -1 to save. If target fails save, location is set ablaze.<br><b>Hammer of Khorne</b>: 1 die attack, range 6\". If target fails save set ablaze and all adjacent locations must also save or be set ablaze.<br><b>Ram</b>: 3\" straight under oars. Roll for hit location: <b>1-3</b>: low (-2 save), <b>4-6</b>: BtW (-1 save), roll <b>1-2</b>: 1 pt BtW damage; <b>3-5</b>: 2 pts BtW damage; <b>6</b>: 3 pts BtW damage.",
+    "scale": 0.5,
+    "value_en": "<b>Burning Skulls:</b> 1 die <b>Cannon</b> attack. range 6\", -1 to save. If target fails save, location is set ablaze.<br><b>Hammer of Khorne</b>: 1 die attack, range 6\". If target fails save set ablaze and all adjacent locations must also save or be set ablaze.<br><b>Ram</b>: 3\" straight under oars. Roll for hit location: <b>1-3</b>: low (-2 save), <b>4-6</b>: BtW (-1 save), roll <b>1-2</b>: 1 pt BtW damage; <b>3-5</b>: 2 pts BtW damage; <b>6</b>: 3 pts BtW damage.",
+    "scale_en": 0.5
+  },
+  "foreBattery": "2"
+}

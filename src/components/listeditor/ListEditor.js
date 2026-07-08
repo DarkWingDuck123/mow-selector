@@ -33,11 +33,12 @@ function parseFreebie(free, freebiePoints) {
         repeating: true,
       };
     }
+    const unitCountMatch = triggerText.match(/^\d+\s+(.+)$/i);
     return {
       count: parseInt(perMatch[1], 10),
       unitName: perMatch[2].trim().toLowerCase(),
       triggerType: "unit",
-      triggerName: triggerText.toLowerCase(),
+      triggerName: (unitCountMatch ? unitCountMatch[1] : triggerText).toLowerCase(),
     };
   }
   const simpleMatch = free.trim().match(/^(\d+)\s+(.+)$/i);

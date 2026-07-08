@@ -17,7 +17,7 @@
     "nurgle",
     "slaanesh",
     "tzeentch",
-    "undivided",
+    "plaguefleet",
     "chaosdwarf",
     "pirate",
     "skaven",
@@ -25,7 +25,33 @@
   ],
   "validation_rules": [
     {
+      "rule": "Min 1 Ironshark"
+    },
+    {
+      "rule": "Min 1 Deathgalley"
+    },
+    {
+      "rule": "Min 1 Bloodship"
+    },
+    {
+      "rule": "Max 1 Allied Man O'War per 1 Bloodship"
+    },
+    {
+      "rule": "Max 0 Wizard"
+    },
+    {
       "rule": "Max 1 Schmidt's Ironfist"
+    }
+  ],
+  "freebies": [
+    {
+      "free": "1 Chaos Lord"
+    },
+    {
+      "free": "3 Khorne Chaos Reward Card per 1 Deathgalley"
+    },
+    {
+      "free": "3 Chaos Warrior per 1 Bloodship"
     }
   ],
   "entries": [
@@ -39,15 +65,88 @@
       "expanded": true,
       "units": [
         {
-          "id": "deathgalley",
-          "type": "shipoftheline",
+          "id": "khorne_ironshark",
+          "name": "Ironshark",
+          "name_en": "Ironshark",
           "weight": "heavy",
-          "name_en": "Death Galley",
-          "description_en": "A Squadron of 3 Death Galley",
+          "type": "shipoftheline",
+          "type_name": "Ship of the Line",
+          "type_name_en": "Ship of the Line",
+          "description_en": "A Squadron of 3 Ironshark",
           "squadron-size": 3,
           "source": "PF",
           "source_en": "PF",
-          "cost": 75
+          "cost": 150
+        },
+        {
+          "id": "deathgalley",
+          "weight": "heavy",
+          "type": "shipoftheline",
+          "type_name": "Ship of the Line",
+          "type_name_en": "Ship of the Line",
+          "name": "Deathgalley",
+          "name_en": "Deathgalley",
+          "description_en": "A Squadron of 3 Deathgalley",
+          "squadron-size": 3,
+          "source": "PF",
+          "source_en": "PF",
+          "cost": 200
+        },
+        {
+          "id": "khorne_bloodship",
+          "weight": "heavy",
+          "type": "manowar",
+          "type_name": "Man O'War",
+          "type_name_en": "Man O'War",
+          "name": "Bloodship",
+          "name_en": "Bloodship",
+          "description_en": "A Bloodship",
+          "squadron-size": 1,
+          "source": "PF",
+          "source_en": "PF",
+          "cost": 150
+        },
+        {
+          "id": "slaanesh_hellship",
+          "weight": "heavy",
+          "type": "allied_manowar",
+          "type_name": "Allied Man O'War",
+          "type_name_en": "Allied Man O'War",
+          "name": "Hellship",
+          "name_en": "Hellship",
+          "description_en": "A Hellship",
+          "squadron-size": 1,
+          "source": "PF",
+          "source_en": "PF",
+          "cost": 150
+        },
+        {
+          "id": "tzeentch_greatwingedterror",
+          "weight": "heavy",
+          "type": "allied_manowar",
+          "type_name": "Allied Man O'War",
+          "type_name_en": "Allied Man O'War",
+          "name": "Great Winged Terror",
+          "name_en": "Great Winged Terror",
+          "description_en": "A Great Winged Terror",
+          "squadron-size": 1,
+          "source": "PF",
+          "source_en": "PF",
+          "cost": 150
+        },
+        {
+          "id": "nurgle_plagueship",
+          "weight": "heavy",
+          "type": "allied_manowar",
+          "type_name": "Allied Man O'War",
+          "type_name_en": "Allied Man O'War",
+          "name": "Plagueship",
+          "name_en": "Plagueship",
+          "description_en": "A Plagueship",
+          "squadron-size": 1,
+          "source": "PF",
+          "source_en": "PF",
+          "cost": 150
         }
       ]
     },
@@ -73,6 +172,24 @@
           "cost": "25"
         },
         {
+          "id": "crewcard",
+          "weight": "negligible",
+          "name": "Crew Card",
+          "name_en": "Crew Card",
+          "type": "crew_card",
+          "type_name": "",
+          "type_name_en": "",
+          "cost": "0"
+        },
+        {
+          "id": "chaoscrew",
+          "weight": "negligible",
+          "name": "Chaos Crew Experience",
+          "name_en": "Chaos Crew Experience",
+          "type": "card",
+          "cost": "0"
+        },
+        {
           "id": "turnsummary",
           "weight": "negligible",
           "name": "Turn Summary",
@@ -93,6 +210,90 @@
           "name": "Empty",
           "name_en": "Empty",
           "type": "card",
+          "cost": "0"
+        }
+      ]
+    },
+    {
+      "title": "Crew",
+      "title_en": "Crew",
+      "title_de": "Crew",
+      "title_es": "Crew",
+      "title_fr": "Crew",
+      "type": "CREW",
+      "expanded": true,
+      "units": [
+        {
+          "id": "chaoswarlord",
+          "name": "Chaos Lord",
+          "name_en": "Chaos Lord",
+          "type_name": "Admiral",
+          "type_name_en": "Admiral",
+          "description": "(L) +1 CC, may cling to wreckage",
+          "description_en": "(L) +1 CC, may cling to wreckage",
+          "type": "crew",
+          "source": "PF",
+          "source_en": "PF",
+          "cost": "-"
+        },
+        {
+          "id": "spawn",
+          "name": "Spawn",
+          "name_en": "Spawn",
+          "type_name": "Chaos Crew",
+          "type_name_en": "Chaos Crew",
+          "description_en": "(S) -1 CC if in stack (cancels out the +1 for being in stack)",
+          "type": "crew",
+          "source": "PF",
+          "source_en": "PF",
+          "cost": "0"
+        },
+        {
+          "id": "chaoscultist",
+          "name": "Chaos Cultist",
+          "name_en": "Chaos Cultist",
+          "type_name": "Chaos Crew",
+          "type_name_en": "Chaos Crew",
+          "description_en": "Standard Crew",
+          "type": "crew",
+          "source": "PF",
+          "source_en": "PF",
+          "cost": "0"
+        },
+        {
+          "id": "beastman",
+          "name": "Beastman",
+          "name_en": "Beastman",
+          "type_name": "Chaos Crew",
+          "type_name_en": "Chaos Crew",
+          "description_en": "(B) May Reroll CC die once, if leading.",
+          "type": "crew",
+          "source": "PF",
+          "source_en": "PF",
+          "cost": "0"
+        },
+        {
+          "id": "chaoswarrior",
+          "name": "Chaos Warrior",
+          "name_en": "Chaos Warrior",
+          "type_name": "Chaos Crew",
+          "type_name_en": "Chaos Crew",
+          "description_en": "(W) +1 CC for each Warrior in stack, if leading.",
+          "type": "crew",
+          "source": "PF",
+          "source_en": "PF",
+          "cost": "0"
+        },
+        {
+          "id": "chaosknight",
+          "name": "Chaos Knight",
+          "name_en": "Chaos Knight",
+          "type_name": "Chaos Crew",
+          "type_name_en": "Chaos Crew",
+          "description_en": "(K) +2 CC for each Knight in stack, +1 for each Warrior in stack, if leading.",
+          "type": "crew",
+          "source": "PF",
+          "source_en": "PF",
           "cost": "0"
         }
       ]
