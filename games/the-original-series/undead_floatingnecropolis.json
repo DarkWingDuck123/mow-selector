@@ -1,0 +1,287 @@
+{
+  "weight": "heavy",
+  "name": {
+    "value": "FLOATINGNECROPOLIS",
+    "scale": 0.4,
+    "value_en": "FLOATINGNECROPOLIS",
+    "scale_en": 0.4
+  },
+  "type": {
+    "value": "UNDEAD MAN O'WAR",
+    "scale": 1,
+    "value_en": "UNDEAD MAN O'WAR",
+    "scale_en": 1
+  },
+  "honors": {
+    "value": "Honors: 10",
+    "scale": 0.8,
+    "value_en": "Honors: 10",
+    "scale_en": 0.8
+  },
+  "cost": {
+    "value": "250 pts",
+    "scale": 1,
+    "value_en": "250 pts",
+    "scale_en": 1
+  },
+  "crew": 8,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 1,
+    "value_en": "CREW",
+    "scale_en": 1
+  },
+  "move": {
+    "value": "<b><div style=\"font-size:32px\">MAGIC 6\"<br></div></b>",
+    "scale": 0.8,
+    "value_en": "<b><div style=\"font-size:32px\">MAGIC 6\"<br></div></b>",
+    "scale_en": 0.8
+  },
+  "upperNotes": [
+    {
+      "value": "MAGIC MOVE: any direction, end any facing, lose 1\" per BtW damage",
+      "scale": 0.9,
+      "value_en": "MAGIC MOVE: any direction, end any facing, lose 1\" per BtW damage",
+      "scale_en": 0.9
+    }
+  ],
+  "highLow": [
+    {
+      "title": "LOW",
+      "title_en": "LOW",
+      "height": 40
+    },
+    {
+      "title": "HIGH",
+      "title_en": "HIGH",
+      "height": 60
+    }
+  ],
+  "dmgBoxes": [
+    {
+      "width": 33,
+      "height": 40,
+      "left": 0,
+      "bottom": 60,
+      "name": {
+        "value": "SKULL DECK",
+        "scale": 0.8,
+        "value_en": "SKULL DECK",
+        "scale_en": 0.8
+      },
+      "zone": "4",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "1 Fore <b>Screaming<br>Skull</b> lost",
+          "scale": 0.8,
+          "value_en": "1 Fore <b>Screaming<br>Skull</b> lost",
+          "scale_en": 0.8
+        }
+      ]
+    },
+    {
+      "width": 33,
+      "height": 40,
+      "left": 33,
+      "bottom": 60,
+      "name": {
+        "value": "TOWERS",
+        "scale": 1,
+        "value_en": "TOWERS",
+        "scale_en": 1
+      },
+      "zone": "5",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 34,
+      "height": 40,
+      "left": 66,
+      "bottom": 60,
+      "name": {
+        "value": "REAR TOWERS",
+        "scale": 0.8,
+        "value_en": "REAR TOWERS",
+        "scale_en": 0.8
+      },
+      "zone": "6",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "1 Aft <b>Screaming<br>Skull</b> lost",
+          "scale": 0.8,
+          "value_en": "1 Aft <b>Screaming<br>Skull</b> lost",
+          "scale_en": 0.8
+        }
+      ]
+    },
+    {
+      "width": 50,
+      "height": 30,
+      "left": 0,
+      "bottom": 30,
+      "name": {
+        "value": "FORE TOWERS",
+        "scale": 1,
+        "value_en": "FORE TOWERS",
+        "scale_en": 1
+      },
+      "zone": "2",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "1 Fore <b>Screaming Skull</b> lost",
+          "scale": 0.8,
+          "value_en": "1 Fore <b>Screaming Skull</b> lost",
+          "scale_en": 0.8
+        }
+      ]
+    },
+    {
+      "width": 50,
+      "height": 30,
+      "left": 50,
+      "bottom": 30,
+      "name": {
+        "value": "MAIN DECK",
+        "scale": 0.8,
+        "value_en": "MAIN DECK",
+        "scale_en": 0.8
+      },
+      "zone": "3",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "1 broadside <b>Screaming Skull</b> lost",
+          "scale": 0.75,
+          "value_en": "1 broadside <b>Screaming Skull</b> lost",
+          "scale_en": 0.75
+        },
+        {
+          "value": "1 broadside <b>Screaming Skull</b> lost",
+          "scale": 0.75,
+          "value_en": "1 broadside <b>Screaming Skull</b> lost",
+          "scale_en": 0.75
+        }
+      ]
+    },
+    {
+      "width": 25,
+      "height": 30,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "BASTION",
+        "scale": 0.85,
+        "value_en": "BASTION",
+        "scale_en": 0.85
+      },
+      "zone": "4",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 35,
+      "height": 30,
+      "left": 25,
+      "bottom": 0,
+      "name": {
+        "value": "KEEP",
+        "scale": 1,
+        "value_en": "KEEP",
+        "scale_en": 1
+      },
+      "zone": "5",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "1 Broadside <b>Screaming<br>Skull</b> Lost</b>",
+          "scale": 1,
+          "value_en": "1 Broadside <b>Screaming<br>Skull</b> Lost</b>",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 40,
+      "height": 30,
+      "left": 60,
+      "bottom": 0,
+      "name": {
+        "value": "AFT CASTLE",
+        "scale": 0.8,
+        "value_en": "AFT CASTLE",
+        "scale_en": 0.8
+      },
+      "zone": "6",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "1 Aft <b>Screaming<br>Skull</b> lost",
+          "scale": 0.9,
+          "value_en": "1 Aft <b>Screaming<br>Skull</b> lost",
+          "scale_en": 0.9
+        }
+      ]
+    }
+  ],
+  "criticalTitle": {
+    "value": "BELOW WATERLINE",
+    "scale": 1,
+    "value_en": "BELOW WATERLINE",
+    "scale_en": 1
+  },
+  "criticalSave": "4+",
+  "criticalBoxes": 6,
+  "lowerNotesTitle": {
+    "value": "WEAPONS & SPECIAL RULES",
+    "scale": 1,
+    "value_en": "WEAPONS & SPECIAL RULES",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Screaming Skull Catapults</b>: 2 Fore, 2 Aft, 3 Broadside. Fires as a catapult. A target damaged by a <b>Screaming Skull</b> rolls a d6 at the end of the <i>Battle Phase</i>, On a <b>1</b> the target loses 1 crew. <br><b>Necromantic Spellcasters</b>: +1 Spell Card while onboard.<br><b>Regeneration</b>: Each killed crew regenerates on a 5+ (d6).",
+    "scale": 0.8,
+    "value_en": "<b>Screaming Skull Catapults</b>: 2 Fore, 2 Aft, 3 Broadside. Fires as a catapult. A target damaged by a <b>Screaming Skull</b> rolls a d6 at the end of the <i>Battle Phase</i>, On a <b>1</b> the target loses 1 crew. <br><b>Necromantic Spellcasters</b>: +1 Spell Card while onboard.<br><b>Regeneration</b>: Each killed crew regenerates on a 5+ (d6).",
+    "scale_en": 0.8
+  },
+  "foreBattery": "2",
+  "aftBattery": "2",
+  "broadsideBattery": "3"
+}

@@ -1,0 +1,29 @@
+{
+  "weight": "negligible",
+  "name": {"value": "UNDEAD SPECIAL RULES", "scale": 1.0},
+  "type": {"value": "UNDEAD", "scale": 0.75},
+  "honors": {"value": "", "scale": 1.0},
+  "cost": {"value": "", "scale": 1.0},
+  "notes": [
+    {
+      "height": 15,
+      "title": {"value": "UNDEAD ADMIRALS", "scale": 1.0},
+      "note": {"value": "Undead fleets must purchase one of three different <b>Admirals</b>: a <b>Liche</b>, a <b>Necromancer</b>, or a <b>Tomb King</b>.", "scale": 1.0}
+    },
+    {
+      "height": 45,
+      "title": {"value": "UNDEAD CREWS", "scale": 1.0},
+      "note": {"value": "Undead fleets purchase crew separately and crew ships from those purchased. Each Admiral grants a certain number of crew points per 500 fleet points.<br><br><b>1 pt</b>: (Z) Zombie, -1 CC if leading<br><b>2 pts</b>: (S) Skeleton, +0 CC if leading<br><b>3 pts</b>: (W) Wight, +1 CC if leading<br><br>The ship cards <b>Crew Track</b> is the maximum number of crew the ship can hold.", "scale": 1.0}
+    },
+    {
+      "height": 20,
+      "title": {"value": "UNDEAD MAGIC", "scale": 1.0},
+      "note": {"value": "Undead has access to <b>Necromatic</b> or <b>Color</b> magic. When using a <b>Color</b> wizard, the wizard is still a <b>Necromatic</b> wizard (as such it gains no college benefits).", "scale": 1.0}
+    },
+    {
+      "height": 20,
+      "title": {"value": "LOSS OF ADMIRAL", "scale": 1.0},
+      "note": {"value": "If an undead fleet, commanded by either a <b>Liche</b> or <b>Necromancer</b>, loses it's <b>Admiral</b>, roll for d6 BtW hits for each Ship of the Line, no saves. Losing a <b>Tomb King</b>, or his <b>Wizard</b>, has no such effect.", "scale": 1.0}
+    }
+  ]
+}

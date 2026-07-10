@@ -1,0 +1,180 @@
+{
+  "weight": "heavy",
+  "name": {
+    "value": "HELLSLICER",
+    "scale": 1,
+    "value_en": "HELLSLICER",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "SLAANESH SHIP OF THE LINE",
+    "scale": 0.75,
+    "value_en": "SLAANESH SHIP OF THE LINE",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "Honors: 1",
+    "scale": 1,
+    "value_en": "Honors: 1",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "75 pts per 3",
+    "scale": 1,
+    "value_en": "75 pts per 3",
+    "scale_en": 1
+  },
+  "crew": 2,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 0.75,
+    "value_en": "CREW",
+    "scale_en": 0.75
+  },
+  "move": {
+    "value": "<b><div style=\"font-size:32px\">OARS 6\"</div>May turn 90 degrees per 1/2 move, May reverse up to 3\"",
+    "scale": 0.75,
+    "value_en": "<b><div style=\"font-size:32px\">OARS 6\"</div>May turn 90 degrees per 1/2 move, May reverse up to 3\"",
+    "scale_en": 0.75
+  },
+  "upperNotes": [
+    {
+      "value": "CREW: Chaos Cultists",
+      "scale": 1,
+      "value_en": "CREW: Chaos Cultists",
+      "scale_en": 1
+    }
+  ],
+  "dmgBoxes": [
+    {
+      "width": 100,
+      "height": 50,
+      "left": 0,
+      "bottom": 50,
+      "name": {
+        "value": "SCYTHE BLADES",
+        "scale": 1,
+        "value_en": "SCYTHE BLADES",
+        "scale_en": 1
+      },
+      "zone": "5,6",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": "<b>Hellslicer</b> destroyed",
+          "scale": 1,
+          "value_en": "<b>Hellslicer</b> destroyed",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 33,
+      "height": 50,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "BOWS",
+        "scale": 1,
+        "value_en": "BOWS",
+        "scale_en": 1
+      },
+      "zone": "2",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 34,
+      "height": 50,
+      "left": 33,
+      "bottom": 0,
+      "name": {
+        "value": "OAR DECK",
+        "scale": 1,
+        "value_en": "OAR DECK",
+        "scale_en": 1
+      },
+      "zone": "3",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Oar</b> lost<br>May not move<br>under <b>Oars</b>",
+          "scale": 1,
+          "value_en": "<b>Oar</b> lost<br>May not move<br>under <b>Oars</b>",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 33,
+      "height": 50,
+      "left": 67,
+      "bottom": 0,
+      "name": {
+        "value": "AFT CASTLE",
+        "scale": 1,
+        "value_en": "AFT CASTLE",
+        "scale_en": 1
+      },
+      "zone": "4",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    }
+  ],
+  "criticalTitle": {
+    "value": "BELOW WATERLINE",
+    "scale": 1,
+    "value_en": "BELOW WATERLINE",
+    "scale_en": 1
+  },
+  "criticalSave": "5+",
+  "criticalBoxes": 2,
+  "lowerNotesTitle": {
+    "value": "WEAPONS",
+    "scale": 1,
+    "value_en": "WEAPONS",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Hellslicer</b>: can only attack high locations; sails -1 save. 2 dice attack; for each that misses roll d6: <b>1</b>: All ships within 3\" take 1 low hit with -1 save. <b>Hellslicer</b> sinks; <b>2</b>: <b>Scythe Blades</b> location takes 1 damage; <b>3-5</b>: no effect; <b>6</b>: roll attack again, may choose low locations.",
+    "scale": 1,
+    "value_en": "<b>Hellslicer</b>: can only attack high locations; sails -1 save. 2 dice attack; for each that misses roll d6: <b>1</b>: All ships within 3\" take 1 low hit with -1 save. <b>Hellslicer</b> sinks; <b>2</b>: <b>Scythe Blades</b> location takes 1 damage; <b>3-5</b>: no effect; <b>6</b>: roll attack again, may choose low locations.",
+    "scale_en": 1
+  }
+}

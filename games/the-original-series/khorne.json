@@ -41,6 +41,15 @@
     },
     {
       "rule": "Max 1 Schmidt's Ironfist"
+    },
+    {
+      "rule": "Max 33% Allies"
+    },
+    {
+      "rule": "Max 0% Non-Allies"
+    },
+    {
+      "rule": "Max 1 Sea Monster per 1 Ship of the Line"
     }
   ],
   "freebies": [
@@ -186,6 +195,14 @@
           "weight": "negligible",
           "name": "Chaos Crew Experience",
           "name_en": "Chaos Crew Experience",
+          "type": "card",
+          "cost": "0"
+        },
+        {
+          "id": "khorne_specialrules",
+          "weight": "negligible",
+          "name": "Khorne Special Rules",
+          "name_en": "Khorne Special Rules",
           "type": "card",
           "cost": "0"
         },

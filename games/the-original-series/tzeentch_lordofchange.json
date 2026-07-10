@@ -1,0 +1,28 @@
+{
+  "weight":"light",
+  "name":{"value":"LORD OF CHANGE","scale":1.0},
+  "type":{"value":"CHAOS FLYERS","scale":0.75},
+  "honors":{"value":"Honors: 4", "scale":1.0},
+  "cost":{"value":"100 pts", "scale":1.0},
+  "moveTitle":{"value":"MOVE","scale":0.75},
+  "move":{"value":"<div style=\"font-size:40px\">24\" fly</div>","scale":1.0},
+  "upperNotes":[],
+  "dmgBoxes":[
+    {"width":100, "height":100, "left":0, "bottom":0,
+     "name":{"value":"LORD", "scale":1.0},
+     "zone":"4-6",
+     "save":"4+",
+     "notes":{"value":"Does one Wound", "scale":1.0}}],
+  "numberOf":1,
+  "criticalTitle":{"value":"WOUNDS","scale":1.0},
+  "criticalBoxes":4,
+  "lowerNotes":[
+    {"height":50,
+     "title":{"value":"ATTACKS", "scale":1.0},
+     "note":{"value":"<div style='font-size:20px;;padding:4px 8px;text-align:left;'>May provide <b>Power</b> to a <b>Chaos Sorcerer</b>, at any point during <i>Magic Phase</i>, roll a d6: <b>1</b> Lord sent back to Warp; <b>2</b>: Lord overloaded, lose 1 wound; <b>3</b>: Sorcerer receives 1 pt magic; <b>4</b>: Sorcerer receives 2 pt magic; <b>5</b>: Sorcerer receives 3 pt magic; <b>6</b>: Sorcerer receives 4 pt magic.</div>", "scale":1.0}},
+    {"height":50,
+     "title":{"value":"CLOSE COMBAT", "scale":1.0},
+     "note":{"value":"<div style='font-size:20px;;padding:4px 8px;text-align:left;'>+4 CC<br><br>Opponent must roll greater than 1 on a dice to be able to attack back or use defensive fire.</div>","scale":1.0}}
+    
+    ]
+}

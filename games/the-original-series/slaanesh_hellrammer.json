@@ -1,0 +1,204 @@
+{
+  "weight": "heavy",
+  "name": {
+    "value": "HELLRAMMER",
+    "scale": 0.85,
+    "value_en": "HELLRAMMER",
+    "scale_en": 0.85
+  },
+  "type": {
+    "value": "SLAANESH SHIP OF THE LINE",
+    "scale": 0.75,
+    "value_en": "SLAANESH SHIP OF THE LINE",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "Honors: 1",
+    "scale": 1,
+    "value_en": "Honors: 1",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "75 pts per 3",
+    "scale": 1,
+    "value_en": "75 pts per 3",
+    "scale_en": 1
+  },
+  "crew": 2,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 0.75,
+    "value_en": "CREW",
+    "scale_en": 0.75
+  },
+  "move": {
+    "value": "<div style=\"font-size:24px\">SAIL 6\"</div><b>Wind Behind 9\"</b><div style=\"font-size:24px\">OARS 4\"</div><b>No Turns 6\"</b>",
+    "scale": 0.75,
+    "value_en": "<div style=\"font-size:24px\">SAIL 6\"</div><b>Wind Behind 9\"</b><div style=\"font-size:24px\">OARS 4\"</div><b>No Turns 6\"</b>",
+    "scale_en": 0.75
+  },
+  "upperNotes": [
+    {
+      "value": "OARS: 1/2 move per 90 degree turn | may reverse up to 3\"",
+      "scale": 1,
+      "value_en": "OARS: 1/2 move per 90 degree turn | may reverse up to 3\"",
+      "scale_en": 1
+    },
+    {
+      "value": "CREW: Chaos Cultists",
+      "scale": 1,
+      "value_en": "CREW: Chaos Cultists",
+      "scale_en": 1
+    }
+  ],
+  "dmgBoxes": [
+    {
+      "width": 100,
+      "height": 50,
+      "left": 0,
+      "bottom": 50,
+      "name": {
+        "value": "MAST",
+        "scale": 1,
+        "value_en": "MAST",
+        "scale_en": 1
+      },
+      "zone": "6",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Mast Lost</b><br>Cannot move under sail",
+          "scale": 1,
+          "value_en": "<b>Mast Lost</b><br>Cannot move under sail",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "<i>No Criticals</i>",
+        "scale": 1,
+        "value_en": "<i>No Criticals</i>",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 25,
+      "height": 50,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "RAM",
+        "scale": 1,
+        "value_en": "RAM",
+        "scale_en": 1
+      },
+      "zone": "2",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "May not<br> <b>ram</b>",
+          "scale": 1,
+          "value_en": "May not<br> <b>ram</b>",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 25,
+      "height": 50,
+      "left": 25,
+      "bottom": 0,
+      "name": {
+        "value": "BOWS",
+        "scale": 1,
+        "value_en": "BOWS",
+        "scale_en": 1
+      },
+      "zone": "3",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Cannon</b><br>lost",
+          "scale": 1,
+          "value_en": "<b>Cannon</b><br>lost",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 25,
+      "height": 50,
+      "left": 50,
+      "bottom": 0,
+      "name": {
+        "value": "OAR DECK",
+        "scale": 0.8,
+        "value_en": "OAR DECK",
+        "scale_en": 0.8
+      },
+      "zone": "4",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Oars</b> lost<br>May not move<br>under <b>Oars</b>",
+          "scale": 1,
+          "value_en": "<b>Oars</b> lost<br>May not move<br>under <b>Oars</b>",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 25,
+      "height": 50,
+      "left": 75,
+      "bottom": 0,
+      "name": {
+        "value": "AFT CASTLE",
+        "scale": 0.7,
+        "value_en": "AFT CASTLE",
+        "scale_en": 0.7
+      },
+      "zone": "5",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    }
+  ],
+  "criticalTitle": {
+    "value": "BELOW WATERLINE",
+    "scale": 1,
+    "value_en": "BELOW WATERLINE",
+    "scale_en": 1
+  },
+  "criticalSave": "5+",
+  "criticalBoxes": 2,
+  "lowerNotesTitle": {
+    "value": "WEAPONS",
+    "scale": 1,
+    "value_en": "WEAPONS",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Fore Cannon:</b> May repel boarders<br><b>Ram:</b> 3\" straight. If contact made,  make 1 random low area attack, no save. Subsequent boarding action with a +2 CC on first roll. Fight continues until capture or death.",
+    "scale": 0.85,
+    "value_en": "<b>Fore Cannon:</b> May repel boarders<br><b>Ram:</b> 3\" straight. If contact made,  make 1 random low area attack, no save. Subsequent boarding action with a +2 CC on first roll. Fight continues until capture or death.",
+    "scale_en": 0.85
+  },
+  "foreBattery": "1"
+}

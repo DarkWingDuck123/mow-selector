@@ -1,0 +1,14 @@
+{
+  "weight": "negligible",
+  "name": {"value": "SLAANESH SPECIAL RULES", "scale": 1.0},
+  "type": {"value": "SLAANESH", "scale": 0.75},
+  "honors": {"value": "", "scale": 1.0},
+  "cost": {"value": "", "scale": 1.0},
+  "notes": [
+    {
+      "height": 100,
+      "title": {"value": "", "scale": 1.0},
+      "note": {"value": "", "scale": 1.0}
+    }
+  ]
+}

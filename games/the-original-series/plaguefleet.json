@@ -3,8 +3,8 @@
     "style": {
         "bgColor": "black",
         "fgColor": "gold",
-        "parchmentColor": "darkgray",
-        "waterColor": "dimgray",
+        "parchmentColor": "beige",
+        "waterColor": "lightblue",
         "accentColor": "silver"
     },
     "name": "Plague Fleet",
@@ -14,10 +14,95 @@
     "name_fr": "Plague Fleet",
     "validation_rules": [
         {
+            "rule": "Max 1 Wizard"
+        },
+        {
+            "rule": "Min 1 Khorne Deathgalley, 1 Tzeentch Deathgalley, 1 Nurgle Deathgalley, or 1 Slaanesh Deathgalley"
+        },
+        {
+            "rule": "Max 1 Bloodship per 1 Hellship; First One Free"
+        },
+        {
+            "rule": "Max 1 Bloodship per 1 Great Winged Terror; First One Free"
+        },
+        {
+            "rule": "Max 1 Bloodship per 1 Plagueship; First One Free"
+        },
+        {
+            "rule": "Max 1 Hellship per 1 Bloodship; First One Free"
+        },
+        {
+            "rule": "Max 1 Hellship per 1 Great Winged Terror; First One Free"
+        },
+        {
+            "rule": "Max 1 Hellship per 1 Plagueship; First One Free"
+        },
+        {
+            "rule": "Max 1 Great Winged Terror per 1 Bloodship; First One Free"
+        },
+        {
+            "rule": "Max 1 Great Winged Terror per 1 Hellship; First One Free"
+        },
+        {
+            "rule": "Max 1 Great Winged Terror per 1 Plagueship; First One Free"
+        },
+        {
+            "rule": "Max 1 Plagueship per 1 Bloodship; First One Free"
+        },
+        {
+            "rule": "Max 1 Plagueship per 1 Hellship; First One Free"
+        },
+        {
+            "rule": "Max 1 Plagueship per 1 Great Winged Terror; First One Free"
+        },
+        {
+            "rule": "Min 1 Man O'War"
+        },
+        {
             "rule": "Max 1 Schmidt's Ironfist"
+        },
+        {
+            "rule": "Max 33% Allies"
+        },
+        {
+            "rule": "Max 0% Non-Allies"
+        },
+        {
+            "rule": "Max 1 Sea Monster per 1 Ship of the Line"
         }
     ],
-    "freebies": [],
+    "freebies": [
+        {
+            "free": "1 Chaos Lord"
+        },
+        {
+            "free": "3 Khorne Chaos Reward Card per 1 Khorne Deathgalley"
+        },
+        {
+            "free": "3 Nurgle Chaos Reward Card per 1 Nurgle Deathgalley"
+        },
+        {
+            "free": "3 Slaanesh Chaos Reward Card per 1 Slaanesh Deathgalley"
+        },
+        {
+            "free": "3 Tzeentch Chaos Reward Card per 1 Tzeentch Deathgalley"
+        },
+        {
+            "free": "3 Chaos Warrior per 1 Bloodship"
+        },
+        {
+            "free": "3 Chaos Warrior per 1 Plagueship"
+        },
+        {
+            "free": "2 Chaos Warrior per 1 Hellship"
+        },
+        {
+            "free": "2 Chaos Warrior per 1 Great Winged Terror"
+        },
+        {
+            "free": "1 Bane Tower of Tzeentch per 1 Chaos Sorcerer"
+        }
+    ],
     "allies": [
         "darkelf",
         "orc",
@@ -41,15 +126,186 @@
             "expanded": true,
             "units": [
                 {
-                    "id": "deathgalley",
-                    "type": "shipoftheline",
+                    "id": "khorne_ironshark",
+                    "name": "Ironshark",
+                    "name_en": "Ironshark",
                     "weight": "heavy",
-                    "name_en": "Death Galley",
-                    "description_en": "A Squadron of 3 Death Galley",
+                    "type": "shipoftheline",
+                    "type_name": "Ship of the Line",
+                    "type_name_en": "Ship of the Line",
+                    "description_en": "A Squadron of 3 Ironshark",
+                    "squadron-size": 3,
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": 150
+                },
+                {
+                    "id": "nurgle_plaguecrusher",
+                    "name": "Plaguecrusher",
+                    "name_en": "Plaguecrusher",
+                    "weight": "heavy",
+                    "type": "shipoftheline",
+                    "type_name": "Ship of the Line",
+                    "type_name_en": "Ship of the Line",
+                    "description_en": "A Squadron of 3 Plaguecrusher",
+                    "squadron-size": 3,
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": 150
+                },
+                {
+                    "id": "slaanesh_hellslicer",
+                    "name": "Hellslicer",
+                    "name_en": "Hellslicer",
+                    "weight": "heavy",
+                    "type": "shipoftheline",
+                    "type_name": "Ship of the Line",
+                    "type_name_en": "Ship of the Line",
+                    "description_en": "A Squadron of 3 Hellslicer",
                     "squadron-size": 3,
                     "source": "PF",
                     "source_en": "PF",
                     "cost": 75
+                },
+                {
+                    "id": "slaanesh_hellrammer",
+                    "name": "Hellrammer",
+                    "name_en": "Hellrammer",
+                    "weight": "heavy",
+                    "type": "shipoftheline",
+                    "type_name": "Ship of the Line",
+                    "type_name_en": "Ship of the Line",
+                    "description_en": "A Squadron of 3 Hellrammer",
+                    "squadron-size": 3,
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": 75
+                },
+                {
+                    "id": "deathgalley",
+                    "weight": "heavy",
+                    "type": "shipoftheline",
+                    "type_name": "Ship of the Line",
+                    "type_name_en": "Ship of the Line",
+                    "name": "Khorne Deathgalley",
+                    "name_en": "Khorne Deathgalley",
+                    "description_en": "A Squadron of 3 Khorne Deathgalley",
+                    "squadron-size": 3,
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": 200
+                },
+                {
+                    "id": "deathgalley",
+                    "weight": "heavy",
+                    "type": "shipoftheline",
+                    "type_name": "Ship of the Line",
+                    "type_name_en": "Ship of the Line",
+                    "name": "Slaanesh Deathgalley",
+                    "name_en": "Slaanesh Deathgalley",
+                    "description_en": "A Squadron of 3 Slaanesh Deathgalley",
+                    "squadron-size": 3,
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": 200
+                },
+                {
+                    "id": "deathgalley",
+                    "weight": "heavy",
+                    "type": "shipoftheline",
+                    "type_name": "Ship of the Line",
+                    "type_name_en": "Ship of the Line",
+                    "name": "Nurgle Deathgalley",
+                    "name_en": "Nurgle Deathgalley",
+                    "description_en": "A Squadron of 3 Nurgle Deathgalley",
+                    "squadron-size": 3,
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": 200
+                },
+                {
+                    "id": "deathgalley",
+                    "weight": "heavy",
+                    "type": "shipoftheline",
+                    "type_name": "Ship of the Line",
+                    "type_name_en": "Ship of the Line",
+                    "name": "Tzeentch Deathgalley",
+                    "name_en": "Tzeentch Deathgalley",
+                    "description_en": "A Squadron of 3 Tzeentch Deathgalley",
+                    "squadron-size": 3,
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": 200
+                },
+                {
+                    "id": "khorne_bloodship",
+                    "weight": "heavy",
+                    "type": "manowar",
+                    "type_name": "Man O'War",
+                    "type_name_en": "Man O'War",
+                    "name": "Bloodship",
+                    "name_en": "Bloodship",
+                    "description_en": "A Bloodship",
+                    "squadron-size": 1,
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": 150
+                },
+                {
+                    "id": "nurgle_plagueship",
+                    "weight": "heavy",
+                    "type": "manowar",
+                    "type_name": "Man O'War",
+                    "type_name_en": "Man O'War",
+                    "name": "Plagueship",
+                    "name_en": "Plagueship",
+                    "description_en": "A Plagueship",
+                    "squadron-size": 1,
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": 150
+                },
+                {
+                    "id": "slaanesh_hellship",
+                    "weight": "heavy",
+                    "type": "manowar",
+                    "type_name": "Man O'War",
+                    "type_name_en": "Man O'War",
+                    "name": "Hellship",
+                    "name_en": "Hellship",
+                    "description_en": "A Hellship",
+                    "squadron-size": 1,
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": 150
+                },
+                {
+                    "id": "tzeentch_greatwingedterror",
+                    "weight": "heavy",
+                    "type": "manowar",
+                    "type_name": "Man O'War",
+                    "type_name_en": "Man O'War",
+                    "name": "Great Winged Terror",
+                    "name_en": "Great Winged Terror",
+                    "description_en": "A Great Winged Terror",
+                    "squadron-size": 1,
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": 150
+                },
+                {
+                    "id": "tzeentch_banetower",
+                    "weight": "heavy",
+                    "type": "independent",
+                    "type_name": "Independent",
+                    "type_name_en": "Independent",
+                    "name": "Bane Tower of Tzeentch",
+                    "name_en": "Bane Tower of Tzeentch",
+                    "description_en": "A Bane Tower of Tzeentch",
+                    "squadron-size": 1,
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": "-"
                 }
             ]
         },
@@ -111,6 +367,67 @@
                     "cost": "25"
                 },
                 {
+                    "id": "chaos_iconofpower",
+                    "weight": "negligible",
+                    "name": "Chaos Icon of Power",
+                    "name_en": "Chaos Icon of Power",
+                    "type": "card",
+                    "type_name": "Anti-Flyer",
+                    "source": "SoB",
+                    "source_en": "SoB",
+                    "cost": "25"
+                },
+                {
+                    "id": "crewcard",
+                    "weight": "negligible",
+                    "name": "Crew Card",
+                    "name_en": "Crew Card",
+                    "type": "crew_card",
+                    "type_name": "",
+                    "type_name_en": "",
+                    "cost": "0"
+                },
+                {
+                    "id": "chaoscrew",
+                    "weight": "negligible",
+                    "name": "Chaos Crew Experience",
+                    "name_en": "Chaos Crew Experience",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "khorne_specialrules",
+                    "weight": "negligible",
+                    "name": "Khorne Special Rules",
+                    "name_en": "Khorne Special Rules",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "nurgle_specialrules",
+                    "weight": "negligible",
+                    "name": "Nurgle Special Rules",
+                    "name_en": "Nurgle Special Rules",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "slaanesh_specialrules",
+                    "weight": "negligible",
+                    "name": "Slaanesh Special Rules",
+                    "name_en": "Slaanesh Special Rules",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
+                    "id": "tzeentch_specialrules",
+                    "weight": "negligible",
+                    "name": "Tzeentch Special Rules",
+                    "name_en": "Tzeentch Special Rules",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
                     "id": "turnsummary",
                     "weight": "negligible",
                     "name": "Turn Summary",
@@ -127,10 +444,113 @@
                     "cost": "0"
                 },
                 {
+                    "id": "chaos_magicrules",
+                    "name_en": "Magic Rules - Chaos",
+                    "type": "card",
+                    "cost": "0"
+                },
+                {
                     "id": "blank",
                     "name": "Empty",
                     "name_en": "Empty",
                     "type": "card",
+                    "cost": "0"
+                }
+            ]
+        },
+        {
+            "title": "Crew",
+            "title_en": "Crew",
+            "title_de": "Crew",
+            "title_es": "Crew",
+            "title_fr": "Crew",
+            "type": "CREW",
+            "expanded": true,
+            "units": [
+                {
+                    "id": "chaoswarlord",
+                    "name": "Chaos Lord",
+                    "name_en": "Chaos Lord",
+                    "type_name": "Admiral",
+                    "type_name_en": "Admiral",
+                    "description": "(L) +1 CC, may cling to wreckage",
+                    "description_en": "(L) +1 CC, may cling to wreckage",
+                    "type": "crew",
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": "-"
+                },
+                {
+                    "id": "chaossorcerer",
+                    "name": "Chaos Sorcerer",
+                    "name_en": "Chaos Sorcerer",
+                    "type_name": "Wizard",
+                    "type_name_en": "Wizard",
+                    "description": "(C) Power Level 6, +1 cast/dispell, +0 CC, remove with last crew, may cling to wreckage",
+                    "description_en": "(C) Power Level 6, +1 cast/dispell, +0 CC, remove with last crew, may cling to wreckage",
+                    "type": "crew",
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": "200"
+                },
+                {
+                    "id": "spawn",
+                    "name": "Spawn",
+                    "name_en": "Spawn",
+                    "type_name": "Chaos Crew",
+                    "type_name_en": "Chaos Crew",
+                    "description_en": "(S) -1 CC if in stack (cancels out the +1 for being in stack)",
+                    "type": "crew",
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": "0"
+                },
+                {
+                    "id": "chaoscultist",
+                    "name": "Chaos Cultist",
+                    "name_en": "Chaos Cultist",
+                    "type_name": "Chaos Crew",
+                    "type_name_en": "Chaos Crew",
+                    "description_en": "Standard Crew",
+                    "type": "crew",
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": "0"
+                },
+                {
+                    "id": "beastman",
+                    "name": "Beastman",
+                    "name_en": "Beastman",
+                    "type_name": "Chaos Crew",
+                    "type_name_en": "Chaos Crew",
+                    "description_en": "(B) May Reroll CC die once, if leading.",
+                    "type": "crew",
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": "0"
+                },
+                {
+                    "id": "chaoswarrior",
+                    "name": "Chaos Warrior",
+                    "name_en": "Chaos Warrior",
+                    "type_name": "Chaos Crew",
+                    "type_name_en": "Chaos Crew",
+                    "description_en": "(W) +1 CC for each Warrior in stack, if leading.",
+                    "type": "crew",
+                    "source": "PF",
+                    "source_en": "PF",
+                    "cost": "0"
+                },
+                {
+                    "id": "chaosknight",
+                    "name": "Chaos Knight",
+                    "name_en": "Chaos Knight",
+                    "type_name": "Chaos Crew",
+                    "type_name_en": "Chaos Crew",
+                    "description_en": "(K) +2 CC for each Knight in stack, +1 for each Warrior in stack, if leading.",
+                    "type": "crew",
+                    "source": "PF",
+                    "source_en": "PF",
                     "cost": "0"
                 }
             ]
