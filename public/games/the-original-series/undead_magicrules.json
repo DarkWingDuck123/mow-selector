@@ -1,0 +1,44 @@
+{
+  "weight": "negligible",
+  "name": {
+    "value": "NECROMATIC MAGIC RULES",
+    "scale": 1,
+    "value_en": "NECROMATIC MAGIC RULES",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "NECROMATIC SPELL",
+    "scale": 1,
+    "value_en": "NECROMATIC SPELL",
+    "scale_en": 1
+  },
+  "honors": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "",
+    "scale": 1,
+    "value_en": "",
+    "scale_en": 1
+  },
+  "notes": [
+    {
+      "height": 100,
+      "title": {
+        "value": "NECROMATIC MAGIC",
+        "scale": 1,
+        "value_en": "NECROMATIC MAGIC",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style='font-size:24px'><b>Initial Setup</b>: A <b>Necromancer</b> starts with all <b>Necromancy</b> cards.<br><br><b>Casting Spells</b>: Roll above casting value to cast a spell. After a successful cast, roll a die: <b>1-2</b> Discard spell as normal; <b>3-5</b>: May discard a different spell; <b>6</b>: May keep spell.<br><br><b>Dispelling Spells</b>: Discard 2 <b>Necromancy</b> spells. Roll above the casting value of the lowest dispelling card.<br><br><b>Dispelling Necromancy</b>: <b>Color Wizards</b> must use their college to dispell <b>Necromancy</b>. Other magic types dispell as normal.<br><br><b>End Phase</b>: If out of cards, redraw entire hand.",
+        "scale": 0.9,
+        "value_en": "<div style='font-size:24px'><b>Initial Setup</b>: A <b>Necromancer</b> starts with all <b>Necromancy</b> cards.<br><br><b>Casting Spells</b>: Roll above casting value to cast a spell. After a successful cast, roll a die: <b>1-2</b> Discard spell as normal; <b>3-5</b>: May discard a different spell; <b>6</b>: May keep spell.<br><br><b>Dispelling Spells</b>: Discard 2 <b>Necromancy</b> spells. Roll above the casting value of the lowest dispelling card.<br><br><b>Dispelling Necromancy</b>: <b>Color Wizards</b> must use their college to dispell <b>Necromancy</b>. Other magic types dispell as normal.<br><br><b>End Phase</b>: If out of cards, redraw entire hand.",
+        "scale_en": 0.9
+      }
+    }
+  ]
+}

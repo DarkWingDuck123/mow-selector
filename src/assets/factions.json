@@ -163,6 +163,14 @@
         ]
       },
       {
+        "id": "undead",
+        "name_de": "Undead Fleet",
+        "name_en": "Undead Fleet",
+        "name_es": "Undead Fleet",
+        "name_fr": "Undead Fleet",
+        "allies": []
+      },
+      {
         "id": "spelldecks",
         "name_de": "Spell Decks",
         "name_en": "Spell Decks",

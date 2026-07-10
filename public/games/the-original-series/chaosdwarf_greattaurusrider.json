@@ -1,0 +1,122 @@
+{
+  "weight": "light",
+  "name": {
+    "value": "GREAT TAURUS RIDER",
+    "scale": 1,
+    "value_en": "GREAT TAURUS RIDER",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "CHAOS DWARF FLYER",
+    "scale": 0.75,
+    "value_en": "CHAOS DWARF FLYER",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "Honors: 2",
+    "scale": 1,
+    "value_en": "Honors: 2",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "50 pts",
+    "scale": 1,
+    "value_en": "50 pts",
+    "scale_en": 1
+  },
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 0.75,
+    "value_en": "MOVE",
+    "scale_en": 0.75
+  },
+  "move": {
+    "value": "<div style=\"font-size:40px\">18\" fly</div>",
+    "scale": 1,
+    "value_en": "<div style=\"font-size:40px\">18\" fly</div>",
+    "scale_en": 1
+  },
+  "upperNotes": [],
+  "dmgBoxes": [
+    {
+      "width": 100,
+      "height": 50,
+      "left": 0,
+      "bottom": 50,
+      "name": {
+        "value": "RIDER",
+        "scale": 1,
+        "value_en": "RIDER",
+        "scale_en": 1
+      },
+      "zone": "6",
+      "save": "5+",
+      "notes": {
+        "value": "Rider killed<br>Remove Model",
+        "scale": 1,
+        "value_en": "Rider killed<br>Remove Model",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 100,
+      "height": 50,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "GREAT TAURUS",
+        "scale": 1,
+        "value_en": "GREAT TAURUS",
+        "scale_en": 1
+      },
+      "zone": "4,5",
+      "save": "-",
+      "notes": {
+        "value": "Does one Wound",
+        "scale": 1,
+        "value_en": "Does one Wound",
+        "scale_en": 1
+      }
+    }
+  ],
+  "numberOf": 1,
+  "criticalTitle": {
+    "value": "WOUNDS",
+    "scale": 1,
+    "value_en": "WOUNDS",
+    "scale_en": 1
+  },
+  "criticalBoxes": 3,
+  "lowerNotes": [
+    {
+      "height": 80,
+      "title": {
+        "value": "ATTACKS",
+        "scale": 1,
+        "value_en": "ATTACKS",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style='font-size:18px;;padding:4px 8px;text-align:left;'>Against other flyers, makes 1 dice <b>blunderbuss</b> attack before CC. May also use <b>blunderbuss</b> for defensive fire against incoming flyers.<br><br>Against ships, the <b>blunderbuss</b> rolls a d6: on a 6 remove 1 crew counter from target.</div>",
+        "scale": 1,
+        "value_en": "<div style='font-size:18px;;padding:4px 8px;text-align:left;'>Against other flyers, makes 1 dice <b>blunderbuss</b> attack before CC. May also use <b>blunderbuss</b> for defensive fire against incoming flyers.<br><br>Against ships, the <b>blunderbuss</b> rolls a d6: on a 6 remove 1 crew counter from target.</div>",
+        "scale_en": 1
+      }
+    },
+    {
+      "height": 20,
+      "title": {
+        "value": "CLOSE COMBAT",
+        "scale": 1,
+        "value_en": "CLOSE COMBAT",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style='font-size:20px;;padding:4px 8px;text-align:left;'>+3 CC</div>",
+        "scale": 1,
+        "value_en": "<div style='font-size:20px;;padding:4px 8px;text-align:left;'>+3 CC</div>",
+        "scale_en": 1
+      }
+    }
+  ]
+}

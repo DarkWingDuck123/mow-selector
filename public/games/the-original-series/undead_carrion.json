@@ -1,0 +1,94 @@
+{
+  "weight": "light",
+  "name": {
+    "value": "CARRION",
+    "scale": 1.15,
+    "value_en": "CARRION",
+    "scale_en": 1.15
+  },
+  "type": {
+    "value": "UNDEAD FLYER",
+    "scale": 0.75,
+    "value_en": "UNDEAD FLYER",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "Honors: 1",
+    "scale": 1,
+    "value_en": "Honors: 1",
+    "scale_en": 1
+  },
+  "cost": {
+    "value": "75 pts per 3",
+    "scale": 1,
+    "value_en": "75 pts for 3 flyers",
+    "scale_en": 1
+  },
+  "moveTitle": {
+    "value": "FLIGHT",
+    "scale": 0.75,
+    "value_en": "FLIGHT",
+    "scale_en": 0.75
+  },
+  "move": {
+    "value": "<div style=\"font-size:40px\">18\"</div>",
+    "scale": 1,
+    "value_en": "<div style=\"font-size:40px\">18\"</div>",
+    "scale_en": 1
+  },
+  "upperNotes": [
+    {
+      "value": "LABELS: Light, Beast",
+      "scale": 1,
+      "value_en": "LABELS: Light, Beast",
+      "scale_en": 1
+    }
+  ],
+  "dmgBoxes": [
+    {
+      "width": 100,
+      "height": 100,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "CARRION",
+        "scale": 1,
+        "value_en": "CARRION",
+        "scale_en": 1
+      },
+      "zone": "4,5,6",
+      "save": "5+",
+      "notes": {
+        "value": "<div style=\"font-size:18px\">Inflicts one Wound</div>",
+        "scale": 1,
+        "value_en": "<div style=\"font-size:18px\">Inflicts one Wound</div>",
+        "scale_en": 1
+      }
+    }
+  ],
+  "numberOf": 3,
+  "criticalTitle": {
+    "value": "Wounds",
+    "scale": 1.5,
+    "value_en": "Wounds",
+    "scale_en": 1.5
+  },
+  "criticalBoxes": 2,
+  "lowerNotes": [
+    {
+      "height": 100,
+      "title": {
+        "value": "CLOSE COMBAT",
+        "scale": 1,
+        "value_en": "CLOSE COMBAT",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style=\"font-size:24px;text-align:left;padding:4px 8px\">+2 CC<br><br>For every consecutive round won in combat, gains a +1 (cumulative) to it's next boarding or combat roll in this combat.</div>",
+        "scale": 1,
+        "value_en": "<div style=\"font-size:24px;text-align:left;padding:4px 8px\">+2 CC<br><br>For every consecutive round won in combat, gains a +1 (cumulative) to it's next boarding or combat roll in this combat.</div>",
+        "scale_en": 1
+      }
+    }
+  ]
+}

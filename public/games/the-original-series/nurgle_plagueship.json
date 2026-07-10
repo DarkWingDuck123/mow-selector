@@ -1,0 +1,329 @@
+{
+  "weight": "heavy",
+  "name": {
+    "value": "PLAGUESHIP",
+    "scale": 1,
+    "value_en": "PLAGUESHIP",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "NURGLE MAN O'WAR",
+    "scale": 1,
+    "value_en": "NURGLE MAN O'WAR",
+    "scale_en": 1
+  },
+  "honors": {
+    "value": "Honors: 6",
+    "scale": 0.8,
+    "value_en": "Honors: 6",
+    "scale_en": 0.8
+  },
+  "cost": {
+    "value": "150 pts",
+    "scale": 1,
+    "value_en": "150 pts",
+    "scale_en": 1
+  },
+  "crew": 3,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 1,
+    "value_en": "CREW",
+    "scale_en": 1
+  },
+  "move": {
+    "value": "<b><div style=\"font-size:24px\">SAIL 6\"<br>PADDLES 4\"</div>May turn 90 degrees per 1/2 move</b>",
+    "scale": 0.95,
+    "value_en": "<b><div style=\"font-size:24px\">SAIL 6\"<br>PADDLES 4\"</div>May turn 90 degrees per 1/2 move</b>",
+    "scale_en": 0.95
+  },
+  "upperNotes": [
+    {
+      "value": "CREW: Chaos Warriors",
+      "scale": 1,
+      "value_en": "CREW: Chaos Warriors",
+      "scale_en": 1
+    }
+  ],
+  "highLow": [
+    {
+      "title": "LOW",
+      "title_en": "LOW",
+      "height": 40
+    },
+    {
+      "title": "HIGH",
+      "title_en": "HIGH",
+      "height": 60
+    }
+  ],
+  "dmgBoxes": [
+    {
+      "width": 33,
+      "height": 40,
+      "left": 0,
+      "bottom": 60,
+      "name": {
+        "value": "FOREMAST",
+        "scale": 1,
+        "value_en": "FOREMAST",
+        "scale_en": 1
+      },
+      "zone": "4",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": "<b>Mast</b> Lost Speed reduced by 2\"",
+          "scale": 0.8,
+          "value_en": "<b>Mast</b> Lost Speed reduced by 2\"",
+          "scale_en": 0.8
+        }
+      ],
+      "notes": {
+        "value": "<i>No Criticals</i>",
+        "scale": 1.5,
+        "value_en": "<i>No Criticals</i>",
+        "scale_en": 1.5
+      }
+    },
+    {
+      "width": 33,
+      "height": 40,
+      "left": 33,
+      "bottom": 60,
+      "name": {
+        "value": "MAINMAST",
+        "scale": 1,
+        "value_en": "MAINMAST",
+        "scale_en": 1
+      },
+      "zone": "5",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": "<b>Mast</b>Lost Speed reduced by 2\"",
+          "scale": 0.8,
+          "value_en": "<b>Mast</b>Lost Speed reduced by 2\"",
+          "scale_en": 0.8
+        }
+      ],
+      "notes": {
+        "value": "<i>No Criticals</i>",
+        "scale": 1.5,
+        "value_en": "<i>No Criticals</i>",
+        "scale_en": 1.5
+      }
+    },
+    {
+      "width": 34,
+      "height": 40,
+      "left": 66,
+      "bottom": 60,
+      "name": {
+        "value": "AFTMAST",
+        "scale": 1,
+        "value_en": "AFTMAST",
+        "scale_en": 1
+      },
+      "zone": "6",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": "<b>Mast</b> Lost Speed reduced by 2\"",
+          "scale": 0.8,
+          "value_en": "<b>Mast</b> Lost Speed reduced by 2\"",
+          "scale_en": 0.8
+        }
+      ],
+      "notes": {
+        "value": "<i>No Criticals</i>",
+        "scale": 1.5,
+        "value_en": "<i>No Criticals</i>",
+        "scale_en": 1.5
+      }
+    },
+    {
+      "width": 50,
+      "height": 30,
+      "left": 0,
+      "bottom": 30,
+      "name": {
+        "value": "FORE CATAPULT",
+        "scale": 1,
+        "value_en": "FORE CATAPULT",
+        "scale_en": 1
+      },
+      "zone": "2",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 0.8,
+          "value_en": "",
+          "scale_en": 0.8
+        },
+        {
+          "value": "<b>Fore Catapult</b> destroyed",
+          "scale": 1,
+          "value_en": "<b>Fore Catapult</b> destroyed",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 50,
+      "height": 30,
+      "left": 50,
+      "bottom": 30,
+      "name": {
+        "value": "AFT CATAPULT",
+        "scale": 1,
+        "value_en": "AFT CATAPULT",
+        "scale_en": 1
+      },
+      "zone": "3",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 0.8,
+          "value_en": "",
+          "scale_en": 0.8
+        },
+        {
+          "value": "<b>Aft Catapult</b> destroyed",
+          "scale": 1,
+          "value_en": "<b>Aft Catapult</b> destroyed",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 25,
+      "height": 30,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "BOWS",
+        "scale": 1,
+        "value_en": "BOWS",
+        "scale_en": 1
+      },
+      "zone": "4",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Broadside Catapult</b> destroyed",
+          "scale": 1,
+          "value_en": "<b>Broadside Catapult</b> destroyed",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 50,
+      "height": 30,
+      "left": 25,
+      "bottom": 0,
+      "name": {
+        "value": "PADDLES",
+        "scale": 1,
+        "value_en": "PADDLES",
+        "scale_en": 1
+      },
+      "zone": "5",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": "<b>Paddles</b> destroyed",
+          "scale": 1,
+          "value_en": "<b>Paddles</b> destroyed",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 25,
+      "height": 30,
+      "left": 75,
+      "bottom": 0,
+      "name": {
+        "value": "STERN",
+        "scale": 1,
+        "value_en": "STERN",
+        "scale_en": 1
+      },
+      "zone": "6",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    }
+  ],
+  "criticalTitle": {
+    "value": "BELOW WATERLINE",
+    "scale": 1,
+    "value_en": "BELOW WATERLINE",
+    "scale_en": 1
+  },
+  "criticalSave": "4+",
+  "criticalBoxes": 3,
+  "lowerNotesTitle": {
+    "value": "WEAPONS",
+    "scale": 1,
+    "value_en": "WEAPONS",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Plague Catapults</b>: Fires as a <b>Catapult</b>. Once stopped, roll d6, on a 5+ gives <b>Nurgle's Rot</b>.<br><b>Nurgle's Rot</b>: See Special Rules<br><b>Slime Trail</b>:  Lay trail behind ship after move, any ship touching receives <b>Nurgle's Rot</b> on 1-3.",
+    "scale": 1,
+    "value_en": "<b>Plague Catapults</b>: Fires as a <b>Catapult</b>. Once stopped, roll d6, on a 5+ gives <b>Nurgle's Rot</b>.<br><b>Nurgle's Rot</b>: See Special Rules<br><b>Slime Trail</b>:  Lay trail behind ship after move, any ship touching receives <b>Nurgle's Rot</b> on 1-3.",
+    "scale_en": 1
+  },
+  "foreBattery": "1",
+  "aftBattery": "1",
+  "broadsideBattery": "1"
+}

@@ -1,0 +1,167 @@
+{
+  "weight": "heavy",
+  "name": {
+    "value": "SKULLRAMMER",
+    "scale": 0.75,
+    "value_en": "SKULLRAMMER",
+    "scale_en": 0.75
+  },
+  "type": {
+    "value": "UNDEAD SHIP OF THE LINE",
+    "scale": 0.75,
+    "value_en": "UNDEAD SHIP OF THE LINE",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "Honors: 2",
+    "scale": 0.8,
+    "value_en": "Honors: 2",
+    "scale_en": 0.8
+  },
+  "cost": {
+    "value": "150 pts per 3",
+    "scale": 1,
+    "value_en": "150 pts per 3",
+    "scale_en": 1
+  },
+  "crew": 3,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 0.75,
+    "value_en": "CREW",
+    "scale_en": 0.75
+  },
+  "move": {
+    "value": "<b><div style=\"font-size:32px\">MAGIC 6\"</div>Turn & Move Normally</b>",
+    "scale": 0.75,
+    "value_en": "<b><div style=\"font-size:32px\">MAGIC 6\"</div>Turn & Move Normally</b>",
+    "scale_en": 0.75
+  },
+  "upperNotes": [],
+  "dmgBoxes": [
+    {
+      "width": 33,
+      "height": 100,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "RAM",
+        "scale": 1,
+        "value_en": "RAM",
+        "scale_en": 1
+      },
+      "zone": "3",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": "<b>Ram</b> destroyed",
+          "scale": 1,
+          "value_en": "<b>Ram</b> destroyed",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 34,
+      "height": 50,
+      "left": 33,
+      "bottom": 50,
+      "name": {
+        "value": "TOWERS",
+        "scale": 1,
+        "value_en": "TOWERS",
+        "scale_en": 1
+      },
+      "zone": "4",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Speed reduced<br>by 2\"",
+          "scale": 1,
+          "value_en": "Speed reduced<br>by 2\"",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 33,
+      "height": 100,
+      "left": 67,
+      "bottom": 0,
+      "name": {
+        "value": "STERN",
+        "scale": 1,
+        "value_en": "STERN",
+        "scale_en": 1
+      },
+      "zone": "5",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Speed reduced<br>by 2\"",
+          "scale": 1,
+          "value_en": "Speed reduced<br>by 2\"",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 34,
+      "height": 50,
+      "left": 33,
+      "bottom": 0,
+      "name": {
+        "value": "HULL",
+        "scale": 1,
+        "value_en": "HULL",
+        "scale_en": 1
+      },
+      "zone": "6",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Speed reduced<br>by 2\"",
+          "scale": 1,
+          "value_en": "Speed reduced<br>by 2\"",
+          "scale_en": 1
+        }
+      ]
+    }
+  ],
+  "criticalTitle": {
+    "value": "BELOW WATERLINE",
+    "scale": 1,
+    "value_en": "BELOW WATERLINE",
+    "scale_en": 1
+  },
+  "criticalSave": "4+",
+  "criticalBoxes": 2,
+  "lowerNotesTitle": {
+    "value": "WEAPONS",
+    "scale": 1,
+    "value_en": "WEAPONS",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Ram</b>: 3\" straight. If foe fails BtW save, roll for BtW damage: <b>1-2</b>: 1pt; <b>3-4</b>: 2 pts; <b>5-6</b> 3 pts.<br>Target also suffers random low hits, roll a d6: <b>1-2</b>: 1 hit; <b>3-5</b>: 2 hits; <b>6</b>: 3 hits. Roll to find location, only a 1 is a miss, reroll any other result. A damaged location is set ablaze.",
+    "scale": 0.85,
+    "value_en": "<b>Ram</b>: 3\" straight. If foe fails BtW save, roll for BtW damage: <b>1-2</b>: 1pt; <b>3-4</b>: 2 pts; <b>5-6</b> 3 pts.<br>Target also suffers random low hits, roll a d6: <b>1-2</b>: 1 hit; <b>3-5</b>: 2 hits; <b>6</b>: 3 hits. Roll to find location, only a 1 is a miss, reroll any other result. A damaged location is set ablaze.",
+    "scale_en": 0.85
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "weight": "heavy",
+  "name": {
+    "value": "GREATWINGEDTERROR",
+    "scale": 0.4,
+    "value_en": "GREATWINGEDTERROR",
+    "scale_en": 0.4
+  },
+  "type": {
+    "value": "TZNEETCH MAN O'WAR",
+    "scale": 1,
+    "value_en": "TZNEETCH MAN O'WAR",
+    "scale_en": 1
+  },
+  "honors": {
+    "value": "Honors: 6",
+    "scale": 0.8,
+    "value_en": "Honors: 6",
+    "scale_en": 0.8
+  },
+  "cost": {
+    "value": "150 pts",
+    "scale": 1,
+    "value_en": "150 pts",
+    "scale_en": 1
+  },
+  "crew": 2,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 0.75,
+    "value_en": "CREW",
+    "scale_en": 0.75
+  },
+  "move": {
+    "value": "<div style=\"font-size:24px\">UP TO 6d6\"</div><b>1 DICE PER ENGERGY COUNTER</b><br>USES STANDARD TURN TEMPLATE",
+    "scale": 0.75,
+    "value_en": "<div style=\"font-size:24px\">UP TO 6d6\"</div><b>1 DICE PER ENGERGY COUNTER</b><br>USES STANDARD TURN TEMPLATE",
+    "scale_en": 0.75
+  },
+  "upperNotes": [
+    {
+      "value": "CREW: Chaos Warriors",
+      "scale": 1,
+      "value_en": "CREW: Chaos Warriors",
+      "scale_en": 1
+    },
+    {
+      "value": "MOVE: May skim over terrain, roll d6, damaged on a roll of 1",
+      "scale": 1,
+      "value_en": "MOVE: May skim over terrain, roll d6, damaged on a roll of 1",
+      "scale_en": 1
+    },
+    {
+      "value": "DAMAGE: Damage is taken against the Energy Track (immune to BtW hits)",
+      "scale": 0.85,
+      "value_en": "DAMAGE: Damage is taken against the Energy Track (immune to BtW hits)",
+      "scale_en": 0.85
+    }
+  ],
+  "dmgBoxes": [
+    {
+      "width": 33,
+      "height": 50,
+      "left": 0,
+      "bottom": 50,
+      "name": {
+        "value": "FORECASTLE",
+        "scale": 0.9,
+        "value_en": "FORECASTLE",
+        "scale_en": 0.9
+      },
+      "zone": "2",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [],
+      "notes": {
+        "value": "<i>No Criticals</i>",
+        "scale": 1,
+        "value_en": "<i>No Criticals</i>",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 34,
+      "height": 50,
+      "left": 33,
+      "bottom": 50,
+      "name": {
+        "value": "SAIL",
+        "scale": 1,
+        "value_en": "SAIL",
+        "scale_en": 1
+      },
+      "zone": "3",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [],
+      "notes": {
+        "value": "<i>No Criticals</i>",
+        "scale": 1,
+        "value_en": "<i>No Criticals</i>",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 33,
+      "height": 50,
+      "left": 67,
+      "bottom": 50,
+      "name": {
+        "value": "AFT CASTLE",
+        "scale": 1,
+        "value_en": "AFT CASTLE",
+        "scale_en": 1
+      },
+      "zone": "4",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [],
+      "notes": {
+        "value": "<i>No Criticals</i>",
+        "scale": 1,
+        "value_en": "<i>No Criticals</i>",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 50,
+      "height": 50,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "PROW",
+        "scale": 1,
+        "value_en": "PROW",
+        "scale_en": 1
+      },
+      "zone": "5",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [],
+      "notes": {
+        "value": "<i>No Criticals</i>",
+        "scale": 1,
+        "value_en": "<i>No Criticals</i>",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 50,
+      "height": 50,
+      "left": 50,
+      "bottom": 0,
+      "name": {
+        "value": "WINGS",
+        "scale": 1,
+        "value_en": "WINGS",
+        "scale_en": 1
+      },
+      "zone": "6",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [],
+      "notes": {
+        "value": "<i>No Criticals</i>",
+        "scale": 1,
+        "value_en": "<i>No Criticals</i>",
+        "scale_en": 1
+      }
+    }
+  ],
+  "criticalTitle": {
+    "value": "ENERGY TRACK",
+    "scale": 1,
+    "value_en": "ENERGY TRACK",
+    "scale_en": 1
+  },
+  "criticalSave": "-",
+  "criticalBoxes": 6,
+  "lowerNotesTitle": {
+    "value": "SPECIAL RULES",
+    "scale": 1,
+    "value_en": "SPECIAL RULES",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Energy Track</b>: Each undamaged box generates one die, allocated between <b>Move</b>, <b>Attack</b> & <b>Repair</b>. Destroyed or captured ships vanish.<br><b>Attack</b>: <b>Bolt of Tzeentch</b>, Range 9\", 0-6 die attack. May not repel boarders. No save modifiers.<br><b>Repair</b>: Roll energy dice at start of <i>Battle Phase</i>, <b>Energy Track</b> repairs one box on a <b>5-6</b><br><b>Boarding</b>: Killed enemy crew transform to <b>Pink Horrors</b> on a 4+ (max crew 4).",
+    "scale": 0.55,
+    "value_en": "<b>Energy Track</b>: Each undamaged box generates one die, allocated between <b>Move</b>, <b>Attack</b> & <b>Repair</b>. Destroyed or captured ships vanish.<br><b>Attack</b>: <b>Bolt of Tzeentch</b>, Range 9\", 0-6 die attack. May not repel boarders. No save modifiers.<br><b>Repair</b>: Roll energy dice at start of <i>Battle Phase</i>, <b>Energy Track</b> repairs one box on a <b>5-6</b><br><b>Boarding</b>: Killed enemy crew transform to <b>Pink Horrors</b> on a 4+ (max crew 4).",
+    "scale_en": 0.55
+  },
+  "fullTurret": "0-6"
+}

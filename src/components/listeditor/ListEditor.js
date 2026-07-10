@@ -57,20 +57,44 @@ function parseFreebie(free, freebiePoints) {
 // Count how many cards/crew in the list match a trigger by name_en, name, type_name, or type.
 function countTriggerUnits(triggerName, list, factionData) {
   const trigger = triggerName.toLowerCase();
-  const matches = (pool) =>
-    pool.filter((u) =>
-      u.name_en?.toLowerCase() === trigger ||
-      u.name?.toLowerCase() === trigger ||
-      u.type_name?.toLowerCase() === trigger ||
-      u.type?.toLowerCase() === trigger
-    ).map((u) => u.id);
+  const matchesName = (u) =>
+    u.name_en?.toLowerCase() === trigger ||
+    u.name?.toLowerCase() === trigger ||
+    u.type_name?.toLowerCase() === trigger ||
+    u.type?.toLowerCase() === trigger;
 
-  const matchingUnitIds = new Set(matches(getAllUnits(factionData)));
-  const matchingCrewIds = new Set(matches(getAllCrew(factionData)));
+  const allUnits = getAllUnits(factionData);
+  const allCrew = getAllCrew(factionData);
+  const matchingUnits = allUnits.filter(matchesName);
+  const matchingCrew = allCrew.filter(matchesName);
+  const matchingUnitIds = new Set(matchingUnits.map((u) => u.id));
+  const matchingCrewIds = new Set(matchingCrew.map((u) => u.id));
+
+  // When multiple faction units share an id (e.g. "Khorne Deathgalley" and
+  // "Nurgle Deathgalley" both using id "deathgalley"), fall back to matching
+  // by the name stored on the list entry to avoid false positives.
+  const ambiguousUnitIds = new Set(
+    matchingUnits
+      .filter((u) => allUnits.filter((o) => o.id === u.id).length > 1)
+      .map((u) => u.id)
+  );
+  const ambiguousCrewIds = new Set(
+    matchingCrew
+      .filter((u) => allCrew.filter((o) => o.id === u.id).length > 1)
+      .map((u) => u.id)
+  );
 
   return (
-    (list.cards || []).filter((c) => matchingUnitIds.has(c.id)).length +
-    (list.crew || []).filter((c) => matchingCrewIds.has(c.id)).length
+    (list.cards || []).filter((c) => {
+      if (!matchingUnitIds.has(c.id)) return false;
+      if (ambiguousUnitIds.has(c.id)) return c.name?.toLowerCase() === trigger;
+      return true;
+    }).length +
+    (list.crew || []).filter((c) => {
+      if (!matchingCrewIds.has(c.id)) return false;
+      if (ambiguousCrewIds.has(c.id)) return c.name?.toLowerCase() === trigger;
+      return true;
+    }).length
   );
 }
 

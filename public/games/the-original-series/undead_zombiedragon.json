@@ -1,0 +1,34 @@
+{
+  "weight":"light",
+  "name":{"value":"ZOMBIE DRAGON","scale":1.0},
+  "name_en":{"value":"ZOMBIE DRAGON","scale":1.0},
+  "type":{"value":"UNDEAD FLYER","scale":0.75},
+  "type_en":{"value":"UNDEAD FLYER","scale":0.75},
+  "honors":{"value":"Honors: 3", "scale":1.0},
+  "cost":{"value":"75 pts", "scale":1.0},
+  "moveTitle":{"value":"MOVE","scale":0.75},
+  "move":{"value":"<div style=\"font-size:40px\">15\" fly</div>","scale":1.0},
+  "upperNotes":[],
+  "dmgBoxes":[
+    {"width":100, "height":50, "left":0, "bottom":50,
+     "name":{"value":"RIDER", "scale":1.0},
+     "zone":"6",
+     "save":"4+",
+     "notes":{"value":"Rider killed<br>Remove Model", "scale":1.0}},
+    {"width":100, "height":50, "left":0, "bottom":0,
+     "name":{"value":"DRAGON", "scale":1.0},
+     "zone":"4,5",
+     "save":"4+",
+     "notes":{"value":"Does one Wound", "scale":1.0}}],
+  "numberOf":1,
+  "criticalTitle":{"value":"WOUNDS","scale":1.0},
+  "criticalBoxes":4,
+  "lowerNotes":[
+    {"height":50,
+     "title":{"value":"ATTACKS", "scale":1.0},
+     "note":{"value":"<div style='font-size:20px;;padding:4px 8px;text-align:left;'>Makes a 1 dice <b>Breadth Weapon</b> attack. On a 5+ kills one <b>Crew</b> counter.</div>","scale":1.0}},
+    {"height":50,
+     "title":{"value":"CLOSE COMBAT", "scale":1.0},
+     "note":{"value":"<div style='font-size:20px;;padding:4px 8px;text-align:left;'>+4 CC</div>","scale":1.0}}
+    ]
+}

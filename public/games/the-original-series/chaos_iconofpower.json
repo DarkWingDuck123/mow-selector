@@ -1,0 +1,14 @@
+{
+  "weight": "negligible",
+  "name": {"value": "CHAOS ICON OF POWER", "scale": 1.0},
+  "type": {"value": "CHAOS ANTI-FLYER WEAPON", "scale": 0.75},
+  "honors": {"value": "Honors: +1", "scale": 0.8},
+  "cost": {"value": "25 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 100,
+      "title": {"value": "EFFECT", "scale": 1.0},
+      "note": {"value": "<div style='font-size:24px;;padding:4px 8px;text-align:left;'><b>Powering Up</b>: At the end of the <i>Magic Phase</i> a <b>Chaos Sorcerer's</b> leftover <b>Power Cards</b> may be used to power an <b>Icon of Power</b><br><br><b>Range:</b> 12\"<br><br><b>Attack Dice:</b> 2 dice per <b>Power Card</b> used, discard cards after use.</div>", "scale": 1.0}
+    }
+  ]
+}

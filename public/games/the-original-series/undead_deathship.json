@@ -1,0 +1,160 @@
+{
+  "weight": "heavy",
+  "name": {
+    "value": "DEATHSHIP",
+    "scale": 0.75,
+    "value_en": "DEATHSHIP",
+    "scale_en": 0.75
+  },
+  "type": {
+    "value": "UNDEAD SHIP OF THE LINE",
+    "scale": 0.75,
+    "value_en": "UNDEAD SHIP OF THE LINE",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "Honors: 2",
+    "scale": 0.8,
+    "value_en": "Honors: 2",
+    "scale_en": 0.8
+  },
+  "cost": {
+    "value": "150 pts per 3",
+    "scale": 1,
+    "value_en": "150 pts per 3",
+    "scale_en": 1
+  },
+  "crew": 3,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 0.75,
+    "value_en": "CREW",
+    "scale_en": 0.75
+  },
+  "move": {
+    "value": "<b><div style=\"font-size:32px\">SAIL 6\"</div></b>",
+    "scale": 0.75,
+    "value_en": "<b><div style=\"font-size:32px\">SAIL 6\"</div></b>",
+    "scale_en": 0.75
+  },
+  "upperNotes": [],
+  "dmgBoxes": [
+    {
+      "width": 33,
+      "height": 100,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "BOWS",
+        "scale": 1,
+        "value_en": "BOWS",
+        "scale_en": 1
+      },
+      "zone": "3",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": "<b>Screaming<br>Skull</b> lost",
+          "scale": 1,
+          "value_en": "<b>Screaming<br>Skull</b> lost",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 34,
+      "height": 50,
+      "left": 33,
+      "bottom": 50,
+      "name": {
+        "value": "MAST",
+        "scale": 1,
+        "value_en": "MAST",
+        "scale_en": 1
+      },
+      "zone": "4",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Mast</b> lost<br>Cannot move",
+          "scale": 1,
+          "value_en": "<b>Mast</b> lost<br>Cannot move",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "No Criticals",
+        "scale": 1,
+        "value_en": "No Criticals",
+        "scale_en": 1
+      }
+    },
+    {
+      "width": 33,
+      "height": 100,
+      "left": 67,
+      "bottom": 0,
+      "name": {
+        "value": "STERN",
+        "scale": 1,
+        "value_en": "STERN",
+        "scale_en": 1
+      },
+      "zone": "5",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": []
+    },
+    {
+      "width": 34,
+      "height": 50,
+      "left": 33,
+      "bottom": 0,
+      "name": {
+        "value": "HULL",
+        "scale": 1,
+        "value_en": "HULL",
+        "scale_en": 1
+      },
+      "zone": "6",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": []
+    }
+  ],
+  "criticalTitle": {
+    "value": "BELOW WATERLINE",
+    "scale": 1,
+    "value_en": "BELOW WATERLINE",
+    "scale_en": 1
+  },
+  "criticalSave": "4+",
+  "criticalBoxes": 2,
+  "lowerNotesTitle": {
+    "value": "WEAPONS",
+    "scale": 1,
+    "value_en": "WEAPONS",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Screaming Skull</b>: 1 Fore. Fires as a catapult. A target damaged by a <b>Screaming Skull</b> rolls a d6 at the end of the <i>Battle Phase</i>, On a <b>1</b> the target loses 1 crew.",
+    "scale": 1,
+    "value_en": "<b>Screaming Skull</b>: 1 Fore. Fires as a catapult. A target damaged by a <b>Screaming Skull</b> rolls a d6 at the end of the <i>Battle Phase</i>, On a <b>1</b> the target loses 1 crew.",
+    "scale_en": 1
+  },
+  "foreBattery": "1"
+}

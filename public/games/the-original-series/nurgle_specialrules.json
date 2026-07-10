@@ -1,0 +1,14 @@
+{
+  "weight": "negligible",
+  "name": {"value": "NURGLE SPECIAL RULES", "scale": 1.0},
+  "type": {"value": "NURGLE", "scale": 0.75},
+  "honors": {"value": "", "scale": 1.0},
+  "cost": {"value": "", "scale": 1.0},
+  "notes": [
+    {
+      "height": 100,
+      "title": {"value": "NURGLE'S ROT", "scale": 1.0},
+      "note": {"value": "<div style='font-size:24px'>Add a counter each time a ship is infected by <b>Nurgle's Rot</b><br><br>Any ship involved in a boarding action against a <b>Plagueship</b> or <b>Plaguecrusher</b> is infected by <b>Nurgle's Rot</b>.<br><br><b>Plague Catapults</b> infect ships on a 5+.<br><br><b>Slime Trails</b> infect ships on a 1-3.<br><br>During the <i>End Phase</i>, roll d6 for each <b>Nurgle's Rot</b> counter: <b>1-2</b> Remove counter; <b>3</b>: No effect; <b>4-5</b>: Remove 1 crew; <b>6</b>: take 1 point BtW damage.</div>", "scale": 1.0}
+    }
+  ]
+}

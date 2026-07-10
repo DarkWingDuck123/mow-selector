@@ -1,0 +1,290 @@
+{
+  "weight": "heavy",
+  "name": {
+    "value": "<div style='font-size:28px'>THUNDERFIRE</div><div style='font-size:12px'>BATTLEBARGE</div>",
+    "scale": 0.8,
+    "value_en": "<div style='font-size:28px'>THUNDERFIRE</div><div style='font-size:12px'>BATTLEBARGE</div>",
+    "scale_en": 0.8
+  },
+  "type": {
+    "value": "CHAOS DWARF MAN O'WAR",
+    "scale": 1,
+    "value_en": "CHAOS DWARF MAN O'WAR",
+    "scale_en": 1
+  },
+  "honors": {
+    "value": "Honors: 6",
+    "scale": 0.8,
+    "value_en": "Honors: 6",
+    "scale_en": 0.8
+  },
+  "cost": {
+    "value": "150 pts",
+    "scale": 1,
+    "value_en": "150 pts",
+    "scale_en": 1
+  },
+  "crew": 4,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 1,
+    "value_en": "CREW",
+    "scale_en": 1
+  },
+  "move": {
+    "value": "<div style=\"font-size:24px\">STEAM 6\"</div><b>Reverse up to 2\"</b><br>Turn 90 degrees for 1/2",
+    "scale": 0.75,
+    "value_en": "<div style=\"font-size:24px\">STEAM 6\"</div><b>Reverse up to 2\"</b><br>Turn 90 degrees for 1/2",
+    "scale_en": 0.75
+  },
+  "upperNotes": [],
+  "highLow": [
+    {
+      "title": "LOW",
+      "title_en": "LOW",
+      "height": 50
+    },
+    {
+      "title": "HIGH",
+      "title_en": "HIGH",
+      "height": 50
+    }
+  ],
+  "dmgBoxes": [
+    {
+      "width": 50,
+      "height": 50,
+      "left": 0,
+      "bottom": 50,
+      "name": {
+        "value": "ROCKET BATTERY",
+        "scale": 0.6,
+        "value_en": "ROCKET BATTERY",
+        "scale_en": 0.6
+      },
+      "zone": "3,4",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": "1/2 <b>Rockets</b> fired",
+          "scale": 1,
+          "value_en": "1/2 <b>Rockets</b> fired",
+          "scale_en": 1
+        },
+        {
+          "value": "<b>Rockets</b> destroyed",
+          "scale": 1,
+          "value_en": "<b>Rockets</b> destroyed",
+          "scale_en": 1
+        }
+      ],
+      "notes": {
+        "value": "",
+        "scale": 1.5,
+        "value_en": "",
+        "scale_en": 1.5
+      }
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 50,
+      "bottom": 50,
+      "name": {
+        "value": "BRIDGE",
+        "scale": 0.6,
+        "value_en": "BRIDGE",
+        "scale_en": 0.6
+      },
+      "zone": "5",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 30,
+      "height": 50,
+      "left": 70,
+      "bottom": 50,
+      "name": {
+        "value": "STERN",
+        "scale": 0.7,
+        "value_en": "STERN",
+        "scale_en": 0.7
+      },
+      "zone": "6",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "BOWS",
+        "scale": 0.5,
+        "value_en": "BOWS",
+        "scale_en": 0.5
+      },
+      "zone": "2",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 20,
+      "bottom": 0,
+      "name": {
+        "value": "AMMO",
+        "scale": 0.6,
+        "value_en": "AMMO",
+        "scale_en": 0.6
+      },
+      "zone": "3",
+      "save": "3+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Auto Critical",
+          "scale": 1,
+          "value_en": "Auto Critical",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 40,
+      "bottom": 0,
+      "name": {
+        "value": "ENGINES",
+        "scale": 0.65,
+        "value_en": "ENGINES",
+        "scale_en": 0.65
+      },
+      "zone": "4",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Speed<br>-3\"",
+          "scale": 1,
+          "value_en": "Speed<br>-3\"",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 60,
+      "bottom": 0,
+      "name": {
+        "value": "ENGINES",
+        "scale": 0.65,
+        "value_en": "ENGINES",
+        "scale_en": 0.65
+      },
+      "zone": "5",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "Speed<br>-3\"",
+          "scale": 1,
+          "value_en": "Speed<br>-3\"",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 20,
+      "height": 50,
+      "left": 80,
+      "bottom": 0,
+      "name": {
+        "value": "AFT",
+        "scale": 0.6,
+        "value_en": "AFT",
+        "scale_en": 0.6
+      },
+      "zone": "6",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    }
+  ],
+  "criticalTitle": {
+    "value": "BELOW WATERLINE",
+    "scale": 1,
+    "value_en": "BELOW WATERLINE",
+    "scale_en": 1
+  },
+  "criticalSave": "4+",
+  "criticalBoxes": 4,
+  "lowerNotesTitle": {
+    "value": "WEAPONS",
+    "scale": 1,
+    "value_en": "WEAPONS",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Thunderfire Rocket Battery</b>: Uses artillery dice. Range 12\", number rolled is # hits scored. May not repel boarders. Misfire (d6): <b>1</b>: Roll dice again, <b>Battery</b> takes the hits, 2nd <b>misfire</b> barge explodes; <b>2</b>: Roll again, <b>Barge</b> takes that many its (opponent chooses high or low), <b>misfire</b> barge explodes; <b>3</b>: Barge takes d6 hits (opponent decides high or low); <b>4</b>: Place 1 damage on <b>Battery</b>; <b>5</b>: <b>Battery</b> does not fire this or next turn; <b>6</b>: Battery does not fire.",
+    "scale": 0.55,
+    "value_en": "<b>Thunderfire Rocket Battery</b>: Uses artillery dice. Range 12\", number rolled is # hits scored. May not repel boarders. Misfire (d6): <b>1</b>: Roll dice again, <b>Battery</b> takes the hits, 2nd <b>misfire</b> barge explodes; <b>2</b>: Roll again, <b>Barge</b> takes that many its (opponent chooses high or low), <b>misfire</b> barge explodes; <b>3</b>: Barge takes d6 hits (opponent decides high or low); <b>4</b>: Place 1 damage on <b>Battery</b>; <b>5</b>: <b>Battery</b> does not fire this or next turn; <b>6</b>: Battery does not fire.",
+    "scale_en": 0.55
+  },
+  "foreBattery": "*"
+}

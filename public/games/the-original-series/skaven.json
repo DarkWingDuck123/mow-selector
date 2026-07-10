@@ -44,6 +44,9 @@
         },
         {
             "rule": "Max 1 Schmidt's Ironfist"
+        },
+        {
+            "rule": "Max 0% Non-Allies"
         }
     ],
     "allies": [
@@ -197,7 +200,8 @@
                     "name_en": "Skaven Warlord",
                     "type_name": "Skaven Admiral",
                     "type_name_en": "Skaven Admiral",
-                    "description_en": "(W)",
+                    "description": "(W) +1 CC, may cling to wreckage",
+                    "description_en": "(W) +1 CC, may cling to wreckage",
                     "type": "crew",
                     "source": "PF",
                     "source_en": "PF",

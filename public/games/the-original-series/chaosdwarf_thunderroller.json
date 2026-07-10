@@ -1,0 +1,191 @@
+{
+  "weight": "heavy",
+  "name": {
+    "value": "<div style='font-size:32px'>THUNDER-ROLLER</div>",
+    "scale": 1,
+    "value_en": "<div style='font-size:32px'>THUNDER-ROLLER</div>",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "CHAOS DWARF SHIP OF THE LINE",
+    "scale": 0.75,
+    "value_en": "CHAOS DWARF SHIP OF THE LINE",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "Honors: 2",
+    "scale": 0.8,
+    "value_en": "Honors: 2",
+    "scale_en": 0.8
+  },
+  "cost": {
+    "value": "150 pts per 3",
+    "scale": 1,
+    "value_en": "150 pts per 3",
+    "scale_en": 1
+  },
+  "crew": 2,
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "crewTitle": {
+    "value": "CREW",
+    "scale": 0.75,
+    "value_en": "CREW",
+    "scale_en": 0.75
+  },
+  "move": {
+    "value": "<b><div style=\"font-size:24px\">STEAM 6\"</div>No Turns 9\"<br>90 degree turn per 1/2 move<br>May reverse up to 3\"</b>",
+    "scale": 0.75,
+    "value_en": "<b><div style=\"font-size:24px\">STEAM 6\"</div>No Turns 9\"<br>90 degree turn per 1/2 move<br>May reverse up to 3\"</b>",
+    "scale_en": 0.75
+  },
+  "upperNotes": [],
+  "dmgBoxes": [
+    {
+      "width": 33,
+      "height": 50,
+      "left": 0,
+      "bottom": 0,
+      "name": {
+        "value": "THUNDER ROLLER",
+        "scale": 0.7,
+        "value_en": "THUNDER ROLLER",
+        "scale_en": 0.7
+      },
+      "zone": "2",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Roller</b><br>destroyed",
+          "scale": 1,
+          "value_en": "<b>Roller</b><br>destroyed",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 34,
+      "height": 50,
+      "left": 33,
+      "bottom": 0,
+      "name": {
+        "value": "SUPERSTRUCTURE",
+        "scale": 0.55,
+        "value_en": "SUPERSTRUCTURE",
+        "scale_en": 0.55
+      },
+      "zone": "3",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 33,
+      "height": 50,
+      "left": 67,
+      "bottom": 0,
+      "name": {
+        "value": "ENGINES",
+        "scale": 1,
+        "value_en": "ENGINES",
+        "scale_en": 1
+      },
+      "zone": "4",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        },
+        {
+          "value": "<b>Immobilizes</b><br>ship",
+          "scale": 1,
+          "value_en": "<b>Immobilizes</b><br>ship",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 67,
+      "height": 50,
+      "left": 0,
+      "bottom": 50,
+      "name": {
+        "value": "CANNON",
+        "scale": 1,
+        "value_en": "CANNON",
+        "scale_en": 1
+      },
+      "zone": "5",
+      "save": "4+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "<b>Cannon</b> lost",
+          "scale": 1,
+          "value_en": "<b>Cannon</b> lost",
+          "scale_en": 1
+        }
+      ]
+    },
+    {
+      "width": 33,
+      "height": 50,
+      "left": 67,
+      "bottom": 50,
+      "name": {
+        "value": "BRIDGE",
+        "scale": 1,
+        "value_en": "BRIDGE",
+        "scale_en": 1
+      },
+      "zone": "6",
+      "save": "5+",
+      "isHorizontal": false,
+      "boxes": [
+        {
+          "value": "",
+          "scale": 1,
+          "value_en": "",
+          "scale_en": 1
+        }
+      ]
+    }
+  ],
+  "criticalTitle": {
+    "value": "BELOW WATERLINE",
+    "scale": 1,
+    "value_en": "BELOW WATERLINE",
+    "scale_en": 1
+  },
+  "criticalSave": "4+",
+  "criticalBoxes": 2,
+  "lowerNotesTitle": {
+    "value": "WEAPONS",
+    "scale": 1,
+    "value_en": "WEAPONS",
+    "scale_en": 1
+  },
+  "lowerNotes": {
+    "value": "<b>Cannon</b>: 1 firing ahead, may repel boarders.<br><br><b>Roller</b>: For each full inch of movement, the <b>Roller</b> moves in a straight line before ramming, make a single dice attack against a low location.",
+    "scale": 1,
+    "value_en": "<b>Cannon</b>: 1 firing ahead, may repel boarders.<br><br><b>Roller</b>: For each full inch of movement, the <b>Roller</b> moves in a straight line before ramming, make a single dice attack against a low location.",
+    "scale_en": 1
+  },
+  "foreBattery": "1"
+}
