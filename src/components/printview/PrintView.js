@@ -11,6 +11,7 @@ import { mediumCard } from "../../utils/card/medium";
 import { tremendousCard } from "../../utils/card/tremendous";
 import { negligibleCard } from "../../utils/card/negligible";
 import { findFactionUnit } from "../../utils/faction";
+import { buildFleetListCardObj } from "../../utils/fleetList";
 
 import "./PrintView.css";
 
@@ -193,6 +194,17 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
     const meta = metaByFaction[cardFactionId];
 
     const addonDef = findFactionUnit(factionData, card.id);
+
+    if (addonDef?.type === "fleet_list_card") {
+      const obj = buildFleetListCardObj(addonDef, list, factionData);
+      const html = meta ? DOMPurify.sanitize(negligibleCard(meta, obj, {})) : null;
+      if (!html) return [];
+      return Array.from({ length: count }, (_, j) => ({
+        key: `${card.uid || card.id}-${i}-${j}`,
+        html,
+      }));
+    }
+
     if (addonDef?.type === "crew_card") {
       const fetchedCrewJson = cardObjs[`${cardFactionId}/${card.id}`];
       const crewMeta = fetchedCrewJson?.styleOverride

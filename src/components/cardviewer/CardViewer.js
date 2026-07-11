@@ -8,6 +8,7 @@ import { mediumCard } from "../../utils/card/medium";
 import { tremendousCard } from "../../utils/card/tremendous";
 import { negligibleCard } from "../../utils/card/negligible";
 import { findFactionUnit } from "../../utils/faction";
+import { buildFleetListCardObj } from "../../utils/fleetList";
 
 import "./CardViewer.css";
 
@@ -210,6 +211,25 @@ export const CardViewer = ({ listId, bwOverride }) => {
 
         // Dynamic crew card — build obj from list.crew, merging into fetched card JSON notes
         const addonDef = findFactionUnit(factionData, card.id);
+
+        if (addonDef?.type === "fleet_list_card") {
+          const obj = buildFleetListCardObj(addonDef, list, factionData);
+          const html = meta ? DOMPurify.sanitize(negligibleCard(meta, obj, {})) : null;
+          return Array.from({ length: count }, (_, j) => (
+            <div key={`${card.uid || `${card.id}-${i}`}-${j}`} className="card-viewer__card">
+              {html ? (
+                <div
+                  className="card-viewer__card-inner"
+                  style={{ transform: `scale(${cardScale})` }}
+                  dangerouslySetInnerHTML={{ __html: html }}
+                />
+              ) : (
+                <div className="card-viewer__placeholder">{card.name || card.id}</div>
+              )}
+            </div>
+          ));
+        }
+
         if (addonDef?.type === "crew_card") {
           const fetchedCrewJson = cardObjs[`${cardFactionId}/${card.id}`];
           const crewMeta = fetchedCrewJson?.styleOverride

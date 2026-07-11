@@ -192,6 +192,16 @@
                     "cost": "0"
                 },
                 {
+                    "id": "fleetlistcard",
+                    "weight": "negligible",
+                    "name": "Fleet List Card",
+                    "name_en": "Fleet List Card",
+                    "type": "fleet_list_card",
+                    "type_name": "Fleet List",
+                    "type_name_en": "Fleet List",
+                    "cost": "0"
+                },
+                {
                     "id": "blank",
                     "name": "Empty",
                     "name_en": "Empty",
