@@ -91,11 +91,13 @@ export function buildFleetListCardObj(addonDef, list, factionData) {
 
   const totalHtml = `<div style="${rowStyle}font-weight:bold;"><span>TOTAL</span><span style="white-space:nowrap;">${totalCost} pts</span></div>`;
 
+  const nameHtml = `<div style="font-weight:bold;font-size:1.05em;margin-bottom:2px;">${list.name || "Fleet"}</div>`;
   const descHtml = list.description
     ? `<div style="font-style:italic;font-size:0.85em;margin-bottom:4px;">${list.description}</div>`
     : "";
 
-  const content = descHtml + groupsHtml + crewHtml + dividerHtml + totalHtml;
+  const headerDividerHtml = `<hr style="border:none;border-top:1px solid currentColor;margin:4px 0;">`;
+  const content = nameHtml + descHtml + headerDividerHtml + groupsHtml + crewHtml + dividerHtml + totalHtml;
 
   return {
     weight: "negligible",

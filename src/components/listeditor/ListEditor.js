@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import DOMPurify from "dompurify";
 import { ListEntry } from "../../components/listentry";
 import { updateList, moveCard, removeCrew, removeCrewGroup, moveCrew, syncFreebies, batchRandomize } from "../../state/lists";
 import { randomName } from "../../utils/naming";
@@ -7,6 +8,7 @@ import { OrderableList } from "../../components/orderablelist";
 import gameSystems from "../../assets/factions.json";
 import { getRandomId } from "../../utils/id";
 import { getAllUnits, getAllCrew } from "../../utils/faction";
+import { buildFleetListCardObj } from "../../utils/fleetList";
 
 import "./ListEditor.css";
 
@@ -197,6 +199,28 @@ export const ListEditor = ({
     }
   };
 
+  const handlePrintList = () => {
+    const cardObj = buildFleetListCardObj(null, list, factionData);
+    const content = DOMPurify.sanitize(cardObj.notes[0].note.value);
+    const printWindow = window.open("", "_blank", "width=480,height=700");
+    if (!printWindow) return;
+    printWindow.document.write(`<!DOCTYPE html>
+<html>
+<head>
+  <title>${list.name || "Fleet List"}</title>
+  <style>
+    body { font-family: serif; padding: 24px; max-width: 360px; margin: 0 auto; font-size: 14px; color: #000; }
+    hr { border: none; border-top: 1px solid #000; margin: 4px 0; }
+    @media print { body { padding: 0; } }
+  </style>
+</head>
+<body>
+  ${content}
+  <script>window.print();<\/script>
+</body>
+</html>`);
+    printWindow.document.close();
+  };
 
   useEffect(() => {
     if (!factionData?.freebies?.length || !list || !list.factionId || factionData.id !== list.factionId) return;
@@ -322,11 +346,16 @@ export const ListEditor = ({
             <label className="list-editor__label">Points</label>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
               <span className="list-editor__points">{pointsSpent}</span>
-              {list.cards?.length > 0 && (
-                <button className="list-entry__randomize" onClick={handleRandomizeAll}>
-                  Randomize All
+              <div style={{ display: "flex", gap: "8px" }}>
+                <button className="list-entry__randomize" onClick={handlePrintList}>
+                  Print List
                 </button>
-              )}
+                {list.cards?.length > 0 && (
+                  <button className="list-entry__randomize" onClick={handleRandomizeAll}>
+                    Randomize All
+                  </button>
+                )}
+              </div>
             </div>
           </div>
 
