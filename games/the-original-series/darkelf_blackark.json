@@ -1,6 +1,10 @@
 {
   "weight":"heavy",
-  "name":{"value":"BLACK ARK","scale":1.0},
+  "name":{
+    "value":"BLACK ARK",
+    "value": "<div style='font-size:28px'>BLACK ARK</div><div style='font-size:12px'>OF NAGGAROTH</div>",
+    "scale":1.0},
+
   "type":{"value":"DARK ELF MAN O'WAR","scale":1.0},
   "honors":{"value":"Honors: 10", "scale":0.8},
   "cost":{"value":"250 pts", "scale":1.0},
