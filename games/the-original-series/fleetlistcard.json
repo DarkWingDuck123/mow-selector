@@ -1,0 +1,14 @@
+{
+  "weight": "negligible",
+  "name": {"value": "", "scale": 1.0},
+  "type": {"value": "FLEET LIST", "scale": 0.75},
+  "honors": {"value": "", "scale": 1.0},
+  "cost": {"value": "0 pts", "scale": 1.0},
+  "notes": [
+    {
+      "height": 100,
+      "title": {"value": "", "scale": 1.0},
+      "note": {"value": "", "scale": 1.0}
+    }
+  ]
+}
