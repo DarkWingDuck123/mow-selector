@@ -102,10 +102,13 @@ function shipname(gw, gh, w, h, x, y, name, meta) {
         + "text-align:center;"
         + "color:" + meta.fgColor + ";"
         + "font-family: \"IM Fell English\", serif;"
-        + "transform:scale(" + name.scale + ",1);"
-        + "-webkit-transform:scale(" + name.scale + ",1);"
       + "'>"
-      + DOMPurify.sanitize(name.value)
+      + "<div "
+        + "style='"
+          + scaleStyle(name)
+        + "'>"
+        + DOMPurify.sanitize(name.value)
+      + "</div>"
     + "</div>";
   return s;
 }

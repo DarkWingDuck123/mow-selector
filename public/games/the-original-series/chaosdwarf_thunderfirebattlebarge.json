@@ -2,9 +2,9 @@
   "weight": "heavy",
   "name": {
     "value": "<div style='font-size:28px'>THUNDERFIRE</div><div style='font-size:12px'>BATTLEBARGE</div>",
-    "scale": 0.8,
+    "scale": 1,
     "value_en": "<div style='font-size:28px'>THUNDERFIRE</div><div style='font-size:12px'>BATTLEBARGE</div>",
-    "scale_en": 0.8
+    "scale_en": 1 
   },
   "type": {
     "value": "CHAOS DWARF MAN O'WAR",
