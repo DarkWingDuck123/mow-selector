@@ -8,6 +8,10 @@
   "new_title_en" : "News:",
   "news" : [
     {
+      "date_en" : "July 11th, 2026",
+      "announcement_en" : "<p><b>We're in beta!</b><p>I've finished the first pass at the various fleet lists. It took a few more than a few days, I must admit, adding everything from Man O'War, Sea of Blood, Plague Fleet, the White Dwarfs and the Citadel Journals took longer than I expected.<p>- Drake"
+    },
+    {
       "date_en" : "June 14th, 2026",
       "announcement_en" : "<p><b>We've launched!</b><p>The site is live and all of the lists/rules from the original box game and Sea of Blood are available. I'll be adding the contents for Plaguefleet and various Citadel Journals in the next few days.<p>- Drake"
     }
