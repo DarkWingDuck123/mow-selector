@@ -1,0 +1,86 @@
+{
+  "weight": "negligible",
+  "name": {
+    "value": "BOMB BOAT",
+    "scale": 1,
+    "value_en": "BOMB BOAT",
+    "scale_en": 1
+  },
+  "type": {
+    "value": "INDEPENDENT BOAT",
+    "scale": 0.75,
+    "value_en": "INDEPENDENT BOAT",
+    "scale_en": 0.75
+  },
+  "honors": {
+    "value": "Honors: 1",
+    "scale": 0.8,
+    "value_en": "Honors: 1",
+    "scale_en": 0.8
+  },
+  "cost": {
+    "value": "25 pts",
+    "scale": 1,
+    "value_en": "25 pts",
+    "scale_en": 1
+  },
+  "moveTitle": {
+    "value": "MOVE",
+    "scale": 1,
+    "value_en": "MOVE",
+    "scale_en": 1
+  },
+  "move": {
+    "value": "<b><div style='font-size:32px'>D6\"</div>Moves before all other ships, drifting in the wind direction",
+    "scale": 1,
+    "value_en": "<b><div style='font-size:32px'>D6\"</div>Moves before all other ships, drifting in the wind direction",
+    "scale_en": 1
+  },
+  "notes": [
+    {
+      "height": 23,
+      "title": {
+        "value": "LAUNCHING",
+        "scale": 1,
+        "value_en": "LAUNCHING",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style='font-size:20px'><b>Boats</b> launch after a ship moves, but before it fires. They do not interact with other ships on the turn they launch (i.e. <b>Bomb Boats</b> don't explode and <b>Raiding Boats</b> don't initiate boarding actions).</b>",
+        "scale": 1,
+        "value_en": "<div style='font-size:20px'><b>Boats</b> launch after a ship moves, but before it fires. They do not interact with other ships on the turn they launch (i.e. <b>Bomb Boats</b> don't explode and <b>Raiding Boats</b> don't initiate boarding actions).</b>",
+        "scale_en": 1
+      }
+    },
+    {
+      "height": 28,
+      "title": {
+        "value": "COLLISIONS",
+        "scale": 1,
+        "value_en": "COLLISIONS",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style='font-size:20px'>If a <b>Bomb Boat</b> moves into contact with an obstruction, the <b>Bomb Boat</b> explodes. If the obstruction is <i>not</i> a ship, boat or sea monster, there is no effect. Otherwise the <b>Bomb Boat</b> does 1 random low hit (re-roll misses with only a 1 being a miss). Save -1. Remove the <b>Bomb Boat</b>.</div>",
+        "scale": 1,
+        "value_en": "<div style='font-size:20px'>If a <b>Bomb Boat</b> moves into contact with an obstruction, the <b>Bomb Boat</b> explodes. If the obstruction is <i>not</i> a ship, boat or sea monster, there is no effect. Otherwise the <b>Bomb Boat</b> does 1 random low hit (re-roll misses with only a 1 being a miss). Save -1. Remove the <b>Bomb Boat</b>.</div>",
+        "scale_en": 1
+      }
+    },
+    {
+      "height": 46,
+      "title": {
+        "value": "ATTACKING",
+        "scale": 1,
+        "value_en": "ATTACKING",
+        "scale_en": 1
+      },
+      "note": {
+        "value": "<div style='font-size:20px'>Main weapons may not fire on <b>Boats</b>. <b>Boats</b> may be boarded by a boarding action (note: <b>Bomb Boats</b> will explode prior to the action). <b>Boats</b> within 3\" may be fired at using <i>Defensive Fire</i> (1 die per Crew Counter). <b>Boats</b> are hit on a 5+ and have a 4+ save, they can take only 1 hit. Destroyed <b>Boats</b> are removed from play, any crew drowns immediately. Spells may effect <b>Boats</b> (using the 4+ save). Unmanned <b>Boats</b> (except <b>Bomb Boat</b>) are immediately removed from play.",
+        "scale": 1,
+        "value_en": "<div style='font-size:20px'>Main weapons may not fire on <b>Boats</b>. <b>Boats</b> may be boarded by a boarding action (note: <b>Bomb Boats</b> will explode prior to the action). <b>Boats</b> within 3\" may be fired at using <i>Defensive Fire</i> (1 die per Crew Counter). <b>Boats</b> are hit on a 5+ and have a 4+ save, they can take only 1 hit. Destroyed <b>Boats</b> are removed from play, any crew drowns immediately. Spells may effect <b>Boats</b> (using the 4+ save). Unmanned <b>Boats</b> (except <b>Bomb Boat</b>) are immediately removed from play.",
+        "scale_en": 1
+      }
+    }
+  ]
+}

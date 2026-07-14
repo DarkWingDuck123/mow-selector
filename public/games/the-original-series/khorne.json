@@ -547,6 +547,53 @@
           "cost": "50"
         }
       ]
+    },
+    {
+      "title": "Boats",
+      "title_en": "Boats",
+      "title_de": "Boats",
+      "title_es": "Boats",
+      "title_fr": "Boats",
+      "type": "UNIT",
+      "expanded": false,
+      "units": [
+        {
+          "id": "boat_bomb",
+          "weight": "negligible",
+          "name": "Bomb Boat",
+          "name_en": "Bomb Boat",
+          "type": "card",
+          "type_name": "Boat",
+          "type_name_en": "Boat",
+          "source": "CJ 3",
+          "source_en": "CJ 3",
+          "cost": "25"
+        },
+        {
+          "id": "boat_life",
+          "weight": "negligible",
+          "name": "Life Boat",
+          "name_en": "Life Boat",
+          "type": "card",
+          "type_name": "Boat",
+          "type_name_en": "Boat",
+          "source": "CJ 3",
+          "source_en": "CJ 3",
+          "cost": "25"
+        },
+        {
+          "id": "boat_raiding",
+          "weight": "negligible",
+          "name": "Raiding Boat",
+          "name_en": "Raiding Boat",
+          "type": "card",
+          "type_name": "Boat",
+          "type_name_en": "Boat",
+          "source": "CJ 3",
+          "source_en": "CJ 3",
+          "cost": "25"
+        }
+      ]
     }
   ]
 }
