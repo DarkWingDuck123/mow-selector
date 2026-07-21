@@ -6,6 +6,7 @@ import DOMPurify from "dompurify";
 import { Button } from "../button";
 import { PrintGrid } from "./PrintGrid";
 import { heavyCard } from "../../utils/card/heavy";
+import { heavy2Card } from "../../utils/card/heavy2";
 import { lightCard } from "../../utils/card/light";
 import { mediumCard } from "../../utils/card/medium";
 import { tremendousCard } from "../../utils/card/tremendous";
@@ -61,6 +62,7 @@ const DEFAULT_META = {
 function renderCard(meta, obj, inst) {
   switch (obj.weight) {
     case "heavy":      return heavyCard(meta, obj, inst);
+    case "heavy2":     return heavy2Card(meta, obj, inst);
     case "light":      return lightCard(meta, obj, inst);
     case "medium":     return mediumCard(meta, obj, inst);
     case "tremendous": return tremendousCard(meta, obj, inst);
@@ -207,7 +209,7 @@ export const PrintView = ({ listId, bwOverride, onBwOverride, gridMode = "3x3", 
 
     if (addonDef?.type === "crew_card") {
       const fetchedCrewJson = cardObjs[`${cardFactionId}/${card.id}`];
-      const crewMeta = fetchedCrewJson?.styleOverride
+      const crewMeta = !bwOverride && fetchedCrewJson?.styleOverride
         ? { ...DEFAULT_META, ...fetchedCrewJson.styleOverride }
         : meta;
       const obj = buildCrewCardObj(addonDef, list, fetchedCrewJson);
@@ -222,22 +224,36 @@ export const PrintView = ({ listId, bwOverride, onBwOverride, gridMode = "3x3", 
     const obj = cardObjs[`${cardFactionId}/${card.id}`];
     if (!obj || !meta) return [];
     const effectiveObj = card.randomOverride ? { ...obj, ...card.randomOverride } : obj;
-    const effectiveMeta = obj.styleOverride ? { ...DEFAULT_META, ...obj.styleOverride } : meta;
+    const effectiveMeta = !bwOverride && obj.styleOverride ? { ...DEFAULT_META, ...obj.styleOverride } : meta;
+    const slots = effectiveObj.weight === "heavy2" ? 2 : 1;
     return Array.from({ length: count }, (_, j) => {
       const shipName = (card.shipNames || [])[j];
       const inst = shipName ? { name: { value: shipName, scale: 1.0 } } : {};
       const html = DOMPurify.sanitize(renderCard(effectiveMeta, effectiveObj, inst));
       if (!html) return null;
-      return { key: `${card.uid || card.id}-${i}-${j}`, html };
+      return { key: `${card.uid || card.id}-${i}-${j}`, html, slots };
     }).filter(Boolean);
   });
 
   const CARDS_PER_PAGE = gridMode === "2x2" ? 4 : 9;
-  const totalPages = Math.max(1, Math.ceil(cardItems.length / CARDS_PER_PAGE));
+  const totalSlots = cardItems.reduce((sum, item) => sum + (item.slots || 1), 0);
+  const totalPages = Math.max(1, Math.ceil(totalSlots / CARDS_PER_PAGE));
   const [page, setPage] = useState(1);
   const [allPages, setAllPages] = useState(false);
   const clampedPage = Math.min(Math.max(1, page), totalPages);
-  const pageItems = allPages ? cardItems : cardItems.slice((clampedPage - 1) * CARDS_PER_PAGE, clampedPage * CARDS_PER_PAGE);
+
+  const pageItems = allPages ? cardItems : (() => {
+    const startSlot = (clampedPage - 1) * CARDS_PER_PAGE;
+    const endSlot = clampedPage * CARDS_PER_PAGE;
+    const result = [];
+    let slot = 0;
+    for (const item of cardItems) {
+      if (slot >= endSlot) break;
+      if (slot >= startSlot) result.push(item);
+      slot += item.slots || 1;
+    }
+    return result;
+  })();
 
   const printRef = useRef(null);
   const handlePrint = useReactToPrint({

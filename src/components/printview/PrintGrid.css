@@ -48,6 +48,16 @@
     transform: scale(0.661);
   }
 
+  /* double-width card (heavy2): spans 2 columns, width doubles */
+  .print-card--double {
+    grid-column: span 2;
+    width: calc(330px * 2 + 3px);
+  }
+
+  .print-grid--2x2 .print-card--double {
+    width: calc(342px * 2 + 3px);
+  }
+
   /* 2×2 layout: height-limited → scale 0.683, card 342×478px, 4 per page */
   .print-grid--2x2 {
     grid-template-columns: repeat(2, 342px);

@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import DOMPurify from "dompurify";
 
 import { heavyCard } from "../../utils/card/heavy";
+import { heavy2Card } from "../../utils/card/heavy2";
 import { lightCard } from "../../utils/card/light";
 import { mediumCard } from "../../utils/card/medium";
 import { tremendousCard } from "../../utils/card/tremendous";
@@ -24,6 +25,8 @@ function renderCard(meta, obj, inst) {
   switch (obj.weight) {
     case "heavy":
       return heavyCard(meta, obj, inst);
+    case "heavy2":
+      return heavy2Card(meta, obj, inst);
     case "light":
       return lightCard(meta, obj, inst);
     case "medium":
@@ -235,7 +238,7 @@ export const CardViewer = ({ listId, bwOverride, gridMode = "3x3" }) => {
 
         if (addonDef?.type === "crew_card") {
           const fetchedCrewJson = cardObjs[`${cardFactionId}/${card.id}`];
-          const crewMeta = fetchedCrewJson?.styleOverride
+          const crewMeta = !bwOverride && fetchedCrewJson?.styleOverride
             ? { ...DEFAULT_META, ...fetchedCrewJson.styleOverride }
             : meta;
           const obj = buildCrewCardObj(addonDef, list, fetchedCrewJson);
@@ -257,13 +260,15 @@ export const CardViewer = ({ listId, bwOverride, gridMode = "3x3" }) => {
 
         const obj = cardObjs[`${cardFactionId}/${card.id}`];
         const effectiveObj = obj && card.randomOverride ? { ...obj, ...card.randomOverride } : obj;
-        const effectiveMeta = obj?.styleOverride ? { ...DEFAULT_META, ...obj.styleOverride } : meta;
+        const effectiveMeta = !bwOverride && obj?.styleOverride ? { ...DEFAULT_META, ...obj.styleOverride } : meta;
+        const isDouble = effectiveObj?.weight === "heavy2";
+        const cardStyle = isDouble ? { gridColumn: "span 2", aspectRatio: "10 / 7" } : undefined;
         return Array.from({ length: count }, (_, j) => {
           const shipName = (card.shipNames || [])[j];
           const inst = shipName ? { name: { value: shipName, scale: 1.0 } } : {};
           const html = effectiveObj && effectiveMeta ? DOMPurify.sanitize(renderCard(effectiveMeta, effectiveObj, inst)) : null;
           return (
-            <div key={`${card.uid || `${card.id}-${i}`}-${j}`} className="card-viewer__card">
+            <div key={`${card.uid || `${card.id}-${i}`}-${j}`} className="card-viewer__card" style={cardStyle}>
               {html ? (
                 <div
                   className="card-viewer__card-inner"

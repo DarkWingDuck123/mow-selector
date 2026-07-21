@@ -9,6 +9,7 @@ import lightMeta from '../../utils/card/db/all_light_meta.json';
 import mediumMeta from '../../utils/card/db/all_medium_meta.json';
 import heavyMeta from '../../utils/card/db/all_heavy_meta.json';
 import { heavyCard } from '../../utils/card/heavy';
+import { heavy2Card } from '../../utils/card/heavy2';
 import { lightCard } from '../../utils/card/light';
 import { mediumCard } from '../../utils/card/medium';
 import { negligibleCard } from '../../utils/card/negligible';
@@ -25,13 +26,14 @@ const LANGUAGES = [
   { code: 'pl', label: 'Polski' },
 ];
 
-const WEIGHTS = ['negligible', 'light', 'medium', 'heavy', 'tremendous'];
+const WEIGHTS = ['negligible', 'light', 'medium', 'heavy', 'heavy2', 'tremendous'];
 
 const META_BY_WEIGHT = {
   negligible: negligibleMeta,
   light: lightMeta,
   medium: mediumMeta,
   heavy: heavyMeta,
+  heavy2: heavyMeta,
 };
 
 const DEFAULT_META = {
@@ -48,6 +50,7 @@ function tryRenderCard(weight, obj) {
   try {
     switch (weight) {
       case 'heavy': return heavyCard(DEFAULT_META, obj, {});
+      case 'heavy2': return heavy2Card(DEFAULT_META, obj, {});
       case 'light': return lightCard(DEFAULT_META, obj, {});
       case 'medium': return mediumCard(DEFAULT_META, obj, {});
       case 'negligible': return negligibleCard(DEFAULT_META, obj, {});
@@ -74,7 +77,7 @@ function CardPreview({ weight, cardObj }) {
   }
 
   return (
-    <div className="cb-card-preview">
+    <div className={`cb-card-preview${weight === "heavy2" ? " cb-card-preview--double" : ""}`}>
       <div
         className="cb-card-preview__inner"
         dangerouslySetInnerHTML={{ __html: html }}
