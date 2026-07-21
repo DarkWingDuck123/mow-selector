@@ -330,8 +330,8 @@ function damageTitle(zone, text, save, meta) {
          + "font-size:16px;"
          + "vertical-align:middle;"
          + "text-align:center;"
-         + "color:" + saveTextColor + ";"
-         + "background-color:" + saveColor + ";"
+         + "color:" + DOMPurify.sanitize(saveTextColor) + ";"
+         + "background-color:" + DOMPurify.sanitize(saveColor) + ";"
          + "border: 2px solid black"
        + "'>"
        + DOMPurify.sanitize(save)
