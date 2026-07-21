@@ -83,8 +83,8 @@ export function drawBroadside(w, h, s, num, meta) {
   var l = 15;
   var r = w - 15;
   var internal = '<rect x=' + l + ' y=' + t + ' width=' + (r - l) + ' height=' + (b - t) + ' style="fill:white;stroke:black;stroke-width:2"/>'
-  internal = internal + '<text x=' + ((cx + l - (s/3)) / 2) + ' y=' + cy + ' fill="' + meta.accentColor + '" font-size="30px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + num + '</text>';
-  internal = internal + '<text x=' + ((cx + r + (s/3)) / 2) + ' y=' + cy + ' fill="' + meta.accentColor + '" font-size="30px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + num + '</text>';
+  internal = internal + '<text x=' + ((cx + l - (s/3)) / 2) + ' y=' + cy + ' fill="' + "black" + '" font-size="30px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + num + '</text>';
+  internal = internal + '<text x=' + ((cx + r + (s/3)) / 2) + ' y=' + cy + ' fill="' + "black" + '" font-size="30px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + num + '</text>';
   return internal;
 }
 
@@ -97,7 +97,7 @@ export function drawForeCannon(w, h, s, num, meta) {
   var r = cx + (s / 3);
 
   var internal = '<rect x=' + l + ' y=' + t + ' width=' + (r - l) + ' height=' + (b - t) + ' style="fill:white;stroke:black;stroke-width:2"/>'
-  internal = internal + '<text x=' + cx + ' y=' + ((t + b - s) / 2) + ' fill="' + meta.accentColor + '" font-size="30px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + num + '</text>';
+  internal = internal + '<text x=' + cx + ' y=' + ((t + b - s) / 2) + ' fill="' + "black" + '" font-size="30px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + num + '</text>';
   return internal;
 }
 
@@ -110,7 +110,7 @@ export function drawAftCannon(w, h, s, num, meta) {
   var r = cx + (s / 3);
 
   var internal = '<rect x=' + l + ' y=' + t + ' width=' + (r - l) + ' height=' + (b - t) + ' style="fill:white;stroke:black;stroke-width:2"/>'
-  internal = internal + '<text x=' + cx + ' y=' + ((t + b + s) / 2) + ' fill="' + meta.accentColor + '" font-size="30px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + num + '</text>';
+  internal = internal + '<text x=' + cx + ' y=' + ((t + b + s) / 2) + ' fill="' + "black" + '" font-size="30px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + num + '</text>';
   return internal;
 }
 
@@ -119,7 +119,7 @@ export function drawForeSpread(w, h, s, num, meta) {
   var cx = w / 2; // center x
   var cy = (h / 2) - (s / 2); // center y
   var internal = '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx, cy, 0, 70, -45, 45) + '"/>';
-  internal = internal + '<text x=' + cx + ' y=' + ((2 * cy - 70) / 2) + ' fill="' + meta.accentColor + '" font-size="30px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + num + '</text>';
+  internal = internal + '<text x=' + cx + ' y=' + ((2 * cy - 70) / 2) + ' fill="' + "black" + '" font-size="30px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + num + '</text>';
   return internal;
 }
 
@@ -136,49 +136,49 @@ export function drawUnderTurrets(w, h, s, meta, obj) {
   // fore center
   if (typeof obj.foreTurret !== 'undefined') {
     internal = internal + '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx, cy - s/2, 0, 60, -90, 90) + '"/>';
-    internal = internal + '<text x=' + cx + ' y=' + (cy - s - 15) + ' fill="' + meta.accentColor + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.foreTurret + '</text>';
+    internal = internal + '<text x=' + cx + ' y=' + (cy - s - 15) + ' fill="' + "black" + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.foreTurret + '</text>';
   }
 
   // aft center
   if (typeof obj.aftTurret !== 'undefined') {
     internal = internal + '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx, cy + 3*s/4, 0, 60, 90, 270) + '"/>';
-    internal = internal + '<text x=' + cx + ' y=' + (cy + s + 25) + ' fill="' + meta.accentColor + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.aftTurret + '</text>';
+    internal = internal + '<text x=' + cx + ' y=' + (cy + s + 25) + ' fill="' + "black" + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.aftTurret + '</text>';
   }
 
   // middle port
   if (typeof obj.portTurret !== 'undefined') {
     internal = internal + '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx - s/3 + 5, cy + 5, 0, 55, 180, 360) + '"/>';
-    internal = internal + '<text x=' + (cx - s/3 - 25) + ' y=' + (cy + 5) + ' fill="'+ meta.accentColor +'" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.portTurret + '</text>';
+    internal = internal + '<text x=' + (cx - s/3 - 25) + ' y=' + (cy + 5) + ' fill="'+ "black" +'" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.portTurret + '</text>';
   }
 
   // middle starboard
   if (typeof obj.starboardTurret !== 'undefined') {
     internal = internal + '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx + s/3 - 5, cy + 5, 0, 55, 0, 180) + '"/>';
-    internal = internal + '<text x=' + (cx + s/3 + 25) + ' y=' + (cy + 5) + ' fill="' + meta.accentColor + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.starboardTurret  + '</text>';
+    internal = internal + '<text x=' + (cx + s/3 + 25) + ' y=' + (cy + 5) + ' fill="' + "black" + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.starboardTurret  + '</text>';
   }
 
   // fore port
   if (typeof obj.forePortTurret !== 'undefined') {
     internal = internal + '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx - s / 3, (cy - ((2*s)/3)), 0, 40, 270, 360) + '"/>';
-    internal = internal + '<text x=' + (cx - s/3 - 15) + ' y=' + (cy - ((2*s)/3) - 15) + ' fill="' + meta.accentColor + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.forePortTurret + '</text>';
+    internal = internal + '<text x=' + (cx - s/3 - 15) + ' y=' + (cy - ((2*s)/3) - 15) + ' fill="' + "black" + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.forePortTurret + '</text>';
   }
 
   // aft port
   if (typeof obj.aftPortTurret !== 'undefined') {
     internal = internal + '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx - s/3, (cy + s), 0, 40, 180, 270) + '"/>';
-    internal = internal + '<text x=' + (cx - s/3 - 15) + ' y=' + (cy + s + 15) + ' fill="' + meta.accentColor + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.aftPortTurret + '</text>';
+    internal = internal + '<text x=' + (cx - s/3 - 15) + ' y=' + (cy + s + 15) + ' fill="' + "black" + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.aftPortTurret + '</text>';
   }
 
   // fore starboard
   if (typeof obj.foreStarboardTurret !== 'undefined') {
     internal = internal + '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx + s / 3, (cy - ((2*s)/3)), 0, 40, 0, 90) + '"/>';
-    internal = internal + '<text x=' + (cx + s/3 + 15) + ' y=' + (cy - ((2*s)/3) - 15) + ' fill="' + meta.accentColor + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.foreStarboardTurret + '</text>';
+    internal = internal + '<text x=' + (cx + s/3 + 15) + ' y=' + (cy - ((2*s)/3) - 15) + ' fill="' + "black" + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.foreStarboardTurret + '</text>';
   }
 
   // aft starboard
   if (typeof obj.aftStarboardTurret !== 'undefined') {
     internal = internal + '<path style="fill:white; stroke:black; stroke-width:2" d="' + describeArc(cx + s/3, (cy + s), 0, 40, 90, 180) + '"/>';
-    internal = internal + '<text x=' + (cx + s/3 + 15) + ' y=' + (cy + s + 15) + ' fill="' + meta.accentColor + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.aftStarboardTurret + '</text>';
+    internal = internal + '<text x=' + (cx + s/3 + 15) + ' y=' + (cy + s + 15) + ' fill="' + "black" + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.aftStarboardTurret + '</text>';
   }
 
   // Ammo Boxes
@@ -196,7 +196,7 @@ export function drawOverTurrets(w, h, s, meta, obj) {
   if (exists(obj.fullTurret)) {
     internal = internal + '<circle cx="' + cx + '" cy="' + cy + '" r="5" fill="lightgrey" stroke="black" stroke-width="2" /></circle>';
     // middle center turret is the only weapons that gets to draw it's number on the ship itself
-    internal = internal + '<text x=' + cx + ' y=' + (cy + 16) + ' fill="' + meta.accentColor + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.fullTurret + '</text>';
+    internal = internal + '<text x=' + cx + ' y=' + (cy + 16) + ' fill="' + "black" + '" font-size="20px" style=\'dominant-baseline:middle; text-anchor:middle;\'>' + obj.fullTurret + '</text>';
   }
 
   // fore center
