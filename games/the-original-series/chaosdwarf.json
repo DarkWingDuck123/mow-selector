@@ -5,7 +5,8 @@
     "fgColor": "darkorange",
     "parchmentColor": "beige",
     "waterColor": "lightblue",
-    "accentColor": "orangered"
+    "accentColor": "orangered",
+    "reverseAccentColor": "white"
   },
   "name": "Chaos Dwarf Fleet",
   "name_de": "Chaos Dwarf Fleet",

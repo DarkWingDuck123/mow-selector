@@ -5,7 +5,8 @@
     "fgColor": "lightpink",
     "parchmentColor": "lavenderblush",
     "waterColor": "plum",
-    "accentColor": "hotpink"
+    "accentColor": "hotpink",
+    "reverseAccentColor": "white"
   },
   "name": "Slaanesh Fleet",
   "name_de": "Slaanesh Fleet",

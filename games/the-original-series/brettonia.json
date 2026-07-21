@@ -5,7 +5,8 @@
         "fgColor": "gold",
         "parchmentColor": "beige",
         "waterColor": "lightblue",
-        "accentColor": "red"
+        "accentColor": "red",
+        "reverseAccentColor": "white"
     },
     "name_en": "Brettonian Fleet",
     "validation_rules": [

@@ -5,7 +5,8 @@
         "fgColor": "gold",
         "parchmentColor": "beige",
         "waterColor": "lightblue",
-        "accentColor": "silver"
+        "accentColor": "silver",
+        "reverseAccentColor": "white"
     },
     "name": "Plague Fleet",
     "name_de": "Plague Fleet",

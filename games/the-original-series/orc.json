@@ -5,7 +5,8 @@
         "fgColor": "white",
         "parchmentColor": "beige",
         "waterColor": "lightblue",
-        "accentColor": "goldenrod"
+        "accentColor": "goldenrod",
+        "reverseAccentColor": "white"
     },
     "name": "Orc Fleet",
     "name_en": "Orc Fleet",

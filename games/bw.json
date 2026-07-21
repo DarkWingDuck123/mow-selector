@@ -3,5 +3,6 @@
   "fgColor":"black",
   "parchmentColor":"white",
   "waterColor":"white",
-  "accentColor":"grey"
+  "accentColor":"white",
+  "reverseAccentColor":"black"
 }

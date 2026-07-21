@@ -5,7 +5,8 @@
         "fgColor": "ghostwhite",
         "parchmentColor": "beige",
         "waterColor": "lightblue",
-        "accentColor": "slategray"
+        "accentColor": "slategray",
+        "reverseAccentColor": "white"
     },
     "name": "Undead Fleet",
     "name_de": "Undead Fleet",

@@ -5,7 +5,8 @@
         "fgColor": "navy",
         "parchmentColor": "ivory",
         "waterColor": "lightblue",
-        "accentColor": "gold"
+        "accentColor": "gold",
+        "reverseAccentColor": "white"
     },
     "name": "Elf Fleet",
     "name_en": "Elf Fleet",

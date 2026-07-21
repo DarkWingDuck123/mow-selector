@@ -5,7 +5,8 @@
     "fgColor": "white",
     "parchmentColor": "beige",
     "waterColor": "lightblue",
-    "accentColor": "red"
+    "accentColor": "red",
+    "reverseAccentColor": "white"
   },
   "name": "Pirate Fleet",
   "name_en": "Pirate Fleet",
