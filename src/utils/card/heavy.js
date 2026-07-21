@@ -293,6 +293,7 @@ function rowThree(gw, gh, w, h, x, y, obj, meta) {
 
 function damageTitle(zone, text, save, meta) {
   var saveColor = meta.accentColor;
+  var saveTextColor = meta.reverseAccentColor;
 
   var s = ""
    + "<div "
@@ -329,7 +330,7 @@ function damageTitle(zone, text, save, meta) {
          + "font-size:16px;"
          + "vertical-align:middle;"
          + "text-align:center;"
-         + "color:white;"
+         + "color:" + saveTextColor + ";"
          + "background-color:" + saveColor + ";"
          + "border: 2px solid black"
        + "'>"

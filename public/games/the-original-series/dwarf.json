@@ -5,7 +5,8 @@
     "fgColor": "white",
     "parchmentColor": "beige",
     "waterColor": "lightblue",
-    "accentColor": "red"
+    "accentColor": "red",
+    "reverseAccentColor": "white"
   },
   "name": "Dwarf Fleet",
   "name_en": "Dwarf Fleet",

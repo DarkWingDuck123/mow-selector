@@ -5,7 +5,8 @@
         "fgColor": "#d4cc20",
         "parchmentColor": "beige",
         "waterColor": "lightblue",
-        "accentColor": "red"
+        "accentColor": "red",
+        "reverseAccentColor": "white"
     },
     "name_en": "Skaven Clanfleet",
     "name_de": "Skaven Clanfleet",

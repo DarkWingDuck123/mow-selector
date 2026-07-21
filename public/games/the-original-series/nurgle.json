@@ -5,7 +5,8 @@
     "fgColor": "burlywood",
     "parchmentColor": "beige",
     "waterColor": "lightblue",
-    "accentColor": "olive"
+    "accentColor": "olive",
+    "reverseAccentColor": "white"
   },
   "name": "Nurgle Fleet",
   "name_de": "Nurgle Fleet",

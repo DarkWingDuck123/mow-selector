@@ -5,7 +5,8 @@
         "fgColor": "black",
         "parchmentColor": "beige",
         "waterColor": "lightblue",
-        "accentColor": "red"
+        "accentColor": "red",
+        "reverseAccentColor": "white"
     },
     "name_en": "Norse Raiders",
     "validation_rules": [
