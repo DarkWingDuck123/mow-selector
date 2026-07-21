@@ -69,7 +69,7 @@ function renderCard(meta, obj, inst) {
   }
 }
 
-export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
+export const PrintView = ({ listId, bwOverride, onBwOverride, gridMode = "3x3", onGridMode }) => {
   const lists = useSelector((state) => state.lists);
   const customFactions = useSelector((state) => state.customFactions);
   const customCards = useSelector((state) => state.customCards);
@@ -232,7 +232,7 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
     }).filter(Boolean);
   });
 
-  const CARDS_PER_PAGE = 9;
+  const CARDS_PER_PAGE = gridMode === "2x2" ? 4 : 9;
   const totalPages = Math.max(1, Math.ceil(cardItems.length / CARDS_PER_PAGE));
   const [page, setPage] = useState(1);
   const [allPages, setAllPages] = useState(false);
@@ -246,6 +246,12 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
   });
 
   const handlePreview = () => {
+    const is2x2 = gridMode === "2x2";
+    const cols = is2x2 ? 2 : 3;
+    const cardW = is2x2 ? 358 : 238;
+    const cardH = is2x2 ? 501 : 333;
+    const scale = is2x2 ? 0.716 : 0.476;
+
     const previewWindow = window.open("", "_blank", "width=760,height=1050");
     if (!previewWindow) return;
     previewWindow.document.write(`<!DOCTYPE html>
@@ -258,18 +264,17 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
     .page {
       background: white;
       width: 720px;
-      min-height: 669px;
       margin: 0 auto;
       padding: 0;
       display: grid;
-      grid-template-columns: repeat(3, 238px);
+      grid-template-columns: repeat(${cols}, ${cardW}px);
       gap: 3px;
       justify-content: center;
       align-content: start;
     }
     .print-card {
-      width: 238px;
-      height: 333px;
+      width: ${cardW}px;
+      height: ${cardH}px;
       overflow: hidden;
       position: relative;
     }
@@ -279,7 +284,7 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
       width: 500px;
       height: 700px;
       transform-origin: top left;
-      transform: scale(0.476);
+      transform: scale(${scale});
     }
   </style>
 </head>
@@ -306,7 +311,7 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
 
   return (
     <>
-      <PrintGrid ref={printRef} cardItems={pageItems} />
+      <PrintGrid ref={printRef} cardItems={pageItems} gridMode={gridMode} />
       <div className="print-view">
         <Button onClick={handlePrint} disabled={!allLoaded}>
           Print
@@ -342,6 +347,26 @@ export const PrintView = ({ listId, bwOverride, onBwOverride }) => {
             onChange={(e) => onBwOverride(e.target.checked)}
           />
           B&amp;W
+        </label>
+        <label className="print-view__bw-label">
+          <input
+            type="radio"
+            name="gridMode"
+            value="3x3"
+            checked={gridMode === "3x3"}
+            onChange={() => onGridMode("3x3")}
+          />
+          3×3
+        </label>
+        <label className="print-view__bw-label">
+          <input
+            type="radio"
+            name="gridMode"
+            value="2x2"
+            checked={gridMode === "2x2"}
+            onChange={() => onGridMode("2x2")}
+          />
+          2×2
         </label>
       </div>
     </>

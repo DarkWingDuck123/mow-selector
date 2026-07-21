@@ -47,4 +47,26 @@
 */
     transform: scale(0.661);
   }
+
+  /* 2×2 layout: height-limited → scale 0.683, card 342×478px, 4 per page */
+  .print-grid--2x2 {
+    grid-template-columns: repeat(2, 342px);
+  }
+
+  .print-grid--2x2 .print-card {
+    width: 342px;
+    height: 478px;
+  }
+
+  .print-grid--2x2 .print-card:nth-child(9n) {
+    break-after: auto;
+  }
+
+  .print-grid--2x2 .print-card:nth-child(4n) {
+    break-after: page;
+  }
+
+  .print-grid--2x2 .print-card-inner {
+    transform: scale(0.683);
+  }
 }

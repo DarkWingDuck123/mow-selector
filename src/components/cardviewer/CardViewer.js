@@ -77,7 +77,7 @@ function buildCrewCardObj(addonDef, list, cardObj) {
   };
 }
 
-export const CardViewer = ({ listId, bwOverride }) => {
+export const CardViewer = ({ listId, bwOverride, gridMode = "3x3" }) => {
   const lists = useSelector((state) => state.lists);
   const customFactions = useSelector((state) => state.customFactions);
   const customCards = useSelector((state) => state.customCards);
@@ -185,16 +185,19 @@ export const CardViewer = ({ listId, bwOverride }) => {
     if (!gridRef.current) return;
     const observer = new ResizeObserver((entries) => {
       for (const entry of entries) {
-        const colWidth = (entry.contentRect.width - 6) / 3; // 2 gaps of 3px
+        const cols = gridMode === "2x2" ? 2 : 3;
+        const colWidth = (entry.contentRect.width - (cols - 1) * 3) / cols;
         setCardScale(colWidth / 500);
       }
     });
     observer.observe(gridRef.current);
     return () => observer.disconnect();
-  }, []);
+  }, [gridMode]);
+
+  const cols = gridMode === "2x2" ? 2 : 3;
 
   return (
-    <div className="card-viewer" ref={gridRef}>
+    <div className="card-viewer" ref={gridRef} style={{ gridTemplateColumns: `repeat(${cols}, 1fr)` }}>
       {!listId && <p className="card-viewer__message">No list selected.</p>}
       {listId && !list?.cards?.length && <p className="card-viewer__message">No cards in this fleet.</p>}
       {listId && list?.cards?.flatMap((card, i) => {

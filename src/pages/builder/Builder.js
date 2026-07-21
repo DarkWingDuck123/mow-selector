@@ -35,6 +35,7 @@ export const Builder = () => {
   const units = useSelector((state) => state.units);
   const [selectedListId, setSelectedListId] = useState(null);
   const [bwOverride, setBwOverride] = useState(false);
+  const [gridMode, setGridMode] = useState("3x3");
   // const army = game.armies.find((army) => army.id === list.army);
 
   useEffect(() => {
@@ -114,8 +115,8 @@ export const Builder = () => {
                 label: "Cards",
                 content: (
                   <>
-                    <PrintView listId={selectedListId} bwOverride={bwOverride} onBwOverride={setBwOverride} />
-                    <CardViewer listId={selectedListId} bwOverride={bwOverride} />
+                    <PrintView listId={selectedListId} bwOverride={bwOverride} onBwOverride={setBwOverride} gridMode={gridMode} onGridMode={setGridMode} />
+                    <CardViewer listId={selectedListId} bwOverride={bwOverride} gridMode={gridMode} />
                   </>
                 ),
               },
