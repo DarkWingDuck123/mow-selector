@@ -220,7 +220,7 @@ export const CardViewer = ({ listId, bwOverride, gridMode = "3x3" }) => {
 
         if (addonDef?.type === "fleet_list_card") {
           const obj = buildFleetListCardObj(addonDef, list, factionData);
-          const html = meta ? DOMPurify.sanitize(negligibleCard(meta, obj, {})) : null;
+          const html = meta ? DOMPurify.sanitize(negligibleCard(meta, obj, { dynamicBoxes: true }), { ADD_ATTR: ['contenteditable'] }) : null;
           return Array.from({ length: count }, (_, j) => (
             <div key={`${card.uid || `${card.id}-${i}`}-${j}`} className="card-viewer__card">
               {html ? (
@@ -242,7 +242,7 @@ export const CardViewer = ({ listId, bwOverride, gridMode = "3x3" }) => {
             ? { ...DEFAULT_META, ...fetchedCrewJson.styleOverride }
             : meta;
           const obj = buildCrewCardObj(addonDef, list, fetchedCrewJson);
-          const html = crewMeta ? DOMPurify.sanitize(negligibleCard(crewMeta, obj, {})) : null;
+          const html = crewMeta ? DOMPurify.sanitize(negligibleCard(crewMeta, obj, { dynamicBoxes: true }), { ADD_ATTR: ['contenteditable'] }) : null;
           return Array.from({ length: count }, (_, j) => (
             <div key={`${card.uid || `${card.id}-${i}`}-${j}`} className="card-viewer__card">
               {html ? (
@@ -265,8 +265,8 @@ export const CardViewer = ({ listId, bwOverride, gridMode = "3x3" }) => {
         const cardStyle = isDouble ? { gridColumn: "span 2", aspectRatio: "10 / 7" } : undefined;
         return Array.from({ length: count }, (_, j) => {
           const shipName = (card.shipNames || [])[j];
-          const inst = shipName ? { name: { value: shipName, scale: 1.0 } } : {};
-          const html = effectiveObj && effectiveMeta ? DOMPurify.sanitize(renderCard(effectiveMeta, effectiveObj, inst)) : null;
+          const inst = { dynamicBoxes: true, ...(shipName ? { name: { value: shipName, scale: 1.0 } } : {}) };
+          const html = effectiveObj && effectiveMeta ? DOMPurify.sanitize(renderCard(effectiveMeta, effectiveObj, inst), { ADD_ATTR: ['contenteditable'] }) : null;
           return (
             <div key={`${card.uid || `${card.id}-${i}`}-${j}`} className="card-viewer__card" style={cardStyle}>
               {html ? (

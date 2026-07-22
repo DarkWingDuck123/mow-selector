@@ -1,5 +1,5 @@
 import DOMPurify from 'dompurify';
-import { box, boxline, scaleStyle, exists, polarToCartesian, describeArc, drawBroadside, drawForeCannon, drawAftCannon, drawForeSpread, drawUnderTurrets, drawOverTurrets, drawShip } from './cardUtility.js';
+import { box, boxline, scaleStyle, exists, polarToCartesian, describeArc, drawBroadside, drawForeCannon, drawAftCannon, drawForeSpread, drawUnderTurrets, drawOverTurrets, drawShip, setDynamicBoxes } from './cardUtility.js';
 
 // A javascript that builds a man o war card.
 
@@ -283,6 +283,7 @@ function rowThree(gw, gh, w, h, x, y, obj, meta) {
         + "height:50px;"
         + "bottom:155px;"
         + "left:5px;"
+        + "z-index:2;"
       + "'>"
       + damageTitle("", obj.criticalTitle, obj.criticalSave, meta)
       + boxline(0, 0, 30, obj.criticalBoxes, 1, 0)
@@ -759,6 +760,7 @@ function rowFourColTwo(gw, gh, w, h, x, y, meta, obj)
 // inst: Instance informat about the card. This is information true about a specific card. In example, the ship name of the card.
 export function heavyCard(meta, obj, inst)
 {
+  setDynamicBoxes(inst.dynamicBoxes);
   var template = "<div style='transform: rotate({7}deg);zoom:{8}; position: relative; border: 1px solid black; width:{1}px; height:{2}px; background-color:{0};'>{3}{4}{5}{6}</div>"
 
   console.log("META: ");

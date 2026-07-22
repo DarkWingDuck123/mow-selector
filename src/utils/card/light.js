@@ -1,5 +1,5 @@
 import DOMPurify from 'dompurify';
-import { box, boxline, scaleStyle, exists, polarToCartesian, describeArc, drawBroadside, drawForeCannon, drawAftCannon, drawForeSpread, drawUnderTurrets, drawOverTurrets, drawShip, beastname, textRow, rowFive } from './cardUtility.js';
+import { box, boxline, scaleStyle, exists, polarToCartesian, describeArc, drawBroadside, drawForeCannon, drawAftCannon, drawForeSpread, drawUnderTurrets, drawOverTurrets, drawShip, beastname, textRow, rowFive, setDynamicBoxes } from './cardUtility.js';
 
 // A javascript that builds a man o war flyer and sea beast cards.
 // These type of ships are characterized by their ability to turn on a dime,
@@ -525,6 +525,7 @@ function rowFourColTwo(gw, gh, w, h, x, y, meta, obj)
 // inst: Instance informat about the card. This is information true about a specific card. In example, the ship name of the card.
 export function lightCard(meta, obj, inst)
 {
+  setDynamicBoxes(inst.dynamicBoxes);
   var rotate = 0;
   if (exists(meta.rotate)) {
     rotate = meta.rotate;

@@ -1,6 +1,33 @@
 import DOMPurify from 'dompurify';
 
+let _dynamicBoxes = false;
+export function setDynamicBoxes(val) { _dynamicBoxes = !!val; }
+
+function textBox(x, y, size) {
+  return ""
+    + "<div "
+      + "contenteditable='true' "
+      + "style='"
+        + "border:1px solid black;"
+        + "position:absolute;"
+        + "width:" + size + "px;"
+        + "height:" + size + "px;"
+        + "left:" + x + "px;"
+        + "bottom:" + y + "px;"
+        + "background-color:white;"
+        + "display:flex;"
+        + "align-items:center;"
+        + "justify-content:center;"
+        + "font-size:" + size + "px;"
+        + "line-height:1;"
+        + "overflow:hidden;"
+        + "cursor:text;"
+      + "'>"
+    + "</div>";
+}
+
 export function box(x, y, size) {
+  if (_dynamicBoxes) return textBox(x, y, size);
   return ""
     + "<div "
       + "style='"
@@ -19,7 +46,6 @@ export function box(x, y, size) {
 export function boxline(x, y, size, num, rows, margin) {
   var i = 0;
   var boxes = "";
-  console.log("Drawing boxline (rows: " + rows + "):")
   while (i < num) {
     var j = Math.floor(i / rows);
     var k = (i % rows);

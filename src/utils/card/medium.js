@@ -1,5 +1,5 @@
 import DOMPurify from 'dompurify';
-import { box, boxline, scaleStyle, exists, polarToCartesian, describeArc, drawBroadside, drawForeCannon, drawAftCannon, drawForeSpread, drawUnderTurrets, drawOverTurrets, drawShip, beastname, textRow, rowFive } from './cardUtility.js';
+import { box, boxline, scaleStyle, exists, polarToCartesian, describeArc, drawBroadside, drawForeCannon, drawAftCannon, drawForeSpread, drawUnderTurrets, drawOverTurrets, drawShip, beastname, textRow, rowFive, setDynamicBoxes } from './cardUtility.js';
 
 // A javascript that builds a medium man o war card. In the original game
 // these are all sea beasts.
@@ -436,6 +436,7 @@ function rowFourColTwo(w, h, x, y, meta, obj)
 // inst: Instance informat about the card. This is information true about a specific card. In example, the ship name of the card.
 export function mediumCard(meta, obj, inst)
 {
+  setDynamicBoxes(inst.dynamicBoxes);
   console.log("META:");
   console.log(meta);
   console.log("OBJ:");
