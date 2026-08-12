@@ -146,7 +146,7 @@
                     "type_name": "Flyer",
                     "type_name_en": "Flyer",
                     "description_en": "A Squadron of 3 Carrion.",
-                    "squadron-size": 3,
+                    "squadron-size": 1,
                     "source": "CJ6",
                     "source_en": "CJ6",
                     "cost": 100
